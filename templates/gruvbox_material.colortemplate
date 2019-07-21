@@ -16,4 +16,8 @@ Include: _terminal
 
 Include: _basic
 
+Include: _filetypes
+
+Include: _plugins
+
 Include: _bw
