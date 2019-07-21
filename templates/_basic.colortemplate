@@ -1,0 +1,104 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 8
+    Normal              light           none
+    Terminal            light           none
+#else
+    Normal              light           dark0
+    Terminal            light           dark0
+#endif
+
+# Group                 Foreground      Background      Attributes
+# UI
+ColorColumn             none            dark1
+Conceal                 blue            none
+Cursor                  none            none            reverse
+lCursor              -> Cursor
+CursorColumn         -> CursorLine
+CursorLine              none            dark1
+CursorLineNr            yellow          dark1
+LineNr                  dark4           none
+SignColumn              none            dark1
+DiffAdd                 green           dark0           reverse
+DiffChange              aqua            dark0           reverse
+DiffDelete              red             dark0           reverse
+DiffText                yellow          dark0           reverse
+Directory               green           none
+EndOfBuffer             dark0           none
+ErrorMsg                dark0           red
+WarningMsg              dark0           orange
+ModeMsg                 yellow          none            bold
+MoreMsg                 yellow          none            bold
+FoldColumn              grey            dark1
+Folded               -> FoldColumn
+IncSearch               orange          dark0           reverse
+Search                  yellow          dark0           reverse
+MatchParen              none            dark3           bold
+NonText              -> Comment
+Pmenu                   light           dark2
+PmenuSbar               none            dark2
+PmenuSel                dark0           lightgrey
+PmenuThumb              none            dark4
+Question                orange          none            bold
+SpellBad                red             none            italic t=underline g=undercurl s=red
+SpellCap                blue            none            italic t=underline g=undercurl s=blue
+SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
+SpellRare               purple          none            italic t=underline g=undercurl s=purple
+StatusLine              dark2           light           reverse
+StatusLineNC            dark0           lightgrey       reverse
+TabLine                 dark4           dark1
+TabLineFill             dark4           dark1
+TabLineSel           -> PmenuSel
+VertSplit               dark3           dark0
+Visual                  none            none            reverse
+VisualNOS            -> Visual
+WildMenu             -> PmenuSel
+Todo                    grey            none            bold,italic
+CursorIM                none            none            reverse
+ToolbarLine             none            dark3
+ToolbarButton           light           dark3           bold
+QuickFixLine         -> Search
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+
+# Syntax
+Conditional             red             none
+Repeat                  red             none
+Exception               red             none
+PreProc                 aqua            none
+Macro                   aqua            none
+Define                  aqua            none
+Include                 aqua            none
+Title                   green           none            bold
+Error                   red             dark0           reverse
+PreCondit               aqua            none
+Typedef                 yellow          none
+Keyword                 red             none
+StorageClass            orange          none
+Type                    yellow          none
+Structure               aqua            none
+Constant                purple          none
+Function                green           none
+Identifier              blue            none
+Delimiter               orange          none
+Special                 orange          none
+Boolean                 purple          none
+String                  green           none
+Character               purple          none
+Number                  purple          none
+Float                   purple          none
+SpecialKey              dark2           none
+Label                   red             none
+Tag                     orange          none
+Statement               red             none
+Operator                aqua            none
+Comment                 grey            none            italic
+SpecialComment          grey            none            italic
+Ignore                  light           none
+Underlined              blue            none            underline
+SpecialChar          -> Special
+Debug                -> Special

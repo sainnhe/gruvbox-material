@@ -1,0 +1,17 @@
+# vim: ft=colortemplate fdm=marker
+
+Color: dark0            #282828         235             Black
+Color: dark1            #3c3836         237             DarkGrey
+Color: dark2            #504945         239             DarkGrey
+Color: dark3            #665c54         241             DarkGrey
+Color: dark4            #7c6f64         243             DarkGrey
+Color: grey             #928374         245             Grey
+Color: lightgrey        #a89984         246             LightGrey
+Color: light            #ebdbb2         223             White
+Color: red              #fb4934         167             Red
+Color: green            #b8bb26         142             Green
+Color: yellow           #fabd2f         214             Yellow
+Color: blue             #83a598         109             Blue
+Color: purple           #d3869b         175             Magenta
+Color: aqua             #8ec07c         108             Cyan
+Color: orange           #fe8019         208             DarkYellow
