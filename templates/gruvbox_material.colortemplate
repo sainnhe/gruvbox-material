@@ -10,6 +10,8 @@ License:                MIT && Anti-996
 Neovim:                 yes
 Background:             dark
 
+#let s:italics = !(get(g:, 'gruvbox_material_kill_italic', 0) && s:italics)
+
 Include: _palette
 
 Include: _terminal

@@ -27,7 +27,7 @@ DiffAdd                 green           dark0           reverse
 DiffChange              aqua            dark0           reverse
 DiffDelete              red             dark0           reverse
 DiffText                yellow          dark0           reverse
-Directory               green           none
+Directory               green           none            bold
 EndOfBuffer             dark0           none
 ErrorMsg                dark0           red
 WarningMsg              dark0           orange
@@ -70,7 +70,6 @@ Conditional             red             none
 Repeat                  red             none
 Label                   red             none
 Exception               red             none
-Error                   red             dark0           reverse
 Keyword                 red             none
 Statement               red             none
 Typedef                 yellow          none
@@ -79,8 +78,6 @@ StorageClass            orange          none
 Delimiter               orange          none
 Special                 orange          none
 Tag                     orange          none
-Title                   green           none            bold
-Function                green           none
 String                  green           none
 PreProc                 aqua            none
 Macro                   aqua            none
@@ -100,5 +97,14 @@ SpecialKey              dark2           none
 Comment                 grey            none            italic
 SpecialComment          grey            none            italic
 Ignore                  light           none
+#if get(g:, 'gruvbox_material_enable_bold', 0)
+    Error                   red             dark0           bold,reverse
+    Title                   green           none            bold
+    Function                green           none            bold
+#else
+    Error                   red             dark0           reverse
+    Title                   green           none
+    Function                green           none
+#endif
 SpecialChar          -> Special
 Debug                -> Special
