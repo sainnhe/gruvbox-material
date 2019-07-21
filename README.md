@@ -8,7 +8,17 @@
 
 This is based on gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
-![](https://user-images.githubusercontent.com/37491630/61586576-260edc00-ab67-11e9-87c1-8e71a16a7af5.png)
+<h2 align="center">
+𝐆𝐫𝐮𝐯𝐛𝐨𝐱
+</h2>
+
+![origin](https://user-images.githubusercontent.com/37491630/61588030-f02c2080-ab83-11e9-9807-4a307f31c60e.png)
+
+<h2 align="center">
+𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥
+</h2>
+
+![material](https://user-images.githubusercontent.com/37491630/61588044-1c47a180-ab84-11e9-8465-d4a4443a4d85.png)
 
 Although the palette is different, I will try to keep the extended highlight groups consistent with [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
 
