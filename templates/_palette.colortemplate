@@ -9,9 +9,19 @@ Color: grey             #928374         245             Grey
 Color: lightgrey        #a89984         246             LightGrey
 Color: light            #dfbf8e         223             White
 Color: red              #ea6962         167             Red
-Color: green            #a9b665         142             Green
+Color: orange           #e78648         208             DarkYellow
 Color: yellow           #e3a84e         214             Yellow
+Color: green            #a9b665         142             Green
+Color: aqua             #89b482         108             Cyan
 Color: blue             #81a99a         109             Blue
 Color: purple           #d3869b         175             Magenta
-Color: aqua             #89b482         108             Cyan
-Color: orange           #e78648         208             DarkYellow
+
+White                   light           none
+Grey                    grey            none
+Red                     red             none
+Orange                  orange          none
+Yellow                  yellow          none
+Green                   green           none
+Aqua                    aqua            none
+Blue                    blue            none
+Purple                  purple          none

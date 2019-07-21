@@ -1,2 +1,170 @@
 # vim: ft=colortemplate fdm=marker cc=22
 
+# EasyMotion: {{{
+EasyMotionTarget     -> Search
+EasyMotionShade      -> Comment
+# }}}
+# Sneak: {{{
+Sneak                -> Search
+SneakLabel           -> Search
+# }}}
+# Indent Guides {{{
+#if get(g:, 'indent_guides_auto_colors', 0)
+  #if get(g: '@optionprefix_invert_indent_guides', 0)
+    IndentGuidesOdd     dark0           dark2           reverse
+    IndentGuidesEven    dark0           dark1           reverse
+  #else
+    IndentGuidesOdd     dark0           dark2
+    IndentGuidesEven    dark0           dark1
+  #endif
+#endif
+# }}}
+# IndentLine {{{
+#if !exists('g:indentLine_color_term')
+  #let g:indentLine_color_term = @term256dark2
+#endif
+#if !exists('g:indentLine_color_gui')
+  #let g:indentLine_color_gui = '@guidark2'
+#endif
+# }}}
+# Rainbow Parentheses {{{
+verbatim
+" Rainbow Parentheses
+if !exists('g:rbpt_colorpairs')
+  let g:rbpt_colorpairs = [['blue', '@guiblue'], ['magenta', '@guipurple'],
+    \ ['red', '@guired'], ['@term256orange', '@guiorange']]
+endif
+
+let g:rainbow_guifgs = [ '@guiorange', '@guired', '@guipurple', '@guiblue' ]
+let g:rainbow_ctermfgs = [ '@term256orange', 'red', 'magenta', 'blue' ]
+
+if !exists('g:rainbow_conf')
+   let g:rainbow_conf = {}
+endif
+if !has_key(g:rainbow_conf, 'guifgs')
+   let g:rainbow_conf['guifgs'] = g:rainbow_guifgs
+endif
+if !has_key(g:rainbow_conf, 'ctermfgs')
+   let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs
+endif
+
+let g:niji_dark_colours = g:rbpt_colorpairs
+let g:niji_light_colours = g:rbpt_colorpairs
+endverbatim
+# }}}
+# GitGutter {{{
+GitGutterAdd            green           dark1
+GitGutterChange         aqua            dark1
+GitGutterDelete         red             dark1
+GitGutterChangeDelete   aqua            dark1
+# }}}
+# GitCommit {{{
+gitcommitSelectedFile -> Green
+gitcommitDiscardedFile -> Red
+# }}}
+# Signify {{{
+SignifySignAdd       green              dark1
+SignifySignChange    aqua               dark1
+SignifySignDelete    red                dark1
+# }}}
+# Syntastic {{{
+SyntasticError          none            none            t=underline g=undercurl s=red
+SyntasticWarning        none            none            t=underline g=undercurl s=yellow
+SyntasticErrorSign      red             dark1
+SyntasticWarningSign    yellow          dark1
+# }}}
+# Signature {{{
+SignatureMarkText       blue            dark1
+SignatureMarkerText     purple          dark1
+# }}}
+# ShowMarks {{{
+ShowMarksHLl            blue            dark1
+ShowMarksHLu            blue            dark1
+ShowMarksHLo            blue            dark1
+ShowMarksHLm            blue            dark1
+# }}}
+# CtrlP {{{
+CtrlPMatch           -> Yellow
+CtrlPNoEntries       -> Red
+CtrlPPrtBase            dark2           none
+CtrlPPrtCursor       -> Blue
+CtrlPLinePre            dark2           none
+CtrlPMode1              blue            dark2           bold
+CtrlPMode2              dark0           blue            bold
+CtrlPStats              lightgrey       dark2           bold
+# }}}
+# FZF (help wanted){{{
+
+#}}}
+# Startify {{{
+StartifyBracket         lightgrey       none
+StartifyFile            light           none
+StartifyNumber       -> Blue
+StartifyPath         -> Grey
+StartifySlash        -> Grey
+StartifySection      -> Yellow
+StartifySpecial         dark2           none
+StartifyHeader       -> Orange
+StartifyFooter          dark2           none
+# }}}
+# Vimshell {{{
+verbatim
+let g:vimshell_escape_colors = [
+  \ '@guidark4', '@guired', '@guigreen', '@guiyellow',
+  \ '@guiblue', '@guipurple', '@guiaqua', '@guilightgrey',
+  \ '@guidark0', '@guired', '@guigreen', '@guiorange',
+  \ '@guiblue', '@guipurple', '@guiaqua', '@guilight'
+  \ ]
+endverbatim
+# }}}
+# BufTabLine {{{
+BufTabLineCurrent       dark0           lightgrey
+BufTabLineActive        lightgrey       dark2
+BufTabLineHidden        dark4           dark1
+BufTabLineFill          dark0           dark0
+# }}}
+# ALE {{{
+ALEError                none            none            t=underline g=undercurl s=red
+ALEWarning              none            none            t=underline g=undercurl s=red
+ALEInfo                 none            none            t=underline g=undercurl s=blue
+ALEErrorSign            red             dark1
+ALEWarningSign          yellow          dark1
+ALEInfoSign             blue            dark1
+# }}}
+# Dirvish {{{
+DirvishPathTail      -> Aqua
+DirvishArg           -> Yellow
+# }}}
+# Netrw {{{
+netrwDir             -> Aqua
+netrwClassify        -> Aqua
+netrwLink            -> Grey
+netrwSymLink         -> White
+netrwExe             -> Yellow
+netrwComment         -> Grey
+netrwList            -> Blue
+netrwHelpCmd         -> Aqua
+netrwCmdSep             lightgrey       none
+netrwVersion         -> Green
+# }}}
+# NERDTree {{{
+NERDTreeDir          -> Aqua
+NERDTreeDirSlash     -> Aqua
+
+NERDTreeOpenable     -> Orange
+NERDTreeClosable     -> Orange
+
+NERDTreeFile         -> White
+NERDTreeExecFile     -> Yellow
+
+NERDTreeUp           -> Grey
+NERDTreeCWD          -> Green
+NERDTreeHelp            lightgrey       none
+
+NERDTreeToggleOn     -> Green
+NERDTreeToggleOff    -> Red
+# }}}
+# Vim Multiple Cursors {{{
+multiple_cursors_cursor none            none            reverse
+multiple_cursors_visual none            dark2
+# }}}
