@@ -13,10 +13,10 @@ let s:dark      = [ '#282828', 235 ]
 let s:darker    = [ '#3c3836', 237 ]
 let s:darkgrey  = [ '#665c54', 241 ]
 let s:grey      = [ '#a89984', 246 ]
-let s:red       = [ '#e56b55', 203 ]
-let s:green     = [ '#99b05f', 120 ]
-let s:orange    = [ '#e18245', 208 ]
-let s:white     = [ '#ebdbb2', 223 ]
+let s:red       = [ '#ea6962', 167 ]
+let s:green     = [ '#a9b665', 142 ]
+let s:orange    = [ '#e78648', 208 ]
+let s:white     = [ '#dfbd8e', 223 ]
 "}}}
 
 "{{{Definition
