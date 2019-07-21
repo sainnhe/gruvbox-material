@@ -68,37 +68,37 @@ StatusLineTermNC     -> StatusLineNC
 # Syntax
 Conditional             red             none
 Repeat                  red             none
+Label                   red             none
 Exception               red             none
+Error                   red             dark0           reverse
+Keyword                 red             none
+Statement               red             none
+Typedef                 yellow          none
+Type                    yellow          none
+StorageClass            orange          none
+Delimiter               orange          none
+Special                 orange          none
+Tag                     orange          none
+Title                   green           none            bold
+Function                green           none
+String                  green           none
 PreProc                 aqua            none
 Macro                   aqua            none
 Define                  aqua            none
 Include                 aqua            none
-Title                   green           none            bold
-Error                   red             dark0           reverse
 PreCondit               aqua            none
-Typedef                 yellow          none
-Keyword                 red             none
-StorageClass            orange          none
-Type                    yellow          none
 Structure               aqua            none
-Constant                purple          none
-Function                green           none
+Operator                aqua            none
 Identifier              blue            none
-Delimiter               orange          none
-Special                 orange          none
+Underlined              blue            none            underline
+Constant                purple          none
 Boolean                 purple          none
-String                  green           none
 Character               purple          none
 Number                  purple          none
 Float                   purple          none
 SpecialKey              dark2           none
-Label                   red             none
-Tag                     orange          none
-Statement               red             none
-Operator                aqua            none
 Comment                 grey            none            italic
 SpecialComment          grey            none            italic
 Ignore                  light           none
-Underlined              blue            none            underline
 SpecialChar          -> Special
 Debug                -> Special
