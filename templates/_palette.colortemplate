@@ -17,6 +17,7 @@ Color: blue             #85ae9e         109             Blue
 Color: purple           #d3869b         175             Magenta
 
 White                   light           none
+LightGrey               lightgrey       none
 Grey                    grey            none
 Red                     red             none
 Orange                  orange          none
@@ -25,3 +26,13 @@ Green                   green           none
 Aqua                    aqua            none
 Blue                    blue            none
 Purple                  purple          none
+WhiteBold               light           none            bold
+LightGreyBold           lightgrey       none            bold
+GreyBold                grey            none            bold
+RedBold                 red             none            bold
+OrangeBold              orange          none            bold
+YellowBold              yellow          none            bold
+GreenBold               green           none            bold
+AquaBold                aqua            none            bold
+BlueBold                blue            none            bold
+PurpleBold              purple          none            bold

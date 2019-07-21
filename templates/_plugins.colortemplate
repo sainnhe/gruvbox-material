@@ -97,8 +97,8 @@ CtrlPStats lightgrey dark2 bold
 
 #}}}
 # Startify {{{
-StartifyBracket lightgrey none
-StartifyFile light none
+StartifyBracket -> LightGrey
+StartifyFile -> White
 StartifyNumber -> Blue
 StartifyPath -> Grey
 StartifySlash -> Grey
@@ -144,7 +144,7 @@ netrwExe -> Yellow
 netrwComment -> Grey
 netrwList -> Blue
 netrwHelpCmd -> Aqua
-netrwCmdSep lightgrey none
+netrwCmdSep -> LightGrey
 netrwVersion -> Green
 # }}}
 # NERDTree {{{
@@ -159,7 +159,7 @@ NERDTreeExecFile -> Yellow
 
 NERDTreeUp -> Grey
 NERDTreeCWD -> Green
-NERDTreeHelp lightgrey none
+NERDTreeHelp -> LightGrey
 
 NERDTreeToggleOn -> Green
 NERDTreeToggleOff -> Red
