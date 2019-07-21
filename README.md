@@ -40,6 +40,12 @@ Put this in your vimrc:
 
 ```vim
 colorscheme gruvbox-material
+
+" for soft background
+colorscheme gruvbox-material-soft
+
+" for hard background
+colorscheme gruvbox-material-hard
 ```
 
 If you want to apply this color scheme temporarily, run this command in vim(this may cause color broken):
