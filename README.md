@@ -6,7 +6,7 @@
 
 # What's this?
 
-This is based on gruvbox, but with a very different color palette, almost foreground colors are adjusted.
+This is based on gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
 ![](https://user-images.githubusercontent.com/37491630/61586576-260edc00-ab67-11e9-87c1-8e71a16a7af5.png)
 
