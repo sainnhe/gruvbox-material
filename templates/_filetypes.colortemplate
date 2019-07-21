@@ -15,17 +15,17 @@ htmlScriptTag -> Purple
 htmlSpecialTagName -> Blue
 htmlSpecialChar -> Red
 
-htmlTagN                light           none
-htmlTag                 aqua            none            bold
-htmlEndTag              aqua            none            bold
-htmlLink                lightgrey       none            underline
-htmlBold                none            none            bold
-htmlBoldUnderline       none            none            bold,underline
-htmlBoldItalic          none            none            bold,italic
-htmlBoldUnderlineItalic none            none            bold,underline,italic
-htmlUnderline           none            none            underline
-htmlUnderlineItalic     none            none            underline,italic
-htmlItalic              none            none            italic
+htmlTagN light none
+htmlTag aqua none bold
+htmlEndTag aqua none bold
+htmlLink lightgrey none underline
+htmlBold none none bold
+htmlBoldUnderline none none bold,underline
+htmlBoldItalic none none bold,italic
+htmlBoldUnderlineItalic none none bold,underline,italic
+htmlUnderline none none underline
+htmlUnderlineItalic none none underline,italic
+htmlItalic none none italic
 # }}}
 # Xml: {{{
 xmlEqual -> Blue
@@ -43,21 +43,21 @@ xmlAttribPunct -> Grey
 xmlEntity -> Red
 xmlEntityPunct -> Red
 
-xmlTag                  aqua            none            bold
-xmlEndTag               aqua            none            bold
-xmlTagName              aqua            none            bold
-docbkKeyword            aqua            none            bold
+xmlTag aqua none bold
+xmlEndTag aqua none bold
+xmlTagName aqua none bold
+docbkKeyword aqua none bold
 # }}}
 # Vim: {{{
 vimNotation -> Orange
 vimBracket -> Orange
 vimMapModKey -> Orange
 
-vimFuncSID              lightgrey       none
-vimSetSep               lightgrey       none
-vimSep                  lightgrey       none
-vimContinue             lightgrey       none
-vimCommentTitle         lightgrey       none            bold,italic
+vimFuncSID lightgrey none
+vimSetSep lightgrey none
+vimSep lightgrey none
+vimContinue lightgrey none
+vimCommentTitle lightgrey none bold,italic
 # }}}
 # Clojure: {{{
 clojureKeyword -> Blue
@@ -81,8 +81,8 @@ clojureUnquote -> Yellow
 
 clojureRegexpMod -> clojureRegexpCharClass
 clojureRegexpQuantifier -> clojureRegexpCharClass
-clojureRegexpCharClass  grey            none            bold
-clojureParen            grey            none
+clojureRegexpCharClass grey none bold
+clojureParen grey none
 # }}}
 # C: {{{
 cOperator -> Purple
@@ -106,8 +106,8 @@ pythonBoolean -> Purple
 pythonConditional -> Red
 pythonRepeat -> Red
 
-pythonDottedName        green           none            bold
-pythonDot               grey            none
+pythonDottedName green none bold
+pythonDot grey none
 # }}}
 # CSS: {{{
 cssBraces -> Blue
@@ -139,7 +139,7 @@ cssDimensionProp -> Aqua
 cssRenderProp -> Aqua
 cssColorProp -> Aqua
 cssGeneratedContentProp -> Aqua
-cssVendor               light           none
+cssVendor light none
 # }}}
 # JavaScript: {{{
 javaScriptFunction -> Aqua
@@ -147,8 +147,8 @@ javaScriptIdentifier -> Red
 javaScriptMember -> Blue
 javaScriptNumber -> Purple
 javaScriptNull -> Purple
-javaScriptParens        grey            none
-javaScriptBraces        light           none
+javaScriptParens grey none
+javaScriptBraces light none
 # }}}
 # YAJS: {{{
 javascriptImport -> Aqua
@@ -242,7 +242,7 @@ jsNull -> Purple
 jsUndefined -> Purple
 jsClassDefinition -> Yellow
 
-jsObjectKey             green           none            bold
+jsObjectKey green none bold
 # }}}
 # TypeScript: {{{
 typescriptReserved -> Aqua
@@ -378,13 +378,13 @@ markdownHeadingDelimiter -> Orange
 markdownUrl -> Purple
 markdownUrlTitleDelimiter -> Green
 
-markdownH1              green           none            bold
-markdownH2              green           none            bold
-markdownH3              yellow          none            bold
-markdownH4              yellow          none            bold
+markdownH1 green none bold
+markdownH2 green none bold
+markdownH3 yellow none bold
+markdownH4 yellow none bold
 markdownIdDeclaration -> markdownLinkText
-markdownLinkText        lightgrey       none            underline
-markdownItalic          lightgrey       none            italic
+markdownLinkText lightgrey none underline
+markdownItalic lightgrey none italic
 # }}}
 # Haskell: {{{
 haskellType -> Blue
@@ -413,15 +413,15 @@ haskellPreProc lightgrey none
 haskellTypeForall -> Red
 haskellPatternKeyword -> Blue
 
-haskellBottom           red             none            bold
-haskellTH               aqua            none            bold
-haskellImportKeywords   purple          none            bold
-haskellPragma           red             none            bold
-haskellQuote            green           none            bold
-haskellShebang          yellow          none            bold
-haskellLiquid           purple          none            bold
-haskellQuasiQuoted      blue            none            bold
-haskellTypeRoles        red             none            bold
+haskellBottom red none bold
+haskellTH aqua none bold
+haskellImportKeywords purple none bold
+haskellPragma red none bold
+haskellQuote green none bold
+haskellShebang yellow none bold
+haskellLiquid purple none bold
+haskellQuasiQuoted blue none bold
+haskellTypeRoles red none bold
 # }}}
 # Json: {{{
 jsonKeyword -> Green
@@ -454,7 +454,7 @@ mailQuotedExp6 -> Orange
 # mailVerbatim -> Red
 
 # mail signature 
-mailSignature           light           none
+mailSignature light none
 
 # mail url and emails 
 mailURL -> Orange
@@ -469,8 +469,8 @@ csOpSymbols grey none
 csInterpolationDelimiter grey none
 csInterpolationFormat -> Aqua
 
-csInterpolationAlignDel aqua            none            bold
-csInterpolationFormatDel aqua           none            bold
+csInterpolationAlignDel aqua none bold
+csInterpolationFormatDel aqua none bold
 # }}}
 # Rust: {{{
 rustSigil -> Orange
@@ -480,6 +480,6 @@ rustEnum -> Aqua
 rustStructure -> Aqua
 rustDefault -> Aqua
 
-rustModPathSep          grey            none
-rustCommentLineDoc   -> Comment
+rustModPathSep grey none
+rustCommentLineDoc -> Comment
 # }}}
