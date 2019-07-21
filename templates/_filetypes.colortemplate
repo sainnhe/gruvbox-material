@@ -1,2 +1,485 @@
 # vim: ft=colortemplate fdm=marker cc=22
 
+# Diff{{{
+diffAdded -> Green
+diffRemoved -> Red
+diffChanged -> Aqua
+diffFile -> Orange
+diffNewFile -> Yellow
+diffLine -> Blue
+#}}}
+# Html: {{{
+htmlTagName -> Blue
+htmlArg -> Orange
+htmlScriptTag -> Purple
+htmlSpecialTagName -> Blue
+htmlSpecialChar -> Red
+
+htmlTagN                light           none
+htmlTag                 aqua            none            bold
+htmlEndTag              aqua            none            bold
+htmlLink                lightgrey       none            underline
+htmlBold                none            none            bold
+htmlBoldUnderline       none            none            bold,underline
+htmlBoldItalic          none            none            bold,italic
+htmlBoldUnderlineItalic none            none            bold,underline,italic
+htmlUnderline           none            none            underline
+htmlUnderlineItalic     none            none            underline,italic
+htmlItalic              none            none            italic
+# }}}
+# Xml: {{{
+xmlEqual -> Blue
+xmlDocTypeDecl -> Grey
+xmlDocTypeKeyword -> Purple
+xmlCdataStart -> Grey
+xmlCdataCdata -> Purple
+dtdFunction -> Grey
+dtdTagName -> Purple
+xmlAttrib -> Orange
+xmlProcessingDelim -> Grey
+dtdParamEntityPunct -> Grey
+dtdParamEntityDPunct -> Grey
+xmlAttribPunct -> Grey
+xmlEntity -> Red
+xmlEntityPunct -> Red
+
+xmlTag                  aqua            none            bold
+xmlEndTag               aqua            none            bold
+xmlTagName              aqua            none            bold
+docbkKeyword            aqua            none            bold
+# }}}
+# Vim: {{{
+vimNotation -> Orange
+vimBracket -> Orange
+vimMapModKey -> Orange
+
+vimFuncSID              lightgrey       none
+vimSetSep               lightgrey       none
+vimSep                  lightgrey       none
+vimContinue             lightgrey       none
+vimCommentTitle         lightgrey       none            bold,italic
+# }}}
+# Clojure: {{{
+clojureKeyword -> Blue
+clojureCond -> Orange
+clojureSpecial -> Orange
+clojureDefine -> Orange
+clojureFunc -> Yellow
+clojureRepeat -> Yellow
+clojureCharacter -> Aqua
+clojureStringEscape -> Aqua
+clojureException -> Red
+clojureRegexp -> Aqua
+clojureRegexpEscape -> Aqua
+clojureAnonArg -> Yellow
+clojureVariable -> Blue
+clojureMacro -> Orange
+clojureMeta -> Yellow
+clojureDeref -> Yellow
+clojureQuote -> Yellow
+clojureUnquote -> Yellow
+
+clojureRegexpMod -> clojureRegexpCharClass
+clojureRegexpQuantifier -> clojureRegexpCharClass
+clojureRegexpCharClass  grey            none            bold
+clojureParen            grey            none
+# }}}
+# C: {{{
+cOperator -> Purple
+cppOperator -> Purple
+cStructure -> Orange
+# }}}
+# Python: {{{
+pythonBuiltin -> Orange
+pythonBuiltinObj -> Orange
+pythonBuiltinFunc -> Orange
+pythonFunction -> Aqua
+pythonDecorator -> Red
+pythonInclude -> Blue
+pythonImport -> Blue
+pythonRun -> Blue
+pythonCoding -> Blue
+pythonOperator -> Red
+pythonException -> Red
+pythonExceptions -> Purple
+pythonBoolean -> Purple
+pythonConditional -> Red
+pythonRepeat -> Red
+
+pythonDottedName        green           none            bold
+pythonDot               grey            none
+# }}}
+# CSS: {{{
+cssBraces -> Blue
+cssFunctionName -> Yellow
+cssIdentifier -> Orange
+cssClassName -> Green
+cssColor -> Blue
+cssSelectorOp -> Blue
+cssSelectorOp2 -> Blue
+cssImportant -> Green
+cssTextProp -> Aqua
+cssAnimationProp -> Aqua
+cssUIProp -> Yellow
+cssTransformProp -> Aqua
+cssTransitionProp -> Aqua
+cssPrintProp -> Aqua
+cssPositioningProp -> Yellow
+cssBoxProp -> Aqua
+cssFontDescriptorProp -> Aqua
+cssFlexibleBoxProp -> Aqua
+cssBorderOutlineProp -> Aqua
+cssBackgroundProp -> Aqua
+cssMarginProp -> Aqua
+cssListProp -> Aqua
+cssTableProp -> Aqua
+cssFontProp -> Aqua
+cssPaddingProp -> Aqua
+cssDimensionProp -> Aqua
+cssRenderProp -> Aqua
+cssColorProp -> Aqua
+cssGeneratedContentProp -> Aqua
+cssVendor               light           none
+# }}}
+# JavaScript: {{{
+javaScriptFunction -> Aqua
+javaScriptIdentifier -> Red
+javaScriptMember -> Blue
+javaScriptNumber -> Purple
+javaScriptNull -> Purple
+javaScriptParens        grey            none
+javaScriptBraces        light           none
+# }}}
+# YAJS: {{{
+javascriptImport -> Aqua
+javascriptExport -> Aqua
+javascriptClassKeyword -> Aqua
+javascriptClassExtends -> Aqua
+javascriptDefault -> Aqua
+javascriptClassName -> Yellow
+javascriptClassSuperName -> Yellow
+javascriptGlobal -> Yellow
+javascriptEndColons light none
+javascriptFuncArg light none
+javascriptGlobalMethod light none
+javascriptNodeGlobal light none
+javascriptBOMWindowProp light none
+javascriptArrayMethod light none
+javascriptArrayStaticMethod light none
+javascriptCacheMethod light none
+javascriptDateMethod light none
+javascriptMathStaticMethod light none
+
+# javascriptProp light none
+javascriptURLUtilsProp light none
+javascriptBOMNavigatorProp light none
+javascriptDOMDocMethod light none
+javascriptDOMDocProp light none
+javascriptBOMLocationMethod light none
+javascriptBOMWindowMethod light none
+javascriptStringMethod light none
+
+javascriptVariable -> Orange
+# javascriptVariable -> Red
+# javascriptIdentifier -> Orange
+# javascriptClassSuper -> Orange
+javascriptIdentifier -> Orange
+javascriptClassSuper -> Orange
+
+# javascriptFuncKeyword -> Orange
+# javascriptAsyncFunc -> Orange
+javascriptFuncKeyword -> Aqua
+javascriptAsyncFunc -> Aqua
+javascriptClassStatic -> Orange
+
+javascriptOperator -> Red
+javascriptForOperator -> Red
+javascriptYield -> Red
+javascriptExceptions -> Red
+javascriptMessage -> Red
+
+javascriptTemplateSB -> Aqua
+javascriptTemplateSubstitution light none
+
+# javascriptLabel -> Blue
+# javascriptObjectLabel -> Blue
+# javascriptPropertyName -> Blue
+javascriptLabel light none
+javascriptObjectLabel light none
+javascriptPropertyName light none
+
+javascriptLogicSymbols light none
+javascriptArrowFunc -> Yellow
+
+javascriptDocParamName lightgrey none
+javascriptDocTags lightgrey none
+javascriptDocNotation lightgrey none
+javascriptDocParamType lightgrey none
+javascriptDocNamedParamType lightgrey none
+
+javascriptBrackets light none
+javascriptDOMElemAttrs light none
+javascriptDOMEventMethod light none
+javascriptDOMNodeMethod light none
+javascriptDOMStorageMethod light none
+javascriptHeadersMethod light none
+
+javascriptAsyncFuncKeyword -> Red
+javascriptAwaitFuncKeyword -> Red
+# }}}
+# PanglossJS: {{{
+jsClassKeyword -> Aqua
+jsExtendsKeyword -> Aqua
+jsExportDefault -> Aqua
+jsTemplateBraces -> Aqua
+jsGlobalNodeObjects -> Blue
+jsGlobalObjects -> Blue
+jsFunction -> Aqua
+jsFuncCall -> Blue
+jsFuncParens grey none
+jsParens grey none
+jsNull -> Purple
+jsUndefined -> Purple
+jsClassDefinition -> Yellow
+
+jsObjectKey             green           none            bold
+# }}}
+# TypeScript: {{{
+typescriptReserved -> Aqua
+typescriptLabel -> Aqua
+typescriptFuncKeyword -> Aqua
+typescriptIdentifier -> Orange
+typescriptBraces light none
+typescriptEndColons light none
+typescriptDOMObjects light none
+typescriptAjaxMethods light none
+typescriptLogicSymbols light none
+typescriptGlobalObjects light none
+typescriptParens grey none
+typescriptOpSymbols grey none
+typescriptHtmlElemProperties light none
+typescriptNull -> Purple
+typescriptInterpolationDelimiter -> Aqua
+typescriptDocSeeTag -> Comment
+typescriptDocParam -> Comment
+typescriptDocTags -> vimCommentTitle
+# }}}
+# JSX: maxmellon/vim-jsx-pretty: {{{
+jsxTagName -> Aqua
+jsxComponentName -> Green
+jsxCloseString lightgrey none
+jsxAttrib -> Yellow
+jsxEqual -> Aqua
+#}}}
+# PureScript: {{{
+purescriptModuleKeyword -> Aqua
+purescriptModuleName light none
+purescriptWhere -> Aqua
+purescriptDelimiter lightgrey none
+purescriptType light none
+purescriptImportKeyword -> Aqua
+purescriptHidingKeyword -> Aqua
+purescriptAsKeyword -> Aqua
+purescriptStructure -> Aqua
+purescriptOperator -> Blue
+purescriptTypeVar light none
+purescriptConstructor light none
+purescriptFunction light none
+purescriptConditional -> Orange
+purescriptBacktick -> Orange
+# }}}
+# CoffeeScript: {{{
+coffeeExtendedOp grey none
+coffeeSpecialOp grey none
+coffeeCurly -> Orange
+coffeeParen grey none
+coffeeBracket -> Orange
+# }}}
+# Ruby: {{{
+rubyStringDelimiter -> Green
+rubyInterpolationDelimiter -> Aqua
+# }}}
+# ObjectiveC: {{{
+objcTypeModifier -> Red
+objcDirective -> Blue
+# }}}
+# Go: {{{
+goDirective -> Aqua
+goConstants -> Purple
+goDeclaration -> Red
+goDeclType -> Blue
+goBuiltins -> Orange
+# }}}
+# Lua: {{{
+luaIn -> Red
+luaFunction -> Aqua
+luaTable -> Orange
+# }}}
+# MoonScript: {{{
+moonSpecialOp grey none
+moonExtendedOp grey none
+moonFunction grey none
+moonObject -> Yellow
+# }}}
+# Java: {{{
+javaAnnotation -> Blue
+javaDocTags -> Aqua
+javaParen grey none
+javaParen1 grey none
+javaParen2 grey none
+javaParen3 grey none
+javaParen4 grey none
+javaParen5 grey none
+javaOperator -> Orange
+javaVarArg -> Green
+
+javaCommentTitle -> vimCommentTitle
+# }}}
+# Elixir: {{{
+elixirStringDelimiter -> Green
+elixirInterpolationDelimiter -> Aqua
+elixirModuleDeclaration -> Yellow
+
+elixirDocString -> Comment
+# }}}
+# Scala: {{{
+scalaNameDefinition light none
+scalaCaseFollowing light none
+scalaCapitalWord light none
+scalaTypeExtension light none
+
+scalaKeyword -> Red
+scalaKeywordModifier -> Red
+
+scalaSpecial -> Aqua
+scalaOperator light none
+
+scalaTypeDeclaration -> Yellow
+scalaTypeTypePostDeclaration -> Yellow
+
+scalaInstanceDeclaration light none
+scalaInterpolation -> Aqua
+# }}}
+# Markdown: {{{
+markdownH5 -> Yellow
+markdownH6 -> Yellow
+markdownCode -> Aqua
+markdownCodeBlock -> Aqua
+markdownCodeDelimiter -> Aqua
+markdownBlockquote -> Grey
+markdownListMarker -> Grey
+markdownOrderedListMarker -> Grey
+markdownRule -> Grey
+markdownHeadingRule -> Grey
+markdownUrlDelimiter grey none
+markdownLinkDelimiter grey none
+markdownLinkTextDelimiter grey none
+markdownHeadingDelimiter -> Orange
+markdownUrl -> Purple
+markdownUrlTitleDelimiter -> Green
+
+markdownH1              green           none            bold
+markdownH2              green           none            bold
+markdownH3              yellow          none            bold
+markdownH4              yellow          none            bold
+markdownIdDeclaration -> markdownLinkText
+markdownLinkText        lightgrey       none            underline
+markdownItalic          lightgrey       none            italic
+# }}}
+# Haskell: {{{
+haskellType -> Blue
+haskellIdentifier -> Aqua
+haskellSeparator lightgrey none
+haskellDelimiter -> Orange
+haskellOperators -> Purple
+haskellBacktick -> Orange
+haskellStatement -> Purple
+haskellConditional -> Purple
+haskellLet -> Red
+haskellDefault -> Red
+haskellWhere -> Red
+haskellDeclKeyword -> Orange
+haskellDecl -> Orange
+haskellDeriving -> Purple
+haskellAssocType -> Aqua
+haskellNumber -> Aqua
+haskellForeignKeywords -> Green
+haskellKeyword -> Red
+haskellFloat -> Aqua
+haskellInfix -> Purple
+haskellRecursiveDo -> Purlpe
+haskellQuotedType -> Red
+haskellPreProc lightgrey none
+haskellTypeForall -> Red
+haskellPatternKeyword -> Blue
+
+haskellBottom           red             none            bold
+haskellTH               aqua            none            bold
+haskellImportKeywords   purple          none            bold
+haskellPragma           red             none            bold
+haskellQuote            green           none            bold
+haskellShebang          yellow          none            bold
+haskellLiquid           purple          none            bold
+haskellQuasiQuoted      blue            none            bold
+haskellTypeRoles        red             none            bold
+# }}}
+# Json: {{{
+jsonKeyword -> Green
+jsonQuote -> Green
+jsonBraces light none
+jsonString light none
+# }}}
+# Mail: {{{
+# mail header
+mailHeader -> Blue
+mailHeaderKey -> Blue
+mailHeaderEmail -> Blue
+mailSubject -> Blue
+
+# mail quoted text 
+mailQuoted1 -> Aqua
+mailQuoted2 -> Purple
+mailQuoted3 -> Yellow
+mailQuoted4 -> Green
+mailQuoted5 -> Red
+mailQuoted6 -> Orange
+
+mailQuotedExp1 -> Aqua
+mailQuotedExp2 -> Purple
+mailQuotedExp3 -> Yellow
+mailQuotedExp4 -> Green
+mailQuotedExp5 -> Red
+mailQuotedExp6 -> Orange
+
+# mailVerbatim -> Red
+
+# mail signature 
+mailSignature           light           none
+
+# mail url and emails 
+mailURL -> Orange
+mailEmail -> Orange
+# }}}
+# C#: {{{
+csBraces light none
+csEndColon light none
+csLogicSymbols light none
+csParens grey none
+csOpSymbols grey none
+csInterpolationDelimiter grey none
+csInterpolationFormat -> Aqua
+
+csInterpolationAlignDel aqua            none            bold
+csInterpolationFormatDel aqua           none            bold
+# }}}
+# Rust: {{{
+rustSigil -> Orange
+rustEscape -> Aqua
+rustStringContinuation -> Aqua
+rustEnum -> Aqua
+rustStructure -> Aqua
+rustDefault -> Aqua
+
+rustModPathSep          grey            none
+rustCommentLineDoc   -> Comment
+# }}}
