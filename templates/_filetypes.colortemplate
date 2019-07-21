@@ -354,11 +354,11 @@ markdownLinkTextDelimiter -> Grey
 markdownHeadingDelimiter -> Orange
 markdownUrl -> Purple
 markdownUrlTitleDelimiter -> Green
-markdownH1 -> GreenBold
-markdownH2 -> GreenBold
-markdownH3 -> YellowBold
-markdownH4 -> YellowBold
 markdownIdDeclaration -> markdownLinkText
+markdownH1 green none bold
+markdownH2 green none bold
+markdownH3 yellow none bold
+markdownH4 yellow none bold
 markdownLinkText lightgrey none underline
 markdownItalic lightgrey none italic
 # }}}
