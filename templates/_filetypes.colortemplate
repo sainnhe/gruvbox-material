@@ -17,14 +17,6 @@ htmlSpecialChar -> Red
 htmlTagN -> White
 htmlTag -> AquaBold
 htmlEndTag -> AquaBold
-htmlLink lightgrey none underline
-htmlBold none none bold
-htmlBoldUnderline none none bold,underline
-htmlBoldItalic none none bold,italic
-htmlBoldUnderlineItalic none none bold,underline,italic
-htmlUnderline none none underline
-htmlUnderlineItalic none none underline,italic
-htmlItalic none none italic
 # }}}
 # Xml: {{{
 xmlEqual -> Blue
@@ -54,7 +46,6 @@ vimFuncSID -> LightGrey
 vimSetSep -> LightGrey
 vimSep -> LightGrey
 vimContinue -> LightGrey
-vimCommentTitle lightgrey none bold,italic
 # }}}
 # Clojure: {{{
 clojureKeyword -> Blue
@@ -355,12 +346,6 @@ markdownHeadingDelimiter -> Orange
 markdownUrl -> Purple
 markdownUrlTitleDelimiter -> Green
 markdownIdDeclaration -> markdownLinkText
-markdownH1 green none bold
-markdownH2 green none bold
-markdownH3 yellow none bold
-markdownH4 yellow none bold
-markdownLinkText lightgrey none underline
-markdownItalic lightgrey none italic
 # }}}
 # Haskell: {{{
 haskellType -> Blue
