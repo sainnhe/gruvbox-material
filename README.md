@@ -88,6 +88,7 @@ As mentioned above, I will try to keep the extended highlight groups consistent 
 # Related Project
 
 - [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
+- [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
 
 # License
 
