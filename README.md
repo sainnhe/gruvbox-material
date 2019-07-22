@@ -24,6 +24,8 @@ Although the palette is different, I will try to keep the extended highlight gro
 
 # Installation
 
+## Via Plugin Manager
+
 Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 
 ```vim
@@ -31,6 +33,13 @@ Plug 'sainnhe/gruvbox-material'
 ```
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
+
+## Manually
+
+1. Clone this repository.
+2. Copy `/path/to/gruvbox-material/colors/gruvbox-material*.vim` to `~/.vim/colors/`
+3. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim` to `~/.vim/autoload/airline/themes/gruvbox_material.vim`
+4. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` to `~/.vim/autoload/lightline/colorscheme/gruvbox_material.vim`
 
 # Usage
 
@@ -48,7 +57,7 @@ colorscheme gruvbox-material-soft
 colorscheme gruvbox-material-hard
 ```
 
-If you want to apply this color scheme temporarily, run this command in vim(this may cause color broken):
+If you want to apply this color scheme temporarily, run this command in vim(**this may cause color broken**):
 
 ```vim
 :colorscheme gruvbox-material
