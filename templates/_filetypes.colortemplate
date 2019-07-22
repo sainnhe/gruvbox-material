@@ -1,5 +1,8 @@
 # vim: ft=colortemplate fdm=marker cc=22
 
+# Note: non-link highlight groups should be put in _filetypes_non_link.colortemplate
+# This is for better loading time.
+
 # Diff{{{
 diffAdded -> Green
 diffRemoved -> Red
