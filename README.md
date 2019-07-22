@@ -1,6 +1,6 @@
 |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                 𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                  |
 | :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
-| ![origin](https://user-images.githubusercontent.com/37491630/61659102-426d5e80-acb6-11e9-8e61-057d2c5668ff.png) | ![material](https://user-images.githubusercontent.com/37491630/61659107-44cfb880-acb6-11e9-8875-89799072a4a2.png) |
+| ![origin](https://user-images.githubusercontent.com/37491630/61671215-211c6a80-acd6-11e9-82fa-8d5bd0b4247e.png) | ![material](https://user-images.githubusercontent.com/37491630/61671216-237ec480-acd6-11e9-907f-468cc5a4c152.png) |
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
