@@ -2,7 +2,7 @@
 | :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
 | ![origin](https://user-images.githubusercontent.com/37491630/61659102-426d5e80-acb6-11e9-8e61-057d2c5668ff.png) | ![material](https://user-images.githubusercontent.com/37491630/61659107-44cfb880-acb6-11e9-8875-89799072a4a2.png) |
 
-Gruvbox Material is based on gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
+Gruvbox Material is based on Gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
 Although the palette is different, I will try to keep the extended highlight groups consistent with [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
 
