@@ -54,6 +54,20 @@ If you want to apply this color scheme temporarily, run this command in vim(this
 :colorscheme gruvbox-material
 ```
 
+## Airline
+
+To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, put this in your vimrc:
+
+```vim
+let g:airline_theme = 'gruvbox_material'
+```
+
+To apply it without reloading:
+
+```vim
+:AirlineTheme gruvbox_material
+```
+
 ## Lightline
 
 To enable [lightline](https://github.com/itchyny/lightline.vim) color scheme, put this in your vimrc:
