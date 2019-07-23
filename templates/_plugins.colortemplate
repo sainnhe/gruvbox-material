@@ -130,6 +130,11 @@ ALEInfo none none t=underline g=undercurl s=blue
 ALEErrorSign red dark1
 ALEWarningSign yellow dark1
 ALEInfoSign blue dark1
+ALEVirtualTextError -> Grey
+ALEVirtualTextWarning -> Grey
+ALEVirtualTextInfo -> Grey
+ALEVirtualTextStyleError            -> ALEVirtualTextError
+ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
 # }}}
 # Dirvish {{{
 DirvishPathTail -> Aqua
@@ -168,3 +173,24 @@ NERDTreeToggleOff -> Red
 multiple_cursors_cursor none none reverse
 multiple_cursors_visual none dark2
 # }}}
+# CoC{{{
+CocHighlightText        none              none              bold
+CocCodeLens          -> Grey
+CocErrorSign         -> ALEErrorSign
+CocWarningSign       -> ALEWarningSign
+CocInfoSign          -> ALEInfoSign
+CocHintSign          -> Label
+CocErrorHighlight    -> ALEError
+CocWarningHighlight  -> ALEWarning
+CocInfoHighlight     -> ALEInfo
+CocWarningVirtualText -> ALEVirtualTextWarning
+CocErrorVirtualText  -> ALEVirtualTextError
+CocInfoVirtualText   -> ALEVirtualTextInfo
+CocHintVirtualText   -> ALEVirtualTextInfo
+CocCodeLens          -> ALEVirtualTextInfo
+#}}}
+# vim-matchup{{{
+MatchParenCur           none            none            bold
+MatchWord               none            none            underline
+MatchWordCur            none            none            underline
+#}}}
