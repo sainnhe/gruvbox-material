@@ -6,8 +6,6 @@ Gruvbox Material is based on Gruvbox, but with a very different color palette, a
 
 Although the palette is different, its extended highlight groups are based on gruvbox, and I will periodically merge changes from [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
 
-In addition, I made some personal adjustments to this color scheme, and I encourage you to do the same. If you feel that some highlight groups are illogical, or you want to optimize a file type or a plugin, **feel free to open a PR** :)
-
 # Installation
 
 ## Via Plugin Manager

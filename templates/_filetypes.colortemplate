@@ -334,11 +334,11 @@ scalaInterpolation -> Aqua
 # Markdown: {{{
 markdownH5 -> Yellow
 markdownH6 -> Yellow
-markdownCode -> Aqua
+markdownCode -> Green
 markdownCodeBlock -> Aqua
 markdownCodeDelimiter -> Aqua
 markdownBlockquote -> Grey
-markdownListMarker -> Grey
+markdownListMarker -> Red
 markdownOrderedListMarker -> Grey
 markdownRule -> Grey
 markdownHeadingRule -> Grey
@@ -349,6 +349,16 @@ markdownHeadingDelimiter -> Orange
 markdownUrl -> Purple
 markdownUrlTitleDelimiter -> Green
 markdownIdDeclaration -> markdownLinkText
+markdownBoldDelimiter -> Grey
+markdownItalicDelimiter -> Grey
+mkdBold -> Grey
+mkdItalic -> Grey
+mkdURL -> Purple
+mkdCodeDelimiter -> Aqua
+mkdHeading -> Orange
+mkdListItem -> Red
+mkdDelimiter -> Grey
+mkdId -> Yellow
 # }}}
 # Haskell: {{{
 haskellType -> Blue
