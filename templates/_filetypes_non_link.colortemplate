@@ -21,6 +21,8 @@ markdownH4 yellow none bold
 markdownLinkText aqua none underline
 markdownItalic none none italic
 markdownBold none none bold
+markdownItalicDelimiter grey none italic
 mkdLink aqua none underline
 mkdInlineURL purple none underline
+mkdItalic grey none italic
 # }}}

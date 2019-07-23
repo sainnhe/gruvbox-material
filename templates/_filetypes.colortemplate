@@ -350,9 +350,7 @@ markdownUrl -> Purple
 markdownUrlTitleDelimiter -> Green
 markdownIdDeclaration -> markdownLinkText
 markdownBoldDelimiter -> Grey
-markdownItalicDelimiter -> Grey
 mkdBold -> Grey
-mkdItalic -> Grey
 mkdURL -> Purple
 mkdCodeDelimiter -> Aqua
 mkdHeading -> Orange
