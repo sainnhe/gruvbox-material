@@ -36,6 +36,8 @@ There is a package available for Arch Linux users in AUR: [gruvbox-material-git]
 Put this in your vimrc:
 
 ```vim
+set termguicolors
+
 colorscheme gruvbox-material
 
 " for soft background
