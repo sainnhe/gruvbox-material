@@ -103,7 +103,7 @@ As mentioned above, I will periodically merge changes from [gruvbox-community/gr
 
 - [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
 - [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
-- [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/06c2ccd3294b19736b98d9f224fa47475770ce35/.zsh-theme)
+- [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/735f561e814e7901508d6bed569646d0c0fe3ab0/.zsh-theme)
 
 # License
 
