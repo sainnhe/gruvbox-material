@@ -72,7 +72,7 @@ clojureUnquote -> Yellow
 clojureRegexpMod -> clojureRegexpCharClass
 clojureRegexpQuantifier -> clojureRegexpCharClass
 clojureRegexpCharClass -> GreyBold
-clojureParen -> Grey
+clojureParen -> White
 # }}}
 # C: {{{
 cOperator -> Purple
@@ -136,7 +136,7 @@ javaScriptIdentifier -> Red
 javaScriptMember -> Blue
 javaScriptNumber -> Purple
 javaScriptNull -> Purple
-javaScriptParens -> Grey
+javaScriptParens -> White
 javaScriptBraces -> White
 # }}}
 # YAJS: {{{
@@ -214,8 +214,8 @@ jsGlobalNodeObjects -> Blue
 jsGlobalObjects -> Blue
 jsFunction -> Aqua
 jsFuncCall -> Blue
-jsFuncParens -> Grey
-jsParens -> Grey
+jsFuncParens -> White
+jsParens -> White
 jsNull -> Purple
 jsUndefined -> Purple
 jsClassDefinition -> Yellow
@@ -232,7 +232,7 @@ typescriptDOMObjects -> White
 typescriptAjaxMethods -> White
 typescriptLogicSymbols -> White
 typescriptGlobalObjects -> White
-typescriptParens -> Grey
+typescriptParens -> White
 typescriptOpSymbols -> Grey
 typescriptHtmlElemProperties -> White
 typescriptNull -> Purple
@@ -269,7 +269,7 @@ purescriptBacktick -> Orange
 coffeeExtendedOp -> Grey
 coffeeSpecialOp -> Grey
 coffeeCurly -> Orange
-coffeeParen -> Grey
+coffeeParen -> White
 coffeeBracket -> Orange
 # }}}
 # Ruby: {{{
@@ -295,18 +295,18 @@ luaTable -> Orange
 # MoonScript: {{{
 moonSpecialOp -> Grey
 moonExtendedOp -> Grey
-moonFunction -> Grey
+moonFunction -> White
 moonObject -> Yellow
 # }}}
 # Java: {{{
 javaAnnotation -> Blue
 javaDocTags -> Aqua
-javaParen -> Grey
-javaParen1 -> Grey
-javaParen2 -> Grey
-javaParen3 -> Grey
-javaParen4 -> Grey
-javaParen5 -> Grey
+javaParen -> White
+javaParen1 -> White
+javaParen2 -> White
+javaParen3 -> White
+javaParen4 -> White
+javaParen5 -> White
 javaOperator -> Orange
 javaVarArg -> Green
 javaCommentTitle -> vimCommentTitle
@@ -426,7 +426,7 @@ mailEmail -> Orange
 csBraces -> White
 csEndColon -> White
 csLogicSymbols -> White
-csParens -> Grey
+csParens -> White
 csOpSymbols -> Grey
 csInterpolationDelimiter -> Grey
 csInterpolationFormat -> Aqua
