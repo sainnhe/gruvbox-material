@@ -1,6 +1,8 @@
-|                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                 𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                  |
-| :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
-| ![origin](https://user-images.githubusercontent.com/37491630/61671215-211c6a80-acd6-11e9-82fa-8d5bd0b4247e.png) | ![material](https://user-images.githubusercontent.com/37491630/61671216-237ec480-acd6-11e9-907f-468cc5a4c152.png) |
+|                                                         𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                          |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                     |
+| :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+|  ![original-hard](https://user-images.githubusercontent.com/37491630/61801994-4072df00-ae1f-11e9-8a3a-cc806393f460.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/61801988-3e108500-ae1f-11e9-8050-cd02f389000f.png)  |
+| ![original-medium](https://user-images.githubusercontent.com/37491630/61802005-45379300-ae1f-11e9-91bb-012e058eb906.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/61801999-42d53900-ae1f-11e9-922f-5a0cc0387021.png) |
+|  ![original-soft](https://user-images.githubusercontent.com/37491630/61801978-3bae2b00-ae1f-11e9-9b7b-33105484be47.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/61801974-39e46780-ae1f-11e9-9d38-208ab2188938.png)  |
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
@@ -89,9 +91,9 @@ To apply it without reloading:
 
 # Customization
 
-- By default, italic is enabled. To disable italic, add `let g:gruvbox_material_kill_italic=1` to your vimrc.
-- By default, bold is partly enabled. To completely enable bold, add `let g:gruvbox_material_enable_bold=1` to your vimrc.
-- By default, bold is enabled in lightline color scheme. To disable bold in lightline color scheme, add `let g:gruvbox_material_lightline_kill_bold=1` to your vimrc.
+-   By default, italic is enabled. To disable italic, add `let g:gruvbox_material_kill_italic=1` to your vimrc.
+-   By default, bold is partly enabled. To completely enable bold, add `let g:gruvbox_material_enable_bold=1` to your vimrc.
+-   By default, bold is enabled in lightline color scheme. To disable bold in lightline color scheme, add `let g:gruvbox_material_lightline_kill_bold=1` to your vimrc.
 
 # Contribution
 
@@ -101,9 +103,9 @@ As mentioned above, I will periodically merge changes from [gruvbox-community/gr
 
 # Related Projects
 
-- [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
-- [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
-- [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/735f561e814e7901508d6bed569646d0c0fe3ab0/.zsh-theme)
+-   [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
+-   [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
+-   [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/735f561e814e7901508d6bed569646d0c0fe3ab0/.zsh-theme)
 
 # License
 
