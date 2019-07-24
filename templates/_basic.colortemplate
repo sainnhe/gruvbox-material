@@ -66,6 +66,7 @@ StatusLineTerm          dark2           light           reverse
 StatusLineTermNC        dark0           lightgrey       reverse
 
 # Syntax
+Title                   green           none            bold
 Conditional             red             none
 Repeat                  red             none
 Label                   red             none
@@ -99,11 +100,9 @@ SpecialComment          grey            none            italic
 Ignore                  light           none
 #if get(g:, 'gruvbox_material_enable_bold', 0)
     Error                   red             dark0           bold,reverse
-    Title                   green           none            bold
     Function                green           none            bold
 #else
     Error                   red             dark0           reverse
-    Title                   green           none
     Function                green           none
 #endif
 SpecialChar          -> Special
