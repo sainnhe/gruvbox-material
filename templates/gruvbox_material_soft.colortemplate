@@ -13,6 +13,8 @@ Neovim:                 yes
 
 Include: _filetypes
 
+Include: _plugins
+
 Background:             dark
 
 Include: _palette_soft
@@ -23,6 +25,6 @@ Include: _basic
 
 Include: _filetypes_non_link
 
-Include: _plugins
+Include: _plugins_non_link
 
 Include: _bw
