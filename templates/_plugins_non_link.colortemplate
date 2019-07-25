@@ -2,7 +2,7 @@
 
 # Indent Guides {{{
 #if get(g:, 'indent_guides_auto_colors', 0)
- #if get(g: '@optionprefix_invert_indent_guides', 0)
+ #if get(g:, '@optionprefix_invert_indent_guides', 0)
  IndentGuidesOdd dark0 dark2 reverse
  IndentGuidesEven dark0 dark1 reverse
  #else
