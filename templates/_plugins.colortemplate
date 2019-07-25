@@ -93,8 +93,23 @@ CtrlPMode1 blue dark2 bold
 CtrlPMode2 dark0 blue bold
 CtrlPStats lightgrey dark2 bold
 # }}}
-# FZF (help wanted){{{
-
+# FZF {{{
+verbatim
+let g:fzf_colors = {
+      \ 'fg':      ['fg', 'Normal'],
+      \ 'bg':      ['bg', 'Normal'],
+      \ 'hl':      ['fg', 'Green'],
+      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':     ['fg', 'Green'],
+      \ 'info':    ['fg', 'Aqua'],
+      \ 'prompt':  ['fg', 'Red'],
+      \ 'pointer': ['fg', 'Blue'],
+      \ 'marker':  ['fg', 'Orange'],
+      \ 'spinner': ['fg', 'Yellow'],
+      \ 'header':  ['fg', 'Grey']
+      \ }
+endverbatim
 #}}}
 # Startify {{{
 StartifyBracket -> LightGrey
