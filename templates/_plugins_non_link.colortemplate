@@ -81,6 +81,9 @@ CtrlPMode1 blue dark2 bold
 CtrlPMode2 dark0 blue bold
 CtrlPStats lightgrey dark2 bold
 # }}}
+# LeaderF {{{
+Lf_hl_match green none bold
+#}}}
 # Startify {{{
 StartifySpecial dark2 none
 StartifyFooter dark2 none
