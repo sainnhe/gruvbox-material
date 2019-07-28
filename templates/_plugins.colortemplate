@@ -10,6 +10,7 @@ plugName -> Green
 plugH2 -> Purple
 plugError -> Red
 plugNotLoaded -> Grey
+plugRelDate -> Grey
 #}}}
 # EasyMotion: {{{
 EasyMotionTarget -> Search
