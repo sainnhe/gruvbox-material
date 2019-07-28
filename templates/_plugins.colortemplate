@@ -75,8 +75,8 @@ netrwCmdSep -> LightGrey
 netrwVersion -> Green
 # }}}
 # NERDTree {{{
-NERDTreeDir -> Aqua
-NERDTreeDirSlash -> Aqua
+NERDTreeDir -> Green
+NERDTreeDirSlash -> Green
 
 NERDTreeOpenable -> Orange
 NERDTreeClosable -> Orange
@@ -85,11 +85,15 @@ NERDTreeFile -> White
 NERDTreeExecFile -> Yellow
 
 NERDTreeUp -> Grey
-NERDTreeCWD -> Green
+NERDTreeCWD -> Aqua
 NERDTreeHelp -> LightGrey
 
 NERDTreeToggleOn -> Green
 NERDTreeToggleOff -> Red
+
+NERDTreeFlags -> Orange
+NERDTreeLinkFile -> Grey
+NERDTreeLinkTarget -> Green
 # }}}
 # ALE {{{
 ALEVirtualTextError -> Grey
