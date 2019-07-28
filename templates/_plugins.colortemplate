@@ -64,16 +64,16 @@ DirvishPathTail -> Aqua
 DirvishArg -> Yellow
 # }}}
 # Netrw {{{
-netrwDir -> Aqua
-netrwClassify -> Aqua
+netrwDir -> Green
+netrwClassify -> Green
 netrwLink -> Grey
 netrwSymLink -> White
 netrwExe -> Yellow
 netrwComment -> Grey
-netrwList -> Blue
-netrwHelpCmd -> Aqua
+netrwList -> Aqua
+netrwHelpCmd -> Blue
 netrwCmdSep -> LightGrey
-netrwVersion -> Green
+netrwVersion -> Orange
 # }}}
 # NERDTree {{{
 NERDTreeDir -> Green
