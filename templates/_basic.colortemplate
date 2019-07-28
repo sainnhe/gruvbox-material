@@ -94,7 +94,7 @@ Boolean                 purple          none
 Character               purple          none
 Number                  purple          none
 Float                   purple          none
-SpecialKey              dark2           none
+SpecialKey              blue            none
 Comment                 grey            none            italic
 SpecialComment          grey            none            italic
 Ignore                  light           none
