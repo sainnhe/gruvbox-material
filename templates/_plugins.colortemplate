@@ -33,6 +33,13 @@ let g:fzf_colors = {
       \ }
 endverbatim
 #}}}
+# LeaderF{{{
+verbatim
+if !exists('g:Lf_StlColorscheme')
+    let g:Lf_StlColorscheme = 'gruvbox_material'
+endif
+endverbatim
+#}}}
 # Startify {{{
 StartifyBracket -> LightGrey
 StartifyFile -> White
