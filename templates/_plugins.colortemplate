@@ -118,3 +118,11 @@ CocInfoVirtualText   -> ALEVirtualTextInfo
 CocHintVirtualText   -> ALEVirtualTextInfo
 CocCodeLens          -> ALEVirtualTextInfo
 #}}}
+# QuickMenu{{{
+QuickmenuOption -> Green
+QuickmenuNumber -> Yellow
+QuickmenuBracket -> Grey
+QuickmenuHelp -> Blue
+QuickmenuSpecial -> Purple
+QuickmenuHeader -> Orange
+#}}}
