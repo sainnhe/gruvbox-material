@@ -49,13 +49,14 @@ endif
 endverbatim
 #}}}
 # Startify {{{
-StartifyBracket -> LightGrey
+StartifyBracket -> Grey
 StartifyFile -> White
-StartifyNumber -> Blue
-StartifyPath -> Grey
-StartifySlash -> Grey
-StartifySection -> Yellow
+StartifyNumber -> Yellow
+StartifyPath -> Green
+StartifySlash -> Green
+StartifySection -> Aqua
 StartifyHeader -> Orange
+StartifySpecial -> Grey
 # }}}
 # Dirvish {{{
 DirvishPathTail -> Aqua

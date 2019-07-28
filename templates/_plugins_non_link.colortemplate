@@ -89,8 +89,7 @@ CtrlPStats lightgrey dark2 bold
 Lf_hl_match green none bold
 #}}}
 # Startify {{{
-StartifySpecial dark2 none
-StartifyFooter dark2 none
+StartifyFooter grey none
 # }}}
 # Vimshell {{{
 verbatim
