@@ -3,6 +3,14 @@
 # Note: non-link highlight groups should be put in _plugins_non_link.colortemplate
 # This is for better loading time.
 
+# vim-plug{{{
+plug2 -> Aqua
+plugBracket -> Blue
+plugName -> Green
+plugH2 -> Purple
+plugError -> Red
+plugNotLoaded -> Grey
+#}}}
 # EasyMotion: {{{
 EasyMotionTarget -> Search
 EasyMotionShade -> Comment
