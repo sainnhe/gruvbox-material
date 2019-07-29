@@ -400,12 +400,9 @@ jsonQuote -> Green
 jsonBraces -> White
 jsonString -> White
 # }}}
-# Yaml{{{
-yamlKey -> Aqua
-yamlConstant -> Purple
-#}}}
 # Toml{{{
 tomlTable -> Orange
+tomlTableArray -> Orange
 tomlKey -> White
 #}}}
 # Mail: {{{

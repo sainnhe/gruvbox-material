@@ -26,3 +26,7 @@ mkdLink aqua none underline
 mkdInlineURL purple none underline
 mkdItalic grey none italic
 # }}}
+# Yaml{{{
+yamlKey aqua none
+yamlConstant purple none
+#}}}
