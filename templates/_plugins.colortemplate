@@ -135,3 +135,14 @@ QuickmenuHelp -> Blue
 QuickmenuSpecial -> Purple
 QuickmenuHeader -> Orange
 #}}}
+# UndoTree{{{
+UndotreeNode -> Orange
+UndotreeNodeCurrent -> Red
+UndotreeSeq -> Green
+UndotreeNext -> Blue
+UndotreeTimeStamp -> Grey
+UndotreeHead -> Yellow
+UndotreeBranch -> Yellow
+UndotreeCurrent -> Aqua
+UndotreeSavedSmall -> Purple
+#}}}
