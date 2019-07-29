@@ -1,7 +1,7 @@
 # vim: ft=colortemplate fdm=marker cc=22
 
 # vim-plug{{{
-plug1 red none bold
+plug1 orange none bold
 plugNumber yellow none bold
 #}}}
 # Indent Guides {{{

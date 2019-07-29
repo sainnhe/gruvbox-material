@@ -13,6 +13,7 @@ plugNotLoaded -> Grey
 plugRelDate -> Grey
 plugStar -> Blue
 plugUpdate -> Aqua
+plugMessage -> Purple
 #}}}
 # EasyMotion: {{{
 EasyMotionTarget -> Search
