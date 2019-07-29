@@ -96,6 +96,15 @@ NERDTreeFlags -> Orange
 NERDTreeLinkFile -> Grey
 NERDTreeLinkTarget -> Green
 # }}}
+# Tagbar{{{
+TagbarFoldIcon -> Green
+TagbarSignature -> Green
+TagbarKind -> Red
+TagbarScope -> Orange
+TagbarNestedKind -> Aqua
+TagbarVisibilityPrivate -> Red
+TagbarVisibilityPublic -> Blue
+#}}}
 # ALE {{{
 ALEVirtualTextError -> Grey
 ALEVirtualTextWarning -> Grey
