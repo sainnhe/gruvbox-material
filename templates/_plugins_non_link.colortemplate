@@ -87,6 +87,12 @@ CtrlPStats lightgrey dark2 bold
 # }}}
 # LeaderF {{{
 Lf_hl_match green none bold
+Lf_hl_match0 green none bold
+Lf_hl_match1 aqua none bold
+Lf_hl_match2 blue none bold
+Lf_hl_match3 purple none bold
+Lf_hl_match4 orange none bold
+Lf_hl_matchRefine red none bold
 #}}}
 # Startify {{{
 StartifyFooter grey none
