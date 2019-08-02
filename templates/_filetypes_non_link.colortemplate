@@ -18,11 +18,11 @@ markdownH1 green none bold
 markdownH2 green none bold
 markdownH3 yellow none bold
 markdownH4 yellow none bold
-markdownLinkText aqua none underline
+markdownUrl purple none underline
 markdownItalic none none italic
 markdownBold none none bold
 markdownItalicDelimiter grey none italic
-mkdLink aqua none underline
+mkdURL purple none underline
 mkdInlineURL purple none underline
 mkdItalic grey none italic
 # }}}

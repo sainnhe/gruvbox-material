@@ -346,12 +346,12 @@ markdownUrlDelimiter -> Grey
 markdownLinkDelimiter -> Grey
 markdownLinkTextDelimiter -> Grey
 markdownHeadingDelimiter -> Orange
-markdownUrl -> Purple
+markdownLinkText -> Aqua
 markdownUrlTitleDelimiter -> Green
 markdownIdDeclaration -> markdownLinkText
 markdownBoldDelimiter -> Grey
 mkdBold -> Grey
-mkdURL -> Purple
+mkdLink -> Aqua
 mkdCodeDelimiter -> Aqua
 mkdHeading -> Orange
 mkdListItem -> Red
