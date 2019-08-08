@@ -114,7 +114,7 @@ pythonDottedName -> GreenBold
 pythonDot -> Grey
 # }}}
 # CSS: {{{
-cssBraces -> Blue
+cssBraces -> White
 cssFunctionName -> Yellow
 cssIdentifier -> Orange
 cssClassName -> Green
@@ -227,7 +227,7 @@ jsOperatorKeyword -> Red
 jsClassKeyword -> Aqua
 jsExtendsKeyword -> Aqua
 jsExportDefault -> Aqua
-jsTemplateBraces -> Aqua
+jsTemplateBraces -> White
 jsGlobalNodeObjects -> Blue
 jsGlobalObjects -> Blue
 jsFunction -> Aqua

@@ -76,7 +76,7 @@ Statement               red             none
 Typedef                 yellow          none
 Type                    yellow          none
 StorageClass            orange          none
-Delimiter               orange          none
+Delimiter               light           none
 Special                 orange          none
 Tag                     orange          none
 Operator                orange          none
