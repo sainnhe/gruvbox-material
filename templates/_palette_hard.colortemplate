@@ -15,6 +15,10 @@ Color: green            #a9b665         142             Green
 Color: aqua             #89b482         108             Cyan
 Color: blue             #7daea3         109             Blue
 Color: purple           #d3869b         175             Magenta
+Color: darkgreen        #32361a         ~               DarkGreen
+Color: darkyellow       #422d17         ~               DarkYellow
+Color: darkred          #3c1f1e         ~               DarkRed
+Color: darkblue         #0e363e         ~               DarkBlue
 
 White                   light           none
 LightGrey               lightgrey       none

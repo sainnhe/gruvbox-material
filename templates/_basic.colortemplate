@@ -23,21 +23,21 @@ CursorLine              none            dark1
 CursorLineNr            yellow          dark1
 LineNr                  dark4           none
 SignColumn              none            dark1
-DiffAdd                 green           dark0           reverse
-DiffChange              aqua            dark0           reverse
-DiffDelete              red             dark0           reverse
-DiffText                yellow          dark0           reverse
-Directory               green           none            bold
-EndOfBuffer             dark0           none
-ErrorMsg                dark0           red
-WarningMsg              dark0           orange
-ModeMsg                 yellow          none            bold
-MoreMsg                 yellow          none            bold
+DiffAdd                 none            darkgreen
+DiffChange              none            darkyellow
+DiffDelete              none            darkred
+DiffText                none            darkblue
+Directory               green           none
+EndOfBuffer             dark0           dark0
+ErrorMsg                red             none            bold
+WarningMsg              yellow          none            bold
+ModeMsg                 dark0           lightgrey       bold
+MoreMsg                 light           dark3
 FoldColumn              grey            dark1
 Folded                  grey            dark1
-IncSearch               orange          dark0           reverse
-Search                  yellow          dark0           reverse
-MatchParen              none            dark3           bold
+IncSearch               none            none            underline
+Search                  none            none            reverse,underline
+MatchParen              none            none            bold
 NonText                 grey            none
 Pmenu                   light           dark2
 PmenuSbar               none            dark2
@@ -48,10 +48,12 @@ SpellBad                red             none            italic t=underline g=und
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-StatusLine              dark2           light           reverse
-StatusLineNC            dark0           lightgrey       reverse
-TabLine                 dark4           dark1
-TabLineFill             dark4           dark1
+StatusLine              light           dark3
+StatusLineNC            lightgrey       dark1
+StatusLineTerm          light           dark3
+StatusLineTermNC        lightgrey       dark1
+TabLine                 light           dark3
+TabLineFill             light           dark1
 TabLineSel              dark0           lightgrey
 VertSplit               dark3           dark0
 Visual                  none            none            reverse
@@ -62,8 +64,6 @@ CursorIM                none            none            reverse
 ToolbarLine             none            dark3
 ToolbarButton           light           dark3           bold
 QuickFixLine            yellow          dark0           reverse
-StatusLineTerm          dark2           light           reverse
-StatusLineTermNC        dark0           lightgrey       reverse
 
 # Syntax
 Title                   green           none            bold
