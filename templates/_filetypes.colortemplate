@@ -51,6 +51,7 @@ vimFuncSID -> LightGrey
 vimSetSep -> LightGrey
 vimSep -> LightGrey
 vimContinue -> LightGrey
+vimLet -> Orange
 # }}}
 # Clojure: {{{
 clojureKeyword -> Blue
