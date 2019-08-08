@@ -104,7 +104,7 @@ pythonInclude -> Blue
 pythonImport -> Blue
 pythonRun -> Blue
 pythonCoding -> Blue
-pythonOperator -> Red
+pythonOperator -> Orange
 pythonException -> Red
 pythonExceptions -> Purple
 pythonBoolean -> Purple
@@ -205,7 +205,6 @@ javascriptLabel -> White
 javascriptObjectLabel -> White
 javascriptPropertyName -> White
 javascriptLogicSymbols -> Purple
-jsOperator -> Aqua
 javascriptArrowFunc -> Yellow
 javascriptDocParamName -> LightGrey
 javascriptDocTags -> LightGrey
@@ -222,6 +221,9 @@ javascriptAsyncFuncKeyword -> Red
 javascriptAwaitFuncKeyword -> Red
 # }}}
 # PanglossJS: {{{
+jsPrototype -> Yellow
+jsOperator -> Orange
+jsOperatorKeyword -> Red
 jsClassKeyword -> Aqua
 jsExtendsKeyword -> Aqua
 jsExportDefault -> Aqua
@@ -246,7 +248,6 @@ typescriptBraces -> White
 typescriptEndColons -> White
 typescriptDOMObjects -> White
 typescriptAjaxMethods -> White
-typescriptLogicSymbols -> White
 typescriptGlobalObjects -> White
 typescriptParens -> White
 typescriptOpSymbols -> Green
@@ -276,7 +277,7 @@ purescriptImportKeyword -> Aqua
 purescriptHidingKeyword -> Aqua
 purescriptAsKeyword -> Aqua
 purescriptStructure -> Aqua
-purescriptOperator -> Blue
+purescriptOperator -> Orange
 purescriptTypeVar -> White
 purescriptConstructor -> White
 purescriptFunction -> White
@@ -284,8 +285,9 @@ purescriptConditional -> Orange
 purescriptBacktick -> Orange
 # }}}
 # CoffeeScript: {{{
-coffeeExtendedOp -> Aqua
-coffeeSpecialOp -> Orange
+coffeeExtendedOp -> Orange
+coffeeSpecialOp -> White
+coffeeDotAccess -> Grey
 coffeeCurly -> Orange
 coffeeParen -> White
 coffeeBracket -> Orange
@@ -311,8 +313,8 @@ luaFunction -> Aqua
 luaTable -> Orange
 # }}}
 # MoonScript: {{{
-moonSpecialOp -> Orange
-moonExtendedOp -> Aqua
+moonSpecialOp -> White
+moonExtendedOp -> Orange
 moonFunction -> White
 moonObject -> Yellow
 # }}}
@@ -343,7 +345,7 @@ scalaTypeExtension -> White
 scalaKeyword -> Red
 scalaKeywordModifier -> Red
 scalaSpecial -> Aqua
-scalaOperator -> Aqua
+scalaOperator -> Orange
 scalaTypeDeclaration -> Yellow
 scalaTypeTypePostDeclaration -> Yellow
 scalaInstanceDeclaration -> White
@@ -380,8 +382,8 @@ mkdId -> Yellow
 haskellType -> Blue
 haskellIdentifier -> Aqua
 haskellSeparator -> LightGrey
-haskellDelimiter -> Orange
-haskellOperators -> Purple
+haskellDelimiter -> White
+haskellOperators -> Green
 haskellBacktick -> Orange
 haskellStatement -> Purple
 haskellConditional -> Purple
@@ -467,7 +469,7 @@ csBraces -> White
 csEndColon -> White
 csLogicSymbols -> Purple
 csParens -> White
-csOpSymbols -> Green
+csOpSymbols -> Orange
 csInterpolationDelimiter -> Aqua
 csInterpolationFormat -> Aqua
 csInterpolationAlignDel -> AquaBold
@@ -484,11 +486,11 @@ rustModPathSep -> Grey
 rustCommentLineDoc -> Comment
 # }}}
 # Sh{{{
-shRange -> Orange
+shRange -> White
 shTestOpr -> Purple
 shOption -> Purple
 bashStatement -> Orange
-shOperator -> Green
+shOperator -> Orange
 shQuote -> Green
 shSet -> Orange
 shSetList -> Blue

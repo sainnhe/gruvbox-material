@@ -79,6 +79,7 @@ StorageClass            orange          none
 Delimiter               orange          none
 Special                 orange          none
 Tag                     orange          none
+Operator                orange          none
 String                  green           none
 PreProc                 aqua            none
 Macro                   aqua            none
@@ -86,7 +87,6 @@ Define                  aqua            none
 Include                 aqua            none
 PreCondit               aqua            none
 Structure               aqua            none
-Operator                aqua            none
 Identifier              blue            none
 Underlined              blue            none            underline
 Constant                purple          none
