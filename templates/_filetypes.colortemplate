@@ -412,6 +412,19 @@ haskellLiquid -> PurpleBold
 haskellQuasiQuoted -> BlueBold
 haskellTypeRoles -> RedBold
 # }}}
+# Perl{{{
+# I think the syntax file from http://github.com/vim-perl/vim-perl is very bad, they link almost everything to Statement.
+# I'm going to preliminarily optimize perl. If you think there is anything illogical, feel free to open a PR :)
+perlStatementPackage -> PreProc
+perlStatementInclude -> PreProc
+perlStatementStorage -> StorageClass
+perlStatementList -> StorageClass
+perlVarSimpleMemberName -> Type
+perlMethod -> Function
+podCommand -> StorageClass
+podCmdText -> Macro
+podVerbatimLine -> String
+#}}}
 # Json: {{{
 jsonKeyword -> Green
 jsonQuote -> Green
