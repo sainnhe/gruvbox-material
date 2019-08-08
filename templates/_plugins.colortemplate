@@ -46,6 +46,11 @@ let g:fzf_colors = {
       \ }
 endverbatim
 #}}}
+# CtrlP{{{
+CtrlPMatch -> Yellow
+CtrlPNoEntries -> Red
+CtrlPPrtCursor -> Blue
+#}}}
 # LeaderF{{{
 verbatim
 if !exists('g:Lf_StlColorscheme')
