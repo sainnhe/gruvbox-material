@@ -192,7 +192,9 @@ javascriptTemplateSubstitution -> White
 javascriptLabel -> White
 javascriptObjectLabel -> White
 javascriptPropertyName -> White
-javascriptLogicSymbols -> White
+javascriptLogicSymbols -> Purple
+jsOperator -> Green
+jsOperatorKeyword -> Aqua
 javascriptArrowFunc -> Yellow
 javascriptDocParamName -> LightGrey
 javascriptDocTags -> LightGrey
@@ -236,7 +238,9 @@ typescriptAjaxMethods -> White
 typescriptLogicSymbols -> White
 typescriptGlobalObjects -> White
 typescriptParens -> White
-typescriptOpSymbols -> White
+typescriptOpSymbols -> Green
+typescriptLogicSymbols -> Purple
+typescriptInterpolation -> Aqua
 typescriptHtmlElemProperties -> White
 typescriptNull -> Purple
 typescriptInterpolationDelimiter -> Aqua
@@ -328,7 +332,7 @@ scalaTypeExtension -> White
 scalaKeyword -> Red
 scalaKeywordModifier -> Red
 scalaSpecial -> Aqua
-scalaOperator -> White
+scalaOperator -> Aqua
 scalaTypeDeclaration -> Yellow
 scalaTypeTypePostDeclaration -> Yellow
 scalaInstanceDeclaration -> White
@@ -437,9 +441,9 @@ mailEmail -> Orange
 # C#: {{{
 csBraces -> White
 csEndColon -> White
-csLogicSymbols -> White
+csLogicSymbols -> Purple
 csParens -> White
-csOpSymbols -> Aqua
+csOpSymbols -> Green
 csInterpolationDelimiter -> Aqua
 csInterpolationFormat -> Aqua
 csInterpolationAlignDel -> AquaBold
