@@ -402,6 +402,10 @@ jsonQuote -> Green
 jsonBraces -> White
 jsonString -> White
 # }}}
+# Yaml{{{
+yamlKey -> Aqua
+yamlConstant -> Purlpe
+#}}}
 # Toml{{{
 tomlTable -> Orange
 tomlTableArray -> Orange
