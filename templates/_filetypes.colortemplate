@@ -3,26 +3,33 @@
 # Note: non-link highlight groups should be put in _filetypes_non_link.colortemplate
 # This is for better loading time.
 
-# Diff{{{
-diffAdded -> Green
-diffRemoved -> Red
-diffChanged -> Yellow
-diffOldFile -> Purple
-diffNewFile -> Blue
-diffFile -> Orange
-diffLine -> Grey
-diffIndexLine -> Aqua
-#}}}
-# Help{{{
-helpHyperTextEntry -> Red
-helpHyperTextJump -> Blue
-helpSectionDelim -> Grey
-helpExample -> Green
-helpCommand -> Orange
-helpHeadline -> Title
-helpHeader -> Aqua
-helpSpecial -> Yellow
-#}}}
+# Markdown: {{{
+markdownH5 -> Yellow
+markdownH6 -> Yellow
+markdownCode -> Green
+markdownCodeBlock -> Aqua
+markdownCodeDelimiter -> Aqua
+markdownBlockquote -> Grey
+markdownListMarker -> Red
+markdownOrderedListMarker -> Grey
+markdownRule -> Grey
+markdownHeadingRule -> Grey
+markdownUrlDelimiter -> Grey
+markdownLinkDelimiter -> Grey
+markdownLinkTextDelimiter -> Grey
+markdownHeadingDelimiter -> Orange
+markdownLinkText -> Aqua
+markdownUrlTitleDelimiter -> Green
+markdownIdDeclaration -> markdownLinkText
+markdownBoldDelimiter -> Grey
+mkdBold -> Grey
+mkdLink -> Aqua
+mkdCodeDelimiter -> Aqua
+mkdHeading -> Orange
+mkdListItem -> Red
+mkdDelimiter -> Grey
+mkdId -> Yellow
+# }}}
 # Html: {{{
 htmlTagName -> Blue
 htmlArg -> Orange
@@ -53,46 +60,14 @@ xmlEndTag -> AquaBold
 xmlTagName -> AquaBold
 docbkKeyword -> AquaBold
 # }}}
-# Vim: {{{
-vimNotation -> Orange
-vimBracket -> Orange
-vimMapModKey -> Purple
-vimMapMod -> Purple
-vimFuncSID -> LightGrey
-vimSetSep -> LightGrey
-vimSep -> LightGrey
-vimContinue -> LightGrey
-vimLet -> Orange
-vimAutoCmd -> Orange
-# }}}
-# Clojure: {{{
-clojureKeyword -> Blue
-clojureCond -> Orange
-clojureSpecial -> Orange
-clojureDefine -> Orange
-clojureFunc -> Yellow
-clojureRepeat -> Yellow
-clojureCharacter -> Aqua
-clojureStringEscape -> Aqua
-clojureException -> Red
-clojureRegexp -> Aqua
-clojureRegexpEscape -> Aqua
-clojureAnonArg -> Yellow
-clojureVariable -> Blue
-clojureMacro -> Orange
-clojureMeta -> Yellow
-clojureDeref -> Yellow
-clojureQuote -> Yellow
-clojureUnquote -> Yellow
-clojureRegexpMod -> clojureRegexpCharClass
-clojureRegexpQuantifier -> clojureRegexpCharClass
-clojureRegexpCharClass -> GreyBold
-clojureParen -> White
-# }}}
 # C: {{{
 cOperator -> Purple
 cppOperator -> Purple
 cStructure -> Orange
+# }}}
+# ObjectiveC: {{{
+objcTypeModifier -> Red
+objcDirective -> Blue
 # }}}
 # Python: {{{
 pythonBuiltin -> Orange
@@ -292,32 +267,6 @@ coffeeCurly -> Orange
 coffeeParen -> White
 coffeeBracket -> Orange
 # }}}
-# Ruby: {{{
-rubyStringDelimiter -> Green
-rubyInterpolationDelimiter -> Aqua
-# }}}
-# ObjectiveC: {{{
-objcTypeModifier -> Red
-objcDirective -> Blue
-# }}}
-# Go: {{{
-goDirective -> Aqua
-goConstants -> Purple
-goDeclaration -> Red
-goDeclType -> Blue
-goBuiltins -> Orange
-# }}}
-# Lua: {{{
-luaIn -> Red
-luaFunction -> Aqua
-luaTable -> Orange
-# }}}
-# MoonScript: {{{
-moonSpecialOp -> White
-moonExtendedOp -> Orange
-moonFunction -> White
-moonObject -> Yellow
-# }}}
 # Java: {{{
 javaAnnotation -> Blue
 javaDocTags -> Aqua
@@ -331,11 +280,67 @@ javaOperator -> Orange
 javaVarArg -> Green
 javaCommentTitle -> vimCommentTitle
 # }}}
+# Go: {{{
+goDirective -> Aqua
+goConstants -> Purple
+goDeclaration -> Red
+goDeclType -> Blue
+goBuiltins -> Orange
+# }}}
+# Rust: {{{
+rustSigil -> Orange
+rustEscape -> Aqua
+rustStringContinuation -> Aqua
+rustEnum -> Aqua
+rustStructure -> Aqua
+rustDefault -> Aqua
+rustModPathSep -> Grey
+rustCommentLineDoc -> Comment
+# }}}
+# Ruby: {{{
+rubyStringDelimiter -> Green
+rubyInterpolationDelimiter -> Aqua
+# }}}
+# Lua: {{{
+luaIn -> Red
+luaFunction -> Aqua
+luaTable -> Orange
+# }}}
+# MoonScript: {{{
+moonSpecialOp -> White
+moonExtendedOp -> Orange
+moonFunction -> White
+moonObject -> Yellow
+# }}}
 # Elixir: {{{
 elixirStringDelimiter -> Green
 elixirInterpolationDelimiter -> Aqua
 elixirModuleDeclaration -> Yellow
 elixirDocString -> Comment
+# }}}
+# Clojure: {{{
+clojureKeyword -> Blue
+clojureCond -> Orange
+clojureSpecial -> Orange
+clojureDefine -> Orange
+clojureFunc -> Yellow
+clojureRepeat -> Yellow
+clojureCharacter -> Aqua
+clojureStringEscape -> Aqua
+clojureException -> Red
+clojureRegexp -> Aqua
+clojureRegexpEscape -> Aqua
+clojureAnonArg -> Yellow
+clojureVariable -> Blue
+clojureMacro -> Orange
+clojureMeta -> Yellow
+clojureDeref -> Yellow
+clojureQuote -> Yellow
+clojureUnquote -> Yellow
+clojureRegexpMod -> clojureRegexpCharClass
+clojureRegexpQuantifier -> clojureRegexpCharClass
+clojureRegexpCharClass -> GreyBold
+clojureParen -> White
 # }}}
 # Scala: {{{
 scalaNameDefinition -> White
@@ -350,33 +355,6 @@ scalaTypeDeclaration -> Yellow
 scalaTypeTypePostDeclaration -> Yellow
 scalaInstanceDeclaration -> White
 scalaInterpolation -> Aqua
-# }}}
-# Markdown: {{{
-markdownH5 -> Yellow
-markdownH6 -> Yellow
-markdownCode -> Green
-markdownCodeBlock -> Aqua
-markdownCodeDelimiter -> Aqua
-markdownBlockquote -> Grey
-markdownListMarker -> Red
-markdownOrderedListMarker -> Grey
-markdownRule -> Grey
-markdownHeadingRule -> Grey
-markdownUrlDelimiter -> Grey
-markdownLinkDelimiter -> Grey
-markdownLinkTextDelimiter -> Grey
-markdownHeadingDelimiter -> Orange
-markdownLinkText -> Aqua
-markdownUrlTitleDelimiter -> Green
-markdownIdDeclaration -> markdownLinkText
-markdownBoldDelimiter -> Grey
-mkdBold -> Grey
-mkdLink -> Aqua
-mkdCodeDelimiter -> Aqua
-mkdHeading -> Orange
-mkdListItem -> Red
-mkdDelimiter -> Grey
-mkdId -> Yellow
 # }}}
 # Haskell: {{{
 haskellType -> Blue
@@ -475,16 +453,6 @@ csInterpolationFormat -> Aqua
 csInterpolationAlignDel -> AquaBold
 csInterpolationFormatDel -> AquaBold
 # }}}
-# Rust: {{{
-rustSigil -> Orange
-rustEscape -> Aqua
-rustStringContinuation -> Aqua
-rustEnum -> Aqua
-rustStructure -> Aqua
-rustDefault -> Aqua
-rustModPathSep -> Grey
-rustCommentLineDoc -> Comment
-# }}}
 # Sh{{{
 shRange -> White
 shTestOpr -> Purple
@@ -504,4 +472,36 @@ zshSubst -> Orange
 zshOptStart -> Orange
 zshOption -> Aqua
 zshFunction -> Green
+#}}}
+# Vim: {{{
+vimNotation -> Orange
+vimBracket -> Orange
+vimMapModKey -> Purple
+vimMapMod -> Purple
+vimFuncSID -> LightGrey
+vimSetSep -> LightGrey
+vimSep -> LightGrey
+vimContinue -> LightGrey
+vimLet -> Orange
+vimAutoCmd -> Orange
+# }}}
+# Diff{{{
+diffAdded -> Green
+diffRemoved -> Red
+diffChanged -> Yellow
+diffOldFile -> Purple
+diffNewFile -> Blue
+diffFile -> Orange
+diffLine -> Grey
+diffIndexLine -> Aqua
+#}}}
+# Help{{{
+helpHyperTextEntry -> Red
+helpHyperTextJump -> Blue
+helpSectionDelim -> Grey
+helpExample -> Green
+helpCommand -> Orange
+helpHeadline -> Title
+helpHeader -> Aqua
+helpSpecial -> Yellow
 #}}}

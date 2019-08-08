@@ -1,18 +1,5 @@
 # vim: ft=colortemplate fdm=marker cc=22
 
-# Html: {{{
-htmlLink lightgrey none underline
-htmlBold none none bold
-htmlBoldUnderline none none bold,underline
-htmlBoldItalic none none bold,italic
-htmlBoldUnderlineItalic none none bold,underline,italic
-htmlUnderline none none underline
-htmlUnderlineItalic none none underline,italic
-htmlItalic none none italic
-# }}}
-# Vim: {{{
-vimCommentTitle lightgrey none bold,italic
-# }}}
 # Markdown: {{{
 markdownH1 green none bold
 markdownH2 green none bold
@@ -25,6 +12,19 @@ markdownItalicDelimiter grey none italic
 mkdURL purple none underline
 mkdInlineURL purple none underline
 mkdItalic grey none italic
+# }}}
+# Html: {{{
+htmlLink lightgrey none underline
+htmlBold none none bold
+htmlBoldUnderline none none bold,underline
+htmlBoldItalic none none bold,italic
+htmlBoldUnderlineItalic none none bold,underline,italic
+htmlUnderline none none underline
+htmlUnderlineItalic none none underline,italic
+htmlItalic none none italic
+# }}}
+# Vim: {{{
+vimCommentTitle lightgrey none bold,italic
 # }}}
 # Help{{{
 helpURL aqua none underline
