@@ -29,10 +29,10 @@ let s:tab_sel_bg = s:grey
 let s:tab_middle_fg = s:white
 let s:tab_middle_bg = s:darker
 
-let s:warningfg = s:orange
-let s:warningbg = s:darkgrey
-let s:errorfg = s:red
-let s:errorbg = s:darkgrey
+let s:warningfg = s:dark
+let s:warningbg = s:orange
+let s:errorfg = s:dark
+let s:errorbg = s:red
 
 let s:normal_l1_fg = s:dark
 let s:normal_l1_bg = s:grey
