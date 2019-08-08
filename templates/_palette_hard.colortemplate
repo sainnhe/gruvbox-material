@@ -17,7 +17,7 @@ Color: blue             #7daea3         109             Blue
 Color: purple           #d3869b         175             Magenta
 Color: darkgreen        #32361a         ~               DarkGreen
 Color: darkred          #3c1f1e         ~               DarkRed
-Color: darkblue         #0e363e         ~               DarkBlue
+Color: darkblue         #0d3138         ~               DarkBlue
 
 White                   light           none
 LightGrey               lightgrey       none
