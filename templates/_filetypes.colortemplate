@@ -6,10 +6,12 @@
 # Diff{{{
 diffAdded -> Green
 diffRemoved -> Red
-diffChanged -> Aqua
+diffChanged -> Yellow
+diffOldFile -> Purple
+diffNewFile -> Blue
 diffFile -> Orange
-diffNewFile -> Yellow
-diffLine -> Blue
+diffLine -> Grey
+diffIndexLine -> Aqua
 #}}}
 # Html: {{{
 htmlTagName -> Blue
