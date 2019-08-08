@@ -24,9 +24,9 @@ CursorLineNr            yellow          dark1
 LineNr                  dark4           none
 SignColumn              none            dark1
 DiffAdd                 none            darkgreen
-DiffChange              none            darkyellow
+DiffChange              none            darkblue
 DiffDelete              none            darkred
-DiffText                none            darkblue
+DiffText                none            none            reverse
 Directory               green           none
 EndOfBuffer             dark0           dark0
 ErrorMsg                red             none            bold
