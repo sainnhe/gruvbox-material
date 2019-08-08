@@ -35,7 +35,7 @@ ModeMsg                 dark0           lightgrey       bold
 MoreMsg                 light           dark3
 FoldColumn              grey            dark1
 Folded                  grey            dark1
-IncSearch               none            none            underline
+IncSearch               none            none            reverse,bold
 Search                  none            none            reverse,underline
 MatchParen              none            none            bold
 NonText                 grey            none
