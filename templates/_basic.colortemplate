@@ -32,7 +32,7 @@ EndOfBuffer             dark0           dark0
 ErrorMsg                red             none            bold
 WarningMsg              yellow          none            bold
 ModeMsg                 dark0           lightgrey       bold
-MoreMsg                 light           dark3
+MoreMsg                 yellow          none            bold
 FoldColumn              grey            dark1
 Folded                  grey            dark1
 IncSearch               none            none            reverse,bold
