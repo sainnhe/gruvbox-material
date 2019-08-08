@@ -236,7 +236,7 @@ typescriptAjaxMethods -> White
 typescriptLogicSymbols -> White
 typescriptGlobalObjects -> White
 typescriptParens -> White
-typescriptOpSymbols -> Grey
+typescriptOpSymbols -> White
 typescriptHtmlElemProperties -> White
 typescriptNull -> Purple
 typescriptInterpolationDelimiter -> Aqua
@@ -255,7 +255,7 @@ jsxEqual -> Aqua
 purescriptModuleKeyword -> Aqua
 purescriptModuleName -> White
 purescriptWhere -> Aqua
-purescriptDelimiter -> LightGrey
+purescriptDelimiter -> White
 purescriptType -> White
 purescriptImportKeyword -> Aqua
 purescriptHidingKeyword -> Aqua
@@ -269,8 +269,8 @@ purescriptConditional -> Orange
 purescriptBacktick -> Orange
 # }}}
 # CoffeeScript: {{{
-coffeeExtendedOp -> Grey
-coffeeSpecialOp -> Grey
+coffeeExtendedOp -> Aqua
+coffeeSpecialOp -> Orange
 coffeeCurly -> Orange
 coffeeParen -> White
 coffeeBracket -> Orange
@@ -296,8 +296,8 @@ luaFunction -> Aqua
 luaTable -> Orange
 # }}}
 # MoonScript: {{{
-moonSpecialOp -> Grey
-moonExtendedOp -> Grey
+moonSpecialOp -> Orange
+moonExtendedOp -> Aqua
 moonFunction -> White
 moonObject -> Yellow
 # }}}
@@ -439,8 +439,8 @@ csBraces -> White
 csEndColon -> White
 csLogicSymbols -> White
 csParens -> White
-csOpSymbols -> Grey
-csInterpolationDelimiter -> Grey
+csOpSymbols -> Aqua
+csInterpolationDelimiter -> Aqua
 csInterpolationFormat -> Aqua
 csInterpolationAlignDel -> AquaBold
 csInterpolationFormatDel -> AquaBold
