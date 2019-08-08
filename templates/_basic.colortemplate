@@ -26,7 +26,7 @@ SignColumn              none            dark1
 DiffAdd                 none            darkgreen
 DiffChange              none            darkblue
 DiffDelete              none            darkred
-DiffText                none            none            reverse
+DiffText                none            dark0           reverse
 Directory               green           none
 EndOfBuffer             dark0           dark0
 ErrorMsg                red             none            bold
