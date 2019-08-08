@@ -56,12 +56,14 @@ docbkKeyword -> AquaBold
 # Vim: {{{
 vimNotation -> Orange
 vimBracket -> Orange
-vimMapModKey -> Orange
+vimMapModKey -> Purple
+vimMapMod -> Purple
 vimFuncSID -> LightGrey
 vimSetSep -> LightGrey
 vimSep -> LightGrey
 vimContinue -> LightGrey
 vimLet -> Orange
+vimAutoCmd -> Orange
 # }}}
 # Clojure: {{{
 clojureKeyword -> Blue
