@@ -64,6 +64,7 @@ CursorIM                none            none            reverse
 ToolbarLine             none            dark3
 ToolbarButton           light           dark3           bold
 QuickFixLine            yellow          dark0           reverse
+Debug                   orange          none
 
 # Syntax
 Title                   green           none            bold
@@ -80,6 +81,7 @@ Delimiter               light           none
 Special                 orange          none
 Tag                     orange          none
 Operator                orange          none
+SpecialChar             orange          none
 String                  green           none
 PreProc                 aqua            none
 Macro                   aqua            none
@@ -105,5 +107,3 @@ Ignore                  light           none
     Error                   red             dark0           reverse
     Function                green           none
 #endif
-SpecialChar          -> Special
-Debug                -> Special
