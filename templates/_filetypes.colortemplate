@@ -470,3 +470,23 @@ rustDefault -> Aqua
 rustModPathSep -> Grey
 rustCommentLineDoc -> Comment
 # }}}
+# Sh{{{
+shRange -> Orange
+shTestOpr -> Purple
+shOption -> Purple
+bashStatement -> Orange
+shOperator -> Green
+shQuote -> Green
+shSet -> Orange
+shSetList -> Blue
+shSnglCase -> Orange
+shVariable -> Blue
+shCmdSubRegion -> Green
+#}}}
+# Zsh{{{
+zshVariableDef -> Blue
+zshSubst -> Orange
+zshOptStart -> Orange
+zshOption -> Aqua
+zshFunction -> Green
+#}}}
