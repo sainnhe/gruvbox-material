@@ -193,8 +193,7 @@ javascriptLabel -> White
 javascriptObjectLabel -> White
 javascriptPropertyName -> White
 javascriptLogicSymbols -> Purple
-jsOperator -> Green
-jsOperatorKeyword -> Aqua
+jsOperator -> Aqua
 javascriptArrowFunc -> Yellow
 javascriptDocParamName -> LightGrey
 javascriptDocTags -> LightGrey
