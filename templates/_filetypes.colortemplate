@@ -13,6 +13,16 @@ diffFile -> Orange
 diffLine -> Grey
 diffIndexLine -> Aqua
 #}}}
+# Help{{{
+helpHyperTextEntry -> Red
+helpHyperTextJump -> Blue
+helpSectionDelim -> Grey
+helpExample -> Green
+helpCommand -> Orange
+helpHeadline -> Title
+helpHeader -> Aqua
+helpSpecial -> Yellow
+#}}}
 # Html: {{{
 htmlTagName -> Blue
 htmlArg -> Orange
