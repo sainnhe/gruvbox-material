@@ -36,11 +36,11 @@ let g:fzf_colors = {
       \ 'hl':      ['fg', 'Green'],
       \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
       \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-      \ 'hl+':     ['fg', 'Green'],
+      \ 'hl+':     ['fg', 'Aqua'],
       \ 'info':    ['fg', 'Aqua'],
-      \ 'prompt':  ['fg', 'Red'],
+      \ 'prompt':  ['fg', 'Orange'],
       \ 'pointer': ['fg', 'Blue'],
-      \ 'marker':  ['fg', 'Orange'],
+      \ 'marker':  ['fg', 'Yellow'],
       \ 'spinner': ['fg', 'Yellow'],
       \ 'header':  ['fg', 'Grey']
       \ }
