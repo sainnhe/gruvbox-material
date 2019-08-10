@@ -86,7 +86,7 @@ netrwVersion -> Orange
 # }}}
 # NERDTree {{{
 NERDTreeDir -> Green
-NERDTreeDirSlash -> Green
+NERDTreeDirSlash -> Aqua
 
 NERDTreeOpenable -> Orange
 NERDTreeClosable -> Orange
