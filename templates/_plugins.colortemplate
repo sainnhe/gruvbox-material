@@ -60,12 +60,13 @@ endverbatim
 # Startify {{{
 StartifyBracket -> Grey
 StartifyFile -> White
-StartifyNumber -> Yellow
+StartifyNumber -> Red
 StartifyPath -> Green
-StartifySlash -> Green
-StartifySection -> Aqua
+StartifySlash -> Aqua
+StartifySection -> Blue
 StartifyHeader -> Orange
 StartifySpecial -> Grey
+StartifyFooter -> Grey
 # }}}
 # Dirvish {{{
 DirvishPathTail -> Aqua
