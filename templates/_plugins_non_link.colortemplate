@@ -76,6 +76,7 @@ ShowMarksHLo blue dark1
 ShowMarksHLm blue dark1
 # }}}
 # CtrlP {{{
+CtrlPMatch green none bold
 CtrlPPrtBase dark2 none
 CtrlPLinePre dark2 none
 CtrlPMode1 blue dark2 bold

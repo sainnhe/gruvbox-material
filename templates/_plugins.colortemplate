@@ -47,7 +47,6 @@ let g:fzf_colors = {
 endverbatim
 #}}}
 # CtrlP{{{
-CtrlPMatch -> Yellow
 CtrlPNoEntries -> Red
 CtrlPPrtCursor -> Blue
 #}}}
