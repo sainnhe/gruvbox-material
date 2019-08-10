@@ -124,7 +124,8 @@ multiple_cursors_cursor none none reverse
 multiple_cursors_visual none dark2
 # }}}
 # CoC{{{
-CocHighlightText        none              none              bold
+CocHighlightText none none bold
+CocHintSign aqua dark1
 #}}}
 # vim-matchup{{{
 MatchParenCur           none            none            bold

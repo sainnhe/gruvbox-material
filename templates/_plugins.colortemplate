@@ -125,7 +125,6 @@ CocCodeLens          -> Grey
 CocErrorSign         -> ALEErrorSign
 CocWarningSign       -> ALEWarningSign
 CocInfoSign          -> ALEInfoSign
-CocHintSign          -> Label
 CocErrorHighlight    -> ALEError
 CocWarningHighlight  -> ALEWarning
 CocInfoHighlight     -> ALEInfo
