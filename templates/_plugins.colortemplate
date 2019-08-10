@@ -137,9 +137,9 @@ CocCodeLens          -> ALEVirtualTextInfo
 #}}}
 # QuickMenu{{{
 QuickmenuOption -> Green
-QuickmenuNumber -> Yellow
+QuickmenuNumber -> Red
 QuickmenuBracket -> Grey
-QuickmenuHelp -> Blue
+QuickmenuHelp -> Green
 QuickmenuSpecial -> Purple
 QuickmenuHeader -> Orange
 #}}}
