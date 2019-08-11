@@ -1,12 +1,14 @@
 |        |                                                     𝑶𝒓𝒊𝒈𝒊𝒏𝒂𝒍 𝑮𝒓𝒖𝒗𝒃𝒐𝒙                                                     |                                                     𝑮𝒓𝒖𝒗𝒃𝒐𝒙 𝑴𝒂𝒕𝒆𝒓𝒊𝒂𝒍                                                     |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
-|  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/61801994-4072df00-ae1f-11e9-8a3a-cc806393f460.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/62703746-641a5580-b9d9-11e9-8627-a433baf69f39.png)  |
-| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/61802005-45379300-ae1f-11e9-91bb-012e058eb906.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/62703751-667caf80-b9d9-11e9-9245-99fdf87bacef.png) |
-|  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/61801978-3bae2b00-ae1f-11e9-9b7b-33105484be47.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/62703755-6977a000-b9d9-11e9-9a73-cbbc69ceda8f.png)  |
+|  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/61801994-4072df00-ae1f-11e9-8a3a-cc806393f460.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/62828764-867cc080-bbdd-11e9-9b93-697a6f338e13.png)  |
+| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/61802005-45379300-ae1f-11e9-91bb-012e058eb906.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/62828765-88df1a80-bbdd-11e9-8cd7-a6d0f8c95d1a.png) |
+|  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/61801978-3bae2b00-ae1f-11e9-9b7b-33105484be47.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/62828766-8bda0b00-bbdd-11e9-84b3-4f320d88a60d.png)  |
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
-Although the palette is different, its extended highlight groups are based on gruvbox, and I will periodically merge changes from [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
+The syntax highlighting logic in this branch is the same as the original gruvbox, and I will periodically merge changes from [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
+
+In addition, I've developed [neo](https://github.com/sainnhe/gruvbox-material/tree/neo) branch that uses completely different syntax highlighting logic, and it has also been optimized for many file types and plugins.
 
 # Installation
 
