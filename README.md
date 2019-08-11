@@ -8,7 +8,7 @@ Gruvbox Material is based on Gruvbox, but with a very different color palette, a
 
 The syntax highlighting logic in this branch is the same as the original gruvbox, and I will periodically merge changes from [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
 
-In addition, I've developed [neo](https://github.com/sainnhe/gruvbox-material/tree/neo) branch that uses completely different syntax highlighting logic, and it has also been optimized for many file types and plugins.
+In addition, I've developed [neosyn](https://github.com/sainnhe/gruvbox-material/tree/neosyn) branch that uses completely different syntax highlighting logic, and it has also been optimized for common file types and plugins.
 
 # Installation
 
