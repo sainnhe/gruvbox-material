@@ -413,7 +413,7 @@ jsonString -> White
 # }}}
 # Yaml{{{
 yamlKey -> Aqua
-yamlConstant -> Purlpe
+yamlConstant -> Purple
 #}}}
 # Toml{{{
 tomlTable -> Orange
