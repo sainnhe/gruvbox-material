@@ -7,9 +7,13 @@ Variant: 256 8
 Variant: gui 256 8
     Normal              light           none
     Terminal            light           none
+    DiffText            none            none            reverse
+    EndOfBuffer         dark0           none
 #else
     Normal              light           dark0
     Terminal            light           dark0
+    DiffText            none            dark0           reverse
+    EndOfBuffer         dark0           dark0
 #endif
 
 # Group                 Foreground      Background      Attributes
@@ -26,9 +30,7 @@ SignColumn              none            dark1
 DiffAdd                 none            darkgreen
 DiffChange              none            darkblue
 DiffDelete              none            darkred
-DiffText                none            dark0           reverse
 Directory               green           none
-EndOfBuffer             dark0           dark0
 ErrorMsg                red             none            bold
 WarningMsg              yellow          none            bold
 ModeMsg                 dark0           lightgrey       bold
