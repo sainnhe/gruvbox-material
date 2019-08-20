@@ -56,7 +56,7 @@ StatusLineTerm          light           dark3
 StatusLineTermNC        lightgrey       dark1
 TabLine                 light           dark3
 TabLineFill             light           dark1
-TabLineSel              dark0           lightgrey
+TabLineSel              dark0           lightgrey       bold
 VertSplit               dark3           dark0
 Visual                  none            none            reverse
 VisualNOS               none            none            reverse
