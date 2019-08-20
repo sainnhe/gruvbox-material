@@ -50,13 +50,13 @@ endverbatim
 # }}}
 # GitGutter {{{
 GitGutterAdd green dark1
-GitGutterChange yellow dark1
+GitGutterChange blue dark1
 GitGutterDelete red dark1
 GitGutterChangeDelete purple dark1
 # }}}
 # Signify {{{
 SignifySignAdd green dark1
-SignifySignChange yellow dark1
+SignifySignChange blue dark1
 SignifySignDelete red dark1
 # }}}
 # Syntastic {{{
