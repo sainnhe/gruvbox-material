@@ -107,6 +107,7 @@ Check this gist for detailed instructions to hack this color scheme: [hack-color
 -   [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
 -   [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/735f561e814e7901508d6bed569646d0c0fe3ab0/.zsh-theme)
 -   [Windows Terminal](https://gist.github.com/sainnhe/587a1bba123cb25a3ed83ced613c20c0)
+-   [Visual Studio Code](https://github.com/sainnhe/gruvbox-material-vscode)
 
 # License
 
