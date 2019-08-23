@@ -104,6 +104,7 @@ Check this gist for detailed instructions to hack this color scheme: [hack-color
 # Related Projects
 
 -   [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
+-   [kitty](https://gist.github.com/rsaihe/789829b1e475299b015717813715181a)
 -   [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
 -   [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/735f561e814e7901508d6bed569646d0c0fe3ab0/.zsh-theme)
 -   [Windows Terminal](https://gist.github.com/sainnhe/587a1bba123cb25a3ed83ced613c20c0)
