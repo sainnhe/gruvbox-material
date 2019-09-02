@@ -103,12 +103,21 @@ Check this gist for detailed instructions to hack this color scheme: [hack-color
 
 # Related Projects
 
--   [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
--   [kitty](https://gist.github.com/rsaihe/789829b1e475299b015717813715181a)
--   [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
--   [Zsh Pure Power](https://github.com/sainnhe/dotfiles/blob/735f561e814e7901508d6bed569646d0c0fe3ab0/.zsh-theme)
--   [Windows Terminal](https://gist.github.com/sainnhe/587a1bba123cb25a3ed83ced613c20c0)
--   [Visual Studio Code](https://github.com/sainnhe/gruvbox-material-vscode)
+## Code Editor
+
+- [Visual Studio Code](https://github.com/sainnhe/gruvbox-material-vscode)
+
+## Terminal Emulators
+
+- [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
+- [kitty](https://gist.github.com/rsaihe/789829b1e475299b015717813715181a)
+- [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
+- [Windows Terminal](https://gist.github.com/sainnhe/587a1bba123cb25a3ed83ced613c20c0)
+
+## Other
+
+- [Zsh](https://gist.github.com/sainnhe/f92372e14c59750b6ac8dc927ba9f7fe)
+- [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb)
 
 # License
 
