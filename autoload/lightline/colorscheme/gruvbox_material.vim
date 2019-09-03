@@ -9,14 +9,25 @@
 "{{{Palette
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-let s:dark      = [ '#282828', 235 ]
-let s:darker    = [ '#3c3836', 237 ]
-let s:darkgrey  = [ '#665c54', 241 ]
-let s:grey      = [ '#a89984', 246 ]
-let s:red       = [ '#ea6962', 167 ]
-let s:green     = [ '#a9b665', 142 ]
-let s:orange    = [ '#e78a4e', 208 ]
-let s:white     = [ '#dfbd8e', 223 ]
+if &background ==# 'light'
+    let s:dark      = [ '#ebdbb2', 223 ]
+    let s:darker    = [ '#ebdbb2', 223 ]
+    let s:darkgrey  = [ '#d5c4a1', 250 ]
+    let s:grey      = [ '#7c6f64', 243 ]
+    let s:red       = [ '#ae5858', 88 ]
+    let s:green     = [ '#6f8352', 100 ]
+    let s:orange    = [ '#a96b2c', 130 ]
+    let s:white     = [ '#665c54', 241 ]
+else
+    let s:dark      = [ '#282828', 235 ]
+    let s:darker    = [ '#3c3836', 237 ]
+    let s:darkgrey  = [ '#665c54', 241 ]
+    let s:grey      = [ '#a89984', 246 ]
+    let s:red       = [ '#ea6962', 167 ]
+    let s:green     = [ '#a9b665', 142 ]
+    let s:orange    = [ '#e78a4e', 208 ]
+    let s:white     = [ '#dfbd8e', 223 ]
+endif
 "}}}
 
 "{{{Definition

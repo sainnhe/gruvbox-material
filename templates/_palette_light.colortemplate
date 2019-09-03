@@ -1,23 +1,31 @@
 # vim: ft=colortemplate fdm=marker
 
-Color: dark0            #282828         235             Black
-Color: dark1            #3c3836         237             DarkGrey
-Color: dark2            #504945         239             DarkGrey
-Color: dark3            #665c54         241             DarkGrey
-Color: dark4            #7c6f64         243             DarkGrey
-Color: grey             #928374         245             Grey
-Color: lightgrey        #a89984         246             LightGrey
-Color: light            #dfbf8e         223             White
-Color: red              #ea6962         167             Red
-Color: orange           #e78a4e         208             DarkYellow
-Color: yellow           #e3a84e         214             Yellow
-Color: green            #a9b665         142             Green
-Color: aqua             #89b482         108             Cyan
-Color: blue             #7daea3         109             Blue
-Color: purple           #d3869b         175             Magenta
-Color: darkgreen        #34381b         ~               DarkGreen
-Color: darkred          #402120         ~               DarkRed
-Color: darkblue         #0e363e         ~               DarkBlue
+Color: dark0_hard       #f9f5d7         230             White
+Color: dark0_medium     #fbf1c7         229             White
+Color: dark0_soft       #f2e5bc         228             White
+Color: dark1            #ebdbb2         223             LightGrey
+Color: dark2            #d5c4a1         250             LightGrey
+Color: dark3            #bdae93         248             LightGrey
+Color: dark4            #a89984         246             LightGrey
+Color: grey             #928374         245             LightGrey
+Color: lightgrey        #7c6f64         243             Grey
+Color: light            #764e37         237             Black
+Color: red              #c52424         88              Red
+Color: orange           #c35800         130             DarkYellow
+Color: yellow           #b67715         136             Yellow
+Color: green            #6f7a34         100             Green
+Color: aqua             #487a5b         165             Cyan
+Color: blue             #38747c         24              Blue
+Color: purple           #94597e         96              Magenta
+Color: darkgreen_hard   #e3f6b4         ~               DarkGreen
+Color: darkred_hard     #ffdbcc         ~               DarkRed
+Color: darkblue_hard    #cff1f6         ~               DarkBlue
+Color: darkgreen_medium #daf0a7         ~               DarkGreen
+Color: darkred_medium   #fbcdb9         ~               DarkRed
+Color: darkblue_medium  #c6eaf0         ~               DarkBlue
+Color: darkgreen_soft   #d1ea9b         ~               DarkGreen
+Color: darkred_soft     #fbcab5         ~               DarkRed
+Color: darkblue_soft    #bee4ea         ~               DarkBlue
 
 White                   light           none
 LightGrey               lightgrey       none

@@ -1,19 +1,39 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
 Variant: gui
-#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+#if get(g:, 'gruvbox_material_transparent_background', 0) && !has('gui_running')
 Variant: 256 8
-#if get(g:, '@optionprefix_transp_bg', 0)
+#if get(g:, 'gruvbox_material_transparent_background', 0)
 Variant: gui 256 8
     Normal              light           none
     Terminal            light           none
     DiffText            none            none            reverse
-    EndOfBuffer         dark0           none
+    VertSplit           dark3           none
+    QuickFixLine        yellow          none            reverse
+    EndOfBuffer         grey            none
 #else
-    Normal              light           dark0
-    Terminal            light           dark0
-    DiffText            none            dark0           reverse
-    EndOfBuffer         dark0           dark0
+    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        Normal              light           dark0_hard
+        Terminal            light           dark0_hard
+        DiffText            none            dark0_hard  reverse
+        EndOfBuffer         dark0_hard      dark0_hard
+        VertSplit           dark3           dark0_hard
+        QuickFixLine        yellow          dark0_hard  reverse
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        Normal              light           dark0_soft
+        Terminal            light           dark0_soft
+        DiffText            none            dark0_soft  reverse
+        EndOfBuffer         dark0_soft      dark0_soft
+        VertSplit           dark3           dark0_soft
+        QuickFixLine        yellow          dark0_soft  reverse
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        Normal              light           dark0_medium
+        Terminal            light           dark0_medium
+        DiffText            none            dark0_medium reverse
+        EndOfBuffer         dark0_medium    dark0_medium
+        VertSplit           dark3           dark0_medium
+        QuickFixLine        yellow          dark0_medium reverse
+    #endif
 #endif
 
 # Group                 Foreground      Background      Attributes
@@ -27,13 +47,10 @@ CursorLine              none            dark1
 CursorLineNr            yellow          dark1
 LineNr                  dark4           none
 SignColumn              none            dark1
-DiffAdd                 none            darkgreen
-DiffChange              none            darkblue
-DiffDelete              none            darkred
 Directory               green           none
 ErrorMsg                red             none            bold
 WarningMsg              yellow          none            bold
-ModeMsg                 dark0           lightgrey       bold
+ModeMsg                 light           none            bold
 MoreMsg                 yellow          none            bold
 FoldColumn              grey            dark1
 Folded                  grey            dark1
@@ -43,7 +60,7 @@ MatchParen              none            none            bold
 NonText                 grey            none
 Pmenu                   light           dark2
 PmenuSbar               none            dark2
-PmenuSel                dark0           lightgrey
+PmenuSel                dark0_medium    lightgrey
 PmenuThumb              none            dark4
 Question                orange          none            bold
 SpellBad                red             none            italic t=underline g=undercurl s=red
@@ -56,16 +73,14 @@ StatusLineTerm          light           dark3
 StatusLineTermNC        lightgrey       dark1
 TabLine                 light           dark3
 TabLineFill             light           dark1
-TabLineSel              dark0           lightgrey       bold
-VertSplit               dark3           dark0
+TabLineSel              dark0_medium    lightgrey       bold
 Visual                  none            none            reverse
 VisualNOS               none            none            reverse
-WildMenu                dark0           lightgrey
+WildMenu                dark0_medium    lightgrey
 Todo                    grey            none            bold,italic
 CursorIM                none            none            reverse
 ToolbarLine             none            dark3
 ToolbarButton           light           dark3           bold
-QuickFixLine            yellow          dark0           reverse
 Debug                   orange          none
 
 # Syntax
@@ -103,9 +118,24 @@ Comment                 grey            none            italic
 SpecialComment          grey            none            italic
 Ignore                  light           none
 #if get(g:, 'gruvbox_material_enable_bold', 0)
-    Error                   red             dark0           bold,reverse
     Function                green           none            bold
 #else
-    Error                   red             dark0           reverse
     Function                green           none
+#endif
+
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    DiffAdd                 none            darkgreen_hard
+    DiffChange              none            darkblue_hard
+    DiffDelete              none            darkred_hard
+    Error                   none            darkred_hard
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    DiffAdd                 none            darkgreen_soft
+    DiffChange              none            darkblue_soft
+    DiffDelete              none            darkred_soft
+    Error                   none            darkred_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    DiffAdd                 none            darkgreen_medium
+    DiffChange              none            darkblue_medium
+    DiffDelete              none            darkred_medium
+    Error                   none            darkred_medium
 #endif

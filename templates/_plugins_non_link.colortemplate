@@ -5,14 +5,36 @@ plug1 orange none bold
 plugNumber yellow none bold
 #}}}
 # Indent Guides {{{
-#if get(g:, 'indent_guides_auto_colors', 0)
- #if get(g:, '@optionprefix_invert_indent_guides', 0)
- IndentGuidesOdd dark0 dark2 reverse
- IndentGuidesEven dark0 dark1 reverse
- #else
- IndentGuidesOdd dark0 dark2
- IndentGuidesEven dark0 dark1
- #endif
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    #if get(g:, 'indent_guides_auto_colors', 0)
+        #if get(g:, '@optionprefix_invert_indent_guides', 0)
+            IndentGuidesOdd dark0_hard dark2 reverse
+            IndentGuidesEven dark0_hard dark1 reverse
+        #else
+            IndentGuidesOdd dark0_hard dark2
+            IndentGuidesEven dark0_hard dark1
+        #endif
+    #endif
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    #if get(g:, 'indent_guides_auto_colors', 0)
+        #if get(g:, '@optionprefix_invert_indent_guides', 0)
+            IndentGuidesOdd dark0_soft dark2 reverse
+            IndentGuidesEven dark0_soft dark1 reverse
+        #else
+            IndentGuidesOdd dark0_soft dark2
+            IndentGuidesEven dark0_soft dark1
+        #endif
+    #endif
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    #if get(g:, 'indent_guides_auto_colors', 0)
+        #if get(g:, '@optionprefix_invert_indent_guides', 0)
+            IndentGuidesOdd dark0_medium dark2 reverse
+            IndentGuidesEven dark0_medium dark1 reverse
+        #else
+            IndentGuidesOdd dark0_medium dark2
+            IndentGuidesEven dark0_medium dark1
+        #endif
+    #endif
 #endif
 # }}}
 # IndentLine {{{
@@ -80,7 +102,7 @@ CtrlPMatch green none bold
 CtrlPPrtBase dark2 none
 CtrlPLinePre dark2 none
 CtrlPMode1 blue dark2 bold
-CtrlPMode2 dark0 blue bold
+CtrlPMode2 dark0_medium blue bold
 CtrlPStats lightgrey dark2 bold
 # }}}
 # LeaderF {{{
@@ -100,16 +122,22 @@ verbatim
 let g:vimshell_escape_colors = [
  \ '@guidark4', '@guired', '@guigreen', '@guiyellow',
  \ '@guiblue', '@guipurple', '@guiaqua', '@guilightgrey',
- \ '@guidark0', '@guired', '@guigreen', '@guiorange',
+ \ '@guidark0_medium', '@guired', '@guigreen', '@guiorange',
  \ '@guiblue', '@guipurple', '@guiaqua', '@guilight'
  \ ]
 endverbatim
 # }}}
 # BufTabLine {{{
-BufTabLineCurrent dark0 lightgrey
+BufTabLineCurrent dark0_medium lightgrey
 BufTabLineActive lightgrey dark2
 BufTabLineHidden dark4 dark1
-BufTabLineFill dark0 dark0
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    BufTabLineFill dark0_hard dark0_hard
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft' 
+    BufTabLineFill dark0_soft dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    BufTabLineFill dark0_medium dark0_medium
+#endif
 # }}}
 # ALE {{{
 ALEError none none t=underline g=undercurl s=red

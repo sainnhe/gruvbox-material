@@ -17,7 +17,7 @@ Include: _plugins
 
 Background:             dark
 
-Include: _palette
+Include: _palette_dark
 
 Include: _terminal
 
@@ -26,5 +26,19 @@ Include: _basic
 Include: _filetypes_non_link
 
 Include: _plugins_non_link
+
+Background:             light
+
+Include: _palette_light
+
+Include: _terminal
+
+Include: _basic
+
+Include: _filetypes_non_link
+
+Include: _plugins_non_link
+
+Background: any
 
 Include: _bw
