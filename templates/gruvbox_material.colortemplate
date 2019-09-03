@@ -9,8 +9,6 @@ Description:            Gruvbox with Material Palette
 License:                MIT && Anti-996
 Neovim:                 yes
 
-#let s:italics = !(get(g:, 'gruvbox_material_kill_italic', 0) && s:italics)
-
 Include: _filetypes
 
 Include: _plugins
