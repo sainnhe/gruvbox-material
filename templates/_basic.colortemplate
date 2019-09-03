@@ -114,9 +114,16 @@ Character               purple          none
 Number                  purple          none
 Float                   purple          none
 SpecialKey              blue            none
-Comment                 grey            none            italic
-SpecialComment          grey            none            italic
 Ignore                  light           none
+
+#if get(g:, 'gruvbox_material_disable_italic_comment', 0)
+    Comment                 grey            none
+    SpecialComment          grey            none
+#else
+    Comment                 grey            none            italic
+    SpecialComment          grey            none            italic
+#endif
+
 #if get(g:, 'gruvbox_material_enable_bold', 0)
     Function                green           none            bold
 #else
