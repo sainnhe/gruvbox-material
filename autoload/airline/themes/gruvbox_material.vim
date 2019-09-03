@@ -23,7 +23,7 @@ else
         let s:darkgrey  = '#504945'
     elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         let s:darker    = '#32302f'
-        let s:darkgrey  = '#665c54'
+        let s:darkgrey  = '#5a524c'
     elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         let s:darker    = '#3c3836'
         let s:darkgrey  = '#665c54'
