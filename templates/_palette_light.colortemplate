@@ -12,11 +12,11 @@ Color: lightgrey        #7c6f64         243             Grey
 Color: light            #764e37         237             Black
 Color: light_alt        #504945         239             DarkGrey
 Color: red              #c74545         88              Red
-Color: orange           #c35800         130             DarkYellow
+Color: orange           #c55b03         130             DarkYellow
 Color: yellow           #b47109         136             Yellow
 Color: green            #6c782e         100             Green
 Color: aqua             #4c7a5d         165             Cyan
-Color: blue             #42717c         24              Blue
+Color: blue             #47747e         24              Blue
 Color: purple           #945e80         96              Magenta
 Color: darkgreen_hard   #e3f6b4         ~               DarkGreen
 Color: darkred_hard     #ffdbcc         ~               DarkRed
