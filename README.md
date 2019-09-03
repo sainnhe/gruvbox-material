@@ -5,7 +5,7 @@
 |        |                                                     𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                     |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
 |  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/64962022-32bd6100-d886-11e9-9504-f924c07022ae.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/64961995-289b6280-d886-11e9-9b8b-c5ea74d8da5f.png)  |
-| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/64962019-318c3400-d886-11e9-99cf-4ea0145c0ae3.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/64962001-2a652600-d886-11e9-921a-5a3760173d36.png) |
+| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/64962019-318c3400-d886-11e9-99cf-4ea0145c0ae3.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/65002822-156baf80-d8e5-11e9-9b20-ffe920584c5a.png) |
 |  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/64962028-34872480-d886-11e9-828c-073cc40e8701.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/64962007-2c2ee980-d886-11e9-8a11-aacff84d33f7.png)  |
 
 <h1 align="center">
