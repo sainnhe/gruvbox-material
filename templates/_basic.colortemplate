@@ -36,6 +36,20 @@ Variant: gui 256 8
     #endif
 #endif
 
+#if &background ==#'light'
+    Pmenu                   light_alt       dark2
+    StatusLine              light_alt       dark3
+    StatusLineTerm          light_alt       dark3
+    TabLine                 light_alt       dark3
+    TabLineFill             light_alt       dark1
+#else
+    Pmenu                   light           dark2
+    StatusLine              light           dark3
+    StatusLineTerm          light           dark3
+    TabLine                 light           dark3
+    TabLineFill             light           dark1
+#endif
+
 # Group                 Foreground      Background      Attributes
 # UI
 ColorColumn             none            dark1
@@ -58,7 +72,6 @@ IncSearch               none            none            reverse,bold
 Search                  none            none            reverse,underline
 MatchParen              none            none            bold
 NonText                 grey            none
-Pmenu                   light           dark2
 PmenuSbar               none            dark2
 PmenuSel                dark0_medium    lightgrey
 PmenuThumb              none            dark4
@@ -67,12 +80,8 @@ SpellBad                red             none            italic t=underline g=und
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-StatusLine              light           dark3
 StatusLineNC            lightgrey       dark1
-StatusLineTerm          light           dark3
 StatusLineTermNC        lightgrey       dark1
-TabLine                 light           dark3
-TabLineFill             light           dark1
 TabLineSel              dark0_medium    lightgrey       bold
 Visual                  none            none            reverse
 VisualNOS               none            none            reverse
