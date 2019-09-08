@@ -1,5 +1,7 @@
 # vim: ft=colortemplate fdm=marker cc=22,40,58
 
+# Group                 Foreground      Background      Attributes
+# UI
 Variant: gui
 #if get(g:, 'gruvbox_material_transparent_background', 0) && !has('gui_running')
 Variant: 256 8
@@ -37,37 +39,110 @@ Variant: gui 256 8
 #endif
 
 #if &background ==#'light'
-    Pmenu                   light_alt       dark2
-    StatusLine              light_alt       dark3
-    StatusLineTerm          light_alt       dark3
-    TabLine                 light_alt       dark3
-    TabLineFill             light_alt       dark1
+    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        Pmenu                   light_alt       dark1
+        StatusLine              light_alt       dark2
+        StatusLineTerm          light_alt       dark2
+        TabLine                 light_alt       dark2
+        TabLineFill             light_alt       dark0_medium
+        ColorColumn             none            dark0_medium
+        CursorColumn            none            dark0_medium
+        CursorLine              none            dark0_medium
+        CursorLineNr            lightgrey       dark0_medium
+        SignColumn              none            dark0_medium
+        FoldColumn              grey            dark0_medium
+        Folded                  grey            dark0_medium
+        StatusLineNC            lightgrey       dark0_medium
+        StatusLineTermNC        lightgrey       dark0_medium
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        Pmenu                   light_alt       dark2
+        StatusLine              light_alt       dark3
+        StatusLineTerm          light_alt       dark3
+        TabLine                 light_alt       dark3
+        TabLineFill             light_alt       dark0_soft
+        ColorColumn             none            dark0_soft
+        CursorColumn            none            dark0_soft
+        CursorLine              none            dark0_soft
+        CursorLineNr            lightgrey       dark0_soft
+        SignColumn              none            dark0_soft
+        FoldColumn              grey            dark0_soft
+        Folded                  grey            dark0_soft
+        StatusLineNC            lightgrey       dark0_soft
+        StatusLineTermNC        lightgrey       dark0_soft
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        Pmenu                   light_alt       dark2
+        StatusLine              light_alt       dark3
+        StatusLineTerm          light_alt       dark3
+        TabLine                 light_alt       dark3
+        TabLineFill             light_alt       dark1
+        ColorColumn             none            dark1
+        CursorColumn            none            dark1
+        CursorLine              none            dark1
+        CursorLineNr            lightgrey       dark1
+        SignColumn              none            dark1
+        FoldColumn              grey            dark1
+        Folded                  grey            dark1
+        StatusLineNC            lightgrey       dark1
+        StatusLineTermNC        lightgrey       dark1
+    #endif
 #else
-    Pmenu                   light           dark2
-    StatusLine              light           dark3
-    StatusLineTerm          light           dark3
-    TabLine                 light           dark3
-    TabLineFill             light           dark1
+    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        Pmenu                   light           dark1
+        StatusLine              light           dark2
+        StatusLineTerm          light           dark2
+        TabLine                 light           dark2
+        TabLineFill             light           dark0_medium
+        ColorColumn             none            dark0_medium
+        CursorColumn            none            dark0_medium
+        CursorLine              none            dark0_medium
+        CursorLineNr            lightgrey       dark0_medium
+        SignColumn              none            dark0_medium
+        FoldColumn              grey            dark0_medium
+        Folded                  grey            dark0_medium
+        StatusLineNC            lightgrey       dark0_medium
+        StatusLineTermNC        lightgrey       dark0_medium
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        Pmenu                   light           dark2
+        StatusLine              light           dark3
+        StatusLineTerm          light           dark3
+        TabLine                 light           dark3
+        TabLineFill             light           dark0_soft
+        ColorColumn             none            dark0_soft
+        CursorColumn            none            dark0_soft
+        CursorLine              none            dark0_soft
+        CursorLineNr            lightgrey       dark0_soft
+        SignColumn              none            dark0_soft
+        FoldColumn              grey            dark0_soft
+        Folded                  grey            dark0_soft
+        StatusLineNC            lightgrey       dark0_soft
+        StatusLineTermNC        lightgrey       dark0_soft
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        Pmenu                   light           dark2
+        StatusLine              light           dark3
+        StatusLineTerm          light           dark3
+        TabLine                 light           dark3
+        TabLineFill             light           dark1
+        ColorColumn             none            dark1
+        CursorColumn            none            dark1
+        CursorLine              none            dark1
+        CursorLineNr            lightgrey       dark1
+        SignColumn              none            dark1
+        FoldColumn              grey            dark1
+        Folded                  grey            dark1
+        StatusLineNC            lightgrey       dark1
+        StatusLineTermNC        lightgrey       dark1
+    #endif
 #endif
 
-# Group                 Foreground      Background      Attributes
-# UI
-ColorColumn             none            dark1
 Conceal                 blue            none
 Cursor                  none            none            reverse
 lCursor                 none            none            reverse
-CursorColumn            none            dark1
-CursorLine              none            dark1
-CursorLineNr            yellow          dark1
 LineNr                  dark4           none
-SignColumn              none            dark1
 Directory               green           none
 ErrorMsg                red             none            bold
 WarningMsg              yellow          none            bold
 ModeMsg                 light           none            bold
 MoreMsg                 yellow          none            bold
-FoldColumn              grey            dark1
-Folded                  grey            dark1
 IncSearch               none            none            reverse,bold
 Search                  none            none            reverse,underline
 MatchParen              none            none            bold
@@ -80,8 +155,6 @@ SpellBad                red             none            italic t=underline g=und
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-StatusLineNC            lightgrey       dark1
-StatusLineTermNC        lightgrey       dark1
 TabLineSel              dark0_medium    lightgrey       bold
 Visual                  none            none            reverse
 VisualNOS               none            none            reverse

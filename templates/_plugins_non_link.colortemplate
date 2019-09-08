@@ -71,31 +71,81 @@ let g:niji_light_colours = g:rbpt_colorpairs
 endverbatim
 # }}}
 # GitGutter {{{
-GitGutterAdd green dark1
-GitGutterChange blue dark1
-GitGutterDelete red dark1
-GitGutterChangeDelete purple dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    GitGutterAdd green dark0_medium
+    GitGutterChange blue dark0_medium
+    GitGutterDelete red dark0_medium
+    GitGutterChangeDelete purple dark0_medium
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    GitGutterAdd green dark0_soft
+    GitGutterChange blue dark0_soft
+    GitGutterDelete red dark0_soft
+    GitGutterChangeDelete purple dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    GitGutterAdd green dark1
+    GitGutterChange blue dark1
+    GitGutterDelete red dark1
+    GitGutterChangeDelete purple dark1
+#endif
 # }}}
 # Signify {{{
-SignifySignAdd green dark1
-SignifySignChange blue dark1
-SignifySignDelete red dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    SignifySignAdd green dark0_medium
+    SignifySignChange blue dark0_medium
+    SignifySignDelete red dark0_medium
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    SignifySignAdd green dark0_soft
+    SignifySignChange blue dark0_soft
+    SignifySignDelete red dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    SignifySignAdd green dark1
+    SignifySignChange blue dark1
+    SignifySignDelete red dark1
+#endif
 # }}}
 # Syntastic {{{
 SyntasticError none none t=underline g=undercurl s=red
 SyntasticWarning none none t=underline g=undercurl s=yellow
-SyntasticErrorSign red dark1
-SyntasticWarningSign yellow dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    SyntasticErrorSign red dark0_medium
+    SyntasticWarningSign yellow dark0_medium
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    SyntasticErrorSign red dark0_soft
+    SyntasticWarningSign yellow dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    SyntasticErrorSign red dark1
+    SyntasticWarningSign yellow dark1
+#endif
 # }}}
 # Signature {{{
-SignatureMarkText blue dark1
-SignatureMarkerText purple dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    SignatureMarkText blue dark0_medium
+    SignatureMarkerText purple dark0_medium
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    SignatureMarkText blue dark0_soft
+    SignatureMarkerText purple dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    SignatureMarkText blue dark1
+    SignatureMarkerText purple dark1
+#endif
 # }}}
 # ShowMarks {{{
-ShowMarksHLl blue dark1
-ShowMarksHLu blue dark1
-ShowMarksHLo blue dark1
-ShowMarksHLm blue dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    ShowMarksHLl blue dark0_medium  
+    ShowMarksHLu blue dark0_medium  
+    ShowMarksHLo blue dark0_medium  
+    ShowMarksHLm blue dark0_medium  
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    ShowMarksHLl blue dark0_soft
+    ShowMarksHLu blue dark0_soft
+    ShowMarksHLo blue dark0_soft
+    ShowMarksHLm blue dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    ShowMarksHLl blue dark1
+    ShowMarksHLu blue dark1
+    ShowMarksHLo blue dark1
+    ShowMarksHLm blue dark1
+#endif
 # }}}
 # CtrlP {{{
 CtrlPMatch green none bold
@@ -143,9 +193,19 @@ BufTabLineHidden dark4 dark1
 ALEError none none t=underline g=undercurl s=red
 ALEWarning none none t=underline g=undercurl s=red
 ALEInfo none none t=underline g=undercurl s=blue
-ALEErrorSign red dark1
-ALEWarningSign yellow dark1
-ALEInfoSign blue dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    ALEErrorSign red dark0_medium
+    ALEWarningSign yellow dark0_medium
+    ALEInfoSign blue dark0_medium
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    ALEErrorSign red dark0_soft
+    ALEWarningSign yellow dark0_soft
+    ALEInfoSign blue dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    ALEErrorSign red dark1
+    ALEWarningSign yellow dark1
+    ALEInfoSign blue dark1
+#endif
 # }}}
 # Vim Multiple Cursors {{{
 multiple_cursors_cursor none none reverse
@@ -153,7 +213,13 @@ multiple_cursors_visual none dark2
 # }}}
 # CoC{{{
 CocHighlightText none none bold
-CocHintSign aqua dark1
+#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+    CocHintSign aqua dark0_medium
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+    CocHintSign aqua dark0_soft
+#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+    CocHintSign aqua dark1
+#endif
 #}}}
 # vim-matchup{{{
 MatchParenCur           none            none            bold
