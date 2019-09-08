@@ -39,6 +39,9 @@ Variant: gui 256 8
 #endif
 
 #if &background ==#'light'
+    PmenuSel                dark1           lightgrey
+    TabLineSel              dark1           lightgrey       bold
+    WildMenu                dark1           lightgrey
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Pmenu                   light_alt       dark1
         StatusLine              light_alt       dark2
@@ -86,6 +89,9 @@ Variant: gui 256 8
         StatusLineTermNC        lightgrey       dark1
     #endif
 #else
+    PmenuSel                dark0_medium    lightgrey
+    TabLineSel              dark0_medium    lightgrey       bold
+    WildMenu                dark0_medium    lightgrey
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Pmenu                   light           dark1
         StatusLine              light           dark2
@@ -148,17 +154,14 @@ Search                  none            none            reverse,underline
 MatchParen              none            none            bold
 NonText                 grey            none
 PmenuSbar               none            dark2
-PmenuSel                dark0_medium    lightgrey
 PmenuThumb              none            dark4
 Question                orange          none            bold
 SpellBad                red             none            italic t=underline g=undercurl s=red
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-TabLineSel              dark0_medium    lightgrey       bold
 Visual                  none            none            reverse
 VisualNOS               none            none            reverse
-WildMenu                dark0_medium    lightgrey
 Todo                    grey            none            bold,italic
 CursorIM                none            none            reverse
 ToolbarLine             none            dark3
