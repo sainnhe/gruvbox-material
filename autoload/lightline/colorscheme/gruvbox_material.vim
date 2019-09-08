@@ -10,18 +10,34 @@
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 if &background ==# 'light'
+    if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        let s:darker    = [ '#fbf1c7', 223 ]
+        let s:darkgrey  = [ '#ebdbb2', 250 ]
+    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        let s:darker    = [ '#f2e5bc', 223 ]
+        let s:darkgrey  = [ '#d5c4a1', 250 ]
+    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        let s:darker    = [ '#ebdbb2', 223 ]
+        let s:darkgrey  = [ '#d5c4a1', 250 ]
+    endif
     let s:dark      = [ '#ebdbb2', 223 ]
-    let s:darker    = [ '#ebdbb2', 223 ]
-    let s:darkgrey  = [ '#d5c4a1', 250 ]
     let s:grey      = [ '#7c6f64', 243 ]
     let s:red       = [ '#ae5858', 88 ]
     let s:green     = [ '#6f8352', 100 ]
     let s:orange    = [ '#a96b2c', 130 ]
     let s:white     = [ '#665c54', 241 ]
 else
+    if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        let s:darker    = [ '#282828', 237 ]
+        let s:darkgrey  = [ '#504945', 241 ]
+    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        let s:darker    = [ '#32302f', 237 ]
+        let s:darkgrey  = [ '#665c54', 241 ]
+    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        let s:darker    = [ '#3c3836', 237 ]
+        let s:darkgrey  = [ '#665c54', 241 ]
+    endif
     let s:dark      = [ '#282828', 235 ]
-    let s:darker    = [ '#3c3836', 237 ]
-    let s:darkgrey  = [ '#665c54', 241 ]
     let s:grey      = [ '#a89984', 246 ]
     let s:red       = [ '#ea6962', 167 ]
     let s:green     = [ '#a9b665', 142 ]
