@@ -112,7 +112,7 @@ To apply it without reloading:
 - By default, the background is `medium`. To use `hard` background, add `let g:gruvbox_material_background = 'hard'` to your vimrc. To use `soft` background, add `let g:gruvbox_material_background = 'soft'` to your vimrc.
 - By default, italic is enabled in `Comment`. To disable italic in `Comment`, add `let g:gruvbox_material_disable_italic_comment = 1` to your vimrc.
 - By default, bold is partly enabled. To completely enable bold, add `let g:gruvbox_material_enable_bold = 1` to your vimrc.
-- By default, bold is enabled in lightline color scheme. To disable bold in lightline color scheme, add `let g:gruvbox_material_lightline_kill_bold = 1` to your vimrc.
+- By default, bold is enabled in lightline color scheme. To disable bold in lightline color scheme, add `let g:gruvbox_material_lightline_disable_bold = 1` to your vimrc.
 - To use transparent background, add `let g:gruvbox_material_transparent_background = 1` to your vimrc.
 
 # FAQ
