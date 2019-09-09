@@ -150,7 +150,7 @@ Check this gist for detailed instructions to hack this color scheme: [hack-color
 ## Terminal Emulators
 
 - [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797)
-- [kitty](https://gist.github.com/rsaihe/789829b1e475299b015717813715181a)
+- [kitty](https://github.com/rsaihe/gruvbox-material-kitty)
 - [Tilix](https://gist.github.com/sainnhe/5c44ffcd2465198ced6d80ac57b38b34)
 - [Windows Terminal](https://gist.github.com/sainnhe/587a1bba123cb25a3ed83ced613c20c0)
 
