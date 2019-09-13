@@ -43,10 +43,10 @@ Variant: gui 256 8
     TabLineSel              dark1           lightgrey       bold
     WildMenu                dark1           lightgrey
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        Pmenu                   light_alt       dark1
-        StatusLine              light_alt       dark2
-        StatusLineTerm          light_alt       dark2
-        TabLine                 light_alt       dark2
+        Pmenu                   light_alt       dark0_soft
+        StatusLine              light_alt       dark1
+        StatusLineTerm          light_alt       dark1
+        TabLine                 light_alt       dark1
         TabLineFill             light_alt       dark0_medium
         ColorColumn             none            dark0_medium
         CursorColumn            none            dark0_medium
@@ -58,10 +58,10 @@ Variant: gui 256 8
         StatusLineNC            lightgrey       dark0_medium
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        Pmenu                   light_alt       dark2
-        StatusLine              light_alt       dark3
-        StatusLineTerm          light_alt       dark3
-        TabLine                 light_alt       dark3
+        Pmenu                   light_alt       dark1
+        StatusLine              light_alt       dark2
+        StatusLineTerm          light_alt       dark2
+        TabLine                 light_alt       dark2
         TabLineFill             light_alt       dark0_soft
         ColorColumn             none            dark0_soft
         CursorColumn            none            dark0_soft
