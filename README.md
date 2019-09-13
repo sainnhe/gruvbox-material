@@ -107,7 +107,7 @@ To apply it without reloading:
 
 # Customization
 
-**Note:** The following commands should be executed before `colorscheme gruvbox-material`
+**Note:** The following commands should be executed **before** `colorscheme gruvbox-material`
 
 - By default, the background is `medium`. To use `hard` background, add `let g:gruvbox_material_background = 'hard'` to your vimrc. To use `soft` background, add `let g:gruvbox_material_background = 'soft'` to your vimrc.
 - By default, italic is enabled in `Comment`. To disable italic in `Comment`, add `let g:gruvbox_material_disable_italic_comment = 1` to your vimrc.
