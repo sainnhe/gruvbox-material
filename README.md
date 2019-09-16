@@ -4,9 +4,9 @@
 
 |        |                                                     𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                     |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
-|  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/61801994-4072df00-ae1f-11e9-8a3a-cc806393f460.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/62828764-867cc080-bbdd-11e9-9b93-697a6f338e13.png)  |
-| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/61802005-45379300-ae1f-11e9-91bb-012e058eb906.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/62828765-88df1a80-bbdd-11e9-8cd7-a6d0f8c95d1a.png) |
-|  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/61801978-3bae2b00-ae1f-11e9-9b7b-33105484be47.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/62828766-8bda0b00-bbdd-11e9-84b3-4f320d88a60d.png)  |
+|  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/64962022-32bd6100-d886-11e9-9504-f924c07022ae.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/64961995-289b6280-d886-11e9-9b8b-c5ea74d8da5f.png)  |
+| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/64962019-318c3400-d886-11e9-99cf-4ea0145c0ae3.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/64962001-2a652600-d886-11e9-921a-5a3760173d36.png) |
+|  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/64962028-34872480-d886-11e9-828c-073cc40e8701.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/64962007-2c2ee980-d886-11e9-8a11-aacff84d33f7.png)  |
 
 <h1 align="center">
 𝐋𝐢𝐠𝐡𝐭
@@ -14,9 +14,9 @@
 
 |        |                                                     𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                     |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
-|  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/64184396-ecfea280-ce5a-11e9-8f78-c3d33e86633b.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/64214684-fa3e8000-cea0-11e9-861d-781cc917bae6.png)  |
-| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/64184401-eec86600-ce5a-11e9-849d-1f2471259eb1.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/64214691-fd397080-cea0-11e9-832c-e5f1df4959ef.png) |
-|  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/64184412-f25bed00-ce5a-11e9-9e75-16cb75579ea6.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/64214693-ff9bca80-cea0-11e9-9739-50ee75149f9b.png)  |
+|  𝒉𝒂𝒓𝒅  |  ![original-hard](https://user-images.githubusercontent.com/37491630/64962226-934c9e00-d886-11e9-91fc-c67b08cb6da4.png)  |  ![material-hard](https://user-images.githubusercontent.com/37491630/64962200-8c259000-d886-11e9-9ecb-540f1ccb0b4b.png)  |
+| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/64962235-95aef800-d886-11e9-96a5-1cdf59857e55.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/64962206-8e87ea00-d886-11e9-9734-33cdc496dca6.png) |
+|  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/64962251-98a9e880-d886-11e9-82e8-be7e1bc8e15c.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/64962218-9182da80-d886-11e9-9b22-f4a4a39f80f0.png)  |
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
 
