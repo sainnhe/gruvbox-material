@@ -145,7 +145,7 @@ Cursor                  none            none            reverse
 lCursor                 none            none            reverse
 LineNr                  dark4           none
 Directory               green           none
-ErrorMsg                red             none            bold
+ErrorMsg                red             none            bold,underline
 WarningMsg              yellow          none            bold
 ModeMsg                 light           none            bold
 MoreMsg                 yellow          none            bold
