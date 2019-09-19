@@ -213,6 +213,7 @@ multiple_cursors_visual none dark2
 # }}}
 # CoC{{{
 CocHighlightText none none bold
+CocHoverRange none none bold,underline
 #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
     CocHintSign aqua dark0_medium
 #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
