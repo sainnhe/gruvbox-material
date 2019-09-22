@@ -28,11 +28,11 @@ if &background ==# 'light'
     let s:white     = [ '#665c54', 241 ]
 else
     if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        let s:darker    = [ '#282828', 237 ]
-        let s:darkgrey  = [ '#504945', 241 ]
+        let s:darker    = [ '#282828', 235 ]
+        let s:darkgrey  = [ '#504945', 239 ]
     elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        let s:darker    = [ '#32302f', 237 ]
-        let s:darkgrey  = [ '#5a524c', 241 ]
+        let s:darker    = [ '#32302f', 236 ]
+        let s:darkgrey  = [ '#5a524c', 240 ]
     elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         let s:darker    = [ '#3c3836', 237 ]
         let s:darkgrey  = [ '#665c54', 241 ]

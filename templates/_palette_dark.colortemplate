@@ -1,8 +1,8 @@
 # vim: ft=colortemplate fdm=marker
 
-Color: dark0_hard       #1d2021         235             Black
+Color: dark0_hard       #1d2021         234             Black
 Color: dark0_medium     #282828         235             Black
-Color: dark0_soft       #32302f         235             Black
+Color: dark0_soft       #32302f         236             Black
 Color: dark1            #3c3836         237             DarkGrey
 Color: dark2            #504945         239             DarkGrey
 Color: dark3            #665c54         241             DarkGrey
@@ -18,15 +18,15 @@ Color: green            #a9b665         142             Green
 Color: aqua             #89b482         108             Cyan
 Color: blue             #7daea3         109             Blue
 Color: purple           #d3869b         175             Magenta
-Color: darkgreen_hard   #32361a         ~               DarkGreen
-Color: darkred_hard     #3c1f1e         ~               DarkRed
-Color: darkblue_hard    #0d3138         ~               DarkBlue
-Color: darkgreen_medium #34381b         ~               DarkGreen
-Color: darkred_medium   #402120         ~               DarkRed
-Color: darkblue_medium  #0e363e         ~               DarkBlue
-Color: darkgreen_soft   #3d4220         ~               DarkGreen
-Color: darkred_soft     #472322         ~               DarkRed
-Color: darkblue_soft    #0f3a42         ~               DarkBlue
+Color: darkgreen_hard   #32361a         22              DarkGreen
+Color: darkred_hard     #3c1f1e         52              DarkRed
+Color: darkblue_hard    #0d3138         17              DarkBlue
+Color: darkgreen_medium #34381b         22              DarkGreen
+Color: darkred_medium   #402120         52              DarkRed
+Color: darkblue_medium  #0e363e         17              DarkBlue
+Color: darkgreen_soft   #3d4220         22              DarkGreen
+Color: darkred_soft     #472322         52              DarkRed
+Color: darkblue_soft    #0f3a42         17              DarkBlue
 
 White                   light           none
 LightGrey               lightgrey       none
