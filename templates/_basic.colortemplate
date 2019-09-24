@@ -21,6 +21,7 @@ Variant: gui 256 8
         EndOfBuffer         dark0_hard      dark0_hard
         VertSplit           dark3           dark0_hard
         QuickFixLine        yellow          dark0_hard  reverse
+        MatchParen          none            dark0_soft  bold
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         Normal              light           dark0_soft
         Terminal            light           dark0_soft
@@ -28,6 +29,7 @@ Variant: gui 256 8
         EndOfBuffer         dark0_soft      dark0_soft
         VertSplit           dark3           dark0_soft
         QuickFixLine        yellow          dark0_soft  reverse
+        MatchParen          none            dark2       bold
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         Normal              light           dark0_medium
         Terminal            light           dark0_medium
@@ -35,6 +37,7 @@ Variant: gui 256 8
         EndOfBuffer         dark0_medium    dark0_medium
         VertSplit           dark3           dark0_medium
         QuickFixLine        yellow          dark0_medium reverse
+        MatchParen          none            dark1       bold
     #endif
 #endif
 
@@ -151,7 +154,6 @@ ModeMsg                 light           none            bold
 MoreMsg                 yellow          none            bold
 IncSearch               none            none            reverse,bold
 Search                  none            none            reverse,underline
-MatchParen              none            none            bold
 NonText                 grey            none
 PmenuSbar               none            dark2
 PmenuThumb              none            dark4
