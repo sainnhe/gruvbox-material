@@ -134,6 +134,21 @@ CocErrorVirtualText  -> ALEVirtualTextError
 CocInfoVirtualText   -> ALEVirtualTextInfo
 CocHintVirtualText   -> ALEVirtualTextInfo
 CocCodeLens          -> ALEVirtualTextInfo
+CocExplorerBufferRoot -> Orange
+CocExplorerBufferExpandIcon -> Aqua
+CocExplorerBufferBufnr -> Purple
+CocExplorerBufferModified -> Red
+CocExplorerBufferBufname -> Grey
+CocExplorerFileRoot -> Orange
+CocExplorerFileExpandIcon -> Aqua
+CocExplorerFileFullpath -> Aqua
+CocExplorerFileDirectory -> Green
+CocExplorerFileGitStage -> Purple
+CocExplorerFileGitUnstage -> Yellow
+CocExplorerFileSize -> Blue
+CocExplorerTimeAccessed -> Aqua
+CocExplorerTimeCreated -> Aqua
+CocExplorerTimeModified -> Aqua
 #}}}
 # QuickMenu{{{
 QuickmenuOption -> Green
