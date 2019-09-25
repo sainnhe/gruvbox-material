@@ -134,6 +134,11 @@ CocErrorVirtualText  -> ALEVirtualTextError
 CocInfoVirtualText   -> ALEVirtualTextInfo
 CocHintVirtualText   -> ALEVirtualTextInfo
 CocCodeLens          -> ALEVirtualTextInfo
+CocGitAddedSign      -> GitGutterAdd
+CocGitChangeRemovedSign -> GitGutterChangeDelete
+CocGitChangedSign    -> GitGutterChange
+CocGitRemovedSign    -> GitGutterDelete
+CocGitTopRemovedSign -> GitGutterDelete
 CocExplorerBufferRoot -> Orange
 CocExplorerBufferExpandIcon -> Aqua
 CocExplorerBufferBufnr -> Purple
