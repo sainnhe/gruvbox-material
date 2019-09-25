@@ -18,11 +18,11 @@
 | 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium](https://user-images.githubusercontent.com/37491630/64962235-95aef800-d886-11e9-96a5-1cdf59857e55.png) | ![material-medium](https://user-images.githubusercontent.com/37491630/64962206-8e87ea00-d886-11e9-9734-33cdc496dca6.png) |
 |  𝒔𝒐𝒇𝒕  |  ![original-soft](https://user-images.githubusercontent.com/37491630/64962251-98a9e880-d886-11e9-82e8-be7e1bc8e15c.png)  |  ![material-soft](https://user-images.githubusercontent.com/37491630/64962218-9182da80-d886-11e9-9b22-f4a4a39f80f0.png)  |
 
-Gruvbox Material is based on Gruvbox, but with a very different color palette, almost all foreground colors are adjusted.
+In my opinion, the very first thing a color scheme should do is to be eye-friendly, anything else is secondary. This requires soft contrast and low blue light.
 
-The syntax highlighting logic in this branch is the same as the original gruvbox, and I will periodically merge changes from [gruvbox-community/gruvbox](https://github.com/gruvbox-community/gruvbox).
+Gruvbox Material is based on Gruvbox, but with a very different color palette, I'm trying to adjust the foreground colors to match these requirements.
 
-In addition, I've developed [neosyn](https://github.com/sainnhe/gruvbox-material/tree/neosyn) branch that uses completely different syntax highlighting logic, and it has also been optimized for common file types and plugins.
+The syntax highlighting logic in this branch is almost the same as the original gruvbox. In addition, I've developed [neosyn](https://github.com/sainnhe/gruvbox-material/tree/neosyn) branch that uses another syntax highlighting logic, and it has also been optimized for common file types and plugins.
 
 # Installation
 
