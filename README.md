@@ -22,7 +22,7 @@ In my opinion, the very first thing a color scheme should do is to be eye-friend
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, I'm trying to adjust the foreground colors to match these requirements.
 
-The syntax highlighting logic in this branch is almost the same as the original gruvbox. In addition, I've developed [neosyn](https://github.com/sainnhe/gruvbox-material/tree/neosyn) branch that uses another syntax highlighting logic, and it has also been optimized for common file types and plugins.
+The syntax highlighting logic used in this branch is almost the same as the original gruvbox. In addition, I've developed [neosyn](https://github.com/sainnhe/gruvbox-material/tree/neosyn) branch that uses another syntax highlighting logic, and it has also been optimized for common file types and plugins.
 
 # Installation
 
@@ -51,11 +51,15 @@ There is a package available for Arch Linux users in AUR: [gruvbox-material-git]
 
 ## Vim
 
-Put this in your vimrc:
+Put something like this in your vimrc:
 
 ```vim
+" customization options should be put before `colorscheme gruvbox-material`
+let g:gruvbox_material_background = 'medium'
+let g:gruvbox_material_disable_italic_comment = 0
+
+" if you don't set this option, this color scheme will fall back to the original gruvbox
 set termguicolors
-" tip: `set notermguicolors` will make this color scheme fall back to the original gruvbox
 
 " for dark version
 set background=dark
@@ -108,7 +112,7 @@ To apply it without reloading:
 
 # Customization
 
-**Note:** The following commands should be executed **before** `colorscheme gruvbox-material`
+**Note:** The following configurations should be put **before** `colorscheme gruvbox-material`
 
 - By default, the background is `medium`. To use `hard` background, add `let g:gruvbox_material_background = 'hard'` to your vimrc. To use `soft` background, add `let g:gruvbox_material_background = 'soft'` to your vimrc.
 - By default, italic is enabled in `Comment`. To disable italic in `Comment`, add `let g:gruvbox_material_disable_italic_comment = 1` to your vimrc.
