@@ -66,7 +66,7 @@ set background=light
 colorscheme gruvbox-material
 ```
 
-If you want to apply this color scheme temporarily, run this command in vim(**this may cause color broken**):
+If you want to apply this color scheme temporarily, run this command in vim(**this may cause broken colors**):
 
 ```vim
 :colorscheme gruvbox-material
@@ -128,7 +128,7 @@ To apply it without reloading:
 
 3. If you are running vim in tmux, you need to override default true colors of tmux, as tmux cannot display true color properly: [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
 
-4. There are many highlight group links in syntax files while a color scheme may change them, enabling one color scheme based on another color scheme enabled is very likely to cause color broken. If there is any color broken, you can enable the color scheme in your vimrc instead of after vim startup.
+4. There are many highlight group links in syntax files while a color scheme may change them, enabling one color scheme based on another color scheme enabled is very likely to cause colors to break. If any color is broken, you can enable the color scheme in your vimrc instead of after vim startup.
 
 **Q: What's your status line configuration?**
 
