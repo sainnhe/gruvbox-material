@@ -145,12 +145,6 @@ let g:vimshell_escape_colors = [
  \ ]
 endverbatim
 # }}}
-# BufTabLine {{{
-BufTabLineCurrent -> TabLineSel
-BufTabLineActive -> TabLine
-BufTabLineHidden -> TabLineFill
-BufTabLineFill -> TabLineFill
-# }}}
 # ALE {{{
 ALEError none none t=underline g=undercurl s=red
 ALEWarning none none t=underline g=undercurl s=yellow

@@ -77,6 +77,12 @@ StartifyHeader -> Orange
 StartifySpecial -> Grey
 StartifyFooter -> Grey
 # }}}
+# BufTabLine {{{
+BufTabLineCurrent -> TabLineSel
+BufTabLineActive -> TabLine
+BufTabLineHidden -> TabLineFill
+BufTabLineFill -> TabLineFill
+# }}}
 # Dirvish {{{
 DirvishPathTail -> Aqua
 DirvishArg -> Yellow
