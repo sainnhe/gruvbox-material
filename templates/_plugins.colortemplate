@@ -35,6 +35,7 @@ gitcommitDiscardedFile -> Red
 SignifySignAdd -> GitGutterAdd
 SignifySignChange -> GitGutterChange
 SignifySignDelete -> GitGutterDelete
+SignifySignChangeDelete -> GitGutterChangeDelete
 # }}}
 # FZF {{{
 verbatim
