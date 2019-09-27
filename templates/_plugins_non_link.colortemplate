@@ -88,35 +88,6 @@ endverbatim
     GitGutterChangeDelete purple dark1
 #endif
 # }}}
-# Signify {{{
-#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-    SignifySignAdd green dark0_medium
-    SignifySignChange blue dark0_medium
-    SignifySignDelete red dark0_medium
-#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-    SignifySignAdd green dark0_soft
-    SignifySignChange blue dark0_soft
-    SignifySignDelete red dark0_soft
-#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-    SignifySignAdd green dark1
-    SignifySignChange blue dark1
-    SignifySignDelete red dark1
-#endif
-# }}}
-# Syntastic {{{
-SyntasticError none none t=underline g=undercurl s=red
-SyntasticWarning none none t=underline g=undercurl s=yellow
-#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-    SyntasticErrorSign red dark0_medium
-    SyntasticWarningSign yellow dark0_medium
-#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-    SyntasticErrorSign red dark0_soft
-    SyntasticWarningSign yellow dark0_soft
-#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-    SyntasticErrorSign red dark1
-    SyntasticWarningSign yellow dark1
-#endif
-# }}}
 # Signature {{{
 #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
     SignatureMarkText blue dark0_medium
@@ -164,9 +135,6 @@ Lf_hl_match3 purple none bold
 Lf_hl_match4 orange none bold
 Lf_hl_matchRefine red none bold
 #}}}
-# Startify {{{
-StartifyFooter grey none
-# }}}
 # Vimshell {{{
 verbatim
 let g:vimshell_escape_colors = [
@@ -178,20 +146,14 @@ let g:vimshell_escape_colors = [
 endverbatim
 # }}}
 # BufTabLine {{{
-BufTabLineCurrent dark0_medium lightgrey
-BufTabLineActive lightgrey dark2
-BufTabLineHidden dark4 dark1
-#if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-    BufTabLineFill dark0_hard dark0_hard
-#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft' 
-    BufTabLineFill dark0_soft dark0_soft
-#elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-    BufTabLineFill dark0_medium dark0_medium
-#endif
+BufTabLineCurrent -> TabLineSel
+BufTabLineActive -> TabLine
+BufTabLineHidden -> TabLineFill
+BufTabLineFill -> TabLineFill
 # }}}
 # ALE {{{
 ALEError none none t=underline g=undercurl s=red
-ALEWarning none none t=underline g=undercurl s=red
+ALEWarning none none t=underline g=undercurl s=yellow
 ALEInfo none none t=underline g=undercurl s=blue
 #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
     ALEErrorSign red dark0_medium

@@ -4,17 +4,20 @@
 # This is for better loading time.
 
 # vim-plug{{{
-plug2 -> Aqua
-plugBracket -> Blue
-plugName -> Green
-plugH2 -> Purple
+plug2 -> Green
+plugBracket -> Grey
+plugName -> Aqua
+plugDash -> Orange
 plugError -> Red
 plugNotLoaded -> Grey
 plugRelDate -> Grey
-plugStar -> Blue
-plugUpdate -> Aqua
-plugMessage -> Purple
+plugH2 -> Orange
+plugMessage -> Orange
+plugStar -> Red
+plugUpdate -> Blue
 plugDeleted -> Grey
+plugEdge -> Yellow
+plugSha -> Green
 #}}}
 # EasyMotion: {{{
 EasyMotionTarget -> Search
@@ -27,6 +30,11 @@ SneakLabel -> Search
 # GitCommit {{{
 gitcommitSelectedFile -> Green
 gitcommitDiscardedFile -> Red
+# }}}
+# Signify {{{
+SignifySignAdd -> GitGutterAdd
+SignifySignChange -> GitGutterChange
+SignifySignDelete -> GitGutterDelete
 # }}}
 # FZF {{{
 verbatim
@@ -114,6 +122,12 @@ TagbarNestedKind -> Aqua
 TagbarVisibilityPrivate -> Red
 TagbarVisibilityPublic -> Blue
 #}}}
+# Syntastic {{{
+SyntasticError -> ALEError
+SyntasticWarning -> ALEWarning
+SyntasticErrorSign -> ALEErrorSign
+SyntasticWarningSign -> ALEWarningSign
+# }}}
 # ALE {{{
 ALEVirtualTextError -> Grey
 ALEVirtualTextWarning -> Grey
