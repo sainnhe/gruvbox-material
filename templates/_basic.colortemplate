@@ -13,6 +13,12 @@ Variant: gui 256 8
     VertSplit           dark3           none
     QuickFixLine        yellow          none            reverse
     EndOfBuffer         grey            none
+    FoldColumn          grey            none
+    Folded              grey            none            bold
+    CursorColumn        none            none
+    CursorLine          none            none
+    CursorLineNr        lightgrey       none
+    MatchParen          none            none            bold
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Normal              light           dark0_hard
@@ -22,6 +28,11 @@ Variant: gui 256 8
         VertSplit           dark3           dark0_hard
         QuickFixLine        yellow          dark0_hard  reverse
         MatchParen          none            dark0_soft  bold
+        FoldColumn          grey            dark0_medium
+        Folded              grey            dark0_medium
+        CursorColumn        none            dark0_medium
+        CursorLine          none            dark0_medium
+        CursorLineNr        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         Normal              light           dark0_medium
         Terminal            light           dark0_medium
@@ -30,6 +41,11 @@ Variant: gui 256 8
         VertSplit           dark3           dark0_medium
         QuickFixLine        yellow          dark0_medium reverse
         MatchParen          none            dark1       bold
+        FoldColumn          grey            dark0_soft
+        Folded              grey            dark0_soft
+        CursorColumn        none            dark0_soft
+        CursorLine          none            dark0_soft
+        CursorLineNr        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         Normal              light           dark0_soft
         Terminal            light           dark0_soft
@@ -38,6 +54,11 @@ Variant: gui 256 8
         VertSplit           dark3           dark0_soft
         QuickFixLine        yellow          dark0_soft  reverse
         MatchParen          none            dark2       bold
+        FoldColumn          grey            dark1
+        Folded              grey            dark1
+        CursorColumn        none            dark1
+        CursorLine          none            dark1
+        CursorLineNr        lightgrey       dark1
     #endif
 #endif
 
@@ -52,12 +73,7 @@ Variant: gui 256 8
         TabLine                 light_alt       dark1
         TabLineFill             light_alt       dark0_medium
         ColorColumn             none            dark0_medium
-        CursorColumn            none            dark0_medium
-        CursorLine              none            dark0_medium
-        CursorLineNr            lightgrey       dark0_medium
         SignColumn              none            dark0_medium
-        FoldColumn              grey            dark0_medium
-        Folded                  grey            dark0_medium
         StatusLineNC            lightgrey       dark0_medium
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
@@ -67,12 +83,7 @@ Variant: gui 256 8
         TabLine                 light_alt       dark2
         TabLineFill             light_alt       dark0_soft
         ColorColumn             none            dark0_soft
-        CursorColumn            none            dark0_soft
-        CursorLine              none            dark0_soft
-        CursorLineNr            lightgrey       dark0_soft
         SignColumn              none            dark0_soft
-        FoldColumn              grey            dark0_soft
-        Folded                  grey            dark0_soft
         StatusLineNC            lightgrey       dark0_soft
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
@@ -82,12 +93,7 @@ Variant: gui 256 8
         TabLine                 light_alt       dark3
         TabLineFill             light_alt       dark1
         ColorColumn             none            dark1
-        CursorColumn            none            dark1
-        CursorLine              none            dark1
-        CursorLineNr            lightgrey       dark1
         SignColumn              none            dark1
-        FoldColumn              grey            dark1
-        Folded                  grey            dark1
         StatusLineNC            lightgrey       dark1
         StatusLineTermNC        lightgrey       dark1
     #endif
@@ -102,12 +108,7 @@ Variant: gui 256 8
         TabLine                 light           dark2
         TabLineFill             light           dark0_medium
         ColorColumn             none            dark0_medium
-        CursorColumn            none            dark0_medium
-        CursorLine              none            dark0_medium
-        CursorLineNr            lightgrey       dark0_medium
         SignColumn              none            dark0_medium
-        FoldColumn              grey            dark0_medium
-        Folded                  grey            dark0_medium
         StatusLineNC            lightgrey       dark0_medium
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
@@ -117,12 +118,7 @@ Variant: gui 256 8
         TabLine                 light           dark3
         TabLineFill             light           dark0_soft
         ColorColumn             none            dark0_soft
-        CursorColumn            none            dark0_soft
-        CursorLine              none            dark0_soft
-        CursorLineNr            lightgrey       dark0_soft
         SignColumn              none            dark0_soft
-        FoldColumn              grey            dark0_soft
-        Folded                  grey            dark0_soft
         StatusLineNC            lightgrey       dark0_soft
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
@@ -132,12 +128,7 @@ Variant: gui 256 8
         TabLine                 light           dark3
         TabLineFill             light           dark1
         ColorColumn             none            dark1
-        CursorColumn            none            dark1
-        CursorLine              none            dark1
-        CursorLineNr            lightgrey       dark1
         SignColumn              none            dark1
-        FoldColumn              grey            dark1
-        Folded                  grey            dark1
         StatusLineNC            lightgrey       dark1
         StatusLineTermNC        lightgrey       dark1
     #endif
