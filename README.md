@@ -138,6 +138,10 @@ Check this gist for detailed instructions to hack this color scheme: [hack-color
 
 # Related Projects
 
+Color reference: [dark](https://github.com/sainnhe/gruvbox-material-vscode/blob/master/colors-dark.yml), [light](https://github.com/sainnhe/gruvbox-material-vscode/blob/master/colors-light.yml)
+
+**Note**: The following projects are sorted by alphabet.
+
 ## Code Editor
 
 - [Visual Studio Code](https://github.com/sainnhe/gruvbox-material-vscode) by [@sainnhe](https://github.com/sainnhe/)
