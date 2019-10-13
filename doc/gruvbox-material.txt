@@ -112,7 +112,7 @@ Lightline~
 ==============================================================================
 CONFIGURATION                                   *gruvbox-material-configuration*
 
-Note: the configuration options should be put before `colorscheme gruvbox-material`
+Note: the configuration options should be placed before `colorscheme gruvbox-material`
 
 E.g.~
 >
@@ -177,6 +177,15 @@ E.g.~
 >
     let g:gruvbox_material_transparent_background = 1
 <
+------------------------------------------------------------------------------
+                                                      *gruvbox-material-leaderf*
+
+To enable gruvbox-material color scheme for [leaderf](https://github.com/Yggdroot/LeaderF)
+status line, add this to your vimrc:
+>
+    let g:Lf_StlColorscheme = 'gruvbox_material'
+<
+Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
 ==============================================================================
 FAQ                                                       *gruvbox-material-faq*
