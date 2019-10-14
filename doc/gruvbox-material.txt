@@ -161,6 +161,15 @@ E.g.~
     let g:gruvbox_material_enable_bold = 1
 <
 ------------------------------------------------------------------------------
+                                    *g:gruvbox_material_transparent_background*
+
+To use transparent background, set this option to `1`.
+
+E.g.~
+>
+    let g:gruvbox_material_transparent_background = 1
+<
+------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
 
 By default, bold is enabled in lightline color scheme. To disable bold in
@@ -170,15 +179,8 @@ E.g.~
 >
     let g:gruvbox_material_lightline_disable_bold = 1
 <
-------------------------------------------------------------------------------
-                                    *g:gruvbox_material_transparent_background*
+Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
-To use transparent background, set this option to `1`.
-
-E.g.~
->
-    let g:gruvbox_material_transparent_background = 1
-<
 ------------------------------------------------------------------------------
                                                      *gruvbox-material-leaderf*
 
