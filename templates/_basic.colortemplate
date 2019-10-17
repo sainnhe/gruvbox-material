@@ -19,6 +19,7 @@ Variant: gui 256 8
     CursorLine          none            none
     CursorLineNr        lightgrey       none
     MatchParen          none            none            bold
+    SignColumn          light           none
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Normal              light           dark0_hard
@@ -33,6 +34,7 @@ Variant: gui 256 8
         CursorColumn        none            dark0_medium
         CursorLine          none            dark0_medium
         CursorLineNr        lightgrey       dark0_medium
+        SignColumn          light           dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         Normal              light           dark0_medium
         Terminal            light           dark0_medium
@@ -46,6 +48,7 @@ Variant: gui 256 8
         CursorColumn        none            dark0_soft
         CursorLine          none            dark0_soft
         CursorLineNr        lightgrey       dark0_soft
+        SignColumn          light           dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         Normal              light           dark0_soft
         Terminal            light           dark0_soft
@@ -59,6 +62,7 @@ Variant: gui 256 8
         CursorColumn        none            dark1
         CursorLine          none            dark1
         CursorLineNr        lightgrey       dark1
+        SignColumn          light           dark1
     #endif
 #endif
 
@@ -73,7 +77,6 @@ Variant: gui 256 8
         TabLine                 light_alt       dark1
         TabLineFill             light_alt       dark0_medium
         ColorColumn             none            dark0_medium
-        SignColumn              none            dark0_medium
         StatusLineNC            lightgrey       dark0_medium
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
@@ -83,7 +86,6 @@ Variant: gui 256 8
         TabLine                 light_alt       dark2
         TabLineFill             light_alt       dark0_soft
         ColorColumn             none            dark0_soft
-        SignColumn              none            dark0_soft
         StatusLineNC            lightgrey       dark0_soft
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
@@ -93,7 +95,6 @@ Variant: gui 256 8
         TabLine                 light_alt       dark3
         TabLineFill             light_alt       dark1
         ColorColumn             none            dark1
-        SignColumn              none            dark1
         StatusLineNC            lightgrey       dark1
         StatusLineTermNC        lightgrey       dark1
     #endif
@@ -108,7 +109,6 @@ Variant: gui 256 8
         TabLine                 light           dark2
         TabLineFill             light           dark0_medium
         ColorColumn             none            dark0_medium
-        SignColumn              none            dark0_medium
         StatusLineNC            lightgrey       dark0_medium
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
@@ -118,7 +118,6 @@ Variant: gui 256 8
         TabLine                 light           dark3
         TabLineFill             light           dark0_soft
         ColorColumn             none            dark0_soft
-        SignColumn              none            dark0_soft
         StatusLineNC            lightgrey       dark0_soft
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
@@ -128,7 +127,6 @@ Variant: gui 256 8
         TabLine                 light           dark3
         TabLineFill             light           dark1
         ColorColumn             none            dark1
-        SignColumn              none            dark1
         StatusLineNC            lightgrey       dark1
         StatusLineTermNC        lightgrey       dark1
     #endif
