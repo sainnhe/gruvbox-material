@@ -22,7 +22,7 @@ if &background ==# 'light'
                 \   'stlCategory': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#bdae93',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -31,7 +31,7 @@ if &background ==# 'light'
                 \   'stlNameOnlyMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#d5c4a1',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -40,7 +40,7 @@ if &background ==# 'light'
                 \   'stlFullPathMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#d5c4a1',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -49,7 +49,7 @@ if &background ==# 'light'
                 \   'stlFuzzyMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#d5c4a1',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -58,7 +58,7 @@ if &background ==# 'light'
                 \   'stlRegexMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#d5c4a1',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -67,7 +67,7 @@ if &background ==# 'light'
                 \   'stlCwd': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#ebdbb2',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -76,7 +76,7 @@ if &background ==# 'light'
                 \   'stlBlank': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#ebdbb2',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -85,7 +85,7 @@ if &background ==# 'light'
                 \   'stlLineInfo': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#665c54',
+                \       'guifg': '#5e4536',
                 \       'guibg': '#d5c4a1',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '241',
@@ -115,7 +115,7 @@ else
                 \   'stlCategory': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#665c54',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -124,7 +124,7 @@ else
                 \   'stlNameOnlyMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#504945',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -133,7 +133,7 @@ else
                 \   'stlFullPathMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#504945',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -142,7 +142,7 @@ else
                 \   'stlFuzzyMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#504945',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -151,7 +151,7 @@ else
                 \   'stlRegexMode': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#504945',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -160,7 +160,7 @@ else
                 \   'stlCwd': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#3c3836',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -169,7 +169,7 @@ else
                 \   'stlBlank': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#3c3836',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
@@ -178,7 +178,7 @@ else
                 \   'stlLineInfo': {
                 \       'gui': 'NONE',
                 \       'font': 'NONE',
-                \       'guifg': '#dfbd8e',
+                \       'guifg': '#d4ba92',
                 \       'guibg': '#665c54',
                 \       'cterm': 'NONE',
                 \       'ctermfg': '223',
