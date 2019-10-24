@@ -37,3 +37,26 @@ Green                   green           none
 Aqua                    aqua            none
 Blue                    blue            none
 Purple                  purple          none
+#if get(g:, 'gruvbox_material_enable_bold', 0)
+    WhiteBold               light           none            bold
+    LightGreyBold           lightgrey       none            bold
+    GreyBold                grey            none            bold
+    RedBold                 red             none            bold
+    OrangeBold              orange          none            bold
+    YellowBold              yellow          none            bold
+    GreenBold               green           none            bold
+    AquaBold                aqua            none            bold
+    BlueBold                blue            none            bold
+    PurpleBold              purple          none            bold
+#else
+    WhiteBold               light           none
+    LightGreyBold           lightgrey       none
+    GreyBold                grey            none
+    RedBold                 red             none
+    OrangeBold              orange          none
+    YellowBold              yellow          none
+    GreenBold               green           none
+    AquaBold                aqua            none
+    BlueBold                blue            none
+    PurpleBold              purple          none
+#endif
