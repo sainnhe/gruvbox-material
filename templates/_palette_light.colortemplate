@@ -14,8 +14,8 @@ Color: red              #b83c3c         88              Red
 Color: orange           #ba5800         130             DarkYellow
 Color: yellow           #ae7109         136             Yellow
 Color: green            #67722f         100             Green
-Color: aqua             #4c745a         165             Cyan
-Color: blue             #3d6976         24              Blue
+Color: aqua             #497156         165             Cyan
+Color: blue             #3d646f         24              Blue
 Color: purple           #895777         96              Magenta
 Color: darkgreen_hard   #e3f6b4         ~               DarkGreen
 Color: darkred_hard     #ffdbcc         ~               DarkRed
