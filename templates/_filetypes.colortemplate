@@ -471,7 +471,7 @@ zshVariableDef -> Blue
 zshSubst -> Orange
 zshOptStart -> Orange
 zshOption -> Aqua
-zshFunction -> Green
+zshFunction -> Function
 #}}}
 # Vim: {{{
 vimNotation -> Orange
