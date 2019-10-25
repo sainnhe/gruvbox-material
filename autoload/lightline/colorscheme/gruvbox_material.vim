@@ -25,7 +25,7 @@ if &background ==# 'light'
     let s:red       = [ '#ae5858', 88 ]
     let s:green     = [ '#6f8352', 100 ]
     let s:orange    = [ '#a96b2c', 130 ]
-    let s:white     = [ '#5e4536', 241 ]
+    let s:white     = [ '#603f2c', 241 ]
 else
     if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         let s:darker    = [ '#282828', 235 ]
