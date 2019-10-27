@@ -72,6 +72,8 @@ Variant: gui 256 8
     WildMenu                dark1           lightgrey
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Pmenu                   white           dark0_soft
+        PmenuSbar               none            dark0_soft
+        PmenuThumb              none            dark2
         StatusLine              white           dark1
         StatusLineTerm          white           dark1
         TabLine                 white           dark1
@@ -81,6 +83,8 @@ Variant: gui 256 8
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         Pmenu                   white           dark1
+        PmenuSbar               none            dark1
+        PmenuThumb              none            dark3
         StatusLine              white           dark2
         StatusLineTerm          white           dark2
         TabLine                 white           dark2
@@ -90,6 +94,8 @@ Variant: gui 256 8
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         Pmenu                   white           dark2
+        PmenuSbar               none            dark2
+        PmenuThumb              none            dark4
         StatusLine              white           dark3
         StatusLineTerm          white           dark3
         TabLine                 white           dark3
@@ -104,6 +110,8 @@ Variant: gui 256 8
     WildMenu                dark0_medium    lightgrey
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Pmenu                   white           dark1
+        PmenuSbar               none            dark1
+        PmenuThumb              none            dark3
         StatusLine              white           dark2
         StatusLineTerm          white           dark2
         TabLine                 white           dark2
@@ -113,6 +121,8 @@ Variant: gui 256 8
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         Pmenu                   white           dark2
+        PmenuSbar               none            dark2
+        PmenuThumb              none            dark4
         StatusLine              white           dark3
         StatusLineTerm          white           dark3
         TabLine                 white           dark3
@@ -122,6 +132,8 @@ Variant: gui 256 8
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         Pmenu                   white           dark2
+        PmenuSbar               none            dark2
+        PmenuThumb              none            dark4
         StatusLine              white           dark3
         StatusLineTerm          white           dark3
         TabLine                 white           dark3
@@ -144,8 +156,6 @@ MoreMsg                 yellow          none            bold
 IncSearch               none            none            reverse,bold
 Search                  none            none            reverse,underline
 NonText                 grey            none
-PmenuSbar               none            dark2
-PmenuThumb              none            dark4
 Question                orange          none            bold
 SpellBad                red             none            italic t=underline g=undercurl s=red
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
