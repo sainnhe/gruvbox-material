@@ -103,29 +103,29 @@ Variant: gui 256 8
     TabLineSel              dark0_medium    lightgrey       bold
     WildMenu                dark0_medium    lightgrey
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        Pmenu                   light           dark1
-        StatusLine              light           dark2
-        StatusLineTerm          light           dark2
-        TabLine                 light           dark2
-        TabLineFill             light           dark0_medium
+        Pmenu                   white           dark1
+        StatusLine              white           dark2
+        StatusLineTerm          white           dark2
+        TabLine                 white           dark2
+        TabLineFill             white           dark0_medium
         ColorColumn             none            dark0_medium
         StatusLineNC            lightgrey       dark0_medium
         StatusLineTermNC        lightgrey       dark0_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        Pmenu                   light           dark2
-        StatusLine              light           dark3
-        StatusLineTerm          light           dark3
-        TabLine                 light           dark3
-        TabLineFill             light           dark0_soft
+        Pmenu                   white           dark2
+        StatusLine              white           dark3
+        StatusLineTerm          white           dark3
+        TabLine                 white           dark3
+        TabLineFill             white           dark0_soft
         ColorColumn             none            dark0_soft
         StatusLineNC            lightgrey       dark0_soft
         StatusLineTermNC        lightgrey       dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        Pmenu                   light           dark2
-        StatusLine              light           dark3
-        StatusLineTerm          light           dark3
-        TabLine                 light           dark3
-        TabLineFill             light           dark1
+        Pmenu                   white           dark2
+        StatusLine              white           dark3
+        StatusLineTerm          white           dark3
+        TabLine                 white           dark3
+        TabLineFill             white           dark1
         ColorColumn             none            dark1
         StatusLineNC            lightgrey       dark1
         StatusLineTermNC        lightgrey       dark1
