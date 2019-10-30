@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Adjust yellow in the dark variant.
+- Adjust red, orange and blue in the light variant.
+
 ### Added
 
 - Add `CHANGELOG.md`.
