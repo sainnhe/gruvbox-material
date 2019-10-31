@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.1] - 2019-10-31
+
+### Changed
+
+- Adjust white in the dark variant.
+
 ## [0.3.0] - 2019-10-30
 
 ### Changed
@@ -88,7 +94,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.0...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/sainnhe/gruvbox-material/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/sainnhe/gruvbox-material/compare/v0.1.4...v0.2.0
 [0.1.4]: https://github.com/sainnhe/gruvbox-material/compare/v0.1.3...v0.1.4
