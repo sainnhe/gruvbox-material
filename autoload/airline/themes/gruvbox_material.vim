@@ -96,48 +96,48 @@ else
 
     " Normal mode
     let s:N1 = [ '#282828' , '#a89984' , 235 , 246 ] " mode
-    let s:N2 = [ '#dfc79b' , s:darkgrey , 223 , s:darkgrey_cterm ] " info
-    let s:N3 = [ '#dfc79b' , s:darker , 223 , s:darker_cterm ] " statusline
+    let s:N2 = [ '#dfc99d' , s:darkgrey , 223 , s:darkgrey_cterm ] " info
+    let s:N3 = [ '#dfc99d' , s:darker , 223 , s:darker_cterm ] " statusline
 
     let g:airline#themes#gruvbox_material#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
     let g:airline#themes#gruvbox_material#palette.normal_modified = {
-                \ 'airline_c': [ '#dfc79b' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#dfc99d' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Insert mode
     let s:I1 = [ '#282828' , '#a9b665' , 235 , 142 ]
-    let s:I2 = [ '#dfc79b' , s:darkgrey , 223 , s:darkgrey_cterm ]
-    let s:I3 = [ '#dfc79b' , s:darker , 223 , s:darker_cterm ]
+    let s:I2 = [ '#dfc99d' , s:darkgrey , 223 , s:darkgrey_cterm ]
+    let s:I3 = [ '#dfc99d' , s:darker , 223 , s:darker_cterm ]
 
     let g:airline#themes#gruvbox_material#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
     let g:airline#themes#gruvbox_material#palette.insert_modified = {
-                \ 'airline_c': [ '#dfc79b' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#dfc99d' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Replace mode
     let s:R1 = [ '#282828' , '#e78a4e' , 235 , 208 ]
-    let s:R2 = [ '#dfc79b' , s:darkgrey , 223 , s:darkgrey_cterm ]
-    let s:R3 = [ '#dfc79b' , s:darker , 223 , s:darker_cterm ]
+    let s:R2 = [ '#dfc99d' , s:darkgrey , 223 , s:darkgrey_cterm ]
+    let s:R3 = [ '#dfc99d' , s:darker , 223 , s:darker_cterm ]
 
     let g:airline#themes#gruvbox_material#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
     let g:airline#themes#gruvbox_material#palette.replace_modified = {
-                \ 'airline_c': [ '#dfc79b' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#dfc99d' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Visual mode
     let s:V1 = [ '#282828' , '#ea6962' , 235 , 167 ]
-    let s:V2 = [ '#dfc79b' , s:darkgrey , 223 , s:darkgrey_cterm ]
-    let s:V3 = [ '#dfc79b' , s:darker , 223 , s:darker_cterm ]
+    let s:V2 = [ '#dfc99d' , s:darkgrey , 223 , s:darkgrey_cterm ]
+    let s:V3 = [ '#dfc99d' , s:darker , 223 , s:darker_cterm ]
 
     let g:airline#themes#gruvbox_material#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
     let g:airline#themes#gruvbox_material#palette.visual_modified = {
-                \ 'airline_c': [ '#dfc79b' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#dfc99d' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Inactive
-    let s:IA = [ '#dfc79b' , s:darker , 223 , s:darker_cterm ]
+    let s:IA = [ '#dfc99d' , s:darker , 223 , s:darker_cterm ]
     let g:airline#themes#gruvbox_material#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
     let g:airline#themes#gruvbox_material#palette.inactive_modified = {
-                \ 'airline_c': [ '#dfc79b' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#dfc99d' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 endif
