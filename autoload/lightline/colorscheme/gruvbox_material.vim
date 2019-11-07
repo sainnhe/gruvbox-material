@@ -42,7 +42,7 @@ else
     let s:red       = [ '#ea6962', 167 ]
     let s:green     = [ '#a9b665', 142 ]
     let s:orange    = [ '#e78a4e', 208 ]
-    let s:white     = [ '#dfc79b', 223 ]
+    let s:white     = [ '#ddc7a1', 223 ]
 endif
 "}}}
 
