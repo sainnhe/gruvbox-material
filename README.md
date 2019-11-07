@@ -158,6 +158,14 @@ Color reference: [dark](https://github.com/sainnhe/gruvbox-material-vscode/blob/
 - [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb) by [@sainnhe](https://github.com/sainnhe/)
 - [Zsh](https://gist.github.com/sainnhe/f92372e14c59750b6ac8dc927ba9f7fe) by [@sainnhe](https://github.com/sainnhe/)
 
+# Inspirations
+
+- [**morhetz/gruvbox**](https://github.com/morhetz/gruvbox): original gruvbox
+- [**sainnhe/vim-color-desert-night**](https://github.com/sainnhe/vim-color-desert-night): `white` color in the dark variant
+- [**atom.io**](https://atom.io): `white` color in the dark variant
+- [**zefei/cake16**](https://github.com/zefei/cake16): `black` color in the light variant
+- [**Google Material Design**](https://en.wikipedia.org/wiki/Material_Design)
+
 # License
 
 [MIT](./LICENSE) && [Anti-996](./Anti-996-LICENSE)
