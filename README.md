@@ -63,8 +63,15 @@ set background=dark
 " for light version
 set background=light
 
+" set contrast
+" this configuration option should be placed before `colorscheme gruvbox-material`
+" available value: 'hard', 'medium', 'soft'
+let g:gruvbox_material_background = 'soft'
+
 colorscheme gruvbox-material
 ```
+
+See `:help gruvbox-material-configuration` for more configuration options.
 
 If you want to apply this color scheme temporarily, run this command in vim(**this may cause broken colors**):
 
@@ -105,10 +112,6 @@ To apply it without reloading:
 :call lightline#init()
 :call lightline#colorscheme()
 ```
-
-# Configuration
-
-See `:help gruvbox-material-configuration`
 
 # FAQ
 
