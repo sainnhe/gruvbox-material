@@ -208,3 +208,7 @@ MatchWordCur            none            none            underline
 # UndoTree {{{
 UndotreeSavedBig purple none bold
 #}}}
+# Quick Scope {{{
+QuickScopePrimary       aqua            none            underline
+QuickScopeSecondary     blue            none            underline
+#}}}
