@@ -144,7 +144,7 @@ Variant: gui 256 8
     #endif
 #endif
 
-Conceal                 blue            none
+Conceal                 grey            none
 Cursor                  none            none            reverse
 lCursor                 none            none            reverse
 LineNr                  dark4           none
