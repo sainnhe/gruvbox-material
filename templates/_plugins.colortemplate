@@ -224,3 +224,11 @@ WhichKeySeperator -> Green
 WhichKeyGroup -> Yellow
 WhichKeyDesc -> Blue
 #}}}
+# Vim Visual Multi{{{
+verbatim
+let g:VM_Mono_hl   = 'Visual'
+let g:VM_Extend_hl = 'DiffChange'
+let g:VM_Cursor_hl = 'Visual'
+let g:VM_Insert_hl = 'Visual'
+endverbatim
+#}}}
