@@ -65,6 +65,10 @@ if !exists('g:Lf_StlColorscheme')
     let g:Lf_StlColorscheme = 'gruvbox_material'
 endif
 endverbatim
+Lf_hl_cursorline -> White
+Lf_hl_selection -> DiffAdd
+Lf_hl_rgHighlight -> Visual
+Lf_hl_gtagsHighlight -> Visual
 #}}}
 # Denite{{{
 deniteSelectedLine -> Green
