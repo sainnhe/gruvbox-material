@@ -152,6 +152,20 @@ ALEVirtualTextInfo -> Grey
 ALEVirtualTextStyleError            -> ALEVirtualTextError
 ALEVirtualTextStyleWarning          -> ALEVirtualTextWarning
 # }}}
+# Neomake {{{
+NeomakeError -> ALEError
+NeomakeErrorSign -> ALEErrorSign
+NeomakeWarning -> ALEWarning
+NeomakeWarningSign -> ALEWarningSign
+NeomakeInfo -> ALEInfo
+NeomakeInfoSign -> ALEInfoSign
+NeomakeMessage -> Aqua
+NeomakeMessageSign -> CocHintSign
+NeomakeVirtualtextError -> Grey
+NeomakeVirtualtextWarning -> Grey
+NeomakeVirtualtextInfo -> Grey
+NeomakeVirtualtextMessag -> Grey
+# }}}
 # CoC{{{
 CocErrorSign         -> ALEErrorSign
 CocWarningSign       -> ALEWarningSign
