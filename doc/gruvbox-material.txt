@@ -189,6 +189,10 @@ status line, add this to your vimrc:
 >
     let g:Lf_StlColorscheme = 'gruvbox_material'
 <
+To enable this color scheme in popup mode, add this to your vimrc:
+>
+    let g:Lf_PopupColorscheme = 'gruvbox_material'
+<
 Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
 ==============================================================================
