@@ -218,3 +218,9 @@ UndotreeBranch -> Yellow
 UndotreeCurrent -> Aqua
 UndotreeSavedSmall -> Purple
 #}}}
+# WhichKey{{{
+WhichKey -> Red
+WhichKeySeperator -> Green
+WhichKeyGroup -> Yellow
+WhichKeyDesc -> Blue
+#}}}
