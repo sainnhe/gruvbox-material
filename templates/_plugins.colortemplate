@@ -129,6 +129,16 @@ TagbarNestedKind -> Aqua
 TagbarVisibilityPrivate -> Red
 TagbarVisibilityPublic -> Blue
 #}}}
+# Vista{{{
+VistaBracket -> Grey
+VistaChildrenNr -> Orange
+VistaScope -> Red
+VistaTag -> Green
+VistaPrefix -> Grey
+VistaColon -> Green
+VistaIcon -> Purple
+VistaLineNr -> White
+#}}}
 # Syntastic {{{
 SyntasticError -> ALEError
 SyntasticWarning -> ALEWarning
