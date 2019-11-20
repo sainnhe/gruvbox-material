@@ -66,6 +66,9 @@ if !exists('g:Lf_StlColorscheme')
 endif
 endverbatim
 #}}}
+# Denite{{{
+deniteSelectedLine -> Green
+#}}}
 # Startify {{{
 StartifyBracket -> Grey
 StartifyFile -> White

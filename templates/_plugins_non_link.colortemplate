@@ -147,6 +147,13 @@ Lf_hl_match3 purple none bold
 Lf_hl_match4 orange none bold
 Lf_hl_matchRefine red none bold
 #}}}
+# Denite{{{
+deniteMatchedChar green none bold
+deniteMatchedRange green none bold,underline
+deniteInput green dark3 bold
+deniteStatusLineNumber purple dark3
+deniteStatusLinePath white dark3
+#}}}
 # Vimshell {{{
 verbatim
 let g:vimshell_escape_colors = [
