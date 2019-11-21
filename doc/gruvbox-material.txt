@@ -174,9 +174,8 @@ E.g.~
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
-By default, this color scheme use dark aqua as background color. If you want
-to use `reverse` just like in the original gruvbox, set this option to
-`'reverse'`.
+By default, this color scheme use aqua as background color. If you want to use
+`reverse` just like in the original gruvbox, set this option to `'reverse'`.
 
     Possible value: `'reverse'`, `'noreverse'`
     Default value: `'noreverse'`
@@ -190,7 +189,7 @@ E.g.~
 
 Control the `Search` and the `IncSearch` highlight group.
 
-By default, this color scheme use `reverse`. If you want to use dark aqua as
+By default, this color scheme use `reverse`. If you want to use aqua as
 background color, set this option to `'noreverse'`.
 
     Possible value: `'reverse'`, `'noreverse'`
