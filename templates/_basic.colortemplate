@@ -153,16 +153,42 @@ ErrorMsg                red             none            bold,underline
 WarningMsg              yellow          none            bold
 ModeMsg                 light           none            bold
 MoreMsg                 yellow          none            bold
-IncSearch               none            none            reverse,bold
-Search                  none            none            reverse,underline
 NonText                 grey            none
 Question                orange          none            bold
 SpellBad                red             none            italic t=underline g=undercurl s=red
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-Visual                  none            none            reverse
-VisualNOS               none            none            reverse
+#if get(g:, 'gruvbox_material_visual', 'noreverse') ==# 'noreverse'
+    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        Visual                  none            darkaqua_hard
+        VisualNOS               none            darkaqua_hard
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        Visual                  none            darkaqua_medium
+        VisualNOS               none            darkaqua_medium
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        Visual                  none            darkaqua_soft
+        VisualNOS               none            darkaqua_soft
+    #endif
+#else
+    Visual                  none            none            reverse
+    VisualNOS               none            none            reverse
+#endif
+#if get(g:, 'gruvbox_material_search', 'reverse') ==# 'noreverse'
+    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        IncSearch               none            darkaqua_hard   bold
+        Search                  none            darkaqua_hard   underline
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        IncSearch               none            darkaqua_medium   bold
+        Search                  none            darkaqua_medium   underline
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        IncSearch               none            darkaqua_soft   bold
+        Search                  none            darkaqua_soft   underline
+    #endif
+#else
+    IncSearch               none            none            reverse,bold
+    Search                  none            none            reverse,underline
+#endif
 Todo                    grey            none            bold,italic
 CursorIM                none            none            reverse
 ToolbarLine             none            dark3
