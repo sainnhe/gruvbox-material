@@ -76,7 +76,7 @@ Vim~
 
 	" set contrast
 	" this configuration option should be placed before `colorscheme gruvbox-material`
-	" available value: 'hard', 'medium'(default), 'soft'
+	" available values: 'hard', 'medium'(default), 'soft'
 	let g:gruvbox_material_background = 'soft'
 
 	colorscheme gruvbox-material
@@ -139,7 +139,7 @@ E.g.~
 
 The background contrast used in this color scheme.
 
-    Possible value: `'hard'`, `'medium'`, `'soft'`
+    Available values: `'hard'`, `'medium'`, `'soft'`
     Default value: `'medium'`
 
 E.g.~
@@ -184,7 +184,7 @@ Control the `Visual` and the `VisualNOS` highlight group.
 By default, this color scheme use aqua as background color. If you want to use
 `reverse` just like in the original gruvbox, set this option to `'reverse'`.
 
-    Possible value: `'reverse'`, `'noreverse'`
+    Available values: `'reverse'`, `'noreverse'`
     Default value: `'noreverse'`
 
 E.g.~
@@ -199,7 +199,7 @@ Control the `Search` and the `IncSearch` highlight group.
 By default, this color scheme use `reverse`. If you want to use aqua as
 background color, set this option to `'noreverse'`.
 
-    Possible value: `'reverse'`, `'noreverse'`
+    Available values: `'reverse'`, `'noreverse'`
     Default value: `'reverse'`
 
 E.g.~

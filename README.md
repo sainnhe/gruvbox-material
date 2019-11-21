@@ -65,7 +65,7 @@ set background=light
 
 " set contrast
 " this configuration option should be placed before `colorscheme gruvbox-material`
-" available value: 'hard', 'medium'(default), 'soft'
+" available values: 'hard', 'medium'(default), 'soft'
 let g:gruvbox_material_background = 'soft'
 
 colorscheme gruvbox-material
