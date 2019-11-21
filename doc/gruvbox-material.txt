@@ -67,15 +67,22 @@ Vim~
 >
 	" if you don't set this option, this color scheme will fall back to the original gruvbox
 	set termguicolors
-    
+
 	" for dark version
 	set background=dark
-    
+
 	" for light version
 	set background=light
-    
+
+	" set contrast
+	" this configuration option should be placed before `colorscheme gruvbox-material`
+	" available value: 'hard', 'medium'(default), 'soft'
+	let g:gruvbox_material_background = 'soft'
+
 	colorscheme gruvbox-material
 <
+    See |gruvbox-material-configuration| for more configuration options.
+
     If you want to apply this color scheme temporarily, run this command in
     vim(this may cause broken colors):
 >
@@ -170,7 +177,7 @@ E.g.~
     let g:gruvbox_material_transparent_background = 1
 <
 ------------------------------------------------------------------------------
-                                    		    *g:gruvbox_material_visual*
+						    *g:gruvbox_material_visual*
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
@@ -185,7 +192,7 @@ E.g.~
     let g:gruvbox_material_visual = 'reverse'
 <
 ------------------------------------------------------------------------------
-                                   		    *g:gruvbox_material_search*
+						    *g:gruvbox_material_search*
 
 Control the `Search` and the `IncSearch` highlight group.
 
