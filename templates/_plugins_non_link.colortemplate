@@ -188,10 +188,6 @@ ALEInfo none none t=underline g=undercurl s=blue
     #endif
 #endif
 # }}}
-# Vim Multiple Cursors {{{
-multiple_cursors_cursor none none reverse
-multiple_cursors_visual none dark2
-# }}}
 # CoC{{{
 CocHighlightText none none bold
 CocHoverRange none none bold,underline

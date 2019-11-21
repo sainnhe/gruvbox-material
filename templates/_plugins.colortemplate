@@ -234,6 +234,10 @@ WhichKeySeperator -> Green
 WhichKeyGroup -> Yellow
 WhichKeyDesc -> Blue
 #}}}
+# Vim Multiple Cursors {{{
+multiple_cursors_cursor -> Cursor
+multiple_cursors_visual -> Visual
+# }}}
 # Vim Visual Multi{{{
 verbatim
 let g:VM_Mono_hl   = 'Cursor'
