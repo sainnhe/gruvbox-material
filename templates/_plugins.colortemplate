@@ -236,9 +236,9 @@ WhichKeyDesc -> Blue
 #}}}
 # Vim Visual Multi{{{
 verbatim
-let g:VM_Mono_hl   = 'Visual'
-let g:VM_Extend_hl = 'DiffChange'
-let g:VM_Cursor_hl = 'Visual'
-let g:VM_Insert_hl = 'Visual'
+let g:VM_Mono_hl   = 'Cursor'
+let g:VM_Extend_hl = 'Visual'
+let g:VM_Cursor_hl = 'Cursor'
+let g:VM_Insert_hl = 'Cursor'
 endverbatim
 #}}}
