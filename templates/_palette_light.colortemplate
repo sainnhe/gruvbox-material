@@ -7,7 +7,9 @@ Color: dark0_medium_line #f6ebc1        228             White
 Color: dark0_soft       #f2e5bc         228             White
 Color: dark0_soft_line  #efe0b7         223             White
 Color: dark1            #ebdbb2         223             LightGrey
+Color: dark1_alt        #e0cfa9         223             LightGrey
 Color: dark2            #d5c4a1         250             LightGrey
+Color: dark2_alt        #c9b99a         250             LightGrey
 Color: dark3            #bdae93         248             LightGrey
 Color: dark4            #a89984         246             LightGrey
 Color: grey             #928374         245             LightGrey

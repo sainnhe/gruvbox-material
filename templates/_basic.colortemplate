@@ -28,7 +28,7 @@ Variant: gui 256 8
         EndOfBuffer         dark0_hard      dark0_hard
         VertSplit           dark3           dark0_hard
         QuickFixLine        yellow          dark0_hard  reverse
-        MatchParen          none            dark0_soft  bold
+        MatchParen          none            dark1       bold
         FoldColumn          grey            dark0_medium
         Folded              grey            dark0_medium
         CursorColumn        none            dark0_medium
@@ -42,7 +42,7 @@ Variant: gui 256 8
         EndOfBuffer         dark0_medium    dark0_medium
         VertSplit           dark3           dark0_medium
         QuickFixLine        yellow          dark0_medium reverse
-        MatchParen          none            dark1       bold
+        MatchParen          none            dark1_alt    bold
         FoldColumn          grey            dark0_soft
         Folded              grey            dark0_soft
         CursorColumn        none            dark0_soft
