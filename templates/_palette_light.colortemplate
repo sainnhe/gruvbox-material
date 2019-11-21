@@ -1,8 +1,11 @@
 # vim: ft=colortemplate fdm=marker
 
 Color: dark0_hard       #f9f5d7         230             White
+Color: dark0_hard_line  #f7f0ce         229             White
 Color: dark0_medium     #fbf1c7         229             White
+Color: dark0_medium_line #f6ebc1        228             White
 Color: dark0_soft       #f2e5bc         228             White
+Color: dark0_soft_line  #efe0b7         223             White
 Color: dark1            #ebdbb2         223             LightGrey
 Color: dark2            #d5c4a1         250             LightGrey
 Color: dark3            #bdae93         248             LightGrey
@@ -18,12 +21,15 @@ Color: green            #6c782e         100             Green
 Color: aqua             #4c7a5d         165             Cyan
 Color: blue             #45707a         24              Blue
 Color: purple           #945e80         96              Magenta
+Color: darkaqua_hard    #dde5c2         ~               DarkGreen
 Color: darkgreen_hard   #e3f6b4         ~               DarkGreen
 Color: darkred_hard     #ffdbcc         ~               DarkRed
 Color: darkblue_hard    #cff1f6         ~               DarkBlue
+Color: darkaqua_medium  #dee2b6         ~               DarkGreen
 Color: darkgreen_medium #daf0a7         ~               DarkGreen
 Color: darkred_medium   #fbcdb9         ~               DarkRed
 Color: darkblue_medium  #c6eaf0         ~               DarkBlue
+Color: darkaqua_soft    #d7d9ae         ~               DarkGreen
 Color: darkgreen_soft   #d1ea9b         ~               DarkGreen
 Color: darkred_soft     #fbcab5         ~               DarkRed
 Color: darkblue_soft    #bee4ea         ~               DarkBlue
