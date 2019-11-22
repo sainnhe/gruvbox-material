@@ -24,18 +24,24 @@ Color: green            #6c782e         100             Green
 Color: aqua             #4c7a5d         165             Cyan
 Color: blue             #45707a         24              Blue
 Color: purple           #945e80         96              Magenta
-Color: darkaqua_hard    #dde5c2         ~               DarkGreen
-Color: darkgreen_hard   #e3f6b4         ~               DarkGreen
-Color: darkred_hard     #ffdbcc         ~               DarkRed
-Color: darkblue_hard    #cff1f6         ~               DarkBlue
-Color: darkaqua_medium  #dee2b6         ~               DarkGreen
-Color: darkgreen_medium #daf0a7         ~               DarkGreen
-Color: darkred_medium   #fbcdb9         ~               DarkRed
-Color: darkblue_medium  #c6eaf0         ~               DarkBlue
-Color: darkaqua_soft    #d7d9ae         ~               DarkGreen
-Color: darkgreen_soft   #d1ea9b         ~               DarkGreen
-Color: darkred_soft     #fbcab5         ~               DarkRed
-Color: darkblue_soft    #bee4ea         ~               DarkBlue
+Color: darkgreen_hard   #dde5c2         ~               DarkGreen
+Color: darkred_hard     #f6d2ba         ~               DarkRed
+Color: darkblue_hard    #d9e1cc         ~               DarkBlue
+Color: darkgreen_medium #dee2b6         ~               DarkGreen
+Color: darkred_medium   #f7cfae         ~               DarkRed
+Color: darkblue_medium  #dadec0         ~               DarkBlue
+Color: darkgreen_soft   #d7d9ae         ~               DarkGreen
+Color: darkred_soft     #f0c6a6         ~               DarkRed
+Color: darkblue_soft    #d3d5b8         ~               DarkBlue
+Color: blackgreen_hard  #e3f6b4         ~               DarkGreen
+Color: blackred_hard    #ffdbcc         ~               DarkRed
+Color: blackblue_hard   #cff1f6         ~               DarkBlue
+Color: blackgreen_medium #daf0a7         ~               DarkGreen
+Color: blackred_medium  #fbcdb9         ~               DarkRed
+Color: blackblue_medium #c6eaf0         ~               DarkBlue
+Color: blackgreen_soft  #d1ea9b         ~               DarkGreen
+Color: blackred_soft    #fbcab5         ~               DarkRed
+Color: blackblue_soft   #bee4ea         ~               DarkBlue
 
 White                   light           none
 LightGrey               lightgrey       none

@@ -161,14 +161,14 @@ SpellLocal              aqua            none            italic t=underline g=und
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
 #if get(g:, 'gruvbox_material_visual', 'noreverse') ==# 'noreverse'
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        Visual                  none            darkaqua_hard
-        VisualNOS               none            darkaqua_hard
+        Visual                  none            darkgreen_hard
+        VisualNOS               none            darkgreen_hard
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        Visual                  none            darkaqua_medium
-        VisualNOS               none            darkaqua_medium
+        Visual                  none            darkgreen_medium
+        VisualNOS               none            darkgreen_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        Visual                  none            darkaqua_soft
-        VisualNOS               none            darkaqua_soft
+        Visual                  none            darkgreen_soft
+        VisualNOS               none            darkgreen_soft
     #endif
 #else
     Visual                  none            none            reverse
@@ -176,14 +176,14 @@ SpellRare               purple          none            italic t=underline g=und
 #endif
 #if get(g:, 'gruvbox_material_search', 'reverse') ==# 'noreverse'
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        IncSearch               none            darkaqua_hard   bold
-        Search                  none            darkaqua_hard   underline
+        IncSearch               none            darkgreen_hard   bold
+        Search                  none            darkgreen_hard   underline
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        IncSearch               none            darkaqua_medium   bold
-        Search                  none            darkaqua_medium   underline
+        IncSearch               none            darkgreen_medium   bold
+        Search                  none            darkgreen_medium   underline
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        IncSearch               none            darkaqua_soft   bold
-        Search                  none            darkaqua_soft   underline
+        IncSearch               none            darkgreen_soft   bold
+        Search                  none            darkgreen_soft   underline
     #endif
 #else
     IncSearch               none            none            reverse,bold
@@ -243,18 +243,18 @@ Ignore                  light           none
 #endif
 
 #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-    DiffAdd                 none            darkgreen_hard
-    DiffChange              none            darkblue_hard
-    DiffDelete              none            darkred_hard
-    Error                   none            darkred_hard
+    DiffAdd                 none            blackgreen_hard
+    DiffChange              none            blackblue_hard
+    DiffDelete              none            blackred_hard
+    Error                   none            blackred_hard
 #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-    DiffAdd                 none            darkgreen_soft
-    DiffChange              none            darkblue_soft
-    DiffDelete              none            darkred_soft
-    Error                   none            darkred_soft
+    DiffAdd                 none            blackgreen_soft
+    DiffChange              none            blackblue_soft
+    DiffDelete              none            blackred_soft
+    Error                   none            blackred_soft
 #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-    DiffAdd                 none            darkgreen_medium
-    DiffChange              none            darkblue_medium
-    DiffDelete              none            darkred_medium
-    Error                   none            darkred_medium
+    DiffAdd                 none            blackgreen_medium
+    DiffChange              none            blackblue_medium
+    DiffDelete              none            blackred_medium
+    Error                   none            blackred_medium
 #endif

@@ -24,18 +24,24 @@ Color: green            #a9b665         142             Green
 Color: aqua             #89b482         108             Cyan
 Color: blue             #7daea3         109             Blue
 Color: purple           #d3869b         175             Magenta
-Color: darkaqua_hard    #333e34         22              DarkGreen
-Color: darkgreen_hard   #32361a         22              DarkGreen
-Color: darkred_hard     #3c1f1e         52              DarkRed
-Color: darkblue_hard    #0d3138         17              DarkBlue
-Color: darkaqua_medium  #3b4439         22              DarkGreen
-Color: darkgreen_medium #34381b         22              DarkGreen
-Color: darkred_medium   #402120         52              DarkRed
-Color: darkblue_medium  #0e363e         17              DarkBlue
-Color: darkaqua_soft    #424a3e         22              DarkGreen
-Color: darkgreen_soft   #3d4220         22              DarkGreen
-Color: darkred_soft     #472322         52              DarkRed
-Color: darkblue_soft    #0f3a42         17              DarkBlue
+Color: darkgreen_hard   #333e34         22              DarkGreen
+Color: darkred_hard     #442e2d         52              DarkRed
+Color: darkblue_hard    #2e3b3b         17              DarkBlue
+Color: darkgreen_medium #3b4439         22              DarkGreen
+Color: darkred_medium   #4c3432         52              DarkRed
+Color: darkblue_medium  #374141         17              DarkBlue
+Color: darkgreen_soft   #424a3e         22              DarkGreen
+Color: darkred_soft     #533a37         52              DarkRed
+Color: darkblue_soft    #3e4746         17              DarkBlue
+Color: blackgreen_hard  #32361a         22              DarkGreen
+Color: blackred_hard    #3c1f1e         52              DarkRed
+Color: blackblue_hard   #0d3138         17              DarkBlue
+Color: blackgreen_medium #34381b         22              DarkGreen
+Color: blackred_medium  #402120         52              DarkRed
+Color: blackblue_medium #0e363e         17              DarkBlue
+Color: blackgreen_soft  #3d4220         22              DarkGreen
+Color: blackred_soft    #472322         52              DarkRed
+Color: blackblue_soft   #0f3a42         17              DarkBlue
 
 White                   light           none
 LightGrey               lightgrey       none
