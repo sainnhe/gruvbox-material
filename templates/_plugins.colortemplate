@@ -246,3 +246,17 @@ let g:VM_Cursor_hl = 'Cursor'
 let g:VM_Insert_hl = 'Cursor'
 endverbatim
 #}}}
+# Vim Current Word{{{
+CurrentWord -> CocHighlightText
+CurrentWordTwins -> CocHighlightText
+#}}}
+# Vim Illuminate{{{
+illuminatedWord -> CocHighlightText
+#}}}
+# Vim Cursor Word{{{
+verbatim
+let g:cursorword_highlight = 0
+endverbatim
+CursorWord0 -> CocHighlightText
+CursorWord1 -> CocHighlightText
+#}}}

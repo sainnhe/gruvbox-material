@@ -197,6 +197,9 @@ option to control their behavior.
 Currently support:
 
 - https://github.com/neoclide/coc-highlight
+- https://github.com/dominikduda/vim_current_word
+- https://github.com/RRethy/vim-illuminate
+- https://github.com/itchyny/vim-cursorword
 
     Available values: `'bold'`, `'italic'`, `'underline'`, `'darkgrey'`
     Default value: `'bold'`
