@@ -195,7 +195,7 @@ ALEInfo none none t=underline g=undercurl s=blue
     CocHighlightText none none underline
 #elseif get(g:, 'gruvbox_material_current_word', 'bold') ==# 'italic'
     CocHighlightText none none italic
-#elseif get(g:, 'gruvbox_material_current_word', 'bold') ==# 'darkgrey'
+#elseif get(g:, 'gruvbox_material_current_word', 'bold') ==# 'grey background'
     CocHighlightText -> MatchParen
 #endif
 CocHoverRange none none bold,underline
