@@ -196,7 +196,25 @@ ALEInfo none none t=underline g=undercurl s=blue
 #elseif get(g:, 'gruvbox_material_current_word', 'grey background') ==# 'italic'
     CocHighlightText none none italic
 #elseif get(g:, 'gruvbox_material_current_word', 'grey background') ==# 'grey background'
-    CocHighlightText -> MatchParen
+    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
+        #if &background ==#'light'
+            CocHighlightText none dark0_hard_col
+        #else
+            CocHighlightText none dark0_soft
+        #endif
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
+        #if &background ==#'light'
+            CocHighlightText none dark0_soft
+        #else
+            CocHighlightText none dark1
+        #endif
+    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
+        #if &background ==#'light'
+            CocHighlightText none dark1
+        #else
+            CocHighlightText none dark1_alt
+        #endif
+    #endif
 #endif
 CocHoverRange none none bold,underline
 #if get(g:, 'gruvbox_material_transparent_background', 0)
