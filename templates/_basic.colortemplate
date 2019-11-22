@@ -168,13 +168,13 @@ SpellBad                red             none            italic t=underline g=und
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-#if get(g:, 'gruvbox_material_visual', 'darkgreen') ==# 'darkgreen'
+#if get(g:, 'gruvbox_material_visual', 'green background') ==# 'green background'
     Visual -> GruvboxMaterialDarkGreen
     VisualNOS -> GruvboxMaterialDarkGreen
-#elseif get(g:, 'gruvbox_material_visual', 'darkgreen') ==# 'darkblue'
+#elseif get(g:, 'gruvbox_material_visual', 'green background') ==# 'blue background'
     Visual -> GruvboxMaterialDarkBlue
     VisualNOS -> GruvboxMaterialDarkBlue
-#elseif get(g:, 'gruvbox_material_visual', 'darkgreen') ==# 'darkred'
+#elseif get(g:, 'gruvbox_material_visual', 'green background') ==# 'red background'
     Visual -> GruvboxMaterialDarkRed
     VisualNOS -> GruvboxMaterialDarkRed
 #else

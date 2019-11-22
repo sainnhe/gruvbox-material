@@ -181,8 +181,8 @@ E.g.~
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
-    Available values: `'darkgreen'`, `'darkblue'`, `'darkred'`, `'reverse'`
-    Default value: `'darkgreen'`
+    Available values: `'green background'`, `'blue background'`, `'red background'`, `'reverse'`
+    Default value: `'green background'`
 
 E.g.~
 >
