@@ -188,6 +188,7 @@ CocErrorVirtualText  -> ALEVirtualTextError
 CocInfoVirtualText   -> ALEVirtualTextInfo
 CocHintVirtualText   -> ALEVirtualTextInfo
 CocCodeLens          -> ALEVirtualTextInfo
+HighlightedyankRegion -> Visual
 CocGitAddedSign      -> GitGutterAdd
 CocGitChangeRemovedSign -> GitGutterChangeDelete
 CocGitChangedSign    -> GitGutterChange
