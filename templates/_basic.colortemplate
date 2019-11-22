@@ -181,21 +181,8 @@ SpellRare               purple          none            italic t=underline g=und
     Visual              none            none            reverse
     VisualNOS           none            none            reverse
 #endif
-#if get(g:, 'gruvbox_material_search', 'reverse') ==# 'noreverse'
-    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        IncSearch               none            darkgreen_hard   bold
-        Search                  none            darkgreen_hard   underline
-    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        IncSearch               none            darkgreen_medium   bold
-        Search                  none            darkgreen_medium   underline
-    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        IncSearch               none            darkgreen_soft   bold
-        Search                  none            darkgreen_soft   underline
-    #endif
-#else
-    IncSearch               none            none            reverse,bold
-    Search                  none            none            reverse,underline
-#endif
+IncSearch -> GruvboxMaterialDarkRed
+Search -> GruvboxMaterialDarkBlue
 Todo                    grey            none            bold,italic
 CursorIM                none            none            reverse
 ToolbarLine             none            dark3

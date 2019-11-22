@@ -2,7 +2,6 @@ g:gruvbox_material_background	gruvbox-material.txt	/*g:gruvbox_material_backgrou
 g:gruvbox_material_disable_italic_comment	gruvbox-material.txt	/*g:gruvbox_material_disable_italic_comment*
 g:gruvbox_material_enable_bold	gruvbox-material.txt	/*g:gruvbox_material_enable_bold*
 g:gruvbox_material_lightline_disable_bold	gruvbox-material.txt	/*g:gruvbox_material_lightline_disable_bold*
-g:gruvbox_material_search	gruvbox-material.txt	/*g:gruvbox_material_search*
 g:gruvbox_material_transparent_background	gruvbox-material.txt	/*g:gruvbox_material_transparent_background*
 g:gruvbox_material_visual	gruvbox-material.txt	/*g:gruvbox_material_visual*
 gruvbox-material-configuration	gruvbox-material.txt	/*gruvbox-material-configuration*

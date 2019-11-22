@@ -189,21 +189,6 @@ E.g.~
     let g:gruvbox_material_visual = 'reverse'
 <
 ------------------------------------------------------------------------------
-						    *g:gruvbox_material_search*
-
-Control the `Search` and the `IncSearch` highlight group.
-
-By default, this color scheme use `reverse`. If you want to use aqua as
-background color, set this option to `'noreverse'`.
-
-    Available values: `'reverse'`, `'noreverse'`
-    Default value: `'reverse'`
-
-E.g.~
->
-    let g:gruvbox_material_search = 'noreverse'
-<
-------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
 
 By default, bold is enabled in lightline color scheme. To disable bold in
