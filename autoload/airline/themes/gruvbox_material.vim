@@ -8,7 +8,7 @@
 
 if &background ==# 'light'
     if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        let s:darker    = '#fbf1c7'
+        let s:darker    = '#f3eac7'
         let s:darkgrey  = '#ebdbb2'
     elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         let s:darker    = '#f2e5bc'

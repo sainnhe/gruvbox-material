@@ -2,6 +2,7 @@
 
 Color: dark0_hard       #f9f5d7         230             White
 Color: dark0_hard_line  #f7f0ce         229             White
+Color: dark0_hard_col   #f3eac7         229             White
 Color: dark0_medium     #fbf1c7         229             White
 Color: dark0_medium_line #f6ebc1        228             White
 Color: dark0_soft       #f2e5bc         228             White

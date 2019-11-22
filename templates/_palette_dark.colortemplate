@@ -2,6 +2,7 @@
 
 Color: dark0_hard       #1d2021         234             Black
 Color: dark0_hard_line  #232424         235             Black
+Color: dark0_hard_col   #282828         235             Black
 Color: dark0_medium     #282828         235             Black
 Color: dark0_medium_line #2d2c2c        236             Black
 Color: dark0_soft       #32302f         236             Black

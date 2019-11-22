@@ -78,10 +78,10 @@ endverbatim
     GitGutterChangeDelete purple none
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        GitGutterAdd green dark0_medium
-        GitGutterChange blue dark0_medium
-        GitGutterDelete red dark0_medium
-        GitGutterChangeDelete purple dark0_medium
+        GitGutterAdd green dark0_hard_col
+        GitGutterChange blue dark0_hard_col
+        GitGutterDelete red dark0_hard_col
+        GitGutterChangeDelete purple dark0_hard_col
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         GitGutterAdd green dark0_soft
         GitGutterChange blue dark0_soft
@@ -101,8 +101,8 @@ endverbatim
     SignatureMarkerText purple none
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        SignatureMarkText blue dark0_medium
-        SignatureMarkerText purple dark0_medium
+        SignatureMarkText blue dark0_hard_col
+        SignatureMarkerText purple dark0_hard_col
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         SignatureMarkText blue dark0_soft
         SignatureMarkerText purple dark0_soft
@@ -114,10 +114,10 @@ endverbatim
 # }}}
 # ShowMarks {{{
 #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-    ShowMarksHLl blue dark0_medium  
-    ShowMarksHLu blue dark0_medium  
-    ShowMarksHLo blue dark0_medium  
-    ShowMarksHLm blue dark0_medium  
+    ShowMarksHLl blue dark0_hard_col
+    ShowMarksHLu blue dark0_hard_col
+    ShowMarksHLo blue dark0_hard_col
+    ShowMarksHLm blue dark0_hard_col
 #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
     ShowMarksHLl blue dark0_soft
     ShowMarksHLu blue dark0_soft
@@ -174,9 +174,9 @@ ALEInfo none none t=underline g=undercurl s=blue
     ALEInfoSign blue none
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        ALEErrorSign red dark0_medium
-        ALEWarningSign yellow dark0_medium
-        ALEInfoSign blue dark0_medium
+        ALEErrorSign red dark0_hard_col
+        ALEWarningSign yellow dark0_hard_col
+        ALEInfoSign blue dark0_hard_col
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         ALEErrorSign red dark0_soft
         ALEWarningSign yellow dark0_soft
@@ -195,7 +195,7 @@ CocHoverRange none none bold,underline
     CocHintSign aqua none
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        CocHintSign aqua dark0_medium
+        CocHintSign aqua dark0_hard_col
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         CocHintSign aqua dark0_soft
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
