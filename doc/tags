@@ -1,4 +1,5 @@
 g:gruvbox_material_background	gruvbox-material.txt	/*g:gruvbox_material_background*
+g:gruvbox_material_current_word	gruvbox-material.txt	/*g:gruvbox_material_current_word*
 g:gruvbox_material_disable_italic_comment	gruvbox-material.txt	/*g:gruvbox_material_disable_italic_comment*
 g:gruvbox_material_enable_bold	gruvbox-material.txt	/*g:gruvbox_material_enable_bold*
 g:gruvbox_material_lightline_disable_bold	gruvbox-material.txt	/*g:gruvbox_material_lightline_disable_bold*

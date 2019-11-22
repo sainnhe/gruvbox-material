@@ -189,6 +189,23 @@ E.g.~
     let g:gruvbox_material_visual = 'reverse'
 <
 ------------------------------------------------------------------------------
+                                              *g:gruvbox_material_current_word*
+
+Some plugins can highlight the word under current cursor, you can use this
+option to control their behavior.
+
+Currently support:
+
+- https://github.com/neoclide/coc-highlight
+
+    Available values: `'bold'`, `'italic'`, `'underline'`, `'darkgrey'`
+    Default value: `'bold'`
+
+E.g.~
+>
+    let g:gruvbox_material_current_word = 'darkgrey'
+<
+------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
 
 By default, bold is enabled in lightline color scheme. To disable bold in
