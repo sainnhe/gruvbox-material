@@ -189,13 +189,13 @@ ALEInfo none none t=underline g=undercurl s=blue
 #endif
 # }}}
 # CoC{{{
-#if get(g:, 'gruvbox_material_current_word', 'bold') ==# 'bold'
+#if get(g:, 'gruvbox_material_current_word', 'grey background') ==# 'bold'
     CocHighlightText none none bold
-#elseif get(g:, 'gruvbox_material_current_word', 'bold') ==# 'underline'
+#elseif get(g:, 'gruvbox_material_current_word', 'grey background') ==# 'underline'
     CocHighlightText none none underline
-#elseif get(g:, 'gruvbox_material_current_word', 'bold') ==# 'italic'
+#elseif get(g:, 'gruvbox_material_current_word', 'grey background') ==# 'italic'
     CocHighlightText none none italic
-#elseif get(g:, 'gruvbox_material_current_word', 'bold') ==# 'grey background'
+#elseif get(g:, 'gruvbox_material_current_word', 'grey background') ==# 'grey background'
     CocHighlightText -> MatchParen
 #endif
 CocHoverRange none none bold,underline

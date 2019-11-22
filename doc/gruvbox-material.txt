@@ -201,12 +201,12 @@ Currently support:
 - https://github.com/RRethy/vim-illuminate
 - https://github.com/itchyny/vim-cursorword
 
-    Available values: `'bold'`, `'italic'`, `'underline'`, `'grey background'`
-    Default value: `'bold'`
+    Available values: `'grey background'`, `'bold'`, `'underline'`, `'italic'`
+    Default value: `'grey background'`
 
 E.g.~
 >
-    let g:gruvbox_material_current_word = 'grey background'
+    let g:gruvbox_material_current_word = 'bold'
 <
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
