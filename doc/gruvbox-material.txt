@@ -177,15 +177,12 @@ E.g.~
     let g:gruvbox_material_transparent_background = 1
 <
 ------------------------------------------------------------------------------
-						    *g:gruvbox_material_visual*
+                                    		    *g:gruvbox_material_visual*
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
-By default, this color scheme use aqua as background color. If you want to use
-`reverse` just like in the original gruvbox, set this option to `'reverse'`.
-
-    Available values: `'reverse'`, `'noreverse'`
-    Default value: `'noreverse'`
+    Available values: `'darkgreen'`, `'darkblue'`, `'darkred'`, `'reverse'`
+    Default value: `'darkgreen'`
 
 E.g.~
 >

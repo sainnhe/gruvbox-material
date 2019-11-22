@@ -35,6 +35,9 @@ Variant: gui 256 8
         CursorLine          none            dark0_hard_line
         CursorLineNr        lightgrey       dark0_hard_line
         SignColumn          light           dark0_hard_col
+        GruvboxMaterialDarkGreen none       darkgreen_hard
+        GruvboxMaterialDarkBlue  none       darkblue_hard
+        GruvboxMaterialDarkRed   none       darkred_hard
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
         Normal              light           dark0_medium
         Terminal            light           dark0_medium
@@ -49,6 +52,9 @@ Variant: gui 256 8
         CursorLine          none            dark0_medium_line
         CursorLineNr        lightgrey       dark0_medium_line
         SignColumn          light           dark0_soft
+        GruvboxMaterialDarkGreen none       darkgreen_medium
+        GruvboxMaterialDarkBlue  none       darkblue_medium
+        GruvboxMaterialDarkRed   none       darkred_medium
     #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
         Normal              light           dark0_soft
         Terminal            light           dark0_soft
@@ -63,6 +69,9 @@ Variant: gui 256 8
         CursorLine          none            dark0_soft_line
         CursorLineNr        lightgrey       dark0_soft_line
         SignColumn          light           dark1
+        GruvboxMaterialDarkGreen none       darkgreen_soft
+        GruvboxMaterialDarkBlue  none       darkblue_soft
+        GruvboxMaterialDarkRed   none       darkred_soft
     #endif
 #endif
 
@@ -159,20 +168,18 @@ SpellBad                red             none            italic t=underline g=und
 SpellCap                blue            none            italic t=underline g=undercurl s=blue
 SpellLocal              aqua            none            italic t=underline g=undercurl s=aqua
 SpellRare               purple          none            italic t=underline g=undercurl s=purple
-#if get(g:, 'gruvbox_material_visual', 'noreverse') ==# 'noreverse'
-    #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        Visual                  none            darkgreen_hard
-        VisualNOS               none            darkgreen_hard
-    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        Visual                  none            darkgreen_medium
-        VisualNOS               none            darkgreen_medium
-    #elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        Visual                  none            darkgreen_soft
-        VisualNOS               none            darkgreen_soft
-    #endif
+#if get(g:, 'gruvbox_material_visual', 'darkgreen') ==# 'darkgreen'
+    Visual -> GruvboxMaterialDarkGreen
+    VisualNOS -> GruvboxMaterialDarkGreen
+#elseif get(g:, 'gruvbox_material_visual', 'darkgreen') ==# 'darkblue'
+    Visual -> GruvboxMaterialDarkBlue
+    VisualNOS -> GruvboxMaterialDarkBlue
+#elseif get(g:, 'gruvbox_material_visual', 'darkgreen') ==# 'darkred'
+    Visual -> GruvboxMaterialDarkRed
+    VisualNOS -> GruvboxMaterialDarkRed
 #else
-    Visual                  none            none            reverse
-    VisualNOS               none            none            reverse
+    Visual              none            none            reverse
+    VisualNOS           none            none            reverse
 #endif
 #if get(g:, 'gruvbox_material_search', 'reverse') ==# 'noreverse'
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
