@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Fix
+
+- Fix background colors in transparent mode.
+
 ## [0.3.4] - 2019-11-23
 
 ### Changed
