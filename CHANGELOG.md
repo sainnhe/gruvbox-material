@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.4] - 2019-11-23
+
+### Changed
+
+- Use grey as foreground color of `Conceal`.
+- Optimize `CursorLine`.
+- Optimize `MatchParen`.
+- Optimize `Pmenu`.
+- Better support for hard light variant.
+- Disable bold in `MatchParen`.
+
+### Added
+
+- Support `Shougo/denite.nvim`.
+- Support `mg979/vim-visual-multi`.
+- Support `liuchengxu/vim-which-key`.
+- Support `neomake/neomake`.
+- Support `liuchengxu/vista.vim`.
+- Support `unblevable/quick-scope`.
+- Support `neoclide/coc-yank`.
+- New configuration option: `g:gruvbox_material_visual`.
+- New configuration option: `g:gruvbox_material_current_word`.
+
 ## [0.3.3] - 2019-11-07
 
 ### Changed
@@ -106,7 +129,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.3...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.4...HEAD
+[0.3.4]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.0...v0.3.1
