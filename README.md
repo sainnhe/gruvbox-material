@@ -4,9 +4,9 @@
 
 |        |                                                     𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                     |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
-|  𝒉𝒂𝒓𝒅  |  ![original-hard-dark](https://user-images.githubusercontent.com/37491630/67563234-cef14800-f70f-11e9-9778-11f5ded98be5.png)  |  ![material-hard-dark](https://user-images.githubusercontent.com/37491630/67563211-c4cf4980-f70f-11e9-920d-8eebe85d4b35.png)  |
-| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium-dark](https://user-images.githubusercontent.com/37491630/67563242-d284cf00-f70f-11e9-8b51-39e6baef1252.png) | ![material-medium-dark](https://user-images.githubusercontent.com/37491630/67563218-c862d080-f70f-11e9-9add-df2427a26667.png) |
-|  𝒔𝒐𝒇𝒕  |  ![original-soft-dark](https://user-images.githubusercontent.com/37491630/67563251-d6185600-f70f-11e9-8535-7b8072ccc464.png)  |  ![material-soft-dark](https://user-images.githubusercontent.com/37491630/67563225-cbf65780-f70f-11e9-8e36-95517f9d3273.png)  |
+|  𝒉𝒂𝒓𝒅  |  ![original-hard-dark](https://user-images.githubusercontent.com/37491630/69468270-71d6c980-0d83-11ea-97f5-844accd52f68.png)  |  ![material-hard-dark](https://user-images.githubusercontent.com/37491630/69468250-65527100-0d83-11ea-98e8-04cc64e9270b.png)  |
+| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium-dark](https://user-images.githubusercontent.com/37491630/69468276-7602e700-0d83-11ea-8c31-4dd038e52114.png) | ![material-medium-dark](https://user-images.githubusercontent.com/37491630/69468257-697e8e80-0d83-11ea-8299-c0e5ecd132e3.png) |
+|  𝒔𝒐𝒇𝒕  |  ![original-soft-dark](https://user-images.githubusercontent.com/37491630/69468280-78654100-0d83-11ea-9f69-2d0c0aa2dabb.png)  |  ![material-soft-dark](https://user-images.githubusercontent.com/37491630/69468264-6edbd900-0d83-11ea-815a-9d61509f3769.png)  |
 
 <h1 align="center">
 𝐋𝐢𝐠𝐡𝐭
@@ -14,9 +14,9 @@
 
 |        |                                                     𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐆𝐫𝐮𝐯𝐛𝐨𝐱                                                     |                                                     𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥                                                     |
 | :----: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
-|  𝒉𝒂𝒓𝒅  |  ![original-hard-light](https://user-images.githubusercontent.com/37491630/67563236-d0bb0b80-f70f-11e9-9966-79b0a69c5586.png)  |  ![material-hard-light](https://user-images.githubusercontent.com/37491630/67563213-c6990d00-f70f-11e9-97e3-6d92d3256245.png)  |
-| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium-light](https://user-images.githubusercontent.com/37491630/67563247-d44e9280-f70f-11e9-97b4-07f236221d9a.png) | ![material-medium-light](https://user-images.githubusercontent.com/37491630/67563221-ca2c9400-f70f-11e9-9bbb-217037a73988.png) |
-|  𝒔𝒐𝒇𝒕  |  ![original-soft-light](https://user-images.githubusercontent.com/37491630/67563257-d7e21980-f70f-11e9-9e83-37efc571c9d9.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/37491630/67563228-cd278480-f70f-11e9-8b79-22717cd4a43e.png)  |
+|  𝒉𝒂𝒓𝒅  |  ![original-hard-light](https://user-images.githubusercontent.com/37491630/69468272-73a08d00-0d83-11ea-8065-c2875d6c5cb1.png)  |  ![material-hard-light](https://user-images.githubusercontent.com/37491630/69468253-671c3480-0d83-11ea-932d-1fe0ba559a1b.png)  |
+| 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium-light](https://user-images.githubusercontent.com/37491630/69468278-77341400-0d83-11ea-9aa3-b6a94c442989.png) | ![material-medium-light](https://user-images.githubusercontent.com/37491630/69468260-6b485200-0d83-11ea-8329-c4564e40f65b.png) |
+|  𝒔𝒐𝒇𝒕  |  ![original-soft-light](https://user-images.githubusercontent.com/37491630/69468281-7a2f0480-0d83-11ea-8ab0-3f0dc15fd0cb.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/37491630/69468266-700d0600-0d83-11ea-8aa1-e97b86864a08.png)  |
 
 In my opinion, the very first thing a color scheme should do is to be eye-friendly, anything else is secondary. This requires soft contrast and low blue light.
 
