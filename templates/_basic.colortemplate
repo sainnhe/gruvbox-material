@@ -23,7 +23,11 @@ Variant: gui 256 8
     GruvboxMaterialDarkGreen none       darkgreen_medium
     GruvboxMaterialDarkBlue  none       darkblue_medium
     GruvboxMaterialDarkRed   none       darkred_medium
+    IncSearch           none            none            reverse,bold,underline
+    Search              none            none            reverse
 #else
+    IncSearch -> GruvboxMaterialDarkRed
+    Search -> GruvboxMaterialDarkBlue
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Normal              light           dark0_hard
         Terminal            light           dark0_hard
@@ -184,8 +188,6 @@ SpellRare               purple          none            italic t=underline g=und
     Visual              none            none            reverse
     VisualNOS           none            none            reverse
 #endif
-IncSearch -> GruvboxMaterialDarkRed
-Search -> GruvboxMaterialDarkBlue
 Todo                    grey            none            bold,italic
 CursorIM                none            none            reverse
 ToolbarLine             none            dark3
