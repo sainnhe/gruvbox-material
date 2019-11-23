@@ -202,7 +202,8 @@ Currently support:
 - https://github.com/itchyny/vim-cursorword
 
     Available values: `'grey background'`, `'bold'`, `'underline'`, `'italic'`
-    Default value: `'grey background'`
+    Default value: `'grey background'` when not in transparent mode, `'bold'`
+    when in transparent mode.
 
 E.g.~
 >
