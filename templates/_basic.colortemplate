@@ -20,9 +20,9 @@ Variant: gui 256 8
     CursorLineNr        lightgrey       none
     MatchParen          none            none            bold
     SignColumn          light           none
-    GruvboxMaterialDarkGreen none       darkgreen_hard
-    GruvboxMaterialDarkBlue  none       darkblue_hard
-    GruvboxMaterialDarkRed   none       darkred_hard
+    GruvboxMaterialDarkGreen none       darkgreen_medium
+    GruvboxMaterialDarkBlue  none       darkblue_medium
+    GruvboxMaterialDarkRed   none       darkred_medium
 #else
     #if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
         Normal              light           dark0_hard
