@@ -49,7 +49,7 @@ if &background ==# 'light'
 
     let g:airline#themes#gruvbox_material#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
     let g:airline#themes#gruvbox_material#palette.normal_modified = {
-                \ 'airline_c': [ '#4f3829' , s:darker , 241 , 223 ] ,
+                \ 'airline_c': [ '#45707a' , s:darker , 241 , 223 ] ,
                 \ }
 
     " Insert mode
@@ -59,7 +59,7 @@ if &background ==# 'light'
 
     let g:airline#themes#gruvbox_material#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
     let g:airline#themes#gruvbox_material#palette.insert_modified = {
-                \ 'airline_c': [ '#4f3829' , s:darker , 241 , 223 ] ,
+                \ 'airline_c': [ '#45707a' , s:darker , 241 , 223 ] ,
                 \ }
 
     " Replace mode
@@ -69,7 +69,7 @@ if &background ==# 'light'
 
     let g:airline#themes#gruvbox_material#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
     let g:airline#themes#gruvbox_material#palette.replace_modified = {
-                \ 'airline_c': [ '#4f3829' , s:darker , 241 , 223 ] ,
+                \ 'airline_c': [ '#45707a' , s:darker , 241 , 223 ] ,
                 \ }
 
     " Visual mode
@@ -79,14 +79,14 @@ if &background ==# 'light'
 
     let g:airline#themes#gruvbox_material#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
     let g:airline#themes#gruvbox_material#palette.visual_modified = {
-                \ 'airline_c': [ '#4f3829' , s:darker , 241 , 223 ] ,
+                \ 'airline_c': [ '#45707a' , s:darker , 241 , 223 ] ,
                 \ }
 
     " Inactive
     let s:IA = [ '#4f3829' , s:darker , 241 , 223 ]
     let g:airline#themes#gruvbox_material#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
     let g:airline#themes#gruvbox_material#palette.inactive_modified = {
-                \ 'airline_c': [ '#4f3829' , s:darker , 241 , 223 ] ,
+                \ 'airline_c': [ '#45707a' , s:darker , 241 , 223 ] ,
                 \ }
 else
     let g:airline#themes#gruvbox_material#palette = {}
@@ -101,7 +101,7 @@ else
 
     let g:airline#themes#gruvbox_material#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
     let g:airline#themes#gruvbox_material#palette.normal_modified = {
-                \ 'airline_c': [ '#ddc7a1' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#7daea3' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Insert mode
@@ -111,7 +111,7 @@ else
 
     let g:airline#themes#gruvbox_material#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
     let g:airline#themes#gruvbox_material#palette.insert_modified = {
-                \ 'airline_c': [ '#ddc7a1' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#7daea3' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Replace mode
@@ -121,7 +121,7 @@ else
 
     let g:airline#themes#gruvbox_material#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
     let g:airline#themes#gruvbox_material#palette.replace_modified = {
-                \ 'airline_c': [ '#ddc7a1' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#7daea3' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Visual mode
@@ -131,13 +131,13 @@ else
 
     let g:airline#themes#gruvbox_material#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
     let g:airline#themes#gruvbox_material#palette.visual_modified = {
-                \ 'airline_c': [ '#ddc7a1' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#7daea3' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 
     " Inactive
     let s:IA = [ '#ddc7a1' , s:darker , 223 , s:darker_cterm ]
     let g:airline#themes#gruvbox_material#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
     let g:airline#themes#gruvbox_material#palette.inactive_modified = {
-                \ 'airline_c': [ '#ddc7a1' , s:darker , 223 , s:darker_cterm ] ,
+                \ 'airline_c': [ '#7daea3' , s:darker , 223 , s:darker_cterm ] ,
                 \ }
 endif
