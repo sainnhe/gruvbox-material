@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Use blue as foreground color of modified file name in airline color scheme.
+
 ### Fix
 
 - Fix background colors in transparent mode.
