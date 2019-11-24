@@ -15,9 +15,9 @@ Variant: gui 256 8
     EndOfBuffer         grey            none
     FoldColumn          grey            none
     Folded              grey            none            bold
-    CursorColumn        none            none
-    CursorLine          none            none
-    CursorLineNr        lightgrey       none
+    CursorColumn        none            dark0_medium_line
+    CursorLine          none            dark0_medium_line
+    CursorLineNr        lightgrey       dark0_medium_line
     MatchParen          none            none            bold
     SignColumn          light           none
     GruvboxMaterialDarkGreen none       darkgreen_medium
