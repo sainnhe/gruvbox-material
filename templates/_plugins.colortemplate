@@ -24,8 +24,9 @@ EasyMotionTarget -> Search
 EasyMotionShade -> Comment
 # }}}
 # Sneak: {{{
-Sneak -> Search
-SneakLabel -> Search
+Sneak -> Cursor
+SneakLabel -> Cursor
+SneakScope -> DiffChange
 # }}}
 # GitCommit {{{
 gitcommitSelectedFile -> Green
