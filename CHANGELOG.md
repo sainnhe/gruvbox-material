@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Adjust the background color of `CursorLine` in the dark variant.
+
 ### Added
 
 - Use blue as foreground color of modified file name in airline color scheme.

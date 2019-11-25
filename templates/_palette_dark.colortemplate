@@ -1,12 +1,12 @@
 # vim: ft=colortemplate fdm=marker
 
 Color: dark0_hard       #1d2021         234             Black
-Color: dark0_hard_line  #232424         235             Black
+Color: dark0_hard_line  #242525         235             Black
 Color: dark0_hard_col   #282828         235             Black
 Color: dark0_medium     #282828         235             Black
-Color: dark0_medium_line #2d2c2c        236             Black
+Color: dark0_medium_line #2e2d2d        236             Black
 Color: dark0_soft       #32302f         236             Black
-Color: dark0_soft_line  #373432         237             Black
+Color: dark0_soft_line  #383533         237             Black
 Color: dark1            #3c3836         237             DarkGrey
 Color: dark1_alt        #45403d         237             DarkGrey
 Color: dark2            #504945         239             DarkGrey
