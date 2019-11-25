@@ -234,6 +234,7 @@ WhichKey -> Red
 WhichKeySeperator -> Green
 WhichKeyGroup -> Yellow
 WhichKeyDesc -> Blue
+WhichKeyFloating -> SignColumn
 #}}}
 # Vim Multiple Cursors {{{
 multiple_cursors_cursor -> Cursor

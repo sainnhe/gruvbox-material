@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Adjust the background color of `CursorLine` in the dark variant.
+- Link `WhichKeyFloating` to `SignColumn`.
 
 ### Added
 
