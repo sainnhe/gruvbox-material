@@ -7,10 +7,12 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Use blue as foreground color of modified file name in airline color scheme.
+- Add a judgment logic for `CursorLineNr`.
 
 ### Fix
 
 - Fix background colors in transparent mode.
+- Remove `doc/tags`.
 
 ## [0.3.4] - 2019-11-23
 

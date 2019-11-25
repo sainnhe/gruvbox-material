@@ -17,7 +17,11 @@ Variant: gui 256 8
     Folded              grey            none            bold
     CursorColumn        none            dark0_medium_line
     CursorLine          none            dark0_medium_line
-    CursorLineNr        lightgrey       dark0_medium_line
+    #if &rnu == 1 && &cul == 0
+        CursorLineNr        lightgrey       none
+    #else
+        CursorLineNr        lightgrey       dark0_medium_line
+    #endif
     MatchParen          none            none            bold
     SignColumn          light           none
     GruvboxMaterialDarkGreen none       darkgreen_medium
@@ -40,7 +44,11 @@ Variant: gui 256 8
         Folded              grey            dark0_hard_col
         CursorColumn        none            dark0_hard_line
         CursorLine          none            dark0_hard_line
-        CursorLineNr        lightgrey       dark0_hard_line
+        #if &rnu == 1 && &cul == 0
+            CursorLineNr        lightgrey       none
+        #else
+            CursorLineNr        lightgrey       dark0_hard_line
+        #endif
         SignColumn          light           dark0_hard_col
         GruvboxMaterialDarkGreen none       darkgreen_hard
         GruvboxMaterialDarkBlue  none       darkblue_hard
@@ -57,7 +65,11 @@ Variant: gui 256 8
         Folded              grey            dark0_soft
         CursorColumn        none            dark0_medium_line
         CursorLine          none            dark0_medium_line
-        CursorLineNr        lightgrey       dark0_medium_line
+        #if &rnu == 1 && &cul == 0
+            CursorLineNr        lightgrey       none
+        #else
+            CursorLineNr        lightgrey       dark0_medium_line
+        #endif
         SignColumn          light           dark0_soft
         GruvboxMaterialDarkGreen none       darkgreen_medium
         GruvboxMaterialDarkBlue  none       darkblue_medium
@@ -74,7 +86,11 @@ Variant: gui 256 8
         Folded              grey            dark1
         CursorColumn        none            dark0_soft_line
         CursorLine          none            dark0_soft_line
-        CursorLineNr        lightgrey       dark0_soft_line
+        #if &rnu == 1 && &cul == 0
+            CursorLineNr        lightgrey       none
+        #else
+            CursorLineNr        lightgrey       dark0_soft_line
+        #endif
         SignColumn          light           dark1
         GruvboxMaterialDarkGreen none       darkgreen_soft
         GruvboxMaterialDarkBlue  none       darkblue_soft
