@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 
 - Use blue as foreground color of modified file name in airline color scheme.
 - Add a judgment logic for `CursorLineNr`.
+- Optimize Dart.
 
 ### Fix
 

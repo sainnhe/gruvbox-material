@@ -267,6 +267,15 @@ coffeeCurly -> Orange
 coffeeParen -> White
 coffeeBracket -> Orange
 # }}}
+# Dart: {{{
+dartCoreClasses -> Aqua
+dartTypeName -> Aqua
+dartInterpolation -> Blue
+dartTypeDef -> Keyword
+dartClassDecl -> Keyword
+dartLibrary -> Keyword
+dartMetadata -> Blue
+# }}}
 # Java: {{{
 javaAnnotation -> Blue
 javaDocTags -> Aqua
