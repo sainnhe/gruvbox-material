@@ -357,6 +357,13 @@ hi! link perlStatementStorage StorageClass
 hi! link perlStatementList StorageClass
 hi! link perlVarSimpleMemberName Type
 hi! link perlMethod Function
+hi! link dartCoreClasses Aqua
+hi! link dartTypeName Aqua
+hi! link dartInterpolation Blue
+hi! link dartTypeDef Keyword
+hi! link dartClassDecl Keyword
+hi! link dartLibrary Keyword
+hi! link dartMetadata Blue
 hi! link podCommand StorageClass
 hi! link podCmdText Macro
 hi! link podVerbatimLine String
