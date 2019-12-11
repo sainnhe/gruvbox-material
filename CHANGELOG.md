@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Markdown heading delimiter.
+
 ## [1.0.0] - 2019-12-11
 
 ### Changed

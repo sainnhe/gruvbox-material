@@ -15,7 +15,7 @@ markdownHeadingRule -> Grey
 markdownUrlDelimiter -> Grey
 markdownLinkDelimiter -> Grey
 markdownLinkTextDelimiter -> Grey
-markdownHeadingDelimiter -> Orange
+markdownHeadingDelimiter -> Grey
 markdownLinkText -> Aqua
 markdownUrlTitleDelimiter -> Green
 markdownIdDeclaration -> markdownLinkText
