@@ -4,8 +4,6 @@
 # This is for better loading time.
 
 # Markdown: {{{
-markdownH5 -> Yellow
-markdownH6 -> Yellow
 markdownCode -> Green
 markdownCodeBlock -> Aqua
 markdownCodeDelimiter -> Aqua

@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Adjust the background color of `CursorLine` in the dark variant.
 - Link `WhichKeyFloating` to `SignColumn`.
 - Optimize vim-sneak.
+- Markdown headings.
 
 ### Added
 
