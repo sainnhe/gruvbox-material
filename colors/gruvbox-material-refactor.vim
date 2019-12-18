@@ -220,5 +220,74 @@ elseif s:configuration.background ==# 'soft'
   endif
 endif
 " }}}
+" Function: {{{
+" call s:HL(group, foreground, background)
+" call s:HL(group, foreground, background, gui, guisp)
+"
+" E.g.:
+" call s:HL('Normal', s:palette.fg, s:palette.bg0)
+
+if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg gui cterm guisp
+  function! s:HL(group, fg, bg, ...)
+    let hl_string = [
+          \ 'highlight', a:group,
+          \ 'guifg=' . a:fg[0],
+          \ 'guibg=' . a:bg[0],
+          \ ]
+    if a:0 >= 1
+      if a:1 ==# 'undercurl'
+        call add(hl_string, 'gui=undercurl')
+        call add(hl_string, 'cterm=underline')
+      else
+        call add(hl_string, 'gui=' . a:1)
+        call add(hl_string, 'cterm=' . a:1)
+      endif
+    else
+      call add(hl_string, 'gui=NONE')
+      call add(hl_string, 'cterm=NONE')
+    endif
+    if a:0 >= 2
+      call add(hl_string, 'guisp=' . a:2[0])
+    endif
+    execute join(hl_string, ' ')
+  endfunction
+elseif s:t_Co >= 256  " ctermfg ctermbg cterm
+  function! s:HL(group, fg, bg, ...)
+    let hl_string = [
+          \ 'highlight', a:group,
+          \ 'ctermfg=' . a:fg[1],
+          \ 'ctermbg=' . a:bg[1],
+          \ ]
+    if a:0 >= 1
+      if a:1 ==# 'undercurl'
+        call add(hl_string, 'cterm=underline')
+      else
+        call add(hl_string, 'cterm=' . a:1)
+      endif
+    else
+      call add(hl_string, 'cterm=NONE')
+    endif
+    execute join(hl_string, ' ')
+  endfunction
+else  " ctermfg ctermbg cterm
+  function! s:HL(group, fg, bg, ...)
+    let hl_string = [
+          \ 'highlight', a:group,
+          \ 'ctermfg=' . a:fg[2],
+          \ 'ctermbg=' . a:bg[2],
+          \ ]
+    if a:0 >= 1
+      if a:1 ==# 'undercurl'
+        call add(hl_string, 'cterm=underline')
+      else
+        call add(hl_string, 'cterm=' . a:1)
+      endif
+    else
+      call add(hl_string, 'cterm=NONE')
+    endif
+    execute join(hl_string, ' ')
+  endfunction
+endif
+" }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
