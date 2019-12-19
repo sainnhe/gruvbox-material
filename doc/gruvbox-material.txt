@@ -151,6 +151,18 @@ E.g.~
     let g:gruvbox_material_background = 'hard'
 <
 ------------------------------------------------------------------------------
+                                                   *g:gruvbox_material_palette*
+
+Control the color palette used in this color scheme.
+
+    Available values: `'material'`, `'original'`
+    Default value: `'material'`
+
+E.g.~
+>
+    let g:gruvbox_material_palette = 'original'
+<
+------------------------------------------------------------------------------
                                     *g:gruvbox_material_disable_italic_comment*
 
 By default, italic is enabled in `Comment`. To disable italic in `Comment`, set
