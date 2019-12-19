@@ -79,8 +79,8 @@ if s:configuration.palette ==# 'material'
             \ 'bg_red2':    ['#f6d2ba',   '217',  'LightRed'],
             \ 'bg_blue1':   ['#cff1f6',   '117',  'LightBlue'],
             \ 'bg_blue2':   ['#d9e1cc',   '117',  'LightBlue'],
-            \ 'fg0':        ['#4f3829',   '237',  'Black'],
-            \ 'fg1':        ['#654735',   '237',  'Black'],
+            \ 'fg0':        ['#654735',   '237',  'Black'],
+            \ 'fg1':        ['#4f3829',   '237',  'Black'],
             \ 'red':        ['#c14a4a',   '88',   'Red'],
             \ 'orange':     ['#c35e0a',   '130',  'DarkYellow'],
             \ 'yellow':     ['#b47109',   '136',  'Yellow'],
@@ -143,8 +143,8 @@ if s:configuration.palette ==# 'material'
             \ 'bg_red2':    ['#f7cfae',   '217',  'LightRed'],
             \ 'bg_blue1':   ['#c6eaf0',   '117',  'LightBlue'],
             \ 'bg_blue2':   ['#dadec0',   '117',  'LightBlue'],
-            \ 'fg0':        ['#4f3829',   '237',  'Black'],
-            \ 'fg1':        ['#654735',   '237',  'Black'],
+            \ 'fg0':        ['#654735',   '237',  'Black'],
+            \ 'fg1':        ['#4f3829',   '237',  'Black'],
             \ 'red':        ['#c14a4a',   '88',   'Red'],
             \ 'orange':     ['#c35e0a',   '130',  'DarkYellow'],
             \ 'yellow':     ['#b47109',   '136',  'Yellow'],
@@ -207,8 +207,8 @@ if s:configuration.palette ==# 'material'
             \ 'bg_red2':    ['#f0c6a6',   '217',  'LightRed'],
             \ 'bg_blue1':   ['#bee4ea',   '117',  'LightBlue'],
             \ 'bg_blue2':   ['#d3d5b8',   '117',  'LightBlue'],
-            \ 'fg0':        ['#4f3829',   '237',  'Black'],
-            \ 'fg1':        ['#654735',   '237',  'Black'],
+            \ 'fg0':        ['#654735',   '237',  'Black'],
+            \ 'fg1':        ['#4f3829',   '237',  'Black'],
             \ 'red':        ['#c14a4a',   '88',   'Red'],
             \ 'orange':     ['#c35e0a',   '130',  'DarkYellow'],
             \ 'yellow':     ['#b47109',   '136',  'Yellow'],
@@ -485,6 +485,93 @@ else  " ctermfg ctermbg cterm
     execute join(hl_string, ' ')
   endfunction
 endif
+" }}}
+
+" Common Highlight Groups: {{{
+" UI: {{{
+if s:configuration.transparent_background
+  call s:HL('Normal', s:palette.fg0, s:palette.none)
+  call s:HL('Terminal', s:palette.fg0, s:palette.none)
+  call s:HL('EndOfBuffer', s:palette.bg0, s:palette.none)
+  call s:HL('FoldColumn', s:palette.grey, s:palette.none)
+  call s:HL('Folded', s:palette.grey, s:palette.none)
+  call s:HL('SignColumn', s:palette.fg0, s:palette.none)
+  call s:HL('IncSearch', s:palette.none, s:palette.none, 'reverse,bold,underline')
+  call s:HL('Search', s:palette.none, s:palette.none, 'reverse')
+else
+  call s:HL('Normal', s:palette.fg0, s:palette.bg0)
+  call s:HL('Terminal', s:palette.fg0, s:palette.bg0)
+  call s:HL('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+  call s:HL('FoldColumn', s:palette.grey, s:palette.bg2)
+  call s:HL('Folded', s:palette.grey, s:palette.bg2)
+  call s:HL('SignColumn', s:palette.fg0, s:palette.bg2)
+  call s:HL('IncSearch', s:palette.none, s:palette.none, 'reverse')
+  call s:HL('Search', s:palette.none, s:palette.bg_blue2)
+endif
+call s:HL('ColorColumn', s:palette.none, s:palette.bg2)
+call s:HL('Conceal', s:palette.grey, s:palette.none)
+call s:HL('Cursor', s:palette.none, s:palette.none, 'reverse')
+call s:HL('lCursor', s:palette.none, s:palette.none, 'reverse')
+call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
+call s:HL('CursorLine', s:palette.none, s:palette.bg1)
+call s:HL('LineNr', s:palette.bg_grey0, s:palette.none)
+if &relativenumber == 1 && &cursorline == 0
+  call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.none)
+else
+  call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.bg1)
+endif
+call s:HL('DiffAdd', s:palette.none, s:palette.bg_green1)
+call s:HL('DiffChange', s:palette.none, s:palette.bg_blue1)
+call s:HL('DiffDelete', s:palette.none, s:palette.bg_red1)
+call s:HL('DiffText', s:palette.none, s:palette.none, 'reverse')
+call s:HL('Directory', s:palette.green, s:palette.none)
+call s:HL('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
+call s:HL('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
+call s:HL('ModeMsg', s:palette.fg0, s:palette.none, 'bold')
+call s:HL('MoreMsg', s:palette.yellow, s:palette.none, 'bold')
+call s:HL('MatchParen', s:palette.none, s:palette.bg4)
+call s:HL('NonText', s:palette.grey, s:palette.none)
+call s:HL('Pmenu', s:palette.fg1, s:palette.bg3)
+call s:HL('PmenuSbar', s:palette.none, s:palette.bg3)
+call s:HL('PmenuSel', s:palette.bg0, s:palette.bg_grey1)
+call s:HL('WildMenu', s:palette.bg0, s:palette.bg_grey1)
+call s:HL('PmenuThumb', s:palette.none, s:palette.bg_grey0)
+call s:HL('Question', s:palette.yellow, s:palette.none)
+call s:HL('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
+call s:HL('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
+call s:HL('SpellLocal', s:palette.aqua, s:palette.none, 'undercurl', s:palette.aqua)
+call s:HL('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
+call s:HL('StatusLine', s:palette.fg1, s:palette.bg5)
+call s:HL('StatusLineTerm', s:palette.fg1, s:palette.bg5)
+call s:HL('StatusLineNC', s:palette.grey, s:palette.bg2)
+call s:HL('StatusLineTermNC', s:palette.grey, s:palette.bg2)
+call s:HL('TabLine', s:palette.fg1, s:palette.bg5)
+call s:HL('TabLineFill', s:palette.fg0, s:palette.bg2)
+call s:HL('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
+call s:HL('VertSplit', s:palette.bg5, s:palette.none)
+if s:configuration.visual ==# 'green background'
+  call s:HL('Visual', s:palette.none, s:palette.bg_green2)
+  call s:HL('VisualNOS', s:palette.none, s:palette.bg_green2)
+elseif s:configuration.visual ==# 'blue background'
+  call s:HL('Visual', s:palette.none, s:palette.bg_blue2)
+  call s:HL('VisualNOS', s:palette.none, s:palette.bg_blue2)
+elseif s:configuration.visual ==# 'red background'
+  call s:HL('Visual', s:palette.none, s:palette.bg_red2)
+  call s:HL('VisualNOS', s:palette.none, s:palette.bg_red2)
+elseif s:configuration.visual ==# 'reverse'
+  call s:HL('Visual', s:palette.none, s:palette.none, 'reverse')
+  call s:HL('VisualNOS', s:palette.none, s:palette.none, 'reverse')
+endif
+call s:HL('CursorIM', s:palette.none, s:palette.none, 'reverse')
+call s:HL('ToolbarLine', s:palette.none, s:palette.bg2)
+call s:HL('ToolbarButton', s:palette.fg1, s:palette.bg5, 'bold')
+call s:HL('QuickFixLine', s:palette.yellow, s:palette.none, 'reverse')
+call s:HL('Debug', s:palette.orange, s:palette.none)
+" }}}
+" Syntax: {{{
+" }}}
+" Predefined Highlight Groups: {{{
+" }}}
 " }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
