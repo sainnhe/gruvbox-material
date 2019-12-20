@@ -569,6 +569,52 @@ call s:HL('QuickFixLine', s:palette.yellow, s:palette.none, 'reverse')
 call s:HL('Debug', s:palette.orange, s:palette.none)
 " }}}
 " Syntax: {{{
+call s:HL('PreProc', s:palette.purple, s:palette.none)
+call s:HL('Include', s:palette.purple, s:palette.none)
+call s:HL('Define', s:palette.purple, s:palette.none)
+call s:HL('Boolean', s:palette.purple, s:palette.none)
+call s:HL('Number', s:palette.purple, s:palette.none)
+call s:HL('Float', s:palette.purple, s:palette.none)
+call s:HL('PreCondit', s:palette.purple, s:palette.none)
+call s:HL('Conditional', s:palette.red, s:palette.none)
+call s:HL('Repeat', s:palette.red, s:palette.none)
+call s:HL('Error', s:palette.red, s:palette.none)
+call s:HL('Keyword', s:palette.red, s:palette.none)
+call s:HL('Typedef', s:palette.red, s:palette.none)
+call s:HL('Exception', s:palette.red, s:palette.none)
+call s:HL('Statement', s:palette.red, s:palette.none)
+call s:HL('StorageClass', s:palette.orange, s:palette.none)
+call s:HL('Tag', s:palette.orange, s:palette.none)
+call s:HL('Label', s:palette.orange, s:palette.none)
+call s:HL('Structure', s:palette.orange, s:palette.none)
+call s:HL('Operator', s:palette.orange, s:palette.none)
+call s:HL('Title', s:palette.orange, s:palette.none, 'bold')
+call s:HL('Special', s:palette.yellow, s:palette.none)
+call s:HL('SpecialChar', s:palette.yellow, s:palette.none)
+call s:HL('Type', s:palette.yellow, s:palette.none)
+if s:configuration.enable_bold
+  call s:HL('Function', s:palette.green, s:palette.none, 'bold')
+else
+  call s:HL('Function', s:palette.green, s:palette.none)
+endif
+call s:HL('String', s:palette.green, s:palette.none)
+call s:HL('Character', s:palette.green, s:palette.none)
+call s:HL('Constant', s:palette.aqua, s:palette.none)
+call s:HL('Macro', s:palette.aqua, s:palette.none)
+call s:HL('Identifier', s:palette.blue, s:palette.none)
+call s:HL('SpecialKey', s:palette.blue, s:palette.none)
+if s:configuration.disable_italic_comment
+  call s:HL('Comment', s:palette.grey, s:palette.none)
+  call s:HL('SpecialComment', s:palette.grey, s:palette.none)
+  call s:HL('Todo', s:palette.purple, s:palette.none)
+else
+  call s:HL('Comment', s:palette.grey, s:palette.none, 'italic')
+  call s:HL('SpecialComment', s:palette.grey, s:palette.none, 'italic')
+  call s:HL('Todo', s:palette.purple, s:palette.none, 'italic')
+endif
+call s:HL('Delimiter', s:palette.s:palette.fg0, s:palette.none)
+call s:HL('Ignore', s:palette.grey, s:palette.none)
+call s:HL('Underlined', s:palette.none, s:palette.none, 'underline')
 " }}}
 " Predefined Highlight Groups: {{{
 " }}}
