@@ -153,7 +153,7 @@ E.g.~
 ------------------------------------------------------------------------------
                                                    *g:gruvbox_material_palette*
 
-Control the color palette used in this color scheme.
+Customize the color palette used in this color scheme.
 
     Available values: `'material'`, `'original'`
     Default value: `'material'`
