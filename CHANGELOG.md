@@ -4,8 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `g:gruvbox_material_palette`.
+
 ### Changed
 
+- Refactor `colors/gruvbox-material.vim`.
 - Markdown heading delimiter.
 
 ## [1.0.0] - 2019-12-11
