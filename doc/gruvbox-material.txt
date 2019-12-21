@@ -175,13 +175,23 @@ E.g.~
 ------------------------------------------------------------------------------
                                                *g:gruvbox_material_enable_bold*
 
-By default, bold is only enabled in the highlight groups I think are
-necessary, but you can use this option to enable bold like the original
-gruvbox. To enable this feature, set this option to `1`.
+To enable bold in function name just like in the original gruvbox, set this
+option to `1`.
 
 E.g.~
 >
     let g:gruvbox_material_enable_bold = 1
+<
+------------------------------------------------------------------------------
+                                             *g:gruvbox_material_enable_italic*
+
+To enable italic in keyword, set this option to `1`.
+
+This option is designed to work with fonts like [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript).
+
+E.g.~
+>
+    let g:gruvbox_material_enable_italic = 1
 <
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_transparent_background*
