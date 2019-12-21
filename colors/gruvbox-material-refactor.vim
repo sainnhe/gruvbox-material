@@ -635,6 +635,27 @@ call s:HL('Ignore', s:palette.grey, s:palette.none)
 call s:HL('Underlined', s:palette.none, s:palette.none, 'underline')
 " }}}
 " Predefined Highlight Groups: {{{
+call s:HL('Fg', s:palette.fg0, s:palette.none)
+call s:HL('Grey', s:palette.grey, s:palette.none)
+call s:HL('Orange', s:palette.orange, s:palette.none)
+call s:HL('Yellow', s:palette.yellow, s:palette.none)
+call s:HL('Aqua', s:palette.aqua, s:palette.none)
+call s:HL('Blue', s:palette.blue, s:palette.none)
+if s:configuration.enable_italic
+  call s:HL('Red', s:palette.red, s:palette.none, 'italic')
+  call s:HL('Purple', s:palette.purple, s:palette.none, 'italic')
+else
+  call s:HL('Red', s:palette.red, s:palette.none)
+  call s:HL('Purple', s:palette.purple, s:palette.none)
+endif
+call s:HL('RedNone', s:palette.red, s:palette.none)
+call s:HL('PurpleNone', s:palette.purple, s:palette.none)
+if s:configuration.enable_bold
+  call s:HL('Green', s:palette.green, s:palette.none, 'bold')
+else
+  call s:HL('Green', s:palette.green, s:palette.none)
+endif
+call s:HL('GreenNone', s:palette.green, s:palette.none)
 " }}}
 " }}}
 
