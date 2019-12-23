@@ -163,7 +163,7 @@ E.g.~
 ------------------------------------------------------------------------------
                                                *g:gruvbox_material_enable_bold*
 
-To enable bold in function name just like in the original gruvbox, set this
+To enable bold in function name just like the original gruvbox, set this
 option to `1`.
 
 E.g.~
