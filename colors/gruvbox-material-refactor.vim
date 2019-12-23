@@ -648,20 +648,40 @@ call s:HL('Yellow', s:palette.yellow, s:palette.none)
 call s:HL('Aqua', s:palette.aqua, s:palette.none)
 call s:HL('Blue', s:palette.blue, s:palette.none)
 if s:configuration.enable_italic
-  call s:HL('Red', s:palette.red, s:palette.none, 'italic')
-  call s:HL('Purple', s:palette.purple, s:palette.none, 'italic')
+  call s:HL('RedItalic', s:palette.red, s:palette.none, 'italic')
+  call s:HL('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
 else
-  call s:HL('Red', s:palette.red, s:palette.none)
-  call s:HL('Purple', s:palette.purple, s:palette.none)
+  call s:HL('RedItalic', s:palette.red, s:palette.none)
+  call s:HL('PurpleItalic', s:palette.purple, s:palette.none)
 endif
-call s:HL('RedNone', s:palette.red, s:palette.none)
-call s:HL('PurpleNone', s:palette.purple, s:palette.none)
+call s:HL('Red', s:palette.red, s:palette.none)
+call s:HL('Purple', s:palette.purple, s:palette.none)
 if s:configuration.enable_bold
-  call s:HL('Green', s:palette.green, s:palette.none, 'bold')
+  call s:HL('GreenBold', s:palette.green, s:palette.none, 'bold')
 else
-  call s:HL('Green', s:palette.green, s:palette.none)
+  call s:HL('GreenBold', s:palette.green, s:palette.none)
 endif
-call s:HL('GreenNone', s:palette.green, s:palette.none)
+call s:HL('Green', s:palette.green, s:palette.none)
+" }}}
+" }}}
+" Plugins: {{{
+" junegunn/vim-plug{{{
+call s:HL('plug1', s:palette.orange, s:palette.none, 'bold')
+call s:HL('plugNumber', s:palette.yellow, s:palette.none, 'bold')
+highlight! link plug2 Green
+highlight! link plugBracket Grey
+highlight! link plugName Aqua
+highlight! link plugDash Orange
+highlight! link plugError Red
+highlight! link plugNotLoaded Grey
+highlight! link plugRelDate Grey
+highlight! link plugH2 Orange
+highlight! link plugMessage Orange
+highlight! link plugStar Red
+highlight! link plugUpdate Blue
+highlight! link plugDeleted Grey
+highlight! link plugEdge Yellow
+highlight! link plugSha Green
 " }}}
 " }}}
 
