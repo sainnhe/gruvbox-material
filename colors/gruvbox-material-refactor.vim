@@ -25,7 +25,7 @@ let s:configuration.disable_italic_comment = get(g:, 'gruvbox_material_disable_i
 let s:configuration.enable_bold = get(g:, 'gruvbox_material_enable_bold', 0)
 let s:configuration.enable_italic = get(g:, 'gruvbox_material_enable_italic', 0)
 let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'green background')
-let s:configuration.popup_menu_selection_background = get(g:, 'gruvbox_material_popup_menu_selection_background', 'grey')
+let s:configuration.menu_selection_background = get(g:, 'gruvbox_material_menu_selection_background', 'grey')
 let s:configuration.current_word = get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold')
 " }}}
 " Palette: {{{
@@ -539,10 +539,10 @@ call s:HL('MatchParen', s:palette.none, s:palette.bg4)
 call s:HL('NonText', s:palette.grey, s:palette.none)
 call s:HL('Pmenu', s:palette.fg1, s:palette.bg3)
 call s:HL('PmenuSbar', s:palette.none, s:palette.bg3)
-if s:configuration.popup_menu_selection_background ==# 'grey'
+if s:configuration.menu_selection_background ==# 'grey'
   call s:HL('PmenuSel', s:palette.bg3, s:palette.bg_grey1)
   call s:HL('WildMenu', s:palette.bg3, s:palette.bg_grey1)
-elseif s:configuration.popup_menu_selection_background ==# 'green'
+elseif s:configuration.menu_selection_background ==# 'green'
   call s:HL('PmenuSel', s:palette.bg3, s:palette.bg_green)
   call s:HL('WildMenu', s:palette.bg3, s:palette.bg_green)
 end
