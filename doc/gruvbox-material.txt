@@ -190,21 +190,6 @@ E.g.~
 >
     let g:gruvbox_material_transparent_background = 1
 <
-Note: {{{
-I personally do not encourage you to enable this option, as this color
-scheme is designed for eye protection and concentration instead of looking
-cool. To be honest, this color scheme might look better when not in
-transparent mode.
-
-If you do need transparent, I would recommend you to use composite manager
-with blur feature, for example https://github.com/tryone144/compton
-
-Here is a screenshot: https://user-images.githubusercontent.com/37491630/69637420-91c40100-1093-11ea-8728-78244ee2b5f4.png
-
-Nevertheless, I will do my best to provide a good experience in transparent
-mode. If you encounter any problems, feel free to open an issue or PR :)
-}}}
-
 ------------------------------------------------------------------------------
                                     		    *g:gruvbox_material_visual*
 
