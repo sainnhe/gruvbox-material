@@ -18,10 +18,18 @@ blue light.
 Gruvbox Material is based on Gruvbox, but with a very different color palette,
 I'm trying to adjust the foreground colors to match these requirements.
 
-The syntax highlighting logic used in this branch is almost the same as the
-original gruvbox. In addition, I've developed `neosyn` branch that uses
-another syntax highlighting logic, and it has also been optimized for common
-file types and plugins.
+------------------------------------------------------------------------------
+Features~
+
+    1. Carefully designed color palette for eye protection.
+
+    2. Switch back to the original color palette whenever you like.
+
+    3. Highly customizable.
+
+    4. Rich support for common file types and plugins.
+
+    5. Support for italic keywords just like in [vscode](https://github.com/kencrocken/FiraCodeiScript).
 
 ==============================================================================
 INSTALLATION                                    *gruvbox-material-installation*
@@ -69,7 +77,7 @@ Vim~
 
     Put something like this in your vimrc:
 >
-	" if you don't set this option, this color scheme will fall back to the original gruvbox
+	" important!!
 	set termguicolors
 
 	" for dark version
@@ -203,7 +211,7 @@ E.g.~
     let g:gruvbox_material_visual = 'reverse'
 <
 ------------------------------------------------------------------------------
-                           *g:gruvbox_material_menu_selection_background*
+                                 *g:gruvbox_material_menu_selection_background*
 
 Customize the background color of `PmenuSel` and `WildMenu`.
 
