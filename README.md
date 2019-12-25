@@ -22,7 +22,13 @@ In my opinion, the very first thing a color scheme should do is to be eye-friend
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, I'm trying to adjust the foreground colors to match these requirements.
 
-The syntax highlighting logic used in this branch is almost the same as the original gruvbox. In addition, I've developed [neosyn](https://github.com/sainnhe/gruvbox-material/tree/neosyn) branch that uses another syntax highlighting logic, and it has also been optimized for common file types and plugins.
+# Features
+
+- Carefully designed color palette for eye protection.
+- Switch back to the original color palette whenever you like.
+- Highly customizable.
+- Rich support for common file types and plugins.
+- Support for italic keywords just like in [vscode](https://github.com/kencrocken/FiraCodeiScript).
 
 # Installation
 
@@ -55,7 +61,7 @@ There is a package available for Arch Linux users in AUR: [gruvbox-material-git]
 Put something like this in your vimrc:
 
 ```vim
-" if you don't set this option, this color scheme will fall back to the original gruvbox
+" important!!
 set termguicolors
 
 " for dark version
@@ -136,13 +142,7 @@ To apply it without reloading:
 
 **A:** [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).
 
-# Contribution
-
-Check this gist for detailed instructions to hack this color scheme: [hack-color-schemes.md](https://gist.github.com/sainnhe/911f78cbb092ac58c8734c423a464935)
-
 # Related Projects
-
-Color reference: [dark](https://github.com/sainnhe/gruvbox-material-vscode/blob/master/colors-dark.yml), [light](https://github.com/sainnhe/gruvbox-material-vscode/blob/master/colors-light.yml)
 
 **Note**: The following projects are sorted by alphabet.
 
@@ -165,7 +165,6 @@ Color reference: [dark](https://github.com/sainnhe/gruvbox-material-vscode/blob/
 # Inspirations
 
 - [morhetz/gruvbox](https://github.com/morhetz/gruvbox): original gruvbox
-- [sainnhe/vim-color-desert-night](https://github.com/sainnhe/vim-color-desert-night): the `white` color in the dark variant
 - [atom.io](https://atom.io): the `white` color in the dark variant
 - [zefei/cake16](https://github.com/zefei/cake16): the `black` color in the light variant
 - [Google Material Design](https://en.wikipedia.org/wiki/Material_Design)
