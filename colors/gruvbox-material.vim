@@ -643,18 +643,20 @@ call s:HL('Underlined', s:palette.none, s:palette.none, 'underline')
 " Predefined Highlight Groups: {{{
 call s:HL('Fg', s:palette.fg0, s:palette.none)
 call s:HL('Grey', s:palette.grey, s:palette.none)
-call s:HL('Orange', s:palette.orange, s:palette.none)
 call s:HL('Yellow', s:palette.yellow, s:palette.none)
 call s:HL('Aqua', s:palette.aqua, s:palette.none)
 call s:HL('Blue', s:palette.blue, s:palette.none)
 if s:configuration.enable_italic
   call s:HL('RedItalic', s:palette.red, s:palette.none, 'italic')
+  call s:HL('OrangeItalic', s:palette.orange, s:palette.none, 'italic')
   call s:HL('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
 else
   call s:HL('RedItalic', s:palette.red, s:palette.none)
+  call s:HL('OrangeItalic', s:palette.orange, s:palette.none)
   call s:HL('PurpleItalic', s:palette.purple, s:palette.none)
 endif
 call s:HL('Red', s:palette.red, s:palette.none)
+call s:HL('Orange', s:palette.orange, s:palette.none)
 call s:HL('Purple', s:palette.purple, s:palette.none)
 if s:configuration.enable_bold
   call s:HL('GreenBold', s:palette.green, s:palette.none, 'bold')
@@ -683,7 +685,7 @@ endif
 " }}}
 " Extended File Types: {{{
 " Markdown: {{{
-" buildin:{{{
+" buildin: {{{
 call s:HL('markdownH1', s:palette.red, s:palette.none, 'bold')
 call s:HL('markdownH2', s:palette.orange, s:palette.none, 'bold')
 call s:HL('markdownH3', s:palette.yellow, s:palette.none, 'bold')
@@ -727,7 +729,7 @@ highlight! link mkdId Yellow
 " }}}
 " }}}
 " ReStructuredText: {{{
-" buildin:{{{
+" buildin: https://github.com/marshallward/vim-restructuredtext{{{
 call s:HL('rstStandaloneHyperlink', s:palette.purple, s:palette.none, 'underline')
 highlight! link rstSubstitutionReference Blue
 highlight! link rstInterpretedTextOrHyperlinkReference Aqua
@@ -735,7 +737,7 @@ highlight! link rstTableLines Grey
 " }}}
 " }}}
 " LaTex: {{{
-" buildin:{{{
+" buildin: http://www.drchip.org/astronaut/vim/index.html#SYNTAX_TEX{{{
 highlight! link texStatement Green
 highlight! link texOnlyMath Grey
 highlight! link texDefName Yellow
@@ -745,6 +747,68 @@ highlight! link texBeginEnd Red
 highlight! link texBeginEndName Blue
 highlight! link texDocType Purple
 highlight! link texDocTypeArgs Orange
+" }}}
+" }}}
+" Html: {{{
+" buildin: https://notabug.org/jorgesumle/vim-html-syntax{{{
+call s:HL('htmlH1', s:palette.red, s:palette.none, 'bold')
+call s:HL('htmlH2', s:palette.orange, s:palette.none, 'bold')
+call s:HL('htmlH3', s:palette.yellow, s:palette.none, 'bold')
+call s:HL('htmlH4', s:palette.green, s:palette.none, 'bold')
+call s:HL('htmlH5', s:palette.blue, s:palette.none, 'bold')
+call s:HL('htmlH6', s:palette.purple, s:palette.none, 'bold')
+call s:HL('htmlLink', s:palette.none, s:palette.none, 'underline')
+call s:HL('htmlBold', s:palette.none, s:palette.none, 'bold')
+call s:HL('htmlBoldUnderline', s:palette.none, s:palette.none, 'bold,underline')
+call s:HL('htmlBoldItalic', s:palette.none, s:palette.none, 'bold,italic')
+call s:HL('htmlBoldUnderlineItalic', s:palette.none, s:palette.none, 'bold,underline,italic')
+call s:HL('htmlUnderline', s:palette.none, s:palette.none, 'underline')
+call s:HL('htmlUnderlineItalic', s:palette.none, s:palette.none, 'underline,italic')
+call s:HL('htmlItalic', s:palette.none, s:palette.none, 'italic')
+highlight! link htmlTag Green
+highlight! link htmlEndTag Blue
+highlight! link htmlTagName OrangeItalic
+highlight! link htmlArg Aqua
+highlight! link htmlScriptTag Purple
+highlight! link htmlSpecialTagName RedItalic
+" }}}
+" }}}
+" Xml: {{{
+" buildin: https://github.com/chrisbra/vim-xml-ftplugin{{{
+highlight! link xmlTag Green
+highlight! link xmlEndTag Blue
+highlight! link xmlTagName OrangeItalic
+highlight! link xmlEqual Orange
+highlight! link xmlAttrib Aqua
+highlight! link xmlEntity Red
+highlight! link xmlEntityPunct Red
+highlight! link xmlDocTypeDecl Grey
+highlight! link xmlDocTypeKeyword PurpleItalic
+highlight! link xmlCdataStart Grey
+highlight! link xmlCdataCdata Purple
+" }}}
+" }}}
+" CSS: {{{
+" buildin: https://github.com/JulesWang/css.vim{{{
+highlight! link cssAttrComma White
+highlight! link cssBraces White
+highlight! link cssTagName PurpleItalic
+highlight! link cssClassNameDot Red
+highlight! link cssClassName RedItalic
+highlight! link cssFunctionName Yellow
+highlight! link cssAttr Orange
+highlight! link cssProp Aqua
+highlight! link cssCommonAttr Yellow
+highlight! link cssPseudoClassId Blue
+highlight! link cssPseudoClassFn Green
+highlight! link cssPseudoClass Purple
+highlight! link cssImportant RedItalic
+highlight! link cssSelectorOp Orange
+highlight! link cssSelectorOp2 Orange
+highlight! link cssColor Green
+highlight! link cssAttributeSelector Aqua
+highlight! link cssUnitDecorators Orange
+highlight! link cssNoise Grey
 " }}}
 " }}}
 " C/C++: {{{
@@ -773,7 +837,7 @@ highlight! link objcHiddenArgument Aqua
 " }}}
 " }}}
 " C#: {{{
-" buildin: {{{
+" buildin: https://github.com/nickspoons/vim-cs{{{
 highlight! link csUnspecifiedStatement PurpleItalic
 highlight! link csStorage RedItalic
 highlight! link csClass RedItalic
