@@ -747,7 +747,7 @@ highlight! link texDocType Purple
 highlight! link texDocTypeArgs Orange
 " }}}
 " }}}
-" C/C++{{{
+" C/C++: {{{
 " vim-cpp-enhanced-highlight :https://github.com/octol/vim-cpp-enhanced-highlight{{{
 highlight! link cppSTLnamespace Purple
 highlight! link cppSTLtype Yellow
@@ -759,6 +759,17 @@ highlight! link cppSTLexception Purple
 " }}}
 " vim-cpp-modern :https://github.com/bfrg/vim-cpp-modern{{{
 highlight! link cppSTLVariable Aqua
+" }}}
+" }}}
+" ObjectiveC: {{{
+" buildin: {{{
+highlight! link objcModuleImport PurpleItalic
+highlight! link objcException RedItalic
+highlight! link objcProtocolList Aqua
+highlight! link objcObjDef PurpleItalic
+highlight! link objcDirective RedItalic
+highlight! link objcPropertyAttribute Orange
+highlight! link objcHiddenArgument Aqua
 " }}}
 " }}}
 " }}}
