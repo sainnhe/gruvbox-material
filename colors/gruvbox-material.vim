@@ -681,6 +681,73 @@ else
 endif
 " }}}
 " }}}
+" Extended File Types: {{{
+" Markdown: {{{
+" buildin:{{{
+call s:HL('markdownH1', s:palette.red, s:palette.none, 'bold')
+call s:HL('markdownH2', s:palette.orange, s:palette.none, 'bold')
+call s:HL('markdownH3', s:palette.yellow, s:palette.none, 'bold')
+call s:HL('markdownH4', s:palette.green, s:palette.none, 'bold')
+call s:HL('markdownH5', s:palette.blue, s:palette.none, 'bold')
+call s:HL('markdownH6', s:palette.purple, s:palette.none, 'bold')
+call s:HL('markdownUrl', s:palette.blue, s:palette.none, 'underline')
+call s:HL('markdownItalic', s:palette.none, s:palette.none, 'italic')
+call s:HL('markdownBold', s:palette.none, s:palette.none, 'bold')
+call s:HL('markdownItalicDelimiter', s:palette.grey, s:palette.none, 'italic')
+highlight! link markdownCode Green
+highlight! link markdownCodeBlock Aqua
+highlight! link markdownCodeDelimiter Aqua
+highlight! link markdownBlockquote Grey
+highlight! link markdownListMarker Red
+highlight! link markdownOrderedListMarker Red
+highlight! link markdownRule Purple
+highlight! link markdownHeadingRule Grey
+highlight! link markdownUrlDelimiter Grey
+highlight! link markdownLinkDelimiter Grey
+highlight! link markdownLinkTextDelimiter Grey
+highlight! link markdownHeadingDelimiter Grey
+highlight! link markdownLinkText Purple
+highlight! link markdownUrlTitleDelimiter Green
+highlight! link markdownIdDeclaration markdownLinkText
+highlight! link markdownBoldDelimiter Grey
+highlight! link markdownId Yellow
+" }}}
+" vim-markdown: https://github.com/gabrielelana/vim-markdown{{{
+call s:HL('mkdURL', s:palette.blue, s:palette.none, 'underline')
+call s:HL('mkdInlineURL', s:palette.purple, s:palette.none, 'underline')
+call s:HL('mkdItalic', s:palette.grey, s:palette.none, 'italic')
+highlight! link mkdCodeDelimiter Aqua
+highlight! link mkdBold Grey
+highlight! link mkdLink Purple
+highlight! link mkdHeading Grey
+highlight! link mkdListItem Red
+highlight! link mkdRule Purple
+highlight! link mkdDelimiter Grey
+highlight! link mkdId Yellow
+" }}}
+" }}}
+" ReStructuredText: {{{
+" vim-restructuredtext: https://github.com/marshallward/vim-restructuredtext{{{
+call s:HL('rstStandaloneHyperlink', s:palette.purple, s:palette.none, 'underline')
+highlight! link rstSubstitutionReference Blue
+highlight! link rstInterpretedTextOrHyperlinkReference Aqua
+highlight! link rstTableLines Grey
+" }}}
+" }}}
+" LaTex: {{{
+" LaTex-Box: https://github.com/LaTeX-Box-Team/LaTeX-Box{{{
+highlight! link texStatement Green
+highlight! link texOnlyMath Grey
+highlight! link texDefName Yellow
+highlight! link texNewCmd Orange
+highlight! link texCmdName Blue
+highlight! link texBeginEnd Red
+highlight! link texBeginEndName Blue
+highlight! link texDocType Purple
+highlight! link texDocTypeArgs Orange
+" }}}
+" }}}
+" }}}
 " Plugins: {{{
 " junegunn/vim-plug{{{
 call s:HL('plug1', s:palette.orange, s:palette.none, 'bold')
