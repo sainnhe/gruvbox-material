@@ -772,6 +772,18 @@ highlight! link objcPropertyAttribute Orange
 highlight! link objcHiddenArgument Aqua
 " }}}
 " }}}
+" C#: {{{
+" buildin: {{{
+highlight! link csUnspecifiedStatement PurpleItalic
+highlight! link csStorage RedItalic
+highlight! link csClass RedItalic
+highlight! link csNewType Aqua
+highlight! link csContextualStatement PurpleItalic
+highlight! link csInterpolationDelimiter Yellow
+highlight! link csInterpolation Yellow
+highlight! link csEndColon Fg
+" }}}
+" }}}
 " }}}
 " Plugins: {{{
 " junegunn/vim-plug{{{
