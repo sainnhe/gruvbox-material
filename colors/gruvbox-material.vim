@@ -727,7 +727,7 @@ highlight! link mkdId Yellow
 " }}}
 " }}}
 " ReStructuredText: {{{
-" vim-restructuredtext: https://github.com/marshallward/vim-restructuredtext{{{
+" buildin:{{{
 call s:HL('rstStandaloneHyperlink', s:palette.purple, s:palette.none, 'underline')
 highlight! link rstSubstitutionReference Blue
 highlight! link rstInterpretedTextOrHyperlinkReference Aqua
@@ -735,7 +735,7 @@ highlight! link rstTableLines Grey
 " }}}
 " }}}
 " LaTex: {{{
-" LaTex-Box: https://github.com/LaTeX-Box-Team/LaTeX-Box{{{
+" buildin:{{{
 highlight! link texStatement Green
 highlight! link texOnlyMath Grey
 highlight! link texDefName Yellow
@@ -745,6 +745,20 @@ highlight! link texBeginEnd Red
 highlight! link texBeginEndName Blue
 highlight! link texDocType Purple
 highlight! link texDocTypeArgs Orange
+" }}}
+" }}}
+" C/C++{{{
+" vim-cpp-enhanced-highlight :https://github.com/octol/vim-cpp-enhanced-highlight{{{
+highlight! link cppSTLnamespace Purple
+highlight! link cppSTLtype Yellow
+highlight! link cppAccess PurpleItalic
+highlight! link cppStructure RedItalic
+highlight! link cppSTLios Aqua
+highlight! link cppSTLiterator PurpleItalic
+highlight! link cppSTLexception Purple
+" }}}
+" vim-cpp-modern :https://github.com/bfrg/vim-cpp-modern{{{
+highlight! link cppSTLVariable Aqua
 " }}}
 " }}}
 " }}}
