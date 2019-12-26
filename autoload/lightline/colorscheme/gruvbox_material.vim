@@ -68,8 +68,8 @@ else
         let s:dark      = [ '#282828', 235 ]
         let s:grey      = [ '#a89984', 246 ]
         let s:red       = [ '#cc241d', 167 ]
-        let s:green     = [ '#98971a', 142 ]
-        let s:orange    = [ '#d79921', 208 ]
+        let s:green     = [ '#b8bb26', 142 ]
+        let s:orange    = [ '#fabd2f', 208 ]
         let s:white     = [ '#ebdbb2', 223 ]
     else
         if s:configuration.background ==# 'hard'
@@ -85,8 +85,8 @@ else
         let s:dark      = [ '#ebdbb2', 223 ]
         let s:grey      = [ '#7c6f64', 243 ]
         let s:red       = [ '#cc241d', 88 ]
-        let s:green     = [ '#98971a', 100 ]
-        let s:orange    = [ '#d79921', 130 ]
+        let s:green     = [ '#79740e', 100 ]
+        let s:orange    = [ '#b57614', 130 ]
         let s:white     = [ '#3c3836', 241 ]
     endif
 endif
