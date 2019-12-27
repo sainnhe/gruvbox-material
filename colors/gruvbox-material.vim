@@ -856,6 +856,54 @@ highlight! link lessAmpersandChar Orange
 highlight! link lessFunction Yellow
 " }}}
 " }}}
+" JavaScript: {{{
+" buildin: http://www.fleiner.com/vim/syntax/javascript.vim{{{
+highlight! link javaScriptNull Aqua
+highlight! link javaScriptIdentifier Orange
+highlight! link javaScriptParens White
+highlight! link javaScriptBraces White
+highlight! link javaScriptGlobal Purple
+highlight! link javaScriptMessage Yellow
+highlight! link javaScriptFunction RedItalic
+highlight! link javaScriptOperator OrangeItalic
+highlight! link javaScriptMember Aqua
+" }}}
+" vim-javascript: https://github.com/pangloss/vim-javascript{{{
+highlight! link jsThis Purple
+highlight! link jsUndefined Aqua
+highlight! link jsNull Aqua
+highlight! link jsNan Aqua
+highlight! link jsSuper Purple
+highlight! link jsPrototype Purple
+highlight! link jsFunction RedItalic
+highlight! link jsGlobalNodeObjects PurpleItalic
+highlight! link jsGlobalObjects Yellow
+highlight! link jsArrowFunction Purple
+highlight! link jsArrowFuncArgs Blue
+highlight! link jsFuncArgs Blue
+highlight! link jsObjectProp Aqua
+highlight! link jsVariableDef Blue
+highlight! link jsObjectKey Aqua
+highlight! link jsParen Blue
+highlight! link jsParenIfElse Blue
+highlight! link jsParenRepeat Blue
+highlight! link jsParenSwitch Blue
+highlight! link jsParenCatch Blue
+highlight! link jsBracket Blue
+highlight! link jsBlockLabel Aqua
+highlight! link jsFunctionKey GreenBold
+highlight! link jsClassDefinition Yellow
+highlight! link jsDot Grey
+highlight! link jsDestructuringBlock Blue
+highlight! link jsSpreadExpression Purple
+highlight! link jsSpreadOperator Green
+highlight! link jsModuleKeyword Yellow
+highlight! link jsObjectValue Blue
+highlight! link jsTemplateExpression Yellow
+highlight! link jsTemplateBraces Yellow
+highlight! link jsClassMethodType Orange
+" }}}
+" }}}
 " C/C++: {{{
 " vim-cpp-enhanced-highlight :https://github.com/octol/vim-cpp-enhanced-highlight{{{
 highlight! link cppSTLnamespace Purple
