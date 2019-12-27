@@ -808,7 +808,52 @@ highlight! link cssSelectorOp2 Orange
 highlight! link cssColor Green
 highlight! link cssAttributeSelector Aqua
 highlight! link cssUnitDecorators Orange
+highlight! link cssValueLength Green
+highlight! link cssValueInteger Green
+highlight! link cssValueNumber Green
+highlight! link cssValueAngle Green
+highlight! link cssValueTime Green
+highlight! link cssValueFrequency Green
+highlight! link cssVendor Grey
 highlight! link cssNoise Grey
+" }}}
+" }}}
+" SASS: {{{
+" buildin: {{{
+highlight! link sassProperty Aqua
+highlight! link sassAmpersand Orange
+highlight! link sassClass RedItalic
+highlight! link sassClassChar Red
+highlight! link sassMixing PurpleItalic
+highlight! link sassMixinName Orange
+highlight! link sassCssAttribute Yellow
+highlight! link sassInterpolationDelimiter Green
+highlight! link sassFunction Yellow
+highlight! link sassControl RedItalic
+highlight! link sassFor RedItalic
+highlight! link sassFunctionName GreenBold
+" }}}
+" scss-syntax: https://github.com/cakebaker/scss-syntax.vim{{{
+highlight! link scssMixinName Yellow
+highlight! link scssSelectorChar Red
+highlight! link scssSelectorName RedItalic
+highlight! link scssInterpolationDelimiter Green
+highlight! link scssVariableValue Green
+highlight! link scssNull Purple
+highlight! link scssBoolean Purple
+highlight! link scssVariableAssignment Grey
+highlight! link scssForKeyword PurpleItalic
+highlight! link scssAttribute Orange
+highlight! link scssFunctionName Yellow
+" }}}
+" }}}
+" LESS: {{{
+" vim-less: https://github.com/groenewege/vim-less{{{
+highlight! link lessMixinChar Grey
+highlight! link lessClass RedItalic
+highlight! link lessVariable Blue
+highlight! link lessAmpersandChar Orange
+highlight! link lessFunction Yellow
 " }}}
 " }}}
 " C/C++: {{{
