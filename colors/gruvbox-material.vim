@@ -1271,6 +1271,16 @@ highlight! link csInterpolation Yellow
 highlight! link csEndColon Fg
 " }}}
 " }}}
+" Diff: {{{
+highlight! link diffAdded Green
+highlight! link diffRemoved Red
+highlight! link diffChanged Blue
+highlight! link diffOldFile Yellow
+highlight! link diffNewFile Orange
+highlight! link diffFile Aqua
+highlight! link diffLine Grey
+highlight! link diffIndexLine Purple
+" }}}
 " Help: {{{
 call s:HL('helpNote', s:palette.purple, s:palette.none, 'bold')
 call s:HL('helpHeadline', s:palette.red, s:palette.none, 'bold')
