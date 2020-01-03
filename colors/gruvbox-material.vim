@@ -1297,7 +1297,25 @@ elseif s:configuration.current_word ==# 'underline'
 elseif s:configuration.current_word ==# 'italic'
   call s:HL('CocHighlightText', s:palette.none, s:palette.none, 'italic')
 elseif s:configuration.current_word ==# 'grey background'
-  call s:HL('CocHighlightText', s:palette.none, s:palette.bg3)
+  if s:configuration.background ==# 'hard'
+    if &background ==# 'dark'
+      hi CocHighlightText guibg=#32302f ctermbg=236
+    else
+      hi CocHighlightText guibg=#f3eac7 ctermbg=229
+    endif
+  elseif s:configuration.background ==# 'medium'
+    if &background ==# 'dark'
+      hi CocHighlightText guibg=#3c3836 ctermbg=237
+    else
+      hi CocHighlightText guibg=#f2e5bc ctermbg=228
+    endif
+  elseif s:configuration.background ==# 'soft'
+    if &background ==# 'dark'
+      hi CocHighlightText guibg=#45403d ctermbg=238
+    else
+      hi CocHighlightText guibg=#ebdbb2 ctermbg=227
+    endif
+  endif
 endif
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
