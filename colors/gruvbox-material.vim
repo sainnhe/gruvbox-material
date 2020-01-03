@@ -1271,6 +1271,18 @@ highlight! link csInterpolation Yellow
 highlight! link csEndColon Fg
 " }}}
 " }}}
+" Help: {{{
+call s:HL('helpNote', s:palette.purple, s:palette.none, 'bold')
+call s:HL('helpHeadline', s:palette.red, s:palette.none, 'bold')
+call s:HL('helpHeader', s:palette.orange, s:palette.none, 'bold')
+call s:HL('helpURL', s:palette.green, s:palette.none, 'underline')
+call s:HL('helpHyperTextEntry', s:palette.yellow, s:palette.none, 'bold')
+highlight! link helpHyperTextJump Yellow
+highlight! link helpCommand Aqua
+highlight! link helpExample Green
+highlight! link helpSpecial Blue
+highlight! link helpSectionDelim Grey
+" }}}
 " }}}
 " Plugins: {{{
 " junegunn/vim-plug{{{
