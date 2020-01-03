@@ -22,7 +22,7 @@ In my opinion, the very first thing a color scheme should do is to be eye-friend
 
 Gruvbox Material is based on Gruvbox, but with a very different color palette, I'm trying to adjust the foreground colors to match these requirements.
 
-**Features:**
+## Features
 
 - Carefully designed color palette for eye protection.
 - Switch back to the original color palette whenever you like.
