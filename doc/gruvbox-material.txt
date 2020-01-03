@@ -203,8 +203,8 @@ E.g.~
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
-    Available values: `'green background'`, `'blue background'`, `'red background'`, `'reverse'`
-    Default value: `'green background'`
+    Available values: `'grey background'`, `'green background'`, `'blue background'`, `'red background'`, `'reverse'`
+    Default value: `'grey background'`
 
 E.g.~
 >

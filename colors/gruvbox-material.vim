@@ -24,7 +24,7 @@ let s:configuration.transparent_background = get(g:, 'gruvbox_material_transpare
 let s:configuration.disable_italic_comment = get(g:, 'gruvbox_material_disable_italic_comment', 0)
 let s:configuration.enable_bold = get(g:, 'gruvbox_material_enable_bold', 0)
 let s:configuration.enable_italic = get(g:, 'gruvbox_material_enable_italic', 0)
-let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'green background')
+let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'grey background')
 let s:configuration.menu_selection_background = get(g:, 'gruvbox_material_menu_selection_background', 'grey')
 let s:configuration.current_word = get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold')
 " }}}
@@ -560,7 +560,10 @@ call s:HL('TabLine', s:palette.fg1, s:palette.bg5)
 call s:HL('TabLineFill', s:palette.fg0, s:palette.bg2)
 call s:HL('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
 call s:HL('VertSplit', s:palette.bg5, s:palette.none)
-if s:configuration.visual ==# 'green background'
+if s:configuration.visual ==# 'grey background'
+  call s:HL('Visual', s:palette.none, s:palette.bg3)
+  call s:HL('VisualNOS', s:palette.none, s:palette.bg3)
+elseif s:configuration.visual ==# 'green background'
   call s:HL('Visual', s:palette.none, s:palette.bg_green2)
   call s:HL('VisualNOS', s:palette.none, s:palette.bg_green2)
 elseif s:configuration.visual ==# 'blue background'
