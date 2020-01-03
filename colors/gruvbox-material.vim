@@ -1271,6 +1271,21 @@ highlight! link csInterpolation Yellow
 highlight! link csEndColon Fg
 " }}}
 " }}}
+" Json: {{{
+highlight! link jsonKeyword Orange
+highlight! link jsonQuote Grey
+highlight! link jsonBraces Fg
+" }}}
+" Yaml: {{{
+highlight! link yamlKey Orange
+highlight! link yamlConstant Purple
+" }}}
+" Toml: {{{
+call s:HL('tomlTable', s:palette.purple, s:palette.none, 'bold')
+highlight! link tomlKey Orange
+highlight! link tomlBoolean Aqua
+highlight! link tomlTableArray tomlTable
+" }}}
 " Diff: {{{
 highlight! link diffAdded Green
 highlight! link diffRemoved Red
