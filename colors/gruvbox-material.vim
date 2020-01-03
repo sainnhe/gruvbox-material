@@ -1039,6 +1039,15 @@ highlight! link javascriptBroadcastProp Aqua
 highlight! link javascriptMathStaticProp Aqua
 " }}}
 " }}}
+" JavaScript React: {{{
+" vim-jsx-pretty: https://github.com/maxmellon/vim-jsx-pretty{{{
+highlight! link jsxTagName OrangeItalic
+highlight! link jsxOpenPunct Green
+highlight! link jsxClosePunct Blue
+highlight! link jsxEscapeJs Blue
+highlight! link jsxAttrib Aqua
+" }}}
+" }}}
 " TypeScript: {{{
 " vim-typescript: https://github.com/leafgarland/typescript-vim{{{
 highlight! link typescriptSource PurpleItalic
