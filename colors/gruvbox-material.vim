@@ -1189,8 +1189,50 @@ highlight! link typescriptBOMHistoryProp Aqua
 highlight! link typescriptMathStaticProp Aqua
 " }}}
 " }}}
+" Dart: {{{
+" dart-lang: https://github.com/dart-lang/dart-vim-plugin{{{
+highlight! link dartCoreClasses Aqua
+highlight! link dartTypeName Aqua
+highlight! link dartInterpolation Blue
+highlight! link dartTypeDef RedItalic
+highlight! link dartClassDecl RedItalic
+highlight! link dartLibrary PurpleItalic
+highlight! link dartMetadata Blue
+" }}}
+" }}}
+" CoffeeScript: {{{
+" vim-coffee-script: https://github.com/kchmck/vim-coffee-script{{{
+highlight! link coffeeExtendedOp Orange
+highlight! link coffeeSpecialOp Fg
+highlight! link coffeeDotAccess Grey
+highlight! link coffeeCurly Fg
+highlight! link coffeeParen Fg
+highlight! link coffeeBracket Fg
+highlight! link coffeeParens Blue
+highlight! link coffeeBrackets Blue
+highlight! link coffeeCurlies Blue
+highlight! link coffeeOperator RedItalic
+highlight! link coffeeStatement Orange
+highlight! link coffeeSpecialIdent Purple
+highlight! link coffeeObject Purple
+highlight! link coffeeObjAssign Aqua
+" }}}
+" }}}
+" PureScript: {{{
+" purescript-vim: https://github.com/purescript-contrib/purescript-vim{{{
+highlight! link purescriptModuleKeyword PurpleItalic
+highlight! link purescriptModule Aqua
+highlight! link purescriptModuleParams Blue
+highlight! link purescriptAsKeyword OrangeItalic
+highlight! link purescriptHidingKeyword OrangeItalic
+highlight! link purescriptWhere OrangeItalic
+highlight! link purescriptIdentifier Blue
+highlight! link purescriptFunction Yellow
+highlight! link purescriptType Aqua
+" }}}
+" }}}
 " C/C++: {{{
-" vim-cpp-enhanced-highlight :https://github.com/octol/vim-cpp-enhanced-highlight{{{
+" vim-cpp-enhanced-highlight: https://github.com/octol/vim-cpp-enhanced-highlight{{{
 highlight! link cppSTLnamespace Purple
 highlight! link cppSTLtype Yellow
 highlight! link cppAccess PurpleItalic
@@ -1199,7 +1241,7 @@ highlight! link cppSTLios Aqua
 highlight! link cppSTLiterator PurpleItalic
 highlight! link cppSTLexception Purple
 " }}}
-" vim-cpp-modern :https://github.com/bfrg/vim-cpp-modern{{{
+" vim-cpp-modern: https://github.com/bfrg/vim-cpp-modern{{{
 highlight! link cppSTLVariable Aqua
 " }}}
 " }}}
