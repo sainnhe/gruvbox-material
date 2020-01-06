@@ -1354,6 +1354,21 @@ highlight! link ktStructure RedItalic
 highlight! link ktKeyword Aqua
 " }}}
 " }}}
+" Go: {{{
+" builtin: https://github.com/google/vim-ft-go{{{
+highlight! link goDirective PurpleItalic
+highlight! link goConstants Aqua
+highlight! link goDeclType OrangeItalic
+" }}}
+" polyglot: {{{
+highlight! link goPackage PurpleItalic
+highlight! link goImport PurpleItalic
+highlight! link goVarArgs Blue
+highlight! link goBuiltins GreenBold
+highlight! link goPredefinedIdentifiers Aqua
+highlight! link goVar Orange
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
