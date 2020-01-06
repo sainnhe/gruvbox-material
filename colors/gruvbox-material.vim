@@ -1308,6 +1308,27 @@ highlight! link pythonNone Aqua
 highlight! link pythonDot Grey
 " }}}
 " }}}
+" Lua: {{{
+" builtin: {{{
+highlight! link luaFunc GreenBold
+highlight! link luaFunction Aqua
+highlight! link luaTable Fg
+highlight! link luaIn RedItalic
+" }}}
+" vim-lua: https://github.com/tbastos/vim-lua{{{
+highlight! link luaFuncCall GreenBold
+highlight! link luaLocal Orange
+highlight! link luaSpecialValue GreenBold
+highlight! link luaBraces Fg
+highlight! link luaBuiltIn Purple
+highlight! link luaNoise Grey
+highlight! link luaLabel Purple
+highlight! link luaFuncTable Yellow
+highlight! link luaFuncArgName Blue
+highlight! link luaEllipsis Orange
+highlight! link luaDocTag Green
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
