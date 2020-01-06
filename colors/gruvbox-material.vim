@@ -1369,6 +1369,22 @@ highlight! link goPredefinedIdentifiers Aqua
 highlight! link goVar Orange
 " }}}
 " }}}
+" Rust: {{{
+" builtin: https://github.com/rust-lang/rust.vim{{{
+highlight! link rustStructure Orange
+highlight! link rustIdentifier Purple
+highlight! link rustModPath Orange
+highlight! link rustModPathSep Grey
+highlight! link rustSelf Blue
+highlight! link rustSuper Blue
+highlight! link rustDeriveTrait PurpleItalic
+highlight! link rustEnumVariant Purple
+highlight! link rustMacroVariable Blue
+highlight! link rustAssert Aqua
+highlight! link rustPanic Aqua
+highlight! link rustPubScopeCrate PurpleItalic
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
