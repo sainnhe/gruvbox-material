@@ -1345,6 +1345,15 @@ highlight! link javaParen4 Fg
 highlight! link javaParen5 Fg
 " }}}
 " }}}
+" Kotlin: {{{
+" kotlin-vim: https://github.com/udalov/kotlin-vim{{{
+highlight! link ktSimpleInterpolation Yellow
+highlight! link ktComplexInterpolation Yellow
+highlight! link ktComplexInterpolationBrace Yellow
+highlight! link ktStructure RedItalic
+highlight! link ktKeyword Aqua
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
