@@ -1499,6 +1499,17 @@ highlight! link ocamlStructEncl Aqua
 highlight! link ocamlModParam1 Blue
 " }}}
 " }}}
+" Erlang: {{{
+" builtin: https://github.com/vim-erlang/vim-erlang-runtime{{{
+highlight! link erlangAtom Aqua
+highlight! link erlangLocalFuncRef GreenBold
+highlight! link erlangLocalFuncCall GreenBold
+highlight! link erlangGlobalFuncRef GreenBold
+highlight! link erlangGlobalFuncCall GreenBold
+highlight! link erlangAttribute PurpleItalic
+highlight! link erlangPipe Orange
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
