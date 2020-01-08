@@ -1595,6 +1595,14 @@ highlight! link fishLabel RedItalic
 highlight! link fishCommandSub Yellow
 " }}}
 " }}}
+" PowerShell: {{{
+" vim-ps1: https://github.com/PProvost/vim-ps1{{{
+highlight! link ps1FunctionInvocation AquaBold
+highlight! link ps1FunctionDeclaration AquaBold
+highlight! link ps1InterpolationDelimiter Yellow
+highlight! link ps1BuiltIn Yellow
+" }}}
+" }}}
 " VimL: {{{
 highlight! link vimLet Orange
 highlight! link vimFunction GreenBold
