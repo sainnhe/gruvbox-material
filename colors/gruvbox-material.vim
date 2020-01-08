@@ -1477,6 +1477,28 @@ highlight! link podVerbatimLine Green
 highlight! link podCmdText Yellow
 " }}}
 " }}}
+" OCaml: {{{
+" builtin: https://github.com/rgrinberg/vim-ocaml{{{
+highlight! link ocamlArrow Orange
+highlight! link ocamlEqual Orange
+highlight! link ocamlOperator Orange
+highlight! link ocamlKeyChar Orange
+highlight! link ocamlModPath Green
+highlight! link ocamlFullMod Green
+highlight! link ocamlModule Purple
+highlight! link ocamlConstructor Aqua
+highlight! link ocamlFuncWith Yellow
+highlight! link ocamlWith Yellow
+highlight! link ocamlModParam Fg
+highlight! link ocamlModParam1 Fg
+highlight! link ocamlAnyVar Blue
+highlight! link ocamlPpxEncl Orange
+highlight! link ocamlPpxIdentifier Blue
+highlight! link ocamlSigEncl Orange
+highlight! link ocamlStructEncl Aqua
+highlight! link ocamlModParam1 Blue
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
