@@ -1429,6 +1429,20 @@ highlight! link rubyAttribute Yellow
 highlight! link rubyMacro RedItalic
 " }}}
 " }}}
+" Perl: {{{
+" builtin: https://github.com/vim-perl/vim-perl{{{
+highlight! link perlStatementPackage PurpleItalic
+highlight! link perlStatementInclude PurpleItalic
+highlight! link perlStatementStorage Orange
+highlight! link perlStatementList Orange
+highlight! link perlMatchStartEnd Orange
+highlight! link perlVarSimpleMemberName Aqua
+highlight! link perlVarSimpleMember Fg
+highlight! link perlMethod GreenBold
+highlight! link podVerbatimLine Green
+highlight! link podCmdText Yellow
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
