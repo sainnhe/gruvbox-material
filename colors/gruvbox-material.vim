@@ -1538,6 +1538,13 @@ highlight! link elixirStructDefine RedItalic
 highlight! link elixirExUnitMacro RedItalic
 " }}}
 " }}}
+" Common Lisp: {{{
+" builtin: http://www.drchip.org/astronaut/vim/index.html#SYNTAX_LISP{{{
+highlight! link lispAtomMark Green
+highlight! link lispKey Aqua
+highlight! link lispFunc OrangeItalic
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
