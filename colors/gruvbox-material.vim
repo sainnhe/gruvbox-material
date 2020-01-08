@@ -1366,6 +1366,16 @@ highlight! link ktStructure RedItalic
 highlight! link ktKeyword Aqua
 " }}}
 " }}}
+" Scala: {{{
+" builtin: https://github.com/derekwyatt/vim-scala{{{
+highlight! link scalaNameDefinition Aqua
+highlight! link scalaInterpolationBoundary Yellow
+highlight! link scalaInterpolation Blue
+highlight! link scalaTypeOperator Orange
+highlight! link scalaOperator Orange
+highlight! link scalaKeywordModifier Orange
+" }}}
+" }}}
 " Go: {{{
 " builtin: https://github.com/google/vim-ft-go{{{
 highlight! link goDirective PurpleItalic
