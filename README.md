@@ -28,7 +28,7 @@ Gruvbox Material is based on Gruvbox, but with a very different color palette, I
 - Switch back to the original color palette whenever you like.
 - Highly customizable.
 - Rich support for common file types and plugins.
-- [Italic support](https://user-images.githubusercontent.com/37491630/71976989-a279a200-320f-11ea-9f4b-66e1be3ff327.png) 🎉
+- [Italic support](https://gist.github.com/sainnhe/d3ab58f314738b373ada647df9b0e59a) 🎉
 
 # Installation
 

@@ -181,14 +181,14 @@ E.g.~
 ------------------------------------------------------------------------------
                                              *g:gruvbox_material_enable_italic*
 
-To enable italic in keyword, set this option to `1`.
-
-This option is designed to work with fonts like [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript).
+To enable italic in this color scheme, set this option to `1`.
 
 E.g.~
 >
     let g:gruvbox_material_enable_italic = 1
 <
+Check this gist for more information: https://gist.github.com/sainnhe/d3ab58f314738b373ada647df9b0e59a
+
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_transparent_background*
 
