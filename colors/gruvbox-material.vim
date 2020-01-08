@@ -1588,6 +1588,13 @@ highlight! link zshTypes Orange
 highlight! link zshVariableDef Blue
 " }}}
 " }}}
+" Fish: {{{
+" vim-fish: https://github.com/georgewitteman/vim-fish{{{
+highlight! link fishStatement Orange
+highlight! link fishLabel RedItalic
+highlight! link fishCommandSub Yellow
+" }}}
+" }}}
 " VimL: {{{
 highlight! link vimLet Orange
 highlight! link vimFunction GreenBold
