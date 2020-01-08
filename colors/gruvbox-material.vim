@@ -1415,6 +1415,20 @@ highlight! link phpClass Orange
 highlight! link phpSuperglobals Purple
 " }}}
 " }}}
+" Ruby: {{{
+" builtin: https://github.com/vim-ruby/vim-ruby{{{
+highlight! link rubyKeywordAsMethod GreenBold
+highlight! link rubyInterpolation Yellow
+highlight! link rubyInterpolationDelimiter Yellow
+highlight! link rubyStringDelimiter Green
+highlight! link rubyBlockParameterList Blue
+highlight! link rubyDefine RedItalic
+highlight! link rubyModuleName Purple
+highlight! link rubyAccess Orange
+highlight! link rubyAttribute Yellow
+highlight! link rubyMacro RedItalic
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
