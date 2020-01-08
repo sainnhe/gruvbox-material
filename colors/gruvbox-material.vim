@@ -1385,6 +1385,15 @@ highlight! link rustPanic Aqua
 highlight! link rustPubScopeCrate PurpleItalic
 " }}}
 " }}}
+" Swift: {{{
+" swift.vim: https://github.com/keith/swift.vim{{{
+highlight! link swiftInterpolatedWrapper Yellow
+highlight! link swiftInterpolatedString Blue
+highlight! link swiftProperty Aqua
+highlight! link swiftTypeDeclaration Orange
+highlight! link swiftClosureArgument Purple
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
