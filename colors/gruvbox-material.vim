@@ -1510,6 +1510,34 @@ highlight! link erlangAttribute PurpleItalic
 highlight! link erlangPipe Orange
 " }}}
 " }}}
+" Elixir: {{{
+" vim-elixir: https://github.com/elixir-editors/vim-elixir{{{
+highlight! link elixirStringDelimiter Green
+highlight! link elixirKeyword Orange
+highlight! link elixirInterpolation Yellow
+highlight! link elixirInterpolationDelimiter Yellow
+highlight! link elixirSelf Purple
+highlight! link elixirPseudoVariable Purple
+highlight! link elixirModuleDefine PurpleItalic
+highlight! link elixirBlockDefinition RedItalic
+highlight! link elixirDefine RedItalic
+highlight! link elixirPrivateDefine RedItalic
+highlight! link elixirGuard RedItalic
+highlight! link elixirPrivateGuard RedItalic
+highlight! link elixirProtocolDefine RedItalic
+highlight! link elixirImplDefine RedItalic
+highlight! link elixirRecordDefine RedItalic
+highlight! link elixirPrivateRecordDefine RedItalic
+highlight! link elixirMacroDefine RedItalic
+highlight! link elixirPrivateMacroDefine RedItalic
+highlight! link elixirDelegateDefine RedItalic
+highlight! link elixirOverridableDefine RedItalic
+highlight! link elixirExceptionDefine RedItalic
+highlight! link elixirCallbackDefine RedItalic
+highlight! link elixirStructDefine RedItalic
+highlight! link elixirExUnitMacro RedItalic
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
