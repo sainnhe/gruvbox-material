@@ -1558,6 +1558,25 @@ highlight! link clojureMeta Yellow
 highlight! link clojureDeref Yellow
 " }}}
 " }}}
+" VimL: {{{
+highlight! link vimLet Orange
+highlight! link vimFunction GreenBold
+highlight! link vimIsCommand Fg
+highlight! link vimUserFunc GreenBold
+highlight! link vimFuncName GreenBold
+highlight! link vimMap PurpleItalic
+highlight! link vimNotation Aqua
+highlight! link vimMapLhs Green
+highlight! link vimMapRhs Green
+highlight! link vimSetEqual Yellow
+highlight! link vimSetSep Fg
+highlight! link vimOption Aqua
+highlight! link vimUserAttrbKey Yellow
+highlight! link vimUserAttrb Green
+highlight! link vimAutoCmdSfxList Aqua
+highlight! link vimSynType Orange
+highlight! link vimHiBang Orange
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
