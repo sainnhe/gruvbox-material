@@ -4,8 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `g:gruvbox_material_palette`.
+- Add `g:gruvbox_material_enable_italic`.
+- Add `g:gruvbox_material_menu_selection_background`.
+
 ### Changed
 
+- Refactor `colors/gruvbox-material.vim`.
+- Adjust syntax highlighting logic.
+- Remove color templates.
+- Rewrite airline theme.
 - Markdown heading delimiter.
 
 ## [1.0.0] - 2019-12-11

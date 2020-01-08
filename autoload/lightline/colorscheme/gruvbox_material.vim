@@ -9,40 +9,86 @@
 "{{{Palette
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-if &background ==# 'light'
-    if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        let s:darker    = [ '#f3eac7', 223 ]
-        let s:darkgrey  = [ '#ebdbb2', 250 ]
-    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        let s:darker    = [ '#f2e5bc', 223 ]
-        let s:darkgrey  = [ '#ddccab', 250 ]
-    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        let s:darker    = [ '#ebdbb2', 223 ]
-        let s:darkgrey  = [ '#d5c4a1', 250 ]
+let s:configuration = {}
+let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
+let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
+
+if type(s:configuration.palette) == 4
+    let s:configuration.palette = 'material'
+endif
+
+if s:configuration.palette ==# 'material'
+    if &background ==# 'dark'
+        if s:configuration.background ==# 'hard'
+            let s:darker    = [ '#282828', 235 ]
+            let s:darkgrey  = [ '#504945', 239 ]
+        elseif s:configuration.background ==# 'medium'
+            let s:darker    = [ '#32302f', 236 ]
+            let s:darkgrey  = [ '#5a524c', 240 ]
+        elseif s:configuration.background ==# 'soft'
+            let s:darker    = [ '#3c3836', 237 ]
+            let s:darkgrey  = [ '#665c54', 241 ]
+        endif
+        let s:dark      = [ '#282828', 235 ]
+        let s:grey      = [ '#a89984', 246 ]
+        let s:red       = [ '#ea6962', 167 ]
+        let s:green     = [ '#a9b665', 142 ]
+        let s:orange    = [ '#e78a4e', 208 ]
+        let s:white     = [ '#ddc7a1', 223 ]
+    else
+        if s:configuration.background ==# 'hard'
+            let s:darker    = [ '#f3eac7', 223 ]
+            let s:darkgrey  = [ '#ebdbb2', 250 ]
+        elseif s:configuration.background ==# 'medium'
+            let s:darker    = [ '#f2e5bc', 223 ]
+            let s:darkgrey  = [ '#ddccab', 250 ]
+        elseif s:configuration.background ==# 'soft'
+            let s:darker    = [ '#ebdbb2', 223 ]
+            let s:darkgrey  = [ '#d5c4a1', 250 ]
+        endif
+        let s:dark      = [ '#ebdbb2', 223 ]
+        let s:grey      = [ '#7c6f64', 243 ]
+        let s:red       = [ '#ae5858', 88 ]
+        let s:green     = [ '#6f8352', 100 ]
+        let s:orange    = [ '#a96b2c', 130 ]
+        let s:white     = [ '#4f3829', 241 ]
     endif
-    let s:dark      = [ '#ebdbb2', 223 ]
-    let s:grey      = [ '#7c6f64', 243 ]
-    let s:red       = [ '#ae5858', 88 ]
-    let s:green     = [ '#6f8352', 100 ]
-    let s:orange    = [ '#a96b2c', 130 ]
-    let s:white     = [ '#4f3829', 241 ]
 else
-    if get(g:, 'gruvbox_material_background', 'medium') ==# 'hard'
-        let s:darker    = [ '#282828', 235 ]
-        let s:darkgrey  = [ '#504945', 239 ]
-    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'medium'
-        let s:darker    = [ '#32302f', 236 ]
-        let s:darkgrey  = [ '#5a524c', 240 ]
-    elseif get(g:, 'gruvbox_material_background', 'medium') ==# 'soft'
-        let s:darker    = [ '#3c3836', 237 ]
-        let s:darkgrey  = [ '#665c54', 241 ]
+    if &background ==# 'dark'
+        if s:configuration.background ==# 'hard'
+            let s:darker    = [ '#282828', 235 ]
+            let s:darkgrey  = [ '#504945', 239 ]
+        elseif s:configuration.background ==# 'medium'
+            let s:darker    = [ '#32302f', 236 ]
+            let s:darkgrey  = [ '#5a524c', 240 ]
+        elseif s:configuration.background ==# 'soft'
+            let s:darker    = [ '#3c3836', 237 ]
+            let s:darkgrey  = [ '#665c54', 241 ]
+        endif
+        let s:dark      = [ '#282828', 235 ]
+        let s:grey      = [ '#a89984', 246 ]
+        let s:red       = [ '#cc241d', 167 ]
+        let s:green     = [ '#b8bb26', 142 ]
+        let s:orange    = [ '#fabd2f', 208 ]
+        let s:white     = [ '#ebdbb2', 223 ]
+    else
+        if s:configuration.background ==# 'hard'
+            let s:darker    = [ '#f3eac7', 223 ]
+            let s:darkgrey  = [ '#ebdbb2', 250 ]
+        elseif s:configuration.background ==# 'medium'
+            let s:darker    = [ '#f2e5bc', 223 ]
+            let s:darkgrey  = [ '#ddccab', 250 ]
+        elseif s:configuration.background ==# 'soft'
+            let s:darker    = [ '#ebdbb2', 223 ]
+            let s:darkgrey  = [ '#d5c4a1', 250 ]
+        endif
+        let s:dark      = [ '#ebdbb2', 223 ]
+        let s:grey      = [ '#7c6f64', 243 ]
+        let s:red       = [ '#cc241d', 88 ]
+        let s:green     = [ '#79740e', 100 ]
+        let s:orange    = [ '#b57614', 130 ]
+        let s:white     = [ '#3c3836', 241 ]
     endif
-    let s:dark      = [ '#282828', 235 ]
-    let s:grey      = [ '#a89984', 246 ]
-    let s:red       = [ '#ea6962', 167 ]
-    let s:green     = [ '#a9b665', 142 ]
-    let s:orange    = [ '#e78a4e', 208 ]
-    let s:white     = [ '#ddc7a1', 223 ]
 endif
 "}}}
 

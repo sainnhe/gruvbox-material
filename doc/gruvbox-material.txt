@@ -18,10 +18,18 @@ blue light.
 Gruvbox Material is based on Gruvbox, but with a very different color palette,
 I'm trying to adjust the foreground colors to match these requirements.
 
-The syntax highlighting logic used in this branch is almost the same as the
-original gruvbox. In addition, I've developed `neosyn` branch that uses
-another syntax highlighting logic, and it has also been optimized for common
-file types and plugins.
+------------------------------------------------------------------------------
+Features~
+
+    1. Carefully designed color palette for eye protection.
+
+    2. Switch back to the original color palette whenever you like.
+
+    3. Highly customizable.
+
+    4. Rich support for common file types and plugins.
+
+    5. Support for italic keywords just like in [vscode](https://github.com/kencrocken/FiraCodeiScript).
 
 ==============================================================================
 INSTALLATION                                    *gruvbox-material-installation*
@@ -69,7 +77,7 @@ Vim~
 
     Put something like this in your vimrc:
 >
-	" if you don't set this option, this color scheme will fall back to the original gruvbox
+	" important!!
 	set termguicolors
 
 	" for dark version
@@ -163,13 +171,23 @@ E.g.~
 ------------------------------------------------------------------------------
                                                *g:gruvbox_material_enable_bold*
 
-By default, bold is only enabled in the highlight groups I think are
-necessary, but you can use this option to enable bold like the original
-gruvbox. To enable this feature, set this option to `1`.
+To enable bold in function name just like the original gruvbox, set this
+option to `1`.
 
 E.g.~
 >
     let g:gruvbox_material_enable_bold = 1
+<
+------------------------------------------------------------------------------
+                                             *g:gruvbox_material_enable_italic*
+
+To enable italic in keyword, set this option to `1`.
+
+This option is designed to work with fonts like [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript).
+
+E.g.~
+>
+    let g:gruvbox_material_enable_italic = 1
 <
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_transparent_background*
@@ -180,32 +198,29 @@ E.g.~
 >
     let g:gruvbox_material_transparent_background = 1
 <
-Note: {{{
-I personally do not encourage you to enable this option, as this color
-scheme is designed for eye protection and concentration instead of looking
-cool. To be honest, this color scheme might look better when not in
-transparent mode.
-
-If you do need transparent, I would recommend you to use composite manager
-with blur feature, for example https://github.com/tryone144/compton
-
-Here is a screenshot: https://user-images.githubusercontent.com/37491630/69637420-91c40100-1093-11ea-8728-78244ee2b5f4.png
-
-Nevertheless, I will do my best to provide a good experience in transparent
-mode. If you encounter any problems, feel free to open an issue or PR :)
-}}}
-
 ------------------------------------------------------------------------------
                                     		    *g:gruvbox_material_visual*
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
-    Available values: `'green background'`, `'blue background'`, `'red background'`, `'reverse'`
-    Default value: `'green background'`
+    Available values: `'grey background'`, `'green background'`, `'blue background'`, `'red background'`, `'reverse'`
+    Default value: `'grey background'`
 
 E.g.~
 >
     let g:gruvbox_material_visual = 'reverse'
+<
+------------------------------------------------------------------------------
+                                 *g:gruvbox_material_menu_selection_background*
+
+Customize the background color of `PmenuSel` and `WildMenu`.
+
+    Available values: `'grey'`, `'green'`
+    Default value: `'grey'`
+
+E.g.~
+>
+    let g:gruvbox_material_menu_selection_background = 'green'
 <
 ------------------------------------------------------------------------------
                                               *g:gruvbox_material_current_word*
@@ -228,6 +243,122 @@ E.g.~
 >
     let g:gruvbox_material_current_word = 'bold'
 <
+------------------------------------------------------------------------------
+                                                   *g:gruvbox_material_palette*
+
+Customize the color palette used in this color scheme.
+
+    Available values: `'material'`, `'original'` or a custom palette
+    Default value: `'material'`
+
+E.g.~
+>
+    " use the color palette of the original gruvbox
+    let g:gruvbox_material_palette = 'original'
+
+    " if you want a darker background, for example: '#101010'
+    " {{{
+    let g:gruvbox_material_palette = {
+          \ 'bg0':        ['#101010',   '234',  'Black'],
+          \ 'bg1':        ['#242525',   '235',  'DarkGrey'],
+          \ 'bg2':        ['#282828',   '235',  'DarkGrey'],
+          \ 'bg3':        ['#3c3836',   '237',  'DarkGrey'],
+          \ 'bg4':        ['#3c3836',   '237',  'DarkGrey'],
+          \ 'bg5':        ['#504945',   '239',  'DarkGrey'],
+          \ 'bg_grey0':   ['#665c54',   '241',  'DarkGrey'],
+          \ 'bg_grey1':   ['#a89984',   '246',  'LightGrey'],
+          \ 'bg_red':     ['#ea6962',   '167',  'Red'],
+          \ 'bg_green':   ['#a9b665',   '142',  'Green'],
+          \ 'bg_yellow':  ['#d8a657',   '214',  'Yellow'],
+          \ 'bg_green1':  ['#32361a',   '22',   'DarkGreen'],
+          \ 'bg_green2':  ['#333e34',   '22',   'DarkGreen'],
+          \ 'bg_red1':    ['#3c1f1e',   '52',   'DarkRed'],
+          \ 'bg_red2':    ['#442e2d',   '52',   'DarkRed'],
+          \ 'bg_blue1':   ['#0d3138',   '17',   'DarkBlue'],
+          \ 'bg_blue2':   ['#2e3b3b',   '17',   'DarkBlue'],
+          \ 'fg0':        ['#d4be98',   '223',  'White'],
+          \ 'fg1':        ['#ddc7a1',   '223',  'White'],
+          \ 'red':        ['#ea6962',   '167',  'Red'],
+          \ 'orange':     ['#e78a4e',   '208',  'DarkYellow'],
+          \ 'yellow':     ['#d8a657',   '214',  'Yellow'],
+          \ 'green':      ['#a9b665',   '142',  'Green'],
+          \ 'aqua':       ['#89b482',   '108',  'Cyan'],
+          \ 'blue':       ['#7daea3',   '109',  'Blue'],
+          \ 'purple':     ['#d3869b',   '175',  'Magenta'],
+          \ 'grey':       ['#928374',   '245',  'LightGrey'],
+          \ 'none':       ['NONE',      'NONE', 'NONE']
+          \ }
+    " }}}
+
+    " if you prefer the white('#ebdbb2') foreground color and the black('#3c3836')
+    " foreground color used in the original gruvbox
+    " {{{
+    if &background ==# 'dark'
+      let g:gruvbox_material_palette = {
+            \ 'bg0':        ['#282828',   '235',  'Black'],
+            \ 'bg1':        ['#2e2d2d',   '236',  'DarkGrey'],
+            \ 'bg2':        ['#32302f',   '236',  'DarkGrey'],
+            \ 'bg3':        ['#45403d',   '237',  'DarkGrey'],
+            \ 'bg4':        ['#45403d',   '237',  'DarkGrey'],
+            \ 'bg5':        ['#5a524c',   '239',  'DarkGrey'],
+            \ 'bg_grey0':   ['#7c6f64',   '243',  'DarkGrey'],
+            \ 'bg_grey1':   ['#a89984',   '246',  'LightGrey'],
+            \ 'bg_red':     ['#ea6962',   '167',  'Red'],
+            \ 'bg_green':   ['#a9b665',   '142',  'Green'],
+            \ 'bg_yellow':  ['#d8a657',   '214',  'Yellow'],
+            \ 'bg_green1':  ['#34381b',   '22',   'DarkGreen'],
+            \ 'bg_green2':  ['#3b4439',   '22',   'DarkGreen'],
+            \ 'bg_red1':    ['#402120',   '52',   'DarkRed'],
+            \ 'bg_red2':    ['#4c3432',   '52',   'DarkRed'],
+            \ 'bg_blue1':   ['#0e363e',   '17',   'DarkBlue'],
+            \ 'bg_blue2':   ['#374141',   '17',   'DarkBlue'],
+            \ 'fg0':        ['#ebdbb2',   '223',  'White'],
+            \ 'fg1':        ['#ebdbb2',   '223',  'White'],
+            \ 'red':        ['#ea6962',   '167',  'Red'],
+            \ 'orange':     ['#e78a4e',   '208',  'DarkYellow'],
+            \ 'yellow':     ['#d8a657',   '214',  'Yellow'],
+            \ 'green':      ['#a9b665',   '142',  'Green'],
+            \ 'aqua':       ['#89b482',   '108',  'Cyan'],
+            \ 'blue':       ['#7daea3',   '109',  'Blue'],
+            \ 'purple':     ['#d3869b',   '175',  'Magenta'],
+            \ 'grey':       ['#928374',   '245',  'LightGrey'],
+            \ 'none':       ['NONE',      'NONE', 'NONE']
+            \ }
+    else
+      let g:gruvbox_material_palette = {
+            \ 'bg0':        ['#fbf1c7',   '229',  'White'],
+            \ 'bg1':        ['#f6ebc1',   '228',  'LightGrey'],
+            \ 'bg2':        ['#f2e5bc',   '228',  'LightGrey'],
+            \ 'bg3':        ['#ebdbb2',   '223',  'LightGrey'],
+            \ 'bg4':        ['#e0cfa9',   '223',  'LightGrey'],
+            \ 'bg5':        ['#ddccab',   '250',  'LightGrey'],
+            \ 'bg_grey0':   ['#bdae93',   '248',  'LightGrey'],
+            \ 'bg_grey1':   ['#7c6f64',   '243',  'DarkGrey'],
+            \ 'bg_red':     ['#ae5858',   '88',   'Red'],
+            \ 'bg_green':   ['#6f8352',   '100',  'Green'],
+            \ 'bg_yellow':  ['#a96b2c',   '130',  'Yellow'],
+            \ 'bg_green1':  ['#daf0a7',   '194',  'LightGreen'],
+            \ 'bg_green2':  ['#dee2b6',   '194',  'LightGreen'],
+            \ 'bg_red1':    ['#fbcdb9',   '217',  'LightRed'],
+            \ 'bg_red2':    ['#f7cfae',   '217',  'LightRed'],
+            \ 'bg_blue1':   ['#c6eaf0',   '117',  'LightBlue'],
+            \ 'bg_blue2':   ['#dadec0',   '117',  'LightBlue'],
+            \ 'fg0':        ['#3c3836',   '237',  'Black'],
+            \ 'fg1':        ['#3c3836',   '237',  'Black'],
+            \ 'red':        ['#c14a4a',   '88',   'Red'],
+            \ 'orange':     ['#c35e0a',   '130',  'DarkYellow'],
+            \ 'yellow':     ['#b47109',   '136',  'Yellow'],
+            \ 'green':      ['#6c782e',   '100',  'Green'],
+            \ 'aqua':       ['#4c7a5d',   '165',  'Cyan'],
+            \ 'blue':       ['#45707a',   '24',   'Blue'],
+            \ 'purple':     ['#945e80',   '96',   'Magenta'],
+            \ 'grey':       ['#928374',   '245',  'DarkGrey'],
+            \ 'none':       ['NONE',      'NONE', 'NONE']
+            \ }
+    endif  " }}}
+<
+See `colors/gruvbox-material.vim` for the definition of all palettes.
+
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
 
