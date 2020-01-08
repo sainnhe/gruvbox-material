@@ -387,7 +387,7 @@ A:~
     it using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
 
     3. If you are running vim in tmux, you need to override default true
-    colors of tmux, as tmux cannot display true color properly:
+    colors of tmux, as tmux cannot display true colors properly:
     [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
 
     4. There are many highlight group links in syntax files while a color
