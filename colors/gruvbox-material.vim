@@ -1330,6 +1330,17 @@ highlight! link luaEllipsis Orange
 highlight! link luaDocTag Green
 " }}}
 " }}}
+" Moonscript: {{{
+" moonscript-vim: https://github.com/leafo/moonscript-vim{{{
+highlight! link moonInterpDelim Yellow
+highlight! link moonInterp Blue
+highlight! link moonFunction Green
+highlight! link moonLuaFunc AquaBold
+highlight! link moonSpecialVar Purple
+highlight! link moonObject Yellow
+highlight! link moonDotAccess Grey
+" }}}
+" }}}
 " Java: {{{
 " builtin: {{{
 highlight! link javaClassDecl RedItalic
