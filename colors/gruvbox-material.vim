@@ -1577,6 +1577,17 @@ highlight! link shFunctionOne GreenBold
 highlight! link shFunctionKey RedItalic
 " }}}
 " }}}
+" Zsh: {{{
+" builtin: https://github.com/chrisbra/vim-zsh{{{
+highlight! link zshOptStart PurpleItalic
+highlight! link zshOption Blue
+highlight! link zshSubst Yellow
+highlight! link zshFunction GreenBold
+highlight! link zshDeref Blue
+highlight! link zshTypes Orange
+highlight! link zshVariableDef Blue
+" }}}
+" }}}
 " VimL: {{{
 highlight! link vimLet Orange
 highlight! link vimFunction GreenBold
