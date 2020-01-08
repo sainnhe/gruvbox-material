@@ -772,6 +772,7 @@ call s:HL('htmlUnderlineItalic', s:palette.none, s:palette.none, 'underline,ital
 call s:HL('htmlItalic', s:palette.none, s:palette.none, 'italic')
 highlight! link htmlTag Green
 highlight! link htmlEndTag Blue
+highlight! link htmlTagN OrangeItalic
 highlight! link htmlTagName OrangeItalic
 highlight! link htmlArg Aqua
 highlight! link htmlScriptTag Purple
@@ -1392,6 +1393,26 @@ highlight! link swiftInterpolatedString Blue
 highlight! link swiftProperty Aqua
 highlight! link swiftTypeDeclaration Orange
 highlight! link swiftClosureArgument Purple
+" }}}
+" }}}
+" PHP: {{{
+" builtin: https://jasonwoof.com/gitweb/?p=vim-syntax.git;a=blob;f=php.vim;hb=HEAD{{{
+highlight! link phpVarSelector Blue
+highlight! link phpDefine OrangeItalic
+highlight! link phpStructure RedItalic
+highlight! link phpSpecialFunction GreenBold
+highlight! link phpInterpSimpleCurly Yellow
+highlight! link phpComparison Orange
+highlight! link phpMethodsVar Aqua
+highlight! link phpMemberSelector Green
+" }}}
+" php.vim: https://github.com/StanAngeloff/php.vim{{{
+highlight! link phpParent Fg
+highlight! link phpNowDoc Green
+highlight! link phpFunction GreenBold
+highlight! link phpMethod GreenBold
+highlight! link phpClass Orange
+highlight! link phpSuperglobals Purple
 " }}}
 " }}}
 " Json: {{{
