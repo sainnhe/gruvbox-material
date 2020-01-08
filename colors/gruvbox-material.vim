@@ -1545,6 +1545,19 @@ highlight! link lispKey Aqua
 highlight! link lispFunc OrangeItalic
 " }}}
 " }}}
+" Clojure: {{{
+" builtin: https://github.com/guns/vim-clojure-static{{{
+highlight! link clojureMacro PurpleItalic
+highlight! link clojureFunc AquaBold
+highlight! link clojureConstant Yellow
+highlight! link clojureSpecial RedItalic
+highlight! link clojureDefine RedItalic
+highlight! link clojureKeyword Orange
+highlight! link clojureVariable Blue
+highlight! link clojureMeta Yellow
+highlight! link clojureDeref Yellow
+" }}}
+" }}}
 " Json: {{{
 highlight! link jsonKeyword Orange
 highlight! link jsonQuote Grey
