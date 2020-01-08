@@ -28,7 +28,7 @@ Gruvbox Material is based on Gruvbox, but with a very different color palette, I
 - Switch back to the original color palette whenever you like.
 - Highly customizable.
 - Rich support for common file types and plugins.
-- Support for italic keywords just like in [vscode](https://github.com/kencrocken/FiraCodeiScript).
+- [Italic support](https://user-images.githubusercontent.com/37491630/71976989-a279a200-320f-11ea-9f4b-66e1be3ff327.png) 🎉
 
 # Installation
 
