@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.1] - 2020-01-09
+
 ### Added
 
 - Add `g:gruvbox_material_palette`.
@@ -163,7 +165,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.4...v1.0.0
 [0.3.4]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.3...v0.3.4
 [0.3.3]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.2...v0.3.3
