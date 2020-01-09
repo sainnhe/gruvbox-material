@@ -29,7 +29,7 @@ Features~
 
     4. Rich support for common file types and plugins.
 
-    5. Support for italic keywords just like in [vscode](https://github.com/kencrocken/FiraCodeiScript).
+    5. Italic support.
 
 ==============================================================================
 INSTALLATION                                    *gruvbox-material-installation*
@@ -67,6 +67,7 @@ Manually~
 AUR~
 
     There is a package available for Arch Linux users in AUR:
+
     https://aur.archlinux.org/packages/gruvbox-material-git
 
 ==============================================================================
