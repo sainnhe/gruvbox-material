@@ -188,7 +188,7 @@ E.g.~
 >
     let g:gruvbox_material_enable_italic = 1
 <
-Check this gist for more information: https://gist.github.com/sainnhe/d3ab58f314738b373ada647df9b0e59a
+Note: This option is designed to use with fonts like https://github.com/sainnhe/icursive-nerd-font
 
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_transparent_background*

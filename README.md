@@ -28,7 +28,7 @@ Gruvbox Material is based on Gruvbox, but with a very different color palette, I
 - Switch back to the original color palette whenever you like.
 - Highly customizable.
 - Rich support for common file types and plugins.
-- [Italic support](https://gist.github.com/sainnhe/d3ab58f314738b373ada647df9b0e59a) 🎉
+- [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
 
 # Installation
 
