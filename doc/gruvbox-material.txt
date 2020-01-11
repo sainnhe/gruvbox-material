@@ -188,7 +188,8 @@ E.g.~
 >
     let g:gruvbox_material_enable_italic = 1
 <
-Note: This option is designed to use with fonts like https://github.com/sainnhe/icursive-nerd-font
+Note: This option is designed to use with fonts that support cursive italics.
+See |gruvbox-material-faq| for more information.
 
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_transparent_background*
@@ -396,6 +397,15 @@ A:~
     scheme enabled is very likely to cause colors to break. If any color is
     broken, you can enable the color scheme in your vimrc instead of after
     vim startup.
+
+------------------------------------------------------------------------------
+Q:~
+    How to enable cursive italic keywords?
+
+A:~
+    1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
+
+    2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
 
 ------------------------------------------------------------------------------
 Q:~
