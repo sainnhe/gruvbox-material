@@ -137,6 +137,7 @@ To apply it without reloading:
 
 1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
 2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
+3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
 
 **Q: What's your status line configuration?**
 
