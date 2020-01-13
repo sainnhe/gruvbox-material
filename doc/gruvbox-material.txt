@@ -1,4 +1,4 @@
-*gruvbox-material.txt*   A color scheme designed for eye protection
+*gruvbox-material.txt*     Gruvbox with Material Palette
 
 CONTENTS                                     *gruvbox-material-contents*
 
