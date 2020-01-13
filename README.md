@@ -20,9 +20,9 @@ This color scheme is a port of [Gruvbox Material](https://github.com/gruvbox-mat
 - Rich support for common file types and plugins.
 - [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
 
-# Installation
+## Installation
 
-## Via Plugin Manager
+### Via Plugin Manager
 
 Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 
@@ -32,7 +32,7 @@ Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
 
-## Manually
+### Manually
 
 1. Clone this repository.
 2. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to `~/.vim/colors/` .
@@ -40,13 +40,13 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 4. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim` to `~/.vim/autoload/airline/themes/gruvbox_material.vim` .
 5. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` to `~/.vim/autoload/lightline/colorscheme/gruvbox_material.vim` .
 
-## AUR
+### AUR
 
 There is a package available for Arch Linux users in AUR: [gruvbox-material-git](https://aur.archlinux.org/packages/gruvbox-material-git/)
 
-# Usage
+## Usage
 
-## Vim
+### Vim
 
 Put something like this in your vimrc:
 
@@ -76,7 +76,7 @@ If you want to apply this color scheme temporarily, run this command in vim(**th
 :colorscheme gruvbox-material
 ```
 
-## Airline
+### Airline
 
 To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, put this in your vimrc:
 
@@ -90,7 +90,7 @@ To apply it without reloading:
 :AirlineTheme gruvbox_material
 ```
 
-## Lightline
+### Lightline
 
 To enable [lightline](https://github.com/itchyny/lightline.vim) color scheme, put this in your vimrc:
 
@@ -110,7 +110,7 @@ To apply it without reloading:
 :call lightline#colorscheme()
 ```
 
-# FAQ
+## FAQ
 
 **Q: It doesn't work as expected.**
 
@@ -137,10 +137,22 @@ To apply it without reloading:
 
 **A:** [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).
 
-# Related Projects
+## Related Projects
 
 See [gruvbox-material/gruvbox-material](https://github.com/gruvbox-material/gruvbox-material)
 
-# License
+## Credits
+
+- The color palette is based on [gruvbox](https://github.com/morhetz/gruvbox) by [@morhetz](https://github.com/morhetz)
+- The color palette is adjusted by [@sainnhe](https://github.com/sainnhe)
+
+## Inspirations
+
+- [morhetz/gruvbox](https://github.com/morhetz/gruvbox): original gruvbox
+- [atom.io](https://atom.io): the `white` color in the dark variant
+- [zefei/cake16](https://github.com/zefei/cake16): the `black` color in the light variant
+- [Google Material Design](https://www.material.io)
+
+## License
 
 [MIT](./LICENSE)
