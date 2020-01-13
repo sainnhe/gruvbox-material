@@ -18,10 +18,6 @@
 | 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium-light](https://user-images.githubusercontent.com/37491630/69468278-77341400-0d83-11ea-9aa3-b6a94c442989.png) | ![material-medium-light](https://user-images.githubusercontent.com/37491630/69468260-6b485200-0d83-11ea-8329-c4564e40f65b.png) |
 |  𝒔𝒐𝒇𝒕  |  ![original-soft-light](https://user-images.githubusercontent.com/37491630/69468281-7a2f0480-0d83-11ea-8ab0-3f0dc15fd0cb.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/37491630/69468266-700d0600-0d83-11ea-8aa1-e97b86864a08.png)  |
 
-In my opinion, the very first thing a color scheme should do is to be eye-friendly, anything else is secondary. This requires soft contrast and low blue light.
-
-Gruvbox Material is based on Gruvbox, but with a very different color palette, I'm trying to adjust the foreground colors to match these requirements.
-
 ## Features
 
 - Carefully designed color palette for eye protection.
@@ -37,7 +33,7 @@ Gruvbox Material is based on Gruvbox, but with a very different color palette, I
 Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 
 ```vim
-Plug 'sainnhe/gruvbox-material'
+Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 ```
 
 For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
@@ -176,4 +172,4 @@ To apply it without reloading:
 
 # License
 
-[MIT](./LICENSE) && [Anti-996](./Anti-996-LICENSE)
+[MIT](./LICENSE)

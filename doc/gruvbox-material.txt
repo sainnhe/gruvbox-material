@@ -1,35 +1,11 @@
-*gruvbox-material.txt*    Gruvbox with Material Palette
+*gruvbox-material.txt*   A color scheme designed for eye protection
 
 CONTENTS                                     *gruvbox-material-contents*
 
-Introduction                                 |gruvbox-material-introduction|
 Installation                                 |gruvbox-material-installation|
 Usage                                        |gruvbox-material-usage|
 Configuration                                |gruvbox-material-configuration|
 FAQ                                          |gruvbox-material-faq|
-
-==============================================================================
-INTRODUCTION                                    *gruvbox-material-introduction*
-
-In my opinion, the very first thing a color scheme should do is to be
-eye-friendly, anything else is secondary. This requires soft contrast and low
-blue light.
-
-Gruvbox Material is based on Gruvbox, but with a very different color palette,
-I'm trying to adjust the foreground colors to match these requirements.
-
-------------------------------------------------------------------------------
-Features~
-
-    1. Carefully designed color palette for eye protection.
-
-    2. Switch back to the original color palette whenever you like.
-
-    3. Highly customizable.
-
-    4. Rich support for common file types and plugins.
-
-    5. Italic support.
 
 ==============================================================================
 INSTALLATION                                    *gruvbox-material-installation*
@@ -39,7 +15,7 @@ Via Plugin Manager~
 
     Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 >
-	Plug 'sainnhe/gruvbox-material'
+	Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 <
     For better syntax highlighting support, please install
     [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).

@@ -1,9 +1,9 @@
 " -----------------------------------------------------------------------------
 " Name:         Gruvbox Material
-" Description:  Gruvbox with Material Palette
+" Description:  A color scheme designed for eye protection.
 " Author:       Sainnhepark <sainnhe@gmail.com>
-" Website:      https://github.com/sainnhe/gruvbox-material/
-" License:      MIT && Anti-996
+" Website:      https://github.com/gruvbox-material/vim
+" License:      MIT
 " -----------------------------------------------------------------------------
 
 " Initialization: {{{
