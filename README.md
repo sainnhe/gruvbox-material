@@ -159,4 +159,4 @@ See [CONTRIBUTING.md](https://github.com/gruvbox-material/gruvbox-material/blob/
 
 ## License
 
-[MIT](./LICENSE)
+[MIT License](./LICENSE) © Gruvbox Material
