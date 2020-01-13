@@ -141,6 +141,10 @@ To apply it without reloading:
 
 See [gruvbox-material/gruvbox-material](https://github.com/gruvbox-material/gruvbox-material)
 
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/gruvbox-material/gruvbox-material/blob/master/CONTRIBUTING.md)
+
 ## Credits
 
 - The color palette is based on [gruvbox](https://github.com/morhetz/gruvbox) by [@morhetz](https://github.com/morhetz)
