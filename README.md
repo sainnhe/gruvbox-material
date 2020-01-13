@@ -18,6 +18,8 @@
 | 𝒎𝒆𝒅𝒊𝒖𝒎 | ![original-medium-light](https://user-images.githubusercontent.com/37491630/69468278-77341400-0d83-11ea-9aa3-b6a94c442989.png) | ![material-medium-light](https://user-images.githubusercontent.com/37491630/69468260-6b485200-0d83-11ea-8329-c4564e40f65b.png) |
 |  𝒔𝒐𝒇𝒕  |  ![original-soft-light](https://user-images.githubusercontent.com/37491630/69468281-7a2f0480-0d83-11ea-8ab0-3f0dc15fd0cb.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/37491630/69468266-700d0600-0d83-11ea-8aa1-e97b86864a08.png)  |
 
+This color scheme is a port of [Gruvbox Material](https://github.com/gruvbox-material/gruvbox-material) for Vim/Neovim.
+
 > Gruvbox Material is a color scheme designed for eye protection, based on [morhetz/gruvbox](https://github.com/morhetz/gruvbox).
 
 ## Features
