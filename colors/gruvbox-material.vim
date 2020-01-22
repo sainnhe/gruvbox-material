@@ -1078,6 +1078,7 @@ highlight! link typescriptMember Aqua
 highlight! link typescriptMemberOptionality Orange
 highlight! link typescriptObjectLabel Aqua
 highlight! link typescriptArrowFunc Purple
+highlight! link typescriptAbstract Orange
 highlight! link typescriptObjectColon Grey
 highlight! link typescriptTypeAnnotation Grey
 highlight! link typescriptAssign Orange
