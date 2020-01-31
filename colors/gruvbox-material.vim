@@ -529,7 +529,7 @@ endif
 call s:HL('DiffAdd', s:palette.none, s:palette.bg_green1)
 call s:HL('DiffChange', s:palette.none, s:palette.bg_blue1)
 call s:HL('DiffDelete', s:palette.none, s:palette.bg_red1)
-call s:HL('DiffText', s:palette.none, s:palette.none, 'reverse')
+call s:HL('DiffText', s:palette.none, s:palette.bg0, 'reverse')
 call s:HL('Directory', s:palette.green, s:palette.none)
 call s:HL('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call s:HL('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
