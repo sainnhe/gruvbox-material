@@ -38,13 +38,13 @@ if s:configuration.palette ==# 'material'
     else
         if s:configuration.background ==# 'hard'
             let s:darker    = [ '#f3eac7', 223 ]
-            let s:darkgrey  = [ '#ebdbb2', 250 ]
+            let s:darkgrey  = [ '#eee0b7', 250 ]
         elseif s:configuration.background ==# 'medium'
             let s:darker    = [ '#f2e5bc', 223 ]
-            let s:darkgrey  = [ '#ddccab', 250 ]
+            let s:darkgrey  = [ '#e5d5ad', 250 ]
         elseif s:configuration.background ==# 'soft'
             let s:darker    = [ '#ebdbb2', 223 ]
-            let s:darkgrey  = [ '#d5c4a1', 250 ]
+            let s:darkgrey  = [ '#dac9a5', 250 ]
         endif
         let s:dark      = [ '#ebdbb2', 223 ]
         let s:grey      = [ '#7c6f64', 243 ]
@@ -74,13 +74,13 @@ else
     else
         if s:configuration.background ==# 'hard'
             let s:darker    = [ '#f3eac7', 223 ]
-            let s:darkgrey  = [ '#ebdbb2', 250 ]
+            let s:darkgrey  = [ '#eee0b7', 250 ]
         elseif s:configuration.background ==# 'medium'
             let s:darker    = [ '#f2e5bc', 223 ]
-            let s:darkgrey  = [ '#ddccab', 250 ]
+            let s:darkgrey  = [ '#e5d5ad', 250 ]
         elseif s:configuration.background ==# 'soft'
             let s:darker    = [ '#ebdbb2', 223 ]
-            let s:darkgrey  = [ '#d5c4a1', 250 ]
+            let s:darkgrey  = [ '#dac9a5', 250 ]
         endif
         let s:dark      = [ '#ebdbb2', 223 ]
         let s:grey      = [ '#7c6f64', 243 ]
