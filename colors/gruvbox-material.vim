@@ -1622,6 +1622,8 @@ highlight! link vimUserAttrb Green
 highlight! link vimAutoCmdSfxList Aqua
 highlight! link vimSynType Orange
 highlight! link vimHiBang Orange
+highlight! link vimSet Yellow
+highlight! link vimSetSep Grey
 " }}}
 " Makefile: {{{
 highlight! link makeIdent Aqua
