@@ -2,11 +2,11 @@
 𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥
 </h1>
 
-|        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
-| :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-|  𝐇𝐚𝐫𝐝  |  ![material-hard-dark](https://user-images.githubusercontent.com/37491630/69468250-65527100-0d83-11ea-98e8-04cc64e9270b.png)  |  ![material-hard-light](https://user-images.githubusercontent.com/37491630/69468253-671c3480-0d83-11ea-932d-1fe0ba559a1b.png)  |
-| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![material-medium-dark](https://user-images.githubusercontent.com/37491630/69468257-697e8e80-0d83-11ea-8299-c0e5ecd132e3.png) | ![material-medium-light](https://user-images.githubusercontent.com/37491630/69468260-6b485200-0d83-11ea-8329-c4564e40f65b.png) |
-|  𝐒𝐨𝐟𝐭  |  ![material-soft-dark](https://user-images.githubusercontent.com/37491630/69468264-6edbd900-0d83-11ea-815a-9d61509f3769.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/37491630/69468266-700d0600-0d83-11ea-8aa1-e97b86864a08.png)  |
+|        |                                                         𝐃𝐚𝐫𝐤                                                         |                                                         𝐋𝐢𝐠𝐡𝐭                                                         |
+| :----: | :------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |  ![hard-dark](https://user-images.githubusercontent.com/37491630/75227134-891fbb80-57a5-11ea-878e-b8b2972cfd6e.png)  |  ![hard-light](https://user-images.githubusercontent.com/37491630/75227137-8a50e880-57a5-11ea-90dc-b2646d8b0b55.png)  |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![medium-dark](https://user-images.githubusercontent.com/37491630/75227139-8cb34280-57a5-11ea-86d6-3d3f6a2475eb.png) | ![medium-light](https://user-images.githubusercontent.com/37491630/75227141-8de46f80-57a5-11ea-820a-9394ab9d09aa.png) |
+|  𝐒𝐨𝐟𝐭  |  ![soft-dark](https://user-images.githubusercontent.com/37491630/75227149-9046c980-57a5-11ea-8633-bf4f31e533d0.png)  |  ![soft-light](https://user-images.githubusercontent.com/37491630/75227157-92108d00-57a5-11ea-8b13-b2130bff60d8.png)  |
 
 This color scheme is a port of [Gruvbox Material](https://github.com/gruvbox-material/gruvbox-material) for Vim/Neovim.
 
