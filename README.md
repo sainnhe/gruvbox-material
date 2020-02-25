@@ -135,7 +135,7 @@ To apply it without reloading:
 
 **Q: What's the font used here?**
 
-**A:** [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).
+**A:** [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
 
 ## Related Projects
 
