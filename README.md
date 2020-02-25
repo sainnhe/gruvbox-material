@@ -1,3 +1,5 @@
+# This project is looking for maintainers! [#23](https://github.com/gruvbox-material/vim/issues/23)
+
 <h1 align="center">
 𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥
 </h1>
