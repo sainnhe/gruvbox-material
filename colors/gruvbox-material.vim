@@ -1,8 +1,8 @@
 " -----------------------------------------------------------------------------
 " Name:         Gruvbox Material
 " Description:  Gruvbox with Material Palette
-" Author:       Sainnhepark <sainnhe@gmail.com>
-" Website:      https://github.com/gruvbox-material/vim
+" Author:       sainnhe <sainnhe@gmail.com>
+" Website:      https://github.com/sainnhe/gruvbox-material
 " License:      MIT
 " -----------------------------------------------------------------------------
 

@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Transfer ownership to gruvbox-material organization.
 - Adjust some background colors used in the light variant.
 
 ## [1.0.1] - 2020-01-09

@@ -15,7 +15,7 @@ Via Plugin Manager~
 
     Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 >
-	Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
+	Plug 'sainnhe/gruvbox-material'
 <
     For better syntax highlighting support, please install
     [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
@@ -23,7 +23,7 @@ Via Plugin Manager~
 ------------------------------------------------------------------------------
 Manually~
 
-    1. Clone this repository.
+    1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/gruvbox-material.git`
 
     2. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to
     `~/.vim/colors/` .

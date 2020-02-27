@@ -1,14 +1,12 @@
 " =============================================================================
-" URL: https://github.com/gruvbox-material/vim
+" URL: https://github.com/sainnhe/gruvbox-material
 " Filename: autoload/airline/themes/gruvbox_material.vim
-" Author: Sainnhepark
+" Author: sainnhe
 " Email: sainnhe@gmail.com
 " License: MIT License
 " =============================================================================
 
 "{{{Palette
-let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-
 let s:configuration = {}
 let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
 let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
