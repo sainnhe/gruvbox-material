@@ -7,6 +7,11 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Adjust some background colors used in the light variant.
+- Transfer ownership.
+
+### Fixed
+
+- Fix terminal colors. [#24](https://github.com/sainnhe/gruvbox-material/issues/24)
 
 ## [1.0.1] - 2020-01-09
 

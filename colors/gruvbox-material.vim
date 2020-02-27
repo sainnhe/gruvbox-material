@@ -2131,14 +2131,14 @@ highlight! link Blamer Grey
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   " Definition
   let s:terminal = {
-        \ 'black':    s:palette.fg0,
+        \ 'black':    &background ==# 'dark' ? s:palette.bg0 : s:palette.fg0,
         \ 'red':      s:palette.red,
         \ 'yellow':   s:palette.yellow,
         \ 'green':    s:palette.green,
         \ 'cyan':     s:palette.aqua,
         \ 'blue':     s:palette.blue,
         \ 'purple':   s:palette.purple,
-        \ 'white':    s:palette.grey
+        \ 'white':    &background ==# 'dark' ? s:palette.fg0 : s:palette.bg0
         \ }
   " Implementation: {{{
   if !has('nvim')
