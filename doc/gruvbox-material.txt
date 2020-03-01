@@ -168,6 +168,19 @@ Note: This option is designed to use with fonts that support cursive italics.
 See |gruvbox-material-faq| for more information.
 
 ------------------------------------------------------------------------------
+                                                    *g:gruvbox_material_cursor*
+
+Customize the cursor color, only works in GUI clients.
+
+    Available values: `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
+    `'aqua'`, `'blue'`, `'purple'`
+    Default value: `'auto'`
+
+E.g.~
+>
+    let g:gruvbox_material_cursor = 'green'
+<
+------------------------------------------------------------------------------
                                     *g:gruvbox_material_transparent_background*
 
 To use transparent background, set this option to `1`.

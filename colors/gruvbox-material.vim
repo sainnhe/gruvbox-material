@@ -24,6 +24,7 @@ let s:configuration.transparent_background = get(g:, 'gruvbox_material_transpare
 let s:configuration.disable_italic_comment = get(g:, 'gruvbox_material_disable_italic_comment', 0)
 let s:configuration.enable_bold = get(g:, 'gruvbox_material_enable_bold', 0)
 let s:configuration.enable_italic = get(g:, 'gruvbox_material_enable_italic', 0)
+let s:configuration.cursor = get(g:, 'gruvbox_material_cursor', 'auto')
 let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'grey background')
 let s:configuration.menu_selection_background = get(g:, 'gruvbox_material_menu_selection_background', 'grey')
 let s:configuration.current_word = get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold')
@@ -516,8 +517,31 @@ else
 endif
 call s:HL('ColorColumn', s:palette.none, s:palette.bg2)
 call s:HL('Conceal', s:palette.grey, s:palette.none)
-call s:HL('Cursor', s:palette.none, s:palette.none, 'reverse')
-call s:HL('lCursor', s:palette.none, s:palette.none, 'reverse')
+if s:configuration.cursor ==# 'auto'
+  call s:HL('Cursor', s:palette.none, s:palette.none, 'reverse')
+  call s:HL('lCursor', s:palette.none, s:palette.none, 'reverse')
+elseif s:configuration.cursor ==# 'red'
+  call s:HL('Cursor', s:palette.bg0, s:palette.red)
+  call s:HL('lCursor', s:palette.bg0, s:palette.red)
+elseif s:configuration.cursor ==# 'orange'
+  call s:HL('Cursor', s:palette.bg0, s:palette.orange)
+  call s:HL('lCursor', s:palette.bg0, s:palette.orange)
+elseif s:configuration.cursor ==# 'yellow'
+  call s:HL('Cursor', s:palette.bg0, s:palette.yellow)
+  call s:HL('lCursor', s:palette.bg0, s:palette.yellow)
+elseif s:configuration.cursor ==# 'green'
+  call s:HL('Cursor', s:palette.bg0, s:palette.green)
+  call s:HL('lCursor', s:palette.bg0, s:palette.green)
+elseif s:configuration.cursor ==# 'aqua'
+  call s:HL('Cursor', s:palette.bg0, s:palette.aqua)
+  call s:HL('lCursor', s:palette.bg0, s:palette.aqua)
+elseif s:configuration.cursor ==# 'blue'
+  call s:HL('Cursor', s:palette.bg0, s:palette.blue)
+  call s:HL('lCursor', s:palette.bg0, s:palette.blue)
+elseif s:configuration.cursor ==# 'purple'
+  call s:HL('Cursor', s:palette.bg0, s:palette.purple)
+  call s:HL('lCursor', s:palette.bg0, s:palette.purple)
+endif
 call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
 call s:HL('CursorLine', s:palette.none, s:palette.bg1)
 call s:HL('LineNr', s:palette.bg_grey0, s:palette.none)
