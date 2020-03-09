@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `g:gruvbox_material_cursor`.
+- Optimize `Yggdroot/indentLine`.
+
 ### Changed
 
 - Adjust some background colors used in the light variant.
