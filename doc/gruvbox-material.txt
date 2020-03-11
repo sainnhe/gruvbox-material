@@ -242,10 +242,10 @@ Customize the color palette used in this color scheme.
 There are 3 available palettes:
 
 - `material`: Carefully designed to have a soft contrast.
-- `median`: Color palette obtained by calculating the median of the other two.
+- `mix`: Color palette obtained by calculating the mean of the other two.
 - `original`: The color palette used in the original gruvbox.
 
-    Available values: `'material'`, `'median'`, `'original'` or a custom palette
+    Available values: `'material'`, `'mix'`, `'original'` or a custom palette
     Default value: `'material'`
 
 E.g.~

@@ -16,13 +16,13 @@ There are 3 palettes available in this color scheme(click to preview):
 </details>
 
 <details>
-  <summary><code>median</code>: Color palette obtained by calculating the median of the other two.</summary>
+  <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two.</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
-|  𝐇𝐚𝐫𝐝  |   ![median-hard-dark](https://user-images.githubusercontent.com/37491630/76383368-826f7780-6353-11ea-8094-b593eb5f1e10.png)   |   ![median-hard-light](https://user-images.githubusercontent.com/37491630/76383372-88655880-6353-11ea-9441-78d159600faf.png)   |
-| 𝐌𝐞𝐝𝐢𝐮𝐦 |  ![median-medium-dark](https://user-images.githubusercontent.com/37491630/76383370-84393b00-6353-11ea-88de-804a781d3142.png)  |  ![median-medium-light](https://user-images.githubusercontent.com/37491630/76383375-8ac7b280-6353-11ea-94a8-62e3845203bc.png)  |
-|  𝐒𝐨𝐟𝐭  |   ![median-soft-dark](https://user-images.githubusercontent.com/37491630/76383371-869b9500-6353-11ea-923d-9011bbe6bcad.png)   |   ![median-soft-light](https://user-images.githubusercontent.com/37491630/76383380-8c917600-6353-11ea-8530-a67932a6a2ec.png)   |
+|  𝐇𝐚𝐫𝐝  |   ![mix-hard-dark](https://user-images.githubusercontent.com/37491630/76383368-826f7780-6353-11ea-8094-b593eb5f1e10.png)   |   ![mix-hard-light](https://user-images.githubusercontent.com/37491630/76383372-88655880-6353-11ea-9441-78d159600faf.png)   |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 |  ![mix-medium-dark](https://user-images.githubusercontent.com/37491630/76383370-84393b00-6353-11ea-88de-804a781d3142.png)  |  ![mix-medium-light](https://user-images.githubusercontent.com/37491630/76383375-8ac7b280-6353-11ea-94a8-62e3845203bc.png)  |
+|  𝐒𝐨𝐟𝐭  |   ![mix-soft-dark](https://user-images.githubusercontent.com/37491630/76383371-869b9500-6353-11ea-923d-9011bbe6bcad.png)   |   ![mix-soft-light](https://user-images.githubusercontent.com/37491630/76383380-8c917600-6353-11ea-8530-a67932a6a2ec.png)   |
 
 </details>
 

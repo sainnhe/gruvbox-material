@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.1.1] - 2020-03-11
+
+### Changed
+
+- Rename `median` as `mix`.
+
 ## [1.1.0] - 2020-03-11
 
 ### Added
@@ -182,8 +188,9 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.0...HEAD
-[1.0.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.1...v1.1.0
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.4...v1.0.0
 [0.3.4]: https://github.com/sainnhe/gruvbox-material/compare/v0.3.3...v0.3.4

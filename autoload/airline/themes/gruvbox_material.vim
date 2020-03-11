@@ -12,7 +12,7 @@ let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium'
 let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
 
 if type(s:configuration.palette) == 4
-    let s:configuration.palette = 'median'
+    let s:configuration.palette = 'mix'
 endif
 
 if s:configuration.palette ==# 'material'
@@ -55,7 +55,7 @@ if s:configuration.palette ==# 'material'
         let s:red_fg    = [ '#c14a4a', 88 ]
         let s:blue_fg   = [ '#45707a', 24 ]
     endif
-elseif s:configuration.palette ==# 'median'
+elseif s:configuration.palette ==# 'mix'
     if &background ==# 'dark'
         if s:configuration.background ==# 'hard'
             let s:darker    = [ '#282828', 235 ]

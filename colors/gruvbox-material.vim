@@ -227,7 +227,7 @@ else
               \ }
       endif
     endif  " }}}
-  elseif s:configuration.palette ==# 'median'
+  elseif s:configuration.palette ==# 'mix'
     if s:configuration.background ==# 'hard'  " {{{
       if &background ==# 'dark'
         let s:palette = {
