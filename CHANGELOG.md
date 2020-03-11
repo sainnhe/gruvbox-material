@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 - Add `g:gruvbox_material_cursor`.
 - Optimize `Yggdroot/indentLine`.
+- Add `median` palette.
 
 ### Changed
 
