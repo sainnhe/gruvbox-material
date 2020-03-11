@@ -37,7 +37,7 @@ There are 3 palettes available in this color scheme(click to preview):
 
 </details>
 
-This color scheme uses the `material` palette by default, but you can use a global variable to switch to another palette.
+This color scheme uses the `material` palette by default, you can use a global variable to switch to another palette.
 
 ### Features
 
