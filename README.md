@@ -1,6 +1,11 @@
-<h1 align="center">
-𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥
-</h1>
+## Introduction
+
+Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/gruvbox), the contrast is adjusted to be softer in order to protect developers' eyes.
+
+There are 3 palettes available in this color scheme(click to preview):
+
+<details>
+  <summary><code>material</code>: Carefully designed to have a soft contrast.</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
@@ -8,9 +13,10 @@
 | 𝐌𝐞𝐝𝐢𝐮𝐦 | ![material-medium-dark](https://user-images.githubusercontent.com/37491630/75227139-8cb34280-57a5-11ea-86d6-3d3f6a2475eb.png) | ![material-medium-light](https://user-images.githubusercontent.com/37491630/75227141-8de46f80-57a5-11ea-820a-9394ab9d09aa.png) |
 |  𝐒𝐨𝐟𝐭  |  ![material-soft-dark](https://user-images.githubusercontent.com/37491630/75227149-9046c980-57a5-11ea-8633-bf4f31e533d0.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/37491630/75227157-92108d00-57a5-11ea-8b13-b2130bff60d8.png)  |
 
-<h1 align="center">
-𝐌𝐞𝐝𝐢𝐚𝐧
-</h1>
+</details>
+
+<details>
+  <summary><code>median</code>: Color palette obtained by calculating the median of the other two.</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
@@ -18,9 +24,10 @@
 | 𝐌𝐞𝐝𝐢𝐮𝐦 |  ![median-medium-dark](https://user-images.githubusercontent.com/37491630/76383370-84393b00-6353-11ea-88de-804a781d3142.png)  |  ![median-medium-light](https://user-images.githubusercontent.com/37491630/76383375-8ac7b280-6353-11ea-94a8-62e3845203bc.png)  |
 |  𝐒𝐨𝐟𝐭  |   ![median-soft-dark](https://user-images.githubusercontent.com/37491630/76383371-869b9500-6353-11ea-923d-9011bbe6bcad.png)   |   ![median-soft-light](https://user-images.githubusercontent.com/37491630/76383380-8c917600-6353-11ea-8530-a67932a6a2ec.png)   |
 
-<h1 align="center">
-𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥
-</h1>
+</details>
+
+<details>
+  <summary><code>original</code>: The color palette used in the original gruvbox.</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
@@ -28,9 +35,11 @@
 | 𝐌𝐞𝐝𝐢𝐮𝐦 | ![original-medium-dark](https://user-images.githubusercontent.com/37491630/76383385-9024fd00-6353-11ea-99c1-7bba4f796115.png) | ![original-medium-light](https://user-images.githubusercontent.com/37491630/76383393-94511a80-6353-11ea-84ea-551b44f0d5bd.png) |
 |  𝐒𝐨𝐟𝐭  |  ![original-soft-dark](https://user-images.githubusercontent.com/37491630/76383387-91562a00-6353-11ea-90a0-daac8653dfd0.png)  |  ![original-soft-light](https://user-images.githubusercontent.com/37491630/76383396-95824780-6353-11ea-9b36-302b88fef429.png)  |
 
-Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/gruvbox), the contrast is adjusted to be softer in order to protect developers' eyes.
+</details>
 
-## Features
+This color scheme uses the `material` palette by default, but you can use a global variable to switch to another palette.
+
+### Features
 
 - Carefully designed color palette for eye protection.
 - Switch back to the original color palette whenever you like.
