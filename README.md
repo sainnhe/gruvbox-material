@@ -39,6 +39,8 @@ There are 3 palettes available in this color scheme:
 
 This color scheme uses the `material` palette by default, you can use a global variable to switch to another palette.
 
+For the definition of all color palettes, see [colors/gruvbox-material.vim](./colors/gruvbox-material.vim) and [src/palette](https://github.com/sainnhe/gruvbox-material-vscode/tree/master/src/palette).
+
 ### Features
 
 - Carefully designed color palette for eye protection.
