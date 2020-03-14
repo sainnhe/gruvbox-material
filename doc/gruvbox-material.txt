@@ -404,12 +404,5 @@ A:~
 
     3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
 
-------------------------------------------------------------------------------
-Q:~
-    What's your status line configuration?
-
-A:~
-    Check this [gist](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb).
-
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:noet:fen:fdm=marker:fmr={{{,}}}:
