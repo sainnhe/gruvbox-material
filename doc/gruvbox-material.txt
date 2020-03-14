@@ -395,6 +395,14 @@ A:~
 
 ------------------------------------------------------------------------------
 Q:~
+    I can't apply airline/lightline color scheme.
+
+A:~
+    The name is `gruvbox_material` instead of `gruvbox-material`. I have to
+    use underline for some grammatical reasons.
+
+------------------------------------------------------------------------------
+Q:~
     How to enable cursive italic keywords?
 
 A:~
