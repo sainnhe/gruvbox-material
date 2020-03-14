@@ -2,10 +2,10 @@
 
 Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/gruvbox), the contrast is adjusted to be softer in order to protect developers' eyes.
 
-There are 3 palettes available in this color scheme(click to preview):
+There are 3 palettes available in this color scheme:
 
 <details>
-  <summary><code>material</code>: Carefully designed to have a soft contrast.</summary>
+  <summary><code>material</code>: Carefully designed to have a soft contrast(<b>click on this line to preview</b>)</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
@@ -16,7 +16,7 @@ There are 3 palettes available in this color scheme(click to preview):
 </details>
 
 <details>
-  <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two.</summary>
+  <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two(<b>click on this line to preview</b>)</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
@@ -27,7 +27,7 @@ There are 3 palettes available in this color scheme(click to preview):
 </details>
 
 <details>
-  <summary><code>original</code>: The color palette used in the original gruvbox.</summary>
+  <summary><code>original</code>: The color palette used in the original gruvbox(<b>click on this line to preview</b>)</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
 | :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
