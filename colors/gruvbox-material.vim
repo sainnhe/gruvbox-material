@@ -28,6 +28,7 @@ let s:configuration.enable_italic = get(g:, 'gruvbox_material_enable_italic', 0)
 let s:configuration.cursor = get(g:, 'gruvbox_material_cursor', 'auto')
 let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'grey background')
 let s:configuration.menu_selection_background = get(g:, 'gruvbox_material_menu_selection_background', 'grey')
+let s:configuration.cursor_line_contrast = get(g:, 'gruvbox_material_cursor_line_contrast', 'lower')
 let s:configuration.current_word = get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold')
 " }}}
 " Palette: {{{
@@ -741,13 +742,24 @@ elseif s:configuration.cursor ==# 'purple'
   call s:HL('Cursor', s:palette.bg0, s:palette.purple)
   call s:HL('lCursor', s:palette.bg0, s:palette.purple)
 endif
-call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
-call s:HL('CursorLine', s:palette.none, s:palette.bg1)
-call s:HL('LineNr', s:palette.bg_grey0, s:palette.none)
-if &relativenumber == 1 && &cursorline == 0
-  call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.none)
+if s:configuration.cursor_line_contrast ==# 'lower'
+  call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
+  call s:HL('CursorLine', s:palette.none, s:palette.bg1)
+  call s:HL('LineNr', s:palette.bg_grey0, s:palette.none)
+  if &relativenumber == 1 && &cursorline == 0
+    call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.none)
+  else
+    call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.bg1)
+  endif
 else
-  call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.bg1)
+  call s:HL('CursorColumn', s:palette.none, s:palette.bg2)
+  call s:HL('CursorLine', s:palette.none, s:palette.bg2)
+  call s:HL('LineNr', s:palette.bg_grey0, s:palette.none)
+  if &relativenumber == 1 && &cursorline == 0
+    call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.none)
+  else
+    call s:HL('CursorLineNr', s:palette.bg_grey1, s:palette.bg2)
+  endif
 endif
 call s:HL('DiffAdd', s:palette.none, s:palette.bg_green1)
 call s:HL('DiffChange', s:palette.none, s:palette.bg_blue1)

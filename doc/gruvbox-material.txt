@@ -214,6 +214,20 @@ E.g.~
     let g:gruvbox_material_menu_selection_background = 'green'
 <
 ------------------------------------------------------------------------------
+                                      *g:gruvbox_material_cursor_line_contrast*
+
+By default, the background contrast of `CursorLine`, `CursorColumn` and
+`CursorLineNr` is lower than `SignColumn`. If you want to make them use the
+same background color as `SignColumn`, set this option to `'higher'`
+
+    Available values: `'lower'`, `'higher'`
+    Default value: `'lower'`
+
+E.g.~
+>
+    let g:gruvbox_material_cursor_line_contrast = 'higher'
+<
+------------------------------------------------------------------------------
                                               *g:gruvbox_material_current_word*
 
 Some plugins can highlight the word under current cursor, you can use this

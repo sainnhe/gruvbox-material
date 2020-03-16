@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `g:gruvbox_material_cursor_line_contrast`
+
 ## [1.1.1] - 2020-03-11
 
 ### Changed
