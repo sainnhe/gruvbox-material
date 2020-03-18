@@ -172,6 +172,10 @@ To apply it without reloading:
 
 **Note**: The following projects are sorted by alphabet.
 
+### IDE
+
+- [Intellij IDEA](https://github.com/Happin3ss/gruvbox-material) *(WIP)* by [@Happin3ss](https://github.com/Happin3ss)
+
 ### Code Editors
 
 - [Vim](https://github.com/sainnhe/gruvbox-material) by [@sainnhe](https://github.com/sainnhe)
