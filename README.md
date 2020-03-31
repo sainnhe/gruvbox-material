@@ -195,6 +195,13 @@ To apply it without reloading:
 - [Tmux](https://gist.github.com/sainnhe/b8240bc047313fd6185bb8052df5a8fb) by [@sainnhe](https://github.com/sainnhe/)
 - [Zsh](https://gist.github.com/sainnhe/f92372e14c59750b6ac8dc927ba9f7fe) by [@sainnhe](https://github.com/sainnhe/)
 
+## More Color Schemes
+
+- [Forest Night](https://github.com/sainnhe/forest-night)
+- [Edge](https://github.com/sainnhe/edge)
+- [Sonokai](https://github.com/sainnhe/sonokai)
+
+
 ## Contributing
 
 If you want to port this color scheme to other apps, see [colors/gruvbox-material.vim](./colors/gruvbox-material.vim) and [src/palette](https://github.com/sainnhe/gruvbox-material-vscode/tree/master/src/palette) for the definition of all color palettes.
