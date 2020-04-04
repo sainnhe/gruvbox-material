@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Add `g:gruvbox_material_cursor_line_contrast`
+- Optimize [arakashic/chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
 
 ## [1.1.1] - 2020-03-11
 
