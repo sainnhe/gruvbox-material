@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Add `g:gruvbox_material_cursor_line_contrast`
 - Optimize [arakashic/chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
 - Optimize [numirias/semshi](https://github.com/numirias/semshi)
+- Optimize [jackguo380/vim-lsp-cxx-highlight](https://github.com/jackguo380/vim-lsp-cxx-highlight)
 
 ## [1.1.1] - 2020-03-11
 
