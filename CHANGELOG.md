@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Optimize Coc.
+- Optimize gitcommit.
 
 ## [1.1.2] - 2020-04-04
 
