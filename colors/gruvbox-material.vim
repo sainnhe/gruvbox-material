@@ -2065,6 +2065,11 @@ highlight! link plugSha Green
 " }}}
 " neoclide/coc.nvim{{{
 call s:HL('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
+call s:HL('CocHintHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
+call s:HL('CocErrorFloat', s:palette.red, s:palette.bg3)
+call s:HL('CocWarningFloat', s:palette.yellow, s:palette.bg3)
+call s:HL('CocInfoFloat', s:palette.blue, s:palette.bg3)
+call s:HL('CocHintFloat', s:palette.aqua, s:palette.bg3)
 if s:configuration.current_word ==# 'bold'
   call s:HL('CocHighlightText', s:palette.none, s:palette.none, 'bold')
 elseif s:configuration.current_word ==# 'underline'
