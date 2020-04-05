@@ -1835,6 +1835,20 @@ highlight! link clojureMeta Yellow
 highlight! link clojureDeref Yellow
 " }}}
 " }}}
+" Matlab: {{{
+" builtin: {{{
+highlight! link matlabSemicolon Fg
+highlight! link matlabFunction RedItalic
+highlight! link matlabImplicit GreenBold
+highlight! link matlabDelimiter Fg
+highlight! link matlabOperator GreenBold
+highlight! link matlabArithmeticOperator Orange
+highlight! link matlabArithmeticOperator Orange
+highlight! link matlabRelationalOperator Orange
+highlight! link matlabRelationalOperator Orange
+highlight! link matlabLogicalOperator Orange
+" }}}
+" }}}
 " Shell: {{{
 " builtin: http://www.drchip.org/astronaut/vim/index.html#SYNTAX_SH{{{
 highlight! link shRange Fg

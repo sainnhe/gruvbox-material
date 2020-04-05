@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Optimize gitcommit.
 - Add hi groups for builtin lsp and checkhealth.
 - Optimize DOS INI.
+- Optimize Matlab.
 
 ## [1.1.2] - 2020-04-04
 
