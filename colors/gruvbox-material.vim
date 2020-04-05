@@ -807,10 +807,10 @@ elseif s:configuration.visual ==# 'reverse'
   call s:HL('Visual', s:palette.none, s:palette.none, 'reverse')
   call s:HL('VisualNOS', s:palette.none, s:palette.none, 'reverse')
 endif
-call s:HL('ToolbarLine', s:palette.none, s:palette.bg2)
-call s:HL('ToolbarButton', s:palette.fg1, s:palette.bg5, 'bold')
-call s:HL('QuickFixLine', s:palette.yellow, s:palette.none, 'reverse')
+call s:HL('QuickFixLine', s:palette.purple, s:palette.none, 'bold')
 call s:HL('Debug', s:palette.orange, s:palette.none)
+call s:HL('debugPC', s:palette.bg0, s:palette.green)
+call s:HL('debugBreakpoint', s:palette.bg0, s:palette.red)
 if has('nvim')
   highlight! link healthError Red
   highlight! link healthSuccess Green
