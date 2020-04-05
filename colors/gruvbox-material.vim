@@ -737,6 +737,7 @@ endif
 highlight! link vCursor Cursor
 highlight! link iCursor Cursor
 highlight! link lCursor Cursor
+highlight! link CursorIM Cursor
 if s:configuration.cursor_line_contrast ==# 'lower'
   call s:HL('CursorColumn', s:palette.none, s:palette.bg1)
   call s:HL('CursorLine', s:palette.none, s:palette.bg1)
@@ -806,7 +807,6 @@ elseif s:configuration.visual ==# 'reverse'
   call s:HL('Visual', s:palette.none, s:palette.none, 'reverse')
   call s:HL('VisualNOS', s:palette.none, s:palette.none, 'reverse')
 endif
-call s:HL('CursorIM', s:palette.none, s:palette.none, 'reverse')
 call s:HL('ToolbarLine', s:palette.none, s:palette.bg2)
 call s:HL('ToolbarButton', s:palette.fg1, s:palette.bg5, 'bold')
 call s:HL('QuickFixLine', s:palette.yellow, s:palette.none, 'reverse')
