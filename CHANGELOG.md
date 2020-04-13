@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Adjust `Search` and `IncSearch`.
+
 ### Added
 
 - Optimize Coc.

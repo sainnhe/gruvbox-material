@@ -703,8 +703,6 @@ if s:configuration.transparent_background
   call s:HL('FoldColumn', s:palette.grey, s:palette.none)
   call s:HL('Folded', s:palette.grey, s:palette.none)
   call s:HL('SignColumn', s:palette.fg0, s:palette.none)
-  call s:HL('IncSearch', s:palette.none, s:palette.none, 'reverse,bold,underline')
-  call s:HL('Search', s:palette.none, s:palette.none, 'reverse')
 else
   call s:HL('Normal', s:palette.fg0, s:palette.bg0)
   call s:HL('Terminal', s:palette.fg0, s:palette.bg0)
@@ -712,9 +710,9 @@ else
   call s:HL('FoldColumn', s:palette.grey, s:palette.bg2)
   call s:HL('Folded', s:palette.grey, s:palette.bg2)
   call s:HL('SignColumn', s:palette.fg0, s:palette.bg2)
-  call s:HL('IncSearch', s:palette.none, s:palette.none, 'reverse')
-  call s:HL('Search', s:palette.none, s:palette.bg_blue2)
 endif
+call s:HL('IncSearch', s:palette.bg0, s:palette.bg_red)
+call s:HL('Search', s:palette.bg0, s:palette.bg_green)
 call s:HL('ColorColumn', s:palette.none, s:palette.bg2)
 call s:HL('Conceal', s:palette.grey, s:palette.none)
 if s:configuration.cursor ==# 'auto'
