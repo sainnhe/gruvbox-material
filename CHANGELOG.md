@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - Add hi groups for builtin lsp and checkhealth.
 - Optimize DOS INI.
 - Optimize Matlab.
+- Optimize Airline.
 
 ## [1.1.2] - 2020-04-04
 
