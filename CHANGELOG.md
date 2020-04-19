@@ -4,10 +4,6 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-### Changed
-
-- Adjust `Search` and `IncSearch`.
-
 ### Added
 
 - Optimize Coc.
@@ -17,6 +13,11 @@ All notable changes to this project will be documented in this file.
 - Optimize Matlab.
 - Optimize Airline.
 - Optimize `cohama/agit.vim`.
+
+### Changed
+
+- Adjust `Search` and `IncSearch`.
+- Adjust `NonText`, `Whitespace` and `SpecialKey`.
 
 ## [1.1.2] - 2020-04-04
 
