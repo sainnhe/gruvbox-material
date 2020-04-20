@@ -703,6 +703,7 @@ if s:configuration.transparent_background
   call s:HL('FoldColumn', s:palette.grey, s:palette.none)
   call s:HL('Folded', s:palette.grey, s:palette.none)
   call s:HL('SignColumn', s:palette.fg0, s:palette.none)
+  call s:HL('ToolbarLine', s:palette.fg0, s:palette.none)
 else
   call s:HL('Normal', s:palette.fg0, s:palette.bg0)
   call s:HL('Terminal', s:palette.fg0, s:palette.bg0)
@@ -710,6 +711,7 @@ else
   call s:HL('FoldColumn', s:palette.grey, s:palette.bg2)
   call s:HL('Folded', s:palette.grey, s:palette.bg2)
   call s:HL('SignColumn', s:palette.fg0, s:palette.bg2)
+  call s:HL('ToolbarLine', s:palette.fg1, s:palette.bg3)
 endif
 call s:HL('IncSearch', s:palette.bg0, s:palette.bg_red)
 call s:HL('Search', s:palette.bg0, s:palette.bg_green)
@@ -811,6 +813,7 @@ call s:HL('QuickFixLine', s:palette.purple, s:palette.none, 'bold')
 call s:HL('Debug', s:palette.orange, s:palette.none)
 call s:HL('debugPC', s:palette.bg0, s:palette.green)
 call s:HL('debugBreakpoint', s:palette.bg0, s:palette.red)
+call s:HL('ToolbarButton', s:palette.bg0, s:palette.bg_grey1)
 if has('nvim')
   highlight! link healthError Red
   highlight! link healthSuccess Green
