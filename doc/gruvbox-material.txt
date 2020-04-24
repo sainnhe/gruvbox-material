@@ -270,7 +270,7 @@ E.g.~
     " use the color palette of the original gruvbox
     let g:gruvbox_material_palette = 'original'
 
-    " if you want a darker background, for example: '#101010'
+    " if you prefer a darker background, for example: '#101010'
     " {{{
     let g:gruvbox_material_palette = {
           \ 'bg0':        ['#101010',   '234',  'Black'],
@@ -322,8 +322,6 @@ E.g.~
 >
     let g:gruvbox_material_statusline_style = 'original'
 <
-Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
-
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
 
