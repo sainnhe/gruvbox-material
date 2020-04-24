@@ -34,6 +34,7 @@ if s:configuration.palette ==# 'material'
         let s:yellow    = [ '#e78a4e', 208 ]
         let s:white     = [ '#ddc7a1', 223 ]
         let s:red_fg    = [ '#ea6962', 167 ]
+        let s:green_fg  = [ '#a9b665', 142 ]
         let s:blue_fg   = [ '#7daea3', 109 ]
     else
         if s:configuration.background ==# 'hard'
@@ -53,6 +54,7 @@ if s:configuration.palette ==# 'material'
         let s:yellow    = [ '#a96b2c', 130 ]
         let s:white     = [ '#4f3829', 241 ]
         let s:red_fg    = [ '#c14a4a', 88 ]
+        let s:green_fg  = [ '#6c782e', 100 ]
         let s:blue_fg   = [ '#45707a', 24 ]
     endif
 elseif s:configuration.palette ==# 'mix'
@@ -74,6 +76,7 @@ elseif s:configuration.palette ==# 'mix'
         let s:yellow    = [ '#e9b143', 208 ]
         let s:white     = [ '#e2cca9', 223 ]
         let s:red_fg    = [ '#f2594b', 88 ]
+        let s:green_fg  = [ '#b0b846', 142 ]
         let s:blue_fg   = [ '#80aa9e', 24 ]
     else
         if s:configuration.background ==# 'hard'
@@ -93,6 +96,7 @@ elseif s:configuration.palette ==# 'mix'
         let s:yellow    = [ '#a96b2c', 130 ]
         let s:white     = [ '#514036', 241 ]
         let s:red_fg    = [ '#af2528', 88 ]
+        let s:green_fg  = [ '#72761e', 100 ]
         let s:blue_fg   = [ '#266b79', 24 ]
     endif
 elseif s:configuration.palette ==# 'original'
@@ -114,6 +118,7 @@ elseif s:configuration.palette ==# 'original'
         let s:yellow    = [ '#fabd2f', 208 ]
         let s:white     = [ '#ebdbb2', 223 ]
         let s:red_fg    = [ '#fb4934', 88 ]
+        let s:green_fg  = [ '#b8bb26', 142 ]
         let s:blue_fg   = [ '#83a598', 24 ]
     else
         if s:configuration.background ==# 'hard'
@@ -133,6 +138,7 @@ elseif s:configuration.palette ==# 'original'
         let s:yellow    = [ '#a96b2c', 130 ]
         let s:white     = [ '#3c3836', 241 ]
         let s:red_fg    = [ '#9d0006', 88 ]
+        let s:green_fg  = [ '#79740e', 100 ]
         let s:blue_fg   = [ '#076678', 24 ]
     endif
 endif
@@ -155,7 +161,7 @@ let s:normal_sub_fg = s:white
 let s:normal_sub_bg = s:darkgrey
 let s:normal_mid_fg = s:white
 let s:normal_mid_bg = s:darker
-let s:normal_mod_fg = s:blue_fg
+let s:normal_mod_fg = s:green_fg
 let s:normal_mod_bg = s:darker
 
 let s:insert_side_fg = s:dark
@@ -164,7 +170,7 @@ let s:insert_sub_fg = s:white
 let s:insert_sub_bg = s:darkgrey
 let s:insert_mid_fg = s:white
 let s:insert_mid_bg = s:darker
-let s:insert_mod_fg = s:blue_fg
+let s:insert_mod_fg = s:green_fg
 let s:insert_mod_bg = s:darker
 
 let s:visual_side_fg = s:dark
@@ -173,7 +179,7 @@ let s:visual_sub_fg = s:white
 let s:visual_sub_bg = s:darkgrey
 let s:visual_mid_fg = s:white
 let s:visual_mid_bg = s:darker
-let s:visual_mod_fg = s:blue_fg
+let s:visual_mod_fg = s:green_fg
 let s:visual_mod_bg = s:darker
 
 let s:replace_side_fg = s:dark
@@ -182,7 +188,7 @@ let s:replace_sub_fg = s:white
 let s:replace_sub_bg = s:darkgrey
 let s:replace_mid_fg = s:white
 let s:replace_mid_bg = s:darker
-let s:replace_mod_fg = s:blue_fg
+let s:replace_mod_fg = s:green_fg
 let s:replace_mod_bg = s:darker
 
 let s:inactive_side_fg = s:white

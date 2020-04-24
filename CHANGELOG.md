@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 
 - Adjust `Search` and `IncSearch`.
 - Adjust `NonText`, `Whitespace` and `SpecialKey`.
+- Use green in modified fg.
 
 ## [1.1.2] - 2020-04-04
 
