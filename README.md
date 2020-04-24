@@ -80,7 +80,9 @@ Put something like this in your vimrc:
 
 ```vim
 " important!!
-set termguicolors
+if has('termguicolors')
+  set termguicolors
+endif
 
 " for dark version
 set background=dark
