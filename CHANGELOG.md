@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Optimize Airline.
 - Optimize `cohama/agit.vim`.
 - Add `ToolbarLine` and `ToolbarButton`.
+- Support command line mode for airline.
 
 ### Changed
 

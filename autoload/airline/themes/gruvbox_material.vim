@@ -35,7 +35,7 @@ if s:configuration.palette ==# 'material'
         let s:white     = [ '#ddc7a1', 223 ]
         let s:red_fg    = [ '#ea6962', 167 ]
         let s:green_fg  = [ '#a9b665', 142 ]
-        let s:blue_fg   = [ '#7daea3', 109 ]
+        let s:blue      = [ '#7daea3', 109 ]
     else
         if s:configuration.background ==# 'hard'
             let s:darker    = [ '#f3eac7', 223 ]
@@ -55,7 +55,7 @@ if s:configuration.palette ==# 'material'
         let s:white     = [ '#4f3829', 241 ]
         let s:red_fg    = [ '#c14a4a', 88 ]
         let s:green_fg  = [ '#6c782e', 100 ]
-        let s:blue_fg   = [ '#45707a', 24 ]
+        let s:blue      = [ '#45707a', 24 ]
     endif
 elseif s:configuration.palette ==# 'mix'
     if &background ==# 'dark'
@@ -77,7 +77,7 @@ elseif s:configuration.palette ==# 'mix'
         let s:white     = [ '#e2cca9', 223 ]
         let s:red_fg    = [ '#f2594b', 88 ]
         let s:green_fg  = [ '#b0b846', 142 ]
-        let s:blue_fg   = [ '#80aa9e', 24 ]
+        let s:blue      = [ '#80aa9e', 24 ]
     else
         if s:configuration.background ==# 'hard'
             let s:darker    = [ '#f3eac7', 223 ]
@@ -97,7 +97,7 @@ elseif s:configuration.palette ==# 'mix'
         let s:white     = [ '#514036', 241 ]
         let s:red_fg    = [ '#af2528', 88 ]
         let s:green_fg  = [ '#72761e', 100 ]
-        let s:blue_fg   = [ '#266b79', 24 ]
+        let s:blue      = [ '#266b79', 24 ]
     endif
 elseif s:configuration.palette ==# 'original'
     if &background ==# 'dark'
@@ -119,7 +119,7 @@ elseif s:configuration.palette ==# 'original'
         let s:white     = [ '#ebdbb2', 223 ]
         let s:red_fg    = [ '#fb4934', 88 ]
         let s:green_fg  = [ '#b8bb26', 142 ]
-        let s:blue_fg   = [ '#83a598', 24 ]
+        let s:blue      = [ '#83a598', 24 ]
     else
         if s:configuration.background ==# 'hard'
             let s:darker    = [ '#f3eac7', 223 ]
@@ -139,7 +139,7 @@ elseif s:configuration.palette ==# 'original'
         let s:white     = [ '#3c3836', 241 ]
         let s:red_fg    = [ '#9d0006', 88 ]
         let s:green_fg  = [ '#79740e', 100 ]
-        let s:blue_fg   = [ '#076678', 24 ]
+        let s:blue      = [ '#076678', 24 ]
     endif
 endif
 "}}}
@@ -190,6 +190,15 @@ let s:replace_mid_fg = s:white
 let s:replace_mid_bg = s:darker
 let s:replace_mod_fg = s:green_fg
 let s:replace_mod_bg = s:darker
+
+let s:commandline_side_fg = s:dark
+let s:commandline_side_bg = s:blue
+let s:commandline_sub_fg = s:white
+let s:commandline_sub_bg = s:darkgrey
+let s:commandline_mid_fg = s:white
+let s:commandline_mid_bg = s:darker
+let s:commandline_mod_fg = s:green_fg
+let s:commandline_mod_bg = s:darker
 
 let s:inactive_side_fg = s:white
 let s:inactive_side_bg = s:darkgrey
@@ -274,6 +283,22 @@ let g:airline#themes#gruvbox_material#palette.visual.airline_error_red = [ s:err
 let g:airline#themes#gruvbox_material#palette.visual.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual_modified = {
             \ 'airline_c': [ s:visual_mod_fg[0] , s:visual_mod_bg[0] , s:visual_mod_fg[1] , s:visual_mod_bg[1] ] ,
+            \ }
+
+" Command Line mode
+let s:R1 = [ s:commandline_side_fg[0] , s:commandline_side_bg[0] , s:commandline_side_fg[1] , s:commandline_side_bg[1] ]
+let s:R2 = [ s:commandline_sub_fg[0] , s:commandline_sub_bg[0] , s:commandline_sub_fg[1] , s:commandline_sub_bg[1] ]
+let s:R3 = [ s:commandline_mid_fg[0] , s:commandline_mid_bg[0] , s:commandline_mid_fg[1] , s:commandline_mid_bg[1] ]
+
+let g:airline#themes#gruvbox_material#palette.commandline = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+let g:airline#themes#gruvbox_material#palette.commandline.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline_modified = {
+            \ 'airline_c': [ s:commandline_mod_fg[0] , s:commandline_mod_bg[0] , s:commandline_mod_fg[1] , s:commandline_mod_bg[1] ] ,
             \ }
 
 " Inactive
