@@ -25,17 +25,20 @@ Manually~
 
     1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/gruvbox-material.git`
 
-    2. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to
+    2. Copy `/path/to/gruvbox-material/autoload/gruvbox_material.vim` to
+    `~/.vim/autoload`.
+
+    3. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to
     `~/.vim/colors/` .
 
-    3. Copy `/path/to/gruvbox-material/doc/gruvbox-material.txt` to
+    4. Copy `/path/to/gruvbox-material/doc/gruvbox-material.txt` to
     `~/.vim/doc/` and execute `:helptags ~/.vim/doc/` to generate help tags.
 
-    4. To install [airline](https://github.com/vim-airline/vim-airline) theme,
+    5. To install [airline](https://github.com/vim-airline/vim-airline) theme,
     copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim`
     to `~/.vim/autoload/airline/themes/gruvbox_material.vim` .
 
-    5. To install [lightline](https://github.com/itchyny/lightline.vim) theme,
+    6. To install [lightline](https://github.com/itchyny/lightline.vim) theme,
     copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` 
     to `~/.vim/autoload/lightline/colorscheme/gruvbox_material.vim` .
 
@@ -368,7 +371,7 @@ E.g.~
             \ }
     endif  " }}}
 <
-See `colors/gruvbox-material.vim` for the definition of all palettes.
+See `autoload/gruvbox_material.vim` for the definition of all palettes.
 
 ------------------------------------------------------------------------------
                                     *g:gruvbox_material_lightline_disable_bold*
