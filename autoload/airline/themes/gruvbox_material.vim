@@ -6,208 +6,94 @@
 " License: MIT License
 " =============================================================================
 
-"{{{Palette
+"{{{Initialization
+let s:configuration = {}
+let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
+let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
+
 let s:configuration = {}
 let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
 let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
 
 if type(s:configuration.palette) == 4
-  let s:configuration.palette = 'mix'
-endif
-
-if s:configuration.palette ==# 'material'
-  if &background ==# 'dark'
-    if s:configuration.background ==# 'hard'
-      let s:darker    = [ '#282828', 235 ]
-      let s:darkgrey  = [ '#504945', 239 ]
-    elseif s:configuration.background ==# 'medium'
-      let s:darker    = [ '#32302f', 236 ]
-      let s:darkgrey  = [ '#5a524c', 240 ]
-    elseif s:configuration.background ==# 'soft'
-      let s:darker    = [ '#3c3836', 237 ]
-      let s:darkgrey  = [ '#665c54', 241 ]
-    endif
-    let s:dark      = [ '#282828', 235 ]
-    let s:grey      = [ '#a89984', 246 ]
-    let s:red       = [ '#ea6962', 167 ]
-    let s:green     = [ '#a9b665', 142 ]
-    let s:yellow    = [ '#e78a4e', 208 ]
-    let s:white     = [ '#ddc7a1', 223 ]
-    let s:red_fg    = [ '#ea6962', 167 ]
-    let s:green_fg  = [ '#a9b665', 142 ]
-    let s:blue      = [ '#7daea3', 109 ]
-  else
-    if s:configuration.background ==# 'hard'
-      let s:darker    = [ '#f3eac7', 223 ]
-      let s:darkgrey  = [ '#eee0b7', 250 ]
-    elseif s:configuration.background ==# 'medium'
-      let s:darker    = [ '#f2e5bc', 223 ]
-      let s:darkgrey  = [ '#e5d5ad', 250 ]
-    elseif s:configuration.background ==# 'soft'
-      let s:darker    = [ '#ebdbb2', 223 ]
-      let s:darkgrey  = [ '#dac9a5', 250 ]
-    endif
-    let s:dark      = [ '#ebdbb2', 223 ]
-    let s:grey      = [ '#7c6f64', 243 ]
-    let s:red       = [ '#ae5858', 88 ]
-    let s:green     = [ '#6f8352', 100 ]
-    let s:yellow    = [ '#a96b2c', 130 ]
-    let s:white     = [ '#4f3829', 241 ]
-    let s:red_fg    = [ '#c14a4a', 88 ]
-    let s:green_fg  = [ '#6c782e', 100 ]
-    let s:blue      = [ '#45707a', 24 ]
-  endif
-elseif s:configuration.palette ==# 'mix'
-  if &background ==# 'dark'
-    if s:configuration.background ==# 'hard'
-      let s:darker    = [ '#282828', 235 ]
-      let s:darkgrey  = [ '#504945', 239 ]
-    elseif s:configuration.background ==# 'medium'
-      let s:darker    = [ '#32302f', 236 ]
-      let s:darkgrey  = [ '#5a524c', 240 ]
-    elseif s:configuration.background ==# 'soft'
-      let s:darker    = [ '#3c3836', 237 ]
-      let s:darkgrey  = [ '#665c54', 241 ]
-    endif
-    let s:dark      = [ '#282828', 235 ]
-    let s:grey      = [ '#a89984', 246 ]
-    let s:red       = [ '#f2594b', 167 ]
-    let s:green     = [ '#b0b846', 142 ]
-    let s:yellow    = [ '#e9b143', 208 ]
-    let s:white     = [ '#e2cca9', 223 ]
-    let s:red_fg    = [ '#f2594b', 88 ]
-    let s:green_fg  = [ '#b0b846', 142 ]
-    let s:blue      = [ '#80aa9e', 24 ]
-  else
-    if s:configuration.background ==# 'hard'
-      let s:darker    = [ '#f3eac7', 223 ]
-      let s:darkgrey  = [ '#eee0b7', 250 ]
-    elseif s:configuration.background ==# 'medium'
-      let s:darker    = [ '#f2e5bc', 223 ]
-      let s:darkgrey  = [ '#e5d5ad', 250 ]
-    elseif s:configuration.background ==# 'soft'
-      let s:darker    = [ '#ebdbb2', 223 ]
-      let s:darkgrey  = [ '#dac9a5', 250 ]
-    endif
-    let s:dark      = [ '#ebdbb2', 223 ]
-    let s:grey      = [ '#7c6f64', 243 ]
-    let s:red       = [ '#ae5858', 88 ]
-    let s:green     = [ '#6f8352', 100 ]
-    let s:yellow    = [ '#a96b2c', 130 ]
-    let s:white     = [ '#514036', 241 ]
-    let s:red_fg    = [ '#af2528', 88 ]
-    let s:green_fg  = [ '#72761e', 100 ]
-    let s:blue      = [ '#266b79', 24 ]
-  endif
-elseif s:configuration.palette ==# 'original'
-  if &background ==# 'dark'
-    if s:configuration.background ==# 'hard'
-      let s:darker    = [ '#282828', 235 ]
-      let s:darkgrey  = [ '#504945', 239 ]
-    elseif s:configuration.background ==# 'medium'
-      let s:darker    = [ '#32302f', 236 ]
-      let s:darkgrey  = [ '#5a524c', 240 ]
-    elseif s:configuration.background ==# 'soft'
-      let s:darker    = [ '#3c3836', 237 ]
-      let s:darkgrey  = [ '#665c54', 241 ]
-    endif
-    let s:dark      = [ '#282828', 235 ]
-    let s:grey      = [ '#a89984', 246 ]
-    let s:red       = [ '#fb4934', 167 ]
-    let s:green     = [ '#b8bb26', 142 ]
-    let s:yellow    = [ '#fabd2f', 208 ]
-    let s:white     = [ '#ebdbb2', 223 ]
-    let s:red_fg    = [ '#fb4934', 88 ]
-    let s:green_fg  = [ '#b8bb26', 142 ]
-    let s:blue      = [ '#83a598', 24 ]
-  else
-    if s:configuration.background ==# 'hard'
-      let s:darker    = [ '#f3eac7', 223 ]
-      let s:darkgrey  = [ '#eee0b7', 250 ]
-    elseif s:configuration.background ==# 'medium'
-      let s:darker    = [ '#f2e5bc', 223 ]
-      let s:darkgrey  = [ '#e5d5ad', 250 ]
-    elseif s:configuration.background ==# 'soft'
-      let s:darker    = [ '#ebdbb2', 223 ]
-      let s:darkgrey  = [ '#dac9a5', 250 ]
-    endif
-    let s:dark      = [ '#ebdbb2', 223 ]
-    let s:grey      = [ '#7c6f64', 243 ]
-    let s:red       = [ '#ae5858', 88 ]
-    let s:green     = [ '#6f8352', 100 ]
-    let s:yellow    = [ '#a96b2c', 130 ]
-    let s:white     = [ '#3c3836', 241 ]
-    let s:red_fg    = [ '#9d0006', 88 ]
-    let s:green_fg  = [ '#79740e', 100 ]
-    let s:blue      = [ '#076678', 24 ]
-  endif
+  let s:palette = s:configuration.palette
+else
+  let s:palette = gruvbox_material#palette(s:configuration.background, s:configuration.palette)
 endif
 "}}}
 
 "{{{Definition
-let s:accents = s:red_fg
+let s:accents = s:palette.red
 
-let s:error_fg = s:dark
-let s:error_bg = s:red
-let s:warning_fg = s:dark
-let s:warning_bg = s:yellow
+let s:error_fg = s:palette.bg0
+let s:error_bg = s:palette.bg_red
+let s:warning_fg = s:palette.bg0
+let s:warning_bg = s:palette.bg_yellow
 
-let s:tab_sel_fg = s:dark
-let s:tab_sel_bg = s:grey
+let s:tab_sel_fg = s:palette.bg0
+let s:tab_sel_bg = s:palette.bg_grey1
+let s:tab_mid_fg = s:palette.bg_grey1
+let s:tab_mid_bg = s:palette.bg0
+let s:tab_mod_fg = s:palette.bg0
+let s:tab_mod_bg = s:palette.bg_green
+let s:tab_type_fg = s:palette.bg0
+let s:tab_type_bg = s:palette.orange
+let s:tab_label_fg = s:palette.bg0
+let s:tab_label_bg = s:palette.orange
 
-let s:normal_side_fg = s:dark
-let s:normal_side_bg = s:grey
-let s:normal_sub_fg = s:white
-let s:normal_sub_bg = s:darkgrey
-let s:normal_mid_fg = s:white
-let s:normal_mid_bg = s:darker
-let s:normal_mod_fg = s:green_fg
-let s:normal_mod_bg = s:darker
+let s:normal_side_fg = s:palette.bg0
+let s:normal_side_bg = s:palette.bg_grey1
+let s:normal_sub_fg = s:palette.fg1
+let s:normal_sub_bg = s:palette.bg_sl3
+let s:normal_mid_fg = s:palette.fg1
+let s:normal_mid_bg = s:palette.bg_sl1
+let s:normal_mod_fg = s:palette.green
+let s:normal_mod_bg = s:palette.bg_sl1
 
-let s:insert_side_fg = s:dark
-let s:insert_side_bg = s:green
-let s:insert_sub_fg = s:white
-let s:insert_sub_bg = s:darkgrey
-let s:insert_mid_fg = s:white
-let s:insert_mid_bg = s:darker
-let s:insert_mod_fg = s:green_fg
-let s:insert_mod_bg = s:darker
+let s:insert_side_fg = s:palette.bg0
+let s:insert_side_bg = s:palette.bg_green
+let s:insert_sub_fg = s:palette.fg1
+let s:insert_sub_bg = s:palette.bg_sl3
+let s:insert_mid_fg = s:palette.fg1
+let s:insert_mid_bg = s:palette.bg_sl1
+let s:insert_mod_fg = s:palette.green
+let s:insert_mod_bg = s:palette.bg_sl1
 
-let s:visual_side_fg = s:dark
-let s:visual_side_bg = s:red
-let s:visual_sub_fg = s:white
-let s:visual_sub_bg = s:darkgrey
-let s:visual_mid_fg = s:white
-let s:visual_mid_bg = s:darker
-let s:visual_mod_fg = s:green_fg
-let s:visual_mod_bg = s:darker
+let s:visual_side_fg = s:palette.bg0
+let s:visual_side_bg = s:palette.bg_red
+let s:visual_sub_fg = s:palette.fg1
+let s:visual_sub_bg = s:palette.bg_sl3
+let s:visual_mid_fg = s:palette.fg1
+let s:visual_mid_bg = s:palette.bg_sl1
+let s:visual_mod_fg = s:palette.green
+let s:visual_mod_bg = s:palette.bg_sl1
 
-let s:replace_side_fg = s:dark
-let s:replace_side_bg = s:yellow
-let s:replace_sub_fg = s:white
-let s:replace_sub_bg = s:darkgrey
-let s:replace_mid_fg = s:white
-let s:replace_mid_bg = s:darker
-let s:replace_mod_fg = s:green_fg
-let s:replace_mod_bg = s:darker
+let s:replace_side_fg = s:palette.bg0
+let s:replace_side_bg = s:palette.bg_yellow
+let s:replace_sub_fg = s:palette.fg1
+let s:replace_sub_bg = s:palette.bg_sl3
+let s:replace_mid_fg = s:palette.fg1
+let s:replace_mid_bg = s:palette.bg_sl1
+let s:replace_mod_fg = s:palette.green
+let s:replace_mod_bg = s:palette.bg_sl1
 
-let s:commandline_side_fg = s:dark
-let s:commandline_side_bg = s:blue
-let s:commandline_sub_fg = s:white
-let s:commandline_sub_bg = s:darkgrey
-let s:commandline_mid_fg = s:white
-let s:commandline_mid_bg = s:darker
-let s:commandline_mod_fg = s:green_fg
-let s:commandline_mod_bg = s:darker
+let s:commandline_side_fg = s:palette.bg0
+let s:commandline_side_bg = s:palette.blue
+let s:commandline_sub_fg = s:palette.fg1
+let s:commandline_sub_bg = s:palette.bg_sl3
+let s:commandline_mid_fg = s:palette.fg1
+let s:commandline_mid_bg = s:palette.bg_sl1
+let s:commandline_mod_fg = s:palette.green
+let s:commandline_mod_bg = s:palette.bg_sl1
 
-let s:inactive_side_fg = s:white
-let s:inactive_side_bg = s:darkgrey
-let s:inactive_sub_fg = s:white
-let s:inactive_sub_bg = s:darkgrey
-let s:inactive_mid_fg = s:white
-let s:inactive_mid_bg = s:darker
-let s:inactive_mod_fg = s:white
-let s:inactive_mod_bg = s:darker
+let s:inactive_side_fg = s:palette.fg1
+let s:inactive_side_bg = s:palette.bg_sl3
+let s:inactive_sub_fg = s:palette.fg1
+let s:inactive_sub_bg = s:palette.bg_sl3
+let s:inactive_mid_fg = s:palette.fg1
+let s:inactive_mid_bg = s:palette.bg_sl1
+let s:inactive_mod_fg = s:palette.fg1
+let s:inactive_mod_bg = s:palette.bg_sl1
 "}}}
 
 "{{{Implementation
@@ -215,11 +101,6 @@ let g:airline#themes#gruvbox_material#palette = {}
 let g:airline#themes#gruvbox_material#palette.accents = {
       \ 'red': [ s:accents[0] , '' , s:accents[1] , '' , '' ],
       \ }
-
-" TabLine
-let g:airline#themes#gruvbox_material#palette.tabline = {}
-let g:airline#themes#gruvbox_material#palette.tabline.airline_tabsel = [ s:tab_sel_fg[0] , s:tab_sel_bg[0] , s:tab_sel_fg[1] , s:tab_sel_bg[1] , 'bold' ]
-let g:airline#themes#gruvbox_material#palette.tabline.airline_tabsel_right = [ s:tab_sel_fg[0] , s:tab_sel_bg[0] , s:tab_sel_fg[1] , s:tab_sel_bg[1] , 'bold' ]
 
 " Normal mode
 let s:N1 = [ s:normal_side_fg[0] , s:normal_side_bg[0] , s:normal_side_fg[1] , s:normal_side_bg[1] ]
@@ -316,6 +197,17 @@ let g:airline#themes#gruvbox_material#palette.inactive.airline_warning_red = [ s
 let g:airline#themes#gruvbox_material#palette.inactive_modified = {
       \ 'airline_c': [ s:inactive_mod_fg[0] , s:inactive_mod_bg[0] , s:inactive_mod_fg[1] , s:inactive_mod_bg[1] ] ,
       \ }
+
+" TabLine
+let g:airline#themes#gruvbox_material#palette.tabline = {}
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tabsel = [ s:tab_sel_fg[0] , s:tab_sel_bg[0] , s:tab_sel_fg[1] , s:tab_sel_bg[1] , 'bold' ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tabsel_right = [ s:tab_sel_fg[0] , s:tab_sel_bg[0] , s:tab_sel_fg[1] , s:tab_sel_bg[1] , 'bold' ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tabfill = [ s:tab_mid_fg[0] , s:tab_mid_bg[0] , s:tab_mid_fg[1] , s:tab_mid_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tabmod = [ s:tab_mod_fg[0] , s:tab_mod_bg[0] , s:tab_mod_fg[1] , s:tab_mod_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tabtype = [ s:tab_type_fg[0] , s:tab_type_bg[0] , s:tab_type_fg[1] , s:tab_type_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tablabel = [ s:tab_label_fg[0] , s:tab_label_bg[0] , s:tab_label_fg[1] , s:tab_label_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tablabel_right = [ s:tab_label_fg[0] , s:tab_label_bg[0] , s:tab_label_fg[1] , s:tab_label_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.tabline.airline_tabhid = s:IA1
 "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:

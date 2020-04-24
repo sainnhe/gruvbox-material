@@ -1,3 +1,11 @@
+" =============================================================================
+" URL: https://github.com/sainnhe/gruvbox-material
+" Filename: autoload/gruvbox_material.vim
+" Author: sainnhe
+" Email: sainnhe@gmail.com
+" License: MIT License
+" =============================================================================
+
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
 let s:tmux = executable('tmux') && $TMUX !=# ''
 
@@ -12,6 +20,9 @@ function! gruvbox_material#palette(background, palette)
             \ 'bg3':        ['#3c3836',   '237',  'DarkGrey'],
             \ 'bg4':        ['#3c3836',   '237',  'DarkGrey'],
             \ 'bg5':        ['#504945',   '239',  'DarkGrey'],
+            \ 'bg_sl1':     ['#282828',   '235',  'DarkGrey'],
+            \ 'bg_sl2':     ['#32302f',   '235',  'DarkGrey'],
+            \ 'bg_sl3':     ['#504945',   '239',  'Grey'],
             \ 'bg_grey0':   ['#665c54',   '241',  'DarkGrey'],
             \ 'bg_grey1':   ['#a89984',   '246',  'LightGrey'],
             \ 'bg_green1':  ['#32361a',   '22',   'DarkGreen'],
@@ -30,6 +41,9 @@ function! gruvbox_material#palette(background, palette)
             \ 'bg3':        ['#f2e5bc',   '228',  'LightGrey'],
             \ 'bg4':        ['#eee0b7',   '223',  'LightGrey'],
             \ 'bg5':        ['#ebdbb2',   '223',  'LightGrey'],
+            \ 'bg_sl1':     ['#f3eac7',   '223',  'DarkGrey'],
+            \ 'bg_sl2':     ['#f3eac7',   '223',  'DarkGrey'],
+            \ 'bg_sl3':     ['#eee0b7',   '250',  'Grey'],
             \ 'bg_grey0':   ['#d5c4a1',   '250',  'LightGrey'],
             \ 'bg_grey1':   ['#7c6f64',   '243',  'DarkGrey'],
             \ 'bg_green1':  ['#e3f6b4',   '194',  'LightGreen'],
@@ -50,6 +64,9 @@ function! gruvbox_material#palette(background, palette)
             \ 'bg3':        ['#45403d',   '237',  'DarkGrey'],
             \ 'bg4':        ['#45403d',   '237',  'DarkGrey'],
             \ 'bg5':        ['#5a524c',   '239',  'DarkGrey'],
+            \ 'bg_sl1':     ['#32302f',   '236',  'DarkGrey'],
+            \ 'bg_sl2':     ['#3a3735',   '236',  'DarkGrey'],
+            \ 'bg_sl3':     ['#5a524c',   '240',  'Grey'],
             \ 'bg_grey0':   ['#7c6f64',   '243',  'DarkGrey'],
             \ 'bg_grey1':   ['#a89984',   '246',  'LightGrey'],
             \ 'bg_green1':  ['#34381b',   '22',   'DarkGreen'],
@@ -68,6 +85,9 @@ function! gruvbox_material#palette(background, palette)
             \ 'bg3':        ['#eee0b7',   '223',  'LightGrey'],
             \ 'bg4':        ['#e5d5ad',   '223',  'LightGrey'],
             \ 'bg5':        ['#ddccab',   '250',  'LightGrey'],
+            \ 'bg_sl1':     ['#f2e5bc',   '223',  'DarkGrey'],
+            \ 'bg_sl2':     ['#f2e5bc',   '223',  'DarkGrey'],
+            \ 'bg_sl3':     ['#e5d5ad',   '250',  'Grey'],
             \ 'bg_grey0':   ['#bdae93',   '248',  'LightGrey'],
             \ 'bg_grey1':   ['#7c6f64',   '243',  'DarkGrey'],
             \ 'bg_green1':  ['#daf0a7',   '194',  'LightGreen'],
@@ -88,6 +108,9 @@ function! gruvbox_material#palette(background, palette)
             \ 'bg3':        ['#504945',   '239',  'DarkGrey'],
             \ 'bg4':        ['#504945',   '239',  'DarkGrey'],
             \ 'bg5':        ['#665c54',   '241',  'DarkGrey'],
+            \ 'bg_sl1':     ['#3c3836',   '237',  'DarkGrey'],
+            \ 'bg_sl2':     ['#46413e',   '237',  'DarkGrey'],
+            \ 'bg_sl3':     ['#665c54',   '241',  'Grey'],
             \ 'bg_grey0':   ['#7c6f64',   '243',  'DarkGrey'],
             \ 'bg_grey1':   ['#a89984',   '246',  'LightGrey'],
             \ 'bg_green1':  ['#3d4220',   '22',   'DarkGreen'],
@@ -106,6 +129,9 @@ function! gruvbox_material#palette(background, palette)
             \ 'bg3':        ['#e6d5ae',   '223',  'LightGrey'],
             \ 'bg4':        ['#dac9a5',   '250',  'LightGrey'],
             \ 'bg5':        ['#d5c4a1',   '250',  'LightGrey'],
+            \ 'bg_sl1':     ['#ebdbb2',   '223',  'DarkGrey'],
+            \ 'bg_sl2':     ['#ebdbb2',   '223',  'DarkGrey'],
+            \ 'bg_sl3':     ['#dac9a5',   '250',  'Grey'],
             \ 'bg_grey0':   ['#a89984',   '246',  'LightGrey'],
             \ 'bg_grey1':   ['#7c6f64',   '243',  'DarkGrey'],
             \ 'bg_green1':  ['#d1ea9b',   '194',  'LightGreen'],
