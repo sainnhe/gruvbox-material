@@ -14,117 +14,117 @@ let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium'
 let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
 
 if type(s:configuration.palette) == 4
-    let s:configuration.palette = 'mix'
+  let s:configuration.palette = 'mix'
 endif
 
 if s:configuration.palette ==# 'material'
-    if &background ==# 'dark'
-        if s:configuration.background ==# 'hard'
-            let s:darker    = [ '#282828', 235 ]
-            let s:darkgrey  = [ '#504945', 239 ]
-        elseif s:configuration.background ==# 'medium'
-            let s:darker    = [ '#32302f', 236 ]
-            let s:darkgrey  = [ '#5a524c', 240 ]
-        elseif s:configuration.background ==# 'soft'
-            let s:darker    = [ '#3c3836', 237 ]
-            let s:darkgrey  = [ '#665c54', 241 ]
-        endif
-        let s:dark      = [ '#282828', 235 ]
-        let s:grey      = [ '#a89984', 246 ]
-        let s:red       = [ '#ea6962', 167 ]
-        let s:green     = [ '#a9b665', 142 ]
-        let s:yellow    = [ '#e78a4e', 208 ]
-        let s:white     = [ '#ddc7a1', 223 ]
-    else
-        if s:configuration.background ==# 'hard'
-            let s:darker    = [ '#f3eac7', 223 ]
-            let s:darkgrey  = [ '#eee0b7', 250 ]
-        elseif s:configuration.background ==# 'medium'
-            let s:darker    = [ '#f2e5bc', 223 ]
-            let s:darkgrey  = [ '#e5d5ad', 250 ]
-        elseif s:configuration.background ==# 'soft'
-            let s:darker    = [ '#ebdbb2', 223 ]
-            let s:darkgrey  = [ '#dac9a5', 250 ]
-        endif
-        let s:dark      = [ '#ebdbb2', 223 ]
-        let s:grey      = [ '#7c6f64', 243 ]
-        let s:red       = [ '#ae5858', 88 ]
-        let s:green     = [ '#6f8352', 100 ]
-        let s:yellow    = [ '#a96b2c', 130 ]
-        let s:white     = [ '#4f3829', 241 ]
+  if &background ==# 'dark'
+    if s:configuration.background ==# 'hard'
+      let s:darker    = [ '#282828', 235 ]
+      let s:darkgrey  = [ '#504945', 239 ]
+    elseif s:configuration.background ==# 'medium'
+      let s:darker    = [ '#32302f', 236 ]
+      let s:darkgrey  = [ '#5a524c', 240 ]
+    elseif s:configuration.background ==# 'soft'
+      let s:darker    = [ '#3c3836', 237 ]
+      let s:darkgrey  = [ '#665c54', 241 ]
     endif
+    let s:dark      = [ '#282828', 235 ]
+    let s:grey      = [ '#a89984', 246 ]
+    let s:red       = [ '#ea6962', 167 ]
+    let s:green     = [ '#a9b665', 142 ]
+    let s:yellow    = [ '#e78a4e', 208 ]
+    let s:white     = [ '#ddc7a1', 223 ]
+  else
+    if s:configuration.background ==# 'hard'
+      let s:darker    = [ '#f3eac7', 223 ]
+      let s:darkgrey  = [ '#eee0b7', 250 ]
+    elseif s:configuration.background ==# 'medium'
+      let s:darker    = [ '#f2e5bc', 223 ]
+      let s:darkgrey  = [ '#e5d5ad', 250 ]
+    elseif s:configuration.background ==# 'soft'
+      let s:darker    = [ '#ebdbb2', 223 ]
+      let s:darkgrey  = [ '#dac9a5', 250 ]
+    endif
+    let s:dark      = [ '#ebdbb2', 223 ]
+    let s:grey      = [ '#7c6f64', 243 ]
+    let s:red       = [ '#ae5858', 88 ]
+    let s:green     = [ '#6f8352', 100 ]
+    let s:yellow    = [ '#a96b2c', 130 ]
+    let s:white     = [ '#4f3829', 241 ]
+  endif
 elseif s:configuration.palette ==# 'mix'
-    if &background ==# 'dark'
-        if s:configuration.background ==# 'hard'
-            let s:darker    = [ '#282828', 235 ]
-            let s:darkgrey  = [ '#504945', 239 ]
-        elseif s:configuration.background ==# 'medium'
-            let s:darker    = [ '#32302f', 236 ]
-            let s:darkgrey  = [ '#5a524c', 240 ]
-        elseif s:configuration.background ==# 'soft'
-            let s:darker    = [ '#3c3836', 237 ]
-            let s:darkgrey  = [ '#665c54', 241 ]
-        endif
-        let s:dark      = [ '#282828', 235 ]
-        let s:grey      = [ '#a89984', 246 ]
-        let s:red       = [ '#f2594b', 167 ]
-        let s:green     = [ '#b0b846', 142 ]
-        let s:yellow    = [ '#e9b143', 208 ]
-        let s:white     = [ '#e2cca9', 223 ]
-    else
-        if s:configuration.background ==# 'hard'
-            let s:darker    = [ '#f3eac7', 223 ]
-            let s:darkgrey  = [ '#eee0b7', 250 ]
-        elseif s:configuration.background ==# 'medium'
-            let s:darker    = [ '#f2e5bc', 223 ]
-            let s:darkgrey  = [ '#e5d5ad', 250 ]
-        elseif s:configuration.background ==# 'soft'
-            let s:darker    = [ '#ebdbb2', 223 ]
-            let s:darkgrey  = [ '#dac9a5', 250 ]
-        endif
-        let s:dark      = [ '#ebdbb2', 223 ]
-        let s:grey      = [ '#7c6f64', 243 ]
-        let s:red       = [ '#ae5858', 88 ]
-        let s:green     = [ '#6f8352', 100 ]
-        let s:yellow    = [ '#a96b2c', 130 ]
-        let s:white     = [ '#514036', 241 ]
+  if &background ==# 'dark'
+    if s:configuration.background ==# 'hard'
+      let s:darker    = [ '#282828', 235 ]
+      let s:darkgrey  = [ '#504945', 239 ]
+    elseif s:configuration.background ==# 'medium'
+      let s:darker    = [ '#32302f', 236 ]
+      let s:darkgrey  = [ '#5a524c', 240 ]
+    elseif s:configuration.background ==# 'soft'
+      let s:darker    = [ '#3c3836', 237 ]
+      let s:darkgrey  = [ '#665c54', 241 ]
     endif
+    let s:dark      = [ '#282828', 235 ]
+    let s:grey      = [ '#a89984', 246 ]
+    let s:red       = [ '#f2594b', 167 ]
+    let s:green     = [ '#b0b846', 142 ]
+    let s:yellow    = [ '#e9b143', 208 ]
+    let s:white     = [ '#e2cca9', 223 ]
+  else
+    if s:configuration.background ==# 'hard'
+      let s:darker    = [ '#f3eac7', 223 ]
+      let s:darkgrey  = [ '#eee0b7', 250 ]
+    elseif s:configuration.background ==# 'medium'
+      let s:darker    = [ '#f2e5bc', 223 ]
+      let s:darkgrey  = [ '#e5d5ad', 250 ]
+    elseif s:configuration.background ==# 'soft'
+      let s:darker    = [ '#ebdbb2', 223 ]
+      let s:darkgrey  = [ '#dac9a5', 250 ]
+    endif
+    let s:dark      = [ '#ebdbb2', 223 ]
+    let s:grey      = [ '#7c6f64', 243 ]
+    let s:red       = [ '#ae5858', 88 ]
+    let s:green     = [ '#6f8352', 100 ]
+    let s:yellow    = [ '#a96b2c', 130 ]
+    let s:white     = [ '#514036', 241 ]
+  endif
 elseif s:configuration.palette ==# 'original'
-    if &background ==# 'dark'
-        if s:configuration.background ==# 'hard'
-            let s:darker    = [ '#282828', 235 ]
-            let s:darkgrey  = [ '#504945', 239 ]
-        elseif s:configuration.background ==# 'medium'
-            let s:darker    = [ '#32302f', 236 ]
-            let s:darkgrey  = [ '#5a524c', 240 ]
-        elseif s:configuration.background ==# 'soft'
-            let s:darker    = [ '#3c3836', 237 ]
-            let s:darkgrey  = [ '#665c54', 241 ]
-        endif
-        let s:dark      = [ '#282828', 235 ]
-        let s:grey      = [ '#a89984', 246 ]
-        let s:red       = [ '#fb4934', 167 ]
-        let s:green     = [ '#b8bb26', 142 ]
-        let s:yellow    = [ '#fabd2f', 208 ]
-        let s:white     = [ '#ebdbb2', 223 ]
-    else
-        if s:configuration.background ==# 'hard'
-            let s:darker    = [ '#f3eac7', 223 ]
-            let s:darkgrey  = [ '#eee0b7', 250 ]
-        elseif s:configuration.background ==# 'medium'
-            let s:darker    = [ '#f2e5bc', 223 ]
-            let s:darkgrey  = [ '#e5d5ad', 250 ]
-        elseif s:configuration.background ==# 'soft'
-            let s:darker    = [ '#ebdbb2', 223 ]
-            let s:darkgrey  = [ '#dac9a5', 250 ]
-        endif
-        let s:dark      = [ '#ebdbb2', 223 ]
-        let s:grey      = [ '#7c6f64', 243 ]
-        let s:red       = [ '#ae5858', 88 ]
-        let s:green     = [ '#6f8352', 100 ]
-        let s:yellow    = [ '#a96b2c', 130 ]
-        let s:white     = [ '#3c3836', 241 ]
+  if &background ==# 'dark'
+    if s:configuration.background ==# 'hard'
+      let s:darker    = [ '#282828', 235 ]
+      let s:darkgrey  = [ '#504945', 239 ]
+    elseif s:configuration.background ==# 'medium'
+      let s:darker    = [ '#32302f', 236 ]
+      let s:darkgrey  = [ '#5a524c', 240 ]
+    elseif s:configuration.background ==# 'soft'
+      let s:darker    = [ '#3c3836', 237 ]
+      let s:darkgrey  = [ '#665c54', 241 ]
     endif
+    let s:dark      = [ '#282828', 235 ]
+    let s:grey      = [ '#a89984', 246 ]
+    let s:red       = [ '#fb4934', 167 ]
+    let s:green     = [ '#b8bb26', 142 ]
+    let s:yellow    = [ '#fabd2f', 208 ]
+    let s:white     = [ '#ebdbb2', 223 ]
+  else
+    if s:configuration.background ==# 'hard'
+      let s:darker    = [ '#f3eac7', 223 ]
+      let s:darkgrey  = [ '#eee0b7', 250 ]
+    elseif s:configuration.background ==# 'medium'
+      let s:darker    = [ '#f2e5bc', 223 ]
+      let s:darkgrey  = [ '#e5d5ad', 250 ]
+    elseif s:configuration.background ==# 'soft'
+      let s:darker    = [ '#ebdbb2', 223 ]
+      let s:darkgrey  = [ '#dac9a5', 250 ]
+    endif
+    let s:dark      = [ '#ebdbb2', 223 ]
+    let s:grey      = [ '#7c6f64', 243 ]
+    let s:red       = [ '#ae5858', 88 ]
+    let s:green     = [ '#6f8352', 100 ]
+    let s:yellow    = [ '#a96b2c', 130 ]
+    let s:white     = [ '#3c3836', 241 ]
+  endif
 endif
 "}}}
 
@@ -230,16 +230,18 @@ let s:p.normal.warning = [ [ s:warningfg, s:warningbg ] ]
 
 
 if get(g:, 'gruvbox_material_lightline_disable_bold', 0)
-    let s:p.normal.left = [ [ s:normal_l1_fg, s:normal_l1_bg ], [ s:normal_l2_fg, s:normal_l2_bg ] ]
-    let s:p.normal.right = [ [ s:normal_r1_fg, s:normal_r1_bg ], [ s:normal_r2_fg, s:normal_r2_bg ] ]
-    let s:p.insert.left = [ [ s:insert_l1_fg, s:insert_l1_bg ], [ s:insert_l2_fg, s:insert_l2_bg ] ]
-    let s:p.insert.right = [ [ s:insert_r1_fg, s:insert_r1_bg ], [ s:insert_r2_fg, s:insert_r2_bg ] ]
-    let s:p.visual.left = [ [ s:visual_l1_fg, s:visual_l1_bg ], [ s:visual_l2_fg, s:visual_l2_bg ] ]
-    let s:p.visual.right = [ [ s:visual_r1_fg, s:visual_r1_bg ], [ s:visual_r2_fg, s:visual_r2_bg ] ]
-    let s:p.replace.left = [ [ s:replace_l1_fg, s:replace_l1_bg ], [ s:replace_l2_fg, s:replace_l2_bg ] ]
-    let s:p.replace.right = [ [ s:replace_r1_fg, s:replace_r1_bg ], [ s:replace_r2_fg, s:replace_r2_bg ] ]
-    let s:p.tabline.tabsel = [ [ s:tab_sel_fg, s:tab_sel_bg ] ]
+  let s:p.normal.left = [ [ s:normal_l1_fg, s:normal_l1_bg ], [ s:normal_l2_fg, s:normal_l2_bg ] ]
+  let s:p.normal.right = [ [ s:normal_r1_fg, s:normal_r1_bg ], [ s:normal_r2_fg, s:normal_r2_bg ] ]
+  let s:p.insert.left = [ [ s:insert_l1_fg, s:insert_l1_bg ], [ s:insert_l2_fg, s:insert_l2_bg ] ]
+  let s:p.insert.right = [ [ s:insert_r1_fg, s:insert_r1_bg ], [ s:insert_r2_fg, s:insert_r2_bg ] ]
+  let s:p.visual.left = [ [ s:visual_l1_fg, s:visual_l1_bg ], [ s:visual_l2_fg, s:visual_l2_bg ] ]
+  let s:p.visual.right = [ [ s:visual_r1_fg, s:visual_r1_bg ], [ s:visual_r2_fg, s:visual_r2_bg ] ]
+  let s:p.replace.left = [ [ s:replace_l1_fg, s:replace_l1_bg ], [ s:replace_l2_fg, s:replace_l2_bg ] ]
+  let s:p.replace.right = [ [ s:replace_r1_fg, s:replace_r1_bg ], [ s:replace_r2_fg, s:replace_r2_bg ] ]
+  let s:p.tabline.tabsel = [ [ s:tab_sel_fg, s:tab_sel_bg ] ]
 endif
 "}}}
 
 let g:lightline#colorscheme#gruvbox_material#palette = lightline#colorscheme#flatten(s:p)
+
+" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
