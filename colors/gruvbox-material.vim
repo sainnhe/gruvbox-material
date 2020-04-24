@@ -27,6 +27,7 @@ let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'grey background
 let s:configuration.menu_selection_background = get(g:, 'gruvbox_material_menu_selection_background', 'grey')
 let s:configuration.cursor_line_contrast = get(g:, 'gruvbox_material_cursor_line_contrast', 'lower')
 let s:configuration.current_word = get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold')
+let s:configuration.statusline_style = get(g:, 'gruvbox_material_statusline_style', 'default')
 " }}}
 " Palette: {{{
 if type(s:configuration.palette) == 4
@@ -127,13 +128,23 @@ call gruvbox_material#highlight('SpellBad', s:palette.red, s:palette.none, 'unde
 call gruvbox_material#highlight('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
 call gruvbox_material#highlight('SpellLocal', s:palette.aqua, s:palette.none, 'undercurl', s:palette.aqua)
 call gruvbox_material#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
-call gruvbox_material#highlight('StatusLine', s:palette.fg1, s:palette.bg5)
-call gruvbox_material#highlight('StatusLineTerm', s:palette.fg1, s:palette.bg5)
-call gruvbox_material#highlight('StatusLineNC', s:palette.grey, s:palette.bg2)
-call gruvbox_material#highlight('StatusLineTermNC', s:palette.grey, s:palette.bg2)
-call gruvbox_material#highlight('TabLine', s:palette.fg1, s:palette.bg5)
-call gruvbox_material#highlight('TabLineFill', s:palette.fg0, s:palette.bg2)
-call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
+if s:configuration.statusline_style ==# 'original'
+  call gruvbox_material#highlight('StatusLine', s:palette.bg_grey1, s:palette.bg_sl3)
+  call gruvbox_material#highlight('StatusLineTerm', s:palette.bg_grey1, s:palette.bg_sl3)
+  call gruvbox_material#highlight('StatusLineNC', s:palette.grey, s:palette.bg_sl2)
+  call gruvbox_material#highlight('StatusLineTermNC', s:palette.grey, s:palette.bg_sl2)
+  call gruvbox_material#highlight('TabLine', s:palette.bg_grey1, s:palette.bg_sl3)
+  call gruvbox_material#highlight('TabLineFill', s:palette.grey, s:palette.bg0)
+  call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
+else
+  call gruvbox_material#highlight('StatusLine', s:palette.fg1, s:palette.bg_sl2)
+  call gruvbox_material#highlight('StatusLineTerm', s:palette.fg1, s:palette.bg_sl2)
+  call gruvbox_material#highlight('StatusLineNC', s:palette.bg_grey1, s:palette.bg_sl2)
+  call gruvbox_material#highlight('StatusLineTermNC', s:palette.bg_grey1, s:palette.bg_sl2)
+  call gruvbox_material#highlight('TabLine', s:palette.fg1, s:palette.bg_sl3)
+  call gruvbox_material#highlight('TabLineFill', s:palette.fg0, s:palette.bg_sl1)
+  call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
+endif
 call gruvbox_material#highlight('VertSplit', s:palette.bg5, s:palette.none)
 if s:configuration.visual ==# 'grey background'
   call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg3)
