@@ -20,6 +20,7 @@ if type(s:configuration.palette) == 4
 else
   let s:palette = gruvbox_material#palette(s:configuration.background, s:configuration.palette)
 endif
+highlight! link bufferline_selected airline_c
 "}}}
 
 "{{{Definition
