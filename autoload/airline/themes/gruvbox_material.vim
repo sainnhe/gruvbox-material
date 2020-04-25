@@ -27,6 +27,8 @@ if s:configuration.statusline_style ==# 'original' "{{{
   let s:error_bg = s:palette.red
   let s:warning_fg = s:palette.bg0
   let s:warning_bg = s:palette.orange
+  let s:term_fg = s:palette.grey2
+  let s:term_bg = s:palette.bg_statusline2
 
   let s:tab_sel_fg = s:palette.bg0
   let s:tab_sel_bg = s:palette.grey2
@@ -99,6 +101,8 @@ else "{{{
   let s:error_bg = s:palette.red
   let s:warning_fg = s:palette.bg0
   let s:warning_bg = s:palette.orange
+  let s:term_fg = s:palette.fg0
+  let s:term_bg = s:palette.bg_statusline1
 
   let s:tab_sel_fg = s:palette.bg0
   let s:tab_sel_bg = s:palette.grey2
@@ -181,6 +185,7 @@ let s:N3 = [ s:normal_mid_fg[0] , s:normal_mid_bg[0] , s:normal_mid_fg[1] , s:no
 let g:airline#themes#gruvbox_material#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 let g:airline#themes#gruvbox_material#palette.normal.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.normal.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.normal.airline_term = [ s:term_fg[0] , s:term_bg[0] , s:term_fg[1] , s:term_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.normal.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.normal.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.normal.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
@@ -197,6 +202,7 @@ let s:I3 = [ s:insert_mid_fg[0] , s:insert_mid_bg[0] , s:insert_mid_fg[1] , s:in
 let g:airline#themes#gruvbox_material#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 let g:airline#themes#gruvbox_material#palette.insert.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.insert.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.insert.airline_term = [ s:term_fg[0] , s:term_bg[0] , s:term_fg[1] , s:term_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.insert.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.insert.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.insert.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
@@ -213,6 +219,7 @@ let s:R3 = [ s:replace_mid_fg[0] , s:replace_mid_bg[0] , s:replace_mid_fg[1] , s
 let g:airline#themes#gruvbox_material#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 let g:airline#themes#gruvbox_material#palette.replace.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.replace.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.replace.airline_term = [ s:term_fg[0] , s:term_bg[0] , s:term_fg[1] , s:term_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.replace.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.replace.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.replace.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
@@ -229,6 +236,7 @@ let s:V3 = [ s:visual_mid_fg[0] , s:visual_mid_bg[0] , s:visual_mid_fg[1] , s:vi
 let g:airline#themes#gruvbox_material#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 let g:airline#themes#gruvbox_material#palette.visual.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.visual.airline_term = [ s:term_fg[0] , s:term_bg[0] , s:term_fg[1] , s:term_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
@@ -245,6 +253,7 @@ let s:R3 = [ s:commandline_mid_fg[0] , s:commandline_mid_bg[0] , s:commandline_m
 let g:airline#themes#gruvbox_material#palette.commandline = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 let g:airline#themes#gruvbox_material#palette.commandline.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.commandline.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
+let g:airline#themes#gruvbox_material#palette.commandline.airline_term = [ s:term_fg[0] , s:term_bg[0] , s:term_fg[1] , s:term_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.commandline.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.commandline.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.commandline.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
@@ -259,12 +268,6 @@ let s:IA2 = [ s:inactive_sub_fg[0] , s:inactive_sub_bg[0] , s:inactive_sub_fg[1]
 let s:IA3 = [ s:inactive_mid_fg[0] , s:inactive_mid_bg[0] , s:inactive_mid_fg[1] , s:inactive_mid_bg[1] ]
 
 let g:airline#themes#gruvbox_material#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
-let g:airline#themes#gruvbox_material#palette.inactive.airline_error = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.inactive.airline_warning = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.inactive.airline_error_inactive = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.inactive.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.inactive.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.inactive.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.inactive_modified = {
       \ 'airline_c': [ s:inactive_mod_fg[0] , s:inactive_mod_bg[0] , s:inactive_mod_fg[1] , s:inactive_mod_bg[1] ] ,
       \ }

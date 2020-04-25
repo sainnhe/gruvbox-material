@@ -14,7 +14,8 @@ All notable changes to this project will be documented in this file.
 - Optimize Airline.
 - Optimize `cohama/agit.vim`.
 - Add `ToolbarLine` and `ToolbarButton`.
-- Support command line mode for airline.
+- Support command line mode for airline and lightline.
+- Support terminal mode for airline and lightline.
 - Add `g:gruvbox_material_statusline_style`.
 
 ### Changed
