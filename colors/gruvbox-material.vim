@@ -43,23 +43,23 @@ if s:configuration.transparent_background
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
-  call gruvbox_material#highlight('FoldColumn', s:palette.grey, s:palette.none)
-  call gruvbox_material#highlight('Folded', s:palette.grey, s:palette.none)
+  call gruvbox_material#highlight('FoldColumn', s:palette.grey1, s:palette.none)
+  call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg0, s:palette.none)
 else
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.bg0)
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.bg0)
   call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
-  call gruvbox_material#highlight('FoldColumn', s:palette.grey, s:palette.bg2)
-  call gruvbox_material#highlight('Folded', s:palette.grey, s:palette.bg2)
+  call gruvbox_material#highlight('FoldColumn', s:palette.grey1, s:palette.bg2)
+  call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.bg2)
   call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.bg2)
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg1, s:palette.bg3)
 endif
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
 call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
-call gruvbox_material#highlight('Conceal', s:palette.grey, s:palette.none)
+call gruvbox_material#highlight('Conceal', s:palette.grey1, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call gruvbox_material#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
 elseif s:configuration.cursor ==# 'red'
@@ -84,25 +84,25 @@ highlight! link CursorIM Cursor
 if s:configuration.cursor_line_contrast ==# 'lower'
   call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
   call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
-  call gruvbox_material#highlight('LineNr', s:palette.bg_grey0, s:palette.none)
+  call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
   if &relativenumber == 1 && &cursorline == 0
-    call gruvbox_material#highlight('CursorLineNr', s:palette.bg_grey1, s:palette.none)
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
   else
-    call gruvbox_material#highlight('CursorLineNr', s:palette.bg_grey1, s:palette.bg1)
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
   endif
 else
   call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg2)
   call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg2)
-  call gruvbox_material#highlight('LineNr', s:palette.bg_grey0, s:palette.none)
+  call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
   if &relativenumber == 1 && &cursorline == 0
-    call gruvbox_material#highlight('CursorLineNr', s:palette.bg_grey1, s:palette.none)
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
   else
-    call gruvbox_material#highlight('CursorLineNr', s:palette.bg_grey1, s:palette.bg2)
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg2)
   endif
 endif
-call gruvbox_material#highlight('DiffAdd', s:palette.none, s:palette.bg_green1)
-call gruvbox_material#highlight('DiffChange', s:palette.none, s:palette.bg_blue1)
-call gruvbox_material#highlight('DiffDelete', s:palette.none, s:palette.bg_red1)
+call gruvbox_material#highlight('DiffAdd', s:palette.none, s:palette.bg_diff_green)
+call gruvbox_material#highlight('DiffChange', s:palette.none, s:palette.bg_diff_blue)
+call gruvbox_material#highlight('DiffDelete', s:palette.none, s:palette.bg_diff_red)
 call gruvbox_material#highlight('DiffText', s:palette.none, s:palette.bg0, 'reverse')
 call gruvbox_material#highlight('Directory', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
@@ -116,48 +116,48 @@ call gruvbox_material#highlight('SpecialKey', s:palette.bg5, s:palette.none)
 call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg3)
 call gruvbox_material#highlight('PmenuSbar', s:palette.none, s:palette.bg3)
 if s:configuration.menu_selection_background ==# 'grey'
-  call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.bg_grey1)
-  call gruvbox_material#highlight('WildMenu', s:palette.bg3, s:palette.bg_grey1)
+  call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.grey2)
+  call gruvbox_material#highlight('WildMenu', s:palette.bg3, s:palette.grey2)
 elseif s:configuration.menu_selection_background ==# 'green'
   call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.bg_green)
   call gruvbox_material#highlight('WildMenu', s:palette.bg3, s:palette.bg_green)
 end
-call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.bg_grey0)
+call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
 call gruvbox_material#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
 call gruvbox_material#highlight('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
 call gruvbox_material#highlight('SpellLocal', s:palette.aqua, s:palette.none, 'undercurl', s:palette.aqua)
 call gruvbox_material#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
 if s:configuration.statusline_style ==# 'original'
-  call gruvbox_material#highlight('StatusLine', s:palette.bg_grey1, s:palette.bg_sl3)
-  call gruvbox_material#highlight('StatusLineTerm', s:palette.bg_grey1, s:palette.bg_sl3)
-  call gruvbox_material#highlight('StatusLineNC', s:palette.grey, s:palette.bg_sl2)
-  call gruvbox_material#highlight('StatusLineTermNC', s:palette.grey, s:palette.bg_sl2)
-  call gruvbox_material#highlight('TabLine', s:palette.bg_grey1, s:palette.bg_sl3)
-  call gruvbox_material#highlight('TabLineFill', s:palette.grey, s:palette.bg0)
-  call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
+  call gruvbox_material#highlight('StatusLine', s:palette.grey2, s:palette.bg_statusline3)
+  call gruvbox_material#highlight('StatusLineTerm', s:palette.grey2, s:palette.bg_statusline3)
+  call gruvbox_material#highlight('StatusLineNC', s:palette.grey1, s:palette.bg_statusline2)
+  call gruvbox_material#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg_statusline2)
+  call gruvbox_material#highlight('TabLine', s:palette.grey2, s:palette.bg_statusline3)
+  call gruvbox_material#highlight('TabLineFill', s:palette.grey1, s:palette.bg0)
+  call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
 else
-  call gruvbox_material#highlight('StatusLine', s:palette.fg1, s:palette.bg_sl2)
-  call gruvbox_material#highlight('StatusLineTerm', s:palette.fg1, s:palette.bg_sl2)
-  call gruvbox_material#highlight('StatusLineNC', s:palette.bg_grey1, s:palette.bg_sl2)
-  call gruvbox_material#highlight('StatusLineTermNC', s:palette.bg_grey1, s:palette.bg_sl2)
-  call gruvbox_material#highlight('TabLine', s:palette.fg1, s:palette.bg_sl3)
-  call gruvbox_material#highlight('TabLineFill', s:palette.fg0, s:palette.bg_sl1)
-  call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.bg_grey1)
+  call gruvbox_material#highlight('StatusLine', s:palette.fg1, s:palette.bg_statusline2)
+  call gruvbox_material#highlight('StatusLineTerm', s:palette.fg1, s:palette.bg_statusline2)
+  call gruvbox_material#highlight('StatusLineNC', s:palette.grey2, s:palette.bg_statusline2)
+  call gruvbox_material#highlight('StatusLineTermNC', s:palette.grey2, s:palette.bg_statusline2)
+  call gruvbox_material#highlight('TabLine', s:palette.fg1, s:palette.bg_statusline3)
+  call gruvbox_material#highlight('TabLineFill', s:palette.fg0, s:palette.bg_statusline1)
+  call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
 endif
 call gruvbox_material#highlight('VertSplit', s:palette.bg5, s:palette.none)
 if s:configuration.visual ==# 'grey background'
   call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg3)
   call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg3)
 elseif s:configuration.visual ==# 'green background'
-  call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg_green2)
-  call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg_green2)
+  call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg_visual_green)
+  call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg_visual_green)
 elseif s:configuration.visual ==# 'blue background'
-  call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg_blue2)
-  call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg_blue2)
+  call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg_visual_blue)
+  call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg_visual_blue)
 elseif s:configuration.visual ==# 'red background'
-  call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg_red2)
-  call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg_red2)
+  call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg_visual_red)
+  call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg_visual_red)
 elseif s:configuration.visual ==# 'reverse'
   call gruvbox_material#highlight('Visual', s:palette.none, s:palette.none, 'reverse')
   call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.none, 'reverse')
@@ -166,7 +166,7 @@ call gruvbox_material#highlight('QuickFixLine', s:palette.purple, s:palette.none
 call gruvbox_material#highlight('Debug', s:palette.orange, s:palette.none)
 call gruvbox_material#highlight('debugPC', s:palette.bg0, s:palette.green)
 call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
-call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.bg_grey1)
+call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
   highlight! link healthError Red
   highlight! link healthSuccess Green
@@ -228,21 +228,21 @@ call gruvbox_material#highlight('Constant', s:palette.aqua, s:palette.none)
 call gruvbox_material#highlight('Macro', s:palette.aqua, s:palette.none)
 call gruvbox_material#highlight('Identifier', s:palette.blue, s:palette.none)
 if s:configuration.disable_italic_comment
-  call gruvbox_material#highlight('Comment', s:palette.grey, s:palette.none)
-  call gruvbox_material#highlight('SpecialComment', s:palette.grey, s:palette.none)
+  call gruvbox_material#highlight('Comment', s:palette.grey1, s:palette.none)
+  call gruvbox_material#highlight('SpecialComment', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('Todo', s:palette.purple, s:palette.none)
 else
-  call gruvbox_material#highlight('Comment', s:palette.grey, s:palette.none, 'italic')
-  call gruvbox_material#highlight('SpecialComment', s:palette.grey, s:palette.none, 'italic')
+  call gruvbox_material#highlight('Comment', s:palette.grey1, s:palette.none, 'italic')
+  call gruvbox_material#highlight('SpecialComment', s:palette.grey1, s:palette.none, 'italic')
   call gruvbox_material#highlight('Todo', s:palette.purple, s:palette.none, 'italic')
 endif
 call gruvbox_material#highlight('Delimiter', s:palette.fg0, s:palette.none)
-call gruvbox_material#highlight('Ignore', s:palette.grey, s:palette.none)
+call gruvbox_material#highlight('Ignore', s:palette.grey1, s:palette.none)
 call gruvbox_material#highlight('Underlined', s:palette.none, s:palette.none, 'underline')
 " }}}
 " Predefined Highlight Groups: {{{
 call gruvbox_material#highlight('Fg', s:palette.fg0, s:palette.none)
-call gruvbox_material#highlight('Grey', s:palette.grey, s:palette.none)
+call gruvbox_material#highlight('Grey', s:palette.grey1, s:palette.none)
 call gruvbox_material#highlight('Yellow', s:palette.yellow, s:palette.none)
 call gruvbox_material#highlight('Blue', s:palette.blue, s:palette.none)
 if s:configuration.enable_italic
@@ -297,7 +297,7 @@ call gruvbox_material#highlight('markdownH6', s:palette.purple, s:palette.none, 
 call gruvbox_material#highlight('markdownUrl', s:palette.blue, s:palette.none, 'underline')
 call gruvbox_material#highlight('markdownItalic', s:palette.none, s:palette.none, 'italic')
 call gruvbox_material#highlight('markdownBold', s:palette.none, s:palette.none, 'bold')
-call gruvbox_material#highlight('markdownItalicDelimiter', s:palette.grey, s:palette.none, 'italic')
+call gruvbox_material#highlight('markdownItalicDelimiter', s:palette.grey1, s:palette.none, 'italic')
 highlight! link markdownCode Green
 highlight! link markdownCodeBlock Aqua
 highlight! link markdownCodeDelimiter Aqua
@@ -319,7 +319,7 @@ highlight! link markdownId Yellow
 " vim-markdown: https://github.com/gabrielelana/vim-markdown{{{
 call gruvbox_material#highlight('mkdURL', s:palette.blue, s:palette.none, 'underline')
 call gruvbox_material#highlight('mkdInlineURL', s:palette.purple, s:palette.none, 'underline')
-call gruvbox_material#highlight('mkdItalic', s:palette.grey, s:palette.none, 'italic')
+call gruvbox_material#highlight('mkdItalic', s:palette.grey1, s:palette.none, 'italic')
 highlight! link mkdCodeDelimiter Aqua
 highlight! link mkdBold Grey
 highlight! link mkdLink Purple
@@ -1606,7 +1606,7 @@ call gruvbox_material#highlight('CtrlPPrtBase', s:palette.bg4, s:palette.none)
 call gruvbox_material#highlight('CtrlPLinePre', s:palette.bg4, s:palette.none)
 call gruvbox_material#highlight('CtrlPMode1', s:palette.blue, s:palette.bg4, 'bold')
 call gruvbox_material#highlight('CtrlPMode2', s:palette.bg0, s:palette.blue, 'bold')
-call gruvbox_material#highlight('CtrlPStats', s:palette.bg_grey1, s:palette.bg4, 'bold')
+call gruvbox_material#highlight('CtrlPStats', s:palette.grey2, s:palette.bg4, 'bold')
 highlight! link CtrlPNoEntries Red
 highlight! link CtrlPPrtCursor Blue
 " }}}
@@ -1710,8 +1710,8 @@ highlight! link CursorWord0 CocHighlightText
 highlight! link CursorWord1 CocHighlightText
 " }}}
 " Yggdroot/indentLine{{{
-let g:indentLine_color_gui = s:palette.grey[0]
-let g:indentLine_color_term = s:palette.grey[1]
+let g:indentLine_color_gui = s:palette.grey1[0]
+let g:indentLine_color_term = s:palette.grey1[1]
 " }}}
 " nathanaelkane/vim-indent-guides{{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0

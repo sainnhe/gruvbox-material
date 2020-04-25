@@ -29,8 +29,8 @@ if s:configuration.statusline_style ==# 'original' "{{{
   let s:warning_bg = s:palette.orange
 
   let s:tab_sel_fg = s:palette.bg0
-  let s:tab_sel_bg = s:palette.bg_grey1
-  let s:tab_mid_fg = s:palette.grey
+  let s:tab_sel_bg = s:palette.grey2
+  let s:tab_mid_fg = s:palette.grey1
   let s:tab_mid_bg = s:palette.bg0
   let s:tab_mod_fg = s:palette.bg0
   let s:tab_mod_bg = s:palette.blue
@@ -40,58 +40,58 @@ if s:configuration.statusline_style ==# 'original' "{{{
   let s:tab_label_bg = s:palette.orange
 
   let s:normal_side_fg = s:palette.bg0
-  let s:normal_side_bg = s:palette.bg_grey1
-  let s:normal_sub_fg = s:palette.bg_grey1
-  let s:normal_sub_bg = s:palette.bg_sl3
-  let s:normal_mid_fg = s:palette.bg_grey1
-  let s:normal_mid_bg = s:palette.bg_sl2
+  let s:normal_side_bg = s:palette.grey2
+  let s:normal_sub_fg = s:palette.grey2
+  let s:normal_sub_bg = s:palette.bg_statusline3
+  let s:normal_mid_fg = s:palette.grey2
+  let s:normal_mid_bg = s:palette.bg_statusline2
   let s:normal_mod_fg = s:palette.blue
-  let s:normal_mod_bg = s:palette.bg_sl2
+  let s:normal_mod_bg = s:palette.bg_statusline2
 
   let s:insert_side_fg = s:palette.bg0
   let s:insert_side_bg = s:palette.blue
   let s:insert_sub_fg = s:palette.fg1
-  let s:insert_sub_bg = s:palette.bg_sl3
+  let s:insert_sub_bg = s:palette.bg_statusline3
   let s:insert_mid_fg = s:palette.fg1
-  let s:insert_mid_bg = s:palette.bg_sl3
+  let s:insert_mid_bg = s:palette.bg_statusline3
   let s:insert_mod_fg = s:palette.blue
-  let s:insert_mod_bg = s:palette.bg_sl3
+  let s:insert_mod_bg = s:palette.bg_statusline3
 
   let s:visual_side_fg = s:palette.bg0
   let s:visual_side_bg = s:palette.orange
   let s:visual_sub_fg = s:palette.fg1
-  let s:visual_sub_bg = s:palette.bg_sl3
+  let s:visual_sub_bg = s:palette.bg_statusline3
   let s:visual_mid_fg = s:palette.bg0
-  let s:visual_mid_bg = s:palette.bg_grey0
+  let s:visual_mid_bg = s:palette.grey0
   let s:visual_mod_fg = s:palette.bg0
-  let s:visual_mod_bg = s:palette.bg_grey0
+  let s:visual_mod_bg = s:palette.grey0
 
   let s:replace_side_fg = s:palette.bg0
   let s:replace_side_bg = s:palette.aqua
   let s:replace_sub_fg = s:palette.fg1
-  let s:replace_sub_bg = s:palette.bg_sl3
+  let s:replace_sub_bg = s:palette.bg_statusline3
   let s:replace_mid_fg = s:palette.fg1
-  let s:replace_mid_bg = s:palette.bg_sl3
+  let s:replace_mid_bg = s:palette.bg_statusline3
   let s:replace_mod_fg = s:palette.blue
-  let s:replace_mod_bg = s:palette.bg_sl3
+  let s:replace_mod_bg = s:palette.bg_statusline3
 
   let s:commandline_side_fg = s:palette.bg0
   let s:commandline_side_bg = s:palette.green
   let s:commandline_sub_fg = s:palette.fg1
-  let s:commandline_sub_bg = s:palette.bg_sl3
+  let s:commandline_sub_bg = s:palette.bg_statusline3
   let s:commandline_mid_fg = s:palette.fg1
-  let s:commandline_mid_bg = s:palette.bg_sl3
+  let s:commandline_mid_bg = s:palette.bg_statusline3
   let s:commandline_mod_fg = s:palette.blue
-  let s:commandline_mod_bg = s:palette.bg_sl3
+  let s:commandline_mod_bg = s:palette.bg_statusline3
 
-  let s:inactive_side_fg = s:palette.bg_grey1
-  let s:inactive_side_bg = s:palette.bg_sl2
-  let s:inactive_sub_fg = s:palette.bg_grey1
-  let s:inactive_sub_bg = s:palette.bg_sl2
-  let s:inactive_mid_fg = s:palette.bg_grey1
-  let s:inactive_mid_bg = s:palette.bg_sl2
-  let s:inactive_mod_fg = s:palette.bg_grey1
-  let s:inactive_mod_bg = s:palette.bg_sl2 "}}}
+  let s:inactive_side_fg = s:palette.grey2
+  let s:inactive_side_bg = s:palette.bg_statusline2
+  let s:inactive_sub_fg = s:palette.grey2
+  let s:inactive_sub_bg = s:palette.bg_statusline2
+  let s:inactive_mid_fg = s:palette.grey2
+  let s:inactive_mid_bg = s:palette.bg_statusline2
+  let s:inactive_mod_fg = s:palette.grey2
+  let s:inactive_mod_bg = s:palette.bg_statusline2 "}}}
 else "{{{
   let s:accents = s:palette.red
 
@@ -101,8 +101,8 @@ else "{{{
   let s:warning_bg = s:palette.orange
 
   let s:tab_sel_fg = s:palette.bg0
-  let s:tab_sel_bg = s:palette.bg_grey1
-  let s:tab_mid_fg = s:palette.bg_grey1
+  let s:tab_sel_bg = s:palette.grey2
+  let s:tab_mid_fg = s:palette.grey2
   let s:tab_mid_bg = s:palette.bg0
   let s:tab_mod_fg = s:palette.bg0
   let s:tab_mod_bg = s:palette.bg_green
@@ -112,58 +112,58 @@ else "{{{
   let s:tab_label_bg = s:palette.orange
 
   let s:normal_side_fg = s:palette.bg0
-  let s:normal_side_bg = s:palette.bg_grey1
+  let s:normal_side_bg = s:palette.grey2
   let s:normal_sub_fg = s:palette.fg1
-  let s:normal_sub_bg = s:palette.bg_sl3
+  let s:normal_sub_bg = s:palette.bg_statusline3
   let s:normal_mid_fg = s:palette.fg1
-  let s:normal_mid_bg = s:palette.bg_sl1
+  let s:normal_mid_bg = s:palette.bg_statusline1
   let s:normal_mod_fg = s:palette.green
-  let s:normal_mod_bg = s:palette.bg_sl1
+  let s:normal_mod_bg = s:palette.bg_statusline1
 
   let s:insert_side_fg = s:palette.bg0
   let s:insert_side_bg = s:palette.bg_green
   let s:insert_sub_fg = s:palette.fg1
-  let s:insert_sub_bg = s:palette.bg_sl3
+  let s:insert_sub_bg = s:palette.bg_statusline3
   let s:insert_mid_fg = s:palette.fg1
-  let s:insert_mid_bg = s:palette.bg_sl1
+  let s:insert_mid_bg = s:palette.bg_statusline1
   let s:insert_mod_fg = s:palette.green
-  let s:insert_mod_bg = s:palette.bg_sl1
+  let s:insert_mod_bg = s:palette.bg_statusline1
 
   let s:visual_side_fg = s:palette.bg0
   let s:visual_side_bg = s:palette.bg_red
   let s:visual_sub_fg = s:palette.fg1
-  let s:visual_sub_bg = s:palette.bg_sl3
+  let s:visual_sub_bg = s:palette.bg_statusline3
   let s:visual_mid_fg = s:palette.fg1
-  let s:visual_mid_bg = s:palette.bg_sl1
+  let s:visual_mid_bg = s:palette.bg_statusline1
   let s:visual_mod_fg = s:palette.green
-  let s:visual_mod_bg = s:palette.bg_sl1
+  let s:visual_mod_bg = s:palette.bg_statusline1
 
   let s:replace_side_fg = s:palette.bg0
   let s:replace_side_bg = s:palette.bg_yellow
   let s:replace_sub_fg = s:palette.fg1
-  let s:replace_sub_bg = s:palette.bg_sl3
+  let s:replace_sub_bg = s:palette.bg_statusline3
   let s:replace_mid_fg = s:palette.fg1
-  let s:replace_mid_bg = s:palette.bg_sl1
+  let s:replace_mid_bg = s:palette.bg_statusline1
   let s:replace_mod_fg = s:palette.green
-  let s:replace_mod_bg = s:palette.bg_sl1
+  let s:replace_mod_bg = s:palette.bg_statusline1
 
   let s:commandline_side_fg = s:palette.bg0
   let s:commandline_side_bg = s:palette.blue
   let s:commandline_sub_fg = s:palette.fg1
-  let s:commandline_sub_bg = s:palette.bg_sl3
+  let s:commandline_sub_bg = s:palette.bg_statusline3
   let s:commandline_mid_fg = s:palette.fg1
-  let s:commandline_mid_bg = s:palette.bg_sl1
+  let s:commandline_mid_bg = s:palette.bg_statusline1
   let s:commandline_mod_fg = s:palette.green
-  let s:commandline_mod_bg = s:palette.bg_sl1
+  let s:commandline_mod_bg = s:palette.bg_statusline1
 
   let s:inactive_side_fg = s:palette.fg1
-  let s:inactive_side_bg = s:palette.bg_sl3
+  let s:inactive_side_bg = s:palette.bg_statusline3
   let s:inactive_sub_fg = s:palette.fg1
-  let s:inactive_sub_bg = s:palette.bg_sl3
+  let s:inactive_sub_bg = s:palette.bg_statusline3
   let s:inactive_mid_fg = s:palette.fg1
-  let s:inactive_mid_bg = s:palette.bg_sl1
+  let s:inactive_mid_bg = s:palette.bg_statusline1
   let s:inactive_mod_fg = s:palette.fg1
-  let s:inactive_mod_bg = s:palette.bg_sl1
+  let s:inactive_mod_bg = s:palette.bg_statusline1
 endif "}}}
 "}}}
 
