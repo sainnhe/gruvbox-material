@@ -6,9 +6,6 @@
 " License: MIT License
 " =============================================================================
 
-let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
-let s:tmux = executable('tmux') && $TMUX !=# ''
-
 " gruvbox_material#palette(){{{
 function! gruvbox_material#palette(background, palette)
   if a:background ==# 'hard' "{{{
@@ -245,72 +242,34 @@ function! gruvbox_material#palette(background, palette)
   return extend(extend(palette1, palette2), palette3)
 endfunction
 " }}}
-" gruvbox_material#highlight(){{{
-if (has('termguicolors') && &termguicolors) || has('gui_running')  " guifg guibg gui cterm guisp
-  function! gruvbox_material#highlight(group, fg, bg, ...)
-    let hl_string = [
-          \ 'highlight', a:group,
-          \ 'guifg=' . a:fg[0],
-          \ 'guibg=' . a:bg[0],
-          \ ]
-    if a:0 >= 1
-      if a:1 ==# 'undercurl'
-        if !s:tmux
-          call add(hl_string, 'gui=undercurl')
-        else
-          call add(hl_string, 'gui=underline')
-        endif
-        call add(hl_string, 'cterm=underline')
+function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
+  let hl_string = [
+        \ 'highlight', a:group,
+        \ 'guifg=' . a:fg[0],
+        \ 'guibg=' . a:bg[0],
+        \ 'ctermfg=' . a:fg[1],
+        \ 'ctermbg=' . a:bg[1],
+        \ ]
+  if a:0 >= 1
+    if a:1 ==# 'undercurl'
+      if executable('tmux') && $TMUX !=# ''
+        call add(hl_string, 'gui=underline')
       else
-        call add(hl_string, 'gui=' . a:1)
-        call add(hl_string, 'cterm=' . a:1)
+        call add(hl_string, 'gui=undercurl')
       endif
+      call add(hl_string, 'cterm=underline')
     else
-      call add(hl_string, 'gui=NONE')
-      call add(hl_string, 'cterm=NONE')
+      call add(hl_string, 'gui=' . a:1)
+      call add(hl_string, 'cterm=' . a:1)
     endif
-    if a:0 >= 2
-      call add(hl_string, 'guisp=' . a:2[0])
-    endif
-    execute join(hl_string, ' ')
-  endfunction
-elseif s:t_Co >= 256  " ctermfg ctermbg cterm
-  function! gruvbox_material#highlight(group, fg, bg, ...)
-    let hl_string = [
-          \ 'highlight', a:group,
-          \ 'ctermfg=' . a:fg[1],
-          \ 'ctermbg=' . a:bg[1],
-          \ ]
-    if a:0 >= 1
-      if a:1 ==# 'undercurl'
-        call add(hl_string, 'cterm=underline')
-      else
-        call add(hl_string, 'cterm=' . a:1)
-      endif
-    else
-      call add(hl_string, 'cterm=NONE')
-    endif
-    execute join(hl_string, ' ')
-  endfunction
-else  " ctermfg ctermbg cterm
-  function! gruvbox_material#highlight(group, fg, bg, ...)
-    let hl_string = [
-          \ 'highlight', a:group,
-          \ 'ctermfg=' . a:fg[2],
-          \ 'ctermbg=' . a:bg[2],
-          \ ]
-    if a:0 >= 1
-      if a:1 ==# 'undercurl'
-        call add(hl_string, 'cterm=underline')
-      else
-        call add(hl_string, 'cterm=' . a:1)
-      endif
-    else
-      call add(hl_string, 'cterm=NONE')
-    endif
-    execute join(hl_string, ' ')
-  endfunction
-endif
-" }}}
+  else
+    call add(hl_string, 'gui=NONE')
+    call add(hl_string, 'cterm=NONE')
+  endif
+  if a:0 >= 2
+    call add(hl_string, 'guisp=' . a:2[0])
+  endif
+  execute join(hl_string, ' ')
+endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
