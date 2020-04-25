@@ -1221,6 +1221,7 @@ highlight! link ps1BuiltIn Yellow
 " }}}
 " }}}
 " VimL: {{{
+call gruvbox_material#highlight('vimCommentTitle', s:palette.grey1, s:palette.none, 'bold')
 highlight! link vimLet Orange
 highlight! link vimFunction GreenBold
 highlight! link vimIsCommand Fg
