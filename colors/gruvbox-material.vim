@@ -62,20 +62,8 @@ call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
 call gruvbox_material#highlight('Conceal', s:palette.grey1, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call gruvbox_material#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
-elseif s:configuration.cursor ==# 'red'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.red)
-elseif s:configuration.cursor ==# 'orange'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.orange)
-elseif s:configuration.cursor ==# 'yellow'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.yellow)
-elseif s:configuration.cursor ==# 'green'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.green)
-elseif s:configuration.cursor ==# 'aqua'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.aqua)
-elseif s:configuration.cursor ==# 'blue'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.blue)
-elseif s:configuration.cursor ==# 'purple'
-  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette.purple)
+else
+  call gruvbox_material#highlight('Cursor', s:palette.bg0, s:palette[s:configuration.cursor])
 endif
 highlight! link vCursor Cursor
 highlight! link iCursor Cursor
