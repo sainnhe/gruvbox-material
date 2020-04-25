@@ -58,7 +58,9 @@ Vim~
     Put something like this in your vimrc:
 >
 	" important!!
-	set termguicolors
+	if has('termguicolors')
+	  set termguicolors
+	endif
 
 	" for dark version
 	set background=dark
