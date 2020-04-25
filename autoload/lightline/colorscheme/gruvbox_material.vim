@@ -13,6 +13,7 @@ let s:configuration = {}
 let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
 let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
 let s:configuration.statusline_style = get(g:, 'gruvbox_material_statusline_style', 'default')
+let s:configuration.lightline_disable_bold = get(g:, 'gruvbox_material_lightline_disable_bold', 0)
 
 if type(s:configuration.palette) == 4
   let s:palette = s:configuration.palette
@@ -219,7 +220,7 @@ let s:p.normal.error = [ [ s:errorfg, s:errorbg ] ]
 let s:p.normal.warning = [ [ s:warningfg, s:warningbg ] ]
 
 
-if get(g:, 'gruvbox_material_lightline_disable_bold', 0)
+if s:configuration.lightline_disable_bold
   let s:p.normal.left = [ [ s:normal_l1_fg, s:normal_l1_bg ], [ s:normal_l2_fg, s:normal_l2_bg ] ]
   let s:p.normal.right = [ [ s:normal_r1_fg, s:normal_r1_bg ], [ s:normal_r2_fg, s:normal_r2_bg ] ]
   let s:p.insert.left = [ [ s:insert_l1_fg, s:insert_l1_bg ], [ s:insert_l2_fg, s:insert_l2_bg ] ]
