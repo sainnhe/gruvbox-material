@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - Support command line mode for airline and lightline.
 - Support terminal mode for airline and lightline.
 - Add `g:gruvbox_material_statusline_style`.
+- Add more available values for `g:gruvbox_material_menu_selection_background`.
 
 ### Changed
 

@@ -105,11 +105,14 @@ call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg3)
 call gruvbox_material#highlight('PmenuSbar', s:palette.none, s:palette.bg3)
 if s:configuration.menu_selection_background ==# 'grey'
   call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.grey2)
-  call gruvbox_material#highlight('WildMenu', s:palette.bg3, s:palette.grey2)
 elseif s:configuration.menu_selection_background ==# 'green'
   call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.bg_green)
-  call gruvbox_material#highlight('WildMenu', s:palette.bg3, s:palette.bg_green)
+elseif s:configuration.menu_selection_background ==# 'red'
+  call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.bg_red)
+else
+  call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette[s:configuration.menu_selection_background])
 end
+highlight! link WildMenu PmenuSel
 call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
 call gruvbox_material#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)

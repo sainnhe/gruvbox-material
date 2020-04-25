@@ -199,7 +199,8 @@ E.g.~
 
 Control the `Visual` and the `VisualNOS` highlight group.
 
-    Available values: `'grey background'`, `'green background'`, `'blue background'`, `'red background'`, `'reverse'`
+    Available values: `'grey background'`, `'green background'`,
+    `'blue background'`, `'red background'`, `'reverse'`
     Default value: `'grey background'`
 
 E.g.~
@@ -211,12 +212,13 @@ E.g.~
 
 Customize the background color of `PmenuSel` and `WildMenu`.
 
-    Available values: `'grey'`, `'green'`
+    Available values: `'grey'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
+    `'aqua'`, `'blue'`, `'purple'`
     Default value: `'grey'`
 
 E.g.~
 >
-    let g:gruvbox_material_menu_selection_background = 'green'
+    let g:gruvbox_material_menu_selection_background = 'soft green'
 <
 ------------------------------------------------------------------------------
                                       *g:gruvbox_material_cursor_line_contrast*
