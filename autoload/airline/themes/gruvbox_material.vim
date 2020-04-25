@@ -7,16 +7,8 @@
 " =============================================================================
 
 "{{{Initialization
-let s:configuration = {}
-let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
-let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
-let s:configuration.statusline_style = get(g:, 'gruvbox_material_statusline_style', 'default')
-
-if type(s:configuration.palette) == 4
-  let s:palette = s:configuration.palette
-else
-  let s:palette = gruvbox_material#palette(s:configuration.background, s:configuration.palette)
-endif
+let s:configuration = gruvbox_material#get_configuration()
+let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 "}}}
 
 "{{{Definition

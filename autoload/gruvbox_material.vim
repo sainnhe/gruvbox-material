@@ -6,7 +6,27 @@
 " License: MIT License
 " =============================================================================
 
-function! gruvbox_material#palette(background, palette) "{{{
+function! gruvbox_material#get_configuration() "{{{
+  return {
+        \ 'background': get(g:, 'gruvbox_material_background', 'medium'),
+        \ 'palette': get(g:, 'gruvbox_material_palette', 'material'),
+        \ 'transparent_background': get(g:, 'gruvbox_material_transparent_background', 0),
+        \ 'disable_italic_comment': get(g:, 'gruvbox_material_disable_italic_comment', 0),
+        \ 'enable_bold': get(g:, 'gruvbox_material_enable_bold', 0),
+        \ 'enable_italic': get(g:, 'gruvbox_material_enable_italic', 0),
+        \ 'cursor': get(g:, 'gruvbox_material_cursor', 'auto'),
+        \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'),
+        \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'),
+        \ 'cursor_line_contrast': get(g:, 'gruvbox_material_cursor_line_contrast', 'lower'),
+        \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
+        \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
+        \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0)
+        \ }
+endfunction "}}}
+function! gruvbox_material#get_palette(background, palette) "{{{
+  if type(a:palette) == 4
+    return a:palette
+  endif
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {

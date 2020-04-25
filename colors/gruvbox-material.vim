@@ -13,30 +13,10 @@ if exists('syntax_on')
 endif
 
 let g:colors_name = 'gruvbox-material'
-" }}}
-" Configuration: {{{
-let s:configuration = {}
-let s:configuration.background = get(g:, 'gruvbox_material_background', 'medium')
-let s:configuration.palette = get(g:, 'gruvbox_material_palette', 'material')
-let s:configuration.transparent_background = get(g:, 'gruvbox_material_transparent_background', 0)
-let s:configuration.disable_italic_comment = get(g:, 'gruvbox_material_disable_italic_comment', 0)
-let s:configuration.enable_bold = get(g:, 'gruvbox_material_enable_bold', 0)
-let s:configuration.enable_italic = get(g:, 'gruvbox_material_enable_italic', 0)
-let s:configuration.cursor = get(g:, 'gruvbox_material_cursor', 'auto')
-let s:configuration.visual = get(g:, 'gruvbox_material_visual', 'grey background')
-let s:configuration.menu_selection_background = get(g:, 'gruvbox_material_menu_selection_background', 'grey')
-let s:configuration.cursor_line_contrast = get(g:, 'gruvbox_material_cursor_line_contrast', 'lower')
-let s:configuration.current_word = get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold')
-let s:configuration.statusline_style = get(g:, 'gruvbox_material_statusline_style', 'default')
-" }}}
-" Palette: {{{
-if type(s:configuration.palette) == 4
-  let s:palette = s:configuration.palette
-else
-  let s:palette = gruvbox_material#palette(s:configuration.background, s:configuration.palette)
-endif
-" }}}
 
+let s:configuration = gruvbox_material#get_configuration()
+let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
+" }}}
 " Common Highlight Groups: {{{
 " UI: {{{
 if s:configuration.transparent_background
