@@ -12,7 +12,6 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 "}}}
-
 "{{{Definition
 if s:configuration.statusline_style ==# 'original' "{{{
   let s:tab_l_fg = s:palette.grey2
@@ -198,7 +197,6 @@ else "{{{
   let s:inactive_middle_bg = s:palette.bg_statusline1
 endif "}}}
 "}}}
-
 "{{{Implementation
 let s:p.normal.middle = [ [ s:normal_middle_fg, s:normal_middle_bg ] ]
 let s:p.normal.left = [ [ s:normal_l1_fg, s:normal_l1_bg, 'bold' ], [ s:normal_l2_fg, s:normal_l2_bg ] ]
@@ -252,8 +250,8 @@ if s:configuration.lightline_disable_bold
   let s:p.command.right = [ [ s:command_r1_fg, s:command_r1_bg ], [ s:command_r2_fg, s:command_r2_bg ] ]
   let s:p.tabline.tabsel = [ [ s:tab_sel_fg, s:tab_sel_bg ] ]
 endif
-"}}}
 
 let g:lightline#colorscheme#gruvbox_material#palette = lightline#colorscheme#flatten(s:p)
+"}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:

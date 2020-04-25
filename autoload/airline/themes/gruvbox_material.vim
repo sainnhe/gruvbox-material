@@ -10,7 +10,6 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 "}}}
-
 "{{{Definition
 if s:configuration.statusline_style ==# 'original' "{{{
   let s:accents = s:palette.red
@@ -162,7 +161,6 @@ else "{{{
   let s:inactive_mod_bg = s:palette.bg_statusline1
 endif "}}}
 "}}}
-
 "{{{Implementation
 let g:airline#themes#gruvbox_material#palette = {}
 let g:airline#themes#gruvbox_material#palette.accents = {
