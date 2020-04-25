@@ -176,7 +176,7 @@ function! gruvbox_material#palette(background, palette)
             \ 'aqua':             ['#8bba7f',   '108',  'Cyan'],
             \ 'blue':             ['#80aa9e',   '109',  'Blue'],
             \ 'purple':           ['#d3869b',   '175',  'Magenta'],
-            \ 'bg_red':           ['#f2594b',   '167',  'Red'],
+            \ 'bg_red':           ['#db4740',   '167',  'Red'],
             \ 'bg_green':         ['#b0b846',   '142',  'Green'],
             \ 'bg_yellow':        ['#e9b143',   '214',  'Yellow']
             \ }

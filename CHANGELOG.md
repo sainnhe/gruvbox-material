@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file.
 - Adjust `NonText`, `Whitespace` and `SpecialKey`.
 - Use green in modified fg.
 - Add `autoload/gruvbox_material.vim`.
+- Adjust `bg_red` in the mix palette.
 
 ## [1.1.2] - 2020-04-04
 
