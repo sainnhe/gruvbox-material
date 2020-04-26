@@ -218,7 +218,7 @@ Customize the background color of `PmenuSel` and `WildMenu`.
 
 E.g.~
 >
-    let g:gruvbox_material_menu_selection_background = 'soft green'
+    let g:gruvbox_material_menu_selection_background = 'green'
 <
 ------------------------------------------------------------------------------
                                       *g:gruvbox_material_cursor_line_contrast*
