@@ -257,33 +257,14 @@ function! gruvbox_material#get_palette(background, palette) "{{{
   return extend(extend(palette1, palette2), palette3)
 endfunction "}}}
 function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
-  let hl_string = [
-        \ 'highlight', a:group,
-        \ 'guifg=' . a:fg[0],
-        \ 'guibg=' . a:bg[0],
-        \ 'ctermfg=' . a:fg[1],
-        \ 'ctermbg=' . a:bg[1],
-        \ ]
-  if a:0 >= 1
-    if a:1 ==# 'undercurl'
-      if executable('tmux') && $TMUX !=# ''
-        call add(hl_string, 'gui=underline')
-      else
-        call add(hl_string, 'gui=undercurl')
-      endif
-      call add(hl_string, 'cterm=underline')
-    else
-      call add(hl_string, 'gui=' . a:1)
-      call add(hl_string, 'cterm=' . a:1)
-    endif
-  else
-    call add(hl_string, 'gui=NONE')
-    call add(hl_string, 'cterm=NONE')
-  endif
-  if a:0 >= 2
-    call add(hl_string, 'guisp=' . a:2[0])
-  endif
-  execute join(hl_string, ' ')
+  execute 'highlight' a:group
+        \ 'guifg=' . a:fg[0]
+        \ 'guibg=' . a:bg[0]
+        \ 'ctermfg=' . a:fg[1]
+        \ 'ctermbg=' . a:bg[1]
+        \ 'gui=' . (a:0 >= 1 ? (a:1 ==# 'undercurl' ? ((executable('tmux') && $TMUX !=# '') ? 'underline' : 'undercurl') : a:1) : 'NONE')
+        \ 'cterm=' . (a:0 >= 1 ? (a:1 ==# 'undercurl' ? 'underline' : a:1) : 'NONE')
+        \ 'guisp=' . (a:0 >= 2 ? a:2[0] : 'NONE')
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:

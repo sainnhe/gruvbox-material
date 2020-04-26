@@ -29,6 +29,7 @@ All notable changes to this project will be documented in this file.
 - Adjust `bg_red` in the mix palette.
 - Adjust `DiffText`.
 - Adjust `bg_statusline3` in soft dark background.
+- Optimize performance.
 
 ## [1.1.2] - 2020-04-04
 
