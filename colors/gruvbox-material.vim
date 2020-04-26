@@ -1434,13 +1434,7 @@ call gruvbox_material#highlight('CocErrorFloat', s:palette.red, s:palette.bg3)
 call gruvbox_material#highlight('CocWarningFloat', s:palette.yellow, s:palette.bg3)
 call gruvbox_material#highlight('CocInfoFloat', s:palette.blue, s:palette.bg3)
 call gruvbox_material#highlight('CocHintFloat', s:palette.aqua, s:palette.bg3)
-if s:configuration.current_word ==# 'bold'
-  call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, 'bold')
-elseif s:configuration.current_word ==# 'underline'
-  call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, 'underline')
-elseif s:configuration.current_word ==# 'italic'
-  call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, 'italic')
-elseif s:configuration.current_word ==# 'grey background'
+if s:configuration.current_word ==# 'grey background'
   if s:configuration.background ==# 'hard'
     if &background ==# 'dark'
       hi CocHighlightText guibg=#32302f ctermbg=236
@@ -1460,6 +1454,8 @@ elseif s:configuration.current_word ==# 'grey background'
       hi CocHighlightText guibg=#ebdbb2 ctermbg=227
     endif
   endif
+else
+  call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
