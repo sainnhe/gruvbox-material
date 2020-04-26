@@ -262,8 +262,18 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
         \ 'guibg=' . a:bg[0]
         \ 'ctermfg=' . a:fg[1]
         \ 'ctermbg=' . a:bg[1]
-        \ 'gui=' . (a:0 >= 1 ? (a:1 ==# 'undercurl' ? ((executable('tmux') && $TMUX !=# '') ? 'underline' : 'undercurl') : a:1) : 'NONE')
-        \ 'cterm=' . (a:0 >= 1 ? (a:1 ==# 'undercurl' ? 'underline' : a:1) : 'NONE')
+        \ 'gui=' . (a:0 >= 1 ?
+          \ (a:1 ==# 'undercurl' ?
+            \ (executable('tmux') && $TMUX !=# '' ?
+              \ 'underline' :
+              \ 'undercurl') :
+            \ a:1) :
+          \ 'NONE')
+        \ 'cterm=' . (a:0 >= 1 ?
+          \ (a:1 ==# 'undercurl' ?
+            \ 'underline' :
+            \ a:1) :
+          \ 'NONE')
         \ 'guisp=' . (a:0 >= 2 ? a:2[0] : 'NONE')
 endfunction "}}}
 
