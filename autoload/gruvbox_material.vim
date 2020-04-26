@@ -114,7 +114,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg5':              ['#665c54',   '241'],
             \ 'bg_statusline1':   ['#3c3836',   '237'],
             \ 'bg_statusline2':   ['#46413e',   '237'],
-            \ 'bg_statusline3':   ['#665c54',   '241'],
+            \ 'bg_statusline3':   ['#5b534d',   '241'],
             \ 'bg_diff_green':    ['#3d4220',   '22'],
             \ 'bg_visual_green':  ['#333e34',   '22'],
             \ 'bg_diff_red':      ['#472322',   '52'],
