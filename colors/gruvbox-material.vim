@@ -1266,6 +1266,7 @@ highlight! link vimSynType Orange
 highlight! link vimHiBang Orange
 highlight! link vimSet Yellow
 highlight! link vimSetSep Grey
+highlight! link vimContinue Grey
 " }}}
 " Makefile: {{{
 highlight! link makeIdent Aqua
