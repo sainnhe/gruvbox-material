@@ -14,6 +14,10 @@ endif
 
 let g:colors_name = 'gruvbox-material'
 
+if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
+  finish
+endif
+
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 " }}}
