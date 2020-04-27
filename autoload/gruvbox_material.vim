@@ -274,7 +274,9 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
             \ 'underline' :
             \ a:1) :
           \ 'NONE')
-        \ 'guisp=' . (a:0 >= 2 ? a:2[0] : 'NONE')
+        \ 'guisp=' . (a:0 >= 2 ?
+          \ a:2[0] :
+          \ 'NONE')
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
