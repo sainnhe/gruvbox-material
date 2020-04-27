@@ -26,7 +26,7 @@ Manually~
     1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/gruvbox-material.git`
 
     2. Copy `/path/to/gruvbox-material/autoload/gruvbox_material.vim` to
-    `~/.vim/autoload`.
+    `~/.vim/autoload/`.
 
     3. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to
     `~/.vim/colors/` .
