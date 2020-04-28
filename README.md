@@ -155,10 +155,6 @@ To apply it without reloading:
 
 **A:** The name is `gruvbox_material` instead of `gruvbox-material`. I have to use underline for some grammatical reasons.
 
-**Q: The background color of gitgutter looks wired.**
-
-**A:** See [edge#6](https://github.com/sainnhe/edge/issues/6#issuecomment-570750204).
-
 **Q: How to enable cursive italic keywords?**
 
 **A:**
