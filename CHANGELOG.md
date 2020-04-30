@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Add `g:gruvbox_material_statusline_style`.
 - Add more available values for `g:gruvbox_material_menu_selection_background`.
 - Add `Substitute`, `TermCursor` and `TermCursorNC`.
+- Optimize vim-sneak.
 
 ### Changed
 
