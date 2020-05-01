@@ -17,7 +17,6 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'cursor': get(g:, 'gruvbox_material_cursor', 'auto'),
         \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'),
         \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'),
-        \ 'cursor_line_contrast': get(g:, 'gruvbox_material_cursor_line_contrast', 'lower'),
         \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'default'),
         \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
@@ -32,7 +31,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
     if &background ==# 'dark'
       let palette1 = {
             \ 'bg0':              ['#1d2021',   '234'],
-            \ 'bg1':              ['#262727',   '235'],
+            \ 'bg1':              ['#282828',   '235'],
             \ 'bg2':              ['#282828',   '235'],
             \ 'bg3':              ['#3c3836',   '237'],
             \ 'bg4':              ['#3c3836',   '237'],
@@ -70,7 +69,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
     if &background ==# 'dark'
       let palette1 = {
             \ 'bg0':              ['#282828',   '235'],
-            \ 'bg1':              ['#302f2e',   '236'],
+            \ 'bg1':              ['#32302f',   '236'],
             \ 'bg2':              ['#32302f',   '236'],
             \ 'bg3':              ['#45403d',   '237'],
             \ 'bg4':              ['#45403d',   '237'],
@@ -108,7 +107,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
     if &background ==# 'dark'
       let palette1 = {
             \ 'bg0':              ['#32302f',   '236'],
-            \ 'bg1':              ['#3a3735',   '237'],
+            \ 'bg1':              ['#3c3836',   '237'],
             \ 'bg2':              ['#3c3836',   '237'],
             \ 'bg3':              ['#504945',   '239'],
             \ 'bg4':              ['#504945',   '239'],

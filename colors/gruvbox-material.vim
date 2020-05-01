@@ -57,24 +57,13 @@ highlight! link vCursor Cursor
 highlight! link iCursor Cursor
 highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
-if s:configuration.cursor_line_contrast ==# 'lower'
-  call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
-  call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
-  call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
-  if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
-    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
-  else
-    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
-  endif
+call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
+call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
+call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
+if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+  call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
 else
-  call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg2)
-  call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg2)
-  call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
-  if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
-    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
-  else
-    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg2)
-  endif
+  call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
 endif
 call gruvbox_material#highlight('DiffAdd', s:palette.none, s:palette.bg_diff_green)
 call gruvbox_material#highlight('DiffChange', s:palette.none, s:palette.bg_diff_blue)

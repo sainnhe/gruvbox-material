@@ -33,6 +33,10 @@ All notable changes to this project will be documented in this file.
 - Adjust `bg_statusline3` in soft dark background.
 - Optimize performance.
 
+### Removed
+
+- Remove `g:gruvbox_material_cursor_line_contrast`.
+
 ## [1.1.2] - 2020-04-04
 
 ### Added
