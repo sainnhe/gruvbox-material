@@ -238,6 +238,19 @@ E.g.~
     let g:gruvbox_material_cursor_line_contrast = 'higher'
 <
 ------------------------------------------------------------------------------
+                                    *g:gruvbox_material_sign_column_background*
+
+By default, the background color of sign column is different from normal text.
+If you want to make it the same as normal text, set this option to `'none'`.
+
+    Available values: `'default'`, `'none'`
+    Default value: `'default'`
+
+E.g.~
+>
+    let g:gruvbox_material_sign_column_background = 'none'
+<
+------------------------------------------------------------------------------
                                               *g:gruvbox_material_current_word*
 
 Some plugins can highlight the word under current cursor, you can use this

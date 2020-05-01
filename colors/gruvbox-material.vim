@@ -37,8 +37,12 @@ else
   call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
   call gruvbox_material#highlight('FoldColumn', s:palette.grey1, s:palette.bg2)
   call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.bg2)
-  call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.bg2)
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg1, s:palette.bg3)
+  if s:configuration.sign_column_background ==# 'default'
+    call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.bg2)
+  else
+    call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.none)
+  endif
 endif
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
@@ -57,7 +61,7 @@ if s:configuration.cursor_line_contrast ==# 'lower'
   call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
   call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
   call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
-  if &relativenumber == 1 && &cursorline == 0
+  if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
     call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
   else
     call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
@@ -66,7 +70,7 @@ else
   call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg2)
   call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg2)
   call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
-  if &relativenumber == 1 && &cursorline == 0
+  if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
     call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
   else
     call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg2)
@@ -262,7 +266,7 @@ else
   call gruvbox_material#highlight('BlueBold', s:palette.blue, s:palette.none)
   call gruvbox_material#highlight('PurpleBold', s:palette.purple, s:palette.none)
 endif
-if s:configuration.transparent_background
+if s:configuration.transparent_background || s:configuration.sign_column_background !=# 'default'
   call gruvbox_material#highlight('RedSign', s:palette.red, s:palette.none)
   call gruvbox_material#highlight('OrangeSign', s:palette.orange, s:palette.none)
   call gruvbox_material#highlight('YellowSign', s:palette.yellow, s:palette.none)
@@ -1762,7 +1766,6 @@ highlight! link WhichKey Red
 highlight! link WhichKeySeperator Green
 highlight! link WhichKeyGroup Yellow
 highlight! link WhichKeyDesc Blue
-highlight! link WhichKeyFloating SignColumn
 " }}}
 " skywind3000/quickmenu.vim {{{
 highlight! link QuickmenuOption Green

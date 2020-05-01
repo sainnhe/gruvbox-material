@@ -18,6 +18,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'),
         \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'),
         \ 'cursor_line_contrast': get(g:, 'gruvbox_material_cursor_line_contrast', 'lower'),
+        \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'default'),
         \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
         \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0)
