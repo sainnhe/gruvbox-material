@@ -1668,14 +1668,14 @@ call gruvbox_material#highlight('MatchWord', s:palette.none, s:palette.none, 'un
 call gruvbox_material#highlight('MatchWordCur', s:palette.none, s:palette.none, 'underline')
 " }}}
 " easymotion/vim-easymotion {{{
-highlight! link EasyMotionTarget Sneak
+highlight! link EasyMotionTarget Search
 highlight! link EasyMotionShade Grey
 " }}}
 " justinmk/vim-sneak {{{
-call gruvbox_material#highlight('Sneak', s:palette.bg0, s:palette.bg_green)
-call gruvbox_material#highlight('SneakLabel', s:palette.bg0, s:palette.bg_green)
 call gruvbox_material#highlight('SneakLabelMask', s:palette.bg_green, s:palette.bg_green)
-call gruvbox_material#highlight('SneakScope', s:palette.bg0, s:palette.grey1)
+highlight! link Sneak Search
+highlight! link SneakLabel Search
+highlight! link SneakScope DiffText
 " }}}
 " terryma/vim-multiple-cursors {{{
 highlight! link multiple_cursors_cursor Cursor
