@@ -97,8 +97,8 @@ else "{{{
 
   let s:tab_sel_fg = s:palette.bg0
   let s:tab_sel_bg = s:palette.grey2
-  let s:tab_mid_fg = s:palette.grey2
-  let s:tab_mid_bg = s:palette.bg0
+  let s:tab_mid_fg = s:palette.fg1
+  let s:tab_mid_bg = s:palette.bg_statusline1
   let s:tab_mod_fg = s:palette.bg0
   let s:tab_mod_bg = s:palette.bg_green
   let s:tab_type_fg = s:palette.bg0
