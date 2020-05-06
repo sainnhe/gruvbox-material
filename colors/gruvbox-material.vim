@@ -138,7 +138,6 @@ call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
   call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  call gruvbox_material#highlight('TermCursorNC', s:palette.bg0, s:palette.grey2)
   highlight! link TermCursor Cursor
   highlight! link healthError Red
   highlight! link healthSuccess Green
