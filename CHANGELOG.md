@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Fix airline warning and error.
+
 ## [1.1.3] - 2020-05-06
 
 ### Added
