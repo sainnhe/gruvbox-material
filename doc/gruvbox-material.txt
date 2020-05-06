@@ -2,10 +2,34 @@
 
 CONTENTS                                     *gruvbox-material-contents*
 
+Introduction                                 |gruvbox-material-introduction|
 Installation                                 |gruvbox-material-installation|
 Usage                                        |gruvbox-material-usage|
 Configuration                                |gruvbox-material-configuration|
 FAQ                                          |gruvbox-material-faq|
+
+==============================================================================
+INTRODUCTION                                    *gruvbox-material-introduction*
+
+Gruvbox Material is a modified version of Gruvbox, the contrast is adjusted to
+be softer in order to protect developers' eyes.
+
+There are 3 palettes available in this color scheme:
+
+- `material`: Carefully designed to have a soft contrast.
+- `mix`: Color palette obtained by calculating the mean of the other two.
+- `original`: The color palette used in the original gruvbox.
+
+This color scheme uses the `material` palette by default, you can use
+|g:gruvbox_material_palette| to switch to another palette.
+
+Features~
+
+- Carefully designed color palette for eye protection.
+- Switch back to the original color palette whenever you like.
+- Highly customizable.
+- Rich support for common file types and plugins.
+- Italic support 🎉
 
 ==============================================================================
 INSTALLATION                                    *gruvbox-material-installation*
