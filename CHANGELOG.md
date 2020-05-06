@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.1.3] - 2020-05-06
+
 ### Added
 
 - Optimize Coc.
@@ -230,7 +232,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.2...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.3...HEAD
+[1.1.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/sainnhe/gruvbox-material/compare/v1.0.1...v1.1.0
