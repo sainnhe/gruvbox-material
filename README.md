@@ -178,6 +178,7 @@ To apply it without reloading:
 ### IDE
 
 - [Intellij IDEA](https://github.com/Happin3ss/gruvbox-material) *(WIP)* by [@Happin3ss](https://github.com/Happin3ss)
+- [Xcode](https://github.com/zxYin/gruvbox-material-for-xcode) by [@zxYin](https://github.com/zxYin)
 
 ### Code Editors
 
