@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `g:gruvbox_material_enable_error_warning_line_highlight`.
+
 ### Changed
 
 - Fix airline warning and error.

@@ -20,7 +20,8 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'default'),
         \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
-        \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0)
+        \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0),
+        \ 'enable_error_warning_line_highlight': get(g:, 'gruvbox_material_enable_error_warning_line_highlight', 0),
         \ }
 endfunction "}}}
 function! gruvbox_material#get_palette(background, palette) "{{{

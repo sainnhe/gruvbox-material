@@ -272,6 +272,33 @@ else
   call gruvbox_material#highlight('BlueSign', s:palette.blue, s:palette.bg2)
   call gruvbox_material#highlight('PurpleSign', s:palette.purple, s:palette.bg2)
 endif
+if s:configuration.enable_error_warning_line_highlight
+  if s:configuration.background ==# 'hard'
+    if &background ==# 'dark'
+      highlight ErrorLine guibg=#382e2e ctermbg=236
+      highlight WarningLine guibg=#3c3c2d ctermbg=237
+    else
+      highlight ErrorLine guibg=#fae9d3 ctermbg=224
+      highlight WarningLine guibg=#faf2ce ctermbg=230
+    endif
+  elseif s:configuration.background ==# 'medium'
+    if &background ==# 'dark'
+      highlight ErrorLine guibg=#453736 ctermbg=237
+      highlight WarningLine guibg=#494535 ctermbg=238
+    else
+      highlight ErrorLine guibg=#fce5c7 ctermbg=224
+      highlight WarningLine guibg=#fbeec2 ctermbg=229
+    endif
+  elseif s:configuration.background ==# 'soft'
+    if &background ==# 'dark'
+      highlight ErrorLine guibg=#50403E ctermbg=238
+      highlight WarningLine guibg=#534E3D ctermbg=239
+    else
+      highlight ErrorLine guibg=#f6ddbf ctermbg=223
+      highlight WarningLine guibg=#f5e6ba ctermbg=229
+    endif
+  endif
+endif
 " }}}
 " }}}
 " Extended File Types: {{{
@@ -1476,6 +1503,12 @@ if s:configuration.current_word ==# 'grey background'
 else
   call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
+
+if s:configuration.enable_error_warning_line_highlight
+  highlight! link CocErrorLine ErrorLine
+  highlight! link CocWarningLine WarningLine
+endif
+
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
 highlight! link CocInfoSign BlueSign
@@ -1510,6 +1543,12 @@ highlight! link CocExplorerFileSize Blue
 highlight! link CocExplorerTimeAccessed Aqua
 highlight! link CocExplorerTimeCreated Aqua
 highlight! link CocExplorerTimeModified Aqua
+" }}}
+" ycm-core/YouCompleteMe {{{
+if s:configuration.enable_error_warning_line_highlight
+  highlight! link YcmErrorLine ErrorLine
+  highlight! link YcmWarningLine WarningLine
+endif
 " }}}
 " dense-analysis/ale {{{
 call gruvbox_material#highlight('ALEError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)

@@ -63,7 +63,7 @@ Manually~
     to `~/.vim/autoload/airline/themes/gruvbox_material.vim` .
 
     6. To install [lightline](https://github.com/itchyny/lightline.vim) theme,
-    copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` 
+    copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim`
     to `~/.vim/autoload/lightline/colorscheme/gruvbox_material.vim` .
 
 ------------------------------------------------------------------------------
@@ -126,7 +126,7 @@ Lightline~
 >
 	let g:lightline = {}
 	let g:lightline.colorscheme = 'gruvbox_material'
-    
+
 	" or this line
 	let g:lightline = {'colorscheme' : 'gruvbox_material'}
 <
@@ -364,6 +364,16 @@ E.g.~
 <
 Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
+------------------------------------------------------------------------------
+                                    *g:gruvbox_material_enable_error_warning_line_highlight*
+
+By default, highlight of error and warning lines is disabled. To enable it,
+set this option to `1`.
+
+E.g.~
+>
+    let g:gruvbox_material_enable_error_warning_line_highlight = 1
+<
 ==============================================================================
 FAQ                                                      *gruvbox-material-faq*
 
