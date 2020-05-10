@@ -1522,8 +1522,12 @@ highlight! link LspHintHighlight CocHintHighlight
 highlight! link lspReference CurrentWord
 " }}}
 " ycm-core/YouCompleteMe {{{
+highlight! link YcmErrorSign RedSign
+highlight! link YcmWarningSign YellowSign
 highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
+highlight! link YcmErrorSection CocErrorHighlight
+highlight! link YcmWarningSection CocWarningHighlight
 " }}}
 " dense-analysis/ale {{{
 highlight! link ALEError CocErrorHighlight
