@@ -622,9 +622,7 @@ highlight! link Blamer Grey
 " Extended File Types: {{{
 if s:configuration.better_performance
   " generate /ftplugin if it doesn't exist
-  if isdirectory(substitute(expand('<sfile>:p'), '/colors/gruvbox-material\.vim$', '', '') . '/ftplugin')
-    finish
-  else
+  if !isdirectory(substitute(expand('<sfile>:p'), '/colors/gruvbox-material\.vim$', '', '') . '/ftplugin')
     call gruvbox_material#ft_gen(expand('<sfile>:p'))
   endif
   finish " quit sourcing this script
