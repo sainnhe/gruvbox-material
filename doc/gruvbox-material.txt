@@ -385,6 +385,23 @@ E.g.~
 <
 Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
+------------------------------------------------------------------------------
+                                          *g:gruvbox_material_high_performance*
+
+The loading time of this color scheme is very long because too many file types
+and plugins are optimized, this feature allows you to load this part of code
+on demand by placing them in the `ftplugin` directory.
+
+Enabling this option will reduce loading time by approximately 50%.
+
+E.g.~
+>
+    let g:gruvbox_material_high_performance = 1
+<
+Note: Enabling this option will generate many files in the
+`gruvbox-material/ftplugin` directory, think twice if you didn't use a plugin
+manager to install this color scheme.
+
 ==============================================================================
 FAQ                                                      *gruvbox-material-faq*
 
