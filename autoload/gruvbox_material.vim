@@ -21,7 +21,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
         \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
         \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0),
-        \ 'enable_error_warning_line_highlight': get(g:, 'gruvbox_material_enable_error_warning_line_highlight', 0),
+        \ 'diagnostic_line_highlight': get(g:, 'gruvbox_material_diagnostic_line_highlight', 0),
         \ }
 endfunction "}}}
 function! gruvbox_material#get_palette(background, palette) "{{{
@@ -45,7 +45,8 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_red':      ['#3c1f1e',   '52'],
             \ 'bg_visual_red':    ['#442e2d',   '52'],
             \ 'bg_diff_blue':     ['#0d3138',   '17'],
-            \ 'bg_visual_blue':   ['#2e3b3b',   '17']
+            \ 'bg_visual_blue':   ['#2e3b3b',   '17'],
+            \ 'bg_visual_yellow': ['#473c29',   '94']
             \ }
     else
       let palette1 = {
@@ -63,7 +64,8 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_red':      ['#ffdbcc',   '217'],
             \ 'bg_visual_red':    ['#f6d2ba',   '217'],
             \ 'bg_diff_blue':     ['#cff1f6',   '117'],
-            \ 'bg_visual_blue':   ['#d9e1cc',   '117']
+            \ 'bg_visual_blue':   ['#d9e1cc',   '117'],
+            \ 'bg_visual_yellow': ['#f1e2b7',   '226']
             \ }
     endif "}}}
   elseif a:background ==# 'medium' "{{{
@@ -83,7 +85,8 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_red':      ['#402120',   '52'],
             \ 'bg_visual_red':    ['#4c3432',   '52'],
             \ 'bg_diff_blue':     ['#0e363e',   '17'],
-            \ 'bg_visual_blue':   ['#374141',   '17']
+            \ 'bg_visual_blue':   ['#374141',   '17'],
+            \ 'bg_visual_yellow': ['#4f422e',   '94']
             \ }
     else
       let palette1 = {
@@ -101,7 +104,8 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_red':      ['#fbcdb9',   '217'],
             \ 'bg_visual_red':    ['#f7cfae',   '217'],
             \ 'bg_diff_blue':     ['#c6eaf0',   '117'],
-            \ 'bg_visual_blue':   ['#dadec0',   '117']
+            \ 'bg_visual_blue':   ['#dadec0',   '117'],
+            \ 'bg_visual_yellow': ['#f2dfab',   '226']
             \ }
     endif "}}}
   elseif a:background ==# 'soft' "{{{
@@ -117,11 +121,12 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_statusline2':   ['#46413e',   '237'],
             \ 'bg_statusline3':   ['#5b534d',   '241'],
             \ 'bg_diff_green':    ['#3d4220',   '22'],
-            \ 'bg_visual_green':  ['#333e34',   '22'],
+            \ 'bg_visual_green':  ['#424a3e',   '22'],
             \ 'bg_diff_red':      ['#472322',   '52'],
-            \ 'bg_visual_red':    ['#442e2d',   '52'],
+            \ 'bg_visual_red':    ['#543937',   '52'],
             \ 'bg_diff_blue':     ['#0f3a42',   '17'],
-            \ 'bg_visual_blue':   ['#2e3b3b',   '17']
+            \ 'bg_visual_blue':   ['#404946',   '17'],
+            \ 'bg_visual_yellow': ['#574833',   '94']
             \ }
     else
       let palette1 = {
@@ -139,7 +144,8 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_red':      ['#fbcab5',   '217'],
             \ 'bg_visual_red':    ['#f0c6a6',   '217'],
             \ 'bg_diff_blue':     ['#bee4ea',   '117'],
-            \ 'bg_visual_blue':   ['#d3d5b8',   '117']
+            \ 'bg_visual_blue':   ['#d3d5b8',   '117'],
+            \ 'bg_visual_yellow': ['#ecd6a3',   '226']
             \ }
     endif
   endif "}}}

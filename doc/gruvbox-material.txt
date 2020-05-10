@@ -282,6 +282,23 @@ E.g.~
     let g:gruvbox_material_current_word = 'bold'
 <
 ------------------------------------------------------------------------------
+                                 *g:gruvbox_material_diagnostic_line_highlight*
+
+Some plugins support highlighting error/warning/info/hint lines, but this
+feature is disabled by default in this color scheme. To enable this feature,
+set this option to `1`.
+
+E.g.~
+>
+    let g:gruvbox_material_diagnostic_line_highlight = 1
+<
+Currently, the following plugins are supported:
+
+- https://github.com/neoclide/coc.nvim
+- https://github.com/ycm-core/YouCompleteMe
+- https://github.com/dense-analysis/ale
+
+------------------------------------------------------------------------------
                                                    *g:gruvbox_material_palette*
 
 Customize the color palette used in this color scheme.
@@ -364,16 +381,6 @@ E.g.~
 <
 Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
-------------------------------------------------------------------------------
-                                    *g:gruvbox_material_enable_error_warning_line_highlight*
-
-By default, highlight of error and warning lines is disabled. To enable it,
-set this option to `1`.
-
-E.g.~
->
-    let g:gruvbox_material_enable_error_warning_line_highlight = 1
-<
 ==============================================================================
 FAQ                                                      *gruvbox-material-faq*
 

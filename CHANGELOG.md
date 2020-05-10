@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Add `g:gruvbox_material_enable_error_warning_line_highlight`.
+- Add `g:gruvbox_material_diagnostic_line_highlight`.
 
 ### Changed
 

@@ -272,32 +272,16 @@ else
   call gruvbox_material#highlight('BlueSign', s:palette.blue, s:palette.bg2)
   call gruvbox_material#highlight('PurpleSign', s:palette.purple, s:palette.bg2)
 endif
-if s:configuration.enable_error_warning_line_highlight
-  if s:configuration.background ==# 'hard'
-    if &background ==# 'dark'
-      highlight ErrorLine guibg=#382e2e ctermbg=236
-      highlight WarningLine guibg=#3c3c2d ctermbg=237
-    else
-      highlight ErrorLine guibg=#fae9d3 ctermbg=224
-      highlight WarningLine guibg=#faf2ce ctermbg=230
-    endif
-  elseif s:configuration.background ==# 'medium'
-    if &background ==# 'dark'
-      highlight ErrorLine guibg=#453736 ctermbg=237
-      highlight WarningLine guibg=#494535 ctermbg=238
-    else
-      highlight ErrorLine guibg=#fce5c7 ctermbg=224
-      highlight WarningLine guibg=#fbeec2 ctermbg=229
-    endif
-  elseif s:configuration.background ==# 'soft'
-    if &background ==# 'dark'
-      highlight ErrorLine guibg=#50403E ctermbg=238
-      highlight WarningLine guibg=#534E3D ctermbg=239
-    else
-      highlight ErrorLine guibg=#f6ddbf ctermbg=223
-      highlight WarningLine guibg=#f5e6ba ctermbg=229
-    endif
-  endif
+if s:configuration.diagnostic_line_highlight
+  call gruvbox_material#highlight('ErrorLine', s:palette.none, s:palette.bg_visual_red)
+  call gruvbox_material#highlight('WarningLine', s:palette.none, s:palette.bg_visual_yellow)
+  call gruvbox_material#highlight('InfoLine', s:palette.none, s:palette.bg_visual_blue)
+  call gruvbox_material#highlight('HintLine', s:palette.none, s:palette.bg_visual_green)
+else
+  highlight clear ErrorLine
+  highlight clear WarningLine
+  highlight clear InfoLine
+  highlight clear HintLine
 endif
 " }}}
 " }}}
@@ -1504,11 +1488,6 @@ else
   call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
 
-if s:configuration.enable_error_warning_line_highlight
-  highlight! link CocErrorLine ErrorLine
-  highlight! link CocWarningLine WarningLine
-endif
-
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
 highlight! link CocInfoSign BlueSign
@@ -1520,6 +1499,10 @@ highlight! link CocWarningVirtualText Grey
 highlight! link CocErrorVirtualText Grey
 highlight! link CocInfoVirtualText Grey
 highlight! link CocHintVirtualText Grey
+highlight! link CocErrorLine ErrorLine
+highlight! link CocWarningLine WarningLine
+highlight! link CocInfoLine InfoLine
+highlight! link CocHintLine HintLine
 highlight! link CocCodeLens Grey
 highlight! link HighlightedyankRegion Visual
 highlight! link CocGitAddedSign GreenSign
@@ -1545,10 +1528,8 @@ highlight! link CocExplorerTimeCreated Aqua
 highlight! link CocExplorerTimeModified Aqua
 " }}}
 " ycm-core/YouCompleteMe {{{
-if s:configuration.enable_error_warning_line_highlight
-  highlight! link YcmErrorLine ErrorLine
-  highlight! link YcmWarningLine WarningLine
-endif
+highlight! link YcmErrorLine ErrorLine
+highlight! link YcmWarningLine WarningLine
 " }}}
 " dense-analysis/ale {{{
 call gruvbox_material#highlight('ALEError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -1557,6 +1538,9 @@ call gruvbox_material#highlight('ALEInfo', s:palette.none, s:palette.none, 'unde
 highlight! link ALEErrorSign RedSign
 highlight! link ALEWarningSign YellowSign
 highlight! link ALEInfoSign BlueSign
+highlight! link ALEErrorLine ErrorLine
+highlight! link ALEWarningLine WarningLine
+highlight! link ALEInfoLine InfoLine
 highlight! link ALEVirtualTextError Grey
 highlight! link ALEVirtualTextWarning Grey
 highlight! link ALEVirtualTextInfo Grey
