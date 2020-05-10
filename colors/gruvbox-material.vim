@@ -146,9 +146,9 @@ if has('nvim')
   highlight! link LspDiagnosticsWarning Grey
   highlight! link LspDiagnosticInformation Grey
   highlight! link LspDiagnosticHint Grey
-  highlight! link LspReferenceText CocHighlightText
-  highlight! link LspReferenceRead CocHighlightText
-  highlight! link LspReferenceWrite CocHighlightText
+  highlight! link LspReferenceText CurrentWord
+  highlight! link LspReferenceRead CurrentWord
+  highlight! link LspReferenceWrite CurrentWord
 endif
 " }}}
 " Syntax: {{{
@@ -283,6 +283,7 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
+call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.current_word)
 " }}}
 " }}}
 " Extended File Types: {{{
@@ -936,7 +937,7 @@ highlight! link semshiBuiltin Yellow
 highlight! link semshiAttribute Aqua
 highlight! link semshiLocal Red
 highlight! link semshiFree Red
-highlight! link semshiSelected CocHighlightText
+highlight! link semshiSelected CurrentWord
 highlight! link semshiErrorSign RedSign
 highlight! link semshiErrorChar RedSign
 " }}}
@@ -1465,25 +1466,7 @@ call gruvbox_material#highlight('CocWarningFloat', s:palette.yellow, s:palette.b
 call gruvbox_material#highlight('CocInfoFloat', s:palette.blue, s:palette.bg3)
 call gruvbox_material#highlight('CocHintFloat', s:palette.aqua, s:palette.bg3)
 if s:configuration.current_word ==# 'grey background'
-  if s:configuration.background ==# 'hard'
-    if &background ==# 'dark'
-      hi CocHighlightText guibg=#32302f ctermbg=236
-    else
-      hi CocHighlightText guibg=#f3eac7 ctermbg=229
-    endif
-  elseif s:configuration.background ==# 'medium'
-    if &background ==# 'dark'
-      hi CocHighlightText guibg=#3c3836 ctermbg=237
-    else
-      hi CocHighlightText guibg=#f2e5bc ctermbg=228
-    endif
-  elseif s:configuration.background ==# 'soft'
-    if &background ==# 'dark'
-      hi CocHighlightText guibg=#45403d ctermbg=238
-    else
-      hi CocHighlightText guibg=#ebdbb2 ctermbg=227
-    endif
-  endif
+  highlight! link CocHighlightText CurrentWord
 else
   call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
@@ -1710,15 +1693,15 @@ let g:VM_Cursor_hl = 'Cursor'
 let g:VM_Insert_hl = 'Cursor'
 " }}}
 " dominikduda/vim_current_word {{{
-highlight! link CurrentWord CocHighlightText
-highlight! link CurrentWordTwins CocHighlightText
+highlight! link CurrentWord CurrentWord
+highlight! link CurrentWordTwins CurrentWord
 " }}}
 " RRethy/vim-illuminate {{{
-highlight! link illuminatedWord CocHighlightText
+highlight! link illuminatedWord CurrentWord
 " }}}
 " itchyny/vim-cursorword {{{
-highlight! link CursorWord0 CocHighlightText
-highlight! link CursorWord1 CocHighlightText
+highlight! link CursorWord0 CurrentWord
+highlight! link CursorWord1 CurrentWord
 " }}}
 " Yggdroot/indentLine {{{
 let g:indentLine_color_gui = s:palette.grey1[0]
