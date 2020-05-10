@@ -1460,6 +1460,9 @@ highlight! link plugSha Green
 " }}}
 " neoclide/coc.nvim {{{
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
+call gruvbox_material#highlight('CocErrorHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
+call gruvbox_material#highlight('CocWarningHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
+call gruvbox_material#highlight('CocInfoHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
 call gruvbox_material#highlight('CocHintHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
 call gruvbox_material#highlight('CocErrorFloat', s:palette.red, s:palette.bg3)
 call gruvbox_material#highlight('CocWarningFloat', s:palette.yellow, s:palette.bg3)
@@ -1475,9 +1478,6 @@ highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
 highlight! link CocInfoSign BlueSign
 highlight! link CocHintSign AquaSign
-highlight! link CocErrorHighlight ALEError
-highlight! link CocWarningHighlight ALEWarning
-highlight! link CocInfoHighlight ALEInfo
 highlight! link CocWarningVirtualText Grey
 highlight! link CocErrorVirtualText Grey
 highlight! link CocInfoVirtualText Grey
@@ -1510,14 +1510,25 @@ highlight! link CocExplorerTimeAccessed Aqua
 highlight! link CocExplorerTimeCreated Aqua
 highlight! link CocExplorerTimeModified Aqua
 " }}}
+" prabirshrestha/vim-lsp {{{
+highlight! link LspErrorVirtual Grey
+highlight! link LspWarningVirtual Grey
+highlight! link LspInformationVirtual Grey
+highlight! link LspHintVirtual Grey
+highlight! link LspErrorHighlight CocErrorHighlight
+highlight! link LspWarningHighlight CocWarningHighlight
+highlight! link LspInformationHighlight CocInfoHighlight
+highlight! link LspHintHighlight CocHintHighlight
+highlight! link lspReference CurrentWord
+" }}}
 " ycm-core/YouCompleteMe {{{
 highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
 " }}}
 " dense-analysis/ale {{{
-call gruvbox_material#highlight('ALEError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
-call gruvbox_material#highlight('ALEWarning', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
-call gruvbox_material#highlight('ALEInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
+highlight! link ALEError CocErrorHighlight
+highlight! link ALEWarning CocWarningHighlight
+highlight! link ALEInfo CocInfoHighlight
 highlight! link ALEErrorSign RedSign
 highlight! link ALEWarningSign YellowSign
 highlight! link ALEInfoSign BlueSign

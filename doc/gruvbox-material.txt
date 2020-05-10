@@ -290,6 +290,7 @@ Currently support:
 - https://github.com/dominikduda/vim_current_word
 - https://github.com/RRethy/vim-illuminate
 - https://github.com/itchyny/vim-cursorword
+- https://github.com/prabirshrestha/vim-lsp
 
     Available values: `'grey background'`, `'bold'`, `'underline'`, `'italic'`
     Default value: `'grey background'` when not in transparent mode, `'bold'`
