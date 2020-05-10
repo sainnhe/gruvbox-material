@@ -283,7 +283,7 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
-call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.current_word)
+call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.bg_current_word)
 " }}}
 " }}}
 " Extended File Types: {{{

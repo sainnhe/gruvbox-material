@@ -47,7 +47,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_blue':     ['#0d3138',   '17'],
             \ 'bg_visual_blue':   ['#2e3b3b',   '17'],
             \ 'bg_visual_yellow': ['#473c29',   '94'],
-            \ 'current_word':     ['#32302f',   '236']
+            \ 'bg_current_word':  ['#32302f',   '236']
             \ }
     else
       let palette1 = {
@@ -67,7 +67,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_blue':     ['#cff1f6',   '117'],
             \ 'bg_visual_blue':   ['#d9e1cc',   '117'],
             \ 'bg_visual_yellow': ['#f1e2b7',   '226'],
-            \ 'current_word':     ['#f3eac7',   '229']
+            \ 'bg_current_word':  ['#f3eac7',   '229']
             \ }
     endif "}}}
   elseif a:background ==# 'medium' "{{{
@@ -89,7 +89,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_blue':     ['#0e363e',   '17'],
             \ 'bg_visual_blue':   ['#374141',   '17'],
             \ 'bg_visual_yellow': ['#4f422e',   '94'],
-            \ 'current_word':     ['#3c3836',   '237']
+            \ 'bg_current_word':  ['#3c3836',   '237']
             \ }
     else
       let palette1 = {
@@ -109,7 +109,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_blue':     ['#c6eaf0',   '117'],
             \ 'bg_visual_blue':   ['#dadec0',   '117'],
             \ 'bg_visual_yellow': ['#f2dfab',   '226'],
-            \ 'current_word':     ['#f2e5bc',   '228']
+            \ 'bg_current_word':  ['#f2e5bc',   '228']
             \ }
     endif "}}}
   elseif a:background ==# 'soft' "{{{
@@ -131,7 +131,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_blue':     ['#0f3a42',   '17'],
             \ 'bg_visual_blue':   ['#404946',   '17'],
             \ 'bg_visual_yellow': ['#574833',   '94'],
-            \ 'current_word':     ['#45403d',   '238']
+            \ 'bg_current_word':  ['#45403d',   '238']
             \ }
     else
       let palette1 = {
@@ -151,7 +151,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_diff_blue':     ['#bee4ea',   '117'],
             \ 'bg_visual_blue':   ['#d3d5b8',   '117'],
             \ 'bg_visual_yellow': ['#ecd6a3',   '226'],
-            \ 'current_word':     ['#ebdbb2',   '227']
+            \ 'bg_current_word':  ['#ebdbb2',   '227']
             \ }
     endif
   endif "}}}
