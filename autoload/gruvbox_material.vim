@@ -22,7 +22,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
         \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0),
         \ 'diagnostic_line_highlight': get(g:, 'gruvbox_material_diagnostic_line_highlight', 0),
-        \ 'high_performance': get(g:, 'gruvbox_material_high_performance', 0),
+        \ 'better_performance': get(g:, 'gruvbox_material_better_performance', 0),
         \ }
 endfunction "}}}
 function! gruvbox_material#get_palette(background, palette) "{{{
