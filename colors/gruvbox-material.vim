@@ -1549,6 +1549,8 @@ highlight! link SyntasticError ALEError
 highlight! link SyntasticWarning ALEWarning
 highlight! link SyntasticErrorSign RedSign
 highlight! link SyntasticWarningSign YellowSign
+highlight! link SyntasticErrorLine ErrorLine
+highlight! link SyntasticWarningLine WarningLine
 " }}}
 " Yggdroot/LeaderF {{{
 if !exists('g:Lf_StlColorscheme')
