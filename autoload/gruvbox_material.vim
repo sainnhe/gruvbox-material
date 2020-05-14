@@ -349,7 +349,7 @@ function! gruvbox_material#ft_clean(path, msg) "{{{
   for file in file_list
     call delete(file)
   endfor
-  " remove empty directory
+  " remove empty directories
   let dir_list = split(globpath(rootpath, 'ftplugin/*'), "\n")
   for dir in dir_list
     if globpath(dir, '*') ==# ''
