@@ -295,27 +295,41 @@ endfunction "}}}
 function! gruvbox_material#ft_gen(path) "{{{
   let full_content = join(readfile(a:path), "\n") " get the content of colors/gruvbox-material.vim
   let ft_content = []
+  let rootpath = gruvbox_material#ft_rootpath(a:path)
   call substitute(full_content, '" ft_begin.\{-}ft_end', '\=add(ft_content, submatch(0))', 'g') " search for 'ft_begin.\{-}ft_end' (non-greedy) and put all the search results into a list
   for content in ft_content
     let ft_list = []
     call substitute(matchstr(matchstr(content, 'ft_begin:.\{-}{{{'), ':.\{-}{{{'), '\(\w\|-\)\+', '\=add(ft_list, submatch(0))', 'g') " get the file type }}}}}}
     for ft in ft_list
-      call gruvbox_material#ft_write(a:path, ft, content)
+      call gruvbox_material#ft_write(rootpath, ft, content)
     endfor
   endfor
+  echohl WarningMsg | echon '[gruvbox-material] ftplugin generated in ' . rootpath | echohl None
 endfunction "}}}
-function! gruvbox_material#ft_write(path, ft, content) "{{{
-  let dir_path = substitute(a:path, '/colors/gruvbox-material\.vim$', '', '')
-  let ft_path = dir_path . '/ftplugin/' . a:ft . '/gruvbox_material.vim'
-  " create parent directory if the file doesn't exist
+function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
+  let ft_path = a:rootpath . '/ftplugin/' . a:ft . '/gruvbox_material.vim'
+  " create a new file if it doesn't exist
   if !filereadable(ft_path)
-    call mkdir(dir_path . '/ftplugin/' . a:ft, 'p')
+    call mkdir(a:rootpath . '/ftplugin/' . a:ft, 'p')
+    call writefile(["if g:colors_name !=# 'gruvbox-material'", '    finish', 'endif'], ft_path, 'a')
   endif
   " append the content
   if matchstr(a:content, 'gruvbox_material#highlight') !=# ''
     call writefile(['let s:configuration = gruvbox_material#get_configuration()', 'let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)'], ft_path, 'a')
   endif
   call writefile(split(a:content, "\n"), ft_path, 'a')
+endfunction "}}}
+function! gruvbox_material#ft_rootpath(path) "{{{
+  " get the directory where ftplugin is stored
+  if (matchstr(a:path, '^/usr/share') ==# '') || has('win32') " use the plugin directory
+    return substitute(a:path, '/colors/gruvbox-material\.vim$', '', '')
+  else " use vim home directory
+    if has('win32') || has ('win64')
+      return $VIM . '/vimfiles'
+    else
+      return $HOME . '/.vim'
+    endif
+  endif
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
