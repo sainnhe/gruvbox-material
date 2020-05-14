@@ -292,7 +292,7 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
           \ a:2[0] :
           \ 'NONE')
 endfunction "}}}
-function! gruvbox_material#ft_gen(path) "{{{
+function! gruvbox_material#ft_gen(path, last_modified) "{{{
   let full_content = join(readfile(a:path), "\n") " get the content of colors/gruvbox-material.vim
   let ft_content = []
   let rootpath = gruvbox_material#ft_rootpath(a:path)
@@ -301,16 +301,17 @@ function! gruvbox_material#ft_gen(path) "{{{
     let ft_list = []
     call substitute(matchstr(matchstr(content, 'ft_begin:.\{-}{{{'), ':.\{-}{{{'), '\(\w\|-\)\+', '\=add(ft_list, submatch(0))', 'g') " get the file type }}}}}}
     for ft in ft_list
-      call gruvbox_material#ft_write(rootpath, ft, content)
+      call gruvbox_material#ft_write(rootpath, ft, content, a:last_modified)
     endfor
   endfor
   echohl WarningMsg | echon '[gruvbox-material] ftplugin generated in ' . rootpath | echohl None
 endfunction "}}}
-function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
+function! gruvbox_material#ft_write(rootpath, ft, content, last_modified) "{{{
   let ft_path = a:rootpath . '/ftplugin/' . a:ft . '/gruvbox_material.vim'
   " create a new file if it doesn't exist
   if !filereadable(ft_path)
     call mkdir(a:rootpath . '/ftplugin/' . a:ft, 'p')
+    call writefile(split('"' . ' Last Modified' . a:last_modified, "\n"), ft_path, 'a')
     call writefile(["if g:colors_name !=# 'gruvbox-material'", '    finish', 'endif'], ft_path, 'a')
   endif
   " append the content
@@ -330,6 +331,18 @@ function! gruvbox_material#ft_rootpath(path) "{{{
       return $HOME . '/.vim'
     endif
   endif
+endfunction "}}}
+function! gruvbox_material#ft_newest(path, last_modified_colors) "{{{
+  let rootpath = gruvbox_material#ft_rootpath(a:path)
+  let last_modified_ftplugin = matchstr(join(readfile(rootpath . '/ftplugin/vim/gruvbox_material.vim'), "\n"), '" Last Modified.\{-}\n') " Last Modified in ftplugin/vim/gruvbox_material.vim
+  return '"' . ' Last Modified' . a:last_modified_colors . "\n" ==# last_modified_ftplugin ? 1 : 0
+endfunction "}}}
+function! gruvbox_material#ft_clean(path, msg) "{{{
+  let rootpath = gruvbox_material#ft_rootpath(a:path)
+  call delete(rootpath . '/ftplugin', 'rf')
+endfunction "}}}
+function! gruvbox_material#ft_exists(path) "{{{
+  return filereadable(gruvbox_material#ft_rootpath(a:path) . '/ftplugin/vim/gruvbox_material.vim')
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:

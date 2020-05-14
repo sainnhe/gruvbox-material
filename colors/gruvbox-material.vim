@@ -1,9 +1,9 @@
 " -----------------------------------------------------------------------------
-" Name:         Gruvbox Material
-" Description:  Gruvbox with Material Palette
-" Author:       sainnhe <sainnhe@gmail.com>
-" Website:      https://github.com/sainnhe/gruvbox-material
-" License:      MIT
+" Name:           Gruvbox Material
+" Description:    Gruvbox with Material Palette
+" Author:         sainnhe <sainnhe@gmail.com>
+" Website:        https://github.com/sainnhe/gruvbox-material
+" License:        MIT
 " -----------------------------------------------------------------------------
 
 " Initialization: {{{
@@ -20,6 +20,8 @@ endif
 
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
+let s:path = expand('<sfile>:p')
+let s:last_modified = '2020-05-14 19:38:45.739181'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -620,12 +622,21 @@ highlight! link Blamer Grey
 " }}}
 " }}}
 " Extended File Types: {{{
-if s:configuration.better_performance
-  " generate /ftplugin if it doesn't exist
-  if !isdirectory(gruvbox_material#ft_rootpath(expand('<sfile>:p')) . '/ftplugin')
-    call gruvbox_material#ft_gen(expand('<sfile>:p'))
+if gruvbox_material#ft_exists(s:path)
+  if s:configuration.better_performance
+    if !gruvbox_material#ft_newest(s:path, s:last_modified)
+      call gruvbox_material#ft_clean(s:path, 0)
+      call gruvbox_material#ft_gen(s:path, s:last_modified)
+    endif
+    finish
+  else
+    call gruvbox_material#ft_clean(s:path, 1)
   endif
-  finish " quit sourcing this script
+else
+  if s:configuration.better_performance
+    call gruvbox_material#ft_gen(s:path, s:last_modified)
+    finish
+  endif
 endif
 " ft_begin: vim-plug {{{
 " https://github.com/junegunn/vim-plug
