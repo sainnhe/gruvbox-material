@@ -326,10 +326,14 @@ function! gruvbox_material#ft_rootpath(path) "{{{
   if (matchstr(a:path, '^/usr/share') ==# '') || has('win32') " use the plugin directory
     return substitute(a:path, '/colors/gruvbox-material\.vim$', '', '')
   else " use vim home directory
-    if has('win32') || has ('win64')
-      return $VIM . '/vimfiles'
+    if has('nvim')
+      return stdpath('config')
     else
-      return $HOME . '/.vim'
+      if has('win32') || has ('win64')
+        return $VIM . '/vimfiles'
+      else
+        return $HOME . '/.vim'
+      endif
     endif
   endif
 endfunction "}}}
