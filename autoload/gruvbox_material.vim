@@ -293,6 +293,7 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
           \ 'NONE')
 endfunction "}}}
 function! gruvbox_material#ft_gen(path, last_modified) "{{{
+  " generate ftplugin
   let full_content = join(readfile(a:path), "\n") " get the content of colors/gruvbox-material.vim
   let ft_content = []
   let rootpath = gruvbox_material#ft_rootpath(a:path)
@@ -339,10 +340,12 @@ function! gruvbox_material#ft_newest(path, last_modified_colors) "{{{
 endfunction "}}}
 function! gruvbox_material#ft_clean(path, msg) "{{{
   let rootpath = gruvbox_material#ft_rootpath(a:path)
+  " remove ftplugin/**/gruvbox_material.vim
   let file_list = split(globpath(rootpath, 'ftplugin/**/gruvbox_material.vim'), "\n")
   for file in file_list
     call delete(file)
   endfor
+  " remove empty directory
   let dir_list = split(globpath(rootpath, 'ftplugin/*'), "\n")
   for dir in dir_list
     if globpath(dir, '*') ==# ''

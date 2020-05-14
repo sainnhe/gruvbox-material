@@ -20,7 +20,7 @@ endif
 
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
-let s:path = expand('<sfile>:p')
+let s:path = expand('<sfile>:p') " the path of this script
 let s:last_modified = '2020-05-14 19:38:45.739181'
 " }}}
 " Common Highlight Groups: {{{
