@@ -398,20 +398,6 @@ E.g.~
 >
     let g:gruvbox_material_better_performance = 1
 <
-The `ftplugin` directory will be generated if it doesn't exist and this option
-is enabled. In order to ensure that the code in `ftplugin` is up to date,
-you'll need to set a hook:
->
-    if has('win32') " Windows
-      Plug 'sainnhe/gruvbox-material', { 'do': 'rd /s /q "ftplugin"' }
-    else " Unix like
-      Plug 'sainnhe/gruvbox-material', { 'do': 'rm -r ftplugin &> /dev/null' }
-    endif
-<
-Note: Enabling this option will generate many files in the
-`gruvbox-material/ftplugin` directory, think twice if you didn't use a plugin
-manager to install this color scheme.
-
 ==============================================================================
 FAQ                                                      *gruvbox-material-faq*
 
