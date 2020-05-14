@@ -339,7 +339,22 @@ function! gruvbox_material#ft_newest(path, last_modified_colors) "{{{
 endfunction "}}}
 function! gruvbox_material#ft_clean(path, msg) "{{{
   let rootpath = gruvbox_material#ft_rootpath(a:path)
-  call delete(rootpath . '/ftplugin', 'rf')
+  let file_list = split(globpath(rootpath, 'ftplugin/**/gruvbox_material.vim'), "\n")
+  for file in file_list
+    call delete(file)
+  endfor
+  let dir_list = split(globpath(rootpath, 'ftplugin/*'), "\n")
+  for dir in dir_list
+    if globpath(dir, '*') ==# ''
+      call delete(dir, 'd')
+    endif
+  endfor
+  if globpath(rootpath . '/ftplugin', '*') ==# ''
+    call delete(rootpath . '/ftplugin', 'd')
+  endif
+  if a:msg
+    echohl WarningMsg | echon '[gruvbox-material] cleaned ' . rootpath . '/ftplugin' | echohl None
+  endif
 endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{
   return filereadable(gruvbox_material#ft_rootpath(a:path) . '/ftplugin/vim/gruvbox_material.vim')
