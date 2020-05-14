@@ -305,14 +305,14 @@ function! gruvbox_material#ft_gen(path, last_modified) "{{{
       call gruvbox_material#ft_write(rootpath, ft, content, a:last_modified)
     endfor
   endfor
-  echohl WarningMsg | echon '[gruvbox-material] ftplugin generated in ' . rootpath | echohl None
+  echohl WarningMsg | echom '[gruvbox-material] ftplugin generated in ' . rootpath | echohl None
 endfunction "}}}
 function! gruvbox_material#ft_write(rootpath, ft, content, last_modified) "{{{
   let ft_path = a:rootpath . '/ftplugin/' . a:ft . '/gruvbox_material.vim'
   " create a new file if it doesn't exist
   if !filereadable(ft_path)
     call mkdir(a:rootpath . '/ftplugin/' . a:ft, 'p')
-    call writefile(split('"' . ' Last Modified' . a:last_modified, "\n"), ft_path, 'a')
+    call writefile(['"' . ' time_begin ' . a:last_modified . ' time_end'], ft_path, 'a')
     call writefile(["if g:colors_name !=# 'gruvbox-material'", '    finish', 'endif'], ft_path, 'a')
   endif
   " append the content
@@ -339,8 +339,8 @@ function! gruvbox_material#ft_rootpath(path) "{{{
 endfunction "}}}
 function! gruvbox_material#ft_newest(path, last_modified_colors) "{{{
   let rootpath = gruvbox_material#ft_rootpath(a:path)
-  let last_modified_ftplugin = matchstr(join(readfile(rootpath . '/ftplugin/vim/gruvbox_material.vim'), "\n"), '" Last Modified.\{-}\n') " Last Modified in ftplugin/vim/gruvbox_material.vim
-  return '"' . ' Last Modified' . a:last_modified_colors . "\n" ==# last_modified_ftplugin ? 1 : 0
+  let last_modified_ftplugin = matchstr(join(readfile(rootpath . '/ftplugin/vim/gruvbox_material.vim'), "\n"), 'time_begin.*time_end') " Last Modified in ftplugin/vim/gruvbox_material.vim
+  return 'time_begin ' . a:last_modified_colors . ' time_end' ==# last_modified_ftplugin ? 1 : 0
 endfunction "}}}
 function! gruvbox_material#ft_clean(path, msg) "{{{
   let rootpath = gruvbox_material#ft_rootpath(a:path)
@@ -360,7 +360,7 @@ function! gruvbox_material#ft_clean(path, msg) "{{{
     call delete(rootpath . '/ftplugin', 'd')
   endif
   if a:msg
-    echohl WarningMsg | echon '[gruvbox-material] cleaned ' . rootpath . '/ftplugin' | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] cleaned ' . rootpath . '/ftplugin' | echohl None
   endif
 endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{
