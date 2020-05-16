@@ -622,9 +622,11 @@ highlight! link Blamer Grey
 " }}}
 " }}}
 " Extended File Types: {{{
-if gruvbox_material#ft_exists(s:path)
+" Generate the `ftplugin` directory based on the comment tags in this file.
+" For example, the content between `ft_begin: sh/zsh` and `ft_end` will be placed in `ftplugin/sh/gruvbox_material.vim` and `ftplugin/zsh/gruvbox_material.vim`.
+if gruvbox_material#ft_exists(s:path) " If the ftplugin exists.
   if s:configuration.better_performance
-    if !gruvbox_material#ft_newest(s:path, s:last_modified)
+    if !gruvbox_material#ft_newest(s:path, s:last_modified) " Regenerate if it's not up to date.
       call gruvbox_material#ft_clean(s:path, 0)
       call gruvbox_material#ft_gen(s:path, s:last_modified)
     endif
