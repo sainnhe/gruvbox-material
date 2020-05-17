@@ -292,7 +292,7 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
           \ a:2[0] :
           \ 'NONE')
 endfunction "}}}
-function! gruvbox_material#ft_gen(path, last_modified) "{{{
+function! gruvbox_material#ft_gen(path, last_modified, msg) "{{{
   " Generate the `ftplugin` directory.
   let full_content = join(readfile(a:path), "\n") " Get the content of `colors/gruvbox-material.vim`
   let ft_content = []
@@ -305,7 +305,11 @@ function! gruvbox_material#ft_gen(path, last_modified) "{{{
       call gruvbox_material#ft_write(rootpath, ft, content, a:last_modified) " Write the content.
     endfor
   endfor
-  echohl WarningMsg | echom '[gruvbox-material] ftplugin generated in ' . rootpath | echohl None
+  if a:msg ==# 'update'
+    echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath | echohl None
+  else
+    echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath | echohl None
+  endif
 endfunction "}}}
 function! gruvbox_material#ft_write(rootpath, ft, content, last_modified) "{{{
   " Write the content.
@@ -365,7 +369,7 @@ function! gruvbox_material#ft_clean(path, msg) "{{{
     call delete(rootpath . '/ftplugin', 'd')
   endif
   if a:msg
-    echohl WarningMsg | echom '[gruvbox-material] cleaned ' . rootpath . '/ftplugin' | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] Cleaned ' . rootpath . '/ftplugin' | echohl None
   endif
 endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{

@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat 16 May 2020 06:21:36 PM CST'
+let s:last_modified = 'Sun 17 May 2020 10:29:55 AM CST'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -629,7 +629,7 @@ if gruvbox_material#ft_exists(s:path) " If the ftplugin exists.
   if s:configuration.better_performance
     if !gruvbox_material#ft_newest(s:path, s:last_modified) " Regenerate if it's not up to date.
       call gruvbox_material#ft_clean(s:path, 0)
-      call gruvbox_material#ft_gen(s:path, s:last_modified)
+      call gruvbox_material#ft_gen(s:path, s:last_modified, 'update')
     endif
     finish
   else
@@ -637,7 +637,7 @@ if gruvbox_material#ft_exists(s:path) " If the ftplugin exists.
   endif
 else
   if s:configuration.better_performance
-    call gruvbox_material#ft_gen(s:path, s:last_modified)
+    call gruvbox_material#ft_gen(s:path, s:last_modified, 'generate')
     finish
   endif
 endif
