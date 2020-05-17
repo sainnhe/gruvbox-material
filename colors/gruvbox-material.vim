@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun 17 May 2020 10:29:55 AM CST'
+let s:last_modified = 'Sun 17 May 2020 11:18:01 AM CST'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -501,26 +501,6 @@ highlight! link SignifySignChange BlueSign
 highlight! link SignifySignDelete RedSign
 highlight! link SignifySignChangeDelete PurpleSign
 " }}}
-" scrooloose/nerdtree {{{
-highlight! link NERDTreeDir Green
-highlight! link NERDTreeDirSlash Aqua
-highlight! link NERDTreeOpenable Orange
-highlight! link NERDTreeClosable Orange
-highlight! link NERDTreeFile Fg
-highlight! link NERDTreeExecFile Yellow
-highlight! link NERDTreeUp Grey
-highlight! link NERDTreeCWD Aqua
-highlight! link NERDTreeHelp LightGrey
-highlight! link NERDTreeToggleOn Green
-highlight! link NERDTreeToggleOff Red
-highlight! link NERDTreeFlags Orange
-highlight! link NERDTreeLinkFile Grey
-highlight! link NERDTreeLinkTarget Green
-" }}}
-" justinmk/vim-dirvish {{{
-highlight! link DirvishPathTail Aqua
-highlight! link DirvishArg Yellow
-" }}}
 " andymass/vim-matchup {{{
 call gruvbox_material#highlight('MatchParenCur', s:palette.none, s:palette.none, 'bold')
 call gruvbox_material#highlight('MatchWord', s:palette.none, s:palette.none, 'underline')
@@ -605,14 +585,6 @@ highlight! link WhichKeySeperator Green
 highlight! link WhichKeyGroup Yellow
 highlight! link WhichKeyDesc Blue
 " }}}
-" skywind3000/quickmenu.vim {{{
-highlight! link QuickmenuOption Green
-highlight! link QuickmenuNumber Red
-highlight! link QuickmenuBracket Grey
-highlight! link QuickmenuHelp Green
-highlight! link QuickmenuSpecial Purple
-highlight! link QuickmenuHeader Orange
-" }}}
 " unblevable/quick-scope {{{
 call gruvbox_material#highlight('QuickScopePrimary', s:palette.aqua, s:palette.none, 'underline')
 call gruvbox_material#highlight('QuickScopeSecondary', s:palette.blue, s:palette.none, 'underline')
@@ -694,7 +666,27 @@ highlight! link netrwHelpCmd Blue
 highlight! link netrwCmdSep Grey
 highlight! link netrwVersion Orange
 " ft_end }}}
-" ft_begin: startify {{{
+" ft_begin: nerdtree {{{
+highlight! link NERDTreeDir Green
+highlight! link NERDTreeDirSlash Aqua
+highlight! link NERDTreeOpenable Orange
+highlight! link NERDTreeClosable Orange
+highlight! link NERDTreeFile Fg
+highlight! link NERDTreeExecFile Yellow
+highlight! link NERDTreeUp Grey
+highlight! link NERDTreeCWD Aqua
+highlight! link NERDTreeHelp LightGrey
+highlight! link NERDTreeToggleOn Green
+highlight! link NERDTreeToggleOff Red
+highlight! link NERDTreeFlags Orange
+highlight! link NERDTreeLinkFile Grey
+highlight! link NERDTreeLinkTarget Green
+" ft_end }}}
+" ft_begin: dirvish {{{
+highlight! link DirvishPathTail Aqua
+highlight! link DirvishArg Yellow
+" ft_end }}}
+" ft_begin: startify/quickmenu {{{
 " https://github.com/mhinz/vim-startify
 highlight! link StartifyBracket Grey
 highlight! link StartifyFile Fg
@@ -705,6 +697,14 @@ highlight! link StartifySection Blue
 highlight! link StartifyHeader Orange
 highlight! link StartifySpecial Grey
 highlight! link StartifyFooter Grey
+" ft_end }}}
+" ft_begin: quickmenu {{{
+highlight! link QuickmenuOption Green
+highlight! link QuickmenuNumber Red
+highlight! link QuickmenuBracket Grey
+highlight! link QuickmenuHelp Green
+highlight! link QuickmenuSpecial Purple
+highlight! link QuickmenuHeader Orange
 " ft_end }}}
 " ft_begin: undotree {{{
 " https://github.com/mbbill/undotree
