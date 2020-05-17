@@ -302,22 +302,22 @@ function! gruvbox_material#ft_gen(path, last_modified, msg) "{{{
     let ft_list = []
     call substitute(matchstr(matchstr(content, 'ft_begin:.\{-}{{{'), ':.\{-}{{{'), '\(\w\|-\)\+', '\=add(ft_list, submatch(0))', 'g') " Get the file types. }}}}}}
     for ft in ft_list
-      call gruvbox_material#ft_write(rootpath, ft, content, a:last_modified) " Write the content.
+      call gruvbox_material#ft_write(rootpath, ft, content) " Write the content.
     endfor
   endfor
+  call gruvbox_material#ft_write(rootpath, 'text', "let g:gruvbox_material_last_modified = '" . a:last_modified . "'") " Write the last modified time to `ftplugin/text/gruvbox_material.vim`
   if a:msg ==# 'update'
     echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath | echohl None
   else
     echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath | echohl None
   endif
 endfunction "}}}
-function! gruvbox_material#ft_write(rootpath, ft, content, last_modified) "{{{
+function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
   " Write the content.
   let ft_path = a:rootpath . '/ftplugin/' . a:ft . '/gruvbox_material.vim' " The path of a ftplugin file.
   " create a new file if it doesn't exist
   if !filereadable(ft_path)
     call mkdir(a:rootpath . '/ftplugin/' . a:ft, 'p')
-    call writefile(['"' . ' time_begin ' . a:last_modified . ' time_end'], ft_path, 'a') " Append `a:last_modified` as a comment.
     call writefile(["if g:colors_name !=# 'gruvbox-material'", '    finish', 'endif'], ft_path, 'a') " Abort if the current color scheme is not gruvbox-material.
   endif
   " If there is something like `call gruvbox_material#highlight()`, then add
@@ -344,11 +344,11 @@ function! gruvbox_material#ft_rootpath(path) "{{{
     endif
   endif
 endfunction "}}}
-function! gruvbox_material#ft_newest(path, last_modified_colors) "{{{
-  " Determine whether the current ftplugin files are up to date by comparing the last modified time in `colors/gruvbox-material.vim` and `ftplugin/vim/gruvbox_material.vim`.
+function! gruvbox_material#ft_newest(path, last_modified) "{{{
+  " Determine whether the current ftplugin files are up to date by comparing the last modified time in `colors/gruvbox-material.vim` and `ftplugin/text/gruvbox_material.vim`.
   let rootpath = gruvbox_material#ft_rootpath(a:path)
-  let last_modified_ftplugin = matchstr(join(readfile(rootpath . '/ftplugin/vim/gruvbox_material.vim'), "\n"), 'time_begin.*time_end') " Last Modified in ftplugin/vim/gruvbox_material.vim
-  return 'time_begin ' . a:last_modified_colors . ' time_end' ==# last_modified_ftplugin ? 1 : 0
+  execute 'source ' . rootpath . '/ftplugin/text/gruvbox_material.vim'
+  return a:last_modified ==# g:gruvbox_material_last_modified ? 1 : 0
 endfunction "}}}
 function! gruvbox_material#ft_clean(path, msg) "{{{
   " Clean the `ftplugin` directory.
@@ -373,7 +373,7 @@ function! gruvbox_material#ft_clean(path, msg) "{{{
   endif
 endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{
-  return filereadable(gruvbox_material#ft_rootpath(a:path) . '/ftplugin/vim/gruvbox_material.vim')
+  return filereadable(gruvbox_material#ft_rootpath(a:path) . '/ftplugin/text/gruvbox_material.vim')
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
