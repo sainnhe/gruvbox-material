@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun 17 May 2020 11:18:01 AM CST'
+let s:last_modified = 'Sun 17 May 2020 11:40:37 AM CST'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -595,8 +595,8 @@ highlight! link Blamer Grey
 " }}}
 " Extended File Types: {{{
 " Note: To ensure that the `s:last_modified` variable is always up to date, you need to copy `.githooks/pre-commit` to `.git/hooks/pre-commit`.
-" Generate the `ftplugin` directory based on the comment tags in this file.
-" For example, the content between `ft_begin: sh/zsh` and `ft_end` will be placed in `ftplugin/sh/gruvbox_material.vim` and `ftplugin/zsh/gruvbox_material.vim`.
+" Generate the `after/ftplugin` directory based on the comment tags in this file.
+" For example, the content between `ft_begin: sh/zsh` and `ft_end` will be placed in `after/ftplugin/sh/gruvbox_material.vim` and `after/ftplugin/zsh/gruvbox_material.vim`.
 if gruvbox_material#ft_exists(s:path) " If the ftplugin exists.
   if s:configuration.better_performance
     if !gruvbox_material#ft_newest(s:path, s:last_modified) " Regenerate if it's not up to date.

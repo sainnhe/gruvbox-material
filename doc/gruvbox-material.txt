@@ -390,7 +390,7 @@ Note: this configuration option doesn't need to be placed before `colorscheme gr
 
 The loading time of this color scheme is very long because too many file types
 and plugins are optimized. This feature allows you to load part of the code on
-demand by placing them in the `ftplugin` directory.
+demand by placing them in the `after/ftplugin` directory.
 
 Enabling this option will reduce loading time by approximately 50%.
 

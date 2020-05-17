@@ -293,10 +293,10 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
           \ 'NONE')
 endfunction "}}}
 function! gruvbox_material#ft_gen(path, last_modified, msg) "{{{
-  " Generate the `ftplugin` directory.
+  " Generate the `after/ftplugin` directory.
   let full_content = join(readfile(a:path), "\n") " Get the content of `colors/gruvbox-material.vim`
   let ft_content = []
-  let rootpath = gruvbox_material#ft_rootpath(a:path) " Get the path to place the `ftplugin` directory.
+  let rootpath = gruvbox_material#ft_rootpath(a:path) " Get the path to place the `after/ftplugin` directory.
   call substitute(full_content, '" ft_begin.\{-}ft_end', '\=add(ft_content, submatch(0))', 'g') " Search for 'ft_begin.\{-}ft_end' (non-greedy) and put all the search results into a list.
   for content in ft_content
     let ft_list = []
@@ -305,19 +305,19 @@ function! gruvbox_material#ft_gen(path, last_modified, msg) "{{{
       call gruvbox_material#ft_write(rootpath, ft, content) " Write the content.
     endfor
   endfor
-  call gruvbox_material#ft_write(rootpath, 'text', "let g:gruvbox_material_last_modified = '" . a:last_modified . "'") " Write the last modified time to `ftplugin/text/gruvbox_material.vim`
+  call gruvbox_material#ft_write(rootpath, 'text', "let g:gruvbox_material_last_modified = '" . a:last_modified . "'") " Write the last modified time to `after/ftplugin/text/gruvbox_material.vim`
   if a:msg ==# 'update'
-    echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath . '/after/ftplugin' | echohl None
   else
-    echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath . '/after/ftplugin' | echohl None
   endif
 endfunction "}}}
 function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
   " Write the content.
-  let ft_path = a:rootpath . '/ftplugin/' . a:ft . '/gruvbox_material.vim' " The path of a ftplugin file.
+  let ft_path = a:rootpath . '/after/ftplugin/' . a:ft . '/gruvbox_material.vim' " The path of a ftplugin file.
   " create a new file if it doesn't exist
   if !filereadable(ft_path)
-    call mkdir(a:rootpath . '/ftplugin/' . a:ft, 'p')
+    call mkdir(a:rootpath . '/after/ftplugin/' . a:ft, 'p')
     call writefile(["if g:colors_name !=# 'gruvbox-material'", '    finish', 'endif'], ft_path, 'a') " Abort if the current color scheme is not gruvbox-material.
   endif
   " If there is something like `call gruvbox_material#highlight()`, then add
@@ -329,8 +329,8 @@ function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
   call writefile(split(a:content, "\n"), ft_path, 'a')
 endfunction "}}}
 function! gruvbox_material#ft_rootpath(path) "{{{
-  " Get the directory where `ftplugin` is generated.
-  if (matchstr(a:path, '^/usr/share') ==# '') || has('win32') " Return the plugin directory. The `ftplugin` directory should never be generated in `/usr/share`, even if you are a root user.
+  " Get the directory where `after/ftplugin` is generated.
+  if (matchstr(a:path, '^/usr/share') ==# '') || has('win32') " Return the plugin directory. The `after/ftplugin` directory should never be generated in `/usr/share`, even if you are a root user.
     return substitute(a:path, '/colors/gruvbox-material\.vim$', '', '')
   else " Use vim home directory.
     if has('nvim')
@@ -345,35 +345,38 @@ function! gruvbox_material#ft_rootpath(path) "{{{
   endif
 endfunction "}}}
 function! gruvbox_material#ft_newest(path, last_modified) "{{{
-  " Determine whether the current ftplugin files are up to date by comparing the last modified time in `colors/gruvbox-material.vim` and `ftplugin/text/gruvbox_material.vim`.
+  " Determine whether the current ftplugin files are up to date by comparing the last modified time in `colors/gruvbox-material.vim` and `after/ftplugin/text/gruvbox_material.vim`.
   let rootpath = gruvbox_material#ft_rootpath(a:path)
-  execute 'source ' . rootpath . '/ftplugin/text/gruvbox_material.vim'
+  execute 'source ' . rootpath . '/after/ftplugin/text/gruvbox_material.vim'
   return a:last_modified ==# g:gruvbox_material_last_modified ? 1 : 0
 endfunction "}}}
 function! gruvbox_material#ft_clean(path, msg) "{{{
-  " Clean the `ftplugin` directory.
+  " Clean the `after/ftplugin` directory.
   let rootpath = gruvbox_material#ft_rootpath(a:path)
-  " Remove `ftplugin/**/gruvbox_material.vim`.
-  let file_list = split(globpath(rootpath, 'ftplugin/**/gruvbox_material.vim'), "\n")
+  " Remove `after/ftplugin/**/gruvbox_material.vim`.
+  let file_list = split(globpath(rootpath, 'after/ftplugin/**/gruvbox_material.vim'), "\n")
   for file in file_list
     call delete(file)
   endfor
   " Remove empty directories.
-  let dir_list = split(globpath(rootpath, 'ftplugin/*'), "\n")
+  let dir_list = split(globpath(rootpath, 'after/ftplugin/*'), "\n")
   for dir in dir_list
     if globpath(dir, '*') ==# ''
       call delete(dir, 'd')
     endif
   endfor
-  if globpath(rootpath . '/ftplugin', '*') ==# ''
-    call delete(rootpath . '/ftplugin', 'd')
+  if globpath(rootpath . '/after/ftplugin', '*') ==# ''
+    call delete(rootpath . '/after/ftplugin', 'd')
+  endif
+  if globpath(rootpath . '/after', '*') ==# ''
+    call delete(rootpath . '/after', 'd')
   endif
   if a:msg
-    echohl WarningMsg | echom '[gruvbox-material] Cleaned ' . rootpath . '/ftplugin' | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] Cleaned ' . rootpath . '/after/ftplugin' | echohl None
   endif
 endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{
-  return filereadable(gruvbox_material#ft_rootpath(a:path) . '/ftplugin/text/gruvbox_material.vim')
+  return filereadable(gruvbox_material#ft_rootpath(a:path) . '/after/ftplugin/text/gruvbox_material.vim')
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
