@@ -31,7 +31,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {
-            \ 'bg0':              ['#1d2021',   '234'],
+            \ 'bg0':              ['#1D1F21',   '234'],
             \ 'bg1':              ['#282828',   '235'],
             \ 'bg2':              ['#282828',   '235'],
             \ 'bg3':              ['#3c3836',   '237'],
@@ -158,7 +158,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
   if a:palette ==# 'material' "{{{
     if &background ==# 'dark'
       let palette2 = {
-            \ 'fg0':              ['#d4be98',   '223'],
+            \ 'fg0':              ['#E1D7C6',   '223'],
             \ 'fg1':              ['#ddc7a1',   '223'],
             \ 'red':              ['#ea6962',   '167'],
             \ 'orange':           ['#e78a4e',   '208'],
