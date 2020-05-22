@@ -283,7 +283,12 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
-call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.bg_current_word)
+if s:configuration.current_word ==# 'grey background'
+  call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.bg_current_word)
+else
+  call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
+endif
+
 " }}}
 " }}}
 " Extended File Types: {{{
@@ -1459,11 +1464,6 @@ highlight! link plugEdge Yellow
 highlight! link plugSha Green
 " }}}
 " neoclide/coc.nvim {{{
-if s:configuration.current_word ==# 'grey background'
-  highlight! link CocHighlightText CurrentWord
-else
-  call gruvbox_material#highlight('CocHighlightText', s:palette.none, s:palette.none, s:configuration.current_word)
-endif
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
 call gruvbox_material#highlight('CocErrorHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
 call gruvbox_material#highlight('CocWarningHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
@@ -1473,6 +1473,7 @@ call gruvbox_material#highlight('CocErrorFloat', s:palette.red, s:palette.bg3)
 call gruvbox_material#highlight('CocWarningFloat', s:palette.yellow, s:palette.bg3)
 call gruvbox_material#highlight('CocInfoFloat', s:palette.blue, s:palette.bg3)
 call gruvbox_material#highlight('CocHintFloat', s:palette.aqua, s:palette.bg3)
+highlight! link CocHighlightText CurrentWord
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
 highlight! link CocInfoSign BlueSign
