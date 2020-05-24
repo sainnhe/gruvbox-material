@@ -604,7 +604,7 @@ if gruvbox_material#ft_exists(s:path) " If the ftplugin exists.
       call gruvbox_material#ft_gen(s:path, s:last_modified, 'update')
     endif
     finish
-  else
+  elseif !has('nvim') " Only clean the `after/ftplugin` directory when in vim. This code will produce a bug in neovim.
     call gruvbox_material#ft_clean(s:path, 1)
   endif
 else
