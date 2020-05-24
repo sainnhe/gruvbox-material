@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun 17 May 2020 11:40:37 AM CST'
+let s:last_modified = 'Sun 24 May 2020 02:27:50 AM UTC'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -50,7 +50,7 @@ endif
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
 call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
-call gruvbox_material#highlight('Conceal', s:palette.grey1, s:palette.none)
+call gruvbox_material#highlight('Conceal', s:palette.grey0, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call gruvbox_material#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
 else
@@ -538,8 +538,8 @@ highlight! link CursorWord0 CurrentWord
 highlight! link CursorWord1 CurrentWord
 " }}}
 " Yggdroot/indentLine {{{
-let g:indentLine_color_gui = s:palette.grey1[0]
-let g:indentLine_color_term = s:palette.grey1[1]
+let g:indentLine_color_gui = s:palette.grey0[0]
+let g:indentLine_color_term = s:palette.grey0[1]
 " }}}
 " nathanaelkane/vim-indent-guides {{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0

@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 
 - Fix airline warning and error.
 - Fix 'g:gruvbox_material_current_word' settings.
+- Use `grey0` in `Conceal`.
 
 ## [1.1.3] - 2020-05-06
 
