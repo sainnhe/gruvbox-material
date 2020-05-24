@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Add `g:gruvbox_material_diagnostic_line_highlight`.
+- Add `g:gruvbox_material_better_performance`.
 
 ### Changed
 
