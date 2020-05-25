@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon 25 May 2020 04:13:36 AM UTC'
+let s:last_modified = 'Mon 25 May 2020 04:17:06 AM UTC'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -618,8 +618,8 @@ highlight! link agitStatFile Blue
 highlight! link agitStatRemoved Red
 highlight! link agitStatAdded Green
 highlight! link agitStatMessage Orange
-highlight! link agitDiffRemove diffRemoved
-highlight! link agitDiffAdd diffAdded
+highlight! link agitDiffRemove Red
+highlight! link agitDiffAdd Green
 highlight! link agitDiffHeader Purple
 " ft_end }}}
 " netrw {{{
