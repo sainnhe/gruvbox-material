@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon 25 May 2020 04:17:06 AM UTC'
+let s:last_modified = 'Mon 25 May 2020 07:24:23 AM UTC'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -436,21 +436,6 @@ highlight! link SyntasticWarningSign YellowSign
 highlight! link SyntasticErrorLine ErrorLine
 highlight! link SyntasticWarningLine WarningLine
 " }}}
-" liuchengxu/vista.vim {{{
-highlight! link VistaBracket Grey
-highlight! link VistaChildrenNr Orange
-highlight! link VistaScope Red
-highlight! link VistaTag Green
-highlight! link VistaPrefix Grey
-highlight! link VistaIcon Orange
-highlight! link VistaScopeKind Yellow
-highlight! link VistaColon Grey
-highlight! link VistaLineNr Grey
-highlight! link VistaHeadNr Fg
-highlight! link VistaPublic Green
-highlight! link VistaProtected Yellow
-highlight! link VistaPrivate Red
-" }}}
 " Yggdroot/LeaderF {{{
 if !exists('g:Lf_StlColorscheme')
   let g:Lf_StlColorscheme = 'gruvbox_material'
@@ -621,7 +606,7 @@ highlight! link agitStatMessage Orange
 highlight! link agitDiffRemove Red
 highlight! link agitDiffAdd Green
 highlight! link agitDiffHeader Purple
-" ft_end }}}
+" }}}
 " netrw {{{
 " https://www.vim.org/scripts/script.php?script_id=1075
 highlight! link netrwDir Green
@@ -634,7 +619,7 @@ highlight! link netrwList Aqua
 highlight! link netrwHelpCmd Blue
 highlight! link netrwCmdSep Grey
 highlight! link netrwVersion Orange
-" ft_end }}}
+" }}}
 " }}}
 " Extended File Types: {{{
 " Note: To ensure that the `s:last_modified` variable is always up to date, you need to copy `.githooks/pre-commit` to `.git/hooks/pre-commit`.
@@ -684,6 +669,22 @@ highlight! link TagbarScope Orange
 highlight! link TagbarNestedKind Aqua
 highlight! link TagbarVisibilityPrivate Red
 highlight! link TagbarVisibilityPublic Blue
+" ft_end }}}
+" ft_begin: vista/vista_kind/vista_markdown {{{
+" https://github.com/liuchengxu/vista.vim
+highlight! link VistaBracket Grey
+highlight! link VistaChildrenNr Orange
+highlight! link VistaScope Red
+highlight! link VistaTag Green
+highlight! link VistaPrefix Grey
+highlight! link VistaIcon Orange
+highlight! link VistaScopeKind Yellow
+highlight! link VistaColon Grey
+highlight! link VistaLineNr Grey
+highlight! link VistaHeadNr Fg
+highlight! link VistaPublic Green
+highlight! link VistaProtected Yellow
+highlight! link VistaPrivate Red
 " ft_end }}}
 " ft_begin: nerdtree {{{
 " https://github.com/preservim/nerdtree
