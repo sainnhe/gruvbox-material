@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun 24 May 2020 02:27:50 AM UTC'
+let s:last_modified = 'Mon 25 May 2020 03:53:57 AM UTC'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -649,9 +649,14 @@ highlight! link VistaChildrenNr Orange
 highlight! link VistaScope Red
 highlight! link VistaTag Green
 highlight! link VistaPrefix Grey
-highlight! link VistaColon Green
-highlight! link VistaIcon Purple
-highlight! link VistaLineNr Fg
+highlight! link VistaIcon Orange
+highlight! link VistaScopeKind Yellow
+highlight! link VistaColon Grey
+highlight! link VistaLineNr Grey
+highlight! link VistaHeadNr Fg
+highlight! link VistaPublic Green
+highlight! link VistaProtected Yellow
+highlight! link VistaPrivate Red
 " }}}
 " ft_begin: netrw {{{
 " https://www.vim.org/scripts/script.php?script_id=1075
