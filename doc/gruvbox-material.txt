@@ -399,6 +399,9 @@ E.g.~
     " }}}
 
     " Colors based on https://github.com/soft-aesthetic/soft-era
+    " There are some problems in the original one but I'm too lazy to maintain a fork.
+    " However, I successfully obtained a palette based on soft-era, and I'd like to share it here.
+    " Preview: https://user-images.githubusercontent.com/37491630/82816097-0c76a900-9e8a-11ea-9d99-73573b0f0afb.png
     " {{{
     let g:gruvbox_material_palette = {
           \ 'bg0':              ['#f9f5f5',   '229'],
@@ -410,13 +413,13 @@ E.g.~
           \ 'bg_statusline1':   ['#f4f0f0',   '223'],
           \ 'bg_statusline2':   ['#f4f0f0',   '223'],
           \ 'bg_statusline3':   ['#ebe6e4',   '250'],
-          \ 'bg_diff_green':    ['#daf0a7',   '194'],
-          \ 'bg_visual_green':  ['#daf0a7',   '194'],
-          \ 'bg_diff_red':      ['#fbcdb9',   '217'],
-          \ 'bg_visual_red':    ['#fbcdb9',   '217'],
-          \ 'bg_diff_blue':     ['#c6eaf0',   '117'],
-          \ 'bg_visual_blue':   ['#c6eaf0',   '117'],
-          \ 'bg_visual_yellow': ['#f2dfab',   '226'],
+          \ 'bg_diff_green':    ['#eaf3ce',   '194'],
+          \ 'bg_visual_green':  ['#eaf3ce',   '194'],
+          \ 'bg_diff_red':      ['#fae1d7',   '217'],
+          \ 'bg_visual_red':    ['#fae1d7',   '217'],
+          \ 'bg_diff_blue':     ['#e0f0f3',   '117'],
+          \ 'bg_visual_blue':   ['#e0f0f3',   '117'],
+          \ 'bg_visual_yellow': ['#f6ead0',   '226'],
           \ 'bg_current_word':  ['#efeae9',   '228'],
           \ 'fg0':              ['#be9898',   '237'],
           \ 'fg1':              ['#be9898',   '237'],
@@ -430,8 +433,8 @@ E.g.~
           \ 'bg_red':           ['#f165bd',   '88'],
           \ 'bg_green':         ['#96ad01',   '100'],
           \ 'bg_yellow':        ['#ec9157',   '130'],
-          \ 'grey0':            ['#dabfbf',   '246'],
-          \ 'grey1':            ['#dabfbf',   '245'],
+          \ 'grey0':            ['#e3cbcb',   '246'],
+          \ 'grey1':            ['#dfc5c5',   '245'],
           \ 'grey2':            ['#dabfbf',   '243'],
           \ 'none':             ['NONE',      'NONE']
           \ }
