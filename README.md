@@ -79,20 +79,20 @@ There is a package available for Arch Linux users in AUR: [gruvbox-material-git]
 Put something like this in your vimrc:
 
 ```vim
-" important!!
+" Important!!
 if has('termguicolors')
   set termguicolors
 endif
 
-" for dark version
+" For dark version.
 set background=dark
 
-" for light version
+" For light version.
 set background=light
 
-" set contrast
-" this configuration option should be placed before `colorscheme gruvbox-material`
-" available values: 'hard', 'medium'(default), 'soft'
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
 let g:gruvbox_material_background = 'soft'
 
 colorscheme gruvbox-material
@@ -128,7 +128,7 @@ To enable [lightline](https://github.com/itchyny/lightline.vim) color scheme, pu
 let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox_material'
 
-" or this line
+" Or this line:
 let g:lightline = {'colorscheme' : 'gruvbox_material'}
 ```
 

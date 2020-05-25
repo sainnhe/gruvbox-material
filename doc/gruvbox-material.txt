@@ -81,20 +81,20 @@ Vim~
 
     Put something like this in your vimrc:
 >
-	" important!!
+	" Important!!
 	if has('termguicolors')
 	  set termguicolors
 	endif
 
-	" for dark version
+	" For dark version.
 	set background=dark
 
-	" for light version
+	" For light version.
 	set background=light
 
-	" set contrast
-	" this configuration option should be placed before `colorscheme gruvbox-material`
-	" available values: 'hard', 'medium'(default), 'soft'
+	" Set contrast.
+	" This configuration option should be placed before `colorscheme gruvbox-material`.
+	" Available values: 'hard', 'medium'(default), 'soft'
 	let g:gruvbox_material_background = 'soft'
 
 	colorscheme gruvbox-material
@@ -127,7 +127,7 @@ Lightline~
 	let g:lightline = {}
 	let g:lightline.colorscheme = 'gruvbox_material'
 
-	" or this line
+	" Or this line:
 	let g:lightline = {'colorscheme' : 'gruvbox_material'}
 <
     To apply it without reloading:
@@ -355,11 +355,11 @@ There are 3 built-in palettes:
 
 E.g.~
 >
-    " use the color palette of the original gruvbox
+    " Use the color palette of the original gruvbox.
     let g:gruvbox_material_palette = 'original'
 
-    " if you prefer a darker background, for example: '#101010'
-    " see `autoload/gruvbox_material.vim` for the definition of all built-in palettes
+    " If you prefer a darker background, for example: '#101010'.
+    " See `autoload/gruvbox_material.vim` for the definition of all built-in palettes.
     " {{{
     let g:gruvbox_material_palette = {
           \ 'bg0':              ['#101010',   '234'],
@@ -398,7 +398,7 @@ E.g.~
           \ }
     " }}}
 
-    " colors based on https://github.com/soft-aesthetic/soft-era
+    " Colors based on https://github.com/soft-aesthetic/soft-era
     " {{{
     let g:gruvbox_material_palette = {
           \ 'bg0':              ['#f9f5f5',   '229'],
