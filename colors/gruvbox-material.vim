@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon 25 May 2020 07:24:23 AM UTC'
+let s:last_modified = 'Thu 04 Jun 2020 08:48:12 AM UTC'
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
@@ -146,8 +146,8 @@ if has('nvim')
   highlight! link healthWarning Yellow
   highlight! link LspDiagnosticsError Grey
   highlight! link LspDiagnosticsWarning Grey
-  highlight! link LspDiagnosticInformation Grey
-  highlight! link LspDiagnosticHint Grey
+  highlight! link LspDiagnosticsInformation Grey
+  highlight! link LspDiagnosticsHint Grey
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
