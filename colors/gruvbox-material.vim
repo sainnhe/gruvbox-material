@@ -21,7 +21,8 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu 04 Jun 2020 08:48:12 AM UTC'
+let s:last_modified = 'Sun 07 Jun 2020 01:05:27 PM UTC'
+let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{

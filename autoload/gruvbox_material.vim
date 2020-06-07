@@ -318,7 +318,18 @@ function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
   " create a new file if it doesn't exist
   if !filereadable(ft_path)
     call mkdir(a:rootpath . '/after/ftplugin/' . a:ft, 'p')
-    call writefile(["if g:colors_name !=# 'gruvbox-material'", '    finish', 'endif'], ft_path, 'a') " Abort if the current color scheme is not gruvbox-material.
+    call writefile([
+          \ "if g:colors_name !=# 'gruvbox-material'",
+          \ '    finish',
+          \ 'endif'
+          \ ], ft_path, 'a') " Abort if the current color scheme is not gruvbox-material.
+    call writefile([
+          \ "if index(g:gruvbox_material_loaded_file_types, '" . a:ft . "') ==# -1",
+          \ "    call add(g:gruvbox_material_loaded_file_types, '" . a:ft . "')",
+          \ 'else',
+          \ '    finish',
+          \ 'endif'
+          \ ], ft_path, 'a') " Abort if this file type has already been loaded.
   endif
   " If there is something like `call gruvbox_material#highlight()`, then add
   " code to initialize the palette and configuration.
