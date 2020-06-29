@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun 07 Jun 2020 01:05:27 PM UTC'
+let s:last_modified = 'Mon 29 Jun 2020 10:07:19 AM UTC'
 let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -333,6 +333,39 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
 endif
 " }}}
 " Plugins: {{{
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link TSPunctDelimiter Grey
+highlight! link TSPunctBracket Fg
+highlight! link TSPunctSpecial Fg
+highlight! link TSConstant PurpleItalic
+highlight! link TSConstBuiltin PurpleItalic
+highlight! link TSConstMacro Purple
+highlight! link TSString Yellow
+highlight! link TSStringRegex Green
+highlight! link TSStringEscape Green
+highlight! link TSCharacter Yellow
+highlight! link TSNumber Purple
+highlight! link TSBoolean Purple
+highlight! link TSFloat Purple
+highlight! link TSFunction Green
+highlight! link TSFuncBuiltin Green
+highlight! link TSFuncMacro Green
+highlight! link TSParameter Fg
+highlight! link TSMethod Green
+highlight! link TSField Green
+highlight! link TSProperty Green
+highlight! link TSConstructor Fg
+highlight! link TSConditional Red
+highlight! link TSRepeat Red
+highlight! link TSLabel Orange
+highlight! link TSOperator Orange
+highlight! link TSKeyword Red
+highlight! link TSException Red
+highlight! link TSType Aqua
+highlight! link TSTypeBuiltin BlueItalic
+highlight! link TSStructure Orange
+highlight! link TSInclude PurpleItalic
+" }}}
 " neoclide/coc.nvim {{{
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
 call gruvbox_material#highlight('CocErrorHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.red)

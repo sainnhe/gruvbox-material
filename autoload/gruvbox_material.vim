@@ -6,11 +6,6 @@
 " License: MIT License
 " =============================================================================
 
-augroup GruvboxMaterial "{{{
-  autocmd!
-  autocmd VimEnter * call gruvbox_material#nvim_treesitter()
-augroup END "}}}
-
 function! gruvbox_material#get_configuration() "{{{
   return {
         \ 'background': get(g:, 'gruvbox_material_background', 'medium'),
@@ -394,41 +389,5 @@ endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{
   return filereadable(gruvbox_material#ft_rootpath(a:path) . '/after/ftplugin/text/gruvbox_material.vim')
 endfunction "}}}
-
-" nvim-treesitter/nvim-treesitter {{{
-function! gruvbox_material#nvim_treesitter()
-  highlight! link TSPunctDelimiter Grey
-  highlight! link TSPunctBracket Fg
-  highlight! link TSPunctSpecial Fg
-  highlight! link TSConstant PurpleItalic
-  highlight! link TSConstBuiltin PurpleItalic
-  highlight! link TSConstMacro Purple
-  highlight! link TSString Yellow
-  highlight! link TSStringRegex Green
-  highlight! link TSStringEscape Green
-  highlight! link TSCharacter Yellow
-  highlight! link TSNumber Purple
-  highlight! link TSBoolean Purple
-  highlight! link TSFloat Purple
-  highlight! link TSFunction Green
-  highlight! link TSFuncBuiltin Green
-  highlight! link TSFuncMacro Green
-  highlight! link TSParameter Fg
-  highlight! link TSMethod Green
-  highlight! link TSField Green
-  highlight! link TSProperty Green
-  highlight! link TSConstructor Fg
-  highlight! link TSConditional Red
-  highlight! link TSRepeat Red
-  highlight! link TSLabel Orange
-  highlight! link TSOperator Orange
-  highlight! link TSKeyword Red
-  highlight! link TSException Red
-  highlight! link TSType Aqua
-  highlight! link TSTypeBuiltin BlueItalic
-  highlight! link TSStructure Orange
-  highlight! link TSInclude PurpleItalic
-endfunction
-" }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
