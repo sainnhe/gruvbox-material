@@ -57,7 +57,7 @@ Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 Plug 'sainnhe/gruvbox-material'
 ```
 
-For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
+For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) or [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
 ### Manually
 
