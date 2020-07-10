@@ -20,13 +20,13 @@ assignees: ''
 
 ```
 
-### Minimal vimrc to reproduce this bug
+### Minimal vimrc that can reproduce this bug
 
 ```vim
 
 ```
 
-### Steps to reproduce this bug
+### Steps to reproduce this bug using minimal vimrc
 
 ### Actual behaviour
 
