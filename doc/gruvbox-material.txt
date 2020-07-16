@@ -42,7 +42,7 @@ Via Plugin Manager~
 	Plug 'sainnhe/gruvbox-material'
 <
     For better syntax highlighting support, please install
-    [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
+    https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
 
 ------------------------------------------------------------------------------
 Manually~
@@ -224,7 +224,7 @@ E.g.~
 ------------------------------------------------------------------------------
                                     		    *g:gruvbox_material_visual*
 
-Control the `Visual` and the `VisualNOS` highlight group.
+Control the |hl-Visual| and the |hl-VisualNOS| highlight group.
 
     Available values: `'grey background'`, `'green background'`,
     `'blue background'`, `'red background'`, `'reverse'`
@@ -237,7 +237,7 @@ E.g.~
 ------------------------------------------------------------------------------
                                  *g:gruvbox_material_menu_selection_background*
 
-Customize the background color of `PmenuSel` and `WildMenu`.
+Customize the background color of |hl-PmenuSel| and |hl-WildMenu|.
 
     Available values: `'grey'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
     `'aqua'`, `'blue'`, `'purple'`
