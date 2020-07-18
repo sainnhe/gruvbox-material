@@ -181,13 +181,6 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 - [Edge](https://github.com/sainnhe/edge)
 - [Sonokai](https://github.com/sainnhe/sonokai)
 
-
-## Contributing
-
-If you want to port this color scheme to other apps, see [`autoload/gruvbox_material.vim`](./autoload/gruvbox_material.vim) and [`src/palette`](https://github.com/sainnhe/gruvbox-material-vscode/tree/master/src/palette) for the definition of all color palettes.
-
-Also, you can subscribe to [#28](https://github.com/sainnhe/gruvbox-material/issues/28) to get the updates to the color palettes.
-
 ## Credits
 
 - The color palette is based on [gruvbox](https://github.com/morhetz/gruvbox) by [@morhetz](https://github.com/morhetz)
