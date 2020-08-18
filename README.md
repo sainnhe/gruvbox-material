@@ -163,6 +163,23 @@ To apply it without reloading:
 2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
 3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
 
+**Q: How to use custom colors?**
+
+**A:**
+
+If you want to replace `groupA` with `groupB`, put this in your vimrc:
+
+```vim
+augroup GruvboxMaterialCustom
+  autocmd!
+  autocmd ColorScheme gruvbox-material highlight! link groupA groupB
+augroup END
+
+colorscheme gruvbox-material
+```
+
+*Tips: make sure to define the `augroup` before declare the `colorscheme`.*
+
 **Q: What's your status line configuration?**
 
 **A:** See this [article](https://www.sainnhe.dev/post/status-line-config/).

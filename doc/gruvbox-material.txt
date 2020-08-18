@@ -484,5 +484,20 @@ A:~
 
     3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
 
+------------------------------------------------------------------------------
+Q:~
+    How to use custom colors?
+
+A:~
+    If you want to replace `groupA` with `groupB`, put this in your vimrc:
+>
+    augroup GruvboxMaterialCustom
+	autocmd!
+	autocmd ColorScheme gruvbox-material highlight! link groupA groupB
+    augroup END
+
+    colorscheme gruvbox-material
+<
+    Tips: make sure to define the `augroup` before declare the `colorscheme`.
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:noet:fen:fdm=marker:fmr={{{,}}}:
