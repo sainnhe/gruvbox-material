@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Optimize `nvim-treesitter/nvim-treesitter`.
 
+### Changed
+
+- Remove duplicate docs in README.
+
 ## [1.2.0] - 2020-06-04
 
 ### Added

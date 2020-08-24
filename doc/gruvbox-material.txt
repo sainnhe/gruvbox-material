@@ -60,11 +60,11 @@ Manually~
 
     5. To install [airline](https://github.com/vim-airline/vim-airline) theme,
     copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim`
-    to `~/.vim/autoload/airline/themes/gruvbox_material.vim` .
+    to `~/.vim/autoload/airline/themes/` .
 
     6. To install [lightline](https://github.com/itchyny/lightline.vim) theme,
     copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim`
-    to `~/.vim/autoload/lightline/colorscheme/gruvbox_material.vim` .
+    to `~/.vim/autoload/lightline/colorscheme/` .
 
 ------------------------------------------------------------------------------
 AUR~
@@ -489,15 +489,49 @@ Q:~
     How to use custom colors?
 
 A:~
-    If you want to replace `groupA` with `groupB`, put this in your vimrc:
 >
+    function! s:gruvbox_material_custom() abort
+      " Link a highlight group to a predefined highlight group.
+      " See `colors/gruvbox-material.vim` for all predefined highlight groups.
+      highlight! link groupA groupB
+      highlight! link groupC groupD
+    
+      " Initialize the color palette.
+      " The first parameter is a valid value for `g:gruvbox_material_background`,
+      " and the second parameter is a valid value for `g:gruvbox_material_palette`.
+      let l:palette = gruvbox_material#get_palette('hard', 'mix')
+      " Define a highlight group.
+      " The first parameter is the name of a highlight group,
+      " the second parameter is the foreground color,
+      " the third parameter is the background color,
+      " the fourth parameter is for UI highlighting which is optional,
+      " and the last parameter is for `guisp` which is also optional.
+      " See `autoload/gruvbox_material.vim` for the format of `l:palette`.
+      call gruvbox_material#highlight('groupE', l:palette.red, l:palette.none, 'undercurl', l:palette.red)
+    endfunction
+    
     augroup GruvboxMaterialCustom
-	autocmd!
-	autocmd ColorScheme gruvbox-material highlight! link groupA groupB
+      autocmd!
+      autocmd ColorScheme gruvbox-material call s:gruvbox_material_custom()
     augroup END
-
+    
     colorscheme gruvbox-material
 <
-    Tips: make sure to define the `augroup` before declare the `colorscheme`.
+    Note: Make sure to define the `augroup` before declare the `colorscheme`.
+
+------------------------------------------------------------------------------
+Q:~
+    What's your status line configuration?
+
+A:~
+    See this [article](https://www.sainnhe.dev/post/status-line-config/).
+
+------------------------------------------------------------------------------
+Q:~
+    What's the font used here?
+
+A:~
+    [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
+
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:noet:fen:fdm=marker:fmr={{{,}}}:
