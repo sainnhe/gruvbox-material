@@ -69,9 +69,10 @@ Manually~
 ------------------------------------------------------------------------------
 AUR~
 
-    There is a package available for Arch Linux users in AUR:
+    There are some packages available for Arch Linux users in AUR:
 
-    https://aur.archlinux.org/packages/gruvbox-material-git
+    - [vim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/vim-gruvbox-material-git/)
+    - [neovim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/neovim-gruvbox-material-git/)
 
 ==============================================================================
 USAGE                                                  *gruvbox-material-usage*

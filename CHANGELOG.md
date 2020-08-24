@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Optimize `nvim-treesitter/nvim-treesitter`.
+- AUR packages.
 
 ### Changed
 

@@ -70,7 +70,10 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 
 ### AUR
 
-There is a package available for Arch Linux users in AUR: [gruvbox-material-git](https://aur.archlinux.org/packages/gruvbox-material-git/)
+There are some packages available for Arch Linux users in AUR:
+
+- [vim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/vim-gruvbox-material-git/)
+- [neovim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/neovim-gruvbox-material-git/)
 
 ## Usage
 
