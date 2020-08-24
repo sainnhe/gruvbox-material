@@ -39,7 +39,7 @@ Via Plugin Manager~
 
     Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 >
-	Plug 'sainnhe/gruvbox-material'
+        Plug 'sainnhe/gruvbox-material'
 <
     For better syntax highlighting support, please install
     https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
@@ -82,30 +82,30 @@ Vim~
 
     Put something like this in your vimrc:
 >
-	" Important!!
-	if has('termguicolors')
-	  set termguicolors
-	endif
+        " Important!!
+        if has('termguicolors')
+          set termguicolors
+        endif
 
-	" For dark version.
-	set background=dark
+        " For dark version.
+        set background=dark
 
-	" For light version.
-	set background=light
+        " For light version.
+        set background=light
 
-	" Set contrast.
-	" This configuration option should be placed before `colorscheme gruvbox-material`.
-	" Available values: 'hard', 'medium'(default), 'soft'
-	let g:gruvbox_material_background = 'soft'
+        " Set contrast.
+        " This configuration option should be placed before `colorscheme gruvbox-material`.
+        " Available values: 'hard', 'medium'(default), 'soft'
+        let g:gruvbox_material_background = 'soft'
 
-	colorscheme gruvbox-material
+        colorscheme gruvbox-material
 <
     See |gruvbox-material-configuration| for more configuration options.
 
     If you want to apply this color scheme temporarily, run this command in
     vim(this may cause broken colors):
 >
-	:colorscheme gruvbox-material
+        :colorscheme gruvbox-material
 <
 ------------------------------------------------------------------------------
 Airline~
@@ -113,11 +113,11 @@ Airline~
     To enable [airline](https://github.com/vim-airline/vim-airline) color
     scheme, put this in your vimrc:
 >
-	let g:airline_theme = 'gruvbox_material'
+        let g:airline_theme = 'gruvbox_material'
 <
     To apply it without reloading:
 >
-	:AirlineTheme gruvbox_material
+        :AirlineTheme gruvbox_material
 <
 ------------------------------------------------------------------------------
 Lightline~
@@ -125,17 +125,17 @@ Lightline~
     To enable [lightline](https://github.com/itchyny/lightline.vim) color
     scheme, put this in your vimrc:
 >
-	let g:lightline = {}
-	let g:lightline.colorscheme = 'gruvbox_material'
+        let g:lightline = {}
+        let g:lightline.colorscheme = 'gruvbox_material'
 
-	" Or this line:
-	let g:lightline = {'colorscheme' : 'gruvbox_material'}
+        " Or this line:
+        let g:lightline = {'colorscheme' : 'gruvbox_material'}
 <
     To apply it without reloading:
 >
-	:let g:lightline.colorscheme = 'gruvbox_material'
-	:call lightline#init()
-	:call lightline#colorscheme()
+        :let g:lightline.colorscheme = 'gruvbox_material'
+        :call lightline#init()
+        :call lightline#colorscheme()
 <
 ==============================================================================
 CONFIGURATION                                  *gruvbox-material-configuration*
@@ -145,7 +145,7 @@ Note: the configuration options should be placed before `colorscheme gruvbox-mat
 E.g.~
 >
     if has('termguicolors')
-        set termguicolors
+      set termguicolors
     endif
     set background=light
 
@@ -223,7 +223,7 @@ E.g.~
     let g:gruvbox_material_transparent_background = 1
 <
 ------------------------------------------------------------------------------
-                                    		    *g:gruvbox_material_visual*
+                                                    *g:gruvbox_material_visual*
 
 Control the |hl-Visual| and the |hl-VisualNOS| highlight group.
 
@@ -535,4 +535,4 @@ A:~
     [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
 
 ==============================================================================
-vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:noet:fen:fdm=marker:fmr={{{,}}}:
+vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:et:sw=4:fen:fdm=marker:fmr={{{,}}}:
