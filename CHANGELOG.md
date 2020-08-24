@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file.
 
 - Remove duplicate docs in README.
 
+### Fixed
+
+- Fix errors when doesn't set `g:colors_name`.
+
 ## [1.2.0] - 2020-06-04
 
 ### Added

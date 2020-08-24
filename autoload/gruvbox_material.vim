@@ -319,7 +319,7 @@ function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
   if !filereadable(ft_path)
     call mkdir(a:rootpath . '/after/ftplugin/' . a:ft, 'p')
     call writefile([
-          \ "if g:colors_name !=# 'gruvbox-material'",
+          \ "if !exists('g:colors_name') || g:colors_name !=# 'gruvbox-material'",
           \ '    finish',
           \ 'endif'
           \ ], ft_path, 'a') " Abort if the current color scheme is not gruvbox-material.
