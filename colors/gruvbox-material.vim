@@ -140,15 +140,31 @@ call gruvbox_material#highlight('debugPC', s:palette.bg0, s:palette.green)
 call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
+  call gruvbox_material#highlight('LspDiagnosticsFloatingError', s:palette.red, s:palette.bg3)
+  call gruvbox_material#highlight('LspDiagnosticsFloatingWarning', s:palette.yellow, s:palette.bg3)
+  call gruvbox_material#highlight('LspDiagnosticsFloatingInformation', s:palette.blue, s:palette.bg3)
+  call gruvbox_material#highlight('LspDiagnosticsFloatingHint', s:palette.aqua, s:palette.bg3)
+  highlight! link LspDiagnosticsDefaultError ErrorLine
+  highlight! link LspDiagnosticsDefaultWarning WarningLine
+  highlight! link LspDiagnosticsDefaultInformation InfoLine
+  highlight! link LspDiagnosticsDefaultHint HintLine
+  highlight! link LspDiagnosticsVirtualTextError Grey
+  highlight! link LspDiagnosticsVirtualTextWarning Grey
+  highlight! link LspDiagnosticsVirtualTextInformation Grey
+  highlight! link LspDiagnosticsVirtualTextHint Grey
+  highlight! link LspDiagnosticsUnderlineError ErrorLine
+  highlight! link LspDiagnosticsUnderlineWarning WarningLine
+  highlight! link LspDiagnosticsUnderlineInformation InfoLine
+  highlight! link LspDiagnosticsUnderlineHint HintLine
+  highlight! link LspDiagnosticsSignError RedSign
+  highlight! link LspDiagnosticsSignWarning YellowSign
+  highlight! link LspDiagnosticsSignInformation BlueSign
+  highlight! link LspDiagnosticsSignHint AquaSign
   call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
   highlight! link TermCursor Cursor
   highlight! link healthError Red
   highlight! link healthSuccess Green
   highlight! link healthWarning Yellow
-  highlight! link LspDiagnosticsError Grey
-  highlight! link LspDiagnosticsWarning Grey
-  highlight! link LspDiagnosticsInformation Grey
-  highlight! link LspDiagnosticsHint Grey
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
