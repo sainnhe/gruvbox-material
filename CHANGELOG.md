@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 - Optimize `nvim-treesitter/nvim-treesitter`.
 - AUR packages.
+- Support neovim lsp diagnostics.
 
 ### Changed
 
@@ -16,6 +17,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Fix errors when doesn't set `g:colors_name`.
+- Fix `DiffText` in Vim.
 
 ## [1.2.0] - 2020-06-04
 

@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon 29 Jun 2020 10:07:19 AM UTC'
+let s:last_modified = 'Mon Nov 16 03:25:46 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -72,7 +72,7 @@ endif
 call gruvbox_material#highlight('DiffAdd', s:palette.none, s:palette.bg_diff_green)
 call gruvbox_material#highlight('DiffChange', s:palette.none, s:palette.bg_diff_blue)
 call gruvbox_material#highlight('DiffDelete', s:palette.none, s:palette.bg_diff_red)
-call gruvbox_material#highlight('DiffText', s:palette.bg0, s:palette.fg0)
+call gruvbox_material#highlight('DiffText', s:palette.none, s:palette.none, 'reverse')
 call gruvbox_material#highlight('Directory', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call gruvbox_material#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
@@ -144,6 +144,7 @@ if has('nvim')
   call gruvbox_material#highlight('LspDiagnosticsFloatingWarning', s:palette.yellow, s:palette.bg3)
   call gruvbox_material#highlight('LspDiagnosticsFloatingInformation', s:palette.blue, s:palette.bg3)
   call gruvbox_material#highlight('LspDiagnosticsFloatingHint', s:palette.aqua, s:palette.bg3)
+  call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
   highlight! link LspDiagnosticsDefaultError ErrorLine
   highlight! link LspDiagnosticsDefaultWarning WarningLine
   highlight! link LspDiagnosticsDefaultInformation InfoLine
@@ -160,7 +161,6 @@ if has('nvim')
   highlight! link LspDiagnosticsSignWarning YellowSign
   highlight! link LspDiagnosticsSignInformation BlueSign
   highlight! link LspDiagnosticsSignHint AquaSign
-  call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
   highlight! link TermCursor Cursor
   highlight! link healthError Red
   highlight! link healthSuccess Green
