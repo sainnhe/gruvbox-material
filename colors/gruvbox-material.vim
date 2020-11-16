@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 16 03:25:46 AM UTC 2020'
+let s:last_modified = 'Mon Nov 16 03:41:27 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -62,9 +62,15 @@ highlight! link iCursor Cursor
 highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
 call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
-call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
+if &diff
+  call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
+else
+  call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
+endif
 call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
-if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+if &diff
+  call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
+elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
   call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
 else
   call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
@@ -72,7 +78,7 @@ endif
 call gruvbox_material#highlight('DiffAdd', s:palette.none, s:palette.bg_diff_green)
 call gruvbox_material#highlight('DiffChange', s:palette.none, s:palette.bg_diff_blue)
 call gruvbox_material#highlight('DiffDelete', s:palette.none, s:palette.bg_diff_red)
-call gruvbox_material#highlight('DiffText', s:palette.none, s:palette.none, 'reverse')
+call gruvbox_material#highlight('DiffText', s:palette.bg0, s:palette.fg0)
 call gruvbox_material#highlight('Directory', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call gruvbox_material#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
