@@ -18,6 +18,7 @@ All notable changes to this project will be documented in this file.
 
 - Fix errors when doesn't set `g:colors_name`.
 - Fix `DiffText` in Vim.
+- Fix `CurrentWord` in diff mode.
 
 ## [1.2.0] - 2020-06-04
 
