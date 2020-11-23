@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `nvim-treesitter/nvim-treesitter`.
 - AUR packages.
 - Support neovim lsp diagnostics.
+- New highlight groups for coc-explorer.
 
 ### Changed
 
