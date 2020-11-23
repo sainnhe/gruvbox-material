@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 23 02:03:25 AM UTC 2020'
+let s:last_modified = 'Mon Nov 23 02:42:59 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -102,6 +102,7 @@ else
 end
 highlight! link WildMenu PmenuSel
 call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
+call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
 call gruvbox_material#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
 call gruvbox_material#highlight('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
