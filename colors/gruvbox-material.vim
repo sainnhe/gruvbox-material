@@ -21,7 +21,7 @@ endif
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov 17 04:13:42 AM UTC 2020'
+let s:last_modified = 'Mon Nov 23 01:32:39 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
@@ -61,11 +61,12 @@ highlight! link vCursor Cursor
 highlight! link iCursor Cursor
 highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
-call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 if &diff
   call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
+  call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.none, 'bold')
 else
   call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
+  call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
 call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
 if &diff
