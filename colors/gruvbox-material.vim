@@ -386,6 +386,7 @@ highlight! link TSRepeat Red
 highlight! link TSLabel Orange
 highlight! link TSOperator Orange
 highlight! link TSKeyword Red
+highlight! link TSTagDelimiter Green
 highlight! link TSException Red
 highlight! link TSType Aqua
 highlight! link TSTypeBuiltin BlueItalic
@@ -543,6 +544,7 @@ let g:fzf_colors = {
       \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
       \ 'hl+':     ['fg', 'Aqua'],
       \ 'info':    ['fg', 'Aqua'],
+      \ 'border':  ['fg', 'Grey'],
       \ 'prompt':  ['fg', 'Orange'],
       \ 'pointer': ['fg', 'Blue'],
       \ 'marker':  ['fg', 'Yellow'],
