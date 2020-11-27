@@ -6,11 +6,34 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Optimize `nvim-treesitter/nvim-treesitter`.
+- AUR packages.
+- Support neovim lsp diagnostics.
+- New highlight groups for coc-explorer.
+
+### Changed
+
+- Remove duplicate docs in README.
+
+### Fixed
+
+- Fix errors when doesn't set `g:colors_name`.
+- Fix `DiffText` in Vim.
+- Fix `CurrentWord` in diff mode.
+- Fix `CursorColumn` in diff mode.
+
+## [1.2.0] - 2020-06-04
+
+### Added
+
 - Add `g:gruvbox_material_diagnostic_line_highlight`.
+- Add `g:gruvbox_material_better_performance`.
 
 ### Changed
 
 - Fix airline warning and error.
+- Fix `g:gruvbox_material_current_word` settings.
+- Use `grey0` in `Conceal`.
 
 ## [1.1.3] - 2020-05-06
 
@@ -240,7 +263,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.3...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.3...v1.2.0
 [1.1.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.0...v1.1.1

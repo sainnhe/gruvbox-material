@@ -18,11 +18,11 @@ There are 3 palettes available in this color scheme:
 <details>
   <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two(<b>click on this line to preview</b>)</summary>
 
-|        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
-| :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
-|  𝐇𝐚𝐫𝐝  |   ![mix-hard-dark](https://user-images.githubusercontent.com/37491630/76383368-826f7780-6353-11ea-8094-b593eb5f1e10.png)   |   ![mix-hard-light](https://user-images.githubusercontent.com/37491630/76383372-88655880-6353-11ea-9441-78d159600faf.png)   |
-| 𝐌𝐞𝐝𝐢𝐮𝐦 |  ![mix-medium-dark](https://user-images.githubusercontent.com/37491630/76383370-84393b00-6353-11ea-88de-804a781d3142.png)  |  ![mix-medium-light](https://user-images.githubusercontent.com/37491630/76383375-8ac7b280-6353-11ea-94a8-62e3845203bc.png)  |
-|  𝐒𝐨𝐟𝐭  |   ![mix-soft-dark](https://user-images.githubusercontent.com/37491630/76383371-869b9500-6353-11ea-923d-9011bbe6bcad.png)   |   ![mix-soft-light](https://user-images.githubusercontent.com/37491630/76383380-8c917600-6353-11ea-8530-a67932a6a2ec.png)   |
+|        |                                                           𝐃𝐚𝐫𝐤                                                           |                                                           𝐋𝐢𝐠𝐡𝐭                                                           |
+| :----: | :----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |  ![mix-hard-dark](https://user-images.githubusercontent.com/37491630/76383368-826f7780-6353-11ea-8094-b593eb5f1e10.png)  |  ![mix-hard-light](https://user-images.githubusercontent.com/37491630/76383372-88655880-6353-11ea-9441-78d159600faf.png)  |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![mix-medium-dark](https://user-images.githubusercontent.com/37491630/76383370-84393b00-6353-11ea-88de-804a781d3142.png) | ![mix-medium-light](https://user-images.githubusercontent.com/37491630/76383375-8ac7b280-6353-11ea-94a8-62e3845203bc.png) |
+|  𝐒𝐨𝐟𝐭  |  ![mix-soft-dark](https://user-images.githubusercontent.com/37491630/76383371-869b9500-6353-11ea-923d-9011bbe6bcad.png)  |  ![mix-soft-light](https://user-images.githubusercontent.com/37491630/76383380-8c917600-6353-11ea-8530-a67932a6a2ec.png)  |
 
 </details>
 
@@ -30,7 +30,7 @@ There are 3 palettes available in this color scheme:
   <summary><code>original</code>: The color palette used in the original gruvbox(<b>click on this line to preview</b>)</summary>
 
 |        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
-| :----: |     :------------------------------------------------------------------------------------------------------------------:      |     :-------------------------------------------------------------------------------------------------------------------:      |
+| :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
 |  𝐇𝐚𝐫𝐝  |  ![original-hard-dark](https://user-images.githubusercontent.com/37491630/76383382-8e5b3980-6353-11ea-9398-08d31b1ed32d.png)  |  ![original-hard-light](https://user-images.githubusercontent.com/37491630/76383389-931fed80-6353-11ea-905f-47b35c0cac39.png)  |
 | 𝐌𝐞𝐝𝐢𝐮𝐦 | ![original-medium-dark](https://user-images.githubusercontent.com/37491630/76383385-9024fd00-6353-11ea-99c1-7bba4f796115.png) | ![original-medium-light](https://user-images.githubusercontent.com/37491630/76383393-94511a80-6353-11ea-84ea-551b44f0d5bd.png) |
 |  𝐒𝐨𝐟𝐭  |  ![original-soft-dark](https://user-images.githubusercontent.com/37491630/76383387-91562a00-6353-11ea-90a0-daac8653dfd0.png)  |  ![original-soft-light](https://user-images.githubusercontent.com/37491630/76383396-95824780-6353-11ea-9b36-302b88fef429.png)  |
@@ -57,7 +57,7 @@ Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
 Plug 'sainnhe/gruvbox-material'
 ```
 
-For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot).
+For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) or [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
 ### Manually
 
@@ -65,152 +65,29 @@ For better syntax highlighting support, please install [sheerun/vim-polyglot](ht
 2. Copy `/path/to/gruvbox-material/autoload/gruvbox_material.vim` to `~/.vim/autoload/`.
 3. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to `~/.vim/colors/` .
 4. Copy `/path/to/gruvbox-material/doc/gruvbox-material.txt` to `~/.vim/doc/` and execute `:helptags ~/.vim/doc/` to generate help tags.
-5. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim` to `~/.vim/autoload/airline/themes/gruvbox_material.vim` .
-6. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` to `~/.vim/autoload/lightline/colorscheme/gruvbox_material.vim` .
+5. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim` to `~/.vim/autoload/airline/themes/` .
+6. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` to `~/.vim/autoload/lightline/colorscheme/` .
 
 ### AUR
 
-There is a package available for Arch Linux users in AUR: [gruvbox-material-git](https://aur.archlinux.org/packages/gruvbox-material-git/)
+There are some packages available for Arch Linux users in AUR:
+
+- [vim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/vim-gruvbox-material-git/)
+- [neovim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/neovim-gruvbox-material-git/)
 
 ## Usage
 
-### Vim
-
-Put something like this in your vimrc:
-
-```vim
-" important!!
-if has('termguicolors')
-  set termguicolors
-endif
-
-" for dark version
-set background=dark
-
-" for light version
-set background=light
-
-" set contrast
-" this configuration option should be placed before `colorscheme gruvbox-material`
-" available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'soft'
-
-colorscheme gruvbox-material
-```
-
-See `:help gruvbox-material-configuration` for more configuration options.
-
-If you want to apply this color scheme temporarily, run this command in vim(**this may cause broken colors**):
-
-```vim
-:colorscheme gruvbox-material
-```
-
-### Airline
-
-To enable [airline](https://github.com/vim-airline/vim-airline) color scheme, put this in your vimrc:
-
-```vim
-let g:airline_theme = 'gruvbox_material'
-```
-
-To apply it without reloading:
-
-```vim
-:AirlineTheme gruvbox_material
-```
-
-### Lightline
-
-To enable [lightline](https://github.com/itchyny/lightline.vim) color scheme, put this in your vimrc:
-
-```vim
-let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox_material'
-
-" or this line
-let g:lightline = {'colorscheme' : 'gruvbox_material'}
-```
-
-To apply it without reloading:
-
-```vim
-:let g:lightline.colorscheme = 'gruvbox_material'
-:call lightline#init()
-:call lightline#colorscheme()
-```
-
-## FAQ
-
-**Q: It doesn't work as expected.**
-
-**A:**
-
-1. This color scheme is mainly designed for true colors, `set termguicolors` is required. Check output of `vim --version`, maybe your vim doesn't support `termguicolors`.
-2. Maybe your terminal emulator doesn't support true colors, you can test it using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
-3. If you are running vim in tmux, you need to override default true colors of tmux, as tmux cannot display true colors properly: [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
-4. There are many highlight group links in syntax files while a color scheme may change them, enabling one color scheme based on another color scheme enabled is very likely to cause colors to break. If any color is broken, you can enable the color scheme in your vimrc instead of after vim startup.
-
-**Q: I can't apply airline/lightline color scheme.**
-
-**A:** The name is `gruvbox_material` instead of `gruvbox-material`. I have to use underline for some grammatical reasons.
-
-**Q: How to enable cursive italic keywords?**
-
-**A:**
-
-1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
-2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
-3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
-
-**Q: What's your status line configuration?**
-
-**A:** See this [article](https://www.sainnhe.dev/post/status-line-config/).
-
-**Q: What's the font used here?**
-
-**A:** [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
+See [`:help gruvbox-material.txt`](https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt)
 
 ## Related Projects
 
-**Note**: The following projects are sorted by alphabet.
-
-### IDE
-
-- [Intellij IDEA](https://github.com/Happin3ss/gruvbox-material) *(WIP)* by [@Happin3ss](https://github.com/Happin3ss)
-- [Xcode](https://github.com/zxYin/gruvbox-material-for-xcode) by [@zxYin](https://github.com/zxYin)
-
-### Code Editors
-
-- [Vim](https://github.com/sainnhe/gruvbox-material) by [@sainnhe](https://github.com/sainnhe)
-- [Visual Studio Code](https://github.com/sainnhe/gruvbox-material-vscode) by [@sainnhe](https://github.com/sainnhe)
-
-### Terminal Emulators
-
-- [Alacritty](https://gist.github.com/kamek-pf/2eae4f570061a97788a8a9ca4c893797) by [@kamek-pf](https://github.com/kamek-pf/)
-- [iTerm2](https://github.com/AAlakkad/gruvbox-material-iterm2) by [@AAlakkad](https://github.com/AAlakkad)
-- [Kitty](https://github.com/rsaihe/gruvbox-material-kitty) by [@rsaihe](https://github.com/rsaihe/)
-- [Tilix](https://github.com/sainnhe/gruvbox-material-tilix) by [@sainnhe](https://github.com/sainnhe/)
-- [Windows Terminal](https://gist.github.com/sainnhe/587a1bba123cb25a3ed83ced613c20c0) by [@sainnhe](https://github.com/sainnhe/)
-
-### Other
-
-- [GTK](https://github.com/sainnhe/gruvbox-material-gtk) by [@sainnhe](https://github.com/sainnhe/)
-- [Tmux](https://www.sainnhe.dev/post/status-line-config/) by [@sainnhe](https://github.com/sainnhe/)
-- [Zsh](https://gist.github.com/sainnhe/f92372e14c59750b6ac8dc927ba9f7fe) by [@sainnhe](https://github.com/sainnhe/)
+See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Projects).
 
 ## More Color Schemes
 
 - [Forest Night](https://github.com/sainnhe/forest-night)
 - [Edge](https://github.com/sainnhe/edge)
 - [Sonokai](https://github.com/sainnhe/sonokai)
-
-
-## Contributing
-
-If you want to port this color scheme to other apps, see [`autoload/gruvbox_material.vim`](./autoload/gruvbox_material.vim) and [`src/palette`](https://github.com/sainnhe/gruvbox-material-vscode/tree/master/src/palette) for the definition of all color palettes.
-
-Also, you can subscribe to [#28](https://github.com/sainnhe/gruvbox-material/issues/28) to get the updates to the color palettes.
 
 ## Credits
 
@@ -224,6 +101,12 @@ Also, you can subscribe to [#28](https://github.com/sainnhe/gruvbox-material/iss
 - [zefei/cake16](https://github.com/zefei/cake16): the `black` color in the light variant
 - [Google Material Design](https://www.material.io)
 
+## Maintainers
+
+| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Zixin Yin](https://avatars2.githubusercontent.com/u/33487417?s=70&u=c6acee32fad2edb8c3bc3f7e0f436f1e8b8024c6&v=4)](https://github.com/zxYin) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Zixin Yin](https://github.com/zxYin)                                                                                                           |
+
 ## License
 
-[MIT License](./LICENSE) © sainnhe
+[MIT License](./LICENSE)

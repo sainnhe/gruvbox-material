@@ -180,7 +180,7 @@ let g:airline#themes#gruvbox_material#palette.normal.airline_error_inactive = [ 
 let g:airline#themes#gruvbox_material#palette.normal.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.normal.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.normal.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.normal_modified = g:airline#themes#gruvbox_material#palette.normal
+let g:airline#themes#gruvbox_material#palette.normal_modified = deepcopy(g:airline#themes#gruvbox_material#palette.normal)
 let g:airline#themes#gruvbox_material#palette.normal_modified.airline_c = [ s:normal_mod_fg[0] , s:normal_mod_bg[0] , s:normal_mod_fg[1] , s:normal_mod_bg[1] ]
 
 " Insert mode
@@ -196,7 +196,7 @@ let g:airline#themes#gruvbox_material#palette.insert.airline_error_inactive = [ 
 let g:airline#themes#gruvbox_material#palette.insert.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.insert.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.insert.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.insert_modified = g:airline#themes#gruvbox_material#palette.insert
+let g:airline#themes#gruvbox_material#palette.insert_modified = deepcopy(g:airline#themes#gruvbox_material#palette.insert)
 let g:airline#themes#gruvbox_material#palette.insert_modified.airline_c = [ s:insert_mod_fg[0] , s:insert_mod_bg[0] , s:insert_mod_fg[1] , s:insert_mod_bg[1] ]
 
 " Replace mode
@@ -212,7 +212,7 @@ let g:airline#themes#gruvbox_material#palette.replace.airline_error_inactive = [
 let g:airline#themes#gruvbox_material#palette.replace.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.replace.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.replace.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.replace_modified = g:airline#themes#gruvbox_material#palette.replace
+let g:airline#themes#gruvbox_material#palette.replace_modified = deepcopy(g:airline#themes#gruvbox_material#palette.replace)
 let g:airline#themes#gruvbox_material#palette.replace_modified.airline_c = [ s:replace_mod_fg[0] , s:replace_mod_bg[0] , s:replace_mod_fg[1] , s:replace_mod_bg[1] ]
 
 " Visual mode
@@ -228,7 +228,7 @@ let g:airline#themes#gruvbox_material#palette.visual.airline_error_inactive = [ 
 let g:airline#themes#gruvbox_material#palette.visual.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.visual.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.visual_modified = g:airline#themes#gruvbox_material#palette.visual
+let g:airline#themes#gruvbox_material#palette.visual_modified = deepcopy(g:airline#themes#gruvbox_material#palette.visual)
 let g:airline#themes#gruvbox_material#palette.visual_modified.airline_c = [ s:visual_mod_fg[0] , s:visual_mod_bg[0] , s:visual_mod_fg[1] , s:visual_mod_bg[1] ]
 
 " Command Line mode
@@ -244,7 +244,7 @@ let g:airline#themes#gruvbox_material#palette.commandline.airline_error_inactive
 let g:airline#themes#gruvbox_material#palette.commandline.airline_warning_inactive = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.commandline.airline_error_red = [ s:error_fg[0] , s:error_bg[0] , s:error_fg[1] , s:error_bg[1] ]
 let g:airline#themes#gruvbox_material#palette.commandline.airline_warning_red = [ s:warning_fg[0] , s:warning_bg[0] , s:warning_fg[1] , s:warning_bg[1] ]
-let g:airline#themes#gruvbox_material#palette.commandline_modified = g:airline#themes#gruvbox_material#palette.commandline
+let g:airline#themes#gruvbox_material#palette.commandline_modified = deepcopy(g:airline#themes#gruvbox_material#palette.commandline)
 let g:airline#themes#gruvbox_material#palette.commandline_modified.airline_c = [ s:commandline_mod_fg[0] , s:commandline_mod_bg[0] , s:commandline_mod_fg[1] , s:commandline_mod_bg[1] ]
 
 " Inactive
@@ -253,7 +253,7 @@ let s:IA2 = [ s:inactive_sub_fg[0] , s:inactive_sub_bg[0] , s:inactive_sub_fg[1]
 let s:IA3 = [ s:inactive_mid_fg[0] , s:inactive_mid_bg[0] , s:inactive_mid_fg[1] , s:inactive_mid_bg[1] ]
 
 let g:airline#themes#gruvbox_material#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
-let g:airline#themes#gruvbox_material#palette.inactive_modified = g:airline#themes#gruvbox_material#palette.inactive
+let g:airline#themes#gruvbox_material#palette.inactive_modified = deepcopy(g:airline#themes#gruvbox_material#palette.inactive)
 let g:airline#themes#gruvbox_material#palette.inactive_modified.airline_c = [ s:inactive_mod_fg[0] , s:inactive_mod_bg[0] , s:inactive_mod_fg[1] , s:inactive_mod_bg[1] ]
 
 " TabLine
