@@ -7,9 +7,17 @@
 " -----------------------------------------------------------------------------
 
 " Initialization: {{{
-highlight clear
-if exists('syntax_on')
-  syntax reset
+let s:configuration = gruvbox_material#get_configuration()
+let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
+let s:path = expand('<sfile>:p') " the path of this script
+let s:last_modified = 'Mon Nov 23 02:42:59 AM UTC 2020'
+let g:gruvbox_material_loaded_file_types = []
+
+if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
+  highlight clear
+  if exists('syntax_on')
+    syntax reset
+  endif
 endif
 
 let g:colors_name = 'gruvbox-material'
@@ -17,12 +25,6 @@ let g:colors_name = 'gruvbox-material'
 if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
   finish
 endif
-
-let s:configuration = gruvbox_material#get_configuration()
-let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
-let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 23 02:42:59 AM UTC 2020'
-let g:gruvbox_material_loaded_file_types = []
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{

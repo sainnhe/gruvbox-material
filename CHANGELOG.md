@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Fix `DiffText` in Vim.
 - Fix `CurrentWord` in diff mode.
 - Fix `CursorColumn` in diff mode.
+- Clear highlights when better performance is disabled.
 
 ## [1.2.0] - 2020-06-04
 
