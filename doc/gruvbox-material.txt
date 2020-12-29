@@ -8,6 +8,8 @@ Usage                                        |gruvbox-material-usage|
 Configuration                                |gruvbox-material-configuration|
 FAQ                                          |gruvbox-material-faq|
 
+Note: Type |gO| to show the outline of contents.
+
 ==============================================================================
 INTRODUCTION                                    *gruvbox-material-introduction*
 
