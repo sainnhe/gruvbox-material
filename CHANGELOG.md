@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.2.1] - 2020-12-29
+
 ### Added
 
 - Optimize `nvim-treesitter/nvim-treesitter`.
@@ -265,7 +267,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.3...v1.2.0
 [1.1.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.1...v1.1.2
