@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - AUR packages.
 - Support neovim lsp diagnostics.
 - New highlight groups for coc-explorer.
+- Outline of help doc.
 
 ### Changed
 

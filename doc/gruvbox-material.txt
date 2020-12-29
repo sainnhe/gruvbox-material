@@ -11,7 +11,7 @@ FAQ                                          |gruvbox-material-faq|
 Note: Type |gO| to show the outline of contents.
 
 ==============================================================================
-INTRODUCTION                                    *gruvbox-material-introduction*
+INTRODUCTION                                     *gruvbox-material-introduction*
 
 Gruvbox Material is a modified version of Gruvbox, the contrast is adjusted to
 be softer in order to protect developers' eyes.
@@ -34,9 +34,10 @@ Features~
 - Italic support 🎉
 
 ==============================================================================
-INSTALLATION                                    *gruvbox-material-installation*
+INSTALLATION                                     *gruvbox-material-installation*
 
 ------------------------------------------------------------------------------
+
 Via Plugin Manager~
 
     Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
@@ -47,6 +48,7 @@ Via Plugin Manager~
     https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
 
 ------------------------------------------------------------------------------
+
 Manually~
 
     1. Clone the repository: `git clone --depth 1 https://github.com/sainnhe/gruvbox-material.git`
@@ -69,6 +71,7 @@ Manually~
     to `~/.vim/autoload/lightline/colorscheme/` .
 
 ------------------------------------------------------------------------------
+
 AUR~
 
     There are some packages available for Arch Linux users in AUR:
@@ -77,9 +80,10 @@ AUR~
     - [neovim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/neovim-gruvbox-material-git/)
 
 ==============================================================================
-USAGE                                                  *gruvbox-material-usage*
+USAGE                                                   *gruvbox-material-usage*
 
 ------------------------------------------------------------------------------
+
 Vim~
 
     Put something like this in your vimrc:
@@ -110,6 +114,7 @@ Vim~
         :colorscheme gruvbox-material
 <
 ------------------------------------------------------------------------------
+
 Airline~
 
     To enable [airline](https://github.com/vim-airline/vim-airline) color
@@ -122,6 +127,7 @@ Airline~
         :AirlineTheme gruvbox_material
 <
 ------------------------------------------------------------------------------
+
 Lightline~
 
     To enable [lightline](https://github.com/itchyny/lightline.vim) color
@@ -140,11 +146,11 @@ Lightline~
         :call lightline#colorscheme()
 <
 ==============================================================================
-CONFIGURATION                                  *gruvbox-material-configuration*
+CONFIGURATION                                   *gruvbox-material-configuration*
 
 Note: the configuration options should be placed before `colorscheme gruvbox-material`
 
-E.g.~
+E.g.
 >
     if has('termguicolors')
       set termguicolors
@@ -159,24 +165,26 @@ E.g.~
     let g:lightline.colorscheme = 'gruvbox_material'
 <
 ------------------------------------------------------------------------------
-                                                *g:gruvbox_material_background*
+                                                 *g:gruvbox_material_background*
+g:gruvbox_material_background~
 
 The background contrast used in this color scheme.
 
     Available values: `'hard'`, `'medium'`, `'soft'`
     Default value: `'medium'`
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_background = 'hard'
 <
 ------------------------------------------------------------------------------
-                                    *g:gruvbox_material_disable_italic_comment*
+                                     *g:gruvbox_material_disable_italic_comment*
+g:gruvbox_material_disable_italic_comment~
 
 By default, italic is enabled in `Comment`. To disable italic in `Comment`, set
 this option to `1`.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_disable_italic_comment = 1
 <
@@ -184,21 +192,23 @@ Note: Some terminal emulators don't support italics, which may cause the
 comment color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
 
 ------------------------------------------------------------------------------
-                                               *g:gruvbox_material_enable_bold*
+                                                *g:gruvbox_material_enable_bold*
+g:gruvbox_material_enable_bold~
 
 To enable bold in function name just like the original gruvbox, set this
 option to `1`.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_enable_bold = 1
 <
 ------------------------------------------------------------------------------
-                                             *g:gruvbox_material_enable_italic*
+                                              *g:gruvbox_material_enable_italic*
+g:gruvbox_material_enable_italic~
 
 To enable italic in this color scheme, set this option to `1`.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_enable_italic = 1
 <
@@ -206,7 +216,8 @@ Note: This option is designed to use with fonts that support cursive italics.
 See |gruvbox-material-faq| for more information.
 
 ------------------------------------------------------------------------------
-                                                    *g:gruvbox_material_cursor*
+                                                     *g:gruvbox_material_cursor*
+g:gruvbox_material_cursor~
 
 Customize the cursor color, only works in GUI clients.
 
@@ -214,21 +225,23 @@ Customize the cursor color, only works in GUI clients.
     `'aqua'`, `'blue'`, `'purple'`
     Default value: `'auto'`
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_cursor = 'green'
 <
 ------------------------------------------------------------------------------
-                                    *g:gruvbox_material_transparent_background*
+                                     *g:gruvbox_material_transparent_background*
+g:gruvbox_material_transparent_background~
 
 To use transparent background, set this option to `1`.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_transparent_background = 1
 <
 ------------------------------------------------------------------------------
-                                                    *g:gruvbox_material_visual*
+                                                     *g:gruvbox_material_visual*
+g:gruvbox_material_visual~
 
 Control the |hl-Visual| and the |hl-VisualNOS| highlight group.
 
@@ -236,12 +249,13 @@ Control the |hl-Visual| and the |hl-VisualNOS| highlight group.
     `'blue background'`, `'red background'`, `'reverse'`
     Default value: `'grey background'`
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_visual = 'reverse'
 <
 ------------------------------------------------------------------------------
-                                 *g:gruvbox_material_menu_selection_background*
+                                  *g:gruvbox_material_menu_selection_background*
+g:gruvbox_material_menu_selection_background~
 
 Customize the background color of |hl-PmenuSel| and |hl-WildMenu|.
 
@@ -249,12 +263,13 @@ Customize the background color of |hl-PmenuSel| and |hl-WildMenu|.
     `'aqua'`, `'blue'`, `'purple'`
     Default value: `'grey'`
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_menu_selection_background = 'green'
 <
 ------------------------------------------------------------------------------
-                                    *g:gruvbox_material_sign_column_background*
+                                     *g:gruvbox_material_sign_column_background*
+g:gruvbox_material_sign_column_background~
 
 By default, the background color of sign column is different from normal text.
 If you want to make it the same as normal text, set this option to `'none'`.
@@ -262,18 +277,19 @@ If you want to make it the same as normal text, set this option to `'none'`.
     Available values: `'default'`, `'none'`
     Default value: `'default'`
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
-                                 *g:gruvbox_material_diagnostic_line_highlight*
+                                  *g:gruvbox_material_diagnostic_line_highlight*
+g:gruvbox_material_diagnostic_line_highlight~
 
 Some plugins support highlighting error/warning/info/hint lines, but this
 feature is disabled by default in this color scheme. To enable this feature,
 set this option to `1`.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_diagnostic_line_highlight = 1
 <
@@ -286,7 +302,8 @@ Currently, the following plugins are supported:
 - https://github.com/vim-syntastic/syntastic
 
 ------------------------------------------------------------------------------
-                                              *g:gruvbox_material_current_word*
+                                               *g:gruvbox_material_current_word*
+g:gruvbox_material_current_word~
 
 Some plugins can highlight the word under current cursor, you can use this
 option to control their behavior.
@@ -303,12 +320,13 @@ Currently support:
     Default value: `'grey background'` when not in transparent mode, `'bold'`
     when in transparent mode.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_current_word = 'bold'
 <
 ------------------------------------------------------------------------------
-                                          *g:gruvbox_material_statusline_style*
+                                           *g:gruvbox_material_statusline_style*
+g:gruvbox_material_statusline_style~
 
 Determine the style of statusline/airline/lightline. Set this option to
 `'original'` to use the original gruvbox style.
@@ -316,24 +334,26 @@ Determine the style of statusline/airline/lightline. Set this option to
     Available values: `'default'`, `'original'`
     Default value: `'default'`
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_statusline_style = 'original'
 <
 ------------------------------------------------------------------------------
-                                    *g:gruvbox_material_lightline_disable_bold*
+                                     *g:gruvbox_material_lightline_disable_bold*
+g:gruvbox_material_lightline_disable_bold~
 
 By default, bold is enabled in lightline color scheme. To disable bold in
 lightline color scheme, set this option to `1`.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_lightline_disable_bold = 1
 <
 Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
 ------------------------------------------------------------------------------
-                                        *g:gruvbox_material_better_performance*
+                                         *g:gruvbox_material_better_performance*
+g:gruvbox_material_better_performance~
 
 The loading time of this color scheme is very long because too many file types
 and plugins are optimized. This feature allows you to load part of the code on
@@ -341,12 +361,13 @@ demand by placing them in the `after/ftplugin` directory.
 
 Enabling this option will reduce loading time by approximately 50%.
 
-E.g.~
+E.g.
 >
     let g:gruvbox_material_better_performance = 1
 <
 ------------------------------------------------------------------------------
-                                                   *g:gruvbox_material_palette*
+                                                    *g:gruvbox_material_palette*
+g:gruvbox_material_palette~
 
 All the colors in this color scheme are fully controlled by this variable, you
 can set them to whatever you like through it.
@@ -360,7 +381,7 @@ There are 3 built-in palettes:
     Available values: `'material'`, `'mix'`, `'original'` or a custom palette
     Default value: `'material'`
 
-E.g.~
+E.g.
 >
     " Use the color palette of the original gruvbox.
     let g:gruvbox_material_palette = 'original'
@@ -448,54 +469,48 @@ E.g.~
     " }}}
 <
 ==============================================================================
-FAQ                                                      *gruvbox-material-faq*
+FAQ                                                       *gruvbox-material-faq*
 
 ------------------------------------------------------------------------------
-Q:~
-    It doesn't work as expected.
 
-A:~
-    1. This color scheme is mainly designed for true colors, `set termguicolors`
-    is required. Check output of `vim --version`, maybe your vim doesn't support
-    `termguicolors`.
+It doesn't work as expected.~
 
-    2. Maybe your terminal emulator doesn't support true colors, you can test
-    it using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
+1. This color scheme is mainly designed for true colors, `set termguicolors`
+is required. Check output of `vim --version`, maybe your vim doesn't support
+`termguicolors`.
 
-    3. If you are running vim in tmux, you need to override default true
-    colors of tmux, as tmux cannot display true colors properly:
-    [#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
+2. Maybe your terminal emulator doesn't support true colors, you can test it
+using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
 
-    4. There are many highlight group links in syntax files while a color
-    scheme may change them, enabling one color scheme based on another color
-    scheme enabled is very likely to cause colors to break. If any color is
-    broken, you can enable the color scheme in your vimrc instead of after
-    vim startup.
+3. If you are running vim in tmux, you need to override default true colors of
+tmux, as tmux cannot display true colors properly:
+[#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
+
+4. There are many highlight group links in syntax files while a color scheme
+may change them, enabling one color scheme based on another color scheme
+enabled is very likely to cause colors to break. If any color is broken, you
+can enable the color scheme in your vimrc instead of after vim startup.
 
 ------------------------------------------------------------------------------
-Q:~
-    I can't apply airline/lightline color scheme.
 
-A:~
-    The name is `gruvbox_material` instead of `gruvbox-material`. I have to
-    use underline for some grammatical reasons.
+I can't apply airline/lightline color scheme.~
 
-------------------------------------------------------------------------------
-Q:~
-    How to enable cursive italic keywords?
-
-A:~
-    1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
-
-    2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
-
-    3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
+The name is `gruvbox_material` instead of `gruvbox-material`. I have to use
+underline for some grammatical reasons.
 
 ------------------------------------------------------------------------------
-Q:~
-    How to use custom colors?
 
-A:~
+How to enable cursive italic keywords?~
+
+1. Install a font that supports cursive italics, for example [icursive-nerd-font](https://github.com/sainnhe/icursive-nerd-font).
+
+2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
+
+3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
+
+------------------------------------------------------------------------------
+
+How to use custom colors?~
 >
     function! s:gruvbox_material_custom() abort
       " Link a highlight group to a predefined highlight group.
@@ -524,21 +539,19 @@ A:~
     
     colorscheme gruvbox-material
 <
-    Note: Make sure to define the `augroup` before declare the `colorscheme`.
+Note: Make sure to define the `augroup` before declare the `colorscheme`.
 
 ------------------------------------------------------------------------------
-Q:~
-    What's your status line configuration?
 
-A:~
-    See this [article](https://www.sainnhe.dev/post/status-line-config/).
+What's your status line configuration?~
+
+See this [article](https://www.sainnhe.dev/post/status-line-config/).
 
 ------------------------------------------------------------------------------
-Q:~
-    What's the font used here?
 
-A:~
-    [Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
+What's the font used here?~
+
+[Fira Code iCursive Op](https://github.com/sainnhe/icursive-nerd-font).
 
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:et:sw=4:fen:fdm=marker:fmr={{{,}}}:
