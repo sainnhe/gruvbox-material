@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 23 02:42:59 AM UTC 2020'
+let s:last_modified = 'Tue Dec 29 01:39:11 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -171,13 +171,13 @@ if has('nvim')
   highlight! link LspDiagnosticsSignWarning YellowSign
   highlight! link LspDiagnosticsSignInformation BlueSign
   highlight! link LspDiagnosticsSignHint AquaSign
+  highlight! link LspReferenceText CurrentWord
+  highlight! link LspReferenceRead CurrentWord
+  highlight! link LspReferenceWrite CurrentWord
   highlight! link TermCursor Cursor
   highlight! link healthError Red
   highlight! link healthSuccess Green
   highlight! link healthWarning Yellow
-  highlight! link LspReferenceText CurrentWord
-  highlight! link LspReferenceRead CurrentWord
-  highlight! link LspReferenceWrite CurrentWord
 endif
 " }}}
 " Syntax: {{{
