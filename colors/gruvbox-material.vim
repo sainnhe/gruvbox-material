@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Dec 29 04:01:20 AM UTC 2020'
+let s:last_modified = 'Wed Dec 30 01:03:48 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -150,23 +150,23 @@ call gruvbox_material#highlight('debugPC', s:palette.bg0, s:palette.green)
 call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
-  call gruvbox_material#highlight('LspDiagnosticsFloatingError', s:palette.red, s:palette.bg3)
-  call gruvbox_material#highlight('LspDiagnosticsFloatingWarning', s:palette.yellow, s:palette.bg3)
-  call gruvbox_material#highlight('LspDiagnosticsFloatingInformation', s:palette.blue, s:palette.bg3)
-  call gruvbox_material#highlight('LspDiagnosticsFloatingHint', s:palette.aqua, s:palette.bg3)
   call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  highlight! link LspDiagnosticsDefaultError ErrorLine
-  highlight! link LspDiagnosticsDefaultWarning WarningLine
-  highlight! link LspDiagnosticsDefaultInformation InfoLine
-  highlight! link LspDiagnosticsDefaultHint HintLine
+  highlight! link LspDiagnosticsFloatingError ErrorFloat
+  highlight! link LspDiagnosticsFloatingWarning WarningFloat
+  highlight! link LspDiagnosticsFloatingInformation InfoFloat
+  highlight! link LspDiagnosticsFloatingHint HintFloat
+  highlight! link LspDiagnosticsDefaultError ErrorText
+  highlight! link LspDiagnosticsDefaultWarning WarningText
+  highlight! link LspDiagnosticsDefaultInformation InfoText
+  highlight! link LspDiagnosticsDefaultHint HintText
   highlight! link LspDiagnosticsVirtualTextError Grey
   highlight! link LspDiagnosticsVirtualTextWarning Grey
   highlight! link LspDiagnosticsVirtualTextInformation Grey
   highlight! link LspDiagnosticsVirtualTextHint Grey
-  highlight! link LspDiagnosticsUnderlineError ErrorLine
-  highlight! link LspDiagnosticsUnderlineWarning WarningLine
-  highlight! link LspDiagnosticsUnderlineInformation InfoLine
-  highlight! link LspDiagnosticsUnderlineHint HintLine
+  highlight! link LspDiagnosticsUnderlineError ErrorText
+  highlight! link LspDiagnosticsUnderlineWarning WarningText
+  highlight! link LspDiagnosticsUnderlineInformation InfoText
+  highlight! link LspDiagnosticsUnderlineHint HintText
   highlight! link LspDiagnosticsSignError RedSign
   highlight! link LspDiagnosticsSignWarning YellowSign
   highlight! link LspDiagnosticsSignInformation BlueSign
@@ -312,6 +312,14 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
+call gruvbox_material#highlight('ErrorText', s:palette.none, s:palette.bg_visual_red, 'undercurl', s:palette.red)
+call gruvbox_material#highlight('WarningText', s:palette.none, s:palette.bg_visual_yellow, 'undercurl', s:palette.yellow)
+call gruvbox_material#highlight('InfoText', s:palette.none, s:palette.bg_visual_blue, 'undercurl', s:palette.blue)
+call gruvbox_material#highlight('HintText', s:palette.none, s:palette.bg_visual_green, 'undercurl', s:palette.green)
+call gruvbox_material#highlight('ErrorFloat', s:palette.red, s:palette.bg3)
+call gruvbox_material#highlight('WarningFloat', s:palette.yellow, s:palette.bg3)
+call gruvbox_material#highlight('InfoFloat', s:palette.blue, s:palette.bg3)
+call gruvbox_material#highlight('HintFloat', s:palette.green, s:palette.bg3)
 if &diff
   call gruvbox_material#highlight('CurrentWord', s:palette.bg0, s:palette.bg_green)
 elseif s:configuration.current_word ==# 'grey background'
@@ -372,7 +380,7 @@ highlight! link TSConstBuiltin PurpleItalic
 highlight! link TSConstMacro Purple
 highlight! link TSConstant PurpleItalic
 highlight! link TSConstructor Fg
-highlight! link TSError CocErrorHighlight
+highlight! link TSError ErrorText
 highlight! link TSException Red
 highlight! link TSField Green
 highlight! link TSFloat Purple
@@ -411,14 +419,14 @@ highlight! link TSVariableBuiltin PurpleItalic
 " }}}
 " neoclide/coc.nvim {{{
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
-call gruvbox_material#highlight('CocErrorHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
-call gruvbox_material#highlight('CocWarningHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
-call gruvbox_material#highlight('CocInfoHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
-call gruvbox_material#highlight('CocHintHighlight', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
-call gruvbox_material#highlight('CocErrorFloat', s:palette.red, s:palette.bg3)
-call gruvbox_material#highlight('CocWarningFloat', s:palette.yellow, s:palette.bg3)
-call gruvbox_material#highlight('CocInfoFloat', s:palette.blue, s:palette.bg3)
-call gruvbox_material#highlight('CocHintFloat', s:palette.aqua, s:palette.bg3)
+highlight! link CocErrorFloat ErrorFloat
+highlight! link CocWarningFloat WarningFloat
+highlight! link CocInfoFloat InfoFloat
+highlight! link CocHintFloat HintFloat
+highlight! link CocErrorHighlight ErrorText
+highlight! link CocWarningHighlight WarningText
+highlight! link CocInfoHighlight InfoText
+highlight! link CocHintHighlight HintText
 highlight! link CocHighlightText CurrentWord
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
@@ -480,10 +488,10 @@ highlight! link LspErrorVirtual Grey
 highlight! link LspWarningVirtual Grey
 highlight! link LspInformationVirtual Grey
 highlight! link LspHintVirtual Grey
-highlight! link LspErrorHighlight CocErrorHighlight
-highlight! link LspWarningHighlight CocWarningHighlight
-highlight! link LspInformationHighlight CocInfoHighlight
-highlight! link LspHintHighlight CocHintHighlight
+highlight! link LspErrorHighlight ErrorText
+highlight! link LspWarningHighlight WarningText
+highlight! link LspInformationHighlight InfoText
+highlight! link LspHintHighlight HintText
 highlight! link lspReference CurrentWord
 " }}}
 " ycm-core/YouCompleteMe {{{
@@ -491,13 +499,13 @@ highlight! link YcmErrorSign RedSign
 highlight! link YcmWarningSign YellowSign
 highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
-highlight! link YcmErrorSection CocErrorHighlight
-highlight! link YcmWarningSection CocWarningHighlight
+highlight! link YcmErrorSection ErrorText
+highlight! link YcmWarningSection WarningText
 " }}}
 " dense-analysis/ale {{{
-highlight! link ALEError CocErrorHighlight
-highlight! link ALEWarning CocWarningHighlight
-highlight! link ALEInfo CocInfoHighlight
+highlight! link ALEError ErrorText
+highlight! link ALEWarning WarningText
+highlight! link ALEInfo InfoText
 highlight! link ALEErrorSign RedSign
 highlight! link ALEWarningSign YellowSign
 highlight! link ALEInfoSign BlueSign

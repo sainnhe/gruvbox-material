@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Diagnostics text highlights.
+
 ## [1.2.1] - 2020-12-29
 
 ### Added
