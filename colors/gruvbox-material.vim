@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Dec 30 01:03:48 AM UTC 2020'
+let s:last_modified = 'Wed Dec 30 01:13:47 AM UTC 2020'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -519,13 +519,13 @@ highlight! link ALEVirtualTextStyleError Grey
 highlight! link ALEVirtualTextStyleWarning Grey
 " }}}
 " neomake/neomake {{{
-highlight! link NeomakeError ALEError
+highlight! link NeomakeError ErrorText
+highlight! link NeomakeWarning WarningText
+highlight! link NeomakeInfo InfoText
+highlight! link NeomakeMessage HintText
 highlight! link NeomakeErrorSign RedSign
-highlight! link NeomakeWarning ALEWarning
 highlight! link NeomakeWarningSign YellowSign
-highlight! link NeomakeInfo ALEInfo
 highlight! link NeomakeInfoSign BlueSign
-highlight! link NeomakeMessage Aqua
 highlight! link NeomakeMessageSign AquaSign
 highlight! link NeomakeVirtualtextError Grey
 highlight! link NeomakeVirtualtextWarning Grey
@@ -533,8 +533,8 @@ highlight! link NeomakeVirtualtextInfo Grey
 highlight! link NeomakeVirtualtextMessag Grey
 " }}}
 " vim-syntastic/syntastic {{{
-highlight! link SyntasticError ALEError
-highlight! link SyntasticWarning ALEWarning
+highlight! link SyntasticError ErrorText
+highlight! link SyntasticWarning WarningText
 highlight! link SyntasticErrorSign RedSign
 highlight! link SyntasticWarningSign YellowSign
 highlight! link SyntasticErrorLine ErrorLine
