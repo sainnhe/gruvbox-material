@@ -334,7 +334,10 @@ function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
   " If there is something like `call gruvbox_material#highlight()`, then add
   " code to initialize the palette and configuration.
   if matchstr(a:content, 'gruvbox_material#highlight') !=# ''
-    call writefile(['let s:configuration = gruvbox_material#get_configuration()', 'let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)'], ft_path, 'a')
+    call writefile([
+          \ 'let s:configuration = gruvbox_material#get_configuration()',
+          \ 'let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)'
+          \ ], ft_path, 'a')
   endif
   " Append the content.
   call writefile(split(a:content, "\n"), ft_path, 'a')
