@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Dec 31 09:55:54 AM UTC 2020'
+let s:last_modified = 'Mon Jan 11 02:12:49 AM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -737,7 +737,7 @@ if gruvbox_material#ft_exists(s:path) " If the ftplugin exists.
       call gruvbox_material#ft_gen(s:path, s:last_modified, 'update')
     endif
     finish
-  elseif !has('nvim') " Only clean the `after/ftplugin` directory when in vim. This code will produce a bug in neovim.
+  else
     call gruvbox_material#ft_clean(s:path, 1)
   endif
 else
