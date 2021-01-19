@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Optimize lervag/vimtex.
+- Add `g:gruvbox_material_diagnostic_text_highlight`
 
 ### Changed
 

@@ -282,6 +282,19 @@ E.g.
     let g:gruvbox_material_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                  *g:gruvbox_material_diagnostic_text_highlight*
+g:gruvbox_material_diagnostic_text_highlight~
+
+Whether to highlight the background of error/warning/info/hint text.
+
+    Available values: `0`, `1`
+    Default value: `0`
+
+E.g.
+>
+    let g:gruvbox_material_diagnostic_text_highlight = 1
+<
+------------------------------------------------------------------------------
                                   *g:gruvbox_material_diagnostic_line_highlight*
 g:gruvbox_material_diagnostic_line_highlight~
 
