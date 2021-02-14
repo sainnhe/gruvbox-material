@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Feb 14 02:05:18 AM UTC 2021'
+let s:last_modified = 'Sun Feb 14 02:08:09 AM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -2017,7 +2017,7 @@ highlight! link tomlKey Orange
 highlight! link tomlBoolean Aqua
 highlight! link tomlTableArray tomlTable
 " ft_end }}}
-" ft_begin: diff/git {{{
+" ft_begin: diff/git/gitcommit {{{
 highlight! link diffAdded Green
 highlight! link diffRemoved Red
 highlight! link diffChanged Blue
