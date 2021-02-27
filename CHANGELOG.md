@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `lervag/vimtex`.
 - Add `g:gruvbox_material_diagnostic_text_highlight`
 - Optimize `liuchengxu/vim-clap`.
+- Add whitelist for extended file types.
 
 ### Changed
 
