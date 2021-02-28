@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `liuchengxu/vim-clap`.
 - Add whitelist for extended file types.
 - Support for leaderf popup mode.
+- Optimize `nvim-telescope/telescope.nvim`.
 
 ### Changed
 
