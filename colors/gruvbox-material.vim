@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Feb 27 11:32:46 AM UTC 2021'
+let s:last_modified = 'Sun Feb 28 10:50:27 AM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -561,10 +561,26 @@ call gruvbox_material#highlight('Lf_hl_match2', s:palette.blue, s:palette.none, 
 call gruvbox_material#highlight('Lf_hl_match3', s:palette.purple, s:palette.none, 'bold')
 call gruvbox_material#highlight('Lf_hl_match4', s:palette.orange, s:palette.none, 'bold')
 call gruvbox_material#highlight('Lf_hl_matchRefine', s:palette.red, s:palette.none, 'bold')
+call gruvbox_material#highlight('Lf_hl_popup_normalMode', s:palette.bg0, s:palette.grey2, 'bold')
+call gruvbox_material#highlight('Lf_hl_popup_inputMode', s:palette.bg0, s:palette.grey2, 'bold')
+call gruvbox_material#highlight('Lf_hl_popup_category', s:palette.bg0, s:palette.grey1)
+call gruvbox_material#highlight('Lf_hl_popup_nameOnlyMode', s:palette.fg1, s:palette.bg_statusline3)
+call gruvbox_material#highlight('Lf_hl_popup_fullPathMode', s:palette.fg1, s:palette.bg_statusline3)
+call gruvbox_material#highlight('Lf_hl_popup_fuzzyMode', s:palette.bg0, s:palette.grey0)
+call gruvbox_material#highlight('Lf_hl_popup_regexMode', s:palette.fg1, s:palette.bg_statusline3)
+call gruvbox_material#highlight('Lf_hl_popup_lineInfo', s:palette.bg0, s:palette.green)
+call gruvbox_material#highlight('Lf_hl_popup_total', s:palette.bg0, s:palette.yellow)
+call gruvbox_material#highlight('Lf_hl_popup_cursor', s:palette.bg0, s:palette.green)
+call gruvbox_material#highlight('Lf_hl_popup_inputText', s:palette.green, s:palette.bg3)
 highlight! link Lf_hl_cursorline Fg
 highlight! link Lf_hl_selection DiffAdd
 highlight! link Lf_hl_rgHighlight Visual
 highlight! link Lf_hl_gtagsHighlight Visual
+highlight! link Lf_hl_popup_window Pmenu
+highlight! link Lf_hl_popup_prompt Orange
+highlight! link Lf_hl_popup_cwd Pmenu
+highlight! link Lf_hl_popup_blank Lf_hl_popup_window
+highlight! link Lf_hl_popup_spin Purple
 " }}}
 " liuchengxu/vim-clap {{{
 call gruvbox_material#highlight('ClapSelected', s:palette.red, s:palette.bg3, 'bold')
