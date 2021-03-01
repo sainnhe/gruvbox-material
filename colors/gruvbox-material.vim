@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Feb 28 11:18:33 AM UTC 2021'
+let s:last_modified = 'Mon Mar  1 02:05:21 AM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -572,7 +572,7 @@ call gruvbox_material#highlight('Lf_hl_popup_lineInfo', s:palette.bg0, s:palette
 call gruvbox_material#highlight('Lf_hl_popup_total', s:palette.bg0, s:palette.yellow)
 call gruvbox_material#highlight('Lf_hl_popup_cursor', s:palette.bg0, s:palette.green)
 call gruvbox_material#highlight('Lf_hl_popup_inputText', s:palette.green, s:palette.bg3)
-highlight! link Lf_hl_cursorline Fg
+call gruvbox_material#highlight('Lf_hl_cursorline', s:palette.fg1, s:palette.none)
 highlight! link Lf_hl_selection DiffAdd
 highlight! link Lf_hl_rgHighlight Visual
 highlight! link Lf_hl_gtagsHighlight Visual
