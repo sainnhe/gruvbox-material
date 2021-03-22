@@ -85,7 +85,7 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 
 ## More Color Schemes
 
-- [Forest Night](https://github.com/sainnhe/forest-night)
+- [Everforest](https://github.com/sainnhe/everforest)
 - [Edge](https://github.com/sainnhe/edge)
 - [Sonokai](https://github.com/sainnhe/sonokai)
 
@@ -109,4 +109,4 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 
 ## License
 
-[MIT License](./LICENSE)
+[MIT](./LICENSE) © sainnhe
