@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Diagnostics text highlights.
+- Adjust diff and visual background colors in light variant.
 
 ## [1.2.1] - 2020-12-29
 

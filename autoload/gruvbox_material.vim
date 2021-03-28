@@ -62,13 +62,13 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_statusline1':   ['#f5edca',   '223'],
             \ 'bg_statusline2':   ['#f3eac7',   '223'],
             \ 'bg_statusline3':   ['#eee0b7',   '250'],
-            \ 'bg_diff_green':    ['#e3f6b4',   '194'],
+            \ 'bg_diff_green':    ['#e4edc8',   '194'],
             \ 'bg_visual_green':  ['#dde5c2',   '194'],
-            \ 'bg_diff_red':      ['#ffdbcc',   '217'],
-            \ 'bg_visual_red':    ['#f6d2ba',   '217'],
-            \ 'bg_diff_blue':     ['#cff1f6',   '117'],
+            \ 'bg_diff_red':      ['#f8e4c9',   '217'],
+            \ 'bg_visual_red':    ['#f0ddc3',   '217'],
+            \ 'bg_diff_blue':     ['#e0e9d3',   '117'],
             \ 'bg_visual_blue':   ['#d9e1cc',   '117'],
-            \ 'bg_visual_yellow': ['#f1e2b7',   '226'],
+            \ 'bg_visual_yellow': ['#f9eabf',   '226'],
             \ 'bg_current_word':  ['#f3eac7',   '229']
             \ }
     endif "}}}
@@ -104,13 +104,13 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_statusline1':   ['#f2e5bc',   '223'],
             \ 'bg_statusline2':   ['#f2e5bc',   '223'],
             \ 'bg_statusline3':   ['#e5d5ad',   '250'],
-            \ 'bg_diff_green':    ['#daf0a7',   '194'],
+            \ 'bg_diff_green':    ['#e6eabc',   '194'],
             \ 'bg_visual_green':  ['#dee2b6',   '194'],
-            \ 'bg_diff_red':      ['#fbcdb9',   '217'],
-            \ 'bg_visual_red':    ['#f7cfae',   '217'],
-            \ 'bg_diff_blue':     ['#c6eaf0',   '117'],
+            \ 'bg_diff_red':      ['#f9e0bb',   '217'],
+            \ 'bg_visual_red':    ['#f1d9b5',   '217'],
+            \ 'bg_diff_blue':     ['#e2e6c7',   '117'],
             \ 'bg_visual_blue':   ['#dadec0',   '117'],
-            \ 'bg_visual_yellow': ['#f2dfab',   '226'],
+            \ 'bg_visual_yellow': ['#fae7b3',   '226'],
             \ 'bg_current_word':  ['#f2e5bc',   '228']
             \ }
     endif "}}}
@@ -146,13 +146,13 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_statusline1':   ['#ebdbb2',   '223'],
             \ 'bg_statusline2':   ['#ebdbb2',   '223'],
             \ 'bg_statusline3':   ['#dac9a5',   '250'],
-            \ 'bg_diff_green':    ['#d1ea9b',   '194'],
+            \ 'bg_diff_green':    ['#dfe1b4',   '194'],
             \ 'bg_visual_green':  ['#d7d9ae',   '194'],
-            \ 'bg_diff_red':      ['#fbcab5',   '217'],
-            \ 'bg_visual_red':    ['#f0c6a6',   '217'],
-            \ 'bg_diff_blue':     ['#bee4ea',   '117'],
+            \ 'bg_diff_red':      ['#f7d9b9',   '217'],
+            \ 'bg_visual_red':    ['#efd2b3',   '217'],
+            \ 'bg_diff_blue':     ['#dbddbf',   '117'],
             \ 'bg_visual_blue':   ['#d3d5b8',   '117'],
-            \ 'bg_visual_yellow': ['#ecd6a3',   '226'],
+            \ 'bg_visual_yellow': ['#f3deaa',   '226'],
             \ 'bg_current_word':  ['#ebdbb2',   '227']
             \ }
     endif
