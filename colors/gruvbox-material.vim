@@ -159,10 +159,10 @@ if has('nvim')
   highlight! link LspDiagnosticsDefaultWarning WarningText
   highlight! link LspDiagnosticsDefaultInformation InfoText
   highlight! link LspDiagnosticsDefaultHint HintText
-  highlight! link LspDiagnosticsVirtualTextError Grey
-  highlight! link LspDiagnosticsVirtualTextWarning Grey
-  highlight! link LspDiagnosticsVirtualTextInformation Grey
-  highlight! link LspDiagnosticsVirtualTextHint Grey
+  highlight! link LspDiagnosticsVirtualTextError Red
+  highlight! link LspDiagnosticsVirtualTextWarning Yellow
+  highlight! link LspDiagnosticsVirtualTextInformation Orange
+  highlight! link LspDiagnosticsVirtualTextHint Blue
   highlight! link LspDiagnosticsUnderlineError ErrorText
   highlight! link LspDiagnosticsUnderlineWarning WarningText
   highlight! link LspDiagnosticsUnderlineInformation InfoText
