@@ -311,6 +311,19 @@ Currently, the following plugins are supported:
 - https://github.com/vim-syntastic/syntastic
 
 ------------------------------------------------------------------------------
+                                               *g:gruvbox_material_virtual_text*
+g:gruvbox_material_virtual_text~
+
+The virtual text colors in neovim.
+
+    Available values: `'grey'`, `'colored'`
+    Default value: `'grey'`
+
+E.g.
+>
+    let g:gruvbox_material_virtual_text = 'colored'
+<
+------------------------------------------------------------------------------
                                                *g:gruvbox_material_current_word*
 g:gruvbox_material_current_word~
 

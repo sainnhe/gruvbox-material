@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Add whitelist for extended file types.
 - Support for leaderf popup mode.
 - Optimize `nvim-telescope/telescope.nvim`.
+- Add `g:gruvbox_material_virtual_text`.
 
 ### Changed
 
