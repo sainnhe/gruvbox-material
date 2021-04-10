@@ -23,7 +23,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'gruvbox_material_diagnostic_text_highlight', 0),
         \ 'diagnostic_line_highlight': get(g:, 'gruvbox_material_diagnostic_line_highlight', 0),
-        \ 'virtual_text': get(g:, 'gruvbox_material_virtual_text', 'grey'),
+        \ 'diagnostic_virtual_text': get(g:, 'gruvbox_material_diagnostic_virtual_text', 'grey'),
         \ 'better_performance': get(g:, 'gruvbox_material_better_performance', 0),
         \ }
 endfunction "}}}

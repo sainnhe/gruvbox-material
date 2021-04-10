@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Apr  9 10:42:12 AM UTC 2021'
+let s:last_modified = 'Sat Apr 10 01:26:03 AM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -323,7 +323,7 @@ else
   highlight clear InfoLine
   highlight clear HintLine
 endif
-if s:configuration.virtual_text ==# 'grey'
+if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextWarning Grey
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
