@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `nvim-telescope/telescope.nvim`.
 - Add `g:gruvbox_material_diagnostic_virtual_text`.
 - Optimize `kyazdani42/nvim-tree.lua`.
+- Add installation guide for using pack feature.
 
 ### Changed
 
