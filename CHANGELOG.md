@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Diagnostics text highlights.
 - Adjust diff and visual background colors in light variant.
 - `gui=undercurl` is enabled in tmux >= 2.9
+- Adjust the design of airline/lightline.
 
 ## [1.2.1] - 2020-12-29
 
