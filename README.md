@@ -47,44 +47,7 @@ This color scheme uses the `material` palette by default, you can use a global v
 - Rich support for common file types and plugins.
 - [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
 
-## Installation
-
-### Via Plugin Manager
-
-Take [vim-plug](https://github.com/junegunn/vim-plug) for example:
-
-```vim
-Plug 'sainnhe/gruvbox-material'
-```
-
-For better syntax highlighting support, please install [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) or [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
-
-### Via Pack Feature
-
-1. Create a new directory: `$ mkdir -p ~/.vim/pack/colors/opt`
-2. Clone this repository: `$ git clone --depth 1 https://github.com/sainnhe/gruvbox-material.git ~/.vim/pack/colors/opt/gruvbox-material`
-3. Generate help tags: `:helptags ~/.vim/pack/colors/opt/gruvbox-material/doc/`
-4. Add `packadd! gruvbox-material` to your vimrc.
-
-**Note:** If you install this color scheme to `pack/*/start`, you still need to add `packadd! gruvbox-material` to your vimrc. [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/issues/60)
-
-### Manually
-
-1. Clone this repository.
-2. Copy `/path/to/gruvbox-material/autoload/gruvbox_material.vim` to `~/.vim/autoload/`.
-3. Copy `/path/to/gruvbox-material/colors/gruvbox-material.vim` to `~/.vim/colors/` .
-4. Copy `/path/to/gruvbox-material/doc/gruvbox-material.txt` to `~/.vim/doc/` and execute `:helptags ~/.vim/doc/` to generate help tags.
-5. To install [airline](https://github.com/vim-airline/vim-airline) theme, copy `/path/to/gruvbox-material/autoload/airline/themes/gruvbox_material.vim` to `~/.vim/autoload/airline/themes/` .
-6. To install [lightline](https://github.com/itchyny/lightline.vim) theme, copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim` to `~/.vim/autoload/lightline/colorscheme/` .
-
-### AUR
-
-There are some packages available for Arch Linux users in AUR:
-
-- [vim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/vim-gruvbox-material-git/)
-- [neovim-gruvbox-material-git](https://aur.archlinux.org/pkgbase/neovim-gruvbox-material-git/)
-
-## Usage
+## Documentation
 
 See [`:help gruvbox-material.txt`](https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt)
 
