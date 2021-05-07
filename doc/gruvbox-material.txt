@@ -386,10 +386,15 @@ Currently, the following plugins are supported:
                                            *g:gruvbox_material_statusline_style*
 g:gruvbox_material_statusline_style~
 
-Determine the style of statusline/airline/lightline. Set this option to
-`'original'` to use the original gruvbox style.
+Determine the style of statusline/airline/lightline.
 
-    Available values: `'default'`, `'original'`
+There are 3 designs for statusline:
+
+- `default`: See the screenshots.
+- `mix`: Combines `default` and `original`.
+- `original`: The design used in the original gruvbox.
+
+    Available values: `'default'`, `'mix'`, `'original'`
     Default value: `'default'`
 
 E.g.
