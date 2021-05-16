@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat May  8 03:43:41 AM UTC 2021'
+let s:last_modified = 'Sun May 16 11:53:48 PM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -401,21 +401,21 @@ highlight! link TSAttribute Purple
 highlight! link TSBoolean Purple
 highlight! link TSCharacter Yellow
 highlight! link TSComment Grey
-highlight! link TSConditional RedItalic
+highlight! link TSConditional Red
 highlight! link TSConstBuiltin PurpleItalic
 highlight! link TSConstMacro Purple
 highlight! link TSConstant PurpleItalic
 highlight! link TSConstructor Fg
 highlight! link TSError ErrorText
-highlight! link TSException RedItalic
+highlight! link TSException Red
 highlight! link TSField Green
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSInclude PurpleItalic
-highlight! link TSKeyword RedItalic
-highlight! link TSKeywordFunction RedItalic
+highlight! link TSKeyword Red
+highlight! link TSKeywordFunction Red
 highlight! link TSLabel Orange
 highlight! link TSMethod Green
 highlight! link TSNamespace BlueItalic
@@ -427,7 +427,7 @@ highlight! link TSProperty Green
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
-highlight! link TSRepeat RedItalic
+highlight! link TSRepeat Red
 highlight! link TSString Yellow
 highlight! link TSStringEscape Green
 highlight! link TSStringRegex Green
