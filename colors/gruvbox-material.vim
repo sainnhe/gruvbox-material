@@ -416,8 +416,8 @@ highlight! link TSError ErrorText
 highlight! link TSException Red
 highlight! link TSField Green
 highlight! link TSFloat Purple
-highlight! link TSFuncBuiltin Green
-highlight! link TSFuncMacro Green
+highlight! link TSFuncBuiltin GreenBold
+highlight! link TSFuncMacro GreenBold
 highlight! link TSFunction GreenBold
 highlight! link TSInclude Red
 highlight! link TSKeyword Red
