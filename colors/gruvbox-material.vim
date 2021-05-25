@@ -476,6 +476,8 @@ highlight! link CocWarningLine WarningLine
 highlight! link CocInfoLine InfoLine
 highlight! link CocHintLine HintLine
 highlight! link CocCodeLens Grey
+highlight! link CocFadeOut Grey
+highlight! link CocStrikeThrough Grey
 highlight! link HighlightedyankRegion Visual
 highlight! link CocGitAddedSign GreenSign
 highlight! link CocGitChangeRemovedSign PurpleSign
