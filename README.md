@@ -4,7 +4,7 @@ Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/g
 
 There are 3 palettes available in this color scheme:
 
-𝑵𝒐𝒕𝒆: 𝒄𝒍𝒊𝒄𝒌 𝒐𝒏 𝒕𝒉𝒆 𝒇𝒐𝒍𝒍𝒐𝒘𝒊𝒏𝒈 𝒍𝒊𝒏𝒆𝒔 𝒕𝒐 𝒑𝒓𝒆𝒗𝒊𝒆𝒘
+👏 𝑵𝒐𝒕𝒆: 𝒄𝒍𝒊𝒄𝒌 𝒐𝒏 𝒕𝒉𝒆 𝒇𝒐𝒍𝒍𝒐𝒘𝒊𝒏𝒈 𝒍𝒊𝒏𝒆𝒔 𝒕𝒐 𝒑𝒓𝒆𝒗𝒊𝒆𝒘
 
 <details>
   <summary><code>material</code>: Carefully designed to have a soft contrast</summary>
