@@ -294,6 +294,19 @@ E.g.
     let g:gruvbox_material_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                                   *g:gruvbox_material_show_eob*
+g:gruvbox_material_show_eob~
+
+Whether to show |hl-EndOfBuffer|.
+
+    Available values: `1`, `0`
+    Default value: `1`
+
+E.g.
+>
+    let g:gruvbox_material_show_eob = 0
+<
+------------------------------------------------------------------------------
                                   *g:gruvbox_material_diagnostic_text_highlight*
 g:gruvbox_material_diagnostic_text_highlight~
 

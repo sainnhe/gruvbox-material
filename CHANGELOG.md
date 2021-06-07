@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `kyazdani42/nvim-tree.lua`.
 - Add installation guide for using pack feature.
 - New value `'mix'` for `g:gruvbox_material_statusline_style`.
+- Add `g:gruvbox_material_show_eob`.
 
 ### Changed
 

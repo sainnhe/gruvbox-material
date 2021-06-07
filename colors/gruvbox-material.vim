@@ -31,7 +31,11 @@ endif
 if s:configuration.transparent_background
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.none)
-  call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
+  if s:configuration.show_eob
+    call gruvbox_material#highlight('EndOfBuffer', s:palette.bg5, s:palette.none)
+  else
+    call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
+  endif
   call gruvbox_material#highlight('FoldColumn', s:palette.grey0, s:palette.none)
   call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.none)
@@ -39,7 +43,11 @@ if s:configuration.transparent_background
 else
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.bg0)
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.bg0)
-  call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+  if s:configuration.show_eob
+    call gruvbox_material#highlight('EndOfBuffer', s:palette.bg5, s:palette.bg0)
+  else
+    call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+  endif
   call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.bg2)
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg1, s:palette.bg3)
   if s:configuration.sign_column_background ==# 'default'
