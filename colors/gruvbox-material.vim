@@ -367,20 +367,22 @@ endif
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   " Definition
   let s:terminal = {
-        \ 'black':    &background ==# 'dark' ? s:palette.bg0 : s:palette.fg0,
-        \ 'red':      s:palette.red,
-        \ 'yellow':   s:palette.yellow,
-        \ 'green':    s:palette.green,
-        \ 'cyan':     s:palette.aqua,
-        \ 'blue':     s:palette.blue,
-        \ 'purple':   s:palette.purple,
-        \ 'white':    &background ==# 'dark' ? s:palette.fg0 : s:palette.bg0
+        \ 'black':         &background ==# 'dark' ? s:palette.bg0 : s:palette.fg0,
+        \ 'bright_black':  &background ==# 'dark' ? s:palette.bg5 : s:palette.fg1,
+        \ 'red':           s:palette.red,
+        \ 'yellow':        s:palette.yellow,
+        \ 'green':         s:palette.green,
+        \ 'cyan':          s:palette.aqua,
+        \ 'blue':          s:palette.blue,
+        \ 'purple':        s:palette.purple,
+        \ 'white':         &background ==# 'dark' ? s:palette.fg0 : s:palette.bg0,
+        \ 'bright_white':  &background ==# 'dark' ? s:palette.fg1 : s:palette.bg5,
         \ }
   " Implementation: {{{
   if !has('nvim')
     let g:terminal_ansi_colors = [s:terminal.black[0], s:terminal.red[0], s:terminal.green[0], s:terminal.yellow[0],
-          \ s:terminal.blue[0], s:terminal.purple[0], s:terminal.cyan[0], s:terminal.white[0], s:terminal.black[0], s:terminal.red[0],
-          \ s:terminal.green[0], s:terminal.yellow[0], s:terminal.blue[0], s:terminal.purple[0], s:terminal.cyan[0], s:terminal.white[0]]
+          \ s:terminal.blue[0], s:terminal.purple[0], s:terminal.cyan[0], s:terminal.white[0], s:terminal.bright_black[0], s:terminal.red[0],
+          \ s:terminal.green[0], s:terminal.yellow[0], s:terminal.blue[0], s:terminal.purple[0], s:terminal.cyan[0], s:terminal.bright_white[0]]
   else
     let g:terminal_color_0 = s:terminal.black[0]
     let g:terminal_color_1 = s:terminal.red[0]
@@ -390,14 +392,14 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     let g:terminal_color_5 = s:terminal.purple[0]
     let g:terminal_color_6 = s:terminal.cyan[0]
     let g:terminal_color_7 = s:terminal.white[0]
-    let g:terminal_color_8 = s:terminal.black[0]
+    let g:terminal_color_8 = s:terminal.bright_black[0]
     let g:terminal_color_9 = s:terminal.red[0]
     let g:terminal_color_10 = s:terminal.green[0]
     let g:terminal_color_11 = s:terminal.yellow[0]
     let g:terminal_color_12 = s:terminal.blue[0]
     let g:terminal_color_13 = s:terminal.purple[0]
     let g:terminal_color_14 = s:terminal.cyan[0]
-    let g:terminal_color_15 = s:terminal.white[0]
+    let g:terminal_color_15 = s:terminal.bright_white[0]
   endif
   " }}}
 endif
