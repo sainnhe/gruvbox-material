@@ -1922,6 +1922,15 @@ highlight! link matlabRelationalOperator Orange
 highlight! link matlabLogicalOperator Orange
 " }}}
 " ft_end }}}
+" ft_begin: octave {{{
+" vim-octave: https://github.com/McSinyx/vim-octave{{{
+highlight! link octaveDelimiter Fg
+highlight! link octaveSemicolon Grey
+highlight! link octaveOperator Orange
+highlight! link octaveVariable YellowItalic
+highlight! link octaveVarKeyword YellowItalic
+" }}}
+" ft_end }}}
 " ft_begin: sh/zsh {{{
 " builtin: http://www.drchip.org/astronaut/vim/index.html#SYNTAX_SH {{{
 highlight! link shRange Fg
