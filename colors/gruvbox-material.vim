@@ -503,7 +503,7 @@ highlight! link CocSem_regexp TSStringRegex
 highlight! link CocSem_selfKeyword TSConstBuiltin
 highlight! link CocSem_semicolon TSPunctDelimiter
 highlight! link CocSem_string TSString
-highlight! link CocSem_struct TSStructure
+highlight! link CocSem_struct TSConstMacro
 highlight! link CocSem_type TSType
 highlight! link CocSem_typeAlias TSType
 highlight! link CocSem_typeParameter TSType
