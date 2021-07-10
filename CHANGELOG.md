@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `McSinyx/vim-octave`.
 - Support semantic highlight in coc.nvim .
 - Optimize semantic highlight in some plugins.
+- Support `thiagoalessio/rainbow_levels.vim` and `p00f/nvim-ts-rainbow`.
 
 ### Changed
 

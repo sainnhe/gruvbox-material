@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Jul  9 11:19:16 AM UTC 2021'
+let s:last_modified = 'Sat Jul 10 01:25:32 AM UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -804,6 +804,26 @@ if get(g:, 'indent_guides_auto_colors', 1) == 0
   call gruvbox_material#highlight('IndentGuidesOdd', s:palette.bg0, s:palette.bg2)
   call gruvbox_material#highlight('IndentGuidesEven', s:palette.bg0, s:palette.bg3)
 endif
+" }}}
+" thiagoalessio/rainbow_levels.vim {{{
+highlight! link RainbowLevel0 Red
+highlight! link RainbowLevel1 Orange
+highlight! link RainbowLevel2 Yellow
+highlight! link RainbowLevel3 Green
+highlight! link RainbowLevel4 Aqua
+highlight! link RainbowLevel5 Blue
+highlight! link RainbowLevel6 Purple
+highlight! link RainbowLevel7 Yellow
+highlight! link RainbowLevel8 Green
+" }}}
+" p00f/nvim-ts-rainbow {{{
+highlight! link rainbowcol1 Red
+highlight! link rainbowcol2 Orange
+highlight! link rainbowcol3 Yellow
+highlight! link rainbowcol4 Green
+highlight! link rainbowcol5 Aqua
+highlight! link rainbowcol6 Blue
+highlight! link rainbowcol7 Purple
 " }}}
 " luochen1990/rainbow {{{
 if !exists('g:rbpt_colorpairs')
