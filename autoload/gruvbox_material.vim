@@ -20,6 +20,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'disable_italic_comment': get(g:, 'gruvbox_material_disable_italic_comment', 0),
         \ 'enable_bold': get(g:, 'gruvbox_material_enable_bold', 0),
         \ 'enable_italic': get(g:, 'gruvbox_material_enable_italic', 0),
+        \ 'spell_foreground_unchanged': get(g:, 'gruvbox_material_spell_foreground_unchanged', 0),
         \ 'cursor': get(g:, 'gruvbox_material_cursor', 'auto'),
         \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'),
         \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'),
