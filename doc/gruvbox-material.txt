@@ -229,15 +229,19 @@ Note: This option is designed to use with fonts that support cursive italics.
 See |gruvbox-material-faq| for more information.
 
 ------------------------------------------------------------------------------
-                                 *g:gruvbox_material_spell_foreground_unchanged*
-g:gruvbox_material_spell_foreground_unchanged~
+                                           *g:gruvbox_material_spell_foreground*
+g:gruvbox_material_spell_foreground~
 
-This color scheme may change the foreground colors of words not recognized by
-the spell checker. To leave them unchanged, set this option to `1`.
+By default this color scheme will use colored foreground and undercurl in
+|spell|. You can disable colored foreground and just use undercurl by setting
+this option to `'undercurl'`.
+
+    Available values: `'default'`, `'undercurl'`
+    Default value: `'default'`
 
 E.g.
 >
-    let g:gruvbox_material_spell_foreground_unchanged = 1
+    let g:gruvbox_material_spell_foreground = 'undercurl'
 <
 ------------------------------------------------------------------------------
                                                      *g:gruvbox_material_cursor*
