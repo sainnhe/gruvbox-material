@@ -229,6 +229,17 @@ Note: This option is designed to use with fonts that support cursive italics.
 See |gruvbox-material-faq| for more information.
 
 ------------------------------------------------------------------------------
+                                 *g:gruvbox_material_spell_foreground_unchanged*
+g:gruvbox_material_spell_foreground_unchanged~
+
+This color scheme may change the foreground colors of words not recognized by
+the spell checker. To leave them unchanged, set this option to `1`.
+
+E.g.
+>
+    let g:gruvbox_material_spell_foreground_unchanged = 1
+<
+------------------------------------------------------------------------------
                                                      *g:gruvbox_material_cursor*
 g:gruvbox_material_cursor~
 
