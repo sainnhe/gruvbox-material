@@ -229,21 +229,6 @@ Note: This option is designed to use with fonts that support cursive italics.
 See |gruvbox-material-faq| for more information.
 
 ------------------------------------------------------------------------------
-                                           *g:gruvbox_material_spell_foreground*
-g:gruvbox_material_spell_foreground~
-
-By default this color scheme will use colored foreground and undercurl in
-|spell|. You can disable colored foreground and just use undercurl by setting
-this option to `'undercurl'`.
-
-    Available values: `'default'`, `'undercurl'`
-    Default value: `'default'`
-
-E.g.
->
-    let g:gruvbox_material_spell_foreground = 'undercurl'
-<
-------------------------------------------------------------------------------
                                                      *g:gruvbox_material_cursor*
 g:gruvbox_material_cursor~
 
