@@ -295,6 +295,19 @@ E.g.
     let g:gruvbox_material_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                                *g:gruvbox_material_ui_contrast*
+g:gruvbox_material_ui_contrast~
+
+The contrast of line numbers, indent lines, etc.
+
+    Available values: `'low'`, `'high'`
+    Default value: `'low'`
+
+E.g.
+>
+    let g:gruvbox_material_ui_contrast = 'high'
+<
+------------------------------------------------------------------------------
                                                    *g:gruvbox_material_show_eob*
 g:gruvbox_material_show_eob~
 

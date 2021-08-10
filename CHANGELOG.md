@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `g:gruvbox_material_ui_contrast`.
+
 ## [1.2.2] - 2021-08-06
 
 ### Added

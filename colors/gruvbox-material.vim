@@ -36,7 +36,11 @@ if s:configuration.transparent_background
   else
     call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
-  call gruvbox_material#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+  if s:configuration.ui_contrast ==# 'low'
+    call gruvbox_material#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+  else
+    call gruvbox_material#highlight('FoldColumn', s:palette.grey0, s:palette.none)
+  endif
   call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg0, s:palette.none)
@@ -55,13 +59,21 @@ else
     call gruvbox_material#highlight('FoldColumn', s:palette.grey1, s:palette.bg2)
   else
     call gruvbox_material#highlight('SignColumn', s:palette.fg0, s:palette.none)
-    call gruvbox_material#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+    if s:configuration.ui_contrast ==# 'low'
+      call gruvbox_material#highlight('FoldColumn', s:palette.bg5, s:palette.none)
+    else
+      call gruvbox_material#highlight('FoldColumn', s:palette.grey0, s:palette.none)
+    endif
   endif
 endif
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
 call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
-call gruvbox_material#highlight('Conceal', s:palette.bg5, s:palette.none)
+if s:configuration.ui_contrast ==# 'low'
+  call gruvbox_material#highlight('Conceal', s:palette.bg5, s:palette.none)
+else
+  call gruvbox_material#highlight('Conceal', s:palette.grey0, s:palette.none)
+endif
 if s:configuration.cursor ==# 'auto'
   call gruvbox_material#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
 else
@@ -92,6 +104,25 @@ call gruvbox_material#highlight('DiffDelete', s:palette.none, s:palette.bg_diff_
 call gruvbox_material#highlight('DiffText', s:palette.bg0, s:palette.blue)
 call gruvbox_material#highlight('Directory', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
+if s:configuration.ui_contrast ==# 'low'
+  call gruvbox_material#highlight('LineNr', s:palette.bg5, s:palette.none)
+  if &diff
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey1, s:palette.none, 'underline')
+  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
+  else
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
+  endif
+else
+  call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
+  if &diff
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
+  elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
+  else
+    call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
+  endif
+endif
 call gruvbox_material#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
 call gruvbox_material#highlight('ModeMsg', s:palette.fg0, s:palette.none, 'bold')
 call gruvbox_material#highlight('MoreMsg', s:palette.yellow, s:palette.none, 'bold')
@@ -824,11 +855,16 @@ highlight! link CursorWord0 CurrentWord
 highlight! link CursorWord1 CurrentWord
 " }}}
 " Yggdroot/indentLine {{{
-let g:indentLine_color_gui = s:palette.bg5[0]
-let g:indentLine_color_term = s:palette.bg5[1]
+if s:configuration.ui_contrast ==# 'low'
+  let g:indentLine_color_gui = s:palette.bg5[0]
+  let g:indentLine_color_term = s:palette.bg5[1]
+else
+  let g:indentLine_color_gui = s:palette.grey0[0]
+  let g:indentLine_color_term = s:palette.grey0[1]
+endif
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
-call gruvbox_material#highlight('IndentBlanklineContextChar', s:palette.grey0, s:palette.none)
+highlight! link IndentBlanklineContextChar CursorLineNr
 highlight! link IndentBlanklineChar Conceal
 highlight! link IndentBlanklineSpaceChar Conceal
 highlight! link IndentBlanklineSpaceCharBlankline Conceal
