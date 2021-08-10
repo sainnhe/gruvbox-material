@@ -865,9 +865,9 @@ endif
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
 highlight! link IndentBlanklineContextChar CursorLineNr
-highlight! link IndentBlanklineChar Conceal
-highlight! link IndentBlanklineSpaceChar Conceal
-highlight! link IndentBlanklineSpaceCharBlankline Conceal
+highlight! link IndentBlanklineChar LineNr
+highlight! link IndentBlanklineSpaceChar LineNr
+highlight! link IndentBlanklineSpaceCharBlankline LineNr
 " }}}
 " nathanaelkane/vim-indent-guides {{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0
