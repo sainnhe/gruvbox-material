@@ -635,6 +635,7 @@ highlight! link CocExplorerTimeModified Aqua
 highlight! link CocExplorerIndentLine Conceal
 highlight! link CocExplorerHelpDescription Grey
 highlight! link CocExplorerHelpHint Grey
+highlight! link CocRustChainingHint Grey
 " }}}
 " prabirshrestha/vim-lsp {{{
 highlight! link LspErrorVirtual VirtualTextError
