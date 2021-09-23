@@ -1194,6 +1194,27 @@ highlight! link mkdDelimiter Grey
 highlight! link mkdId Yellow
 " }}}
 " ft_end }}}
+" ft_begin: vimwiki {{{
+call gruvbox_material#highlight('VimwikiHeader1', s:palette.red, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiHeader2', s:palette.orange, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiHeader3', s:palette.yellow, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiHeader4', s:palette.green, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiHeader5', s:palette.blue, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiHeader6', s:palette.purple, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiLink', s:palette.blue, s:palette.none, 'underline')
+call gruvbox_material#highlight('VimwikiItalic', s:palette.none, s:palette.none, 'italic')
+call gruvbox_material#highlight('VimwikiBold', s:palette.none, s:palette.none, 'bold')
+call gruvbox_material#highlight('VimwikiUnderline', s:palette.none, s:palette.none, 'underline')
+highlight! link VimwikiList Red
+highlight! link VimwikiTag Aqua
+highlight! link VimwikiCode Green
+highlight! link VimwikiHR Yellow
+highlight! link VimwikiHeaderChar Grey
+highlight! link VimwikiMarkers Grey
+highlight! link VimwikiPre Green
+highlight! link VimwikiPreDelim Green
+highlight! link VimwikiNoExistsLink Red
+" ft_end }}}
 " ft_begin: rst {{{
 " builtin: https://github.com/marshallward/vim-restructuredtext {{{
 call gruvbox_material#highlight('rstStandaloneHyperlink', s:palette.purple, s:palette.none, 'underline')
