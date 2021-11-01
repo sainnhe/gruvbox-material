@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Add [Diagnostic](https://github.com/neovim/neovim/pull/15585) highlight groups.
 - Optimize `vimwiki/vimwiki`.
 - Optimize `hrsh7th/nvim-cmp`.
+- Optimize `folke/trouble.nvim`.
 
 ## [1.2.2] - 2021-08-06
 

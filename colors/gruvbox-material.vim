@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct 12 11:59:29 UTC 2021'
+let s:last_modified = 'Mon Nov  1 03:59:40 UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -699,6 +699,11 @@ highlight! link ALEVirtualTextWarning VirtualTextWarning
 highlight! link ALEVirtualTextInfo VirtualTextInfo
 highlight! link ALEVirtualTextStyleError VirtualTextHint
 highlight! link ALEVirtualTextStyleWarning VirtualTextHint
+" }}}
+" folke/trouble.nvim {{{
+highlight! link TroubleText Fg
+highlight! link TroubleSource Grey
+highlight! link TroubleCode Grey
 " }}}
 " neomake/neomake {{{
 highlight! link NeomakeError ErrorText
