@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Nov  4 09:05:44 UTC 2021'
+let s:last_modified = 'Thu Nov  4 13:07:31 UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -966,6 +966,25 @@ highlight! link BufTabLineCurrent TabLineSel
 highlight! link BufTabLineActive TabLine
 highlight! link BufTabLineHidden TabLineFill
 highlight! link BufTabLineFill TabLineFill
+" }}}
+" romgrk/barbar.nvim {{{
+call gruvbox_material#highlight('BufferCurrent', s:palette.fg1, s:palette.bg5)
+call gruvbox_material#highlight('BufferCurrentIndex', s:palette.fg1, s:palette.bg5)
+call gruvbox_material#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg5)
+call gruvbox_material#highlight('BufferCurrentSign', s:palette.grey2, s:palette.bg5)
+call gruvbox_material#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg5, 'bold')
+call gruvbox_material#highlight('BufferVisible', s:palette.fg1, s:palette.bg3)
+call gruvbox_material#highlight('BufferVisibleIndex', s:palette.fg1, s:palette.bg3)
+call gruvbox_material#highlight('BufferVisibleMod', s:palette.blue, s:palette.bg3)
+call gruvbox_material#highlight('BufferVisibleSign', s:palette.grey2, s:palette.bg3)
+call gruvbox_material#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.bg3, 'bold')
+call gruvbox_material#highlight('BufferInactive', s:palette.grey1, s:palette.bg3)
+call gruvbox_material#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg3)
+call gruvbox_material#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg3)
+call gruvbox_material#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg3)
+call gruvbox_material#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg3, 'bold')
+call gruvbox_material#highlight('BufferTabpages', s:palette.bg0, s:palette.grey2, 'bold')
+call gruvbox_material#highlight('BufferTabpageFill', s:palette.bg0, s:palette.bg0)
 " }}}
 " liuchengxu/vim-which-key {{{
 highlight! link WhichKey Red
