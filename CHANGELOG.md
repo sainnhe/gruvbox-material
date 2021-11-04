@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `TimUntersberger/neogit`.
 - Optimize `lambdalisue/fern.vim`.
 - Optimize `romgrk/barbar.nvim`.
+- Optimize `rcarriga/nvim-notify`.
 
 ## [1.2.2] - 2021-08-06
 
