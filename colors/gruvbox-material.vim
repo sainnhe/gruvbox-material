@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov  1 03:59:40 UTC 2021'
+let s:last_modified = 'Thu Nov  4 08:35:14 UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1162,6 +1162,21 @@ highlight! link UndotreeHead Yellow
 highlight! link UndotreeBranch Yellow
 highlight! link UndotreeCurrent Aqua
 highlight! link UndotreeSavedSmall Purple
+" ft_end }}}
+" ft_begin: NeogitStatus/NeogitCommitView {{{
+" https://github.com/TimUntersberger/neogit
+highlight! link NeogitNotificationInfo Blue
+highlight! link NeogitNotificationWarning Yellow
+highlight! link NeogitNotificationError Red
+highlight! link NeogitDiffAdd Green
+highlight! link NeogitDiffDelete Red
+highlight! link NeogitDiffContextHighlight CursorLine
+highlight! link NeogitHunkHeaderHighlight TabLine
+highlight! link NeogitHunkHeader TabLineFill
+highlight! link NeogitCommandCodeNormal Green
+highlight! link NeogitCommandCodeError Red
+highlight! link NeogitCommitViewHeader diffIndexLine
+highlight! link NeogitFilePath diffFile
 " ft_end }}}
 " ft_begin: markdown {{{
 " builtin: {{{
