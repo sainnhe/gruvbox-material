@@ -1,3 +1,11 @@
+-- =============================================================================
+-- URL: https://github.com/sainnhe/gruvbox-material
+-- Filename: lua/lualine/themes/gruvbox-material.lua
+-- Author: sainnhe
+-- Email: sainnhe@gmail.com
+-- License: MIT License
+-- =============================================================================
+
 local background = vim.opt.background:get()
 local configuration = vim.fn['gruvbox_material#get_configuration']()
 local palette = vim.fn['gruvbox_material#get_palette'](background, configuration.palette)
