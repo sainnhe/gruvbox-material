@@ -86,6 +86,10 @@ Manually~
     copy `/path/to/gruvbox-material/autoload/lightline/colorscheme/gruvbox_material.vim`
     to `~/.vim/autoload/lightline/colorscheme/` .
 
+    7. To install [lualine](https://github.com/nvim-lualine/lualine.nvim) theme,
+    copy `/path/to/gruvbox-material/lua/lualine/themes/gruvbox-material.lua`
+    to `~/.config/nvim/lua/lualine/themes/` .
+
 ------------------------------------------------------------------------------
 
 AUR~
@@ -160,6 +164,23 @@ Lightline~
         :let g:lightline.colorscheme = 'gruvbox_material'
         :call lightline#init()
         :call lightline#colorscheme()
+<
+------------------------------------------------------------------------------
+
+Lualine~
+
+    To enable [lualine](https://github.com/nvim-lualine/lualine.nvim) color
+    scheme, put this in your init.lua:
+>
+        require'lualine'.setup {
+          options = {
+            theme = 'gruvbox-material'
+          }
+        }
+<
+    To apply it without reloading:
+>
+        :lua require'lualine'.setup {options = {theme = 'gruvbox-material'}}
 <
 ==============================================================================
 CONFIGURATION                                   *gruvbox-material-configuration*
@@ -414,7 +435,7 @@ Currently, the following plugins are supported:
                                            *g:gruvbox_material_statusline_style*
 g:gruvbox_material_statusline_style~
 
-Determine the style of statusline/airline/lightline.
+Determine the style of statusline/airline/lightline/lualine.
 
 There are 3 designs for statusline:
 

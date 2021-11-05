@@ -123,7 +123,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_current_word':  ['#f2e5bc',   '228']
             \ }
     endif "}}}
-  elseif a:background ==# 'soft' "{{{
+  else "{{{
     if &background ==# 'dark'
       let palette1 = {
             \ 'bg0':              ['#32302f',   '236'],
@@ -230,7 +230,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_yellow':        ['#a96b2c',   '130']
             \ }
     endif "}}}
-  elseif a:palette ==# 'original' "{{{
+  else "{{{
     if &background ==# 'dark'
       let palette2 = {
             \ 'fg0':              ['#ebdbb2',   '223'],

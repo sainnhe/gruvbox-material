@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `lambdalisue/fern.vim`.
 - Optimize `romgrk/barbar.nvim`.
 - Optimize `rcarriga/nvim-notify`.
+- Support `nvim-lualine/lualine.nvim`.
 
 ## [1.2.2] - 2021-08-06
 
