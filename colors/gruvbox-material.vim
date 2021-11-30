@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov 30 07:34:17 UTC 2021'
+let s:last_modified = 'Tue Nov 30 07:53:21 UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -976,7 +976,7 @@ highlight! link CmpItemKindColor Aqua
 highlight! link CmpItemKindFile Aqua
 highlight! link CmpItemKindReference Aqua
 highlight! link CmpItemKindFolder Aqua
-highlight! link CmpItemKindEnumMember Blue
+highlight! link CmpItemKindEnumMember Purple
 highlight! link CmpItemKindConstant Blue
 highlight! link CmpItemKindStruct Yellow
 highlight! link CmpItemKindEvent Orange
