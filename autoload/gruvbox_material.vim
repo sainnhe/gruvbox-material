@@ -180,7 +180,10 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'purple':           ['#d3869b',   '175'],
             \ 'bg_red':           ['#ea6962',   '167'],
             \ 'bg_green':         ['#a9b665',   '142'],
-            \ 'bg_yellow':        ['#d8a657',   '214']
+            \ 'bg_yellow':        ['#d8a657',   '214'],
+            \ 'bg_diff_red':      ['#ea6962',   '167'],
+            \ 'bg_diff_green':    ['#89b482',   '108'],
+            \ 'bg_diff_blue':     ['#7daea3',   '109']
             \ }
     else
       let palette2 = {
@@ -195,7 +198,10 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'purple':           ['#945e80',   '96'],
             \ 'bg_red':           ['#ae5858',   '88'],
             \ 'bg_green':         ['#6f8352',   '100'],
-            \ 'bg_yellow':        ['#a96b2c',   '130']
+            \ 'bg_yellow':        ['#a96b2c',   '130'],
+            \ 'bg_diff_red':      ['#ae5858',   '88'],
+            \ 'bg_diff_green':    ['#4c7a5d',   '165'],
+            \ 'bg_diff_blue':     ['#45707a',   '24']
             \ }
     endif "}}}
   elseif a:palette ==# 'mix' "{{{
