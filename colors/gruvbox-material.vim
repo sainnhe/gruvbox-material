@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Nov 30 08:08:00 UTC 2021'
+let s:last_modified = 'Fri Dec 17 01:51:29 UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -998,7 +998,13 @@ highlight! link TelescopeSelection DiffAdd
 highlight! link GitSignsAdd GreenSign
 highlight! link GitSignsChange BlueSign
 highlight! link GitSignsDelete RedSign
-highlight! link GitSignsChangeDelete PurpleSign
+highlight! link GitSignsAddNr Green
+highlight! link GitSignsChangeNr Blue
+highlight! link GitSignsDeleteNr Red
+highlight! link GitSignsAddLn DiffAdd
+highlight! link GitSignsChangeLn DiffChange
+highlight! link GitSignsDeleteLn DiffDelete
+highlight! link GitSignsCurrentLineBlame Grey
 " }}}
 " phaazon/hop.nvim {{{
 call gruvbox_material#highlight('HopNextKey', s:palette.orange, s:palette.none, 'bold')
