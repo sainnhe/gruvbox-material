@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Dec 17 01:52:13 UTC 2021'
+let s:last_modified = 'Fri Dec 17 01:52:48 UTC 2021'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -835,6 +835,10 @@ highlight! link SignifySignAdd GreenSign
 highlight! link SignifySignChange BlueSign
 highlight! link SignifySignDelete RedSign
 highlight! link SignifySignChangeDelete PurpleSign
+highlight! link SignifyLineAdd DiffAdd
+highlight! link SignifyLineChange DiffChange
+highlight! link SignifyLineChangeDelete DiffChange
+highlight! link SignifyLineDelete DiffDelete
 " }}}
 " andymass/vim-matchup {{{
 call gruvbox_material#highlight('MatchParenCur', s:palette.none, s:palette.none, 'bold')
