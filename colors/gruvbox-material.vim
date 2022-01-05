@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Dec 17 01:52:48 UTC 2021'
+let s:last_modified = 'Wed Jan  5 01:13:05 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -456,7 +456,7 @@ endif
 " Plugins: {{{
 " nvim-treesitter/nvim-treesitter {{{
 call gruvbox_material#highlight('TSStrong', s:palette.none, s:palette.none, 'bold')
-call gruvbox_material#highlight('TSEmphasis', s:palette.none, s:palette.none, 'bold')
+call gruvbox_material#highlight('TSEmphasis', s:palette.none, s:palette.none, 'italic')
 call gruvbox_material#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
 call gruvbox_material#highlight('TSNote', s:palette.bg0, s:palette.blue, 'bold')
 call gruvbox_material#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
