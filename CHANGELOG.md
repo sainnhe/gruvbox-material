@@ -22,6 +22,10 @@ All notable changes to this project will be documented in this file.
 - Optimize `airblade/vim-gitgutter`.
 - Optimize `mhinz/vim-signify`.
 
+### Changed
+
+- Disable tmux checking.
+
 ## [1.2.2] - 2021-08-06
 
 ### Added
