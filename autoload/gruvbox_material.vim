@@ -281,9 +281,7 @@ function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
         \ 'ctermfg=' . a:fg[1]
         \ 'ctermbg=' . a:bg[1]
         \ 'gui=' . (a:0 >= 1 ?
-          \ (a:1 ==# 'undercurl' ?
-            \ 'undercurl' :
-            \ a:1) :
+          \ a:1 :
           \ 'NONE')
         \ 'cterm=' . (a:0 >= 1 ?
           \ (a:1 ==# 'undercurl' ?
