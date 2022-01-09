@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `mhinz/vim-signify`.
 - Optimize `glepnir/dashboard-nvim`.
 - Optimize `glepnir/lspsaga.nvim`.
+- Add modeline to generated ftplugin files.
 
 ### Changed
 
