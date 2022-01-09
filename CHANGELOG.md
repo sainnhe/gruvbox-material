@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `lewis6991/gitsigns.nvim`.
 - Optimize `airblade/vim-gitgutter`.
 - Optimize `mhinz/vim-signify`.
+- Optimize `glepnir/dashboard-nvim`.
 
 ### Changed
 
