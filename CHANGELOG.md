@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.2.3] - 2022-01-09
+
 ### Added
 
 - Add `g:gruvbox_material_ui_contrast`.
@@ -321,7 +323,8 @@ All notable changes to this project will be documented in this file.
 - Lightline theme.
 - Finish AUR package and add the url in README.
 
-[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.2...HEAD
+[unreleased]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.3...HEAD
+[1.2.3]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/sainnhe/gruvbox-material/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/sainnhe/gruvbox-material/compare/v1.1.3...v1.2.0
