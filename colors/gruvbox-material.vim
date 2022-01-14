@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Jan 14 08:47:11 UTC 2022'
+let s:last_modified = 'Fri Jan 14 11:42:58 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -586,6 +586,9 @@ highlight! link CocFadeOut Grey
 highlight! link CocStrikeThrough Grey
 highlight! link CocListMode StatusLine
 highlight! link CocListPath StatusLine
+highlight! link CocSelectedText Orange
+highlight! link CocListsLine Fg
+highlight! link CocListsDesc Grey
 highlight! link CocTreeOpenClose Grey
 highlight! link HighlightedyankRegion Visual
 highlight! link CocSymbolFile Fg
