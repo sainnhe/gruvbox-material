@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jan 16 11:30:55 UTC 2022'
+let s:last_modified = 'Sun Jan 16 11:53:20 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -964,7 +964,7 @@ highlight! link HopNextKey2 Green
 highlight! link HopUnmatched Grey
 " }}}
 " lukas-reineke/indent-blankline.nvim {{{
-highlight! link IndentBlanklineContextChar CursorLineNr
+highlight! link IndentBlanklineContextChar Grey
 highlight! link IndentBlanklineChar LineNr
 highlight! link IndentBlanklineSpaceChar LineNr
 highlight! link IndentBlanklineSpaceCharBlankline LineNr
