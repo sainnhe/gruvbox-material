@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jan 16 11:25:33 UTC 2022'
+let s:last_modified = 'Sun Jan 16 11:30:55 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1097,6 +1097,7 @@ highlight! link plugSha Green
 " ft_begin: coctree {{{
 " https://github.com/neoclide/coc.nvim
 highlight! link CocTreeOpenClose Grey
+highlight! link CocTreeDescription Grey
 highlight! link CocSymbolFile Green
 highlight! link CocSymbolModule Purple
 highlight! link CocSymbolNamespace Purple
