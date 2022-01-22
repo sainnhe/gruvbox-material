@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jan 22 04:53:43 UTC 2022'
+let s:last_modified = 'Sat Jan 22 10:49:12 AM UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -649,18 +649,19 @@ highlight! link Lf_hl_popup_blank Lf_hl_popup_window
 highlight! link Lf_hl_popup_spin Purple
 " }}}
 " liuchengxu/vim-clap {{{
-call gruvbox_material#highlight('ClapSelected', s:palette.red, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapCurrentSelection', s:palette.orange, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapBlines', s:palette.fg1, s:palette.bg3)
-call gruvbox_material#highlight('ClapProviderId', s:palette.fg1, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapMatches1', s:palette.red, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapMatches2', s:palette.orange, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapMatches3', s:palette.yellow, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapMatches4', s:palette.aqua, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapMatches5', s:palette.blue, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapMatches6', s:palette.purple, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapFuzzyMatches', s:palette.green, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('ClapNoMatchesFound', s:palette.red, s:palette.bg3, 'bold')
+call gruvbox_material#highlight('ClapSelected', s:palette.red, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapCurrentSelection', s:palette.none, s:palette.bg1, 'bold')
+call gruvbox_material#highlight('ClapSpinner', s:palette.orange, s:palette.bg3, 'bold')
+call gruvbox_material#highlight('ClapBlines', s:palette.fg1, s:palette.none)
+call gruvbox_material#highlight('ClapProviderId', s:palette.fg1, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapMatches1', s:palette.red, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapMatches2', s:palette.orange, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapMatches3', s:palette.yellow, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapMatches4', s:palette.aqua, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapMatches5', s:palette.blue, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapMatches6', s:palette.purple, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapFuzzyMatches', s:palette.green, s:palette.none, 'bold')
+call gruvbox_material#highlight('ClapNoMatchesFound', s:palette.red, s:palette.none, 'bold')
 highlight! link ClapInput Pmenu
 highlight! link ClapDisplay Pmenu
 highlight! link ClapPreview Pmenu
@@ -680,6 +681,7 @@ highlight! link ClapBlinesLineNr Grey
 highlight! link ClapProviderColon ClapBlines
 highlight! link ClapProviderAbout ClapBlines
 highlight! link ClapFile Fg
+highlight! link ClapSearchText ClapFuzzyMatches
 " }}}
 " junegunn/fzf.vim {{{
 let g:fzf_colors = {
