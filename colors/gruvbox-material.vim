@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Jan 19 00:56:47 UTC 2022'
+let s:last_modified = 'Sat Jan 22 04:00:31 AM UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -145,10 +145,17 @@ highlight! link WildMenu PmenuSel
 call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
-call gruvbox_material#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
-call gruvbox_material#highlight('SpellCap', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
-call gruvbox_material#highlight('SpellLocal', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
-call gruvbox_material#highlight('SpellRare', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
+if s:configuration.spell_foreground ==# 'none'
+  call gruvbox_material#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
+  call gruvbox_material#highlight('SpellCap', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
+  call gruvbox_material#highlight('SpellLocal', s:palette.none, s:palette.none, 'undercurl', s:palette.aqua)
+  call gruvbox_material#highlight('SpellRare', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
+else
+  call gruvbox_material#highlight('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
+  call gruvbox_material#highlight('SpellCap', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
+  call gruvbox_material#highlight('SpellLocal', s:palette.aqua, s:palette.none, 'undercurl', s:palette.aqua)
+  call gruvbox_material#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
+endif
 if s:configuration.statusline_style ==# 'original'
   call gruvbox_material#highlight('StatusLine', s:palette.grey2, s:palette.bg_statusline2)
   call gruvbox_material#highlight('StatusLineTerm', s:palette.grey2, s:palette.bg_statusline2)

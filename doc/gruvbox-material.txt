@@ -316,6 +316,21 @@ E.g.
     let g:gruvbox_material_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                           *g:gruvbox_material_spell_foreground*
+g:gruvbox_material_spell_foreground~
+
+By default, this color scheme won't color the foreground of |spell|, instead
+colored under curls will be used. If you also want to color the foreground,
+set this option to `'colored'`.
+
+    Available values: `'none'`, `'colored'`
+    Default value: `'none'`
+
+E.g.
+>
+    let g:gruvbox_material_spell_foreground = 'colored'
+<
+------------------------------------------------------------------------------
                                                 *g:gruvbox_material_ui_contrast*
 g:gruvbox_material_ui_contrast~
 
