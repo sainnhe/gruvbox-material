@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file.
 
 - Redesign coc symbols.
 
+### Removed
+
+- Remove sematic hi groups [neoclide/coc.nvim#3355](https://github.com/neoclide/coc.nvim/pull/3355).
+
 ## [1.2.3] - 2022-01-09
 
 ### Added
