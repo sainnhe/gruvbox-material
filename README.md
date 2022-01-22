@@ -48,6 +48,7 @@ This color scheme uses the `material` palette by default, you can use a global v
 - Highly customizable.
 - Rich support for common file types and plugins.
 - Tree-sitter support.
+- Semantic highlighting support.
 - [Italic support](https://github.com/sainnhe/icursive-nerd-font) 🎉
 
 ## Documentation

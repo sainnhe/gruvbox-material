@@ -32,6 +32,7 @@ Features~
 - Highly customizable.
 - Rich support for common file types and plugins.
 - Tree-sitter support.
+- Semantic highlighting support.
 - Italic support 🎉
 
 ==============================================================================
