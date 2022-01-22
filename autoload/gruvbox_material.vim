@@ -307,10 +307,11 @@ function! gruvbox_material#ft_gen(path, last_modified, msg) "{{{
     endfor
   endfor
   call gruvbox_material#ft_write(rootpath, 'text', "let g:gruvbox_material_last_modified = '" . a:last_modified . "'") " Write the last modified time to `after/ftplugin/text/gruvbox_material.vim`
+  let ftplugin_relative_path = has('win32') ? '\after\ftplugin' : '/after/ftplugin'
   if a:msg ==# 'update'
-    echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath . '/after/ftplugin' | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath . ftplugin_relative_path | echohl None
   else
-    echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath . '/after/ftplugin' | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath . ftplugin_relative_path | echohl None
   endif
 endfunction "}}}
 function! gruvbox_material#ft_write(rootpath, ft, content) "{{{
@@ -385,7 +386,8 @@ function! gruvbox_material#ft_clean(path, msg) "{{{
     call delete(rootpath . '/after', 'd')
   endif
   if a:msg
-    echohl WarningMsg | echom '[gruvbox-material] Cleaned ' . rootpath . '/after/ftplugin' | echohl None
+    let ftplugin_relative_path = has('win32') ? '\after\ftplugin' : '/after/ftplugin'
+    echohl WarningMsg | echom '[gruvbox-material] Cleaned ' . rootpath . ftplugin_relative_path | echohl None
   endif
 endfunction "}}}
 function! gruvbox_material#ft_exists(path) "{{{
