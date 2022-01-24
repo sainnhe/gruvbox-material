@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Redesign coc symbols.
 - Redesign `liuchengxu/vim-clap`.
 - Redesign semantic hi groups in coc.nvim [neoclide/coc.nvim#3355](https://github.com/neoclide/coc.nvim/pull/3355).
+- Generate `/after/syntax`.
 
 ## [1.2.3] - 2022-01-09
 
