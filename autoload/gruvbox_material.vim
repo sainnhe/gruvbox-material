@@ -310,6 +310,7 @@ function! gruvbox_material#syn_gen(path, last_modified, msg) "{{{
   let syntax_relative_path = has('win32') ? '\after\syntax' : '/after/syntax'
   if a:msg ==# 'update'
     echohl WarningMsg | echom '[gruvbox-material] Updated ' . rootpath . syntax_relative_path | echohl None
+    call gruvbox_material#ftplugin_detect(a:path)
   else
     echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath . syntax_relative_path | echohl None
   endif
@@ -392,6 +393,16 @@ function! gruvbox_material#syn_clean(path, msg) "{{{
 endfunction "}}}
 function! gruvbox_material#syn_exists(path) "{{{
   return filereadable(gruvbox_material#syn_rootpath(a:path) . '/after/syntax/text/gruvbox_material.vim')
+endfunction "}}}
+function! gruvbox_material#ftplugin_detect(path) "{{{
+  " Check if /after/ftplugin exists.
+  " This directory is generated in earlier versions, users may need to manually clean it.
+  let rootpath = gruvbox_material#syn_rootpath(a:path)
+  if filereadable(gruvbox_material#syn_rootpath(a:path) . '/after/ftplugin/text/gruvbox_material.vim')
+    let ftplugin_relative_path = has('win32') ? '\after\ftplugin' : '/after/ftplugin'
+    echohl WarningMsg | echom '[gruvbox-material] Detected ' . rootpath . ftplugin_relative_path | echohl None
+    echohl WarningMsg | echom '[gruvbox-material] This directory is no longer used, you may need to manually delete it.' | echohl None
+  endif
 endfunction "}}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
