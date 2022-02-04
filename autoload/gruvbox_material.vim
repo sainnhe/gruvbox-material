@@ -313,6 +313,7 @@ function! gruvbox_material#syn_gen(path, last_modified, msg) "{{{
     call gruvbox_material#ftplugin_detect(a:path)
   else
     echohl WarningMsg | echom '[gruvbox-material] Generated ' . rootpath . syntax_relative_path | echohl None
+    execute 'set runtimepath+=' . fnamemodify(rootpath, ':p') . 'after'
   endif
 endfunction "}}}
 function! gruvbox_material#syn_write(rootpath, syn, content) "{{{
