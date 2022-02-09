@@ -21,6 +21,10 @@ All notable changes to this project will be documented in this file.
 
 - Update &runtimepath after generating syntax files.
 
+### Removed
+
+- Remove examples of configuration options in help doc.
+
 ## [1.2.3] - 2022-01-09
 
 ### Added

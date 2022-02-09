@@ -207,13 +207,10 @@ g:gruvbox_material_background~
 
 The background contrast used in this color scheme.
 
-    Available values: `'hard'`, `'medium'`, `'soft'`
-    Default value: `'medium'`
+    Type:               |String|
+    Available values:   `'hard'`, `'medium'`, `'soft'`
+    Default value:      `'medium'`
 
-E.g.
->
-    let g:gruvbox_material_background = 'hard'
-<
 ------------------------------------------------------------------------------
                                      *g:gruvbox_material_disable_italic_comment*
 g:gruvbox_material_disable_italic_comment~
@@ -221,10 +218,10 @@ g:gruvbox_material_disable_italic_comment~
 By default, italic is enabled in `Comment`. To disable italic in `Comment`, set
 this option to `1`.
 
-E.g.
->
-    let g:gruvbox_material_disable_italic_comment = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ------------------------------------------------------------------------------
                                                 *g:gruvbox_material_enable_bold*
 g:gruvbox_material_enable_bold~
@@ -232,20 +229,20 @@ g:gruvbox_material_enable_bold~
 To enable bold in function name just like the original gruvbox, set this
 option to `1`.
 
-E.g.
->
-    let g:gruvbox_material_enable_bold = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ------------------------------------------------------------------------------
                                               *g:gruvbox_material_enable_italic*
 g:gruvbox_material_enable_italic~
 
 To enable italic in this color scheme, set this option to `1`.
 
-E.g.
->
-    let g:gruvbox_material_enable_italic = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 Note: This option is designed to use with fonts that support cursive italics.
 See |gruvbox-material-faq| for more information.
 
@@ -255,52 +252,43 @@ g:gruvbox_material_cursor~
 
 Customize the cursor color, only works in GUI clients.
 
-    Available values: `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
+    Type:               |String|
+    Available values:   `'auto'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
     `'aqua'`, `'blue'`, `'purple'`
-    Default value: `'auto'`
+    Default value:      `'auto'`
 
-E.g.
->
-    let g:gruvbox_material_cursor = 'green'
-<
 ------------------------------------------------------------------------------
                                      *g:gruvbox_material_transparent_background*
 g:gruvbox_material_transparent_background~
 
 To use transparent background, set this option to `1`.
 
-E.g.
->
-    let g:gruvbox_material_transparent_background = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ------------------------------------------------------------------------------
                                                      *g:gruvbox_material_visual*
 g:gruvbox_material_visual~
 
 Control the |hl-Visual| and the |hl-VisualNOS| highlight group.
 
-    Available values: `'grey background'`, `'green background'`,
+    Type:               |String|
+    Available values:   `'grey background'`, `'green background'`,
     `'blue background'`, `'red background'`, `'reverse'`
-    Default value: `'grey background'`
+    Default value:      `'grey background'`
 
-E.g.
->
-    let g:gruvbox_material_visual = 'reverse'
-<
 ------------------------------------------------------------------------------
                                   *g:gruvbox_material_menu_selection_background*
 g:gruvbox_material_menu_selection_background~
 
 Customize the background color of |hl-PmenuSel| and |hl-WildMenu|.
 
-    Available values: `'grey'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
+    Type:               |String|
+    Available values:   `'grey'`, `'red'`, `'orange'`, `'yellow'`, `'green'`,
     `'aqua'`, `'blue'`, `'purple'`
-    Default value: `'grey'`
+    Default value:      `'grey'`
 
-E.g.
->
-    let g:gruvbox_material_menu_selection_background = 'green'
-<
 ------------------------------------------------------------------------------
                                      *g:gruvbox_material_sign_column_background*
 g:gruvbox_material_sign_column_background~
@@ -308,13 +296,10 @@ g:gruvbox_material_sign_column_background~
 By default, the background color of sign column is different from normal text.
 If you want to make it the same as normal text, set this option to `'none'`.
 
-    Available values: `'default'`, `'none'`
-    Default value: `'default'`
+    Type:               |String|
+    Available values:   `'default'`, `'none'`
+    Default value:      `'default'`
 
-E.g.
->
-    let g:gruvbox_material_sign_column_background = 'none'
-<
 ------------------------------------------------------------------------------
                                            *g:gruvbox_material_spell_foreground*
 g:gruvbox_material_spell_foreground~
@@ -323,39 +308,30 @@ By default, this color scheme won't color the foreground of |spell|, instead
 colored under curls will be used. If you also want to color the foreground,
 set this option to `'colored'`.
 
-    Available values: `'none'`, `'colored'`
-    Default value: `'none'`
+    Type:               |String|
+    Available values:   `'none'`, `'colored'`
+    Default value:      `'none'`
 
-E.g.
->
-    let g:gruvbox_material_spell_foreground = 'colored'
-<
 ------------------------------------------------------------------------------
                                                 *g:gruvbox_material_ui_contrast*
 g:gruvbox_material_ui_contrast~
 
 The contrast of line numbers, indent lines, etc.
 
-    Available values: `'low'`, `'high'`
-    Default value: `'low'`
+    Type:               |String|
+    Available values:   `'low'`, `'high'`
+    Default value:      `'low'`
 
-E.g.
->
-    let g:gruvbox_material_ui_contrast = 'high'
-<
 ------------------------------------------------------------------------------
                                                    *g:gruvbox_material_show_eob*
 g:gruvbox_material_show_eob~
 
 Whether to show |hl-EndOfBuffer|.
 
-    Available values: `1`, `0`
-    Default value: `1`
+    Type:               |Number|
+    Available values:   `1`, `0`
+    Default value:      `1`
 
-E.g.
->
-    let g:gruvbox_material_show_eob = 0
-<
 ------------------------------------------------------------------------------
                                   *g:gruvbox_material_diagnostic_text_highlight*
 g:gruvbox_material_diagnostic_text_highlight~
@@ -364,13 +340,10 @@ Some plugins support highlighting error/warning/info/hint texts, by default
 these texts are only underlined, but you can use this option to also highlight
 the background of them.
 
-    Available values: `0`, `1`
-    Default value: `0`
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
 
-E.g.
->
-    let g:gruvbox_material_diagnostic_text_highlight = 1
-<
 Currently, the following plugins are supported:
 
 - neovim's built-in language server client
@@ -389,10 +362,10 @@ Some plugins support highlighting error/warning/info/hint lines, but this
 feature is disabled by default in this color scheme. To enable this feature,
 set this option to `1`.
 
-E.g.
->
-    let g:gruvbox_material_diagnostic_line_highlight = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 Currently, the following plugins are supported:
 
 - https://github.com/neoclide/coc.nvim
@@ -408,13 +381,10 @@ Some plugins can use virtual text feature of neovim to display
 error/warning/info/hint information, you can use this option to adjust the
 colors of it.
 
-    Available values: `'grey'`, `'colored'`
-    Default value: `'grey'`
+    Type:               |String|
+    Available values:   `'grey'`, `'colored'`
+    Default value:      `'grey'`
 
-E.g.
->
-    let g:gruvbox_material_diagnostic_virtual_text = 'colored'
-<
 Currently, the following plugins are supported:
 
 - neovim's built-in language server client
@@ -430,14 +400,11 @@ g:gruvbox_material_current_word~
 Some plugins can highlight the word under current cursor, you can use this
 option to control their behavior.
 
-    Available values: `'grey background'`, `'bold'`, `'underline'`, `'italic'`
-    Default value: `'grey background'` when not in transparent mode, `'bold'`
+    Type:               |String|
+    Available values:   `'grey background'`, `'bold'`, `'underline'`, `'italic'`
+    Default value:      `'grey background'` when not in transparent mode, `'bold'`
     when in transparent mode.
 
-E.g.
->
-    let g:gruvbox_material_current_word = 'bold'
-<
 Currently, the following plugins are supported:
 
 - https://github.com/neoclide/coc-highlight
@@ -458,13 +425,10 @@ There are 3 designs for statusline:
 - `mix`: Combines `default` and `original`.
 - `original`: The design used in the original gruvbox.
 
-    Available values: `'default'`, `'mix'`, `'original'`
-    Default value: `'default'`
+    Type:               |String|
+    Available values:   `'default'`, `'mix'`, `'original'`
+    Default value:      `'default'`
 
-E.g.
->
-    let g:gruvbox_material_statusline_style = 'original'
-<
 ------------------------------------------------------------------------------
                                      *g:gruvbox_material_lightline_disable_bold*
 g:gruvbox_material_lightline_disable_bold~
@@ -472,10 +436,10 @@ g:gruvbox_material_lightline_disable_bold~
 By default, bold is enabled in lightline color scheme. To disable bold in
 lightline color scheme, set this option to `1`.
 
-E.g.
->
-    let g:gruvbox_material_lightline_disable_bold = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 Note: this configuration option doesn't need to be placed before `colorscheme gruvbox-material`
 
 ------------------------------------------------------------------------------
@@ -488,10 +452,10 @@ demand by placing them in the `after/syntax` directory.
 
 Enabling this option will reduce loading time by approximately 50%.
 
-E.g.
->
-    let g:gruvbox_material_better_performance = 1
-<
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
 ------------------------------------------------------------------------------
                                                     *g:gruvbox_material_palette*
 g:gruvbox_material_palette~
@@ -505,8 +469,9 @@ There are 3 built-in palettes:
 - `mix`: Color palette obtained by calculating the mean of the other two.
 - `original`: The color palette used in the original gruvbox.
 
-    Available values: `'material'`, `'mix'`, `'original'` or a custom palette
-    Default value: `'material'`
+    Type:               |String| or |Dictionary|
+    Available values:   `'material'`, `'mix'`, `'original'` or a custom palette
+    Default value:      `'material'`
 
 E.g.
 >
@@ -553,7 +518,19 @@ E.g.
           \ }
     " }}}
 
-    " Colors based on https://github.com/soft-aesthetic/soft-era
+    " The following function call will return a dictionary that contains
+    " palette definition of the original gruvbox with hard background.
+    let g:gruvbox_material_palette = gruvbox_material#get_palette('hard',
+    'original')
+    " The function gruvbox_material#get_palette() is used to get a full
+    " palette definition based on user configuration, so we can also use this
+    " function to get a complete dictionary and then modify the 'bg0' key to
+    " '#101010'.
+    let g:gruvbox_material_palette.bg0 = '#101010'
+
+    " One of the reasons I designed this configuration option is to facilitate
+    " my own modification of some other color schemes.
+    " The following palette is based on https://github.com/soft-aesthetic/soft-era
     " There are some problems in the original one but I'm too lazy to maintain a fork.
     " However, I successfully obtained a palette based on soft-era, and I'd like to share it here.
     " Preview: https://user-images.githubusercontent.com/37491630/82816097-0c76a900-9e8a-11ea-9d99-73573b0f0afb.png
