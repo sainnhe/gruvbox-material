@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Add `g:gruvbox_material_spell_foreground`.
 - Optimize `junegunn/limelight.vim`.
 - Add FAQ for configuration options.
+- Optimize `rhysd/clever-f.vim`.
 
 ### Changed
 

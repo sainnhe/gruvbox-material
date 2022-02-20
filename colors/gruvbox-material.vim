@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Jan 24 04:20:13 UTC 2022'
+let s:last_modified = 'Sun Feb 20 08:01:10 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -765,6 +765,9 @@ call gruvbox_material#highlight('SneakLabelMask', s:palette.bg_green, s:palette.
 highlight! link Sneak Search
 highlight! link SneakLabel Search
 highlight! link SneakScope DiffText
+" }}}
+" rhysd/clever-f.vim {{{
+highlight! link CleverFDefaultLabel Search
 " }}}
 " terryma/vim-multiple-cursors {{{
 highlight! link multiple_cursors_cursor Cursor
