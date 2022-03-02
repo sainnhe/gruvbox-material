@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Feb 20 08:01:10 UTC 2022'
+let s:last_modified = 'Wed Mar  2 09:58:31 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -992,6 +992,23 @@ highlight! link NotifyWARNTitle Yellow
 highlight! link NotifyINFOTitle Green
 highlight! link NotifyDEBUGTitle Grey
 highlight! link NotifyTRACETitle Purple
+" }}}
+" rcarriga/nvim-dap-ui {{{
+call gruvbox_material#highlight('DapUIModifiedValue', s:palette.blue, s:palette.none, 'bold')
+call gruvbox_material#highlight('DapUIBreakpointsCurrentLine', s:palette.blue, s:palette.none, 'bold')
+highlight! link DapUIScope Blue
+highlight! link DapUIType Purple
+highlight! link DapUIDecoration Blue
+highlight! link DapUIThread Green
+highlight! link DapUIStoppedThread Blue
+highlight! link DapUISource Purple
+highlight! link DapUILineNumber Blue
+highlight! link DapUIFloatBorder Blue
+highlight! link DapUIWatchesEmpty Red
+highlight! link DapUIWatchesValue Green
+highlight! link DapUIWatchesError Red
+highlight! link DapUIBreakpointsPath Blue
+highlight! link DapUIBreakpointsInfo Green
 " }}}
 " glepnir/lspsaga.nvim {{{
 call gruvbox_material#highlight('LspFloatWinBorder', s:palette.bg0, s:palette.bg0)

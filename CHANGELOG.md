@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `junegunn/limelight.vim`.
 - Add FAQ for configuration options.
 - Optimize `rhysd/clever-f.vim`.
+- Optimize `rcarriga/nvim-dap-ui`.
 
 ### Changed
 
