@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `rhysd/clever-f.vim`.
 - Optimize `rcarriga/nvim-dap-ui`.
 - Add `g:gruvbox_material_disable_terminal_colors`.
+- Optimize `voldikss/vim-floaterm`.
 
 ### Changed
 
