@@ -9,6 +9,10 @@
 " Initialization: {{{
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
+if s:configuration.transparent_background
+  let s:palette.bg_statusline1 = s:palette.none
+  let s:palette.bg_statusline2 = s:palette.none
+endif
 "}}}
 " Definition: {{{
 if s:configuration.statusline_style ==# 'original' "{{{
