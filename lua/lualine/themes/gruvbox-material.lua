@@ -10,6 +10,11 @@ local background = vim.opt.background:get()
 local configuration = vim.fn['gruvbox_material#get_configuration']()
 local palette = vim.fn['gruvbox_material#get_palette'](background, configuration.palette)
 
+if configuration.transparent_background == 1 then
+  palette.bg_statusline1[1] = palette.none[1]
+  palette.bg_statusline2[1] = palette.none[1]
+end
+
 local theme
 if configuration.statusline_style == 'default' then
   theme = {
