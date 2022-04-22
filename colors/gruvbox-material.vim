@@ -422,7 +422,10 @@ endif
 " }}}
 " }}}
 " Terminal: {{{
-if ((has('termguicolors') && &termguicolors) || has('gui_running')) && !s:configuration.disable_terminal_colors
+let s:has_gui_colors = (has('termguicolors') && &termguicolors) || has('gui_running')
+let s:enable_terminal_colors = !has_key(s:configuration, 'disable_terminal_colors') || !s:configuration.disable_terminal_colors
+
+if s:has_gui_colors && s:enable_terminal_colors
   " Definition
   let s:terminal = {
         \ 'black':         &background ==# 'dark' ? s:palette.bg5 : s:palette.fg0,
