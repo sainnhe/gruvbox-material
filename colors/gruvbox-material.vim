@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May 18 12:42:33 UTC 2022'
+let s:last_modified = 'Wed May 18 13:19:01 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1223,6 +1223,37 @@ highlight! link VistaHeadNr Fg
 highlight! link VistaPublic Green
 highlight! link VistaProtected Yellow
 highlight! link VistaPrivate Red
+" syn_end }}}
+" syn_begin: aerial {{{
+" https://github.com/stevearc/aerial.nvim
+highlight! link AerialLine CursorLine
+highlight! link AerialGuide LineNr
+highlight! link AerialFileIcon Green
+highlight! link AerialModuleIcon Purple
+highlight! link AerialNamespaceIcon Purple
+highlight! link AerialPackageIcon Purple
+highlight! link AerialClassIcon Red
+highlight! link AerialMethodIcon Green
+highlight! link AerialPropertyIcon Blue
+highlight! link AerialFieldIcon Green
+highlight! link AerialConstructorIcon Green
+highlight! link AerialEnumIcon Yellow
+highlight! link AerialInterfaceIcon Yellow
+highlight! link AerialFunctionIcon Green
+highlight! link AerialVariableIcon Blue
+highlight! link AerialConstantIcon Blue
+highlight! link AerialStringIcon Aqua
+highlight! link AerialNumberIcon Aqua
+highlight! link AerialBooleanIcon Aqua
+highlight! link AerialArrayIcon Aqua
+highlight! link AerialObjectIcon Aqua
+highlight! link AerialKeyIcon Red
+highlight! link AerialNullIcon Aqua
+highlight! link AerialEnumMemberIcon Aqua
+highlight! link AerialStructIcon Yellow
+highlight! link AerialEventIcon Orange
+highlight! link AerialOperatorIcon Orange
+highlight! link AerialTypeParameterIcon Yellow
 " syn_end }}}
 " syn_begin: nerdtree {{{
 " https://github.com/preservim/nerdtree
