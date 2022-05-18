@@ -10,7 +10,7 @@ local background = vim.opt.background:get()
 local configuration = vim.fn['gruvbox_material#get_configuration']()
 local palette = vim.fn['gruvbox_material#get_palette'](background, configuration.palette)
 
-if configuration.transparent_background == 1 then
+if configuration.transparent_background == 2 then
   palette.bg_statusline1 = palette.none
   palette.bg_statusline2 = palette.none
 end
