@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu May 26 02:42:20 UTC 2022'
+let s:last_modified = 'Thu May 26 02:47:40 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1140,6 +1140,7 @@ highlight! link packerStatusFail Fg
 highlight! link packerWorking Yellow
 highlight! link packerString Yellow
 highlight! link packerPackageNotLoaded Grey
+highlight! link packerRelDate Grey
 highlight! link packerPackageName Green
 highlight! link packerOutput Orange
 highlight! link packerHash Green
