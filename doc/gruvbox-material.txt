@@ -504,16 +504,16 @@ Enabling this option will reduce loading time by approximately 50%.
 
 ------------------------------------------------------------------------------
                                             *g:gruvbox_material_colors_override*
-g:gruvbox_material_colors_override 
+g:gruvbox_material_colors_override~
 
 Override color palette. The available keys can be found in
 `/path/to/gruvbox-material/autoload/gruvbox_material.vim`.
 
 E.g.
- 
+>
     let g:gruvbox_material_colors_override = {'bg0': ['#1d2021', '234'], 'bg2': ['#282828', '235']}
     colorscheme gruvbox-material
- 
+<
     Type:               |Dictionary|
     Default value:      `{}`
 
