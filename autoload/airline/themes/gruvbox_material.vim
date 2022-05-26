@@ -8,7 +8,7 @@
 
 " Initialization: {{{
 let s:configuration = gruvbox_material#get_configuration()
-let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
+let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 if s:configuration.transparent_background == 2
   let s:palette.bg_statusline1 = s:palette.none
   let s:palette.bg_statusline2 = s:palette.none

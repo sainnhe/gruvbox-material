@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file.
 - Redesign `liuchengxu/vim-clap`.
 - Redesign semantic hi groups in coc.nvim [neoclide/coc.nvim#3355](https://github.com/neoclide/coc.nvim/pull/3355).
 - Generate `/after/syntax`.
+- Split `g:gruvbox_material_palette` into `g:gruvbox_material_foreground` and `g:gruvbox_material_colors_override`.
 
 ### Fixed
 

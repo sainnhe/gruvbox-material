@@ -9,7 +9,7 @@
 function! gruvbox_material#get_configuration() "{{{
   return {
         \ 'background': get(g:, 'gruvbox_material_background', 'medium'),
-        \ 'palette': get(g:, 'gruvbox_material_palette', 'material'),
+        \ 'foreground': get(g:, 'gruvbox_material_foreground', get(g:, 'gruvbox_material_palette', 'material')),
         \ 'transparent_background': get(g:, 'gruvbox_material_transparent_background', 0),
         \ 'disable_italic_comment': get(g:, 'gruvbox_material_disable_italic_comment', 0),
         \ 'enable_bold': get(g:, 'gruvbox_material_enable_bold', 0),
@@ -29,12 +29,10 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'diagnostic_virtual_text': get(g:, 'gruvbox_material_diagnostic_virtual_text', 'grey'),
         \ 'disable_terminal_colors': get(g:, 'gruvbox_material_disable_terminal_colors', 0),
         \ 'better_performance': get(g:, 'gruvbox_material_better_performance', 0),
+        \ 'colors_override': get(g:, 'gruvbox_material_colors_override', {}),
         \ }
 endfunction "}}}
-function! gruvbox_material#get_palette(background, palette) "{{{
-  if type(a:palette) == 4
-    return a:palette
-  endif
+function! gruvbox_material#get_palette(background, foreground, colors_override) "{{{
   if a:background ==# 'hard' "{{{
     if &background ==# 'dark'
       let palette1 = {
@@ -162,7 +160,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ }
     endif
   endif "}}}
-  if a:palette ==# 'material' "{{{
+  if a:foreground ==# 'material' "{{{
     if &background ==# 'dark'
       let palette2 = {
             \ 'fg0':              ['#d4be98',   '223'],
@@ -194,7 +192,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
             \ 'bg_yellow':        ['#a96b2c',   '130']
             \ }
     endif "}}}
-  elseif a:palette ==# 'mix' "{{{
+  elseif a:foreground ==# 'mix' "{{{
     if &background ==# 'dark'
       let palette2 = {
             \ 'fg0':              ['#e2cca9',   '223'],
@@ -274,7 +272,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
           \ 'none':             ['NONE',      'NONE']
           \ }
   endif "}}}
-  return extend(extend(palette1, palette2), palette3)
+  return extend(extend(extend(palette1, palette2), palette3), a:colors_override)
 endfunction "}}}
 function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
   execute 'highlight' a:group
@@ -339,7 +337,7 @@ function! gruvbox_material#syn_write(rootpath, syn, content) "{{{
   if matchstr(a:content, 'gruvbox_material#highlight') !=# ''
     call writefile([
           \ 'let s:configuration = gruvbox_material#get_configuration()',
-          \ 'let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)'
+          \ 'let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)'
           \ ], syn_path, 'a')
   endif
   " Append the content.
