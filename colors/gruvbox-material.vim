@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.palette)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May 18 13:40:55 UTC 2022'
+let s:last_modified = 'Thu May 26 02:42:20 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1130,6 +1130,23 @@ highlight! link plugUpdate Blue
 highlight! link plugDeleted Grey
 highlight! link plugEdge Yellow
 highlight! link plugSha Green
+" syn_end }}}
+" syn_begin: packer {{{
+" https://github.com/wbthomason/packer.nvim
+highlight! link packerSuccess Aqua
+highlight! link packerFail Red
+highlight! link packerStatusSuccess Fg
+highlight! link packerStatusFail Fg
+highlight! link packerWorking Yellow
+highlight! link packerString Yellow
+highlight! link packerPackageNotLoaded Grey
+highlight! link packerPackageName Green
+highlight! link packerOutput Orange
+highlight! link packerHash Green
+highlight! link packerTimeTrivial Blue
+highlight! link packerTimeHigh Red
+highlight! link packerTimeMedium Yellow
+highlight! link packerTimeLow Green
 " syn_end }}}
 " syn_begin: coctree {{{
 " https://github.com/neoclide/coc.nvim
