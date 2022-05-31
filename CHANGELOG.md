@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Change default value of `g:gruvbox_material_sign_column_background` to `'none'`.
+
 ## [1.2.4] - 2022-05-26
 
 ### Added

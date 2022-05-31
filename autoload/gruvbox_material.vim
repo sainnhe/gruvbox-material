@@ -17,7 +17,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'cursor': get(g:, 'gruvbox_material_cursor', 'auto'),
         \ 'visual': get(g:, 'gruvbox_material_visual', 'grey background'),
         \ 'menu_selection_background': get(g:, 'gruvbox_material_menu_selection_background', 'grey'),
-        \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'default'),
+        \ 'sign_column_background': get(g:, 'gruvbox_material_sign_column_background', 'none'),
         \ 'spell_foreground': get(g:, 'gruvbox_material_spell_foreground', 'none'),
         \ 'ui_contrast': get(g:, 'gruvbox_material_ui_contrast', 'low'),
         \ 'show_eob': get(g:, 'gruvbox_material_show_eob', 1),
