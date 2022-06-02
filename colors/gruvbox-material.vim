@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue May 31 12:11:58 PM UTC 2022'
+let s:last_modified = 'Thu Jun  2 05:18:05 AM UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -812,7 +812,7 @@ highlight! link multiple_cursors_cursor Cursor
 highlight! link multiple_cursors_visual Visual
 " }}}
 " mg979/vim-visual-multi {{{
-call gruvbox_material#highlight('VMCursor', s:palette.blue, s:palette.bg_diff_blue)
+call gruvbox_material#highlight('VMCursor', s:palette.blue, s:palette.bg5)
 let g:VM_Mono_hl = 'VMCursor'
 let g:VM_Extend_hl = 'Visual'
 let g:VM_Cursor_hl = 'VMCursor'
