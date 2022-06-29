@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Optimize `b0o/incline.nvim`.
+
 ### Changed
 
 - Change default value of `g:gruvbox_material_sign_column_background` to `'none'`.
