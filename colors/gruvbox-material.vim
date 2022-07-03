@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Jun 29 09:29:32 UTC 2022'
+let s:last_modified = 'Sun Jul  3 03:04:21 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -234,6 +234,7 @@ call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
   call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
+  highlight! link WinBarNC Grey
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat

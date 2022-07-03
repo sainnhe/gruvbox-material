@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Optimize `b0o/incline.nvim`.
+- Optimize winbar.
 
 ### Changed
 
