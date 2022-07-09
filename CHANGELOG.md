@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 - Optimize `b0o/incline.nvim`.
 - Optimize winbar.
+- Optimize `echasnovski/mini.nvim`.
 
 ### Changed
 
