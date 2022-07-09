@@ -1085,6 +1085,57 @@ highlight! link TargetFileName Grey
 " b0o/incline.nvim {{{
 call gruvbox_material#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg3)
 " }}}
+" echasnovski/mini.nvim {{{
+highlight! link MiniCompletionActiveParameter LspSignatureActiveParameter
+
+highlight! link MiniCursorword CurrentWord
+highlight! link MiniCursorwordCurrent CurrentWord
+
+highlight! link MiniIndentscopeSymbol Grey
+call gruvbox_material#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine') " Make it invisible
+
+highlight! link MiniJump Search
+
+call gruvbox_material#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
+
+call gruvbox_material#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
+highlight! link MiniStarterFooter Orange
+highlight! link MiniStarterHeader Yellow
+highlight! link MiniStarterInactive Comment
+highlight! link MiniStarterItem Normal
+call gruvbox_material#highlight('MiniStarterItemBullet', s:palette.grey1, s:palette.none)
+call gruvbox_material#highlight('MiniStarterItemPrefix', s:palette.yellow, s:palette.none)
+highlight! link MiniStarterSection Title
+call gruvbox_material#highlight('MiniStarterQuery', s:palette.blue, s:palette.none)
+
+call gruvbox_material#highlight('MiniStatuslineDevinfo', s:palette.grey2, s:palette.bg_statusline2)
+call gruvbox_material#highlight('MiniStatuslineFileinfo', s:palette.grey2, s:palette.bg_statusline2)
+call gruvbox_material#highlight('MiniStatuslineFilename', s:palette.grey2, s:palette.bg_statusline1)
+call gruvbox_material#highlight('MiniStatuslineModeInactive', s:palette.grey2, s:palette.bg_statusline1)
+call gruvbox_material#highlight('MiniStatuslineModeCommand', s:palette.bg0, s:palette.blue, 'bold')
+call gruvbox_material#highlight('MiniStatuslineModeInsert', s:palette.bg0, s:palette.bg_green, 'bold')
+call gruvbox_material#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:palette.grey2, 'bold')
+call gruvbox_material#highlight('MiniStatuslineModeOther', s:palette.bg0, s:palette.purple, 'bold')
+call gruvbox_material#highlight('MiniStatuslineModeReplace', s:palette.bg0, s:palette.bg_yellow, 'bold')
+call gruvbox_material#highlight('MiniStatuslineModeVisual', s:palette.bg0, s:palette.bg_red, 'bold')
+
+highlight! link MiniSurround IncSearch
+
+call gruvbox_material#highlight('MiniTablineCurrent', s:palette.fg1, s:palette.bg5)
+highlight! link MiniTablineFill TabLineFill
+call gruvbox_material#highlight('MiniTablineHidden', s:palette.grey1, s:palette.bg3)
+call gruvbox_material#highlight('MiniTablineModifiedCurrent', s:palette.blue, s:palette.bg5)
+call gruvbox_material#highlight('MiniTablineModifiedHidden', s:palette.grey1, s:palette.bg3)
+call gruvbox_material#highlight('MiniTablineModifiedVisible', s:palette.blue, s:palette.bg3)
+call gruvbox_material#highlight('MiniTablineTabpagesection', s:palette.bg0, s:palette.grey2, 'bold')
+call gruvbox_material#highlight('MiniTablineVisible', s:palette.fg1, s:palette.bg3)
+
+call gruvbox_material#highlight('MiniTestEmphasis', s:palette.none, s:palette.none, 'bold')
+call gruvbox_material#highlight('MiniTestFail', s:palette.red, s:palette.none, 'bold')
+call gruvbox_material#highlight('MiniTestPass', s:palette.green, s:palette.none, 'bold')
+
+call gruvbox_material#highlight('MiniTrailspace', s:palette.none, s:palette.red)
+" }}}
 endif
 " }}}
 " Extended File Types: {{{
