@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jul  3 03:04:21 UTC 2022'
+let s:last_modified = 'Sat Jul 16 13:30:07 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -28,7 +28,7 @@ endif
 " }}}
 " Common Highlight Groups: {{{
 " UI: {{{
-if s:configuration.transparent_background == 1
+if s:configuration.transparent_background >= 1
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.none)
   if s:configuration.show_eob
