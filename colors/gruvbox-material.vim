@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Jul 16 13:30:07 UTC 2022'
+let s:last_modified = 'Wed Aug  3 02:37:18 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -554,6 +554,14 @@ highlight! link TSVariableBuiltin BlueItalic
 " neoclide/coc.nvim {{{
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
 call gruvbox_material#highlight('CocSearch', s:palette.green, s:palette.none, 'bold')
+call gruvbox_material#highlight('CocPumSearch', s:palette.green, s:palette.none, 'bold')
+call gruvbox_material#highlight('CocMarkdownHeader', s:palette.orange, s:palette.none, 'bold')
+call gruvbox_material#highlight('CocMarkdownLink', s:palette.green, s:palette.none, 'underline')
+highlight! link CocMarkdownCode Green
+highlight! link CocPumShortcut Grey
+highlight! link CocPumVirtualText LineNr
+highlight! link CocPumMenu Pmenu
+highlight! link CocMenuSel PmenuSel
 highlight! link CocDisabled Grey
 highlight! link CocSnippetVisual DiffAdd
 highlight! link CocInlayHint Grey
