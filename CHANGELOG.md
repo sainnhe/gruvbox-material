@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `echasnovski/mini.nvim`.
 - Support coc popup menu.
 - Optimize `ggandor/lightspeed.nvim`.
+- Optimize `pwntester/octo.nvim`.
 
 ### Changed
 
