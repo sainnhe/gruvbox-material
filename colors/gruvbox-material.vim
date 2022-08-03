@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Aug  3 02:37:18 UTC 2022'
+let s:last_modified = 'Wed Aug  3 09:04:23 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1094,28 +1094,9 @@ highlight! link TargetFileName Grey
 call gruvbox_material#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg3)
 " }}}
 " echasnovski/mini.nvim {{{
-highlight! link MiniCompletionActiveParameter LspSignatureActiveParameter
-
-highlight! link MiniCursorword CurrentWord
-highlight! link MiniCursorwordCurrent CurrentWord
-
-highlight! link MiniIndentscopeSymbol Grey
-call gruvbox_material#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine') " Make it invisible
-
-highlight! link MiniJump Search
-
+call gruvbox_material#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine')
 call gruvbox_material#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
-
 call gruvbox_material#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
-highlight! link MiniStarterFooter Orange
-highlight! link MiniStarterHeader Yellow
-highlight! link MiniStarterInactive Comment
-highlight! link MiniStarterItem Normal
-call gruvbox_material#highlight('MiniStarterItemBullet', s:palette.grey1, s:palette.none)
-call gruvbox_material#highlight('MiniStarterItemPrefix', s:palette.yellow, s:palette.none)
-highlight! link MiniStarterSection Title
-call gruvbox_material#highlight('MiniStarterQuery', s:palette.blue, s:palette.none)
-
 call gruvbox_material#highlight('MiniStatuslineDevinfo', s:palette.grey2, s:palette.bg_statusline2)
 call gruvbox_material#highlight('MiniStatuslineFileinfo', s:palette.grey2, s:palette.bg_statusline2)
 call gruvbox_material#highlight('MiniStatuslineFilename', s:palette.grey2, s:palette.bg_statusline1)
@@ -1126,23 +1107,32 @@ call gruvbox_material#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:pal
 call gruvbox_material#highlight('MiniStatuslineModeOther', s:palette.bg0, s:palette.purple, 'bold')
 call gruvbox_material#highlight('MiniStatuslineModeReplace', s:palette.bg0, s:palette.bg_yellow, 'bold')
 call gruvbox_material#highlight('MiniStatuslineModeVisual', s:palette.bg0, s:palette.bg_red, 'bold')
-
-highlight! link MiniSurround IncSearch
-
 call gruvbox_material#highlight('MiniTablineCurrent', s:palette.fg1, s:palette.bg5)
-highlight! link MiniTablineFill TabLineFill
 call gruvbox_material#highlight('MiniTablineHidden', s:palette.grey1, s:palette.bg3)
 call gruvbox_material#highlight('MiniTablineModifiedCurrent', s:palette.blue, s:palette.bg5)
 call gruvbox_material#highlight('MiniTablineModifiedHidden', s:palette.grey1, s:palette.bg3)
 call gruvbox_material#highlight('MiniTablineModifiedVisible', s:palette.blue, s:palette.bg3)
 call gruvbox_material#highlight('MiniTablineTabpagesection', s:palette.bg0, s:palette.grey2, 'bold')
 call gruvbox_material#highlight('MiniTablineVisible', s:palette.fg1, s:palette.bg3)
-
 call gruvbox_material#highlight('MiniTestEmphasis', s:palette.none, s:palette.none, 'bold')
 call gruvbox_material#highlight('MiniTestFail', s:palette.red, s:palette.none, 'bold')
 call gruvbox_material#highlight('MiniTestPass', s:palette.green, s:palette.none, 'bold')
-
 call gruvbox_material#highlight('MiniTrailspace', s:palette.none, s:palette.red)
+highlight! link MiniStarterItemBullet Grey
+highlight! link MiniStarterItemPrefix Yellow
+highlight! link MiniStarterQuery Blue
+highlight! link MiniCompletionActiveParameter LspSignatureActiveParameter
+highlight! link MiniCursorword CurrentWord
+highlight! link MiniCursorwordCurrent CurrentWord
+highlight! link MiniIndentscopeSymbol Grey
+highlight! link MiniJump Search
+highlight! link MiniStarterFooter Orange
+highlight! link MiniStarterHeader Yellow
+highlight! link MiniStarterInactive Comment
+highlight! link MiniStarterItem Normal
+highlight! link MiniStarterSection Title
+highlight! link MiniSurround IncSearch
+highlight! link MiniTablineFill TabLineFill
 " }}}
 endif
 " }}}
