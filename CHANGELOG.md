@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Optimize winbar.
 - Optimize `echasnovski/mini.nvim`.
 - Support coc popup menu.
+- Optimize `ggandor/lightspeed.nvim`.
 
 ### Changed
 
