@@ -2,7 +2,7 @@
 -- URL: https://github.com/sainnhe/gruvbox-material
 -- Filename: lua/lualine/themes/gruvbox-material.lua
 -- Author: sainnhe
--- Email: sainnhe@gmail.com
+-- Email: i@sainnhe.dev
 -- License: MIT License
 -- =============================================================================
 

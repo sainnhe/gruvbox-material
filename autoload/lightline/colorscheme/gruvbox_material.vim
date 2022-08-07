@@ -2,7 +2,7 @@
 " URL: https://github.com/sainnhe/gruvbox-material
 " Filename: autoload/lightline/colorscheme/gruvbox_material.vim
 " Author: sainnhe
-" Email: sainnhe@gmail.com
+" Email: i@sainnhe.dev
 " License: MIT License
 " =============================================================================
 
