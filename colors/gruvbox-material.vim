@@ -66,6 +66,9 @@ else
     endif
   endif
 endif
+call gruvbox_material#highlight('IlluminatedWordText', s:palette.none, s:palette.bg_current_word)
+call gruvbox_material#highlight('IlluminatedWordRead', s:palette.none, s:palette.bg_current_word)
+call gruvbox_material#highlight('IlluminatedWordWrite', s:palette.none, s:palette.bg_current_word)
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
 call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
