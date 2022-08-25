@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Aug 25 07:06:11 UTC 2022'
+let s:last_modified = 'Thu Aug 25 08:11:54 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -953,6 +953,12 @@ highlight! link agitDiffHeader Purple
 " }}}
 " voldikss/vim-floaterm {{{
 highlight! link FloatermBorder Grey
+" }}}
+" MattesGroeger/vim-bookmarks {{{
+highlight! link BookmarkSign BlueSign
+highlight! link BookmarkAnnotationSign GreenSign
+highlight! link BookmarkLine DiffChange
+highlight! link BookmarkAnnotationLine DiffAdd
 " }}}
 if has('nvim')
 " hrsh7th/nvim-cmp {{{
