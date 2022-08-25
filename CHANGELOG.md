@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 - Optimize `ggandor/lightspeed.nvim`.
 - Optimize `pwntester/octo.nvim`.
 - Optimize `simrat39/symbols-outline.nvim`.
+- Support for YCM semantic highlighting.
 
 ### Changed
 
