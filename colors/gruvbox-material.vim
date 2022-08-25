@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Aug  4 02:22:33 UTC 2022'
+let s:last_modified = 'Thu Aug 25 07:06:11 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -633,8 +633,8 @@ highlight! link YcmWarningLine WarningLine
 highlight! link YcmErrorSection ErrorText
 highlight! link YcmWarningSection WarningText
 highlight! link YcmInlayHint LineNr
-if !has('nvim') && has('textprop')
-  let YCM_HIGHLIGHT_GROUP = {
+if !has('nvim') && has('textprop') && !exists('g:YCM_HIGHLIGHT_GROUP')
+  let g:YCM_HIGHLIGHT_GROUP = {
         \ 'typeParameter': 'TSType',
         \ 'parameter': 'TSParameter',
         \ 'variable': 'TSVariable',
@@ -646,12 +646,10 @@ if !has('nvim') && has('textprop')
         \ 'class': 'TSType',
         \ 'namespace': 'TSNamespace',
         \ }
-
-  for tokenType in keys( YCM_HIGHLIGHT_GROUP )
+  for tokenType in keys( g:YCM_HIGHLIGHT_GROUP )
     call prop_type_add( 'YCM_HL_' . tokenType,
-          \ { 'highlight': YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+          \ { 'highlight': g:YCM_HIGHLIGHT_GROUP[ tokenType ] } )
   endfor
-  unlet YCM_HIGHLIGHT_GROUP
 endif
 " }}}
 " dense-analysis/ale {{{
