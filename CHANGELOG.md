@@ -13,8 +13,9 @@ All notable changes to this project will be documented in this file.
 - Optimize `ggandor/lightspeed.nvim`.
 - Optimize `pwntester/octo.nvim`.
 - Optimize `simrat39/symbols-outline.nvim`.
-- Support for YCM semantic highlighting.
+- Support for YCM semantic highlighting and inlayHints.
 - Optimize `MattesGroeger/vim-bookmarks`.
+- Support for vim-lsp semantic highlighting and inlayHints.
 
 ### Changed
 
