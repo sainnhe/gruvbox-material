@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Aug 25 08:11:54 UTC 2022'
+let s:last_modified = 'Thu Aug 25 08:27:21 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -647,8 +647,11 @@ if !has('nvim') && has('textprop') && !exists('g:YCM_HIGHLIGHT_GROUP')
         \ 'namespace': 'TSNamespace',
         \ }
   for tokenType in keys( g:YCM_HIGHLIGHT_GROUP )
-    call prop_type_add( 'YCM_HL_' . tokenType,
-          \ { 'highlight': g:YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+    try
+      call prop_type_add( 'YCM_HL_' . tokenType,
+            \ { 'highlight': g:YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+    catch
+    endtry
   endfor
 endif
 " }}}
