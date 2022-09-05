@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Aug 25 10:43:01 UTC 2022'
+let s:last_modified = 'Mon Sep  5 18:55:28 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -211,6 +211,7 @@ else
   endif
 endif
 call gruvbox_material#highlight('VertSplit', s:palette.bg5, s:palette.none)
+highlight! link WinSeparator VertSplit
 if s:configuration.visual ==# 'grey background'
   call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg3)
   call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg3)
