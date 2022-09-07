@@ -79,9 +79,9 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 
 ## Maintainers
 
-| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Zixin Yin](https://avatars2.githubusercontent.com/u/33487417?s=70&u=c6acee32fad2edb8c3bc3f7e0f436f1e8b8024c6&v=4)](https://github.com/zxYin) |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Zixin Yin](https://github.com/zxYin)                                                                                                           |
+| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Zixin Yin](https://avatars2.githubusercontent.com/u/33487417?s=70&u=c6acee32fad2edb8c3bc3f7e0f436f1e8b8024c6&v=4)](https://github.com/zxYin) | [![Antoine Cotten](https://avatars.githubusercontent.com/u/3299086?v=4&s=70)](https://github.com/antoineco) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Zixin Yin](https://github.com/zxYin)                                                                                                           | [Antoine Cotten](https://github.com/antoineco)                                                              |
 
 ## License
 
