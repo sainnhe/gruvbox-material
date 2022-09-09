@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Sep  8 20:19:11 UTC 2022'
+let s:last_modified = 'Fri Sep  9 13:16:02 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -255,7 +255,7 @@ if has('nvim')
   highlight! link DiagnosticSignError RedSign
   highlight! link DiagnosticSignWarn YellowSign
   highlight! link DiagnosticSignInfo BlueSign
-  highlight! link DiagnosticSignHint AquaSign
+  highlight! link DiagnosticSignHint GreenSign
   highlight! link LspDiagnosticsFloatingError ErrorFloat
   highlight! link LspDiagnosticsFloatingWarning WarningFloat
   highlight! link LspDiagnosticsFloatingInformation InfoFloat
@@ -275,7 +275,7 @@ if has('nvim')
   highlight! link LspDiagnosticsSignError RedSign
   highlight! link LspDiagnosticsSignWarning YellowSign
   highlight! link LspDiagnosticsSignInformation BlueSign
-  highlight! link LspDiagnosticsSignHint AquaSign
+  highlight! link LspDiagnosticsSignHint GreenSign
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
@@ -640,7 +640,7 @@ highlight! link CocHoverRange CurrentWord
 highlight! link CocErrorSign RedSign
 highlight! link CocWarningSign YellowSign
 highlight! link CocInfoSign BlueSign
-highlight! link CocHintSign AquaSign
+highlight! link CocHintSign GreenSign
 highlight! link CocWarningVirtualText VirtualTextWarning
 highlight! link CocErrorVirtualText VirtualTextError
 highlight! link CocInfoVirtualText VirtualTextInfo
