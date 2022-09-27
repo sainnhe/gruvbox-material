@@ -1093,16 +1093,16 @@ highlight! link GitSignsDeleteLn DiffDelete
 highlight! link GitSignsCurrentLineBlame Grey
 " }}}
 " David-Kunz/markid {{{
-call gruvbox_material#highlight('markid1', s:palette.blue, s:palette.none)
-call gruvbox_material#highlight('markid2', s:palette.red, s:palette.none)
-call gruvbox_material#highlight('markid3', s:palette.green, s:palette.none)
-call gruvbox_material#highlight('markid4', s:palette.purple, s:palette.none)
-call gruvbox_material#highlight('markid5', s:palette.aqua, s:palette.none)
-call gruvbox_material#highlight('markid6', s:palette.orange, s:palette.none)
-call gruvbox_material#highlight('markid7', s:palette.yellow, s:palette.none)
-call gruvbox_material#highlight('markid8', s:palette.bg_visual_green, s:palette.none)
-call gruvbox_material#highlight('markid9', s:palette.fg0, s:palette.none)
-call gruvbox_material#highlight('markid10', s:palette.bg_red, s:palette.none)
+highlight! link markid1 Blue
+highlight! link markid2 Red
+highlight! link markid3 Green
+highlight! link markid4 Purple
+highlight! link markid5 Aqua
+highlight! link markid6 Orange
+highlight! link markid7 Yellow
+highlight! link markid8 ErrorLine
+highlight! link markid9 Fg
+highlight! link markid10 HintLine
 " }}}
 " phaazon/hop.nvim {{{
 call gruvbox_material#highlight('HopNextKey', s:palette.orange, s:palette.none, 'bold')
