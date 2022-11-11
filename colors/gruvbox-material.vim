@@ -547,8 +547,8 @@ highlight! link TSStrike Grey
 highlight! link TSMath Blue
 highlight! link TSType Yellow
 highlight! link TSTypeBuiltin YellowItalic
-highlight! link TSTypeDefinition Red
-highlight! link TSTypeQualifier Red
+highlight! link TSTypeDefinition Yellow
+highlight! link TSTypeQualifier Yellow
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin BlueItalic
