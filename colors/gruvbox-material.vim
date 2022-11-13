@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Nov 11 09:39:30 UTC 2022'
+let s:last_modified = 'Sun Nov 13 11:06:44 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -547,8 +547,8 @@ highlight! link TSStrike Grey
 highlight! link TSMath Blue
 highlight! link TSType Yellow
 highlight! link TSTypeBuiltin YellowItalic
-highlight! link TSTypeDefinition Yellow
-highlight! link TSTypeQualifier Yellow
+highlight! link TSTypeDefinition Red
+highlight! link TSTypeQualifier Orange
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin BlueItalic
