@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 - Support for YCM semantic highlighting and inlayHints.
 - Optimize `MattesGroeger/vim-bookmarks`.
 - Support for vim-lsp semantic highlighting and inlayHints.
+- New tree-sitter tokens.
 
 ### Changed
 
