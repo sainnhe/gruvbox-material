@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Nov 20 02:34:46 UTC 2022'
+let s:last_modified = 'Sun Nov 20 03:21:06 AM UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1165,23 +1165,23 @@ highlight! link rainbowcol6 Blue
 highlight! link rainbowcol7 Purple
 " }}}
 " romgrk/barbar.nvim {{{
-call gruvbox_material#highlight('BufferCurrent', s:palette.fg1, s:palette.bg5)
-call gruvbox_material#highlight('BufferCurrentIndex', s:palette.fg1, s:palette.bg5)
-call gruvbox_material#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg5)
-call gruvbox_material#highlight('BufferCurrentSign', s:palette.grey2, s:palette.bg5)
-call gruvbox_material#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg5, 'bold')
-call gruvbox_material#highlight('BufferVisible', s:palette.fg1, s:palette.bg3)
-call gruvbox_material#highlight('BufferVisibleIndex', s:palette.fg1, s:palette.bg3)
-call gruvbox_material#highlight('BufferVisibleMod', s:palette.blue, s:palette.bg3)
-call gruvbox_material#highlight('BufferVisibleSign', s:palette.grey2, s:palette.bg3)
-call gruvbox_material#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('BufferInactive', s:palette.grey1, s:palette.bg3)
-call gruvbox_material#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg3)
-call gruvbox_material#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg3)
-call gruvbox_material#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg3)
-call gruvbox_material#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg3, 'bold')
-call gruvbox_material#highlight('BufferTabpages', s:palette.bg0, s:palette.grey2, 'bold')
-call gruvbox_material#highlight('BufferTabpageFill', s:palette.bg0, s:palette.bg0)
+call gruvbox_material#highlight('BufferCurrent', s:palette.fg1, s:palette.bg0)
+call gruvbox_material#highlight('BufferCurrentIndex', s:palette.fg1, s:palette.bg0)
+call gruvbox_material#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg0)
+call gruvbox_material#highlight('BufferCurrentSign', s:palette.grey2, s:palette.bg0)
+call gruvbox_material#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg0, 'bold')
+call gruvbox_material#highlight('BufferVisible', s:palette.fg1, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferVisibleIndex', s:palette.fg1, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferVisibleMod', s:palette.blue, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferVisibleSign', s:palette.grey2, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferVisibleTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
+call gruvbox_material#highlight('BufferInactive', s:palette.grey1, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
+call gruvbox_material#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
+call gruvbox_material#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
 " rcarriga/nvim-notify {{{
 highlight! link NotifyERRORBorder Red
@@ -1534,6 +1534,9 @@ highlight! link DirvishArg Yellow
 " syn_end }}}
 " syn_begin: NvimTree {{{
 " https://github.com/kyazdani42/nvim-tree.lua
+call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, s:palette.bg_dim)
+call gruvbox_material#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+call gruvbox_material#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
 highlight! link NvimTreeSymlink Fg
 highlight! link NvimTreeFolderName Green
 highlight! link NvimTreeRootFolder Grey
