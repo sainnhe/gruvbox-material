@@ -59,6 +59,10 @@ See [`:help gruvbox-material.txt`](https://github.com/sainnhe/gruvbox-material/b
 
 See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Projects).
 
+## Contributing
+
+See this [post](https://www.sainnhe.dev/post/contributing-guide/).
+
 ## More Color Schemes
 
 - [Everforest](https://github.com/sainnhe/everforest)
