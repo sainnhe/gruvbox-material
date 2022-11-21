@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Nov 20 11:15:02 UTC 2022'
+let s:last_modified = 'Mon Nov 21 06:23:01 AM UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1534,10 +1534,12 @@ highlight! link DirvishArg Yellow
 " syn_end }}}
 " syn_begin: NvimTree {{{
 " https://github.com/kyazdani42/nvim-tree.lua
-call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, s:palette.bg_dim)
-call gruvbox_material#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
-call gruvbox_material#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
-call gruvbox_material#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
+if !s:configuration.transparent_background
+  call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, s:palette.bg_dim)
+  call gruvbox_material#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+  call gruvbox_material#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
+  call gruvbox_material#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
+endif
 highlight! link NvimTreeSymlink Fg
 highlight! link NvimTreeFolderName Green
 highlight! link NvimTreeRootFolder Grey
@@ -1576,9 +1578,11 @@ highlight! link FernWindowSelectStatusLine TabLine
 " syn_end }}}
 " syn_begin: neo-tree {{{
 " https://github.com/nvim-neo-tree/neo-tree.nvim
-call gruvbox_material#highlight('NeoTreeNormal', s:palette.fg0, s:palette.bg_dim)
-call gruvbox_material#highlight('NeoTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
-call gruvbox_material#highlight('NeoTreeVertSplit', s:palette.bg0, s:palette.bg0)
+if !s:configuration.transparent_background
+  call gruvbox_material#highlight('NeoTreeNormal', s:palette.fg0, s:palette.bg_dim)
+  call gruvbox_material#highlight('NeoTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+  call gruvbox_material#highlight('NeoTreeVertSplit', s:palette.bg0, s:palette.bg0)
+endif
 highlight! link NeoTreeGitAdded Green
 highlight! link NeoTreeGitConflict Yellow
 highlight! link NeoTreeGitDeleted Red
