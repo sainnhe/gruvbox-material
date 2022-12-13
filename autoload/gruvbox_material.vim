@@ -11,6 +11,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'background': get(g:, 'gruvbox_material_background', 'medium'),
         \ 'foreground': get(g:, 'gruvbox_material_foreground', get(g:, 'gruvbox_material_palette', 'material')),
         \ 'transparent_background': get(g:, 'gruvbox_material_transparent_background', 0),
+        \ 'dim_inactive_windows': get(g:, 'gruvbox_material_dim_inactive_windows', 0),
         \ 'disable_italic_comment': get(g:, 'gruvbox_material_disable_italic_comment', 0),
         \ 'enable_bold': get(g:, 'gruvbox_material_enable_bold', 0),
         \ 'enable_italic': get(g:, 'gruvbox_material_enable_italic', 0),

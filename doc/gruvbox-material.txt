@@ -302,6 +302,16 @@ background), set this option to `2`.
     Default value:      `0`
 
 ------------------------------------------------------------------------------
+                                       *g:gruvbox_material_dim_inactive_windows*
+g:gruvbox_material_dim_inactive_windows~
+
+Dim inactive windows. Only works in neovim currently.
+
+    Type:               |Number|
+    Available values:   `0`, `1`
+    Default value:      `0`
+
+------------------------------------------------------------------------------
                                                      *g:gruvbox_material_visual*
 g:gruvbox_material_visual~
 

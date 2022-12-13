@@ -18,7 +18,8 @@ All notable changes to this project will be documented in this file.
 - Support for vim-lsp semantic highlighting and inlayHints.
 - New tree-sitter tokens.
 - Support for shading.
-- Optimize `nvim-neo-tree/neo-tree.nvim`
+- Optimize `nvim-neo-tree/neo-tree.nvim`.
+- Add `g:gruvbox_material_dim_inactive_windows`.
 
 ### Changed
 

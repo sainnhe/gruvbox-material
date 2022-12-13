@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Nov 21 06:23:01 AM UTC 2022'
+let s:last_modified = 'Tue Dec 13 04:02:59 UTC 2022'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -30,6 +30,7 @@ endif
 " UI: {{{
 if s:configuration.transparent_background >= 1
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.none)
+  call gruvbox_material#highlight('NormalNC', s:palette.fg0, s:palette.none)
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.none)
   if s:configuration.show_eob
     call gruvbox_material#highlight('EndOfBuffer', s:palette.bg5, s:palette.none)
@@ -46,11 +47,24 @@ if s:configuration.transparent_background >= 1
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg0, s:palette.none)
 else
   call gruvbox_material#highlight('Normal', s:palette.fg0, s:palette.bg0)
+  if s:configuration.dim_inactive_windows
+    call gruvbox_material#highlight('NormalNC', s:palette.fg0, s:palette.bg_dim)
+  else
+    call gruvbox_material#highlight('NormalNC', s:palette.fg0, s:palette.bg0)
+  endif
   call gruvbox_material#highlight('Terminal', s:palette.fg0, s:palette.bg0)
   if s:configuration.show_eob
-    call gruvbox_material#highlight('EndOfBuffer', s:palette.bg5, s:palette.bg0)
+    if s:configuration.dim_inactive_windows
+      call gruvbox_material#highlight('EndOfBuffer', s:palette.bg4, s:palette.bg_dim)
+    else
+      call gruvbox_material#highlight('EndOfBuffer', s:palette.bg5, s:palette.bg0)
+    endif
   else
-    call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+    if s:configuration.dim_inactive_windows
+      call gruvbox_material#highlight('EndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+    else
+      call gruvbox_material#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+    endif
   endif
   call gruvbox_material#highlight('Folded', s:palette.grey1, s:palette.bg2)
   call gruvbox_material#highlight('ToolbarLine', s:palette.fg1, s:palette.bg3)
@@ -210,7 +224,11 @@ else
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
   endif
 endif
-call gruvbox_material#highlight('VertSplit', s:palette.bg5, s:palette.none)
+if s:configuration.dim_inactive_windows
+  call gruvbox_material#highlight('VertSplit', s:palette.bg4, s:palette.bg_dim)
+else
+  call gruvbox_material#highlight('VertSplit', s:palette.bg5, s:palette.none)
+endif
 highlight! link WinSeparator VertSplit
 if s:configuration.visual ==# 'grey background'
   call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg3)
