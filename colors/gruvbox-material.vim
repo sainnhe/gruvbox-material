@@ -768,7 +768,9 @@ highlight! link LspSemanticOperator TSOperator
 " }}}
 " ycm-core/YouCompleteMe {{{
 highlight! link YcmErrorSign RedSign
+highlight! link YcmErrorText RedSign
 highlight! link YcmWarningSign YellowSign
+highlight! link YcmWarningText YellowSign
 highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
 highlight! link YcmErrorSection ErrorText
