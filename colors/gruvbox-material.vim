@@ -768,14 +768,14 @@ highlight! link LspSemanticOperator TSOperator
 " }}}
 " ycm-core/YouCompleteMe {{{
 highlight! link YcmErrorSign RedSign
-highlight! link YcmErrorText RedSign
 highlight! link YcmWarningSign YellowSign
-highlight! link YcmWarningText YellowSign
 highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
 highlight! link YcmErrorSection ErrorText
 highlight! link YcmWarningSection WarningText
 highlight! link YcmInlayHint LineNr
+highlight! link YcmErrorText VirtualTextError
+highlight! link YcmWarningText VirtualTextWarning
 if !has('nvim') && has('textprop') && !exists('g:YCM_HIGHLIGHT_GROUP')
   let g:YCM_HIGHLIGHT_GROUP = {
         \ 'typeParameter': 'TSType',
