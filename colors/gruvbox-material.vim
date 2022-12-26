@@ -670,6 +670,30 @@ if has('nvim-0.8.0')
   highlight! link @variable.builtin TSVariableBuiltin
 endif
 " }}}
+" neovim/lsp-semantic-tokens {{{
+highlight! link LspNamespace TSNamespace
+highlight! link LspType TSType
+highlight! link LspClass TSType
+highlight! link LspEnum TSType
+highlight! link LspInterface TSType
+highlight! link LspStruct TSType
+highlight! link LspTypeParameter TSType
+highlight! link LspParameter TSParameter
+highlight! link LspVariable TSVariable
+highlight! link LspProperty TSProperty
+highlight! link LspEnumMember TSVariableBuiltin
+highlight! link LspEvent TSLabel
+highlight! link LspFunction TSFunction
+highlight! link LspMethod TSMethod
+highlight! link LspMacro TSMacro
+highlight! link LspKeyword TSKeyword
+highlight! link LspModifier TSOperator
+highlight! link LspComment TSComment
+highlight! link LspString TSString
+highlight! link LspNumber TSNumber
+highlight! link LspRegexp TSStringRegexp
+highlight! link LspOperator TSOperator
+" }}}
 " neoclide/coc.nvim {{{
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
 call gruvbox_material#highlight('CocSearch', s:palette.green, s:palette.none, 'bold')
