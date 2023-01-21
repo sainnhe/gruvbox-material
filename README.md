@@ -39,6 +39,41 @@ There are 3 palettes available in this color scheme:
 
 </details>
 
+Below are the full palettes for your own artistic endeavors:
+
+<details>
+  <summary><code>material</code>: Carefully designed to have a soft contrast</summary>
+
+|        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
+| :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |  ![material-hard-dark](https://user-images.githubusercontent.com/58662350/213884009-87533cf3-e3c5-4d46-85f7-f6993b6dd887.png)  |  ![material-hard-light](https://user-images.githubusercontent.com/58662350/213884015-bd5a31bd-ccb5-4841-8caa-70cdb10a6b0e.png)  |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![material-medium-dark](https://user-images.githubusercontent.com/58662350/213884019-cbcd5f00-5bef-4a37-9139-0570770330b6.png) | ![material-medium-light](https://user-images.githubusercontent.com/58662350/213884028-26b692fc-4a2d-40f7-8ecb-ae28fa69c6b0.png) |
+|  𝐒𝐨𝐟𝐭  |  ![material-soft-dark](https://user-images.githubusercontent.com/58662350/213884037-97bb9a1b-cc5a-46c1-8d44-877cd85b1cdc.png)  |  ![material-soft-light](https://user-images.githubusercontent.com/58662350/213884039-4eac92cc-c23a-4add-8d45-6838daf9d48b.png)  |
+
+</details>
+
+<details>
+  <summary><code>mix</code>: Color palette obtained by calculating the mean of the other two</summary>
+
+|        |                                                           𝐃𝐚𝐫𝐤                                                           |                                                           𝐋𝐢𝐠𝐡𝐭                                                           |
+| :----: | :----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |  ![mix-hard-dark](https://user-images.githubusercontent.com/58662350/213884044-fdd95ba6-d75c-4983-8297-f5b39d794027.png)  |  ![mix-hard-light](https://user-images.githubusercontent.com/58662350/213884055-a5615ee6-c14e-422b-8971-112f55c4b745.png)  |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![mix-medium-dark](https://user-images.githubusercontent.com/58662350/213884062-3d9574ea-9f92-4d4e-b53a-46726192fffa.png) | ![mix-medium-light](https://user-images.githubusercontent.com/58662350/213884069-edbbb8a6-1150-46af-8e68-3ab0a0066b96.png) |
+|  𝐒𝐨𝐟𝐭  |  ![mix-soft-dark](https://user-images.githubusercontent.com/58662350/213884074-4c351ba6-deb5-4bda-abfc-2d78fe4fedd4.png)  |  ![mix-soft-light](https://user-images.githubusercontent.com/58662350/213884077-182b1cda-dfab-4a07-b76a-bc70490d7d54.png)  |
+
+</details>
+
+<details>
+  <summary><code>original</code>: The color palette used in the original gruvbox</summary>
+
+|        |                                                             𝐃𝐚𝐫𝐤                                                              |                                                             𝐋𝐢𝐠𝐡𝐭                                                              |
+| :----: | :---------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+|  𝐇𝐚𝐫𝐝  |  ![original-hard-dark](https://user-images.githubusercontent.com/58662350/213884080-8f3be305-8ff1-48d2-9bc8-c6db4ed9c143.png)  |  ![original-hard-light](https://user-images.githubusercontent.com/58662350/213884083-becbfe22-e063-4dcd-8ee0-14fc5b52c77b.png)  |
+| 𝐌𝐞𝐝𝐢𝐮𝐦 | ![original-medium-dark](https://user-images.githubusercontent.com/58662350/213884089-4cea3374-b918-4bd1-8ca5-ac87a9bb9d83.png) | ![original-medium-light](https://user-images.githubusercontent.com/58662350/213884092-b4336e83-8556-4f04-a0e5-8e18ab57800f.png) |
+|  𝐒𝐨𝐟𝐭  |  ![original-soft-dark](https://user-images.githubusercontent.com/58662350/213884099-88d47fa6-ea20-49ad-b706-072e928b3e0a.png)  |  ![original-soft-light](https://user-images.githubusercontent.com/58662350/213884102-ab77fd5a-455f-4195-a7bb-61182d2989fc.png)  |
+
+</details>
+
 This color scheme uses the `material` palette by default, you can use a global variable to switch to another palette.
 
 ### Features
