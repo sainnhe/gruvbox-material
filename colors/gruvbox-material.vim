@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan  3 02:26:57 UTC 2023'
+let s:last_modified = 'Mon Feb 27 03:32:07 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -353,14 +353,13 @@ call gruvbox_material#highlight('Character', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('Constant', s:palette.aqua, s:palette.none)
 call gruvbox_material#highlight('Macro', s:palette.aqua, s:palette.none)
 call gruvbox_material#highlight('Identifier', s:palette.blue, s:palette.none)
+call gruvbox_material#highlight('Todo', s:palette.bg0, s:palette.blue, 'bold')
 if s:configuration.disable_italic_comment
   call gruvbox_material#highlight('Comment', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('SpecialComment', s:palette.grey1, s:palette.none)
-  call gruvbox_material#highlight('Todo', s:palette.purple, s:palette.none)
 else
   call gruvbox_material#highlight('Comment', s:palette.grey1, s:palette.none, 'italic')
   call gruvbox_material#highlight('SpecialComment', s:palette.grey1, s:palette.none, 'italic')
-  call gruvbox_material#highlight('Todo', s:palette.purple, s:palette.none, 'italic')
 endif
 call gruvbox_material#highlight('Delimiter', s:palette.fg0, s:palette.none)
 call gruvbox_material#highlight('Ignore', s:palette.grey1, s:palette.none)
@@ -517,7 +516,7 @@ endif
 call gruvbox_material#highlight('TSStrong', s:palette.none, s:palette.none, 'bold')
 call gruvbox_material#highlight('TSEmphasis', s:palette.none, s:palette.none, 'italic')
 call gruvbox_material#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
-call gruvbox_material#highlight('TSNote', s:palette.bg0, s:palette.blue, 'bold')
+call gruvbox_material#highlight('TSNote', s:palette.bg0, s:palette.green, 'bold')
 call gruvbox_material#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
 call gruvbox_material#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
 highlight! link TSAnnotation Purple
