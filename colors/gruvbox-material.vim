@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Feb 27 03:32:07 UTC 2023'
+let s:last_modified = 'Fri Mar 10 10:58:21 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1130,6 +1130,46 @@ highlight! link BookmarkLine DiffChange
 highlight! link BookmarkAnnotationLine DiffAdd
 " }}}
 if has('nvim')
+
+" Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
+let s:lsp_kind_color = [
+      \ ["Array", "Aqua"],
+      \ ["Boolean", "Aqua"],
+      \ ["Class", "Red"],
+      \ ["Color", "Aqua"],
+      \ ["Constant", "Blue"],
+      \ ["Constructor", "Green"],
+      \ ["Default", "Aqua"],
+      \ ["Enum", "Yellow"],
+      \ ["EnumMember", "Purple"],
+      \ ["Event", "Orange"],
+      \ ["Field", "Green"],
+      \ ["File", "Green"],
+      \ ["Folder", "Aqua"],
+      \ ["Function", "Green"],
+      \ ["Interface", "Yellow"],
+      \ ["Key", "Red"],
+      \ ["Keyword", "Red"],
+      \ ["Method", "Green"],
+      \ ["Module", "Purple"],
+      \ ["Namespace", "Purple"],
+      \ ["Null", "Aqua"],
+      \ ["Number", "Aqua"],
+      \ ["Object", "Aqua"],
+      \ ["Operator", "Orange"],
+      \ ["Package", "Purple"],
+      \ ["Property", "Blue"],
+      \ ["Reference", "Aqua"],
+      \ ["Snippet", "Aqua"],
+      \ ["String", "Aqua"],
+      \ ["Struct", "Yellow"],
+      \ ["Text", "Fg"],
+      \ ["TypeParameter", "Yellow"],
+      \ ["Unit", "Purple"],
+      \ ["Value", "Purple"],
+      \ ["Variable", "Blue"],
+      \ ]
+
 " hrsh7th/nvim-cmp {{{
 call gruvbox_material#highlight('CmpItemAbbrMatch', s:palette.green, s:palette.none, 'bold')
 call gruvbox_material#highlight('CmpItemAbbrMatchFuzzy', s:palette.green, s:palette.none, 'bold')
@@ -1137,31 +1177,24 @@ highlight! link CmpItemAbbr Fg
 highlight! link CmpItemAbbrDeprecated Grey
 highlight! link CmpItemMenu Fg
 highlight! link CmpItemKind Yellow
-highlight! link CmpItemKindText Fg
-highlight! link CmpItemKindMethod Green
-highlight! link CmpItemKindFunction Green
-highlight! link CmpItemKindConstructor Green
-highlight! link CmpItemKindField Green
-highlight! link CmpItemKindVariable Blue
-highlight! link CmpItemKindClass Yellow
-highlight! link CmpItemKindInterface Yellow
-highlight! link CmpItemKindModule Yellow
-highlight! link CmpItemKindProperty Blue
-highlight! link CmpItemKindUnit Purple
-highlight! link CmpItemKindValue Purple
-highlight! link CmpItemKindEnum Yellow
-highlight! link CmpItemKindKeyword Red
-highlight! link CmpItemKindSnippet Aqua
-highlight! link CmpItemKindColor Aqua
-highlight! link CmpItemKindFile Aqua
-highlight! link CmpItemKindReference Aqua
-highlight! link CmpItemKindFolder Aqua
-highlight! link CmpItemKindEnumMember Purple
-highlight! link CmpItemKindConstant Blue
-highlight! link CmpItemKindStruct Yellow
-highlight! link CmpItemKindEvent Orange
-highlight! link CmpItemKindOperator Orange
-highlight! link CmpItemKindTypeParameter Yellow
+for kind in s:lsp_kind_color
+  execute "highlight! link CmpItemKind" . kind[0] . " " . kind[1]
+endfor
+" }}}
+" syn_begin: aerial {{{
+" https://github.com/stevearc/aerial.nvim
+highlight! link AerialLine CursorLine
+highlight! link AerialGuide LineNr
+for kind in s:lsp_kind_color
+  execute "highlight! link Aerial" . kind[0] . "Icon " . kind[1]
+endfor
+" syn_end }}}
+" SmiteshP/nvim-navic {{{
+highlight! link NavicText Fg
+highlight! link NavicSeparator Grey
+for kind in s:lsp_kind_color
+  execute "highlight! link NavicIcons" . kind[0] . " " . kind[1]
+endfor
 " }}}
 " folke/trouble.nvim {{{
 highlight! link TroubleText Fg
@@ -1423,33 +1456,9 @@ highlight! link packerTimeLow Green
 " https://github.com/neoclide/coc.nvim
 highlight! link CocTreeOpenClose Aqua
 highlight! link CocTreeDescription Grey
-highlight! link CocSymbolFile Green
-highlight! link CocSymbolModule Purple
-highlight! link CocSymbolNamespace Purple
-highlight! link CocSymbolPackage Purple
-highlight! link CocSymbolClass Red
-highlight! link CocSymbolMethod Green
-highlight! link CocSymbolProperty Blue
-highlight! link CocSymbolField Green
-highlight! link CocSymbolConstructor Green
-highlight! link CocSymbolEnum Yellow
-highlight! link CocSymbolInterface Yellow
-highlight! link CocSymbolFunction Green
-highlight! link CocSymbolVariable Blue
-highlight! link CocSymbolConstant Blue
-highlight! link CocSymbolString Aqua
-highlight! link CocSymbolNumber Aqua
-highlight! link CocSymbolBoolean Aqua
-highlight! link CocSymbolArray Aqua
-highlight! link CocSymbolObject Aqua
-highlight! link CocSymbolKey Red
-highlight! link CocSymbolNull Aqua
-highlight! link CocSymbolEnumMember Aqua
-highlight! link CocSymbolStruct Yellow
-highlight! link CocSymbolEvent Orange
-highlight! link CocSymbolOperator Orange
-highlight! link CocSymbolTypeParameter Yellow
-highlight! link CocSymbolDefault Aqua
+for kind in s:lsp_kind_color
+  execute "highlight! link CocSymbol" . kind[0] . " " . kind[1]
+endfor
 " syn_end }}}
 " syn_begin: coc-explorer {{{
 " https://github.com/weirongxu/coc-explorer
@@ -1521,37 +1530,6 @@ highlight! link VistaPrivate Red
 " syn_begin: Outline {{{
 " https://github.com/simrat39/symbols-outline.nvim
 highlight! link FocusedSymbol NormalFloat
-" syn_end }}}
-" syn_begin: aerial {{{
-" https://github.com/stevearc/aerial.nvim
-highlight! link AerialLine CursorLine
-highlight! link AerialGuide LineNr
-highlight! link AerialFileIcon Green
-highlight! link AerialModuleIcon Purple
-highlight! link AerialNamespaceIcon Purple
-highlight! link AerialPackageIcon Purple
-highlight! link AerialClassIcon Red
-highlight! link AerialMethodIcon Green
-highlight! link AerialPropertyIcon Blue
-highlight! link AerialFieldIcon Green
-highlight! link AerialConstructorIcon Green
-highlight! link AerialEnumIcon Yellow
-highlight! link AerialInterfaceIcon Yellow
-highlight! link AerialFunctionIcon Green
-highlight! link AerialVariableIcon Blue
-highlight! link AerialConstantIcon Blue
-highlight! link AerialStringIcon Aqua
-highlight! link AerialNumberIcon Aqua
-highlight! link AerialBooleanIcon Aqua
-highlight! link AerialArrayIcon Aqua
-highlight! link AerialObjectIcon Aqua
-highlight! link AerialKeyIcon Red
-highlight! link AerialNullIcon Aqua
-highlight! link AerialEnumMemberIcon Aqua
-highlight! link AerialStructIcon Yellow
-highlight! link AerialEventIcon Orange
-highlight! link AerialOperatorIcon Orange
-highlight! link AerialTypeParameterIcon Yellow
 " syn_end }}}
 " syn_begin: nerdtree {{{
 " https://github.com/preservim/nerdtree
