@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Mar 10 10:58:21 UTC 2023'
+let s:last_modified = 'Fri Mar 10 14:45:00 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1132,7 +1132,7 @@ highlight! link BookmarkAnnotationLine DiffAdd
 if has('nvim')
 
 " Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
-let s:lsp_kind_color = [
+let g:gruvbox_material_lsp_kind_color = [
       \ ["Array", "Aqua"],
       \ ["Boolean", "Aqua"],
       \ ["Class", "Red"],
@@ -1177,22 +1177,14 @@ highlight! link CmpItemAbbr Fg
 highlight! link CmpItemAbbrDeprecated Grey
 highlight! link CmpItemMenu Fg
 highlight! link CmpItemKind Yellow
-for kind in s:lsp_kind_color
+for kind in g:gruvbox_material_lsp_kind_color
   execute "highlight! link CmpItemKind" . kind[0] . " " . kind[1]
 endfor
 " }}}
-" syn_begin: aerial {{{
-" https://github.com/stevearc/aerial.nvim
-highlight! link AerialLine CursorLine
-highlight! link AerialGuide LineNr
-for kind in s:lsp_kind_color
-  execute "highlight! link Aerial" . kind[0] . "Icon " . kind[1]
-endfor
-" syn_end }}}
 " SmiteshP/nvim-navic {{{
 highlight! link NavicText Fg
 highlight! link NavicSeparator Grey
-for kind in s:lsp_kind_color
+for kind in g:gruvbox_material_lsp_kind_color
   execute "highlight! link NavicIcons" . kind[0] . " " . kind[1]
 endfor
 " }}}
@@ -1456,7 +1448,7 @@ highlight! link packerTimeLow Green
 " https://github.com/neoclide/coc.nvim
 highlight! link CocTreeOpenClose Aqua
 highlight! link CocTreeDescription Grey
-for kind in s:lsp_kind_color
+for kind in g:gruvbox_material_lsp_kind_color
   execute "highlight! link CocSymbol" . kind[0] . " " . kind[1]
 endfor
 " syn_end }}}
@@ -1530,6 +1522,14 @@ highlight! link VistaPrivate Red
 " syn_begin: Outline {{{
 " https://github.com/simrat39/symbols-outline.nvim
 highlight! link FocusedSymbol NormalFloat
+" syn_end }}}
+" syn_begin: aerial {{{
+" https://github.com/stevearc/aerial.nvim
+highlight! link AerialLine CursorLine
+highlight! link AerialGuide LineNr
+for kind in g:gruvbox_material_lsp_kind_color
+  execute "highlight! link Aerial" . kind[0] . "Icon " . kind[1]
+endfor
 " syn_end }}}
 " syn_begin: nerdtree {{{
 " https://github.com/preservim/nerdtree
