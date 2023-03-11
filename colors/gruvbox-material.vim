@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Mar 10 14:45:00 UTC 2023'
+let s:last_modified = 'Sat Mar 11 11:28:00 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -470,6 +470,44 @@ elseif s:configuration.current_word ==# 'grey background'
 else
   call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
+" Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
+let g:gruvbox_material_lsp_kind_color = [
+      \ ["Array", "Aqua"],
+      \ ["Boolean", "Aqua"],
+      \ ["Class", "Red"],
+      \ ["Color", "Aqua"],
+      \ ["Constant", "Blue"],
+      \ ["Constructor", "Green"],
+      \ ["Default", "Aqua"],
+      \ ["Enum", "Yellow"],
+      \ ["EnumMember", "Purple"],
+      \ ["Event", "Orange"],
+      \ ["Field", "Green"],
+      \ ["File", "Green"],
+      \ ["Folder", "Aqua"],
+      \ ["Function", "Green"],
+      \ ["Interface", "Yellow"],
+      \ ["Key", "Red"],
+      \ ["Keyword", "Red"],
+      \ ["Method", "Green"],
+      \ ["Module", "Purple"],
+      \ ["Namespace", "Purple"],
+      \ ["Null", "Aqua"],
+      \ ["Number", "Aqua"],
+      \ ["Object", "Aqua"],
+      \ ["Operator", "Orange"],
+      \ ["Package", "Purple"],
+      \ ["Property", "Blue"],
+      \ ["Reference", "Aqua"],
+      \ ["Snippet", "Aqua"],
+      \ ["String", "Aqua"],
+      \ ["Struct", "Yellow"],
+      \ ["Text", "Fg"],
+      \ ["TypeParameter", "Yellow"],
+      \ ["Unit", "Purple"],
+      \ ["Value", "Purple"],
+      \ ["Variable", "Blue"],
+      \ ]
 " }}}
 " }}}
 " Terminal: {{{
@@ -1130,46 +1168,6 @@ highlight! link BookmarkLine DiffChange
 highlight! link BookmarkAnnotationLine DiffAdd
 " }}}
 if has('nvim')
-
-" Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
-let g:gruvbox_material_lsp_kind_color = [
-      \ ["Array", "Aqua"],
-      \ ["Boolean", "Aqua"],
-      \ ["Class", "Red"],
-      \ ["Color", "Aqua"],
-      \ ["Constant", "Blue"],
-      \ ["Constructor", "Green"],
-      \ ["Default", "Aqua"],
-      \ ["Enum", "Yellow"],
-      \ ["EnumMember", "Purple"],
-      \ ["Event", "Orange"],
-      \ ["Field", "Green"],
-      \ ["File", "Green"],
-      \ ["Folder", "Aqua"],
-      \ ["Function", "Green"],
-      \ ["Interface", "Yellow"],
-      \ ["Key", "Red"],
-      \ ["Keyword", "Red"],
-      \ ["Method", "Green"],
-      \ ["Module", "Purple"],
-      \ ["Namespace", "Purple"],
-      \ ["Null", "Aqua"],
-      \ ["Number", "Aqua"],
-      \ ["Object", "Aqua"],
-      \ ["Operator", "Orange"],
-      \ ["Package", "Purple"],
-      \ ["Property", "Blue"],
-      \ ["Reference", "Aqua"],
-      \ ["Snippet", "Aqua"],
-      \ ["String", "Aqua"],
-      \ ["Struct", "Yellow"],
-      \ ["Text", "Fg"],
-      \ ["TypeParameter", "Yellow"],
-      \ ["Unit", "Purple"],
-      \ ["Value", "Purple"],
-      \ ["Variable", "Blue"],
-      \ ]
-
 " hrsh7th/nvim-cmp {{{
 call gruvbox_material#highlight('CmpItemAbbrMatch', s:palette.green, s:palette.none, 'bold')
 call gruvbox_material#highlight('CmpItemAbbrMatchFuzzy', s:palette.green, s:palette.none, 'bold')
