@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Mar 11 11:28:00 UTC 2023'
+let s:last_modified = 'Thu Mar 23 10:41:43 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -706,6 +706,9 @@ if has('nvim-0.8.0')
   highlight! link @variable TSVariable
   highlight! link @variable.builtin TSVariableBuiltin
 endif
+" }}}
+" github/copilot.vim {{{
+highlight! link CopilotSuggestion Grey
 " }}}
 " neovim/lsp-semantic-tokens {{{
 highlight! link LspNamespace TSNamespace
