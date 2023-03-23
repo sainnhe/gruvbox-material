@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Mar 23 10:41:43 UTC 2023'
+let s:last_modified = 'Thu Mar 23 11:10:48 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -82,6 +82,7 @@ else
 endif
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
+highlight! link CurSearch IncSearch
 call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
 if s:configuration.ui_contrast ==# 'low'
   call gruvbox_material#highlight('Conceal', s:palette.bg5, s:palette.none)
@@ -155,6 +156,8 @@ elseif s:configuration.menu_selection_background ==# 'red'
 else
   call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette[s:configuration.menu_selection_background])
 endif
+call gruvbox_material#highlight('PmenuKind', s:palette.green, s:palette.bg3)
+call gruvbox_material#highlight('PmenuExtra', s:palette.grey2, s:palette.bg3)
 highlight! link WildMenu PmenuSel
 call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
