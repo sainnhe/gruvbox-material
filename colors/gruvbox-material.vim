@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Mar 23 11:10:48 UTC 2023'
+let s:last_modified = 'Wed Apr  5 09:49:31 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -712,30 +712,6 @@ endif
 " }}}
 " github/copilot.vim {{{
 highlight! link CopilotSuggestion Grey
-" }}}
-" neovim/lsp-semantic-tokens {{{
-highlight! link LspNamespace TSNamespace
-highlight! link LspType TSType
-highlight! link LspClass TSType
-highlight! link LspEnum TSType
-highlight! link LspInterface TSType
-highlight! link LspStruct TSType
-highlight! link LspTypeParameter TSType
-highlight! link LspParameter TSParameter
-highlight! link LspVariable TSVariable
-highlight! link LspProperty TSProperty
-highlight! link LspEnumMember TSVariableBuiltin
-highlight! link LspEvent TSLabel
-highlight! link LspFunction TSFunction
-highlight! link LspMethod TSMethod
-highlight! link LspMacro TSMacro
-highlight! link LspKeyword TSKeyword
-highlight! link LspModifier TSOperator
-highlight! link LspComment TSComment
-highlight! link LspString TSString
-highlight! link LspNumber TSNumber
-highlight! link LspRegexp TSStringRegexp
-highlight! link LspOperator TSOperator
 " }}}
 " neoclide/coc.nvim {{{
 call gruvbox_material#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
