@@ -216,7 +216,7 @@ E.g.
     let g:gruvbox_material_better_performance = 1
 
     colorscheme gruvbox-material
-    let g:lightline.colorscheme = 'gruvbox_material'
+    let g:lightline = {'colorscheme' : 'gruvbox_material'}
 <
 ------------------------------------------------------------------------------
                                                  *g:gruvbox_material_background*
