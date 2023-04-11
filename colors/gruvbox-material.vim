@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Apr 11 11:48:00 UTC 2023'
+let s:last_modified = 'Tue Apr 11 15:49:51 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1610,6 +1610,7 @@ if !s:configuration.transparent_background
   call gruvbox_material#highlight('NeoTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
   call gruvbox_material#highlight('NeoTreeVertSplit', s:palette.bg0, s:palette.bg0)
 endif
+highlight! link NeoTreeDirectoryIcon Orange
 highlight! link NeoTreeGitAdded Green
 highlight! link NeoTreeGitConflict Yellow
 highlight! link NeoTreeGitDeleted Red
