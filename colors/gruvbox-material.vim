@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Apr 20 22:05:59 UTC 2023'
+let s:last_modified = 'Thu Apr 20 23:02:48 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -2424,6 +2424,12 @@ highlight! link luaFunc GreenBold
 highlight! link luaFunction Aqua
 highlight! link luaTable Fg
 highlight! link luaIn RedItalic
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link luaTSConstructor TSPunctBracket
+if has('nvim-0.8.0')
+  highlight! link @constructor.lua luaTSConstructor
+endif
 " }}}
 " vim-lua: https://github.com/tbastos/vim-lua {{{
 highlight! link luaFuncCall GreenBold
