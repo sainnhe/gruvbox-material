@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Apr 21 20:24:17 UTC 2023'
+let s:last_modified = 'Fri Apr 21 21:30:29 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1987,6 +1987,11 @@ highlight! link jsTemplateExpression Yellow
 highlight! link jsTemplateBraces Yellow
 highlight! link jsClassMethodType Orange
 " }}}
+" nvim-treesitter/nvim-treesitter {{{
+if has('nvim-0.9.0')
+  highlight! link @lsp.typemod.variable.defaultLibrary.javascript TSConstBuiltin
+endif
+" }}}
 " yajs: https://github.com/othree/yajs.vim {{{
 highlight! link javascriptEndColons Fg
 highlight! link javascriptOpSymbol Orange
@@ -2279,6 +2284,11 @@ highlight! link typescriptCryptoProp Aqua
 highlight! link typescriptDOMFormProp Aqua
 highlight! link typescriptBOMHistoryProp Aqua
 highlight! link typescriptMathStaticProp Aqua
+" }}}
+" nvim-treesitter/nvim-treesitter {{{
+if has('nvim-0.9.0')
+  highlight! link @lsp.typemod.variable.defaultLibrary.typescript TSConstBuiltin
+endif
 " }}}
 " syn_end }}}
 " syn_begin: dart {{{
