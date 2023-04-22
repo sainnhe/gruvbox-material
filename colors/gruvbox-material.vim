@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Apr 21 21:30:29 UTC 2023'
+let s:last_modified = 'Sat Apr 22 21:12:18 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -456,11 +456,16 @@ if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
   highlight! link VirtualTextHint Grey
-else
+elseif s:configuration.diagnostic_virtual_text ==# 'colored'
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
   highlight! link VirtualTextInfo Blue
   highlight! link VirtualTextHint Green
+else
+  call gruvbox_material#highlight('VirtualTextWarning', s:palette.yellow, s:palette.bg_visual_yellow)
+  call gruvbox_material#highlight('VirtualTextError', s:palette.red, s:palette.bg_visual_red)
+  call gruvbox_material#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_visual_blue)
+  call gruvbox_material#highlight('VirtualTextHint', s:palette.green, s:palette.bg_visual_green)
 endif
 call gruvbox_material#highlight('ErrorFloat', s:palette.red, s:palette.bg3)
 call gruvbox_material#highlight('WarningFloat', s:palette.yellow, s:palette.bg3)
