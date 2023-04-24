@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Apr 24 18:46:43 UTC 2023'
+let s:last_modified = 'Mon Apr 24 19:15:08 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1859,6 +1859,12 @@ highlight! link htmlArg Aqua
 highlight! link htmlScriptTag Purple
 highlight! link htmlSpecialTagName RedItalic
 " }}}
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link htmlTSText TSNone
+if has('nvim-0.8.0')
+  highlight! link @text.html htmlTSText
+endif
+" }}}
 " syn_end }}}
 " syn_begin: xml {{{
 " builtin: https://github.com/chrisbra/vim-xml-ftplugin {{{
@@ -2703,12 +2709,6 @@ highlight! link elixirExUnitMacro RedItalic
 highlight! link lispAtomMark Green
 highlight! link lispKey Aqua
 highlight! link lispFunc OrangeItalic
-" }}}
-" nvim-treesitter/nvim-treesitter {{{
-highlight! link htmlTSText TSNone
-if has('nvim-0.8.0')
-  highlight! link @text.html htmlTSText
-endif
 " }}}
 " syn_end }}}
 " syn_begin: clojure {{{
