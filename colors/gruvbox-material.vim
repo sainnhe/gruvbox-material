@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Apr 22 21:12:18 UTC 2023'
+let s:last_modified = 'Mon Apr 24 18:46:43 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1995,6 +1995,7 @@ highlight! link jsClassMethodType Orange
 " nvim-treesitter/nvim-treesitter {{{
 if has('nvim-0.9.0')
   highlight! link @lsp.typemod.variable.defaultLibrary.javascript TSConstBuiltin
+  highlight! link @lsp.typemod.variable.defaultLibrary.javascriptreact TSConstBuiltin
 endif
 " }}}
 " yajs: https://github.com/othree/yajs.vim {{{
@@ -2291,8 +2292,13 @@ highlight! link typescriptBOMHistoryProp Aqua
 highlight! link typescriptMathStaticProp Aqua
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
+highlight! link tsxTSConstructor TSType
+if has('nvim-0.8.0')
+  highlight! link @constructor.tsx tsxTSConstructor
+endif
 if has('nvim-0.9.0')
   highlight! link @lsp.typemod.variable.defaultLibrary.typescript TSConstBuiltin
+  highlight! link @lsp.typemod.variable.defaultLibrary.typescriptreact TSConstBuiltin
 endif
 " }}}
 " syn_end }}}
@@ -2698,6 +2704,12 @@ highlight! link lispAtomMark Green
 highlight! link lispKey Aqua
 highlight! link lispFunc OrangeItalic
 " }}}
+" nvim-treesitter/nvim-treesitter {{{
+highlight! link htmlTSText TSNone
+if has('nvim-0.8.0')
+  highlight! link @text.html htmlTSText
+endif
+" }}}
 " syn_end }}}
 " syn_begin: clojure {{{
 " builtin: https://github.com/guns/vim-clojure-static {{{
@@ -2943,7 +2955,7 @@ highlight! link gitcommitFile Green
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 if has('nvim-0.8.0')
-  highlight! link @text.gitcommit Fg
+  highlight! link @text.gitcommit TSNone
 endif
 " }}}
 " syn_end }}}
