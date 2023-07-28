@@ -305,7 +305,13 @@ background), set this option to `2`.
                                        *g:gruvbox_material_dim_inactive_windows*
 g:gruvbox_material_dim_inactive_windows~
 
-Dim inactive windows. Only works in neovim currently.
+Dim inactive windows. Only works in Neovim currently.
+
+When this option is used in conjunction with |g:gruvbox_material_show_eob| set
+to 0, the end of the buffer will only be hidden inside the active window.
+Inside inactive windows, the end of buffer filler characters will be visible
+in dimmed symbols. This is due to the way Vim and Neovim handle
+|hl-EndOfBuffer|.
 
     Type:               |Number|
     Available values:   `0`, `1`
