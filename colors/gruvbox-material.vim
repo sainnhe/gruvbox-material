@@ -152,8 +152,13 @@ call gruvbox_material#highlight('PmenuKind', s:palette.green, s:palette.bg3)
 call gruvbox_material#highlight('PmenuExtra', s:palette.grey2, s:palette.bg3)
 highlight! link WildMenu PmenuSel
 call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
-call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
-call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg3)
+if s:configuration.float_style ==# 'dim'
+  call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg_dim)
+  call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
+else
+  call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
+  call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg3)
+endif
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
   call gruvbox_material#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -769,6 +774,7 @@ highlight! link CocErrorFloat ErrorFloat
 highlight! link CocWarningFloat WarningFloat
 highlight! link CocInfoFloat InfoFloat
 highlight! link CocHintFloat HintFloat
+highlight! link CocFloating NormalFloat
 highlight! link CocFloatDividingLine Grey
 highlight! link CocErrorHighlight ErrorText
 highlight! link CocWarningHighlight WarningText
