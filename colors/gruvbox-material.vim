@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Jul 28 07:26:16 UTC 2023'
+let s:last_modified = 'Mon Aug  7 07:21:35 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -459,10 +459,10 @@ else
   call gruvbox_material#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_visual_blue)
   call gruvbox_material#highlight('VirtualTextHint', s:palette.green, s:palette.bg_visual_green)
 endif
-call gruvbox_material#highlight('ErrorFloat', s:palette.red, s:palette.bg3)
-call gruvbox_material#highlight('WarningFloat', s:palette.yellow, s:palette.bg3)
-call gruvbox_material#highlight('InfoFloat', s:palette.blue, s:palette.bg3)
-call gruvbox_material#highlight('HintFloat', s:palette.green, s:palette.bg3)
+call gruvbox_material#highlight('ErrorFloat', s:palette.red, s:palette.none)
+call gruvbox_material#highlight('WarningFloat', s:palette.yellow, s:palette.none)
+call gruvbox_material#highlight('InfoFloat', s:palette.blue, s:palette.none)
+call gruvbox_material#highlight('HintFloat', s:palette.green, s:palette.none)
 if &diff
   call gruvbox_material#highlight('CurrentWord', s:palette.bg0, s:palette.bg_green)
 elseif s:configuration.current_word ==# 'grey background'
