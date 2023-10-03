@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct  3 17:59:07 UTC 2023'
+let s:last_modified = 'Tue Oct  3 20:27:18 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1233,6 +1233,10 @@ highlight! link HopUnmatched Grey
 " lukas-reineke/indent-blankline.nvim {{{
 call gruvbox_material#highlight('IblScope', s:palette.grey1, s:palette.none, 'nocombine')
 call gruvbox_material#highlight('IblIndent', s:palette.bg5, s:palette.none, 'nocombine')
+highlight! link IndentBlanklineContextChar IblScope
+highlight! link IndentBlanklineChar IblIndent
+highlight! link IndentBlanklineSpaceChar IndentBlanklineChar
+highlight! link IndentBlanklineSpaceCharBlankline IndentBlanklineChar
 " }}}
 " p00f/nvim-ts-rainbow {{{
 highlight! link rainbowcol1 Red
