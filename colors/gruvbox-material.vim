@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Oct  3 20:27:18 UTC 2023'
+let s:last_modified = 'Tue Oct 24 15:47:07 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -155,9 +155,11 @@ call gruvbox_material#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 if s:configuration.float_style ==# 'dim'
   call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg_dim)
   call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
+  call gruvbox_material#highlight('FloatTitle', s:palette.orange, s:palette.bg_dim, 'bold')
 else
   call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
   call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg3)
+  call gruvbox_material#highlight('FloatTitle', s:palette.orange, s:palette.bg3, 'bold')
 endif
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
