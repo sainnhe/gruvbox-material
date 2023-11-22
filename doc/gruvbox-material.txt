@@ -529,13 +529,14 @@ The loading time of this color scheme is very long because too many file types
 and plugins are optimized. This feature allows you to load part of the code on
 demand by placing them in the `after/syntax` directory.
 
-Enabling this option will reduce loading time by approximately 50%. Please note that the initial
-generation of syntax files, which occurs on the first Vim restart after enabling this option,
-requires up to 5 seconds to complete.
+Enabling this option will reduce loading time by approximately 50%.
 
     Type:               |Number|
     Available values:   `0`, `1`
     Default value:      `0`
+
+Note: the initial generation of syntax files, which occurs on the first Vim
+restart after enabling this option, requires up to 5 seconds to complete.
 
 ------------------------------------------------------------------------------
                                             *g:gruvbox_material_colors_override*

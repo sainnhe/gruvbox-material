@@ -54,8 +54,6 @@ This color scheme uses the `material` palette by default, you can use a global v
 
 ## Documentation
 
-NOTE: the first time `g:gruvbox_material_better_performance` (which is off by default) is enabled, vim will take a few extra seconds to start as it builds various syntax files. Please see the help documentation for more information.
-
 See [`:help gruvbox-material.txt`](https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt)
 
 ## Related Projects
