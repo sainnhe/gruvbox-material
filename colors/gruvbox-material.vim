@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jan 23 12:33:33 UTC 2024'
+let s:last_modified = 'Wed Jan 24 09:17:00 AM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -2588,6 +2588,7 @@ highlight! link goTSConstBuiltin AquaItalic
 if has('nvim-0.8.0')
   highlight! link @include.go goTSInclude
   highlight! link @namespace.go goTSNamespace
+  highlight! link @module.go goTSNamespace
   highlight! link @constant.builtin.go goTSConstBuiltin
 endif
 if has('nvim-0.9.0')
