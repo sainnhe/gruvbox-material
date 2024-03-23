@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Feb 10 11:04:09 AM UTC 2024'
+let s:last_modified = 'Sat Mar 23 12:22:51 PM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1819,7 +1819,7 @@ highlight! link mkdDelimiter Grey
 highlight! link mkdId Yellow
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
-if has('nvim-0.8.0')
+if has('nvim-0.8')
   highlight! link @markup.heading.1.markdown markdownH1
   highlight! link @markup.heading.2.markdown markdownH2
   highlight! link @markup.heading.3.markdown markdownH3
@@ -1832,6 +1832,10 @@ if has('nvim-0.8.0')
   highlight! link @markup.heading.4.marker.markdown @conceal
   highlight! link @markup.heading.5.marker.markdown @conceal
   highlight! link @markup.heading.6.marker.markdown @conceal
+  if !has('nvim-0.10')
+    call gruvbox_material#highlight('@markup.italic', s:palette.none, s:palette.none, 'italic')
+    call gruvbox_material#highlight('@markup.strikethrough', s:palette.none, s:palette.none, 'strikethrough')
+  endif
 endif
 " }}}
 " syn_end }}}
