@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Mar 23 12:22:51 PM UTC 2024'
+let s:last_modified = 'Tue Mar 26 09:33:46 PM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1879,6 +1879,7 @@ highlight! link texBeginEnd Red
 highlight! link texBeginEndName Blue
 highlight! link texDocType Purple
 highlight! link texDocTypeArgs Orange
+highlight! link texDelimiter Conceal
 " }}}
 " vimtex: https://github.com/lervag/vimtex {{{
 highlight! link texCmd Green
