@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Mar 26 09:33:46 PM UTC 2024'
+let s:last_modified = 'Tue Mar 26 09:49:17 PM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -628,7 +628,7 @@ highlight! link TSType YellowItalic
 highlight! link TSTypeBuiltin YellowItalic
 highlight! link TSTypeDefinition YellowItalic
 highlight! link TSTypeQualifier Orange
-highlight! link TSURI markdownUrl
+call gruvbox_material#highlight('TSURI', s:palette.blue, s:palette.none, 'underline')
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin PurpleItalic
 if has('nvim-0.8.0')
@@ -1783,10 +1783,10 @@ call gruvbox_material#highlight('markdownH3', s:palette.yellow, s:palette.none, 
 call gruvbox_material#highlight('markdownH4', s:palette.green, s:palette.none, 'bold')
 call gruvbox_material#highlight('markdownH5', s:palette.blue, s:palette.none, 'bold')
 call gruvbox_material#highlight('markdownH6', s:palette.purple, s:palette.none, 'bold')
-call gruvbox_material#highlight('markdownUrl', s:palette.blue, s:palette.none, 'underline')
 call gruvbox_material#highlight('markdownItalic', s:palette.none, s:palette.none, 'italic')
 call gruvbox_material#highlight('markdownBold', s:palette.none, s:palette.none, 'bold')
 call gruvbox_material#highlight('markdownItalicDelimiter', s:palette.grey1, s:palette.none, 'italic')
+highlight! link markdownUrl TSURI
 highlight! link markdownCode Green
 highlight! link markdownCodeBlock Aqua
 highlight! link markdownCodeDelimiter Aqua
