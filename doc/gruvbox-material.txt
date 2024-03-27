@@ -623,7 +623,7 @@ How to use custom colors?~
       " See `colors/gruvbox-material.vim` for all predefined highlight groups.
       highlight! link groupA groupB
       highlight! link groupC groupD
-    
+
       " Initialize the color palette.
       " The first parameter is a valid value for `g:gruvbox_material_background`,
       " the second parameter is a valid value for `g:gruvbox_material_foreground`,
@@ -638,13 +638,28 @@ How to use custom colors?~
       " See `autoload/gruvbox_material.vim` for the format of `l:palette`.
       call gruvbox_material#highlight('groupE', l:palette.red, l:palette.none, 'undercurl', l:palette.red)
     endfunction
-    
+
     augroup GruvboxMaterialCustom
       autocmd!
       autocmd ColorScheme gruvbox-material call s:gruvbox_material_custom()
     augroup END
-    
+
     colorscheme gruvbox-material
+<
+Or in Neovim (Lua configuration):
+>
+    vim.api.nvim_create_autocmd('ColorScheme', {
+      group = vim.api.nvim_create_augroup('custom_highlights_gruvboxmaterial', {}),
+      pattern = 'gruvbox-material',
+      callback = function()
+        local config = vim.fn['gruvbox_material#get_configuration']()
+        local palette = vim.fn['gruvbox_material#get_palette'](config.background, config.foreground, config.colors_override)
+        local set_hl = vim.fn['gruvbox_material#highlight']
+
+        set_hl('Search', palette.none, palette.bg_visual_yellow)
+        set_hl('IncSearch', palette.none, palette.bg_visual_red)
+      end
+    })
 <
 Note: Make sure to define the `augroup` before declare the `colorscheme`.
 
