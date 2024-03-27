@@ -355,7 +355,11 @@ call gruvbox_material#highlight('Character', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('Constant', s:palette.aqua, s:palette.none)
 call gruvbox_material#highlight('Macro', s:palette.aqua, s:palette.none)
 call gruvbox_material#highlight('Identifier', s:palette.blue, s:palette.none)
-call gruvbox_material#highlight('Todo', s:palette.bg0, s:palette.blue, 'bold')
+if has('nvim')
+  call gruvbox_material#highlight('Todo', s:palette.bg0, s:palette.blue, 'bold')
+else
+  call gruvbox_material#highlight('Todo', s:palette.blue, s:palette.bg0, 'reverse,bold')
+endif
 if s:configuration.disable_italic_comment
   call gruvbox_material#highlight('Comment', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('SpecialComment', s:palette.grey1, s:palette.none)
