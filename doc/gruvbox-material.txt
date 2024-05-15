@@ -64,6 +64,19 @@ Via Plugin Manager~
     For better syntax highlighting support, please install
     https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
 
+    In Neovim using lazy.nvim (Lua configuration):
+>
+        {
+          'sainnhe/everforest',
+          lazy = false,
+          priority = 1000,
+          config = function()
+            vim.g.everforest_enable_italic = true
+            vim.cmd.colorscheme('everforest')
+          end
+        }
+<
+
 ------------------------------------------------------------------------------
 
 Via Pack Feature~
@@ -105,23 +118,6 @@ Manually~
     copy `/path/to/gruvbox-material/lua/lualine/themes/gruvbox-material.lua`
     to `~/.config/nvim/lua/lualine/themes/` .
 
-------------------------------------------------------------------------------
-Lazy Vim~ 
-add in init.lua :-
-
-     return{
-      "sainnhe/gruvbox-material",
-      name = "gruvbox-material",
-      lazy = false,
-      priority = 1000,
-
-      config = function()
-       -- your config goes here
-       -- eg vim.g.gruvbox_material_transparent_background = 1
-
-       vim.cmd("colorscheme gruvbox-material") -- setting the theme
-      end,
-     } 
 ------------------------------------------------------------------------------
 
 AUR~
