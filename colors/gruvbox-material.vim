@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May 15 01:52:16 PM UTC 2024'
+let s:last_modified = 'Wed May 15 01:54:48 PM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1435,6 +1435,12 @@ call gruvbox_material#highlight('LightspeedUnlabeledMatch', s:palette.fg0, s:pal
 call gruvbox_material#highlight('LightspeedPendingOpArea', s:palette.bg0, s:palette.green)
 highlight! link LightspeedMaskedChar Purple
 highlight! link LightspeedGreyWash Grey
+" }}}
+" nvim-neotest/neotest {{{
+highlight! link NeotestPassed GreenSign
+highlight! link NeotestFailed RedSign
+highlight! link NeotestRunning YellowSign
+highlight! link NeotestSkipped BlueSign
 " }}}
 endif
 " }}}
@@ -3045,6 +3051,19 @@ highlight! link helpCommand Aqua
 highlight! link helpExample Green
 highlight! link helpSpecial Blue
 highlight! link helpSectionDelim Grey
+" syn_end }}}
+" syn_begin: neotest-summary {{{
+" https://github.com/nvim-neotest/neotest
+if has('nvim')
+highlight! link NeotestNamespace Purple
+highlight! link NeotestFile Blue
+highlight! link NeotestDir Directory
+highlight! link NeotestIndent NonText
+call gruvbox_material#highlight('NeotestExpandMarker', s:palette.bg5, s:palette.none)
+highlight! link NeotestAdapterName Red
+highlight! link NeotestMarked Orange
+highlight! link NeotestTarget Red
+endif
 " syn_end }}}
 " }}}
 
