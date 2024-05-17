@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Optimize `github/copilot.vim`.
+- Add `g:gruvbox_material_inlay_hints_background`.
 
 ## [1.2.5] - 2023-01-14
 
