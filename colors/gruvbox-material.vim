@@ -255,7 +255,8 @@ call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
   call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  highlight! link WinBarNC Grey
+  call gruvbox_material#highlight('WinBar', s:palette.grey2, s:palette.bg_dim, 'bold')
+  call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.bg_dim)
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
