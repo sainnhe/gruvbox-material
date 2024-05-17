@@ -24,6 +24,7 @@ function! gruvbox_material#get_configuration() "{{{
         \ 'show_eob': get(g:, 'gruvbox_material_show_eob', 1),
         \ 'float_style': get(g:, 'gruvbox_material_float_style', 'bright'),
         \ 'current_word': get(g:, 'gruvbox_material_current_word', get(g:, 'gruvbox_material_transparent_background', 0) == 0 ? 'grey background' : 'bold'),
+        \ 'inlay_hints_background': get(g:, 'gruvbox_material_inlay_hints_background', 'none'),
         \ 'statusline_style': get(g:, 'gruvbox_material_statusline_style', 'default'),
         \ 'lightline_disable_bold': get(g:, 'gruvbox_material_lightline_disable_bold', 0),
         \ 'diagnostic_text_highlight': get(g:, 'gruvbox_material_diagnostic_text_highlight', 0),

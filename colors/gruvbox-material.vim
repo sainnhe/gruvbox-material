@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed May 15 08:28:29 PM UTC 2024'
+let s:last_modified = 'Fri May 17 09:33:15 UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -299,6 +299,7 @@ if has('nvim')
   highlight! link LspReferenceText CurrentWord
   highlight! link LspReferenceRead CurrentWord
   highlight! link LspReferenceWrite CurrentWord
+  highlight! link LspInlayHint InlayHints
   highlight! link LspCodeLens VirtualTextInfo
   highlight! link LspCodeLensSeparator VirtualTextHint
   highlight! link LspSignatureActiveParameter Search
@@ -480,6 +481,15 @@ elseif s:configuration.current_word ==# 'grey background'
   call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.bg_current_word)
 else
   call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
+endif
+if s:configuration.inlay_hints_background ==# 'none'
+  highlight! link InlayHints LineNr
+else
+  if &background ==# 'dark'
+    call gruvbox_material#highlight('InlayHints', s:palette.grey0, s:palette.bg_dim)
+  else
+    call gruvbox_material#highlight('InlayHints', s:palette.grey1, s:palette.bg_dim)
+  endif
 endif
 " Define a color for each LSP item kind to create highlights for nvim-cmp, aerial.nvim, nvim-navic and coc.nvim
 let g:gruvbox_material_lsp_kind_color = [
@@ -805,7 +815,7 @@ highlight! link CocPumMenu Pmenu
 highlight! link CocMenuSel PmenuSel
 highlight! link CocDisabled Grey
 highlight! link CocSnippetVisual DiffAdd
-highlight! link CocInlayHint LineNr
+highlight! link CocInlayHint InlayHints
 highlight! link CocNotificationProgress Green
 highlight! link CocNotificationButton PmenuSel
 highlight! link CocSemClass TSType
@@ -866,8 +876,8 @@ highlight! link LspWarningHighlight WarningText
 highlight! link LspInformationHighlight InfoText
 highlight! link LspHintHighlight HintText
 highlight! link lspReference CurrentWord
-highlight! link lspInlayHintsType LineNr
-highlight! link lspInlayHintsParameter LineNr
+highlight! link lspInlayHintsType InlayHints
+highlight! link lspInlayHintsParameter InlayHints
 highlight! link LspSemanticType TSType
 highlight! link LspSemanticClass TSType
 highlight! link LspSemanticEnum TSType
@@ -896,7 +906,7 @@ highlight! link YcmErrorLine ErrorLine
 highlight! link YcmWarningLine WarningLine
 highlight! link YcmErrorSection ErrorText
 highlight! link YcmWarningSection WarningText
-highlight! link YcmInlayHint LineNr
+highlight! link YcmInlayHint InlayHints
 highlight! link YcmErrorText VirtualTextError
 highlight! link YcmWarningText VirtualTextWarning
 if !has('nvim') && has('textprop') && !exists('g:YCM_HIGHLIGHT_GROUP')
