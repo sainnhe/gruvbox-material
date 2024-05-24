@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun May 19 06:38:06 PM UTC 2024'
+let s:last_modified = 'Fri May 24 10:49:30 AM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -182,6 +182,10 @@ if s:configuration.transparent_background == 2
     call gruvbox_material#highlight('TabLine', s:palette.grey2, s:palette.bg_statusline2)
     call gruvbox_material#highlight('TabLineFill', s:palette.grey2, s:palette.none)
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
+    if has('nvim')
+      call gruvbox_material#highlight('WinBar', s:palette.grey2, s:palette.none, 'bold')
+      call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.none)
+    endif
   elseif s:configuration.statusline_style ==# 'mix'
     call gruvbox_material#highlight('StatusLine', s:palette.grey2, s:palette.none)
     call gruvbox_material#highlight('StatusLineTerm', s:palette.grey2, s:palette.none)
@@ -190,6 +194,10 @@ if s:configuration.transparent_background == 2
     call gruvbox_material#highlight('TabLine', s:palette.grey2, s:palette.bg_statusline3)
     call gruvbox_material#highlight('TabLineFill', s:palette.grey2, s:palette.none)
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
+    if has('nvim')
+      call gruvbox_material#highlight('WinBar', s:palette.grey2, s:palette.none, 'bold')
+      call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.none)
+    endif
   else
     call gruvbox_material#highlight('StatusLine', s:palette.fg1, s:palette.none)
     call gruvbox_material#highlight('StatusLineTerm', s:palette.fg1, s:palette.none)
@@ -198,6 +206,10 @@ if s:configuration.transparent_background == 2
     call gruvbox_material#highlight('TabLine', s:palette.fg1, s:palette.bg_statusline3)
     call gruvbox_material#highlight('TabLineFill', s:palette.fg1, s:palette.none)
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
+    if has('nvim')
+      call gruvbox_material#highlight('WinBar', s:palette.fg1, s:palette.none, 'bold')
+      call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.none)
+    endif
   endif
 else
   if s:configuration.statusline_style ==# 'original'
@@ -208,6 +220,10 @@ else
     call gruvbox_material#highlight('TabLine', s:palette.grey2, s:palette.bg_statusline2)
     call gruvbox_material#highlight('TabLineFill', s:palette.grey2, s:palette.bg0)
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
+    if has('nvim')
+      call gruvbox_material#highlight('WinBar', s:palette.grey2, s:palette.bg_statusline2, 'bold')
+      call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.bg_statusline1)
+    endif
   elseif s:configuration.statusline_style ==# 'mix'
     call gruvbox_material#highlight('StatusLine', s:palette.grey2, s:palette.bg_statusline2)
     call gruvbox_material#highlight('StatusLineTerm', s:palette.grey2, s:palette.bg_statusline2)
@@ -216,6 +232,10 @@ else
     call gruvbox_material#highlight('TabLine', s:palette.grey2, s:palette.bg_statusline3)
     call gruvbox_material#highlight('TabLineFill', s:palette.grey2, s:palette.bg_statusline2)
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
+    if has('nvim')
+      call gruvbox_material#highlight('WinBar', s:palette.grey2, s:palette.bg_statusline2, 'bold')
+      call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.bg_statusline1)
+    endif
   else
     call gruvbox_material#highlight('StatusLine', s:palette.fg1, s:palette.bg_statusline1)
     call gruvbox_material#highlight('StatusLineTerm', s:palette.fg1, s:palette.bg_statusline1)
@@ -224,6 +244,10 @@ else
     call gruvbox_material#highlight('TabLine', s:palette.fg1, s:palette.bg_statusline3)
     call gruvbox_material#highlight('TabLineFill', s:palette.fg1, s:palette.bg_statusline1)
     call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
+    if has('nvim')
+      call gruvbox_material#highlight('WinBar', s:palette.fg1, s:palette.bg_statusline1, 'bold')
+      call gruvbox_material#highlight('WinBarNC', s:palette.grey1, s:palette.bg_statusline1)
+    endif
   endif
 endif
 if s:configuration.dim_inactive_windows
@@ -255,8 +279,6 @@ call gruvbox_material#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call gruvbox_material#highlight('ToolbarButton', s:palette.bg0, s:palette.grey2)
 if has('nvim')
   call gruvbox_material#highlight('Substitute', s:palette.bg0, s:palette.yellow)
-  highlight! link WinBar StatusLine
-  highlight! link WinBarNC StatusLineNC
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
