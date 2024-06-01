@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri May 24 10:49:30 AM UTC 2024'
+let s:last_modified = 'Sat Jun  1 03:11:50 AM UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1188,6 +1188,15 @@ highlight! link RainbowLevel5 Blue
 highlight! link RainbowLevel6 Purple
 highlight! link RainbowLevel7 Yellow
 highlight! link RainbowLevel8 Green
+" }}}
+" HiPhish/rainbow-delimiters.nvim {{{
+highlight! link RainbowDelimiterRed Red
+highlight! link RainbowDelimiterYellow Yellow
+highlight! link RainbowDelimiterBlue Blue
+highlight! link RainbowDelimiterOrange Orange
+highlight! link RainbowDelimiterGreen Green
+highlight! link RainbowDelimiterViolet Purple
+highlight! link RainbowDelimiterCyan Aqua
 " }}}
 " luochen1990/rainbow {{{
 if !exists('g:rbpt_colorpairs')
