@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Jun 25 13:28:41 UTC 2024'
+let s:last_modified = 'Mon Jul  8 07:54:35 UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -136,7 +136,7 @@ call gruvbox_material#highlight('MoreMsg', s:palette.yellow, s:palette.none, 'bo
 call gruvbox_material#highlight('MatchParen', s:palette.none, s:palette.bg4)
 call gruvbox_material#highlight('NonText', s:palette.bg5, s:palette.none)
 call gruvbox_material#highlight('Whitespace', s:palette.bg5, s:palette.none)
-call gruvbox_material#highlight('SpecialKey', s:palette.bg5, s:palette.none)
+call gruvbox_material#highlight('SpecialKey', s:palette.orange, s:palette.none)
 call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg3)
 call gruvbox_material#highlight('PmenuSbar', s:palette.none, s:palette.bg3)
 if s:configuration.menu_selection_background ==# 'grey'
