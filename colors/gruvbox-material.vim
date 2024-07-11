@@ -1442,6 +1442,7 @@ call gruvbox_material#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg
 " }}}
 " echasnovski/mini.nvim {{{
 call gruvbox_material#highlight('MiniAnimateCursor', s:palette.none, s:palette.none, 'reverse,nocombine')
+call gruvbox_material#highlight('MiniFilesFile', s:palette.fg1, s:palette.none)
 if s:configuration.float_style ==# 'dim'
   call gruvbox_material#highlight('MiniFilesTitleFocused', s:palette.green, s:palette.bg_dim, 'bold')
 else
@@ -1464,6 +1465,11 @@ call gruvbox_material#highlight('MiniIndentscopePrefix', s:palette.none, s:palet
 call gruvbox_material#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
 call gruvbox_material#highlight('MiniJump2dSpotAhead', s:palette.aqua, s:palette.none, 'nocombine')
 call gruvbox_material#highlight('MiniJump2dSpotUnique', s:palette.yellow, s:palette.none, 'bold,nocombine')
+if s:configuration.float_style ==# 'dim'
+  call gruvbox_material#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg_dim)
+else
+  call gruvbox_material#highlight('MiniPickPrompt', s:palette.blue, s:palette.bg3)
+endif
 call gruvbox_material#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
 call gruvbox_material#highlight('MiniStatuslineDevinfo', s:palette.grey2, s:palette.bg_statusline2)
 call gruvbox_material#highlight('MiniStatuslineFileinfo', s:palette.grey2, s:palette.bg_statusline2)
@@ -1518,7 +1524,6 @@ highlight! link MiniFilesBorder FloatBorder
 highlight! link MiniFilesBorderModified DiagnosticFloatingWarn
 highlight! link MiniFilesCursorLine CursorLine
 highlight! link MiniFilesDirectory Directory
-highlight! link MiniFilesFile NormalFloat
 highlight! link MiniFilesNormal NormalFloat
 highlight! link MiniFilesTitle FloatTitle
 highlight! link MiniIndentscopeSymbol Grey
@@ -1544,7 +1549,6 @@ highlight! link MiniPickMatchRanges DiagnosticFloatingHint
 highlight! link MiniPickNormal NormalFloat
 highlight! link MiniPickPreviewLine CursorLine
 highlight! link MiniPickPreviewRegion IncSearch
-highlight! link MiniPickPrompt DiagnosticFloatingInfo
 highlight! link MiniStarterFooter Orange
 highlight! link MiniStarterHeader Yellow
 highlight! link MiniStarterInactive Comment
