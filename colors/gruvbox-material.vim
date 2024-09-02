@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Aug 20 06:26:40 PM UTC 2024'
+let s:last_modified = 'Mon Sep  2 06:14:54 UTC 2024'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -517,6 +517,8 @@ if &diff
   call gruvbox_material#highlight('CurrentWord', s:palette.bg0, s:palette.bg_green)
 elseif s:configuration.current_word ==# 'grey background'
   call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.bg_current_word)
+elseif s:configuration.current_word ==# 'high contrast background'
+  call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.bg4)
 else
   call gruvbox_material#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
