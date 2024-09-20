@@ -108,7 +108,11 @@ endif
 call gruvbox_material#highlight('DiffAdd', s:palette.none, s:palette.bg_diff_green)
 call gruvbox_material#highlight('DiffChange', s:palette.none, s:palette.bg_diff_blue)
 call gruvbox_material#highlight('DiffDelete', s:palette.none, s:palette.bg_diff_red)
-call gruvbox_material#highlight('DiffText', s:palette.bg0, s:palette.blue)
+if has('nvim')
+  call gruvbox_material#highlight('DiffText', s:palette.bg0, s:palette.blue)
+else
+  call gruvbox_material#highlight('DiffText', s:palette.blue, s:palette.bg0, 'reverse')
+endif
 call gruvbox_material#highlight('Directory', s:palette.green, s:palette.none)
 call gruvbox_material#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 if s:configuration.ui_contrast ==# 'low'
