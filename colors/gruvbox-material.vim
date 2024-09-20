@@ -72,8 +72,13 @@ else
     endif
   endif
 endif
-call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
-call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
+if has('nvim')
+  call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
+  call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
+else
+  call gruvbox_material#highlight('IncSearch', s:palette.bg_red, s:palette.bg0, 'reverse')
+  call gruvbox_material#highlight('Search', s:palette.bg_green, s:palette.bg0, 'reverse')
+endif
 highlight! link CurSearch IncSearch
 call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg2)
 if s:configuration.ui_contrast ==# 'low'
