@@ -21,7 +21,7 @@ if s:configuration.statusline_style ==# 'original' "{{{
   let s:tab_r_fg = s:palette.bg0
   let s:tab_r_bg = s:palette.grey2
   let s:tab_sel_fg = s:palette.bg0
-  let s:tab_sel_bg = s:palette.grey2
+  let s:tab_sel_bg = s:palette.grey1
   let s:tab_middle_fg = s:palette.grey1
   let s:tab_middle_bg = s:palette.bg0
 
@@ -112,7 +112,7 @@ elseif s:configuration.statusline_style ==# 'mix' "{{{
   let s:tab_r_fg = s:palette.bg0
   let s:tab_r_bg = s:palette.grey2
   let s:tab_sel_fg = s:palette.bg0
-  let s:tab_sel_bg = s:palette.grey2
+  let s:tab_sel_bg = s:palette.grey1
   let s:tab_middle_fg = s:palette.grey2
   let s:tab_middle_bg = s:palette.bg_statusline2
 
@@ -203,7 +203,7 @@ else "{{{
   let s:tab_r_fg = s:palette.bg0
   let s:tab_r_bg = s:palette.grey2
   let s:tab_sel_fg = s:palette.bg0
-  let s:tab_sel_bg = s:palette.grey2
+  let s:tab_sel_bg = s:palette.grey1
   let s:tab_middle_fg = s:palette.fg1
   let s:tab_middle_bg = s:palette.bg_statusline1
 
