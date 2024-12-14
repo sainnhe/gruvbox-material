@@ -31,7 +31,7 @@ if s:configuration.statusline_style ==# 'original' "{{{
   let s:errorbg = s:palette.red
 
   let s:normal_l1_fg = s:palette.bg0
-  let s:normal_l1_bg = s:palette.grey2
+  let s:normal_l1_bg = s:palette.grey1
   let s:normal_l2_fg = s:palette.grey2
   let s:normal_l2_bg = s:palette.bg_statusline3
   let s:normal_r1_fg = s:palette.bg0
@@ -122,7 +122,7 @@ elseif s:configuration.statusline_style ==# 'mix' "{{{
   let s:errorbg = s:palette.bg_red
 
   let s:normal_l1_fg = s:palette.bg0
-  let s:normal_l1_bg = s:palette.grey2
+  let s:normal_l1_bg = s:palette.grey1
   let s:normal_l2_fg = s:palette.grey2
   let s:normal_l2_bg = s:palette.bg_statusline3
   let s:normal_r1_fg = s:palette.bg0
@@ -213,7 +213,7 @@ else "{{{
   let s:errorbg = s:palette.bg_red
 
   let s:normal_l1_fg = s:palette.bg0
-  let s:normal_l1_bg = s:palette.grey2
+  let s:normal_l1_bg = s:palette.grey1
   let s:normal_l2_fg = s:palette.fg1
   let s:normal_l2_bg = s:palette.bg_statusline3
   let s:normal_r1_fg = s:palette.bg0
