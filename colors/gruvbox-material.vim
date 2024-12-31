@@ -916,10 +916,10 @@ highlight! link CocGitRemovedSign RedSign
 highlight! link CocGitTopRemovedSign RedSign
 " }}}
 " prabirshrestha/vim-lsp {{{
-highlight! link LspErrorVirtual VirtualTextError
-highlight! link LspWarningVirtual VirtualTextWarning
-highlight! link LspInformationVirtual VirtualTextInfo
-highlight! link LspHintVirtual VirtualTextHint
+highlight! link LspErrorVirtualText VirtualTextError
+highlight! link LspWarningVirtualText VirtualTextWarning
+highlight! link LspInformationVirtualText VirtualTextInfo
+highlight! link LspHintVirtualText VirtualTextHint
 highlight! link LspErrorHighlight ErrorText
 highlight! link LspWarningHighlight WarningText
 highlight! link LspInformationHighlight InfoText
