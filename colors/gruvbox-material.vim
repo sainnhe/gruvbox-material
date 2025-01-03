@@ -1309,6 +1309,14 @@ for kind in g:gruvbox_material_lsp_kind_color
   execute "highlight! link CmpItemKind" . kind[0] . " " . kind[1]
 endfor
 " }}}
+" Saghen/blink.cmp {{{
+call gruvbox_material#highlight('BlinkCmpLabelMatch', s:palette.green, s:palette.none, 'bold')
+call gruvbox_material#highlight('BlinkCmpMenuSelection', s:palette.none, s:palette.grey0)
+highlight! link BlinkCmpKind Yellow
+for kind in g:gruvbox_material_lsp_kind_color
+  execute "highlight! link BlinkCmpKind" . kind[0] . " " . kind[1]
+endfor
+" }}}
 " SmiteshP/nvim-navic {{{
 highlight! link NavicText Fg
 highlight! link NavicSeparator Grey
