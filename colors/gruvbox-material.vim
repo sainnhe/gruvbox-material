@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Dec 25 11:24:30 PM UTC 2024'
+let s:last_modified = 'Sun Jan  5 10:12:58 UTC 2025'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1311,7 +1311,6 @@ endfor
 " }}}
 " Saghen/blink.cmp {{{
 call gruvbox_material#highlight('BlinkCmpLabelMatch', s:palette.green, s:palette.none, 'bold')
-call gruvbox_material#highlight('BlinkCmpMenuSelection', s:palette.none, s:palette.grey0)
 highlight! link BlinkCmpKind Yellow
 for kind in g:gruvbox_material_lsp_kind_color
   execute "highlight! link BlinkCmpKind" . kind[0] . " " . kind[1]
