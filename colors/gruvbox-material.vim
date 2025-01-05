@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sun Jan  5 10:12:58 UTC 2025'
+let s:last_modified = 'Sun Jan  5 11:51:29 UTC 2025'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1360,14 +1360,14 @@ highlight! link IndentBlanklineChar IblIndent
 highlight! link IndentBlanklineSpaceChar IndentBlanklineChar
 highlight! link IndentBlanklineSpaceCharBlankline IndentBlanklineChar
 " }}}
-" p00f/nvim-ts-rainbow {{{
-highlight! link rainbowcol1 Red
-highlight! link rainbowcol2 Orange
-highlight! link rainbowcol3 Yellow
-highlight! link rainbowcol4 Green
-highlight! link rainbowcol5 Aqua
-highlight! link rainbowcol6 Blue
-highlight! link rainbowcol7 Purple
+" HiPhish/rainbow-delimiters.nvim {{{
+highlight! link RainbowDelimiterRed Red
+highlight! link RainbowDelimiterOrange Orange
+highlight! link RainbowDelimiterYellow Yellow
+highlight! link RainbowDelimiterGreen Green
+highlight! link RainbowDelimiterCyan Aqua
+highlight! link RainbowDelimiterBlue Blue
+highlight! link RainbowDelimiterViolet Purple
 " }}}
 " romgrk/barbar.nvim {{{
 call gruvbox_material#highlight('BufferCurrent', s:palette.fg1, s:palette.bg0)
