@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Tue Feb  4 16:54:58 UTC 2025'
+let s:last_modified = 'Wed Feb  5 19:41:09 UTC 2025'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1353,6 +1353,20 @@ highlight! link TelescopeSelection DiffAdd
 " ibhagwan/fzf-lua {{{
 highlight! link FzfLuaBorder Grey
 highlight! link FzfLuaTitle Title
+" }}}
+" folke/snacks.nvim {{{
+highlight! link SnacksPicker Normal
+highlight! link SnacksPickerBorder Grey
+highlight! link SnacksPickerTitle Title
+highlight! link SnacksPickerFooter SnacksPickerTitle
+highlight! link SnacksPickerPrompt Orange
+highlight! link SnacksPickerTotals Grey
+highlight! link SnacksPickerInputCursorLine Normal
+call gruvbox_material#highlight('SnacksPickerMatch', s:palette.green, s:palette.none, 'bold')
+highlight! link SnacksPickerToggle CursorLine
+highlight! link SnacksPickerDir Comment
+highlight! link SnacksPickerBufFlags Blue
+highlight! link SnacksPickerKeymapRhs Normal
 " }}}
 " lewis6991/gitsigns.nvim {{{
 highlight! link GitSignsAdd GreenSign
