@@ -1410,8 +1410,8 @@ highlight! link RainbowDelimiterViolet Purple
 call gruvbox_material#highlight('BufferCurrent', s:palette.fg1, s:palette.bg0)
 call gruvbox_material#highlight('BufferCurrentIndex', s:palette.fg1, s:palette.bg0)
 call gruvbox_material#highlight('BufferCurrentMod', s:palette.blue, s:palette.bg0)
-call gruvbox_material#highlight('BufferCurrentSign', s:palette.grey2, s:palette.bg0)
 call gruvbox_material#highlight('BufferCurrentTarget', s:palette.red, s:palette.bg0, 'bold')
+call gruvbox_material#highlight('BufferCurrentSign', s:palette.grey2, s:palette.bg0)
 call gruvbox_material#highlight('BufferCurrentADDED', s:palette.green, s:palette.bg0)
 call gruvbox_material#highlight('BufferCurrentDELETED', s:palette.red, s:palette.bg0)
 call gruvbox_material#highlight('BufferCurrentCHANGED', s:palette.blue, s:palette.bg0)
@@ -1423,11 +1423,11 @@ call gruvbox_material#highlight('BufferVisibleTarget', s:palette.yellow, s:palet
 call gruvbox_material#highlight('BufferInactive', s:palette.grey1, s:palette.bg_dim)
 call gruvbox_material#highlight('BufferInactiveIndex', s:palette.grey1, s:palette.bg_dim)
 call gruvbox_material#highlight('BufferInactiveMod', s:palette.grey1, s:palette.bg_dim)
-call gruvbox_material#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
 call gruvbox_material#highlight('BufferInactiveTarget', s:palette.yellow, s:palette.bg_dim, 'bold')
-call gruvbox_material#highlight('BufferInactiveADDED', s:palette.grey0, s:palette.bg_dim)
-call gruvbox_material#highlight('BufferInactiveDELETED', s:palette.grey0, s:palette.bg_dim)
-call gruvbox_material#highlight('BufferInactiveCHANGED', s:palette.grey0, s:palette.bg_dim)
+call gruvbox_material#highlight('BufferInactiveSign', s:palette.grey0, s:palette.bg_dim)
+highlight! link BufferInactiveADDED BufferInactiveSign
+highlight! link BufferInactiveDELETED BufferInactiveSign
+highlight! link BufferInactiveCHANGED BufferInactiveSign
 call gruvbox_material#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
 call gruvbox_material#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
