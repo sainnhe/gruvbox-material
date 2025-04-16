@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Mon Feb 24 13:14:51 UTC 2025'
+let s:last_modified = 'Wed Apr 16 19:24:58 UTC 2025'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1429,6 +1429,7 @@ highlight! link BufferInactiveADDED BufferInactiveSign
 highlight! link BufferInactiveDELETED BufferInactiveSign
 highlight! link BufferInactiveCHANGED BufferInactiveSign
 call gruvbox_material#highlight('BufferTabpages', s:palette.grey1, s:palette.bg_dim, 'bold')
+call gruvbox_material#highlight('BufferTabpagesSep', s:palette.grey0, s:palette.bg_dim, 'bold')
 call gruvbox_material#highlight('BufferTabpageFill', s:palette.bg_dim, s:palette.bg_dim)
 " }}}
 " rcarriga/nvim-notify {{{
