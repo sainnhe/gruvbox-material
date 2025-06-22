@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Wed Apr 16 19:24:58 UTC 2025'
+let s:last_modified = '2025年 06月 22日 星期日 05:58:40 UTC'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -917,6 +917,7 @@ highlight! link CocGitChangeRemovedSign PurpleSign
 highlight! link CocGitChangedSign BlueSign
 highlight! link CocGitRemovedSign RedSign
 highlight! link CocGitTopRemovedSign RedSign
+highlight! link CocInlineVirtualText Grey
 " }}}
 " prabirshrestha/vim-lsp {{{
 highlight! link LspErrorVirtualText VirtualTextError
