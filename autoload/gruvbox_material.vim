@@ -49,13 +49,14 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
             \ 'bg_statusline1':   ['#282828',   '235'],
             \ 'bg_statusline2':   ['#32302f',   '235'],
             \ 'bg_statusline3':   ['#504945',   '239'],
-            \ 'bg_diff_green':    ['#32361a',   '22'],
-            \ 'bg_visual_green':  ['#333e34',   '22'],
-            \ 'bg_diff_red':      ['#3c1f1e',   '52'],
             \ 'bg_visual_red':    ['#442e2d',   '52'],
-            \ 'bg_diff_blue':     ['#0d3138',   '17'],
-            \ 'bg_visual_blue':   ['#2e3b3b',   '17'],
             \ 'bg_visual_yellow': ['#473c29',   '94'],
+            \ 'bg_visual_green':  ['#333e34',   '22'],
+            \ 'bg_visual_blue':   ['#2e3b3b',   '17'],
+            \ 'bg_visual_purple': ['#3c333b',   '54'],
+            \ 'bg_diff_red':      ['#3c1f1e',   '52'],
+            \ 'bg_diff_green':    ['#32361a',   '22'],
+            \ 'bg_diff_blue':     ['#0d3138',   '17'],
             \ 'bg_current_word':  ['#32302f',   '236']
             \ }
     else
@@ -70,13 +71,14 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
             \ 'bg_statusline1':   ['#f5edca',   '223'],
             \ 'bg_statusline2':   ['#f3eac7',   '223'],
             \ 'bg_statusline3':   ['#eee0b7',   '250'],
-            \ 'bg_diff_green':    ['#e4edc8',   '194'],
-            \ 'bg_visual_green':  ['#dde5c2',   '194'],
-            \ 'bg_diff_red':      ['#f8e4c9',   '217'],
             \ 'bg_visual_red':    ['#f0ddc3',   '217'],
-            \ 'bg_diff_blue':     ['#e0e9d3',   '117'],
-            \ 'bg_visual_blue':   ['#d9e1cc',   '117'],
             \ 'bg_visual_yellow': ['#f9eabf',   '226'],
+            \ 'bg_visual_green':  ['#dde5c2',   '194'],
+            \ 'bg_visual_blue':   ['#d9e1cc',   '117'],
+            \ 'bg_visual_purple': ['#eee2d1',   '189'],
+            \ 'bg_diff_red':      ['#f8e4c9',   '217'],
+            \ 'bg_diff_green':    ['#e4edc8',   '194'],
+            \ 'bg_diff_blue':     ['#e0e9d3',   '117'],
             \ 'bg_current_word':  ['#f3eac7',   '229']
             \ }
     endif "}}}
@@ -93,13 +95,14 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
             \ 'bg_statusline1':   ['#32302f',   '236'],
             \ 'bg_statusline2':   ['#3a3735',   '236'],
             \ 'bg_statusline3':   ['#504945',   '240'],
-            \ 'bg_diff_green':    ['#34381b',   '22'],
-            \ 'bg_visual_green':  ['#3b4439',   '22'],
-            \ 'bg_diff_red':      ['#402120',   '52'],
             \ 'bg_visual_red':    ['#4c3432',   '52'],
-            \ 'bg_diff_blue':     ['#0e363e',   '17'],
-            \ 'bg_visual_blue':   ['#374141',   '17'],
             \ 'bg_visual_yellow': ['#4f422e',   '94'],
+            \ 'bg_visual_green':  ['#3b4439',   '22'],
+            \ 'bg_visual_blue':   ['#374141',   '17'],
+            \ 'bg_visual_purple': ['#443840',   '54'],
+            \ 'bg_diff_red':      ['#402120',   '52'],
+            \ 'bg_diff_green':    ['#34381b',   '22'],
+            \ 'bg_diff_blue':     ['#0e363e',   '17'],
             \ 'bg_current_word':  ['#3c3836',   '237']
             \ }
     else
@@ -114,13 +117,14 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
             \ 'bg_statusline1':   ['#f2e5bc',   '223'],
             \ 'bg_statusline2':   ['#f2e5bc',   '223'],
             \ 'bg_statusline3':   ['#e5d5ad',   '250'],
-            \ 'bg_diff_green':    ['#e6eabc',   '194'],
-            \ 'bg_visual_green':  ['#dee2b6',   '194'],
-            \ 'bg_diff_red':      ['#f9e0bb',   '217'],
             \ 'bg_visual_red':    ['#f1d9b5',   '217'],
-            \ 'bg_diff_blue':     ['#e2e6c7',   '117'],
-            \ 'bg_visual_blue':   ['#dadec0',   '117'],
             \ 'bg_visual_yellow': ['#fae7b3',   '226'],
+            \ 'bg_visual_green':  ['#dee2b6',   '194'],
+            \ 'bg_visual_blue':   ['#dadec0',   '117'],
+            \ 'bg_visual_purple': ['#efdec3',   '189'],
+            \ 'bg_diff_red':      ['#f9e0bb',   '217'],
+            \ 'bg_diff_green':    ['#e6eabc',   '194'],
+            \ 'bg_diff_blue':     ['#e2e6c7',   '117'],
             \ 'bg_current_word':  ['#f2e5bc',   '228']
             \ }
     endif "}}}
@@ -137,13 +141,14 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
             \ 'bg_statusline1':   ['#3c3836',   '237'],
             \ 'bg_statusline2':   ['#46413e',   '237'],
             \ 'bg_statusline3':   ['#5b534d',   '241'],
-            \ 'bg_diff_green':    ['#3d4220',   '22'],
-            \ 'bg_visual_green':  ['#424a3e',   '22'],
-            \ 'bg_diff_red':      ['#472322',   '52'],
             \ 'bg_visual_red':    ['#543937',   '52'],
-            \ 'bg_diff_blue':     ['#0f3a42',   '17'],
-            \ 'bg_visual_blue':   ['#404946',   '17'],
             \ 'bg_visual_yellow': ['#574833',   '94'],
+            \ 'bg_visual_green':  ['#424a3e',   '22'],
+            \ 'bg_visual_blue':   ['#404946',   '17'],
+            \ 'bg_visual_purple': ['#4b3e45',   '54'],
+            \ 'bg_diff_red':      ['#472322',   '52'],
+            \ 'bg_diff_green':    ['#3d4220',   '22'],
+            \ 'bg_diff_blue':     ['#0f3a42',   '17'],
             \ 'bg_current_word':  ['#45403d',   '238']
             \ }
     else
@@ -158,13 +163,14 @@ function! gruvbox_material#get_palette(background, foreground, colors_override) 
             \ 'bg_statusline1':   ['#ebdbb2',   '223'],
             \ 'bg_statusline2':   ['#ebdbb2',   '223'],
             \ 'bg_statusline3':   ['#dac9a5',   '250'],
-            \ 'bg_diff_green':    ['#dfe1b4',   '194'],
-            \ 'bg_visual_green':  ['#d7d9ae',   '194'],
-            \ 'bg_diff_red':      ['#f7d9b9',   '217'],
             \ 'bg_visual_red':    ['#efd2b3',   '217'],
-            \ 'bg_diff_blue':     ['#dbddbf',   '117'],
-            \ 'bg_visual_blue':   ['#d3d5b8',   '117'],
             \ 'bg_visual_yellow': ['#f3deaa',   '226'],
+            \ 'bg_visual_green':  ['#d7d9ae',   '194'],
+            \ 'bg_visual_blue':   ['#d3d5b8',   '117'],
+            \ 'bg_visual_purple': ['#e8d4ba',   '189'],
+            \ 'bg_diff_red':      ['#f7d9b9',   '217'],
+            \ 'bg_diff_green':    ['#dfe1b4',   '194'],
+            \ 'bg_diff_blue':     ['#dbddbf',   '117'],
             \ 'bg_current_word':  ['#ebdbb2',   '227']
             \ }
     endif
