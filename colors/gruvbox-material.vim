@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = '2025年 06月 22日 星期日 05:58:40 UTC'
+let s:last_modified = 'Sun Aug  3 18:56:15 UTC 2025'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -301,6 +301,8 @@ if has('nvim')
     call gruvbox_material#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.bg_visual_blue, 'undercurl', s:palette.blue)
     call gruvbox_material#highlight('DiagnosticHint', s:palette.purple, s:palette.bg_visual_purple)
     call gruvbox_material#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.bg_visual_purple, 'undercurl', s:palette.purple)
+    call gruvbox_material#highlight('DiagnosticOk', s:palette.green, s:palette.bg_visual_green)
+    call gruvbox_material#highlight('DiagnosticUnderlineOk', s:palette.none, s:palette.bg_visual_green, 'undercurl', s:palette.green)
   else
     call gruvbox_material#highlight('DiagnosticError', s:palette.red, s:palette.none)
     call gruvbox_material#highlight('DiagnosticUnderlineError', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -310,19 +312,24 @@ if has('nvim')
     call gruvbox_material#highlight('DiagnosticUnderlineInfo', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
     call gruvbox_material#highlight('DiagnosticHint', s:palette.purple, s:palette.none)
     call gruvbox_material#highlight('DiagnosticUnderlineHint', s:palette.none, s:palette.none, 'undercurl', s:palette.purple)
+    call gruvbox_material#highlight('DiagnosticOk', s:palette.green, s:palette.none)
+    call gruvbox_material#highlight('DiagnosticUnderlineOk', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
   endif
   highlight! link DiagnosticFloatingError ErrorFloat
   highlight! link DiagnosticFloatingWarn WarningFloat
   highlight! link DiagnosticFloatingInfo InfoFloat
   highlight! link DiagnosticFloatingHint HintFloat
+  highlight! link DiagnosticFloatingOk OkFloat
   highlight! link DiagnosticVirtualTextError VirtualTextError
   highlight! link DiagnosticVirtualTextWarn VirtualTextWarning
   highlight! link DiagnosticVirtualTextInfo VirtualTextInfo
   highlight! link DiagnosticVirtualTextHint VirtualTextHint
+  highlight! link DiagnosticVirtualTextOk VirtualTextOk
   highlight! link DiagnosticSignError RedSign
   highlight! link DiagnosticSignWarn YellowSign
   highlight! link DiagnosticSignInfo BlueSign
   highlight! link DiagnosticSignHint PurpleSign
+  highlight! link DiagnosticSignOk GreenSign
   highlight! link LspDiagnosticsFloatingError DiagnosticFloatingError
   highlight! link LspDiagnosticsFloatingWarning DiagnosticFloatingWarn
   highlight! link LspDiagnosticsFloatingInformation DiagnosticFloatingInfo
@@ -510,21 +517,25 @@ if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
   highlight! link VirtualTextHint Grey
+  highlight! link VirtualTextOk Grey
 elseif s:configuration.diagnostic_virtual_text ==# 'colored'
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
   highlight! link VirtualTextInfo Blue
   highlight! link VirtualTextHint Purple
+  highlight! link VirtualTextOk Green
 else
   call gruvbox_material#highlight('VirtualTextWarning', s:palette.yellow, s:palette.bg_visual_yellow)
   call gruvbox_material#highlight('VirtualTextError', s:palette.red, s:palette.bg_visual_red)
   call gruvbox_material#highlight('VirtualTextInfo', s:palette.blue, s:palette.bg_visual_blue)
   call gruvbox_material#highlight('VirtualTextHint', s:palette.purple, s:palette.bg_visual_purple)
+  call gruvbox_material#highlight('VirtualTextOk', s:palette.green, s:palette.bg_visual_green)
 endif
 call gruvbox_material#highlight('ErrorFloat', s:palette.red, s:palette.none)
 call gruvbox_material#highlight('WarningFloat', s:palette.yellow, s:palette.none)
 call gruvbox_material#highlight('InfoFloat', s:palette.blue, s:palette.none)
 call gruvbox_material#highlight('HintFloat', s:palette.purple, s:palette.none)
+call gruvbox_material#highlight('OkFloat', s:palette.green, s:palette.none)
 if &diff
   call gruvbox_material#highlight('CurrentWord', s:palette.bg0, s:palette.bg_green)
 elseif s:configuration.current_word ==# 'grey background'
