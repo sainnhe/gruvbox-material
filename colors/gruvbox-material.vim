@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Sat Aug 16 10:31:14 UTC 2025'
+let s:last_modified = 'Mon Aug 18 19:03:15 UTC 2025'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -862,6 +862,7 @@ if has('nvim-0.9')
   highlight! link @lsp.type.typeParameter TSTypeDefinition
   highlight! link @lsp.type.variable TSVariable
   call gruvbox_material#highlight('DiagnosticUnnecessary', s:palette.grey1, s:palette.none)
+  call gruvbox_material#highlight('DiagnosticDeprecated', s:palette.none, s:palette.none, 'strikethrough', s:palette.fg0)
 endif
 highlight! link TSModuleInfoGood Green
 highlight! link TSModuleInfoBad Red
