@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Fri Nov  7 20:21:01 UTC 2025'
+let s:last_modified = '2025年 12月 06日 星期六 05:12:13 UTC'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -1362,6 +1362,10 @@ highlight! link BookmarkSign BlueSign
 highlight! link BookmarkAnnotationSign GreenSign
 highlight! link BookmarkLine DiffChange
 highlight! link BookmarkAnnotationLine DiffAdd
+" }}}
+" ggml-org/llama.vim {{{
+highlight! link llama_hl_hint Grey
+highlight! link llama_hl_info InlayHints
 " }}}
 if has('nvim')
 " hrsh7th/nvim-cmp {{{
