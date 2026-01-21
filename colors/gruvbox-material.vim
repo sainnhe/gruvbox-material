@@ -1364,8 +1364,12 @@ highlight! link BookmarkLine DiffChange
 highlight! link BookmarkAnnotationLine DiffAdd
 " }}}
 " ggml-org/llama.vim {{{
-highlight! link llama_hl_hint Grey
-highlight! link llama_hl_info InlayHints
+highlight! link llama_hl_fim_hint Grey
+highlight! link llama_hl_fim_info InlayHints
+highlight! link llama_hl_inst_src Visual
+highlight! link llama_hl_inst_virt_proc Grey
+highlight! link llama_hl_inst_virt_gen Grey
+highlight! link llama_hl_inst_virt_ready Grey
 " }}}
 if has('nvim')
 " hrsh7th/nvim-cmp {{{
