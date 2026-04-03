@@ -10,7 +10,7 @@
 let s:configuration = gruvbox_material#get_configuration()
 let s:palette = gruvbox_material#get_palette(s:configuration.background, s:configuration.foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = 'Thu Apr  2 15:22:19 UTC 2026'
+let s:last_modified = 'Sun Jan  4 09:52:25 UTC 2026'
 let g:gruvbox_material_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
@@ -792,7 +792,6 @@ if has('nvim-0.8')
   highlight! link @markup.note TSNote
   highlight! link @markup.quote Grey
   highlight! link @markup.raw TSLiteral
-  highlight! link @markup.raw.block Normal
   highlight! link @markup.strike TSStrike
   highlight! link @markup.strong TSStrong
   highlight! link @markup.underline TSUnderline
